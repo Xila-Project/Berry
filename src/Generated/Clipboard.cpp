@@ -9,68 +9,68 @@ using namespace Xila_Namespace;
 using namespace Clipboard_Types;
 
 // - Functions
-int Berry_Clipboard_Class_Start_D2FBD299_55F5_41BF_A47A_D5B880B1EEEE()
+int Berry_Clipboard_Class_Start_62BAD3F5_A2FE_495F_8241_C6055C0E08F9()
 {
 return (int)Clipboard.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Start_D2FBD299_55F5_41BF_A47A_D5B880B1EEEE, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Start_62BAD3F5_A2FE_495F_8241_C6055C0E08F9, "i", "");
 
 
-int Berry_Clipboard_Class_Stop_1D81C61F_F6CF_4252_8327_11D2C12ABD39()
+int Berry_Clipboard_Class_Stop_548ED5DD_405E_4CE8_812E_11F2F97AB41E()
 {
 return (int)Clipboard.Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Stop_1D81C61F_F6CF_4252_8327_11D2C12ABD39, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Stop_548ED5DD_405E_4CE8_812E_11F2F97AB41E, "i", "");
 
 
-void Berry_Clipboard_Class_Clear_B4DBD622_BAAC_4A33_90C4_18659C280785()
+void Berry_Clipboard_Class_Clear_9CDC2957_240A_4BBC_ABF2_1183DE6B076C()
 {
 return Clipboard.Clear(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Clear_B4DBD622_BAAC_4A33_90C4_18659C280785, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Clear_9CDC2957_240A_4BBC_ABF2_1183DE6B076C, "", "");
 
 
-void Berry_Clipboard_Class_Copy_B5975A7B_CEAE_4CEB_A20D_7083CCDD6427(long long unsigned int*A_0)
+void Berry_Clipboard_Class_Copy_DE0B5B3A_9CAC_4989_AB28_8885BD0B08E8(long long unsigned int*A_0)
 {
 return Clipboard.Copy(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Copy_B5975A7B_CEAE_4CEB_A20D_7083CCDD6427, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Copy_DE0B5B3A_9CAC_4989_AB28_8885BD0B08E8, "", ".");
 
 
-void Berry_Clipboard_Class_Copy_E261690B_F74B_4F21_AE96_40CC164864F6(const char* A_0)
+void Berry_Clipboard_Class_Copy_BE0E6BFB_3D2C_4B36_A04F_98DD4D1919F5(const char* A_0)
 {
 return Clipboard.Copy(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Copy_E261690B_F74B_4F21_AE96_40CC164864F6, "", "s");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Copy_BE0E6BFB_3D2C_4B36_A04F_98DD4D1919F5, "", "s");
 
 
 
-void * Berry_Clipboard_Class_Paste_8BF5B0EA_318F_4937_9DAE_1A4146C9AAEC(bvm* V)
+void * Berry_Clipboard_Class_Paste_02380CB4_3D34_41E3_A051_DA7484856EE0(bvm* V)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = Clipboard.Paste(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_8BF5B0EA_318F_4937_9DAE_1A4146C9AAEC, "Long_Integer_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_02380CB4_3D34_41E3_A051_DA7484856EE0, "Long_Integer_Type", "@");
 
 
-const char* Berry_Clipboard_Class_Paste_BEA2F77B_ABC8_4073_98B7_F4C8F94391AD(bvm* V, int A_1)
+const char* Berry_Clipboard_Class_Paste_18917A5E_27BB_4E72_998C_A28906BB5D93(bvm* V, int A_1)
 {
 char* S_0 = (char*)Berry_Class::Get_Instance(V)->Buffer;
 Clipboard.Paste(S_0, (A_1 > sizeof(Berry_Class::Buffer)) ? sizeof(Berry_Class::Buffer) : A_1); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_BEA2F77B_ABC8_4073_98B7_F4C8F94391AD, "s", "@i");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_18917A5E_27BB_4E72_998C_A28906BB5D93, "s", "@i");
 
 
-const char* Berry_Clipboard_Class_Paste_2CCAF0FE_D89D_4C41_A271_E545C625EEE1(bvm* V)
+const char* Berry_Clipboard_Class_Paste_01AC40D1_6AA8_4F94_8B7F_F4E8F7871B2D(bvm* V)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 Clipboard.Paste(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_2CCAF0FE_D89D_4C41_A271_E545C625EEE1, "s", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Paste_01AC40D1_6AA8_4F94_8B7F_F4E8F7871B2D, "s", "@");
 
 
 void* Berry_Clipboard_Class_Get_Pointer()
@@ -83,14 +83,14 @@ BE_FUNC_CTYPE_DECLARE(Berry_Clipboard_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Clipboard (scope:global)
 {
-	Start, ctype_func(Berry_Clipboard_Class_Start_D2FBD299_55F5_41BF_A47A_D5B880B1EEEE)
-	Stop, ctype_func(Berry_Clipboard_Class_Stop_1D81C61F_F6CF_4252_8327_11D2C12ABD39)
-	Clear, ctype_func(Berry_Clipboard_Class_Clear_B4DBD622_BAAC_4A33_90C4_18659C280785)
-	Copy, ctype_func(Berry_Clipboard_Class_Copy_B5975A7B_CEAE_4CEB_A20D_7083CCDD6427)
-	Copy, ctype_func(Berry_Clipboard_Class_Copy_E261690B_F74B_4F21_AE96_40CC164864F6)
-	Paste, ctype_func(Berry_Clipboard_Class_Paste_8BF5B0EA_318F_4937_9DAE_1A4146C9AAEC)
-	Paste, ctype_func(Berry_Clipboard_Class_Paste_BEA2F77B_ABC8_4073_98B7_F4C8F94391AD)
-	Paste, ctype_func(Berry_Clipboard_Class_Paste_2CCAF0FE_D89D_4C41_A271_E545C625EEE1)
+	Start, ctype_func(Berry_Clipboard_Class_Start_62BAD3F5_A2FE_495F_8241_C6055C0E08F9)
+	Stop, ctype_func(Berry_Clipboard_Class_Stop_548ED5DD_405E_4CE8_812E_11F2F97AB41E)
+	Clear, ctype_func(Berry_Clipboard_Class_Clear_9CDC2957_240A_4BBC_ABF2_1183DE6B076C)
+	Copy, ctype_func(Berry_Clipboard_Class_Copy_DE0B5B3A_9CAC_4989_AB28_8885BD0B08E8)
+	Copy, ctype_func(Berry_Clipboard_Class_Copy_BE0E6BFB_3D2C_4B36_A04F_98DD4D1919F5)
+	Paste, ctype_func(Berry_Clipboard_Class_Paste_02380CB4_3D34_41E3_A051_DA7484856EE0)
+	Paste, ctype_func(Berry_Clipboard_Class_Paste_18917A5E_27BB_4E72_998C_A28906BB5D93)
+	Paste, ctype_func(Berry_Clipboard_Class_Paste_01AC40D1_6AA8_4F94_8B7F_F4E8F7871B2D)
 	Get_Pointer, ctype_func(Berry_Clipboard_Class_Get_Pointer)
 
 }

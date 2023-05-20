@@ -9,175 +9,175 @@ using namespace Xila_Namespace;
 using namespace System_Types;
 
 // - Functions
-const char* Berry_System_Class_Get_Device_Name_F35CCF62_F933_47EA_B9E2_AD091F39773A(bvm* V)
+const char* Berry_System_Class_Get_Device_Name_E0486250_E387_46B6_B399_F8AADB78A6FC(bvm* V)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 System.Get_Device_Name(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Device_Name_F35CCF62_F933_47EA_B9E2_AD091F39773A, "s", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Device_Name_E0486250_E387_46B6_B399_F8AADB78A6FC, "s", "@");
 
 
-void * Berry_System_Class_Get_eFuse_MAC_FC94C37D_9906_4ED2_B09A_F8475811B69B(bvm* V)
+void * Berry_System_Class_Get_eFuse_MAC_A22E279D_C4E5_4CED_AD93_83AC63661FF5(bvm* V)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = System.Get_eFuse_MAC(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_eFuse_MAC_FC94C37D_9906_4ED2_B09A_F8475811B69B, "Long_Integer_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_eFuse_MAC_A22E279D_C4E5_4CED_AD93_83AC63661FF5, "Long_Integer_Type", "@");
 
 
-int Berry_System_Class_Get_Chip_Revision_E42A5F74_236C_4D83_8997_5A2563416473()
+int Berry_System_Class_Get_Chip_Revision_C80AEBA7_17A3_46FC_AA42_DBEE5C409F74()
 {
 return (int)System.Get_Chip_Revision(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Revision_E42A5F74_236C_4D83_8997_5A2563416473, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Revision_C80AEBA7_17A3_46FC_AA42_DBEE5C409F74, "i", "");
 
 
-const char* Berry_System_Class_Get_Chip_Model_C151D8F2_A0D0_460B_81BF_724C1695C561()
+const char* Berry_System_Class_Get_Chip_Model_32FE53FD_EFEC_402E_804B_41C594184AC5()
 {
 return System.Get_Chip_Model(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Model_C151D8F2_A0D0_460B_81BF_724C1695C561, "s", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Model_32FE53FD_EFEC_402E_804B_41C594184AC5, "s", "");
 
 
-int Berry_System_Class_Get_Chip_Cores_ED55857D_D72C_49E4_BB60_D7826CC4DEC8()
+int Berry_System_Class_Get_Chip_Cores_52063A03_FDD8_4804_B8BF_426C7A1415A5()
 {
 return (int)System.Get_Chip_Cores(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Cores_ED55857D_D72C_49E4_BB60_D7826CC4DEC8, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Chip_Cores_52063A03_FDD8_4804_B8BF_426C7A1415A5, "i", "");
 
 
-int Berry_System_Class_Get_CPU_Frequency_974B1F95_A973_4D84_A7EB_1BCE6CE1F4C4()
+int Berry_System_Class_Get_CPU_Frequency_97C466A2_7619_481C_B527_0A72FA6FCAFF()
 {
 return (int)System.Get_CPU_Frequency(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_CPU_Frequency_974B1F95_A973_4D84_A7EB_1BCE6CE1F4C4, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_CPU_Frequency_97C466A2_7619_481C_B527_0A72FA6FCAFF, "i", "");
 
 
-void Berry_System_Class_Set_Device_Name_5308D98F_C644_43BD_BB7B_24BA8CB85233(const char* A_0)
+void Berry_System_Class_Set_Device_Name_EA9CAF49_A67D_4455_829A_AFE41485A83E(const char* A_0)
 {
 return System.Set_Device_Name(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_Device_Name_5308D98F_C644_43BD_BB7B_24BA8CB85233, "", "s");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_Device_Name_EA9CAF49_A67D_4455_829A_AFE41485A83E, "", "s");
 
 
-void * Berry_System_Class_Get_Time_26B36CDA_FD63_4B49_A10C_B72A33684BE0(bvm* V)
+void * Berry_System_Class_Get_Time_DCC25B45_E803_42C4_A996_D1609AED8823(bvm* V)
 {
 Xila_Namespace::Time_Class* R = (Xila_Namespace::Time_Class*) be_malloc(V, sizeof(Xila_Namespace::Time_Class));
  *R = System.Get_Time(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Time_26B36CDA_FD63_4B49_A10C_B72A33684BE0, "Time_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Time_DCC25B45_E803_42C4_A996_D1609AED8823, "Time_Type", "@");
 
 
-void * Berry_System_Class_Get_Date_151A1C95_1CF8_47F5_8611_FDFDD00A31F9(bvm* V)
+void * Berry_System_Class_Get_Date_7DF9634E_6300_4ABE_92DA_66A3100D2D7D(bvm* V)
 {
 Xila_Namespace::Date_Class* R = (Xila_Namespace::Date_Class*) be_malloc(V, sizeof(Xila_Namespace::Date_Class));
  *R = System.Get_Date(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Date_151A1C95_1CF8_47F5_8611_FDFDD00A31F9, "Date_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Date_7DF9634E_6300_4ABE_92DA_66A3100D2D7D, "Date_Type", "@");
 
 
-int Berry_System_Class_Get_Cycles_Count_A4422B6C_087C_4059_BD7B_9E10A7C8F64A()
+int Berry_System_Class_Get_Cycles_Count_AACA0497_6F5C_4B76_81BB_87D772D91E48()
 {
 return (int)System.Get_Cycles_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Cycles_Count_A4422B6C_087C_4059_BD7B_9E10A7C8F64A, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Cycles_Count_AACA0497_6F5C_4B76_81BB_87D772D91E48, "i", "");
 
 
-void * Berry_System_Class_Get_Up_Time_43C23290_D4E0_4735_8123_3FAB5E3D7A42(bvm* V)
+void * Berry_System_Class_Get_Up_Time_61E0FFA6_2253_47A6_8A70_EA0EF539A5EB(bvm* V)
 {
 Xila_Namespace::Time_Class* R = (Xila_Namespace::Time_Class*) be_malloc(V, sizeof(Xila_Namespace::Time_Class));
  *R = System.Get_Up_Time(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_43C23290_D4E0_4735_8123_3FAB5E3D7A42, "Time_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_61E0FFA6_2253_47A6_8A70_EA0EF539A5EB, "Time_Type", "@");
 
 
-int Berry_System_Class_Get_Up_Time_Milliseconds_3247611F_AC82_42F9_8C45_960B0F2C6CD0()
+int Berry_System_Class_Get_Up_Time_Milliseconds_C0E3C65C_6B15_4015_B204_8F5E1F1AF7C7()
 {
 return (int)System.Get_Up_Time_Milliseconds(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_Milliseconds_3247611F_AC82_42F9_8C45_960B0F2C6CD0, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_Milliseconds_C0E3C65C_6B15_4015_B204_8F5E1F1AF7C7, "i", "");
 
 
-void * Berry_System_Class_Get_Up_Time_Microseconds_7468292E_EA00_419C_936B_C9E08B1D7604(bvm* V)
+void * Berry_System_Class_Get_Up_Time_Microseconds_1081D494_BB0D_4C55_BB73_51FA1C9DD647(bvm* V)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = System.Get_Up_Time_Microseconds(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_Microseconds_7468292E_EA00_419C_936B_C9E08B1D7604, "Long_Integer_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Up_Time_Microseconds_1081D494_BB0D_4C55_BB73_51FA1C9DD647, "Long_Integer_Type", "@");
 
 
-int Berry_System_Class_Get_UTC_Offset_6944D06C_2430_4158_B42D_5FA438582980()
+int Berry_System_Class_Get_UTC_Offset_3E3D43A0_A795_46E1_B9B8_5397D0A3BE36()
 {
 return (int)System.Get_UTC_Offset(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_UTC_Offset_6944D06C_2430_4158_B42D_5FA438582980, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_UTC_Offset_3E3D43A0_A795_46E1_B9B8_5397D0A3BE36, "i", "");
 
 
-int Berry_System_Class_Get_Daylight_Offset_75B5DEA0_1D1E_481F_A38A_EBCD2D8B661A()
+int Berry_System_Class_Get_Daylight_Offset_A0A37410_4BCA_417D_BA81_2B09FF336387()
 {
 return (int)System.Get_Daylight_Offset(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Daylight_Offset_75B5DEA0_1D1E_481F_A38A_EBCD2D8B661A, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Daylight_Offset_A0A37410_4BCA_417D_BA81_2B09FF336387, "i", "");
 
 
-const char* Berry_System_Class_Get_NTP_Server_86056AEA_4386_4375_8806_7525A589B7D6(bvm* V)
+const char* Berry_System_Class_Get_NTP_Server_33B1AC3B_4BBB_48B7_91F5_2DDE4E346BDE(bvm* V)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 System.Get_NTP_Server(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_NTP_Server_86056AEA_4386_4375_8806_7525A589B7D6, "s", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_NTP_Server_33B1AC3B_4BBB_48B7_91F5_2DDE4E346BDE, "s", "@");
 
 
-void Berry_System_Class_Set_Time_Zone_F5422CB0_288E_44E5_BEE9_BFC4CBF2B2A0(int A_0, int A_1)
+void Berry_System_Class_Set_Time_Zone_315C22DE_D959_4053_B36A_3B735DEF8747(int A_0, int A_1)
 {
 return System.Set_Time_Zone((unsigned int)A_0, (short unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_Time_Zone_F5422CB0_288E_44E5_BEE9_BFC4CBF2B2A0, "", "ii");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_Time_Zone_315C22DE_D959_4053_B36A_3B735DEF8747, "", "ii");
 
 
-void Berry_System_Class_Set_NTP_Server_99A8AF0E_268E_4AA4_93ED_7F117B382B4B(const char* A_0)
+void Berry_System_Class_Set_NTP_Server_255929D1_DFC3_4CAB_B5B9_3117D76FC7E1(const char* A_0)
 {
 return System.Set_NTP_Server(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_NTP_Server_99A8AF0E_268E_4AA4_93ED_7F117B382B4B, "", "s");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Set_NTP_Server_255929D1_DFC3_4CAB_B5B9_3117D76FC7E1, "", "s");
 
 
-void Berry_System_Class_Start_5C95C8BC_3F3D_446A_A4E4_D11DB9C41674()
+void Berry_System_Class_Start_20B125C7_942F_4A56_BC87_4959012BB95C()
 {
 return System.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Start_5C95C8BC_3F3D_446A_A4E4_D11DB9C41674, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Start_20B125C7_942F_4A56_BC87_4959012BB95C, "", "");
 
 
-void Berry_System_Class_Shutdown_E5FD63FD_F9CF_4286_85AB_0971A41916A6()
+void Berry_System_Class_Shutdown_80B91F15_7F5E_4EFD_8BAC_91331172BA8F()
 {
 return System.Shutdown(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Shutdown_E5FD63FD_F9CF_4286_85AB_0971A41916A6, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Shutdown_80B91F15_7F5E_4EFD_8BAC_91331172BA8F, "", "");
 
 
-void Berry_System_Class_Restart_2D2DF8ED_C196_466B_8B5F_721AE33C729E()
+void Berry_System_Class_Restart_FD97C125_822F_4D66_9B2B_3B041541A5FE()
 {
 return System.Restart(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Restart_2D2DF8ED_C196_466B_8B5F_721AE33C729E, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Restart_FD97C125_822F_4D66_9B2B_3B041541A5FE, "", "");
 
 
 
-void Berry_System_Class_Task_Function_090065C5_A97B_4F7F_8C15_388BA8957344()
+void Berry_System_Class_Task_Function_DDDBEBA6_73F4_440C_A2D7_5CBFDA6CD2CB()
 {
 return System.Task_Function(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Task_Function_090065C5_A97B_4F7F_8C15_388BA8957344, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Task_Function_DDDBEBA6_73F4_440C_A2D7_5CBFDA6CD2CB, "", "");
 
 
 void* Berry_System_Class_Get_Pointer()
@@ -190,28 +190,28 @@ BE_FUNC_CTYPE_DECLARE(Berry_System_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module System (scope:global)
 {
-	Get_Device_Name, ctype_func(Berry_System_Class_Get_Device_Name_F35CCF62_F933_47EA_B9E2_AD091F39773A)
-	Get_eFuse_MAC, ctype_func(Berry_System_Class_Get_eFuse_MAC_FC94C37D_9906_4ED2_B09A_F8475811B69B)
-	Get_Chip_Revision, ctype_func(Berry_System_Class_Get_Chip_Revision_E42A5F74_236C_4D83_8997_5A2563416473)
-	Get_Chip_Model, ctype_func(Berry_System_Class_Get_Chip_Model_C151D8F2_A0D0_460B_81BF_724C1695C561)
-	Get_Chip_Cores, ctype_func(Berry_System_Class_Get_Chip_Cores_ED55857D_D72C_49E4_BB60_D7826CC4DEC8)
-	Get_CPU_Frequency, ctype_func(Berry_System_Class_Get_CPU_Frequency_974B1F95_A973_4D84_A7EB_1BCE6CE1F4C4)
-	Set_Device_Name, ctype_func(Berry_System_Class_Set_Device_Name_5308D98F_C644_43BD_BB7B_24BA8CB85233)
-	Get_Time, ctype_func(Berry_System_Class_Get_Time_26B36CDA_FD63_4B49_A10C_B72A33684BE0)
-	Get_Date, ctype_func(Berry_System_Class_Get_Date_151A1C95_1CF8_47F5_8611_FDFDD00A31F9)
-	Get_Cycles_Count, ctype_func(Berry_System_Class_Get_Cycles_Count_A4422B6C_087C_4059_BD7B_9E10A7C8F64A)
-	Get_Up_Time, ctype_func(Berry_System_Class_Get_Up_Time_43C23290_D4E0_4735_8123_3FAB5E3D7A42)
-	Get_Up_Time_Milliseconds, ctype_func(Berry_System_Class_Get_Up_Time_Milliseconds_3247611F_AC82_42F9_8C45_960B0F2C6CD0)
-	Get_Up_Time_Microseconds, ctype_func(Berry_System_Class_Get_Up_Time_Microseconds_7468292E_EA00_419C_936B_C9E08B1D7604)
-	Get_UTC_Offset, ctype_func(Berry_System_Class_Get_UTC_Offset_6944D06C_2430_4158_B42D_5FA438582980)
-	Get_Daylight_Offset, ctype_func(Berry_System_Class_Get_Daylight_Offset_75B5DEA0_1D1E_481F_A38A_EBCD2D8B661A)
-	Get_NTP_Server, ctype_func(Berry_System_Class_Get_NTP_Server_86056AEA_4386_4375_8806_7525A589B7D6)
-	Set_Time_Zone, ctype_func(Berry_System_Class_Set_Time_Zone_F5422CB0_288E_44E5_BEE9_BFC4CBF2B2A0)
-	Set_NTP_Server, ctype_func(Berry_System_Class_Set_NTP_Server_99A8AF0E_268E_4AA4_93ED_7F117B382B4B)
-	Start, ctype_func(Berry_System_Class_Start_5C95C8BC_3F3D_446A_A4E4_D11DB9C41674)
-	Shutdown, ctype_func(Berry_System_Class_Shutdown_E5FD63FD_F9CF_4286_85AB_0971A41916A6)
-	Restart, ctype_func(Berry_System_Class_Restart_2D2DF8ED_C196_466B_8B5F_721AE33C729E)
-	Task_Function, ctype_func(Berry_System_Class_Task_Function_090065C5_A97B_4F7F_8C15_388BA8957344)
+	Get_Device_Name, ctype_func(Berry_System_Class_Get_Device_Name_E0486250_E387_46B6_B399_F8AADB78A6FC)
+	Get_eFuse_MAC, ctype_func(Berry_System_Class_Get_eFuse_MAC_A22E279D_C4E5_4CED_AD93_83AC63661FF5)
+	Get_Chip_Revision, ctype_func(Berry_System_Class_Get_Chip_Revision_C80AEBA7_17A3_46FC_AA42_DBEE5C409F74)
+	Get_Chip_Model, ctype_func(Berry_System_Class_Get_Chip_Model_32FE53FD_EFEC_402E_804B_41C594184AC5)
+	Get_Chip_Cores, ctype_func(Berry_System_Class_Get_Chip_Cores_52063A03_FDD8_4804_B8BF_426C7A1415A5)
+	Get_CPU_Frequency, ctype_func(Berry_System_Class_Get_CPU_Frequency_97C466A2_7619_481C_B527_0A72FA6FCAFF)
+	Set_Device_Name, ctype_func(Berry_System_Class_Set_Device_Name_EA9CAF49_A67D_4455_829A_AFE41485A83E)
+	Get_Time, ctype_func(Berry_System_Class_Get_Time_DCC25B45_E803_42C4_A996_D1609AED8823)
+	Get_Date, ctype_func(Berry_System_Class_Get_Date_7DF9634E_6300_4ABE_92DA_66A3100D2D7D)
+	Get_Cycles_Count, ctype_func(Berry_System_Class_Get_Cycles_Count_AACA0497_6F5C_4B76_81BB_87D772D91E48)
+	Get_Up_Time, ctype_func(Berry_System_Class_Get_Up_Time_61E0FFA6_2253_47A6_8A70_EA0EF539A5EB)
+	Get_Up_Time_Milliseconds, ctype_func(Berry_System_Class_Get_Up_Time_Milliseconds_C0E3C65C_6B15_4015_B204_8F5E1F1AF7C7)
+	Get_Up_Time_Microseconds, ctype_func(Berry_System_Class_Get_Up_Time_Microseconds_1081D494_BB0D_4C55_BB73_51FA1C9DD647)
+	Get_UTC_Offset, ctype_func(Berry_System_Class_Get_UTC_Offset_3E3D43A0_A795_46E1_B9B8_5397D0A3BE36)
+	Get_Daylight_Offset, ctype_func(Berry_System_Class_Get_Daylight_Offset_A0A37410_4BCA_417D_BA81_2B09FF336387)
+	Get_NTP_Server, ctype_func(Berry_System_Class_Get_NTP_Server_33B1AC3B_4BBB_48B7_91F5_2DDE4E346BDE)
+	Set_Time_Zone, ctype_func(Berry_System_Class_Set_Time_Zone_315C22DE_D959_4053_B36A_3B735DEF8747)
+	Set_NTP_Server, ctype_func(Berry_System_Class_Set_NTP_Server_255929D1_DFC3_4CAB_B5B9_3117D76FC7E1)
+	Start, ctype_func(Berry_System_Class_Start_20B125C7_942F_4A56_BC87_4959012BB95C)
+	Shutdown, ctype_func(Berry_System_Class_Shutdown_80B91F15_7F5E_4EFD_8BAC_91331172BA8F)
+	Restart, ctype_func(Berry_System_Class_Restart_FD97C125_822F_4D66_9B2B_3B041541A5FE)
+	Task_Function, ctype_func(Berry_System_Class_Task_Function_DDDBEBA6_73F4_440C_A2D7_5CBFDA6CD2CB)
 	Get_Pointer, ctype_func(Berry_System_Class_Get_Pointer)
 
 	Panic_Missing_System_Files, int(0)
