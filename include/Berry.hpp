@@ -26,16 +26,14 @@ using namespace Xila;
 typedef struct bvm bvm;
 typedef int (*bntvfunc)(bvm *);
 
-class Berry_Softwares_Handle_Class;
-
 /// @brief Berry class
 class Berry_Class : public Softwares_Types::Software_Type
 {
 public:
-    class Berry_Softwares_Handle_Class : public Softwares_Types::Software_Handle_Type
+    class Berry_Handle_Class : public Softwares_Types::Software_Handle_Type
     {
     public:
-        Berry_Softwares_Handle_Class(const char *Name) : Softwares_Types::Software_Handle_Type(Name){};
+        Berry_Handle_Class(const char *Name) : Softwares_Types::Software_Handle_Type(Name){};
 
         void Create_Instance(const Accounts_Types::User_Type *Owner_User) const override
         {
@@ -52,32 +50,41 @@ protected:
     // - Methods
 
     // - - Constructors / destructor
-    Berry_Class(const Accounts_Types::User_Type *Owner_User, const Berry_Softwares_Handle_Class &Handle);
+    Berry_Class(const Accounts_Types::User_Type *Owner_User, const Berry_Handle_Class &Handle);
     ~Berry_Class();
 
     // - - Task
+
+    /// @brief Main task function.
     void Main_Task_Function() override;
 
     // - - - Berry
 
+    /// @brief Create a new virtual machine.
     void Virtual_Machine_Create();
+
+    /// @brief Delete the current virtual machine.
     void Virtual_Machine_Delete();
+
+    /// @brief Register a function to the virtual machine.
     void Virtual_Machine_Register_Function(const char *Name, bntvfunc Function);
+    
+    /// @brief Load and compile a file into the virtual machine.
+    /// @param Path Path of the file to load.
+    /// @return Result_Type::Success if the file is loaded and compiled successfully.
     Result_Type Virtual_Machine_Load_File(const char *Path);
+    
+    /// @brief Load and compile a string into the virtual machine.
+    /// @param String String to load.
+    /// @return Result_Type::Success if the string is loaded and compiled successfully.
     Result_Type Virtual_Machine_Load_String(const char *String);
 
+    /// @brief Call a function from the virtual machine.
+    /// @param Integer_Type Function stack index.
+    /// @return Result_Type::Success if the function is called successfully.
     Result_Type Call(Integer_Type);
 
-    // - - - Softwares
-
-    static void Start_Task_Server(void *);
-    void Server_Task_Function();
-
     // - Attributes
-
-    WiFiServer Server;
-
-    Task_Type Server_Task;
 
     bvm *Virtual_Machine;
 
@@ -91,7 +98,6 @@ protected:
     Graphics_Types::Window_Class Window;
 
     friend class Berry_Handle_Class;
-    friend class Berry_Softwares_Handle_Class;
     friend Graphics_Types::Window_Type *Berry_This_Get_Window(bvm *);
     friend void Berry_This_Delay(bvm *, int);
 };

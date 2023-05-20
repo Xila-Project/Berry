@@ -24,9 +24,8 @@ extern "C"
 
 std::vector<Berry_Class *> Berry_Class::Instances_List;
 
-Berry_Class::Berry_Class(const Accounts_Types::User_Type *Owner_User, const Berry_Softwares_Handle_Class &Handle)
-    : Softwares_Types::Software_Type(Handle, Owner_User, 8 * 1024),
-      Server_Task(this)
+Berry_Class::Berry_Class(const Accounts_Types::User_Type *Owner_User, const Berry_Handle_Class &Handle)
+    : Softwares_Types::Software_Type(Handle, Owner_User, 8 * 1024)
 {
     Instances_List.push_back(this);
 }
@@ -38,39 +37,6 @@ Berry_Class::~Berry_Class()
     Virtual_Machine_Delete();
 
     Instances_List.erase(std::remove(Instances_List.begin(), Instances_List.end(), this), Instances_List.end());
-}
-
-void Berry_Class::Start_Task_Server(void *Instance)
-{
-
-    ((Berry_Class *)Instance)->Server_Task_Function();
-}
-
-void Berry_Class::Server_Task_Function()
-{
-    Server.begin(80);
-
-    while (1)
-    {
-        WiFiClient Client = Server.available();
-        if (Client)
-        {
-            Log_Verbose("Berry", "Client connected.");
-            Drive_Types::File_Type Executable = Drive.Open("/Software/Berry/Temporary.be", true, false, true);
-            while (Client.connected())
-            {
-                if (Client.available())
-                {
-                    char Buffer[256];
-                    Client.readBytes(Buffer, sizeof(Buffer));
-                    Executable.Write((uint8_t *)Buffer, sizeof(Buffer));
-                }
-            }
-            Log_Verbose("Berry", "Client disconnected.");
-            Client.stop();
-        }
-        Server_Task.Delay(100);
-    }
 }
 
 Berry_Class *Berry_Class::Get_Instance(bvm *Virtual_Machine)
@@ -162,7 +128,7 @@ void Berry_Class::Load_Softwares_Handles()
 
         if (Drive.Exists(Path))
         {
-            Softwares.Register_Handle(*new Berry_Softwares_Handle_Class(Software_Folder.Get_Name()));
+            Softwares.Register_Handle(*new Berry_Handle_Class(Software_Folder.Get_Name()));
         }
 
         Software_Folder.Close();
