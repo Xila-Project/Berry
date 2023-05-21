@@ -33,8 +33,6 @@ BERRY_API char *be_readstring(char *buffer, size_t size)
 
 void *be_fopen(const char *filename, const char *modes)
 {
-    Log_Verbose("Berry", "Opening file: %s", filename);
-    Log_Verbose("Berry", "Opening file with mode: %c", modes);
     Drive_Types::File_Type *File = new Drive_Types::File_Type;
     switch (modes[0])
     {
@@ -62,7 +60,6 @@ void *be_fopen(const char *filename, const char *modes)
 
 int be_fclose(void *hfile)
 {
-    Log_Verbose("Berry", "Closing file");
     if (hfile == NULL || hfile == stdout || hfile == stderr || hfile == stdin)
     {
         return false;
@@ -98,7 +95,6 @@ size_t be_fwrite(void *hfile, const void *buffer, size_t length)
 
 size_t be_fread(void *hfile, void *buffer, size_t length)
 {
-    Log_Verbose("Berry", "Reading file");
     if (hfile == NULL || hfile == stdout || hfile == stderr || hfile == stdin)
     {
         return 0;

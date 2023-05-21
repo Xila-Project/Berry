@@ -25,16 +25,18 @@ extern "C"
 std::vector<Berry_Class *> Berry_Class::Instances_List;
 
 Berry_Class::Berry_Class(const Accounts_Types::User_Type *Owner_User, const Berry_Handle_Class &Handle)
-    : Softwares_Types::Software_Type(Handle, Owner_User, 8 * 1024)
+    : Softwares_Types::Software_Type(Handle, Owner_User, 8 * 1024),
+      Virtual_Machine(NULL)
 {
     Instances_List.push_back(this);
 }
 
 Berry_Class::~Berry_Class()
 {
-    Window.Delete();
-
     Virtual_Machine_Delete();
+
+    if (Window.Is_Valid())
+        Window.Delete();
 
     Instances_List.erase(std::remove(Instances_List.begin(), Instances_List.end(), this), Instances_List.end());
 }
@@ -55,11 +57,8 @@ void Berry_Class::Main_Task_Function()
 
     Virtual_Machine_Create();
 
-    Log_Verbose("Berry", "Created virtual machine : %p / %p", (Module_Class *)this, Virtual_Machine);
-
-    Log_Verbose("Berry", "Starting custom software")
-
-    Static_String_Type<32> Path;
+    Static_String_Type<64>
+        Path;
 
     Path = Software_Directory_Path;
     Path += "/";
@@ -69,17 +68,16 @@ void Berry_Class::Main_Task_Function()
     }
     Path += "/Main.be";
 
-    Log_Verbose("Berry", "Loading file : %s", (const char *)Path);
-
     if (Virtual_Machine_Load_File(Path) != Result_Type::Success)
     {
-        Log_Verbose("Berry", "Failed to load file");
+        Log_Error("Berry", "Failed to load file");
         // TODO : Add dialog to show the error.
         delete this;
     }
 
     if (Call(0) != Result_Type::Success)
     {
+        Log_Error("Berry", "Failed to call main function");
         // TODO : Add dialog
     }
 
@@ -88,13 +86,18 @@ void Berry_Class::Main_Task_Function()
 
 void Berry_Class::Virtual_Machine_Create()
 {
-    Virtual_Machine = be_vm_new();
-    be_set_ctype_func_hanlder(Virtual_Machine, be_call_ctype_func);
+    if (!Virtual_Machine)
+    {
+        Virtual_Machine = be_vm_new();
+        be_set_ctype_func_hanlder(Virtual_Machine, be_call_ctype_func);
+    }
 }
 
 void Berry_Class::Virtual_Machine_Delete()
 {
-    be_vm_delete(Virtual_Machine);
+    if (Virtual_Machine)
+        be_vm_delete(Virtual_Machine);
+    Virtual_Machine = NULL;
 }
 
 void Berry_Class::Load_Softwares_Handles()
@@ -104,7 +107,6 @@ void Berry_Class::Load_Softwares_Handles()
     // - Waiting for System to start Drive module asynchrously.
     while (Xila::Drive.Get_Type() == Xila::Drive_Types::Drive_Type_Type::None)
     {
-        Log_Verbose("Berry", "Waiting for Drive module to start...");
         Task_Type::Delay_Static(100);
     }
 
@@ -144,7 +146,6 @@ void Berry_Class::Virtual_Machine_Register_Function(const char *Name, bntvfunc F
 Result_Type Berry_Class::Virtual_Machine_Load_File(const char *Path)
 {
     Byte_Type Error = be_loadfile(Virtual_Machine, Path);
-    Log_Verbose("Berry", "Loading file %s with result : %u", Path, Error);
     if (Error != BE_OK)
         return Result_Type::Error;
     return Result_Type::Success;
@@ -160,6 +161,9 @@ Result_Type Berry_Class::Virtual_Machine_Load_String(const char *String)
 
 Result_Type Berry_Class::Call(Integer_Type Argument_Count)
 {
+    if (!Virtual_Machine)
+        return Result_Type::Error;
+
     Byte_Type Error = be_pcall(Virtual_Machine, Argument_Count);
     if (Error != BE_OK)
         return Result_Type::Error;

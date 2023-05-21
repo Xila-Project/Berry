@@ -14,8 +14,6 @@ void *Berry_Instruction_Class_Initialize(bvm* V, Module_Class *Sender = NULL, Mo
         Pointer = new (Pointer) Instruction_Class();
     else
         Pointer = new (Pointer) Instruction_Class(Sender, Receiver);
-
-    Log_Verbose("Instruction", "Initialize instruction : %p / %p / %p", Pointer, Sender, Receiver);
     
     return Pointer;
 }
@@ -24,8 +22,8 @@ BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Initialize, "+_p", "@[..");
 
 void Berry_Instruction_Class_Deinitialize(bvm* V, Instruction_Class *Instruction)
 {
-    Log_Verbose("Instruction", "Deinitialize : %p", Instruction);
-    be_free(V, Instruction, sizeof(Instruction_Class));
+    if (Instruction)
+        be_free(V, Instruction, sizeof(Instruction_Class));
 }
 BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Deinitialize, "", "@.");
 
@@ -62,7 +60,6 @@ BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Graphics_Get_Code, "i", ".");
 void *Berry_Instruction_Class_Graphics_Get_Target(bvm* V, Instruction_Class *Instruction)
 {
     Graphics_Types::Object_Type *Pointer = (Graphics_Types::Object_Type *)be_malloc(V, sizeof(Graphics_Types::Object_Type));
-    Log_Verbose("Instruction", "Get target : %p", Pointer);
     return new (Pointer) Graphics_Types::Object_Type(Instruction->Graphics.Get_Target());
 }
 BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Graphics_Get_Target, "Graphics.Object_Type", "@.");
@@ -70,7 +67,6 @@ BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Graphics_Get_Target, "Graphics.Obj
 void *Berry_Instruction_Class_Graphics_Get_Current_Target(bvm* V, Instruction_Class *Instruction)
 {
     Graphics_Types::Object_Type *Pointer = (Graphics_Types::Object_Type *)be_malloc(V, sizeof(Graphics_Types::Object_Type));
-    Log_Verbose("Instruction", "Get current target : %p", Pointer);
     return new (Pointer) Graphics_Types::Object_Type(Instruction->Graphics.Get_Current_Target());
 }
 BE_FUNC_CTYPE_DECLARE(Berry_Instruction_Class_Graphics_Get_Current_Target, "Graphics.Object_Type", "@.");
