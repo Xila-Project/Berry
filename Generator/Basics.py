@@ -5,11 +5,14 @@ from pygccxml import parser as Parser
 from pygccxml.declarations import type_traits_classes as Type_Traits_Classes
 import os
 
+def Clear():
+    os.system("tput reset")
+
 def Is_Namespace(Declaration):
     return type(Declaration) == Declarations.namespace_t
 
 def Is_Class(Declaration):
-    return (type(Declaration) == Declarations.class_declaration.class_t) and Declaration.name.endswith("_Class") 
+    return (type(Declaration) == Declarations.class_declaration.class_t)
 
 def Is_Function(Declaration):
     return (type(Declaration) == Declarations.calldef_members.member_function_t) and (Declaration.access_type == "public")

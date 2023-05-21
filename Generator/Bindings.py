@@ -12,8 +12,6 @@ Binding_Function_Table = []
 
 # Function that convert function arguments to 
 def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
-    print("Binding : ", Declaration)
-
     # - Remove variadic functions
     if Declaration.has_ellipsis:    
         return ""
@@ -106,11 +104,14 @@ def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
                 Passed_Arguments += "A_" + str(i)
 
             elif Is_Class(Base_Type.declaration):
+                print("Class : ", type(Base_Type.declaration), " in ", str(Declaration))
                 S += Base_Type.declaration.decl_string + "* A_" + str(i)
                 StringD += "."#"(" + str(Base_Type) + ")"
                 if Is_Reference_Type(Argument):
                     Passed_Arguments += "*"
                 Passed_Arguments += "A_" + str(i)
+            else:
+                print("Unknown pointer type : ", type(Base_Type.declaration), " in ", str(Declaration))
                 
         else:
 
@@ -119,7 +120,6 @@ def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
                 StringD += "b"
                 Passed_Arguments += "A_" + str(i) + ", "
             elif Is_Integral_Type(Argument):
-                print("Integral : ", str(Argument.byte_size))
                 if Get_Size(Argument) > 4:
                     S += str(Get_Base_Type(Argument)) + "*A_" + str(i)
                     StringD += "."

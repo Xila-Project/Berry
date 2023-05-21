@@ -51,7 +51,6 @@ Functions = [
 "Get_LVGL_Color(",
 "Calendar_Class::Set_Highlighted_Dates(",
 "Calendar_Class::Set_Days_Names(",
-"Object_Class::Set_Style_Text_Font(",
 "Object_Class::Get_Style_Color_Filter_Descriptor(",
 "Object_Class::Set_Style_Transition(",
 "Keyboard_Class::Get_Map_Array(",

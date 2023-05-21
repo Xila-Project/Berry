@@ -127,6 +127,8 @@ def Generate_Module(Global_Namespace, Xila_Namespace, Module_Name):
     Generated_File.close()
 
 
+Clear()
+
 # Find the location of the xml generator (castxml or gccxml)
 generator_path, generator_name = utils.find_xml_generator()
 
