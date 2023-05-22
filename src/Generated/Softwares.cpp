@@ -15,17 +15,17 @@ using namespace Softwares_Types;
 // - - Destructors
 
 // - - Functions
-const void* Berry_Software_Class_Get_Handle_717483C1_6B10_48CB_B417_F25C5FF7D61E(Xila_Namespace::Softwares_Types::Software_Class* I)
+const void* Berry_Software_Class_Get_Handle_A9237B2B_3A37_4975_8DDF_4D53199910B8(Xila_Namespace::Softwares_Types::Software_Class* I)
 {
 return I->Get_Handle(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Class_Get_Handle_717483C1_6B10_48CB_B417_F25C5FF7D61E, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Class_Get_Handle_A9237B2B_3A37_4975_8DDF_4D53199910B8, "c", ".");
 
-const void* Berry_Software_Class_Get_Owner_User_8BDD6847_0B78_44BF_85EF_D0E4B444A321(Xila_Namespace::Softwares_Types::Software_Class* I)
+const void* Berry_Software_Class_Get_Owner_User_6D6FDD25_0099_4206_9778_0E0C9CBE4CF0(Xila_Namespace::Softwares_Types::Software_Class* I)
 {
 return I->Get_Owner_User(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Class_Get_Owner_User_8BDD6847_0B78_44BF_85EF_D0E4B444A321, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Class_Get_Owner_User_6D6FDD25_0099_4206_9778_0E0C9CBE4CF0, "c", ".");
 
 // - - Operators
 
@@ -34,8 +34,8 @@ BE_FUNC_CTYPE_DECLARE(Berry_Software_Class_Get_Owner_User_8BDD6847_0B78_44BF_85E
 class Berry_Software_Type(scope:global, name:Software_Type)
 {
 	_p, var
-	Get_Handle, ctype_func(Berry_Software_Class_Get_Handle_717483C1_6B10_48CB_B417_F25C5FF7D61E)
-	Get_Owner_User, ctype_func(Berry_Software_Class_Get_Owner_User_8BDD6847_0B78_44BF_85EF_D0E4B444A321)
+	Get_Handle, ctype_func(Berry_Software_Class_Get_Handle_A9237B2B_3A37_4975_8DDF_4D53199910B8)
+	Get_Owner_User, ctype_func(Berry_Software_Class_Get_Owner_User_6D6FDD25_0099_4206_9778_0E0C9CBE4CF0)
 
 }
 @const_object_info_end */
@@ -48,72 +48,51 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Software_Handle_Class_Initialize_E497D8D5_7CD4_4532_8D03_A08FE32100F2(bvm* V, const char* A_0)
+void * Berry_Software_Handle_Class_Initialize_9431523F_9046_4F88_87CD_1FB0AD3418B3(bvm* V, const char* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Softwares_Types::Software_Handle_Class));
 return new (Pointer) Softwares_Types::Software_Handle_Class(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Initialize_E497D8D5_7CD4_4532_8D03_A08FE32100F2, "+_p", "@s");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Initialize_9431523F_9046_4F88_87CD_1FB0AD3418B3, "+_p", "@s");
 
 
 // - - Destructors
-void Berry_Software_Handle_Class_Deinitialize_04B54CAB_F1A8_4B18_9EC3_707D78160DBA(bvm* V, Xila_Namespace::Softwares_Types::Software_Handle_Class* I)
+void Berry_Software_Handle_Class_Deinitialize_9EB277C5_0778_46CC_8570_E1BCB43ADB3F(bvm* V, Xila_Namespace::Softwares_Types::Software_Handle_Class* I)
 {
 if (!I) { return; }
 I->~Software_Handle_Class();
 be_free(V, I, sizeof(Softwares_Types::Software_Handle_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Deinitialize_04B54CAB_F1A8_4B18_9EC3_707D78160DBA, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Deinitialize_9EB277C5_0778_46CC_8570_E1BCB43ADB3F, "", "@.");
 
 
 // - - Functions
-const char* Berry_Software_Handle_Class_Get_Name_DE16F0A7_458F_4236_B598_B7785A876B94(bvm* V, Xila_Namespace::Softwares_Types::Software_Handle_Class* I)
+const char* Berry_Software_Handle_Class_Get_Name_47C68589_AD10_4A24_B6A6_A59EBDC80D71(bvm* V, Xila_Namespace::Softwares_Types::Software_Handle_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Get_Name(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Get_Name_DE16F0A7_458F_4236_B598_B7785A876B94, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Get_Name_47C68589_AD10_4A24_B6A6_A59EBDC80D71, "s", "@.");
 
-void Berry_Software_Handle_Class_Create_Instance_1BFABBD2_352F_4FF5_A2A3_3BEE09A5AFB9(Xila_Namespace::Softwares_Types::Software_Handle_Class* I, ::Xila_Namespace::Accounts_Types::User_Class* A_0)
+void Berry_Software_Handle_Class_Create_Instance_EB7452C7_41AE_4EBD_AF49_F833E13E123F(Xila_Namespace::Softwares_Types::Software_Handle_Class* I, ::Xila_Namespace::Accounts_Types::User_Class* A_0)
 {
 return I->Create_Instance(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Create_Instance_1BFABBD2_352F_4FF5_A2A3_3BEE09A5AFB9, "", "..");
-
-bool Berry_Software_Handle_Class_Is_Equal_6EB0CB27_CB52_41CB_8FAA_E7BA1254744A(Xila_Namespace::Softwares_Types::Software_Handle_Class* I, ::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
-{
-return I->Is_Equal(*A_0); 
-}
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Is_Equal_6EB0CB27_CB52_41CB_8FAA_E7BA1254744A, "b", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Create_Instance_EB7452C7_41AE_4EBD_AF49_F833E13E123F, "", "..");
 
 // - - Operators
-bool Berry_Software_Handle_Class_Operator_80439055_0719_4702_A8F8_A7DA3FA64E56(Xila_Namespace::Softwares_Types::Software_Handle_Class* I, Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
-{
-return *I == *A_0;
-}
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Operator_80439055_0719_4702_A8F8_A7DA3FA64E56, "b", "..")
-
-bool Berry_Software_Handle_Class_Operator_8BB878E8_705E_4287_8D79_33297E46909E(Xila_Namespace::Softwares_Types::Software_Handle_Class* I, Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
-{
-return *I != *A_0;
-}
-BE_FUNC_CTYPE_DECLARE(Berry_Software_Handle_Class_Operator_8BB878E8_705E_4287_8D79_33297E46909E, "b", "..")
-
 
 // - Berry declaration
 /* @const_object_info_begin
 class Berry_Software_Handle_Type(scope:global, name:Software_Handle_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Software_Handle_Class_Initialize_E497D8D5_7CD4_4532_8D03_A08FE32100F2)
-	deinit, ctype_func(Berry_Software_Handle_Class_Deinitialize_04B54CAB_F1A8_4B18_9EC3_707D78160DBA)
-	Get_Name, ctype_func(Berry_Software_Handle_Class_Get_Name_DE16F0A7_458F_4236_B598_B7785A876B94)
-	Create_Instance, ctype_func(Berry_Software_Handle_Class_Create_Instance_1BFABBD2_352F_4FF5_A2A3_3BEE09A5AFB9)
-	Is_Equal, ctype_func(Berry_Software_Handle_Class_Is_Equal_6EB0CB27_CB52_41CB_8FAA_E7BA1254744A)
-	==, ctype_func(Berry_Software_Handle_Class_Operator_80439055_0719_4702_A8F8_A7DA3FA64E56)
-	!=, ctype_func(Berry_Software_Handle_Class_Operator_8BB878E8_705E_4287_8D79_33297E46909E)
+	init, ctype_func(Berry_Software_Handle_Class_Initialize_9431523F_9046_4F88_87CD_1FB0AD3418B3)
+	deinit, ctype_func(Berry_Software_Handle_Class_Deinitialize_9EB277C5_0778_46CC_8570_E1BCB43ADB3F)
+	Get_Name, ctype_func(Berry_Software_Handle_Class_Get_Name_47C68589_AD10_4A24_B6A6_A59EBDC80D71)
+	Create_Instance, ctype_func(Berry_Software_Handle_Class_Create_Instance_EB7452C7_41AE_4EBD_AF49_F833E13E123F)
 
 }
 @const_object_info_end */
@@ -124,137 +103,137 @@ extern "C"
 	#include "../generate/be_fixed_Berry_Software_Handle_Type.h"
 }
 // - Functions
-int Berry_Softwares_Class_Start_79A9CB66_1E22_43E5_BF00_32D03236D4D8()
+int Berry_Softwares_Class_Start_1CD93EF1_250D_42CE_ABB5_6C3FFFC686BB()
 {
 return (int)Softwares.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Start_79A9CB66_1E22_43E5_BF00_32D03236D4D8, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Start_1CD93EF1_250D_42CE_ABB5_6C3FFFC686BB, "i", "");
 
 
-int Berry_Softwares_Class_Stop_5F4B5D4D_60B5_440F_9A41_82513B19C44E()
+int Berry_Softwares_Class_Stop_DBFA9A96_0E40_4CD4_A32A_FD7020523200()
 {
 return (int)Softwares.Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Stop_5F4B5D4D_60B5_440F_9A41_82513B19C44E, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Stop_DBFA9A96_0E40_4CD4_A32A_FD7020523200, "i", "");
 
 
-void Berry_Softwares_Class_Register_Handle_24FADBD3_3841_48C7_A98C_34E5D58EDB46(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
+void Berry_Softwares_Class_Register_Handle_8B3B76DF_CB99_4721_919B_6F7BE0A11C57(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
 {
 return Softwares.Register_Handle(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Register_Handle_24FADBD3_3841_48C7_A98C_34E5D58EDB46, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Register_Handle_8B3B76DF_CB99_4721_919B_6F7BE0A11C57, "", ".");
 
 
-int Berry_Softwares_Class_Open_BA033854_EBB0_40F9_B6A5_DD42AFB360B4(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0, ::Xila_Namespace::Accounts_Types::User_Class* A_1 = __null)
+int Berry_Softwares_Class_Open_35E2A420_F5A7_4AAB_B383_0EB17046D180(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0, ::Xila_Namespace::Accounts_Types::User_Class* A_1 = __null)
 {
 return (int)Softwares.Open(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Open_BA033854_EBB0_40F9_B6A5_DD42AFB360B4, "i", ".[.");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Open_35E2A420_F5A7_4AAB_B383_0EB17046D180, "i", ".[.");
 
 
-int Berry_Softwares_Class_Open_EC7813F3_9D5C_4E0A_9286_16C603C815A1(const char* A_0, ::Xila_Namespace::Accounts_Types::User_Class* A_1 = __null)
+int Berry_Softwares_Class_Open_EF6CB123_9C28_4548_AFCC_6B6F7ED5944B(const char* A_0, ::Xila_Namespace::Accounts_Types::User_Class* A_1 = __null)
 {
 return (int)Softwares.Open(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Open_EC7813F3_9D5C_4E0A_9286_16C603C815A1, "i", "s[.");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Open_EF6CB123_9C28_4548_AFCC_6B6F7ED5944B, "i", "s[.");
 
 
-int Berry_Softwares_Class_Close_CC3FC3AA_9305_4659_83B6_174480A7124B(::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+int Berry_Softwares_Class_Close_17B54774_32B8_4453_A7DB_9F744DA1493D(::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 return (int)Softwares.Close(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Close_CC3FC3AA_9305_4659_83B6_174480A7124B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Close_17B54774_32B8_4453_A7DB_9F744DA1493D, "i", ".");
 
 
-int Berry_Softwares_Class_Kill_19D2B11F_2075_42CA_9C6C_4720BF5D5C6B(::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+int Berry_Softwares_Class_Kill_261BD8B1_97AA_4FD4_85E7_77DB6AAD7426(::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 return (int)Softwares.Kill(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Kill_19D2B11F_2075_42CA_9C6C_4720BF5D5C6B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Kill_261BD8B1_97AA_4FD4_85E7_77DB6AAD7426, "i", ".");
 
 
-const void* Berry_Softwares_Class_Find_8FCB3632_B998_4D48_B0CF_DDE2A17CBA84(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
+const void* Berry_Softwares_Class_Find_0C4D99C3_0E73_4FD9_A407_D397F74BBD64(::Xila_Namespace::Softwares_Types::Software_Handle_Class* A_0)
 {
 return Softwares.Find(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Find_8FCB3632_B998_4D48_B0CF_DDE2A17CBA84, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Find_0C4D99C3_0E73_4FD9_A407_D397F74BBD64, "c", ".");
 
 
-const void* Berry_Softwares_Class_Find_Handle_84079706_8F46_4B23_A257_98CD02F76A2F(const char* A_0)
+const void* Berry_Softwares_Class_Find_Handle_1B103B68_A71A_4039_8487_1EE002D5ABED(const char* A_0)
 {
 return Softwares.Find_Handle(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Find_Handle_84079706_8F46_4B23_A257_98CD02F76A2F, "c", "s");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Find_Handle_1B103B68_A71A_4039_8487_1EE002D5ABED, "c", "s");
 
 
-void Berry_Softwares_Class_Close_User_Softwares_4ED7C5F7_0FF9_4516_A071_A8D9EE03E6B2(::Xila_Namespace::Accounts_Types::User_Class* A_0)
+void Berry_Softwares_Class_Close_User_Softwares_45B77752_FD8C_4D0F_918A_27E8EF2AA206(::Xila_Namespace::Accounts_Types::User_Class* A_0)
 {
 return Softwares.Close_User_Softwares(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Close_User_Softwares_4ED7C5F7_0FF9_4516_A071_A8D9EE03E6B2, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Close_User_Softwares_45B77752_FD8C_4D0F_918A_27E8EF2AA206, "", ".");
 
 
-void Berry_Softwares_Class_Kill_User_Softwares_B40F0B84_9F88_439E_9B30_31D1AF1B97A4(::Xila_Namespace::Accounts_Types::User_Class* A_0)
+void Berry_Softwares_Class_Kill_User_Softwares_8EA53A7E_FB42_47F7_AB08_8A20C7117FA3(::Xila_Namespace::Accounts_Types::User_Class* A_0)
 {
 return Softwares.Kill_User_Softwares(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Kill_User_Softwares_B40F0B84_9F88_439E_9B30_31D1AF1B97A4, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Kill_User_Softwares_8EA53A7E_FB42_47F7_AB08_8A20C7117FA3, "", ".");
 
 
-void Berry_Softwares_Class_Send_Instruction_User_Softwares_FFBA8108_BA6B_454B_B5FA_6043469B7853(::Xila_Namespace::Accounts_Types::User_Class* A_0, ::Xila_Namespace::Instruction_Class* A_1)
+void Berry_Softwares_Class_Send_Instruction_User_Softwares_CA59DC77_B421_40C7_B6C5_131987C03950(::Xila_Namespace::Accounts_Types::User_Class* A_0, ::Xila_Namespace::Instruction_Class* A_1)
 {
 return Softwares.Send_Instruction_User_Softwares(A_0, *A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Send_Instruction_User_Softwares_FFBA8108_BA6B_454B_B5FA_6043469B7853, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Send_Instruction_User_Softwares_CA59DC77_B421_40C7_B6C5_131987C03950, "", "..");
 
 
-void Berry_Softwares_Class_Send_Instruction_Softwares_C916C839_1A19_4CBE_BC3C_03E0660786AC(::Xila_Namespace::Instruction_Class* A_0)
+void Berry_Softwares_Class_Send_Instruction_Softwares_CE5B0C42_0B6A_4A63_8A6A_4C0ED2570519(::Xila_Namespace::Instruction_Class* A_0)
 {
 return Softwares.Send_Instruction_Softwares(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Send_Instruction_Softwares_C916C839_1A19_4CBE_BC3C_03E0660786AC, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Send_Instruction_Softwares_CE5B0C42_0B6A_4A63_8A6A_4C0ED2570519, "", ".");
 
 
-const void* Berry_Softwares_Class_Get_AFE9FC2D_EAD8_466F_8BFE_4DBB8F4170CA(int A_0)
+const void* Berry_Softwares_Class_Get_DF92C9BE_A5E0_4157_982B_754D5E281D04(int A_0)
 {
 return Softwares.Get((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_AFE9FC2D_EAD8_466F_8BFE_4DBB8F4170CA, "c", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_DF92C9BE_A5E0_4157_982B_754D5E281D04, "c", "i");
 
 
-const void* Berry_Softwares_Class_Get_User_Softwares_ED4FB496_0F7A_45BE_A3F5_9B71D9C0D53D(::Xila_Namespace::Accounts_Types::User_Class* A_0, int A_1)
+const void* Berry_Softwares_Class_Get_User_Softwares_4FC206B9_5674_447E_80B4_8C5F5ADB4404(::Xila_Namespace::Accounts_Types::User_Class* A_0, int A_1)
 {
 return Softwares.Get_User_Softwares(A_0, (unsigned char)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_User_Softwares_ED4FB496_0F7A_45BE_A3F5_9B71D9C0D53D, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_User_Softwares_4FC206B9_5674_447E_80B4_8C5F5ADB4404, "c", ".i");
 
 
-const void* Berry_Softwares_Class_Get_Handle_B86EF136_2EB7_42E3_925F_D4D941F649DF(int A_0)
+const void* Berry_Softwares_Class_Get_Handle_E4ED3233_27E3_4F2A_919B_A873EBACAF04(int A_0)
 {
 return Softwares.Get_Handle((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Handle_B86EF136_2EB7_42E3_925F_D4D941F649DF, "c", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Handle_E4ED3233_27E3_4F2A_919B_A873EBACAF04, "c", "i");
 
 
-int Berry_Softwares_Class_Get_Count_F4E229FF_37B6_4268_9673_A1AD2561DA20()
+int Berry_Softwares_Class_Get_Count_8D09B1DA_4FB6_434A_B01D_C9D5A83B6307()
 {
 return (int)Softwares.Get_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Count_F4E229FF_37B6_4268_9673_A1AD2561DA20, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Count_8D09B1DA_4FB6_434A_B01D_C9D5A83B6307, "i", "");
 
 
-int Berry_Softwares_Class_Get_Handle_Count_CF595DF9_1E46_409B_9A0E_762C66E0E56B()
+int Berry_Softwares_Class_Get_Handle_Count_BA5E2ED2_BF14_449F_A40A_DEC278FBCC9C()
 {
 return (int)Softwares.Get_Handle_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Handle_Count_CF595DF9_1E46_409B_9A0E_762C66E0E56B, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Handle_Count_BA5E2ED2_BF14_449F_A40A_DEC278FBCC9C, "i", "");
 
 
-int Berry_Softwares_Class_Get_User_Softwares_Count_B7943FD6_5610_424C_9145_E4818CEB9F00(::Xila_Namespace::Accounts_Types::User_Class* A_0)
+int Berry_Softwares_Class_Get_User_Softwares_Count_3A2CEC0B_EB8B_4769_BF1A_7F36BC448859(::Xila_Namespace::Accounts_Types::User_Class* A_0)
 {
 return (int)Softwares.Get_User_Softwares_Count(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_User_Softwares_Count_B7943FD6_5610_424C_9145_E4818CEB9F00, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_User_Softwares_Count_3A2CEC0B_EB8B_4769_BF1A_7F36BC448859, "i", ".");
 
 
 void* Berry_Softwares_Class_Get_Pointer()
@@ -267,25 +246,25 @@ BE_FUNC_CTYPE_DECLARE(Berry_Softwares_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Softwares (scope:global)
 {
-	Start, ctype_func(Berry_Softwares_Class_Start_79A9CB66_1E22_43E5_BF00_32D03236D4D8)
-	Stop, ctype_func(Berry_Softwares_Class_Stop_5F4B5D4D_60B5_440F_9A41_82513B19C44E)
-	Register_Handle, ctype_func(Berry_Softwares_Class_Register_Handle_24FADBD3_3841_48C7_A98C_34E5D58EDB46)
-	Open, ctype_func(Berry_Softwares_Class_Open_BA033854_EBB0_40F9_B6A5_DD42AFB360B4)
-	Open, ctype_func(Berry_Softwares_Class_Open_EC7813F3_9D5C_4E0A_9286_16C603C815A1)
-	Close, ctype_func(Berry_Softwares_Class_Close_CC3FC3AA_9305_4659_83B6_174480A7124B)
-	Kill, ctype_func(Berry_Softwares_Class_Kill_19D2B11F_2075_42CA_9C6C_4720BF5D5C6B)
-	Find, ctype_func(Berry_Softwares_Class_Find_8FCB3632_B998_4D48_B0CF_DDE2A17CBA84)
-	Find_Handle, ctype_func(Berry_Softwares_Class_Find_Handle_84079706_8F46_4B23_A257_98CD02F76A2F)
-	Close_User_Softwares, ctype_func(Berry_Softwares_Class_Close_User_Softwares_4ED7C5F7_0FF9_4516_A071_A8D9EE03E6B2)
-	Kill_User_Softwares, ctype_func(Berry_Softwares_Class_Kill_User_Softwares_B40F0B84_9F88_439E_9B30_31D1AF1B97A4)
-	Send_Instruction_User_Softwares, ctype_func(Berry_Softwares_Class_Send_Instruction_User_Softwares_FFBA8108_BA6B_454B_B5FA_6043469B7853)
-	Send_Instruction_Softwares, ctype_func(Berry_Softwares_Class_Send_Instruction_Softwares_C916C839_1A19_4CBE_BC3C_03E0660786AC)
-	Get, ctype_func(Berry_Softwares_Class_Get_AFE9FC2D_EAD8_466F_8BFE_4DBB8F4170CA)
-	Get_User_Softwares, ctype_func(Berry_Softwares_Class_Get_User_Softwares_ED4FB496_0F7A_45BE_A3F5_9B71D9C0D53D)
-	Get_Handle, ctype_func(Berry_Softwares_Class_Get_Handle_B86EF136_2EB7_42E3_925F_D4D941F649DF)
-	Get_Count, ctype_func(Berry_Softwares_Class_Get_Count_F4E229FF_37B6_4268_9673_A1AD2561DA20)
-	Get_Handle_Count, ctype_func(Berry_Softwares_Class_Get_Handle_Count_CF595DF9_1E46_409B_9A0E_762C66E0E56B)
-	Get_User_Softwares_Count, ctype_func(Berry_Softwares_Class_Get_User_Softwares_Count_B7943FD6_5610_424C_9145_E4818CEB9F00)
+	Start, ctype_func(Berry_Softwares_Class_Start_1CD93EF1_250D_42CE_ABB5_6C3FFFC686BB)
+	Stop, ctype_func(Berry_Softwares_Class_Stop_DBFA9A96_0E40_4CD4_A32A_FD7020523200)
+	Register_Handle, ctype_func(Berry_Softwares_Class_Register_Handle_8B3B76DF_CB99_4721_919B_6F7BE0A11C57)
+	Open, ctype_func(Berry_Softwares_Class_Open_35E2A420_F5A7_4AAB_B383_0EB17046D180)
+	Open, ctype_func(Berry_Softwares_Class_Open_EF6CB123_9C28_4548_AFCC_6B6F7ED5944B)
+	Close, ctype_func(Berry_Softwares_Class_Close_17B54774_32B8_4453_A7DB_9F744DA1493D)
+	Kill, ctype_func(Berry_Softwares_Class_Kill_261BD8B1_97AA_4FD4_85E7_77DB6AAD7426)
+	Find, ctype_func(Berry_Softwares_Class_Find_0C4D99C3_0E73_4FD9_A407_D397F74BBD64)
+	Find_Handle, ctype_func(Berry_Softwares_Class_Find_Handle_1B103B68_A71A_4039_8487_1EE002D5ABED)
+	Close_User_Softwares, ctype_func(Berry_Softwares_Class_Close_User_Softwares_45B77752_FD8C_4D0F_918A_27E8EF2AA206)
+	Kill_User_Softwares, ctype_func(Berry_Softwares_Class_Kill_User_Softwares_8EA53A7E_FB42_47F7_AB08_8A20C7117FA3)
+	Send_Instruction_User_Softwares, ctype_func(Berry_Softwares_Class_Send_Instruction_User_Softwares_CA59DC77_B421_40C7_B6C5_131987C03950)
+	Send_Instruction_Softwares, ctype_func(Berry_Softwares_Class_Send_Instruction_Softwares_CE5B0C42_0B6A_4A63_8A6A_4C0ED2570519)
+	Get, ctype_func(Berry_Softwares_Class_Get_DF92C9BE_A5E0_4157_982B_754D5E281D04)
+	Get_User_Softwares, ctype_func(Berry_Softwares_Class_Get_User_Softwares_4FC206B9_5674_447E_80B4_8C5F5ADB4404)
+	Get_Handle, ctype_func(Berry_Softwares_Class_Get_Handle_E4ED3233_27E3_4F2A_919B_A873EBACAF04)
+	Get_Count, ctype_func(Berry_Softwares_Class_Get_Count_8D09B1DA_4FB6_434A_B01D_C9D5A83B6307)
+	Get_Handle_Count, ctype_func(Berry_Softwares_Class_Get_Handle_Count_BA5E2ED2_BF14_449F_A40A_DEC278FBCC9C)
+	Get_User_Softwares_Count, ctype_func(Berry_Softwares_Class_Get_User_Softwares_Count_3A2CEC0B_EB8B_4769_BF1A_7F36BC448859)
 	Get_Pointer, ctype_func(Berry_Softwares_Class_Get_Pointer)
 
 	Software_Type, class(Berry_Software_Type)
