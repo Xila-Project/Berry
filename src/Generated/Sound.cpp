@@ -11,93 +11,93 @@ using namespace Sound_Types;
 // - Functions
 
 // - - Constructors
-void * Berry_Configuration_Class_Initialize_1EECBB20_F5C0_413A_BCDC_233CA47B215D(bvm* V, ::audio_tools::AudioInfo* A_0)
+void * Berry_Configuration_Class_Initialize_C4771F0E_7376_4F9C_BFDF_F8CCB47A49DF(bvm* V, ::audio_tools::AudioInfo* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Configuration_Class));
 return new (Pointer) Sound_Types::Configuration_Class(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_1EECBB20_F5C0_413A_BCDC_233CA47B215D, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_C4771F0E_7376_4F9C_BFDF_F8CCB47A49DF, "+_p", "@.");
 
-void * Berry_Configuration_Class_Initialize_C2212B05_59D0_4D06_9E51_DA15BD757AFA(bvm* V, AudioInfo* A_0)
+void * Berry_Configuration_Class_Initialize_5AA890FE_634D_4600_9ECB_966E5BD919C1(bvm* V, AudioInfo* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Configuration_Class));
 return new (Pointer) Sound_Types::Configuration_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_C2212B05_59D0_4D06_9E51_DA15BD757AFA, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_5AA890FE_634D_4600_9ECB_966E5BD919C1, "+_p", "@.");
 
-void * Berry_Configuration_Class_Initialize_E31ADF48_4510_4F21_B2B2_3717B0CEFA02(bvm* V, int A_0 = -1, int A_1 = -1, int A_2 = -1)
+void * Berry_Configuration_Class_Initialize_27627F23_1D2B_4479_971A_45DA4F190F2C(bvm* V, int A_0 = -1, int A_1 = -1, int A_2 = -1)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Configuration_Class));
 return new (Pointer) Sound_Types::Configuration_Class((int)A_0, (int)A_1, (int)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_E31ADF48_4510_4F21_B2B2_3717B0CEFA02, "+_p", "@[iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Initialize_27627F23_1D2B_4479_971A_45DA4F190F2C, "+_p", "@[iii");
 
 
 // - - Destructors
-void Berry_Configuration_Class_Deinitialize_6035A0C6_8DDA_40A0_A708_AE378FE57D38(bvm* V, Xila_Namespace::Sound_Types::Configuration_Class* I)
+void Berry_Configuration_Class_Deinitialize_F8D8B33B_075C_441E_A4B2_8A945E3B2EC9(bvm* V, Xila_Namespace::Sound_Types::Configuration_Class* I)
 {
 if (!I) { return; }
 I->~Configuration_Class();
 be_free(V, I, sizeof(Sound_Types::Configuration_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Deinitialize_6035A0C6_8DDA_40A0_A708_AE378FE57D38, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Deinitialize_F8D8B33B_075C_441E_A4B2_8A945E3B2EC9, "", "@.");
 
 
 // - - Functions
-int Berry_Configuration_Class_Get_Sample_Rate_216A92FB_DAAD_41A3_AC25_2B185D2C8CD8(Xila_Namespace::Sound_Types::Configuration_Class* I)
+int Berry_Configuration_Class_Get_Sample_Rate_B7A52A6A_AA4F_49A0_865B_8B437A3DDD3C(Xila_Namespace::Sound_Types::Configuration_Class* I)
 {
 return (int)I->Get_Sample_Rate(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Sample_Rate_216A92FB_DAAD_41A3_AC25_2B185D2C8CD8, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Sample_Rate_B7A52A6A_AA4F_49A0_865B_8B437A3DDD3C, "i", ".");
 
-int Berry_Configuration_Class_Get_Channel_Count_9A719E4C_E47C_4EB0_AB30_AE749F520759(Xila_Namespace::Sound_Types::Configuration_Class* I)
+int Berry_Configuration_Class_Get_Channel_Count_BAA54565_638D_4E72_90B4_111558DB9881(Xila_Namespace::Sound_Types::Configuration_Class* I)
 {
 return (int)I->Get_Channel_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Channel_Count_9A719E4C_E47C_4EB0_AB30_AE749F520759, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Channel_Count_BAA54565_638D_4E72_90B4_111558DB9881, "i", ".");
 
-int Berry_Configuration_Class_Get_Bits_Per_Sample_5D708B48_04B6_43F0_AFF0_F32DEA44FD26(Xila_Namespace::Sound_Types::Configuration_Class* I)
+int Berry_Configuration_Class_Get_Bits_Per_Sample_4AA9CE2D_1509_4418_A038_3EC1C758CCD6(Xila_Namespace::Sound_Types::Configuration_Class* I)
 {
 return (int)I->Get_Bits_Per_Sample(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Bits_Per_Sample_5D708B48_04B6_43F0_AFF0_F32DEA44FD26, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Get_Bits_Per_Sample_4AA9CE2D_1509_4418_A038_3EC1C758CCD6, "i", ".");
 
-void Berry_Configuration_Class_Set_Sample_Rate_33764F5D_E3BB_46CC_B45B_317096EC91BA(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
+void Berry_Configuration_Class_Set_Sample_Rate_8BD4936B_118D_48F6_A677_EA2906519792(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
 {
 return I->Set_Sample_Rate((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Sample_Rate_33764F5D_E3BB_46CC_B45B_317096EC91BA, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Sample_Rate_8BD4936B_118D_48F6_A677_EA2906519792, "", ".i");
 
-void Berry_Configuration_Class_Set_Channel_Count_67252603_3D04_40A5_A347_4FBF2CC2E6B8(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
+void Berry_Configuration_Class_Set_Channel_Count_9A95558D_E900_443E_999B_5ABD9A0025E8(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
 {
 return I->Set_Channel_Count((signed char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Channel_Count_67252603_3D04_40A5_A347_4FBF2CC2E6B8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Channel_Count_9A95558D_E900_443E_999B_5ABD9A0025E8, "", ".i");
 
-void Berry_Configuration_Class_Set_Bits_Per_Sample_6DF93316_7B7A_4633_8BC0_0CB107CF1238(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
+void Berry_Configuration_Class_Set_Bits_Per_Sample_8DB89FEF_9634_4027_931B_E2E21A66A058(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0)
 {
 return I->Set_Bits_Per_Sample((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Bits_Per_Sample_6DF93316_7B7A_4633_8BC0_0CB107CF1238, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_Bits_Per_Sample_8DB89FEF_9634_4027_931B_E2E21A66A058, "", ".i");
 
-void Berry_Configuration_Class_Set_45781474_4651_47EF_A3CE_9C8E086BFC38(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0 = -1, int A_1 = -1, int A_2 = -1)
+void Berry_Configuration_Class_Set_D8FC70D1_71FA_47E6_9DCD_9E49550AA154(Xila_Namespace::Sound_Types::Configuration_Class* I, int A_0 = -1, int A_1 = -1, int A_2 = -1)
 {
 return I->Set((int)A_0, (int)A_1, (int)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_45781474_4651_47EF_A3CE_9C8E086BFC38, "", ".[iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Set_D8FC70D1_71FA_47E6_9DCD_9E49550AA154, "", ".[iii");
 
 // - - Operators
-bool Berry_Configuration_Class_Operator_A264477F_041B_40C2_A75B_4F45EC94DB09(Xila_Namespace::Sound_Types::Configuration_Class* I, Xila_Namespace::Sound_Types::Configuration_Class* A_0)
+bool Berry_Configuration_Class_Operator_BB74E7B3_4F37_4352_9FD0_AE73818CD88D(Xila_Namespace::Sound_Types::Configuration_Class* I, Xila_Namespace::Sound_Types::Configuration_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Operator_A264477F_041B_40C2_A75B_4F45EC94DB09, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Operator_BB74E7B3_4F37_4352_9FD0_AE73818CD88D, "b", "..")
 
-bool Berry_Configuration_Class_Operator_5AD9E2FE_569C_4243_AF6D_1FA6364751A7(Xila_Namespace::Sound_Types::Configuration_Class* I, Xila_Namespace::Sound_Types::Configuration_Class* A_0)
+bool Berry_Configuration_Class_Operator_94275D30_7C50_47D6_A42B_92F1F606DD95(Xila_Namespace::Sound_Types::Configuration_Class* I, Xila_Namespace::Sound_Types::Configuration_Class* A_0)
 {
 return *I != *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Operator_5AD9E2FE_569C_4243_AF6D_1FA6364751A7, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Operator_94275D30_7C50_47D6_A42B_92F1F606DD95, "b", "..")
 
 
 // - Berry declaration
@@ -105,19 +105,19 @@ BE_FUNC_CTYPE_DECLARE(Berry_Configuration_Class_Operator_5AD9E2FE_569C_4243_AF6D
 class Berry_Configuration_Type(scope:global, name:Configuration_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Configuration_Class_Initialize_1EECBB20_F5C0_413A_BCDC_233CA47B215D)
-	init, ctype_func(Berry_Configuration_Class_Initialize_C2212B05_59D0_4D06_9E51_DA15BD757AFA)
-	init, ctype_func(Berry_Configuration_Class_Initialize_E31ADF48_4510_4F21_B2B2_3717B0CEFA02)
-	deinit, ctype_func(Berry_Configuration_Class_Deinitialize_6035A0C6_8DDA_40A0_A708_AE378FE57D38)
-	Get_Sample_Rate, ctype_func(Berry_Configuration_Class_Get_Sample_Rate_216A92FB_DAAD_41A3_AC25_2B185D2C8CD8)
-	Get_Channel_Count, ctype_func(Berry_Configuration_Class_Get_Channel_Count_9A719E4C_E47C_4EB0_AB30_AE749F520759)
-	Get_Bits_Per_Sample, ctype_func(Berry_Configuration_Class_Get_Bits_Per_Sample_5D708B48_04B6_43F0_AFF0_F32DEA44FD26)
-	Set_Sample_Rate, ctype_func(Berry_Configuration_Class_Set_Sample_Rate_33764F5D_E3BB_46CC_B45B_317096EC91BA)
-	Set_Channel_Count, ctype_func(Berry_Configuration_Class_Set_Channel_Count_67252603_3D04_40A5_A347_4FBF2CC2E6B8)
-	Set_Bits_Per_Sample, ctype_func(Berry_Configuration_Class_Set_Bits_Per_Sample_6DF93316_7B7A_4633_8BC0_0CB107CF1238)
-	Set, ctype_func(Berry_Configuration_Class_Set_45781474_4651_47EF_A3CE_9C8E086BFC38)
-	==, ctype_func(Berry_Configuration_Class_Operator_A264477F_041B_40C2_A75B_4F45EC94DB09)
-	!=, ctype_func(Berry_Configuration_Class_Operator_5AD9E2FE_569C_4243_AF6D_1FA6364751A7)
+	init, ctype_func(Berry_Configuration_Class_Initialize_C4771F0E_7376_4F9C_BFDF_F8CCB47A49DF)
+	init, ctype_func(Berry_Configuration_Class_Initialize_5AA890FE_634D_4600_9ECB_966E5BD919C1)
+	init, ctype_func(Berry_Configuration_Class_Initialize_27627F23_1D2B_4479_971A_45DA4F190F2C)
+	deinit, ctype_func(Berry_Configuration_Class_Deinitialize_F8D8B33B_075C_441E_A4B2_8A945E3B2EC9)
+	Get_Sample_Rate, ctype_func(Berry_Configuration_Class_Get_Sample_Rate_B7A52A6A_AA4F_49A0_865B_8B437A3DDD3C)
+	Get_Channel_Count, ctype_func(Berry_Configuration_Class_Get_Channel_Count_BAA54565_638D_4E72_90B4_111558DB9881)
+	Get_Bits_Per_Sample, ctype_func(Berry_Configuration_Class_Get_Bits_Per_Sample_4AA9CE2D_1509_4418_A038_3EC1C758CCD6)
+	Set_Sample_Rate, ctype_func(Berry_Configuration_Class_Set_Sample_Rate_8BD4936B_118D_48F6_A677_EA2906519792)
+	Set_Channel_Count, ctype_func(Berry_Configuration_Class_Set_Channel_Count_9A95558D_E900_443E_999B_5ABD9A0025E8)
+	Set_Bits_Per_Sample, ctype_func(Berry_Configuration_Class_Set_Bits_Per_Sample_8DB89FEF_9634_4027_931B_E2E21A66A058)
+	Set, ctype_func(Berry_Configuration_Class_Set_D8FC70D1_71FA_47E6_9DCD_9E49550AA154)
+	==, ctype_func(Berry_Configuration_Class_Operator_BB74E7B3_4F37_4352_9FD0_AE73818CD88D)
+	!=, ctype_func(Berry_Configuration_Class_Operator_94275D30_7C50_47D6_A42B_92F1F606DD95)
 
 }
 @const_object_info_end */
@@ -130,55 +130,55 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Volume_Configuration_Class_Initialize_AE3ACE93_784C_4665_9309_3D2FEA981DCE(bvm* V, ::audio_tools::VolumeStreamConfig* A_0)
+void * Berry_Volume_Configuration_Class_Initialize_93F4D932_1F2E_48AF_965F_15DD04409B0B(bvm* V, ::audio_tools::VolumeStreamConfig* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Volume_Configuration_Class));
 return new (Pointer) Sound_Types::Volume_Configuration_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Initialize_AE3ACE93_784C_4665_9309_3D2FEA981DCE, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Initialize_93F4D932_1F2E_48AF_965F_15DD04409B0B, "+_p", "@.");
 
-void * Berry_Volume_Configuration_Class_Initialize_561202FF_1560_4EF8_ACE2_56444C20AC5D(bvm* V)
+void * Berry_Volume_Configuration_Class_Initialize_6601C78C_8813_4EB6_8720_2CD958930779(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Volume_Configuration_Class));
 return new (Pointer) Sound_Types::Volume_Configuration_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Initialize_561202FF_1560_4EF8_ACE2_56444C20AC5D, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Initialize_6601C78C_8813_4EB6_8720_2CD958930779, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Volume_Configuration_Class_Deinitialize_88A045CC_EB5F_414A_AEF3_4495B6B1F62E(bvm* V, Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
+void Berry_Volume_Configuration_Class_Deinitialize_725BDB4F_8391_4B3A_96C4_BEF67B16B878(bvm* V, Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
 {
 if (!I) { return; }
 I->~Volume_Configuration_Class();
 be_free(V, I, sizeof(Sound_Types::Volume_Configuration_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Deinitialize_88A045CC_EB5F_414A_AEF3_4495B6B1F62E, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Deinitialize_725BDB4F_8391_4B3A_96C4_BEF67B16B878, "", "@.");
 
 
 // - - Functions
-bool Berry_Volume_Configuration_Class_Get_Allow_Boost_4CB00EC0_7797_4D32_A8A9_A1724AA6FE57(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
+bool Berry_Volume_Configuration_Class_Get_Allow_Boost_C4482870_056E_432A_9390_692AC3BD7798(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
 {
 return I->Get_Allow_Boost(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Get_Allow_Boost_4CB00EC0_7797_4D32_A8A9_A1724AA6FE57, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Get_Allow_Boost_C4482870_056E_432A_9390_692AC3BD7798, "b", ".");
 
-float Berry_Volume_Configuration_Class_Get_Volume_FDDCD9BC_F721_4AA3_8974_FA5E7FF10969(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
+float Berry_Volume_Configuration_Class_Get_Volume_68A7BBCD_A53F_4529_9B24_EADCB357618F(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I)
 {
 return (float)I->Get_Volume(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Get_Volume_FDDCD9BC_F721_4AA3_8974_FA5E7FF10969, "f", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Get_Volume_68A7BBCD_A53F_4529_9B24_EADCB357618F, "f", ".");
 
-void Berry_Volume_Configuration_Class_Set_Allow_Boost_609E13F7_C7A7_4995_8CB9_9439EA2C5DF3(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I, bool A_0)
+void Berry_Volume_Configuration_Class_Set_Allow_Boost_AD75F64E_96A3_4F13_9696_0DDC8824DFD8(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I, bool A_0)
 {
 return I->Set_Allow_Boost(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Set_Allow_Boost_609E13F7_C7A7_4995_8CB9_9439EA2C5DF3, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Set_Allow_Boost_AD75F64E_96A3_4F13_9696_0DDC8824DFD8, "", ".b");
 
-void Berry_Volume_Configuration_Class_Set_Volume_A6BCC9C2_3468_45C0_801C_927DBF08AF6B(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I, float A_0)
+void Berry_Volume_Configuration_Class_Set_Volume_49A12C74_CE66_438A_B148_D0C04C26832E(Xila_Namespace::Sound_Types::Volume_Configuration_Class* I, float A_0)
 {
 return I->Set_Volume((float)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Set_Volume_A6BCC9C2_3468_45C0_801C_927DBF08AF6B, "", ".f");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Set_Volume_49A12C74_CE66_438A_B148_D0C04C26832E, "", ".f");
 
 // - - Operators
 
@@ -187,13 +187,13 @@ BE_FUNC_CTYPE_DECLARE(Berry_Volume_Configuration_Class_Set_Volume_A6BCC9C2_3468_
 class Berry_Volume_Configuration_Type(scope:global, name:Volume_Configuration_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Volume_Configuration_Class_Initialize_AE3ACE93_784C_4665_9309_3D2FEA981DCE)
-	init, ctype_func(Berry_Volume_Configuration_Class_Initialize_561202FF_1560_4EF8_ACE2_56444C20AC5D)
-	deinit, ctype_func(Berry_Volume_Configuration_Class_Deinitialize_88A045CC_EB5F_414A_AEF3_4495B6B1F62E)
-	Get_Allow_Boost, ctype_func(Berry_Volume_Configuration_Class_Get_Allow_Boost_4CB00EC0_7797_4D32_A8A9_A1724AA6FE57)
-	Get_Volume, ctype_func(Berry_Volume_Configuration_Class_Get_Volume_FDDCD9BC_F721_4AA3_8974_FA5E7FF10969)
-	Set_Allow_Boost, ctype_func(Berry_Volume_Configuration_Class_Set_Allow_Boost_609E13F7_C7A7_4995_8CB9_9439EA2C5DF3)
-	Set_Volume, ctype_func(Berry_Volume_Configuration_Class_Set_Volume_A6BCC9C2_3468_45C0_801C_927DBF08AF6B)
+	init, ctype_func(Berry_Volume_Configuration_Class_Initialize_93F4D932_1F2E_48AF_965F_15DD04409B0B)
+	init, ctype_func(Berry_Volume_Configuration_Class_Initialize_6601C78C_8813_4EB6_8720_2CD958930779)
+	deinit, ctype_func(Berry_Volume_Configuration_Class_Deinitialize_725BDB4F_8391_4B3A_96C4_BEF67B16B878)
+	Get_Allow_Boost, ctype_func(Berry_Volume_Configuration_Class_Get_Allow_Boost_C4482870_056E_432A_9390_692AC3BD7798)
+	Get_Volume, ctype_func(Berry_Volume_Configuration_Class_Get_Volume_68A7BBCD_A53F_4529_9B24_EADCB357618F)
+	Set_Allow_Boost, ctype_func(Berry_Volume_Configuration_Class_Set_Allow_Boost_AD75F64E_96A3_4F13_9696_0DDC8824DFD8)
+	Set_Volume, ctype_func(Berry_Volume_Configuration_Class_Set_Volume_49A12C74_CE66_438A_B148_D0C04C26832E)
 
 }
 @const_object_info_end */
@@ -206,56 +206,56 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Volume_Class_Initialize_DA0C7A1D_254D_4174_BABB_E9B0F5FA00C7(bvm* V, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
+void * Berry_Volume_Class_Initialize_B6ACCD89_545F_46DE_B601_EE3496A19A1C(bvm* V, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::Volume_Class));
 return new (Pointer) Sound_Types::Volume_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Initialize_DA0C7A1D_254D_4174_BABB_E9B0F5FA00C7, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Initialize_B6ACCD89_545F_46DE_B601_EE3496A19A1C, "+_p", "@.");
 
 
 // - - Destructors
-void Berry_Volume_Class_Deinitialize_89C41D84_17BA_4508_B1BB_3DD5E6FA57D1(bvm* V, Xila_Namespace::Sound_Types::Volume_Class* I)
+void Berry_Volume_Class_Deinitialize_B9FE2887_8D9B_4D9E_9E12_6EDD17AF2824(bvm* V, Xila_Namespace::Sound_Types::Volume_Class* I)
 {
 if (!I) { return; }
 I->~Volume_Class();
 be_free(V, I, sizeof(Sound_Types::Volume_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Deinitialize_89C41D84_17BA_4508_B1BB_3DD5E6FA57D1, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Deinitialize_B9FE2887_8D9B_4D9E_9E12_6EDD17AF2824, "", "@.");
 
 
 // - - Functions
-int Berry_Volume_Class_Begin_AA3E868B_BC3A_4C87_888C_99D0F84112E6(Xila_Namespace::Sound_Types::Volume_Class* I, Volume_Configuration_Class* A_0)
+int Berry_Volume_Class_Begin_B9E611DF_35AF_49BF_A37D_86E6AEE060B3(Xila_Namespace::Sound_Types::Volume_Class* I, Volume_Configuration_Class* A_0)
 {
 return (int)I->Begin(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Begin_AA3E868B_BC3A_4C87_888C_99D0F84112E6, "i", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Begin_B9E611DF_35AF_49BF_A37D_86E6AEE060B3, "i", "..");
 
-int Berry_Volume_Class_Begin_738D9DAA_C2A8_44A7_AF64_11BFF56A3B0B(Xila_Namespace::Sound_Types::Volume_Class* I, Configuration_Class* A_0)
+int Berry_Volume_Class_Begin_956BEE1C_38F3_4576_A937_46B1E5E0744A(Xila_Namespace::Sound_Types::Volume_Class* I, Configuration_Class* A_0)
 {
 return (int)I->Begin(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Begin_738D9DAA_C2A8_44A7_AF64_11BFF56A3B0B, "i", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Begin_956BEE1C_38F3_4576_A937_46B1E5E0744A, "i", "..");
 
-void * Berry_Volume_Class_Get_Default_Configuration_E444C993_7ACB_4287_9982_EC923DDECCC7(bvm* V, Xila_Namespace::Sound_Types::Volume_Class* I)
+void * Berry_Volume_Class_Get_Default_Configuration_7CBEE0BE_7F49_4948_891F_5418167BC311(bvm* V, Xila_Namespace::Sound_Types::Volume_Class* I)
 {
 Xila_Namespace::Sound_Types::Volume_Configuration_Class* R = (Xila_Namespace::Sound_Types::Volume_Configuration_Class*) be_malloc(V, sizeof(Xila_Namespace::Sound_Types::Volume_Configuration_Class));
  *R = I->Get_Default_Configuration(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Get_Default_Configuration_E444C993_7ACB_4287_9982_EC923DDECCC7, "Sound.Volume_Configuration_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Get_Default_Configuration_7CBEE0BE_7F49_4948_891F_5418167BC311, "Sound.Volume_Configuration_Type", "@.");
 
-float Berry_Volume_Class_Get_Volume_FC394608_89C1_4497_8D5D_313589D5AAB0(Xila_Namespace::Sound_Types::Volume_Class* I, int A_0 = -1)
+float Berry_Volume_Class_Get_Volume_A2584887_A626_4082_A9C1_7F39E8D34073(Xila_Namespace::Sound_Types::Volume_Class* I, int A_0 = -1)
 {
 return (float)I->Get_Volume((signed char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Get_Volume_FC394608_89C1_4497_8D5D_313589D5AAB0, "f", ".[i");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Get_Volume_A2584887_A626_4082_A9C1_7F39E8D34073, "f", ".[i");
 
-void Berry_Volume_Class_Set_Volume_02DC0D76_D6E3_418D_B64D_F487DF49A9D8(Xila_Namespace::Sound_Types::Volume_Class* I, float A_0, int A_1 = -1)
+void Berry_Volume_Class_Set_Volume_6AB2625A_3EDD_46EF_8384_E86905857759(Xila_Namespace::Sound_Types::Volume_Class* I, float A_0, int A_1 = -1)
 {
 return I->Set_Volume((float)A_0, (signed char)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Set_Volume_02DC0D76_D6E3_418D_B64D_F487DF49A9D8, "", ".f[i");
+BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Set_Volume_6AB2625A_3EDD_46EF_8384_E86905857759, "", ".f[i");
 
 // - - Operators
 
@@ -264,13 +264,13 @@ BE_FUNC_CTYPE_DECLARE(Berry_Volume_Class_Set_Volume_02DC0D76_D6E3_418D_B64D_F487
 class Berry_Volume_Type(scope:global, name:Volume_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Volume_Class_Initialize_DA0C7A1D_254D_4174_BABB_E9B0F5FA00C7)
-	deinit, ctype_func(Berry_Volume_Class_Deinitialize_89C41D84_17BA_4508_B1BB_3DD5E6FA57D1)
-	Begin, ctype_func(Berry_Volume_Class_Begin_AA3E868B_BC3A_4C87_888C_99D0F84112E6)
-	Begin, ctype_func(Berry_Volume_Class_Begin_738D9DAA_C2A8_44A7_AF64_11BFF56A3B0B)
-	Get_Default_Configuration, ctype_func(Berry_Volume_Class_Get_Default_Configuration_E444C993_7ACB_4287_9982_EC923DDECCC7)
-	Get_Volume, ctype_func(Berry_Volume_Class_Get_Volume_FC394608_89C1_4497_8D5D_313589D5AAB0)
-	Set_Volume, ctype_func(Berry_Volume_Class_Set_Volume_02DC0D76_D6E3_418D_B64D_F487DF49A9D8)
+	init, ctype_func(Berry_Volume_Class_Initialize_B6ACCD89_545F_46DE_B601_EE3496A19A1C)
+	deinit, ctype_func(Berry_Volume_Class_Deinitialize_B9FE2887_8D9B_4D9E_9E12_6EDD17AF2824)
+	Begin, ctype_func(Berry_Volume_Class_Begin_B9E611DF_35AF_49BF_A37D_86E6AEE060B3)
+	Begin, ctype_func(Berry_Volume_Class_Begin_956BEE1C_38F3_4576_A937_46B1E5E0744A)
+	Get_Default_Configuration, ctype_func(Berry_Volume_Class_Get_Default_Configuration_7CBEE0BE_7F49_4948_891F_5418167BC311)
+	Get_Volume, ctype_func(Berry_Volume_Class_Get_Volume_A2584887_A626_4082_A9C1_7F39E8D34073)
+	Set_Volume, ctype_func(Berry_Volume_Class_Set_Volume_6AB2625A_3EDD_46EF_8384_E86905857759)
 
 }
 @const_object_info_end */
@@ -283,91 +283,91 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_I2S_Configuration_Class_Initialize_8D86582E_3B7F_43EE_864C_A3466E760E63(bvm* V, ::audio_tools::I2SConfig* A_0)
+void * Berry_I2S_Configuration_Class_Initialize_C3778E72_FF03_49B9_B29A_2A637E72CBEC(bvm* V, ::audio_tools::I2SConfig* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::I2S_Configuration_Class));
 return new (Pointer) Sound_Types::I2S_Configuration_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Initialize_8D86582E_3B7F_43EE_864C_A3466E760E63, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Initialize_C3778E72_FF03_49B9_B29A_2A637E72CBEC, "+_p", "@.");
 
-void * Berry_I2S_Configuration_Class_Initialize_F8BEB072_324D_4AC4_9D4C_99A000839CC4(bvm* V, int A_0 = (int)Xila_Namespace::Sound_Types::Mode_Type::Transmit)
+void * Berry_I2S_Configuration_Class_Initialize_1CB85583_BCDE_4445_940D_4B57F077EA4D(bvm* V, int A_0 = (int)Xila_Namespace::Sound_Types::Mode_Type::Transmit)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::I2S_Configuration_Class));
 return new (Pointer) Sound_Types::I2S_Configuration_Class((Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Initialize_F8BEB072_324D_4AC4_9D4C_99A000839CC4, "+_p", "@[i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Initialize_1CB85583_BCDE_4445_940D_4B57F077EA4D, "+_p", "@[i");
 
 
 // - - Destructors
-void Berry_I2S_Configuration_Class_Deinitialize_EE02122E_3FBA_4CEC_B689_55DBEF3E6B11(bvm* V, Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+void Berry_I2S_Configuration_Class_Deinitialize_2092DF01_A0D6_4D5B_86E1_873E6E116BF1(bvm* V, Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 if (!I) { return; }
 I->~I2S_Configuration_Class();
 be_free(V, I, sizeof(Sound_Types::I2S_Configuration_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Deinitialize_EE02122E_3FBA_4CEC_B689_55DBEF3E6B11, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Deinitialize_2092DF01_A0D6_4D5B_86E1_873E6E116BF1, "", "@.");
 
 
 // - - Functions
-int Berry_I2S_Configuration_Class_Get_Mode_325C539A_8236_4421_9231_86B18E508F42(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+int Berry_I2S_Configuration_Class_Get_Mode_DB8BE4F3_5241_4304_96A2_C6B0D503EDA6(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Mode_325C539A_8236_4421_9231_86B18E508F42, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Mode_DB8BE4F3_5241_4304_96A2_C6B0D503EDA6, "i", ".");
 
-int Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3F1C49FF_7CAE_4B4D_A1CF_5C04C4C04EA5(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+int Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3D6D4FE5_30CA_46A2_A6A5_55964F20FD27(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 return (int)I->Get_Word_Select_Clock_Pin(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3F1C49FF_7CAE_4B4D_A1CF_5C04C4C04EA5, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3D6D4FE5_30CA_46A2_A6A5_55964F20FD27, "i", ".");
 
-int Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_9E8854CC_6CE5_4CFB_81AF_9BA3B451830F(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+int Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_B9E75497_6907_4731_A665_25337CD5728B(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 return (int)I->Get_Bit_Clock_Pin(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_9E8854CC_6CE5_4CFB_81AF_9BA3B451830F, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_B9E75497_6907_4731_A665_25337CD5728B, "i", ".");
 
-int Berry_I2S_Configuration_Class_Get_Data_Pin_F64E3A2F_2313_4EFC_85CF_AA8A3D096476(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+int Berry_I2S_Configuration_Class_Get_Data_Pin_B10FB08F_8942_419D_9ECE_996D385DED20(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 return (int)I->Get_Data_Pin(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Data_Pin_F64E3A2F_2313_4EFC_85CF_AA8A3D096476, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Data_Pin_B10FB08F_8942_419D_9ECE_996D385DED20, "i", ".");
 
-int Berry_I2S_Configuration_Class_Get_Format_BB049DE1_8F25_4035_9A04_55A0D4D91FF1(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
+int Berry_I2S_Configuration_Class_Get_Format_FE8B3AC1_94C8_44E6_BAF8_5F6849966F22(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I)
 {
 return (int)I->Get_Format(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Format_BB049DE1_8F25_4035_9A04_55A0D4D91FF1, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Get_Format_FE8B3AC1_94C8_44E6_BAF8_5F6849966F22, "i", ".");
 
-void Berry_I2S_Configuration_Class_Set_Mode_D2CD4B95_3A46_4BC7_83E5_6F0FB2BB0C77(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
+void Berry_I2S_Configuration_Class_Set_Mode_CA2F61D0_B476_4A8F_BA90_6199F34F23D1(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
 {
 return I->Set_Mode((Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Mode_D2CD4B95_3A46_4BC7_83E5_6F0FB2BB0C77, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Mode_CA2F61D0_B476_4A8F_BA90_6199F34F23D1, "", ".i");
 
-void Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_57392AD0_86CA_4CF3_B759_8E4BC2C7F33B(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
+void Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_F1AC3E24_8504_48E2_BA8B_4162402B24F7(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
 {
 return I->Set_Word_Select_Clock_Pin((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_57392AD0_86CA_4CF3_B759_8E4BC2C7F33B, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_F1AC3E24_8504_48E2_BA8B_4162402B24F7, "", ".i");
 
-void Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_EE5E75DE_DCAF_466C_9A2A_059B7B56AB34(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
+void Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_CDA9095C_C3AD_4D91_82EE_04769528ED5A(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
 {
 return I->Set_Bit_Clock_Pin((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_EE5E75DE_DCAF_466C_9A2A_059B7B56AB34, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_CDA9095C_C3AD_4D91_82EE_04769528ED5A, "", ".i");
 
-void Berry_I2S_Configuration_Class_Set_Data_Pin_77715A7B_5A36_4F7C_828E_DE924F658680(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
+void Berry_I2S_Configuration_Class_Set_Data_Pin_4A6347D6_12BA_4ACD_BFDF_1FC64FD6FD70(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
 {
 return I->Set_Data_Pin((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Data_Pin_77715A7B_5A36_4F7C_828E_DE924F658680, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Data_Pin_4A6347D6_12BA_4ACD_BFDF_1FC64FD6FD70, "", ".i");
 
-void Berry_I2S_Configuration_Class_Set_Format_4B86D454_068C_4AA0_88F9_1612B3A7204C(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
+void Berry_I2S_Configuration_Class_Set_Format_861DC2A2_F40A_4F7D_8F79_5005DCCADB2D(Xila_Namespace::Sound_Types::I2S_Configuration_Class* I, int A_0)
 {
 return I->Set_Format((Format_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Format_4B86D454_068C_4AA0_88F9_1612B3A7204C, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Format_861DC2A2_F40A_4F7D_8F79_5005DCCADB2D, "", ".i");
 
 // - - Operators
 
@@ -376,19 +376,19 @@ BE_FUNC_CTYPE_DECLARE(Berry_I2S_Configuration_Class_Set_Format_4B86D454_068C_4AA
 class Berry_I2S_Configuration_Type(scope:global, name:I2S_Configuration_Type)
 {
 	_p, var
-	init, ctype_func(Berry_I2S_Configuration_Class_Initialize_8D86582E_3B7F_43EE_864C_A3466E760E63)
-	init, ctype_func(Berry_I2S_Configuration_Class_Initialize_F8BEB072_324D_4AC4_9D4C_99A000839CC4)
-	deinit, ctype_func(Berry_I2S_Configuration_Class_Deinitialize_EE02122E_3FBA_4CEC_B689_55DBEF3E6B11)
-	Get_Mode, ctype_func(Berry_I2S_Configuration_Class_Get_Mode_325C539A_8236_4421_9231_86B18E508F42)
-	Get_Word_Select_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3F1C49FF_7CAE_4B4D_A1CF_5C04C4C04EA5)
-	Get_Bit_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_9E8854CC_6CE5_4CFB_81AF_9BA3B451830F)
-	Get_Data_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Data_Pin_F64E3A2F_2313_4EFC_85CF_AA8A3D096476)
-	Get_Format, ctype_func(Berry_I2S_Configuration_Class_Get_Format_BB049DE1_8F25_4035_9A04_55A0D4D91FF1)
-	Set_Mode, ctype_func(Berry_I2S_Configuration_Class_Set_Mode_D2CD4B95_3A46_4BC7_83E5_6F0FB2BB0C77)
-	Set_Word_Select_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_57392AD0_86CA_4CF3_B759_8E4BC2C7F33B)
-	Set_Bit_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_EE5E75DE_DCAF_466C_9A2A_059B7B56AB34)
-	Set_Data_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Data_Pin_77715A7B_5A36_4F7C_828E_DE924F658680)
-	Set_Format, ctype_func(Berry_I2S_Configuration_Class_Set_Format_4B86D454_068C_4AA0_88F9_1612B3A7204C)
+	init, ctype_func(Berry_I2S_Configuration_Class_Initialize_C3778E72_FF03_49B9_B29A_2A637E72CBEC)
+	init, ctype_func(Berry_I2S_Configuration_Class_Initialize_1CB85583_BCDE_4445_940D_4B57F077EA4D)
+	deinit, ctype_func(Berry_I2S_Configuration_Class_Deinitialize_2092DF01_A0D6_4D5B_86E1_873E6E116BF1)
+	Get_Mode, ctype_func(Berry_I2S_Configuration_Class_Get_Mode_DB8BE4F3_5241_4304_96A2_C6B0D503EDA6)
+	Get_Word_Select_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Word_Select_Clock_Pin_3D6D4FE5_30CA_46A2_A6A5_55964F20FD27)
+	Get_Bit_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Bit_Clock_Pin_B9E75497_6907_4731_A665_25337CD5728B)
+	Get_Data_Pin, ctype_func(Berry_I2S_Configuration_Class_Get_Data_Pin_B10FB08F_8942_419D_9ECE_996D385DED20)
+	Get_Format, ctype_func(Berry_I2S_Configuration_Class_Get_Format_FE8B3AC1_94C8_44E6_BAF8_5F6849966F22)
+	Set_Mode, ctype_func(Berry_I2S_Configuration_Class_Set_Mode_CA2F61D0_B476_4A8F_BA90_6199F34F23D1)
+	Set_Word_Select_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Word_Select_Clock_Pin_F1AC3E24_8504_48E2_BA8B_4162402B24F7)
+	Set_Bit_Clock_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Bit_Clock_Pin_CDA9095C_C3AD_4D91_82EE_04769528ED5A)
+	Set_Data_Pin, ctype_func(Berry_I2S_Configuration_Class_Set_Data_Pin_4A6347D6_12BA_4ACD_BFDF_1FC64FD6FD70)
+	Set_Format, ctype_func(Berry_I2S_Configuration_Class_Set_Format_861DC2A2_F40A_4F7D_8F79_5005DCCADB2D)
 
 }
 @const_object_info_end */
@@ -401,38 +401,38 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_I2S_Class_Initialize_59C8550A_C3B5_403B_B81E_F53BD7FBF523(bvm* V, int A_0 = -1)
+void * Berry_I2S_Class_Initialize_0D112FD6_4A8C_4884_9420_385254378F30(bvm* V, int A_0 = -1)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::I2S_Class));
 return new (Pointer) Sound_Types::I2S_Class((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Initialize_59C8550A_C3B5_403B_B81E_F53BD7FBF523, "+_p", "@[i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Initialize_0D112FD6_4A8C_4884_9420_385254378F30, "+_p", "@[i");
 
 
 // - - Destructors
-void Berry_I2S_Class_Deinitialize_F359FA3E_A85E_4F78_9346_783B1A99E45F(bvm* V, Xila_Namespace::Sound_Types::I2S_Class* I)
+void Berry_I2S_Class_Deinitialize_F590F951_5E80_4077_A44E_9736AEC1C5F4(bvm* V, Xila_Namespace::Sound_Types::I2S_Class* I)
 {
 if (!I) { return; }
 I->~I2S_Class();
 be_free(V, I, sizeof(Sound_Types::I2S_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Deinitialize_F359FA3E_A85E_4F78_9346_783B1A99E45F, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Deinitialize_F590F951_5E80_4077_A44E_9736AEC1C5F4, "", "@.");
 
 
 // - - Functions
-int Berry_I2S_Class_Begin_2E1972F5_0C9E_44F8_AD24_4E149620CF94(Xila_Namespace::Sound_Types::I2S_Class* I, I2S_Configuration_Class* A_0)
+int Berry_I2S_Class_Begin_0E82D688_839B_4FBF_B0DE_5E47973EB6B5(Xila_Namespace::Sound_Types::I2S_Class* I, I2S_Configuration_Class* A_0)
 {
 return (int)I->Begin(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Begin_2E1972F5_0C9E_44F8_AD24_4E149620CF94, "i", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Begin_0E82D688_839B_4FBF_B0DE_5E47973EB6B5, "i", "..");
 
-void * Berry_I2S_Class_Get_Default_Configuration_74340F9A_9BB4_4AAA_BC56_9FCBD695CCAA(bvm* V, Xila_Namespace::Sound_Types::I2S_Class* I, int A_0 = (int)Xila_Namespace::Sound_Types::Mode_Type::Transmit)
+void * Berry_I2S_Class_Get_Default_Configuration_133F5C7E_CD19_4E12_BC94_6983CDBB8CA3(bvm* V, Xila_Namespace::Sound_Types::I2S_Class* I, int A_0 = (int)Xila_Namespace::Sound_Types::Mode_Type::Transmit)
 {
 Xila_Namespace::Sound_Types::I2S_Configuration_Class* R = (Xila_Namespace::Sound_Types::I2S_Configuration_Class*) be_malloc(V, sizeof(Xila_Namespace::Sound_Types::I2S_Configuration_Class));
  *R = I->Get_Default_Configuration((Mode_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Get_Default_Configuration_74340F9A_9BB4_4AAA_BC56_9FCBD695CCAA, "Sound.I2S_Configuration_Type", "@.[i");
+BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Get_Default_Configuration_133F5C7E_CD19_4E12_BC94_6983CDBB8CA3, "Sound.I2S_Configuration_Type", "@.[i");
 
 // - - Operators
 
@@ -441,10 +441,10 @@ BE_FUNC_CTYPE_DECLARE(Berry_I2S_Class_Get_Default_Configuration_74340F9A_9BB4_4A
 class Berry_I2S_Type(scope:global, name:I2S_Type)
 {
 	_p, var
-	init, ctype_func(Berry_I2S_Class_Initialize_59C8550A_C3B5_403B_B81E_F53BD7FBF523)
-	deinit, ctype_func(Berry_I2S_Class_Deinitialize_F359FA3E_A85E_4F78_9346_783B1A99E45F)
-	Begin, ctype_func(Berry_I2S_Class_Begin_2E1972F5_0C9E_44F8_AD24_4E149620CF94)
-	Get_Default_Configuration, ctype_func(Berry_I2S_Class_Get_Default_Configuration_74340F9A_9BB4_4AAA_BC56_9FCBD695CCAA)
+	init, ctype_func(Berry_I2S_Class_Initialize_0D112FD6_4A8C_4884_9420_385254378F30)
+	deinit, ctype_func(Berry_I2S_Class_Deinitialize_F590F951_5E80_4077_A44E_9736AEC1C5F4)
+	Begin, ctype_func(Berry_I2S_Class_Begin_0E82D688_839B_4FBF_B0DE_5E47973EB6B5)
+	Get_Default_Configuration, ctype_func(Berry_I2S_Class_Get_Default_Configuration_133F5C7E_CD19_4E12_BC94_6983CDBB8CA3)
 
 }
 @const_object_info_end */
@@ -457,96 +457,115 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_File_Player_Class_Initialize_5F36FF8E_7AAF_4AF3_B8BF_97B68F75F2BA(bvm* V, ::Xila_Namespace::Sound_Types::Stream_Class* A_0, ::Xila_Namespace::Drive_Types::File_Class* A_1, ::Xila_Namespace::Sound_Types::Decoder_Class* A_2)
+void * Berry_File_Player_Class_Initialize_8B58C021_A592_4CE8_8FAF_1DE985837B10(bvm* V, ::Xila_Namespace::Drive_Types::File_Class* A_0, ::Xila_Namespace::Sound_Types::Stream_Class* A_1, ::Xila_Namespace::Sound_Types::Decoder_Class* A_2)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::File_Player_Class));
 return new (Pointer) Sound_Types::File_Player_Class(*A_0, *A_1, *A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Initialize_5F36FF8E_7AAF_4AF3_B8BF_97B68F75F2BA, "+_p", "@...");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Initialize_8B58C021_A592_4CE8_8FAF_1DE985837B10, "+_p", "@...");
+
+void * Berry_File_Player_Class_Initialize_304BD892_F7A5_44D3_A780_EC4219A38BB0(bvm* V)
+{
+void* Pointer = be_malloc(V, sizeof(Sound_Types::File_Player_Class));
+return new (Pointer) Sound_Types::File_Player_Class(); 
+}
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Initialize_304BD892_F7A5_44D3_A780_EC4219A38BB0, "+_p", "@");
 
 
 // - - Destructors
-void Berry_File_Player_Class_Deinitialize_61582872_106C_4A59_B978_3AAFA9092ACF(bvm* V, Xila_Namespace::Sound_Types::File_Player_Class* I)
+void Berry_File_Player_Class_Deinitialize_D4E85013_9111_42BC_BD38_CDA7821702B2(bvm* V, Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 if (!I) { return; }
 I->~File_Player_Class();
 be_free(V, I, sizeof(Sound_Types::File_Player_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Deinitialize_61582872_106C_4A59_B978_3AAFA9092ACF, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Deinitialize_D4E85013_9111_42BC_BD38_CDA7821702B2, "", "@.");
 
 
 // - - Functions
-int Berry_File_Player_Class_Begin_FABA5086_227C_4CC9_B9F9_D95E96D2C509(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Begin_ABBD3C0C_9A43_4923_B1EA_73A8D25B8189(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Begin(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Begin_FABA5086_227C_4CC9_B9F9_D95E96D2C509, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Begin_ABBD3C0C_9A43_4923_B1EA_73A8D25B8189, "i", ".");
 
-void Berry_File_Player_Class_Stop_0B9FADD0_345A_43C4_A6D7_866A7EA87BE0(Xila_Namespace::Sound_Types::File_Player_Class* I)
+void Berry_File_Player_Class_Stop_E0894DF4_5080_4BE9_B2CB_5DD3B26FB359(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return I->Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Stop_0B9FADD0_345A_43C4_A6D7_866A7EA87BE0, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Stop_E0894DF4_5080_4BE9_B2CB_5DD3B26FB359, "", ".");
 
-int Berry_File_Player_Class_Loop_5ED5249C_4C8C_45E6_942F_B8455B30A9CF(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Loop_7D8B1AE8_5C44_4E2D_AF78_01DD3FB501B5(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Loop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Loop_5ED5249C_4C8C_45E6_942F_B8455B30A9CF, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Loop_7D8B1AE8_5C44_4E2D_AF78_01DD3FB501B5, "i", ".");
 
-int Berry_File_Player_Class_Get_Time_C23732F0_85CD_45B4_8D89_B1911C30EDDD(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Get_Time_F5B9F875_4F5B_4E9E_A429_B4922244FC45(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Get_Time(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Time_C23732F0_85CD_45B4_8D89_B1911C30EDDD, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Time_F5B9F875_4F5B_4E9E_A429_B4922244FC45, "i", ".");
 
-int Berry_File_Player_Class_Get_Total_Time_F781273E_2414_496A_857C_18AAB85B1F37(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Get_Total_Time_E9180AF5_76E8_4F22_9D88_95FFB455F6A8(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Get_Total_Time(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Total_Time_F781273E_2414_496A_857C_18AAB85B1F37, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Total_Time_E9180AF5_76E8_4F22_9D88_95FFB455F6A8, "i", ".");
 
-int Berry_File_Player_Class_Get_Sample_Rate_9399DB12_2148_42F5_A1C4_6DA4BFFCDBE3(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Get_Sample_Rate_357C0E59_144C_4DCC_B968_0E94A589FA16(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Get_Sample_Rate(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Sample_Rate_9399DB12_2148_42F5_A1C4_6DA4BFFCDBE3, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Sample_Rate_357C0E59_144C_4DCC_B968_0E94A589FA16, "i", ".");
 
-int Berry_File_Player_Class_Get_Bits_Per_Sample_05531832_8FC2_402D_B3D2_A9D5153D7384(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Get_Bits_Per_Sample_49EC2E4C_5425_4440_9AC0_A52C2F87CD18(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Get_Bits_Per_Sample(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Bits_Per_Sample_05531832_8FC2_402D_B3D2_A9D5153D7384, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Bits_Per_Sample_49EC2E4C_5425_4440_9AC0_A52C2F87CD18, "i", ".");
 
-int Berry_File_Player_Class_Get_Channels_7ADB33EE_2725_4979_A398_BD78D4E83191(Xila_Namespace::Sound_Types::File_Player_Class* I)
+int Berry_File_Player_Class_Get_Channels_42C8F904_4A24_41D2_A160_44C4DD6AB234(Xila_Namespace::Sound_Types::File_Player_Class* I)
 {
 return (int)I->Get_Channels(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Channels_7ADB33EE_2725_4979_A398_BD78D4E83191, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Get_Channels_42C8F904_4A24_41D2_A160_44C4DD6AB234, "i", ".");
 
-void Berry_File_Player_Class_Set_Time_0931D0AD_41AD_4E74_A398_B74E11F8F772(Xila_Namespace::Sound_Types::File_Player_Class* I, int A_0)
+void Berry_File_Player_Class_Set_514FB1DB_7F20_4BED_8F6C_35B9A98F0BC6(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Drive_Types::File_Class* A_0, ::Xila_Namespace::Sound_Types::Stream_Class* A_1, ::Xila_Namespace::Sound_Types::Decoder_Class* A_2)
 {
-return I->Set_Time((unsigned int)A_0); 
+return I->Set(*A_0, *A_1, *A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Time_0931D0AD_41AD_4E74_A398_B74E11F8F772, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_514FB1DB_7F20_4BED_8F6C_35B9A98F0BC6, "", "....");
 
-void Berry_File_Player_Class_Set_Time_C4C58EBC_CD83_44C2_8177_0A7B70BCE2DF(Xila_Namespace::Sound_Types::File_Player_Class* I, Time_Class* A_0)
+void Berry_File_Player_Class_Set_Decoder_ADB60A64_48E2_4C3D_8DF4_DEAD72A10351(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Sound_Types::Decoder_Class* A_0)
+{
+return I->Set_Decoder(*A_0); 
+}
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Decoder_ADB60A64_48E2_4C3D_8DF4_DEAD72A10351, "", "..");
+
+void Berry_File_Player_Class_Set_Time_7AE6DFDB_C5E6_4A48_9CFB_D449167E424C(Xila_Namespace::Sound_Types::File_Player_Class* I, Time_Class* A_0)
 {
 return I->Set_Time(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Time_C4C58EBC_CD83_44C2_8177_0A7B70BCE2DF, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Time_7AE6DFDB_C5E6_4A48_9CFB_D449167E424C, "", "..");
 
-void Berry_File_Player_Class_Set_Input_File_695B2019_92D3_41D0_BC35_BC8A04F3E915(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Drive_Types::File_Class* A_0)
+void Berry_File_Player_Class_Set_Time_22AE3861_F251_46A1_8CCE_39D1BADF7E30(Xila_Namespace::Sound_Types::File_Player_Class* I, int A_0)
 {
-return I->Set_Input_File(*A_0); 
+return I->Set_Time((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Input_File_695B2019_92D3_41D0_BC35_BC8A04F3E915, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Time_22AE3861_F251_46A1_8CCE_39D1BADF7E30, "", ".i");
 
-void Berry_File_Player_Class_Set_Output_Stream_0E7D3C1D_866C_4A70_BC11_3C27C9019763(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
+void Berry_File_Player_Class_Set_File_8D761254_2B42_446C_A7C7_35DC72E16F29(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Drive_Types::File_Class* A_0)
+{
+return I->Set_File(*A_0); 
+}
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_File_8D761254_2B42_446C_A7C7_35DC72E16F29, "", "..");
+
+void Berry_File_Player_Class_Set_Output_Stream_90A3FDB8_2D18_4B44_BC5B_0B751988A997(Xila_Namespace::Sound_Types::File_Player_Class* I, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
 {
 return I->Set_Output_Stream(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Output_Stream_0E7D3C1D_866C_4A70_BC11_3C27C9019763, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Output_Stream_90A3FDB8_2D18_4B44_BC5B_0B751988A997, "", "..");
 
 // - - Operators
 
@@ -555,20 +574,23 @@ BE_FUNC_CTYPE_DECLARE(Berry_File_Player_Class_Set_Output_Stream_0E7D3C1D_866C_4A
 class Berry_File_Player_Type(scope:global, name:File_Player_Type)
 {
 	_p, var
-	init, ctype_func(Berry_File_Player_Class_Initialize_5F36FF8E_7AAF_4AF3_B8BF_97B68F75F2BA)
-	deinit, ctype_func(Berry_File_Player_Class_Deinitialize_61582872_106C_4A59_B978_3AAFA9092ACF)
-	Begin, ctype_func(Berry_File_Player_Class_Begin_FABA5086_227C_4CC9_B9F9_D95E96D2C509)
-	Stop, ctype_func(Berry_File_Player_Class_Stop_0B9FADD0_345A_43C4_A6D7_866A7EA87BE0)
-	Loop, ctype_func(Berry_File_Player_Class_Loop_5ED5249C_4C8C_45E6_942F_B8455B30A9CF)
-	Get_Time, ctype_func(Berry_File_Player_Class_Get_Time_C23732F0_85CD_45B4_8D89_B1911C30EDDD)
-	Get_Total_Time, ctype_func(Berry_File_Player_Class_Get_Total_Time_F781273E_2414_496A_857C_18AAB85B1F37)
-	Get_Sample_Rate, ctype_func(Berry_File_Player_Class_Get_Sample_Rate_9399DB12_2148_42F5_A1C4_6DA4BFFCDBE3)
-	Get_Bits_Per_Sample, ctype_func(Berry_File_Player_Class_Get_Bits_Per_Sample_05531832_8FC2_402D_B3D2_A9D5153D7384)
-	Get_Channels, ctype_func(Berry_File_Player_Class_Get_Channels_7ADB33EE_2725_4979_A398_BD78D4E83191)
-	Set_Time, ctype_func(Berry_File_Player_Class_Set_Time_0931D0AD_41AD_4E74_A398_B74E11F8F772)
-	Set_Time, ctype_func(Berry_File_Player_Class_Set_Time_C4C58EBC_CD83_44C2_8177_0A7B70BCE2DF)
-	Set_Input_File, ctype_func(Berry_File_Player_Class_Set_Input_File_695B2019_92D3_41D0_BC35_BC8A04F3E915)
-	Set_Output_Stream, ctype_func(Berry_File_Player_Class_Set_Output_Stream_0E7D3C1D_866C_4A70_BC11_3C27C9019763)
+	init, ctype_func(Berry_File_Player_Class_Initialize_8B58C021_A592_4CE8_8FAF_1DE985837B10)
+	init, ctype_func(Berry_File_Player_Class_Initialize_304BD892_F7A5_44D3_A780_EC4219A38BB0)
+	deinit, ctype_func(Berry_File_Player_Class_Deinitialize_D4E85013_9111_42BC_BD38_CDA7821702B2)
+	Begin, ctype_func(Berry_File_Player_Class_Begin_ABBD3C0C_9A43_4923_B1EA_73A8D25B8189)
+	Stop, ctype_func(Berry_File_Player_Class_Stop_E0894DF4_5080_4BE9_B2CB_5DD3B26FB359)
+	Loop, ctype_func(Berry_File_Player_Class_Loop_7D8B1AE8_5C44_4E2D_AF78_01DD3FB501B5)
+	Get_Time, ctype_func(Berry_File_Player_Class_Get_Time_F5B9F875_4F5B_4E9E_A429_B4922244FC45)
+	Get_Total_Time, ctype_func(Berry_File_Player_Class_Get_Total_Time_E9180AF5_76E8_4F22_9D88_95FFB455F6A8)
+	Get_Sample_Rate, ctype_func(Berry_File_Player_Class_Get_Sample_Rate_357C0E59_144C_4DCC_B968_0E94A589FA16)
+	Get_Bits_Per_Sample, ctype_func(Berry_File_Player_Class_Get_Bits_Per_Sample_49EC2E4C_5425_4440_9AC0_A52C2F87CD18)
+	Get_Channels, ctype_func(Berry_File_Player_Class_Get_Channels_42C8F904_4A24_41D2_A160_44C4DD6AB234)
+	Set, ctype_func(Berry_File_Player_Class_Set_514FB1DB_7F20_4BED_8F6C_35B9A98F0BC6)
+	Set_Decoder, ctype_func(Berry_File_Player_Class_Set_Decoder_ADB60A64_48E2_4C3D_8DF4_DEAD72A10351)
+	Set_Time, ctype_func(Berry_File_Player_Class_Set_Time_7AE6DFDB_C5E6_4A48_9CFB_D449167E424C)
+	Set_Time, ctype_func(Berry_File_Player_Class_Set_Time_22AE3861_F251_46A1_8CCE_39D1BADF7E30)
+	Set_File, ctype_func(Berry_File_Player_Class_Set_File_8D761254_2B42_446C_A7C7_35DC72E16F29)
+	Set_Output_Stream, ctype_func(Berry_File_Player_Class_Set_Output_Stream_90A3FDB8_2D18_4B44_BC5B_0B751988A997)
 
 }
 @const_object_info_end */
@@ -583,23 +605,23 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Decoder_Class_Deinitialize_337EE1C5_440E_429B_9361_8D4DAED308FE(bvm* V, Xila_Namespace::Sound_Types::Decoder_Class* I)
+void Berry_Decoder_Class_Deinitialize_88551F04_2F48_423A_B965_5B6D1D0A48D8(bvm* V, Xila_Namespace::Sound_Types::Decoder_Class* I)
 {
 if (!I) { return; }
 I->~Decoder_Class();
 be_free(V, I, sizeof(Sound_Types::Decoder_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Decoder_Class_Deinitialize_337EE1C5_440E_429B_9361_8D4DAED308FE, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Decoder_Class_Deinitialize_88551F04_2F48_423A_B965_5B6D1D0A48D8, "", "@.");
 
 
 // - - Functions
-void * Berry_Decoder_Class_Get_Configuration_2FCC83D2_4731_4067_8C90_DD9F16B568F8(bvm* V, Xila_Namespace::Sound_Types::Decoder_Class* I)
+void * Berry_Decoder_Class_Get_Configuration_52F938BC_F531_4414_8EA2_78653FE20274(bvm* V, Xila_Namespace::Sound_Types::Decoder_Class* I)
 {
 Xila_Namespace::Sound_Types::Configuration_Class* R = (Xila_Namespace::Sound_Types::Configuration_Class*) be_malloc(V, sizeof(Xila_Namespace::Sound_Types::Configuration_Class));
  *R = I->Get_Configuration(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Decoder_Class_Get_Configuration_2FCC83D2_4731_4067_8C90_DD9F16B568F8, "Sound.Configuration_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Decoder_Class_Get_Configuration_52F938BC_F531_4414_8EA2_78653FE20274, "Sound.Configuration_Type", "@.");
 
 // - - Operators
 
@@ -608,8 +630,8 @@ BE_FUNC_CTYPE_DECLARE(Berry_Decoder_Class_Get_Configuration_2FCC83D2_4731_4067_8
 class Berry_Decoder_Type(scope:global, name:Decoder_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Decoder_Class_Deinitialize_337EE1C5_440E_429B_9361_8D4DAED308FE)
-	Get_Configuration, ctype_func(Berry_Decoder_Class_Get_Configuration_2FCC83D2_4731_4067_8C90_DD9F16B568F8)
+	deinit, ctype_func(Berry_Decoder_Class_Deinitialize_88551F04_2F48_423A_B965_5B6D1D0A48D8)
+	Get_Configuration, ctype_func(Berry_Decoder_Class_Get_Configuration_52F938BC_F531_4414_8EA2_78653FE20274)
 
 }
 @const_object_info_end */
@@ -622,22 +644,22 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_WAV_Decoder_Class_Initialize_6ED44695_855A_44DB_B446_C839B9B7F35C(bvm* V)
+void * Berry_WAV_Decoder_Class_Initialize_FA1036E2_52BB_42F9_875F_D766E803D2A5(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Sound_Types::WAV_Decoder_Class));
 return new (Pointer) Sound_Types::WAV_Decoder_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WAV_Decoder_Class_Initialize_6ED44695_855A_44DB_B446_C839B9B7F35C, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_WAV_Decoder_Class_Initialize_FA1036E2_52BB_42F9_875F_D766E803D2A5, "+_p", "@");
 
 
 // - - Destructors
-void Berry_WAV_Decoder_Class_Deinitialize_9667D83F_B169_41DA_A9EC_4D3A1BC54F74(bvm* V, Xila_Namespace::Sound_Types::WAV_Decoder_Class* I)
+void Berry_WAV_Decoder_Class_Deinitialize_40BFC597_C0F4_4DAB_A573_AF15F5634087(bvm* V, Xila_Namespace::Sound_Types::WAV_Decoder_Class* I)
 {
 if (!I) { return; }
 I->~WAV_Decoder_Class();
 be_free(V, I, sizeof(Sound_Types::WAV_Decoder_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WAV_Decoder_Class_Deinitialize_9667D83F_B169_41DA_A9EC_4D3A1BC54F74, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_WAV_Decoder_Class_Deinitialize_40BFC597_C0F4_4DAB_A573_AF15F5634087, "", "@.");
 
 
 // - - Functions
@@ -648,8 +670,8 @@ BE_FUNC_CTYPE_DECLARE(Berry_WAV_Decoder_Class_Deinitialize_9667D83F_B169_41DA_A9
 class Berry_WAV_Decoder_Type(scope:global, name:WAV_Decoder_Type)
 {
 	_p, var
-	init, ctype_func(Berry_WAV_Decoder_Class_Initialize_6ED44695_855A_44DB_B446_C839B9B7F35C)
-	deinit, ctype_func(Berry_WAV_Decoder_Class_Deinitialize_9667D83F_B169_41DA_A9EC_4D3A1BC54F74)
+	init, ctype_func(Berry_WAV_Decoder_Class_Initialize_FA1036E2_52BB_42F9_875F_D766E803D2A5)
+	deinit, ctype_func(Berry_WAV_Decoder_Class_Deinitialize_40BFC597_C0F4_4DAB_A573_AF15F5634087)
 
 }
 @const_object_info_end */
@@ -664,47 +686,47 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Stream_Class_Deinitialize_724E636D_CF54_41B2_9A6F_461A5FBABD58(bvm* V, Xila_Namespace::Sound_Types::Stream_Class* I)
+void Berry_Stream_Class_Deinitialize_9AB61937_0BDB_4B7F_B673_BDA65FD3B7AF(bvm* V, Xila_Namespace::Sound_Types::Stream_Class* I)
 {
 if (!I) { return; }
 I->~Stream_Class();
 be_free(V, I, sizeof(Sound_Types::Stream_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Deinitialize_724E636D_CF54_41B2_9A6F_461A5FBABD58, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Deinitialize_9AB61937_0BDB_4B7F_B673_BDA65FD3B7AF, "", "@.");
 
 
 // - - Functions
-int Berry_Stream_Class_Begin_647CA66D_9AC4_4581_8DB6_DA7192464E1B(Xila_Namespace::Sound_Types::Stream_Class* I)
+int Berry_Stream_Class_Begin_7D001644_493A_4F0C_8554_32F9B78FAF4A(Xila_Namespace::Sound_Types::Stream_Class* I)
 {
 return (int)I->Begin(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Begin_647CA66D_9AC4_4581_8DB6_DA7192464E1B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Begin_7D001644_493A_4F0C_8554_32F9B78FAF4A, "i", ".");
 
-void Berry_Stream_Class_End_425982B7_F22C_4DE1_9E45_3AF6628F59A6(Xila_Namespace::Sound_Types::Stream_Class* I)
+void Berry_Stream_Class_End_7C3774CF_9929_42BA_9B36_50022474A3A7(Xila_Namespace::Sound_Types::Stream_Class* I)
 {
 return I->End(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_End_425982B7_F22C_4DE1_9E45_3AF6628F59A6, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_End_7C3774CF_9929_42BA_9B36_50022474A3A7, "", ".");
 
-void * Berry_Stream_Class_Get_Configuration_1F66439D_FDA9_4740_A26D_B0C11A72ED06(bvm* V, Xila_Namespace::Sound_Types::Stream_Class* I)
+void * Berry_Stream_Class_Get_Configuration_0E710A2F_3D97_4377_949C_1941D89FC8AC(bvm* V, Xila_Namespace::Sound_Types::Stream_Class* I)
 {
 Xila_Namespace::Sound_Types::Configuration_Class* R = (Xila_Namespace::Sound_Types::Configuration_Class*) be_malloc(V, sizeof(Xila_Namespace::Sound_Types::Configuration_Class));
  *R = I->Get_Configuration(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Get_Configuration_1F66439D_FDA9_4740_A26D_B0C11A72ED06, "Sound.Configuration_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Get_Configuration_0E710A2F_3D97_4377_949C_1941D89FC8AC, "Sound.Configuration_Type", "@.");
 
-void Berry_Stream_Class_Set_Configuration_91541F3F_3C89_43CF_B786_F0FE00F7FCEA(Xila_Namespace::Sound_Types::Stream_Class* I, Configuration_Class* A_0)
+void Berry_Stream_Class_Set_Configuration_C39CBF39_39AB_4C6C_B4CE_C559ADDD2BCB(Xila_Namespace::Sound_Types::Stream_Class* I, Configuration_Class* A_0)
 {
 return I->Set_Configuration(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Set_Configuration_91541F3F_3C89_43CF_B786_F0FE00F7FCEA, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Set_Configuration_C39CBF39_39AB_4C6C_B4CE_C559ADDD2BCB, "", "..");
 
-void Berry_Stream_Class_Set_Notify_Audio_Change_DA8BB06B_8EA3_4F7A_A6CA_E5982357FD67(Xila_Namespace::Sound_Types::Stream_Class* I, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
+void Berry_Stream_Class_Set_Notify_Audio_Change_08E15504_7211_443A_B1A4_A925A9997386(Xila_Namespace::Sound_Types::Stream_Class* I, ::Xila_Namespace::Sound_Types::Stream_Class* A_0)
 {
 return I->Set_Notify_Audio_Change(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Set_Notify_Audio_Change_DA8BB06B_8EA3_4F7A_A6CA_E5982357FD67, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Set_Notify_Audio_Change_08E15504_7211_443A_B1A4_A925A9997386, "", "..");
 
 // - - Operators
 
@@ -713,12 +735,12 @@ BE_FUNC_CTYPE_DECLARE(Berry_Stream_Class_Set_Notify_Audio_Change_DA8BB06B_8EA3_4
 class Berry_Stream_Type(scope:global, name:Stream_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Stream_Class_Deinitialize_724E636D_CF54_41B2_9A6F_461A5FBABD58)
-	Begin, ctype_func(Berry_Stream_Class_Begin_647CA66D_9AC4_4581_8DB6_DA7192464E1B)
-	End, ctype_func(Berry_Stream_Class_End_425982B7_F22C_4DE1_9E45_3AF6628F59A6)
-	Get_Configuration, ctype_func(Berry_Stream_Class_Get_Configuration_1F66439D_FDA9_4740_A26D_B0C11A72ED06)
-	Set_Configuration, ctype_func(Berry_Stream_Class_Set_Configuration_91541F3F_3C89_43CF_B786_F0FE00F7FCEA)
-	Set_Notify_Audio_Change, ctype_func(Berry_Stream_Class_Set_Notify_Audio_Change_DA8BB06B_8EA3_4F7A_A6CA_E5982357FD67)
+	deinit, ctype_func(Berry_Stream_Class_Deinitialize_9AB61937_0BDB_4B7F_B673_BDA65FD3B7AF)
+	Begin, ctype_func(Berry_Stream_Class_Begin_7D001644_493A_4F0C_8554_32F9B78FAF4A)
+	End, ctype_func(Berry_Stream_Class_End_7C3774CF_9929_42BA_9B36_50022474A3A7)
+	Get_Configuration, ctype_func(Berry_Stream_Class_Get_Configuration_0E710A2F_3D97_4377_949C_1941D89FC8AC)
+	Set_Configuration, ctype_func(Berry_Stream_Class_Set_Configuration_C39CBF39_39AB_4C6C_B4CE_C559ADDD2BCB)
+	Set_Notify_Audio_Change, ctype_func(Berry_Stream_Class_Set_Notify_Audio_Change_08E15504_7211_443A_B1A4_A925A9997386)
 
 }
 @const_object_info_end */
@@ -729,60 +751,60 @@ extern "C"
 	#include "../generate/be_fixed_Berry_Stream_Type.h"
 }
 // - Functions
-int Berry_Sound_Class_Start_EC54ADEA_0098_4A2B_BE99_F1D91241CBD6()
+int Berry_Sound_Class_Start_1B665DDD_39CB_4895_9FC7_03B8A1C61390()
 {
 return (int)Sound.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Start_EC54ADEA_0098_4A2B_BE99_F1D91241CBD6, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Start_1B665DDD_39CB_4895_9FC7_03B8A1C61390, "i", "");
 
 
-int Berry_Sound_Class_Stop_4CE2DF6B_FCD4_4686_9323_C54226BF2156()
+int Berry_Sound_Class_Stop_1FA801B0_D8EB_4B8D_9BB1_08DD7DD0B1F5()
 {
 return (int)Sound.Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Stop_4CE2DF6B_FCD4_4686_9323_C54226BF2156, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Stop_1FA801B0_D8EB_4B8D_9BB1_08DD7DD0B1F5, "i", "");
 
 
-int Berry_Sound_Class_Get_Volume_CD8EB4A9_1576_4854_831B_6B3858586530()
+int Berry_Sound_Class_Get_Volume_FD296472_6664_44AB_8DA6_6829EA80DDB7()
 {
 return (int)Sound.Get_Volume(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Get_Volume_CD8EB4A9_1576_4854_831B_6B3858586530, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Get_Volume_FD296472_6664_44AB_8DA6_6829EA80DDB7, "i", "");
 
 
-const void* Berry_Sound_Class_Get_Current_Output_Stream_54727C95_F08D_453D_8F7A_655AAF7D3300()
+const void* Berry_Sound_Class_Get_Current_Output_Stream_45A1C277_5874_46C8_BACA_BEC80CE11293()
 {
 return &Sound.Get_Current_Output_Stream(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Get_Current_Output_Stream_54727C95_F08D_453D_8F7A_655AAF7D3300, "c", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Get_Current_Output_Stream_45A1C277_5874_46C8_BACA_BEC80CE11293, "c", "");
 
 
-void Berry_Sound_Class_Set_Volume_3CA879E3_C3BF_46D2_82C3_E13355E91D52(int A_0)
+void Berry_Sound_Class_Set_Volume_3A96D41C_FE3B_419D_86B6_743168D67734(int A_0)
 {
 return Sound.Set_Volume((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Set_Volume_3CA879E3_C3BF_46D2_82C3_E13355E91D52, "", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Set_Volume_3A96D41C_FE3B_419D_86B6_743168D67734, "", "i");
 
 
-int Berry_Sound_Class_Save_Registry_9B199873_A003_4B7E_89F1_D62A6CD1AAC4()
+int Berry_Sound_Class_Save_Registry_26CEBA3F_7FE1_4A5B_9D7E_02D02BBA6CCA()
 {
 return (int)Sound.Save_Registry(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Save_Registry_9B199873_A003_4B7E_89F1_D62A6CD1AAC4, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Save_Registry_26CEBA3F_7FE1_4A5B_9D7E_02D02BBA6CCA, "i", "");
 
 
-int Berry_Sound_Class_Load_Registry_017EF889_8503_4EDB_8587_E9D16498068B()
+int Berry_Sound_Class_Load_Registry_D9CC58ED_EF73_4D34_89FD_E70453C5A610()
 {
 return (int)Sound.Load_Registry(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Load_Registry_017EF889_8503_4EDB_8587_E9D16498068B, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Load_Registry_D9CC58ED_EF73_4D34_89FD_E70453C5A610, "i", "");
 
 
-int Berry_Sound_Class_Create_Registry_553B9B84_FDE0_4FE9_AE43_3B3F54839E36()
+int Berry_Sound_Class_Create_Registry_66667291_C80E_4780_A0D1_6A24F263B115()
 {
 return (int)Sound.Create_Registry(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Create_Registry_553B9B84_FDE0_4FE9_AE43_3B3F54839E36, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Create_Registry_66667291_C80E_4780_A0D1_6A24F263B115, "i", "");
 
 
 void* Berry_Sound_Class_Get_Pointer()
@@ -795,14 +817,14 @@ BE_FUNC_CTYPE_DECLARE(Berry_Sound_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Sound (scope:global)
 {
-	Start, ctype_func(Berry_Sound_Class_Start_EC54ADEA_0098_4A2B_BE99_F1D91241CBD6)
-	Stop, ctype_func(Berry_Sound_Class_Stop_4CE2DF6B_FCD4_4686_9323_C54226BF2156)
-	Get_Volume, ctype_func(Berry_Sound_Class_Get_Volume_CD8EB4A9_1576_4854_831B_6B3858586530)
-	Get_Current_Output_Stream, ctype_func(Berry_Sound_Class_Get_Current_Output_Stream_54727C95_F08D_453D_8F7A_655AAF7D3300)
-	Set_Volume, ctype_func(Berry_Sound_Class_Set_Volume_3CA879E3_C3BF_46D2_82C3_E13355E91D52)
-	Save_Registry, ctype_func(Berry_Sound_Class_Save_Registry_9B199873_A003_4B7E_89F1_D62A6CD1AAC4)
-	Load_Registry, ctype_func(Berry_Sound_Class_Load_Registry_017EF889_8503_4EDB_8587_E9D16498068B)
-	Create_Registry, ctype_func(Berry_Sound_Class_Create_Registry_553B9B84_FDE0_4FE9_AE43_3B3F54839E36)
+	Start, ctype_func(Berry_Sound_Class_Start_1B665DDD_39CB_4895_9FC7_03B8A1C61390)
+	Stop, ctype_func(Berry_Sound_Class_Stop_1FA801B0_D8EB_4B8D_9BB1_08DD7DD0B1F5)
+	Get_Volume, ctype_func(Berry_Sound_Class_Get_Volume_FD296472_6664_44AB_8DA6_6829EA80DDB7)
+	Get_Current_Output_Stream, ctype_func(Berry_Sound_Class_Get_Current_Output_Stream_45A1C277_5874_46C8_BACA_BEC80CE11293)
+	Set_Volume, ctype_func(Berry_Sound_Class_Set_Volume_3A96D41C_FE3B_419D_86B6_743168D67734)
+	Save_Registry, ctype_func(Berry_Sound_Class_Save_Registry_26CEBA3F_7FE1_4A5B_9D7E_02D02BBA6CCA)
+	Load_Registry, ctype_func(Berry_Sound_Class_Load_Registry_D9CC58ED_EF73_4D34_89FD_E70453C5A610)
+	Create_Registry, ctype_func(Berry_Sound_Class_Create_Registry_66667291_C80E_4780_A0D1_6A24F263B115)
 	Get_Pointer, ctype_func(Berry_Sound_Class_Get_Pointer)
 
 	Configuration_Type, class(Berry_Configuration_Type)

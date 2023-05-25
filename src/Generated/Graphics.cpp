@@ -11,1618 +11,1618 @@ using namespace Graphics_Types;
 // - Functions
 
 // - - Constructors
-void * Berry_Object_Class_Initialize_DE0F4F3C_5FB0_4251_8153_E6647AE04E3E(bvm* V, ::_lv_obj_t* A_0)
+void * Berry_Object_Class_Initialize_6CD1672F_AC06_4429_B5A5_5C35C03BC71E(bvm* V, ::_lv_obj_t* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Object_Class));
 return new (Pointer) Graphics_Types::Object_Class(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Initialize_DE0F4F3C_5FB0_4251_8153_E6647AE04E3E, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Initialize_6CD1672F_AC06_4429_B5A5_5C35C03BC71E, "+_p", "@.");
 
-void * Berry_Object_Class_Initialize_5F6C311F_9647_4259_BD3F_6B53FB5A9359(bvm* V)
+void * Berry_Object_Class_Initialize_D81C479E_8106_4A4E_9341_F25EDA05A813(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Object_Class));
 return new (Pointer) Graphics_Types::Object_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Initialize_5F6C311F_9647_4259_BD3F_6B53FB5A9359, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Initialize_D81C479E_8106_4A4E_9341_F25EDA05A813, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Object_Class_Deinitialize_7CDC47C2_E7AF_4CEE_95E2_F8D492C78CF1(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Deinitialize_5A494E1E_2FE5_4229_8219_DC3363F267BF(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 if (!I) { return; }
 I->~Object_Class();
 be_free(V, I, sizeof(Graphics_Types::Object_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Deinitialize_7CDC47C2_E7AF_4CEE_95E2_F8D492C78CF1, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Deinitialize_5A494E1E_2FE5_4229_8219_DC3363F267BF, "", "@.");
 
 
 // - - Functions
-void Berry_Object_Class_Create_3B23260B_DFE8_4284_ABA4_A82AEFD549FB(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
+void Berry_Object_Class_Create_73F39BAF_0D29_46EE_B8F4_F737A6B6B25D(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Create_3B23260B_DFE8_4284_ABA4_A82AEFD549FB, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Create_73F39BAF_0D29_46EE_B8F4_F737A6B6B25D, "", "..");
 
-void Berry_Object_Class_Delete_E2E0B7A2_F1A1_4803_B2D0_5E39FAFE2BE4(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0 = false)
+void Berry_Object_Class_Delete_3FD81C1D_B619_4356_9B05_3C9049A1DF5A(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0 = false)
 {
 return I->Delete(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Delete_E2E0B7A2_F1A1_4803_B2D0_5E39FAFE2BE4, "", ".[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Delete_3FD81C1D_B619_4356_9B05_3C9049A1DF5A, "", ".[b");
 
-void Berry_Object_Class_Clean_48175907_13C3_4F75_8C8E_DF750116FAC1(Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Clean_32CFAD94_B30F_49C7_8DED_DA69879F022F(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Clean(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clean_48175907_13C3_4F75_8C8E_DF750116FAC1, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clean_32CFAD94_B30F_49C7_8DED_DA69879F022F, "", ".");
 
-void Berry_Object_Class_Add_Flag_D1968225_021D_43A5_A369_3EDB26B781C9(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Add_Flag_F74E4EBB_6896_4FFF_B675_B6797CA58707(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Add_Flag((Flag_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Flag_D1968225_021D_43A5_A369_3EDB26B781C9, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Flag_F74E4EBB_6896_4FFF_B675_B6797CA58707, "", ".i");
 
-void Berry_Object_Class_Clear_Flag_8D4D9A11_2851_47B9_919A_3488DD63F33C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Clear_Flag_4B051A4B_CA47_47EE_BFBE_86DF8367D68A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Clear_Flag((Flag_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_Flag_8D4D9A11_2851_47B9_919A_3488DD63F33C, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_Flag_4B051A4B_CA47_47EE_BFBE_86DF8367D68A, "", ".i");
 
-bool Berry_Object_Class_Has_Flag_77BF46BC_B4C3_4F24_9D11_20EA33A4819A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Has_Flag_0BEE2CF8_A6FA_4F19_A027_2871D94CBC9A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Has_Flag((Flag_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_Flag_77BF46BC_B4C3_4F24_9D11_20EA33A4819A, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_Flag_0BEE2CF8_A6FA_4F19_A027_2871D94CBC9A, "b", ".i");
 
-bool Berry_Object_Class_Has_Any_Flag_AF8F7418_6970_4EE3_A967_B290C3FC9B09(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Has_Any_Flag_69514DA6_A568_41D5_8A0A_23C5EDD31715(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Has_Any_Flag((Flag_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_Any_Flag_AF8F7418_6970_4EE3_A967_B290C3FC9B09, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_Any_Flag_69514DA6_A568_41D5_8A0A_23C5EDD31715, "b", ".i");
 
-void Berry_Object_Class_Add_State_3626B6C2_6878_4FF1_9382_A2628D2ED604(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Add_State_318F5FA8_6579_4812_BD81_426AFF78D035(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Add_State((State_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_State_3626B6C2_6878_4FF1_9382_A2628D2ED604, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_State_318F5FA8_6579_4812_BD81_426AFF78D035, "", ".i");
 
-void Berry_Object_Class_Clear_State_2758AC40_3193_4EA1_A3E2_B709E5C49340(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Clear_State_7AB54956_F112_43DE_802D_FEC009234195(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Clear_State((State_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_State_2758AC40_3193_4EA1_A3E2_B709E5C49340, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_State_7AB54956_F112_43DE_802D_FEC009234195, "", ".i");
 
-bool Berry_Object_Class_Has_State_06C54F0B_F8C8_451F_9F55_889FB8449C0D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Has_State_717B2D55_3CCD_45E8_8121_396100DB4DB9(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Has_State((State_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_State_06C54F0B_F8C8_451F_9F55_889FB8449C0D, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Has_State_717B2D55_3CCD_45E8_8121_396100DB4DB9, "b", ".i");
 
-void Berry_Object_Class_Swap_53A8E3FD_FF86_49C5_85B8_BAE854A359D9(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
+void Berry_Object_Class_Swap_6C7E9184_28D1_41E4_B699_37BA2455C9CF(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
 {
 return I->Swap(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Swap_53A8E3FD_FF86_49C5_85B8_BAE854A359D9, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Swap_6C7E9184_28D1_41E4_B699_37BA2455C9CF, "", "..");
 
-void Berry_Object_Class_Add_Event_CD37AC5F_3E70_4932_876C_B2514F32022F(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Module_Class* A_0, int A_1)
+void Berry_Object_Class_Add_Event_E0D5F1BB_F21B_4AE2_994E_F5B4D7D12465(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Module_Class* A_0, int A_1)
 {
 return I->Add_Event(A_0, (Event_Code_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Event_CD37AC5F_3E70_4932_876C_B2514F32022F, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Event_E0D5F1BB_F21B_4AE2_994E_F5B4D7D12465, "", "..i");
 
-bool Berry_Object_Class_Remove_Event_397E830C_9FA9_4693_9C6D_F3486AFDF49C(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Module_Class* A_0)
+bool Berry_Object_Class_Remove_Event_5F9F3558_8E59_47E9_8329_D88A9064255B(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Module_Class* A_0)
 {
 return I->Remove_Event(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Remove_Event_397E830C_9FA9_4693_9C6D_F3486AFDF49C, "b", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Remove_Event_5F9F3558_8E59_47E9_8329_D88A9064255B, "b", "..");
 
-bool Berry_Object_Class_Remove_All_Events_31CF8C47_BCD7_4B28_84DD_5A0C128A6F3B(Xila_Namespace::Graphics_Types::Object_Class* I)
+bool Berry_Object_Class_Remove_All_Events_F9C87882_1175_4BB3_AE78_0A45A4DAD5CD(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Remove_All_Events(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Remove_All_Events_31CF8C47_BCD7_4B28_84DD_5A0C128A6F3B, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Remove_All_Events_F9C87882_1175_4BB3_AE78_0A45A4DAD5CD, "b", ".");
 
-void Berry_Object_Class_Send_Event_28747F53_54E1_4A73_8A9D_D3BF68E98940(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Send_Event_F78D7CFF_B0D3_4637_9137_AB4481FAF424(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Send_Event((Event_Code_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Send_Event_28747F53_54E1_4A73_8A9D_D3BF68E98940, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Send_Event_F78D7CFF_B0D3_4637_9137_AB4481FAF424, "", ".i");
 
-void Berry_Object_Class_Move_Foreground_758280B7_A67A_45C4_B672_650693B5938F(Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Move_Foreground_904AB1E8_5E62_45DC_9DAF_9DB418586447(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Move_Foreground(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Move_Foreground_758280B7_A67A_45C4_B672_650693B5938F, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Move_Foreground_904AB1E8_5E62_45DC_9DAF_9DB418586447, "", ".");
 
-void Berry_Object_Class_Move_Background_2F4FC005_72B4_403D_8B7E_49BA5F88EA57(Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Move_Background_E6AFB0B0_AEDB_4019_9A9D_647A94950943(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Move_Background(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Move_Background_2F4FC005_72B4_403D_8B7E_49BA5F88EA57, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Move_Background_E6AFB0B0_AEDB_4019_9A9D_647A94950943, "", ".");
 
-void Berry_Object_Class_Scroll_By_21C2E09E_27F5_4A7F_8BF0_8987AB6A25A9(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2 = false)
+void Berry_Object_Class_Scroll_By_EEBDF80C_3DD3_4E49_90EB_ACCEAFA18AF3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2 = false)
 {
 return I->Scroll_By((short int)A_0, (short int)A_1, A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_By_21C2E09E_27F5_4A7F_8BF0_8987AB6A25A9, "", ".ii[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_By_EEBDF80C_3DD3_4E49_90EB_ACCEAFA18AF3, "", ".ii[b");
 
-void Berry_Object_Class_Scroll_To_5453602B_486B_4FE2_A6D2_850E6B822E29(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2 = false)
+void Berry_Object_Class_Scroll_To_463CDE98_69C8_4AA3_9F40_3682BF9EEC1C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2 = false)
 {
 return I->Scroll_To((short int)A_0, (short int)A_1, A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_To_5453602B_486B_4FE2_A6D2_850E6B822E29, "", ".ii[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_To_463CDE98_69C8_4AA3_9F40_3682BF9EEC1C, "", ".ii[b");
 
-void Berry_Object_Class_Scroll_Horizontally_5A15484D_E2EA_4095_8548_94541105931A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, bool A_1 = false)
+void Berry_Object_Class_Scroll_Horizontally_48C26718_C0D2_4189_9D64_BF856FF20AD1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, bool A_1 = false)
 {
 return I->Scroll_Horizontally((short int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_Horizontally_5A15484D_E2EA_4095_8548_94541105931A, "", ".i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_Horizontally_48C26718_C0D2_4189_9D64_BF856FF20AD1, "", ".i[b");
 
-void Berry_Object_Class_Scroll_Vertically_65AE4786_E452_4D3E_A97E_A3AFD82E65FD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, bool A_1 = false)
+void Berry_Object_Class_Scroll_Vertically_B37CDC9C_020D_4C14_AC9A_66DF6A680F44(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, bool A_1 = false)
 {
 return I->Scroll_Vertically((short int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_Vertically_65AE4786_E452_4D3E_A97E_A3AFD82E65FD, "", ".i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Scroll_Vertically_B37CDC9C_020D_4C14_AC9A_66DF6A680F44, "", ".i[b");
 
-void Berry_Object_Class_Allocate_Special_Data_AF188BBF_1DCF_46FC_B5B3_106B68213F1C(Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Allocate_Special_Data_F96FA84A_07CE_47B0_AC77_AE3B9E24BBA4(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Allocate_Special_Data(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Allocate_Special_Data_AF188BBF_1DCF_46FC_B5B3_106B68213F1C, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Allocate_Special_Data_F96FA84A_07CE_47B0_AC77_AE3B9E24BBA4, "", ".");
 
-bool Berry_Object_Class_Is_Valid_A498D8F8_1D21_4ABE_929B_5455F623482F(Xila_Namespace::Graphics_Types::Object_Class* I)
+bool Berry_Object_Class_Is_Valid_96579F11_7FD8_4AEA_9151_DD69BA1479FF(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Is_Valid(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Is_Valid_A498D8F8_1D21_4ABE_929B_5455F623482F, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Is_Valid_96579F11_7FD8_4AEA_9151_DD69BA1479FF, "b", ".");
 
-void Berry_Object_Class_Add_Style_CC1F9D5A_3897_4D0C_AF9A_B9BA988A006B(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Graphics_Types::Style_Class* A_0, int A_1)
+void Berry_Object_Class_Add_Style_F38CB3B9_8A99_4ADC_8C7C_338E28F35285(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Graphics_Types::Style_Class* A_0, int A_1)
 {
 return I->Add_Style(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Style_CC1F9D5A_3897_4D0C_AF9A_B9BA988A006B, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Add_Style_F38CB3B9_8A99_4ADC_8C7C_338E28F35285, "", "..i");
 
-int Berry_Object_Class_DPX_226C1096_C9A5_4640_9667_C8DD38715B23(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_DPX_DA977AC1_74EC_4F26_BDBD_785B2E0F30FC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->DPX((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_DPX_226C1096_C9A5_4640_9667_C8DD38715B23, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_DPX_DA977AC1_74EC_4F26_BDBD_785B2E0F30FC, "i", ".i");
 
-void Berry_Object_Class_Set_Index_FB9D57C3_A49B_4BC3_B727_69125449EFDC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Index_EAC52F6C_EF6A_4FAF_9884_09C8A5091842(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Index((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Index_FB9D57C3_A49B_4BC3_B727_69125449EFDC, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Index_EAC52F6C_EF6A_4FAF_9884_09C8A5091842, "", ".i");
 
-void Berry_Object_Class_Set_Parent_19BD3A5F_F0BF_469B_9660_A150FBED0AED(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
+void Berry_Object_Class_Set_Parent_1D4A44D5_EFFF_4ACF_9127_4DA3DB3ED789(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
 {
 return I->Set_Parent(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Parent_19BD3A5F_F0BF_469B_9660_A150FBED0AED, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Parent_1D4A44D5_EFFF_4ACF_9127_4DA3DB3ED789, "", "..");
 
-void Berry_Object_Class_Set_Position_X_720E926F_592E_46F1_99F1_25596995925A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Position_X_0035E7BA_F83F_4C24_A1DE_26D13360C0A3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Position_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_X_720E926F_592E_46F1_99F1_25596995925A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_X_0035E7BA_F83F_4C24_A1DE_26D13360C0A3, "", ".i");
 
-void Berry_Object_Class_Set_Position_Y_61755C98_D5F8_490D_AE27_D36D8FBD4E03(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Position_Y_4219674A_6C63_492C_A7B8_90A7B3AE825C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Position_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_Y_61755C98_D5F8_490D_AE27_D36D8FBD4E03, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_Y_4219674A_6C63_492C_A7B8_90A7B3AE825C, "", ".i");
 
-void Berry_Object_Class_Set_Position_0CC0694E_AEA1_4F4D_85FE_671CF9F04242(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Position_283A60AD_45E8_49DB_8FB2_A1843F45D9F6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Position((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_0CC0694E_AEA1_4F4D_85FE_671CF9F04242, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Position_283A60AD_45E8_49DB_8FB2_A1843F45D9F6, "", ".ii");
 
-void Berry_Object_Class_Set_Alignment_EE631285_809C_4A59_8BCE_DE0588DCB34C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1 = 0, int A_2 = 0, ::Xila_Namespace::Graphics_Types::Object_Class* A_3 = __null)
+void Berry_Object_Class_Set_Alignment_5B175C3C_BFDE_4042_82D4_D845803B67AB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1 = 0, int A_2 = 0, ::Xila_Namespace::Graphics_Types::Object_Class* A_3 = __null)
 {
 return I->Set_Alignment((Alignment_Type)A_0, (short int)A_1, (short int)A_2, A_3); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Alignment_EE631285_809C_4A59_8BCE_DE0588DCB34C, "", ".i[ii.");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Alignment_5B175C3C_BFDE_4042_82D4_D845803B67AB, "", ".i[ii.");
 
-void Berry_Object_Class_Set_Size_874BF89A_BE54_473A_A23A_39C9D87B2F52(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Size_C583388D_5EE2_4450_8BA0_700BB7773C5D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Size((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Size_874BF89A_BE54_473A_A23A_39C9D87B2F52, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Size_C583388D_5EE2_4450_8BA0_700BB7773C5D, "", ".ii");
 
-void Berry_Object_Class_Set_Width_FAD7F68D_270F_4175_BEE4_FDE0A4BA7851(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Width_4063495D_E8D1_49A0_813A_855C9272FA83(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Width_FAD7F68D_270F_4175_BEE4_FDE0A4BA7851, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Width_4063495D_E8D1_49A0_813A_855C9272FA83, "", ".i");
 
-void Berry_Object_Class_Set_Height_70B5A4FF_3CC6_4863_8D7F_99C78C5A6A1C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Height_9B265256_3D23_4403_9034_3CCB0003C904(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Height_70B5A4FF_3CC6_4863_8D7F_99C78C5A6A1C, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Height_9B265256_3D23_4403_9034_3CCB0003C904, "", ".i");
 
-void Berry_Object_Class_Set_Content_Height_A954C4B8_B19B_4FCC_9B45_12F3D3B7A137(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Content_Height_74BFD5EC_1222_467F_B71C_570050F38F2D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Content_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Content_Height_A954C4B8_B19B_4FCC_9B45_12F3D3B7A137, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Content_Height_74BFD5EC_1222_467F_B71C_570050F38F2D, "", ".i");
 
-void Berry_Object_Class_Set_Flex_Alignment_A2CA1EC0_1A40_40D9_993A_14EB1D8300CF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, int A_2)
+void Berry_Object_Class_Set_Flex_Alignment_B4A5F3A5_48C6_46C5_ABD4_6C4A05CA1554(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Set_Flex_Alignment((Flex_Alignment_Type)A_0, (Flex_Alignment_Type)A_1, (Flex_Alignment_Type)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Alignment_A2CA1EC0_1A40_40D9_993A_14EB1D8300CF, "", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Alignment_B4A5F3A5_48C6_46C5_ABD4_6C4A05CA1554, "", ".iii");
 
-void Berry_Object_Class_Set_Flex_Flow_952BAF5C_31D4_4F5E_AA1D_ECD7848702D3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Flex_Flow_BE8FB410_162E_4F72_BA98_CF3E56BBE67D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Flex_Flow((Flex_Flow_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Flow_952BAF5C_31D4_4F5E_AA1D_ECD7848702D3, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Flow_BE8FB410_162E_4F72_BA98_CF3E56BBE67D, "", ".i");
 
-void Berry_Object_Class_Set_Flex_Grow_2C68E53D_9775_41E0_9CF6_050CFA2E7E00(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Flex_Grow_DA72FDAB_9741_4EAB_A320_831EBB8E2E8D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Flex_Grow((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Grow_2C68E53D_9775_41E0_9CF6_050CFA2E7E00, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Flex_Grow_DA72FDAB_9741_4EAB_A320_831EBB8E2E8D, "", ".i");
 
-void Berry_Object_Class_Set_Grid_Alignment_E9FF9102_7CC9_4404_914C_DE1BFB33B79B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Grid_Alignment_515B02E6_1B02_4F71_BCC6_618CA5FB2CBE(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Grid_Alignment((Grid_Alignment_Type)A_0, (Grid_Alignment_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Alignment_E9FF9102_7CC9_4404_914C_DE1BFB33B79B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Alignment_515B02E6_1B02_4F71_BCC6_618CA5FB2CBE, "", ".ii");
 
-void Berry_Object_Class_Set_Grid_Cell_F88014AE_3705_4F92_A662_6CC2B247B56B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, int A_2, int A_3, int A_4, int A_5)
+void Berry_Object_Class_Set_Grid_Cell_2C2238CC_EB59_420D_90FF_C831DA4FA9A4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, int A_2, int A_3, int A_4, int A_5)
 {
 return I->Set_Grid_Cell((Grid_Alignment_Type)A_0, (unsigned char)A_1, (unsigned char)A_2, (Grid_Alignment_Type)A_3, (unsigned char)A_4, (unsigned char)A_5); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Cell_F88014AE_3705_4F92_A662_6CC2B247B56B, "", ".iiiiii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Cell_2C2238CC_EB59_420D_90FF_C831DA4FA9A4, "", ".iiiiii");
 
-void Berry_Object_Class_Set_Grid_Descriptor_Array_FD3A6BE8_39C7_4782_B2B1_6C0A68108BE3(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, const short int* A_1)
+void Berry_Object_Class_Set_Grid_Descriptor_Array_9FEFF136_4775_4D13_8473_A01F1E10D4D8(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, const short int* A_1)
 {
 return I->Set_Grid_Descriptor_Array(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Descriptor_Array_FD3A6BE8_39C7_4782_B2B1_6C0A68108BE3, "", ".ss");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Grid_Descriptor_Array_9FEFF136_4775_4D13_8473_A01F1E10D4D8, "", ".ss");
 
-void Berry_Object_Class_Set_Style_Alignment_DBDE7DEC_0E79_4494_B6A5_36DF6960B3CE(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Alignment_D0D56394_B409_4DF5_8DAC_95AFE4060CED(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Alignment((Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Alignment_DBDE7DEC_0E79_4494_B6A5_36DF6960B3CE, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Alignment_D0D56394_B409_4DF5_8DAC_95AFE4060CED, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Animation_Speed_84FDDBB1_7774_4125_B342_3FA4A11601B7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Animation_Speed_73FB4811_3278_44C1_873D_DF91C317D7A2(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Animation_Speed((unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Animation_Speed_84FDDBB1_7774_4125_B342_3FA4A11601B7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Animation_Speed_73FB4811_3278_44C1_873D_DF91C317D7A2, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Animation_Time_8D82087E_15EA_4044_90A8_7E30BB6E2491(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Animation_Time_A674BE93_C141_44ED_93DA_662B2882ABD4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Animation_Time((unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Animation_Time_8D82087E_15EA_4044_90A8_7E30BB6E2491, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Animation_Time_A674BE93_C141_44ED_93DA_662B2882ABD4, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Arc_Color_402D3A44_7FA5_408B_BDC3_ECBA29BB3A60(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Arc_Color_2DF40ED4_62DC_4A9D_8782_B332DC9EB302(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Arc_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Color_402D3A44_7FA5_408B_BDC3_ECBA29BB3A60, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Color_2DF40ED4_62DC_4A9D_8782_B332DC9EB302, "", "..i");
 
-void Berry_Object_Class_Set_Style_Arc_Opacity_29E1E5F8_DB34_4268_ADAB_466A44349BBC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Arc_Opacity_E18EE3A0_2049_4ECD_8FAE_B7468A4DB6F4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Arc_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Opacity_29E1E5F8_DB34_4268_ADAB_466A44349BBC, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Opacity_E18EE3A0_2049_4ECD_8FAE_B7468A4DB6F4, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Arc_Rounded_E6518DA3_DB34_4218_A601_28C917C61355(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
+void Berry_Object_Class_Set_Style_Arc_Rounded_820D5F56_7746_4E77_9340_9D25EE1505E5(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
 {
 return I->Set_Style_Arc_Rounded(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Rounded_E6518DA3_DB34_4218_A601_28C917C61355, "", ".bi");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Rounded_820D5F56_7746_4E77_9340_9D25EE1505E5, "", ".bi");
 
-void Berry_Object_Class_Set_Style_Arc_Width_A56CDE8E_E52D_4F97_9042_3A8CC4505019(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Arc_Width_FBB423D6_A906_4161_99D7_8E781333D668(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Arc_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Width_A56CDE8E_E52D_4F97_9042_3A8CC4505019, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Arc_Width_FBB423D6_A906_4161_99D7_8E781333D668, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Base_Direction_5DC2BD06_79CA_4F28_B470_3D9D920892CA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Base_Direction_295B32D2_7F77_431D_8080_0EDE83EAD9FC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Base_Direction((Direction_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Base_Direction_5DC2BD06_79CA_4F28_B470_3D9D920892CA, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Base_Direction_295B32D2_7F77_431D_8080_0EDE83EAD9FC, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Background_Color_0BB8A3BF_66DC_49EB_BEE1_A58BA26C8CE4(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Color_05FED741_7AE5_4D35_81DD_7748621CF0A9(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Background_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Color_0BB8A3BF_66DC_49EB_BEE1_A58BA26C8CE4, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Color_05FED741_7AE5_4D35_81DD_7748621CF0A9, "", "..i");
 
-void Berry_Object_Class_Set_Style_Background_Dither_Mode_13B5C5A3_33ED_4F13_A242_68BFA6CD56B4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Dither_Mode_9749CF2B_288D_4F49_A9C5_C2F020FCAA8D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Background_Dither_Mode((Dither_Mode_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Dither_Mode_13B5C5A3_33ED_4F13_A242_68BFA6CD56B4, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Dither_Mode_9749CF2B_288D_4F49_A9C5_C2F020FCAA8D, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Background_Image_Opacity_42DA77FE_E296_4D44_987B_CB51033D8671(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Image_Opacity_E1A1F3C8_9AE9_48D9_86F1_CC74FA195E2B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Background_Image_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Opacity_42DA77FE_E296_4D44_987B_CB51033D8671, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Opacity_E1A1F3C8_9AE9_48D9_86F1_CC74FA195E2B, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Background_Image_Recolor_5D953D72_F84C_4B05_8396_0F90D06B2CEE(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Image_Recolor_3E0210DA_9E70_463E_B4D3_3A43EA117FC8(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Background_Image_Recolor(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Recolor_5D953D72_F84C_4B05_8396_0F90D06B2CEE, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Recolor_3E0210DA_9E70_463E_B4D3_3A43EA117FC8, "", "..i");
 
-void Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_55C8DEAC_40EC_45B9_8F4A_0FEF0A257D83(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_B86A4592_0EA7_4FBD_AE31_3B3DE7544FFD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Background_Image_Recolor_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_55C8DEAC_40EC_45B9_8F4A_0FEF0A257D83, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_B86A4592_0EA7_4FBD_AE31_3B3DE7544FFD, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Background_Image_Tiled_EB2184AF_7E5A_48EE_9CF1_BC87D00BA7DE(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Image_Tiled_ED952B08_210F_4603_ABD9_B8EAB833D497(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
 {
 return I->Set_Style_Background_Image_Tiled(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Tiled_EB2184AF_7E5A_48EE_9CF1_BC87D00BA7DE, "", ".bi");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Image_Tiled_ED952B08_210F_4603_ABD9_B8EAB833D497, "", ".bi");
 
-void Berry_Object_Class_Set_Style_Background_Main_Stop_361C205B_FC4D_4D81_BBA9_A04F1873EA3B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Main_Stop_8465EA02_57C8_42AE_92F9_903C78C5C45F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Background_Main_Stop((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Main_Stop_361C205B_FC4D_4D81_BBA9_A04F1873EA3B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Main_Stop_8465EA02_57C8_42AE_92F9_903C78C5C45F, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Background_Opacity_2D712DFE_BE4E_41BD_87FD_8EBD0FA3E183(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Background_Opacity_AC98DBF8_75E7_4CAB_BB86_8DE69CE0D505(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Background_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Opacity_2D712DFE_BE4E_41BD_87FD_8EBD0FA3E183, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Background_Opacity_AC98DBF8_75E7_4CAB_BB86_8DE69CE0D505, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Blend_Mode_7BABBE73_D924_4C1D_98A1_A7B7337F3037(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Blend_Mode_94C1F8BF_9068_4FDB_8F6B_1ABFE0E91413(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Blend_Mode((Blend_Mode_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Blend_Mode_7BABBE73_D924_4C1D_98A1_A7B7337F3037, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Blend_Mode_94C1F8BF_9068_4FDB_8F6B_1ABFE0E91413, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Border_Color_1584F083_E6D1_4FA2_8F08_274F781BA56B(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Border_Color_6C53541B_2879_4B59_850C_84FF7FC55F49(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Border_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Color_1584F083_E6D1_4FA2_8F08_274F781BA56B, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Color_6C53541B_2879_4B59_850C_84FF7FC55F49, "", "..i");
 
-void Berry_Object_Class_Set_Style_Border_Opacity_DDA87EF2_203D_4783_8473_69C9CE718808(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Border_Opacity_25C91C8E_F617_43E7_87A1_C416F14CEF57(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Border_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Opacity_DDA87EF2_203D_4783_8473_69C9CE718808, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Opacity_25C91C8E_F617_43E7_87A1_C416F14CEF57, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Border_Post_63EB77E9_A130_4FE9_A6B0_A76F42A832BF(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
+void Berry_Object_Class_Set_Style_Border_Post_C414251E_CDAB_4346_A306_3455429921BF(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
 {
 return I->Set_Style_Border_Post(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Post_63EB77E9_A130_4FE9_A6B0_A76F42A832BF, "", ".bi");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Post_C414251E_CDAB_4346_A306_3455429921BF, "", ".bi");
 
-void Berry_Object_Class_Set_Style_Border_Side_5DEC014F_FFB3_4FA1_AE7F_8117A9C7F765(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Border_Side_53EBD9C8_B85D_4D06_9FE6_6C927B1FF210(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Border_Side((Border_Side_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Side_5DEC014F_FFB3_4FA1_AE7F_8117A9C7F765, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Side_53EBD9C8_B85D_4D06_9FE6_6C927B1FF210, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Border_Width_29449731_0C92_4BC5_9191_52E35AA90BC2(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Border_Width_31F3AA52_E4FD_4CFE_B0DC_17703AFF11A5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Border_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Width_29449731_0C92_4BC5_9191_52E35AA90BC2, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Border_Width_31F3AA52_E4FD_4CFE_B0DC_17703AFF11A5, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Clip_Corner_DA919E0B_11AB_4453_BA48_75648AD8DF46(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
+void Berry_Object_Class_Set_Style_Clip_Corner_28585855_498F_4A8A_919B_BBEE24B65237(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
 {
 return I->Set_Style_Clip_Corner(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Clip_Corner_DA919E0B_11AB_4453_BA48_75648AD8DF46, "", ".bi");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Clip_Corner_28585855_498F_4A8A_919B_BBEE24B65237, "", ".bi");
 
-void Berry_Object_Class_Set_Style_Color_Filter_Descriptor_A459912A_2063_4CA0_B019_9CA00184E997(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Color_Filter_Descriptor_ADAB1661_7926_40A9_8330_930FD3EC8227(Xila_Namespace::Graphics_Types::Object_Class* I, ::Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* A_0, int A_1)
 {
 return I->Set_Style_Color_Filter_Descriptor(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Color_Filter_Descriptor_A459912A_2063_4CA0_B019_9CA00184E997, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Color_Filter_Descriptor_ADAB1661_7926_40A9_8330_930FD3EC8227, "", "..i");
 
-void Berry_Object_Class_Set_Style_Color_Filter_Opacity_C3B04505_8691_4254_A87B_9331F5ECD8C9(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Color_Filter_Opacity_A60AEFEA_9A6A_4C65_B540_2EF450044EC6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Color_Filter_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Color_Filter_Opacity_C3B04505_8691_4254_A87B_9331F5ECD8C9, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Color_Filter_Opacity_A60AEFEA_9A6A_4C65_B540_2EF450044EC6, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Flex_Cross_Place_C29AF026_BD1E_4316_8461_EAFC1C89D085(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Flex_Cross_Place_24E2FD0A_C563_49AF_AA56_7635D173C6AA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Flex_Cross_Place((Flex_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Cross_Place_C29AF026_BD1E_4316_8461_EAFC1C89D085, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Cross_Place_24E2FD0A_C563_49AF_AA56_7635D173C6AA, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Flex_Flow_41240C82_E824_4464_8EC2_7D12E34C13DF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Flex_Flow_25AC9DC9_D659_47F7_A0C0_40F034F9C5D5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Flex_Flow((Flex_Flow_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Flow_41240C82_E824_4464_8EC2_7D12E34C13DF, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Flow_25AC9DC9_D659_47F7_A0C0_40F034F9C5D5, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Flex_Grow_75506B66_8189_4A35_8ED6_839BBEC2488B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Flex_Grow_978C9847_5197_4D44_B1CF_2CD6290D7212(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Flex_Grow((unsigned char)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Grow_75506B66_8189_4A35_8ED6_839BBEC2488B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Grow_978C9847_5197_4D44_B1CF_2CD6290D7212, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Flex_Main_Place_F0E8FCC2_A9A4_466F_9A7D_44E109112F9A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Flex_Main_Place_CFFC986A_7EAC_4017_B289_7AB6DB106A18(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Flex_Main_Place((Flex_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Main_Place_F0E8FCC2_A9A4_466F_9A7D_44E109112F9A, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Main_Place_CFFC986A_7EAC_4017_B289_7AB6DB106A18, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Flex_Track_Place_5970C415_EB67_4F1F_9061_384DFEDC1437(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Flex_Track_Place_B5A2EBBE_C85D_4A19_A745_E664F4D051B7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Flex_Track_Place((Flex_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Track_Place_5970C415_EB67_4F1F_9061_384DFEDC1437, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Flex_Track_Place_B5A2EBBE_C85D_4A19_A745_E664F4D051B7, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_986A8361_353E_452A_9B62_AC93D4579256(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_FD890025_1049_4AF3_BF23_86EC0272BF2E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_Column_Position((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_986A8361_353E_452A_9B62_AC93D4579256, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_FD890025_1049_4AF3_BF23_86EC0272BF2E, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_676CB313_54AA_4131_92BD_9D3855550B9B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_91910383_2CCA_4B3B_9C37_B61A2A3FFE45(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_Column_Span((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_676CB313_54AA_4131_92BD_9D3855550B9B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_91910383_2CCA_4B3B_9C37_B61A2A3FFE45, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_10255A05_0E90_4AD8_804B_4E0C21FC470A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_54D49C02_4AA3_4062_81C4_1827BE6E9489(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_Row_Position((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_10255A05_0E90_4AD8_804B_4E0C21FC470A, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_54D49C02_4AA3_4062_81C4_1827BE6E9489, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_E7B3148A_B20B_4CF7_93CF_E03BBE550A79(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_94BD042C_6B07_466B_BCC2_CC249089FFB5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_Row_Span((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_E7B3148A_B20B_4CF7_93CF_E03BBE550A79, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_94BD042C_6B07_466B_BCC2_CC249089FFB5, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_56B64888_30CD_40DF_AA7F_93B73FDD0A1B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_0220B2E9_4DB9_49F5_AB30_2D22B59D379C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_X_Alignment((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_56B64888_30CD_40DF_AA7F_93B73FDD0A1B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_0220B2E9_4DB9_49F5_AB30_2D22B59D379C, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_FD5DE91A_7A83_4A32_8092_1FAC3B26FAE8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_7A88B375_F536_4D83_BAD1_A35E2F5D4954(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Cell_Y_Alignment((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_FD5DE91A_7A83_4A32_8092_1FAC3B26FAE8, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_7A88B375_F536_4D83_BAD1_A35E2F5D4954, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Column_Alignment_421ED109_7A0F_48ED_8B80_81BE0709DC22(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Column_Alignment_60A76006_BBF0_430A_8E8C_432D506EE4B5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Column_Alignment((Grid_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Column_Alignment_421ED109_7A0F_48ED_8B80_81BE0709DC22, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Column_Alignment_60A76006_BBF0_430A_8E8C_432D506EE4B5, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_AA8FDB03_D2CF_4F28_B315_F1309E935636(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_9A8AEB5E_72B0_4C67_8E39_CA2FBA5F48C5(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, int A_1)
 {
 return I->Set_Style_Grid_Column_Descriptor_Array(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_AA8FDB03_D2CF_4F28_B315_F1309E935636, "", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_9A8AEB5E_72B0_4C67_8E39_CA2FBA5F48C5, "", ".si");
 
-void Berry_Object_Class_Set_Style_Grid_Row_Alignment_4C73674F_806F_4CCC_BACC_CB7C0CE19CB3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Row_Alignment_5EB68CA4_832C_4B79_8D51_9E0266635DCB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Grid_Row_Alignment((Grid_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Row_Alignment_4C73674F_806F_4CCC_BACC_CB7C0CE19CB3, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Row_Alignment_5EB68CA4_832C_4B79_8D51_9E0266635DCB, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E9E47065_EFB4_4CFA_9341_38721D380CAF(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E87E096A_FBA0_4763_8B93_04E619DBDE5A(Xila_Namespace::Graphics_Types::Object_Class* I, const short int* A_0, int A_1)
 {
 return I->Set_Style_Grid_Row_Descriptor_Array(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E9E47065_EFB4_4CFA_9341_38721D380CAF, "", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E87E096A_FBA0_4763_8B93_04E619DBDE5A, "", ".si");
 
-void Berry_Object_Class_Set_Style_Height_92E83E4F_49BC_4059_9BE0_A02C8CD7E4A5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Height_867B847D_E5C1_44CB_861A_D454C590EAF7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Height((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Height_92E83E4F_49BC_4059_9BE0_A02C8CD7E4A5, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Height_867B847D_E5C1_44CB_861A_D454C590EAF7, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Image_Opacity_BC339C0A_7EE6_472E_A0A7_36A41B7A1DA5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Image_Opacity_84C8C556_121B_4C02_A158_7BBC6C29EB13(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Image_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Opacity_BC339C0A_7EE6_472E_A0A7_36A41B7A1DA5, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Opacity_84C8C556_121B_4C02_A158_7BBC6C29EB13, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Image_Recolor_0D8D937F_CE7A_406E_B356_6E3D1A216D0D(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Image_Recolor_74699A37_6729_4B51_B01C_7834975B47C5(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Image_Recolor(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Recolor_0D8D937F_CE7A_406E_B356_6E3D1A216D0D, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Recolor_74699A37_6729_4B51_B01C_7834975B47C5, "", "..i");
 
-void Berry_Object_Class_Set_Style_Image_Recolor_Opacity_B9A265A1_43A7_4849_ACA1_06B289A6C624(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Image_Recolor_Opacity_E59C9B53_CB5F_45D4_97AC_520DC850B075(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Image_Recolor_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Recolor_Opacity_B9A265A1_43A7_4849_ACA1_06B289A6C624, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Image_Recolor_Opacity_E59C9B53_CB5F_45D4_97AC_520DC850B075, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Layout_17788D7F_9022_432D_8322_A3775016E131(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Layout_DF02EF1B_BCD1_43B7_92EF_F9E295530D18(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Layout((short unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Layout_17788D7F_9022_432D_8322_A3775016E131, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Layout_DF02EF1B_BCD1_43B7_92EF_F9E295530D18, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Line_Color_A5893D0E_C858_4C39_B6E7_52EF53E0E4A7(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Color_87A557C7_B41D_46CD_BB0F_96583DBC4F0F(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Line_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Color_A5893D0E_C858_4C39_B6E7_52EF53E0E4A7, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Color_87A557C7_B41D_46CD_BB0F_96583DBC4F0F, "", "..i");
 
-void Berry_Object_Class_Set_Style_Line_Dash_Gap_805B7DF4_2AE3_4611_AB37_847475A0AFDD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Dash_Gap_31A6F520_2EFA_436C_B6B7_FEBAABAFD0FD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Line_Dash_Gap((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Dash_Gap_805B7DF4_2AE3_4611_AB37_847475A0AFDD, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Dash_Gap_31A6F520_2EFA_436C_B6B7_FEBAABAFD0FD, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Line_Dash_Width_6FF77C44_9449_4AED_B987_BE876E571189(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Dash_Width_8EA856F5_3816_4E03_8484_55506456A131(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Line_Dash_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Dash_Width_6FF77C44_9449_4AED_B987_BE876E571189, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Dash_Width_8EA856F5_3816_4E03_8484_55506456A131, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Line_Opacity_0BA5B0C5_93C5_402C_BF38_33C72AD2B0BE(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Opacity_E256AAC8_1E36_4090_A8B5_CBE6C38770D1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Line_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Opacity_0BA5B0C5_93C5_402C_BF38_33C72AD2B0BE, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Opacity_E256AAC8_1E36_4090_A8B5_CBE6C38770D1, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Line_Rounded_50124490_69FB_4D05_A605_1A56A65FD186(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Rounded_9811798B_1613_479C_B940_B04B6C5EEB96(Xila_Namespace::Graphics_Types::Object_Class* I, bool A_0, int A_1)
 {
 return I->Set_Style_Line_Rounded(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Rounded_50124490_69FB_4D05_A605_1A56A65FD186, "", ".bi");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Rounded_9811798B_1613_479C_B940_B04B6C5EEB96, "", ".bi");
 
-void Berry_Object_Class_Set_Style_Line_Width_066F9926_8F94_4B05_96D0_E912099D135A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Line_Width_A3D6A0B1_EB1A_48F4_BA09_9170502B0DE3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Line_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Width_066F9926_8F94_4B05_96D0_E912099D135A, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Line_Width_A3D6A0B1_EB1A_48F4_BA09_9170502B0DE3, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Maximum_Height_C3623E91_F3CE_446F_94C4_EC92C854B97C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Maximum_Height_12A02A13_82B5_46C7_B98C_E30A999C814B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Maximum_Height((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Maximum_Height_C3623E91_F3CE_446F_94C4_EC92C854B97C, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Maximum_Height_12A02A13_82B5_46C7_B98C_E30A999C814B, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Maximum_Width_6D1917EE_956B_4E35_BD50_3286B47097D5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Maximum_Width_1291E1B9_030A_41C2_8308_A006CB489F11(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Maximum_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Maximum_Width_6D1917EE_956B_4E35_BD50_3286B47097D5, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Maximum_Width_1291E1B9_030A_41C2_8308_A006CB489F11, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Minimum_Height_B4D04748_3541_4D0D_8B05_9DB8E313C116(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Minimum_Height_09613FD5_C403_4E72_A9D1_08D648D3D02C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Minimum_Height((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Minimum_Height_B4D04748_3541_4D0D_8B05_9DB8E313C116, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Minimum_Height_09613FD5_C403_4E72_A9D1_08D648D3D02C, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Minimum_Width_A8A038BD_6B3E_4D36_9B79_9460F4FFCFA0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Minimum_Width_7A15CCBE_8E01_4C2F_A937_5B74488F81F3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Minimum_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Minimum_Width_A8A038BD_6B3E_4D36_9B79_9460F4FFCFA0, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Minimum_Width_7A15CCBE_8E01_4C2F_A937_5B74488F81F3, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Opacity_70CB342F_034B_477A_A6E2_E20CE7A74197(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Opacity_46E0485A_7797_4E97_B117_6B9A329180E7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Opacity_70CB342F_034B_477A_A6E2_E20CE7A74197, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Opacity_46E0485A_7797_4E97_B117_6B9A329180E7, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Opacity_3EEBF564_F8C6_4D20_A101_FF3586F6F82F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Opacity_A9DAAA3C_9338_4469_8281_28911DA2FEEE(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Opacity((unsigned char)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Opacity_3EEBF564_F8C6_4D20_A101_FF3586F6F82F, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Opacity_A9DAAA3C_9338_4469_8281_28911DA2FEEE, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Outline_Color_1746545A_83BA_4A65_86BC_5AE882BA7EF1(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Outline_Color_8C5EA2BF_FB70_41D8_9AB0_1ED70375CB59(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Outline_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Color_1746545A_83BA_4A65_86BC_5AE882BA7EF1, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Color_8C5EA2BF_FB70_41D8_9AB0_1ED70375CB59, "", "..i");
 
-void Berry_Object_Class_Set_Style_Outline_Opacity_B988991C_8C04_475A_9AE6_459F12A8FC69(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Outline_Opacity_FC76AA2D_F5A4_4946_B36A_7DE931B24884(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Outline_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Opacity_B988991C_8C04_475A_9AE6_459F12A8FC69, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Opacity_FC76AA2D_F5A4_4946_B36A_7DE931B24884, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Outline_Pad_4F0E1CFD_C602_433E_BCF6_0D68274ADD3B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Outline_Pad_ECCFB84F_E2CA_49A2_9BAD_5FF8D2846F16(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Outline_Pad((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Pad_4F0E1CFD_C602_433E_BCF6_0D68274ADD3B, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Pad_ECCFB84F_E2CA_49A2_9BAD_5FF8D2846F16, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Outline_Width_D7ECE7EC_BE34_4909_81D0_DDCD4DE8F661(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Outline_Width_86BB2195_6E4A_40E9_81C2_E10EAD0B009B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Outline_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Width_D7ECE7EC_BE34_4909_81D0_DDCD4DE8F661, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Outline_Width_86BB2195_6E4A_40E9_81C2_E10EAD0B009B, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Bottom_59996B0C_FF00_47BB_99C5_63E385B6D166(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Bottom_119554B2_9B5F_44E3_966E_03D2DB09F963(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Bottom((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Bottom_59996B0C_FF00_47BB_99C5_63E385B6D166, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Bottom_119554B2_9B5F_44E3_966E_03D2DB09F963, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Left_DF623B90_1B67_4DF8_84E0_DA6A15747366(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Left_78D0CA41_9E62_4797_9455_7DE54B4F0738(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Left((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Left_DF623B90_1B67_4DF8_84E0_DA6A15747366, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Left_78D0CA41_9E62_4797_9455_7DE54B4F0738, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Right_0D49C910_FF84_4DE8_9B30_4DAA89B86FA1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Right_42AF4E8E_26AE_4548_A4DB_539008A37AF6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Right((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Right_0D49C910_FF84_4DE8_9B30_4DAA89B86FA1, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Right_42AF4E8E_26AE_4548_A4DB_539008A37AF6, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Top_24684111_F5EF_4383_A878_4B6B52DFA051(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Top_FF35BB01_3C65_40FC_B5FE_4EF37CCB40B7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Top((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Top_24684111_F5EF_4383_A878_4B6B52DFA051, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Top_FF35BB01_3C65_40FC_B5FE_4EF37CCB40B7, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Row_422C8040_FC24_462F_8C72_CB414500190D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Row_DE2B31D0_5305_46E4_96F3_98C94F0C2D7E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Row((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Row_422C8040_FC24_462F_8C72_CB414500190D, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Row_DE2B31D0_5305_46E4_96F3_98C94F0C2D7E, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_Column_1DD16A14_474D_411C_82EE_48CB0A64F51C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_Column_0C14397F_AF42_4944_B3D2_7DE80F2248B2(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_Column((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Column_1DD16A14_474D_411C_82EE_48CB0A64F51C, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_Column_0C14397F_AF42_4944_B3D2_7DE80F2248B2, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Pad_All_F5EB3B8A_0412_45E7_94C5_A25DD1FAF91F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Pad_All_5A5461EC_1AC0_4759_B927_3754B1F11F5F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Pad_All((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_All_F5EB3B8A_0412_45E7_94C5_A25DD1FAF91F, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Pad_All_5A5461EC_1AC0_4759_B927_3754B1F11F5F, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Radius_072C7165_AEE2_448C_8613_AFA02FF77F27(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Radius_9264D6B3_103E_421D_9A3F_D4F2D1EBB1DF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Radius((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Radius_072C7165_AEE2_448C_8613_AFA02FF77F27, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Radius_9264D6B3_103E_421D_9A3F_D4F2D1EBB1DF, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Shadow_Color_EF484E32_D5EB_4DF2_89F2_0F4464D28CA0(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Color_A5841B81_012E_4727_94C5_B335A7FB2E39(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Shadow_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Color_EF484E32_D5EB_4DF2_89F2_0F4464D28CA0, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Color_A5841B81_012E_4727_94C5_B335A7FB2E39, "", "..i");
 
-void Berry_Object_Class_Set_Style_Shadow_Offset_X_BA1947BD_9FA4_41C5_989A_7D6448F72DE4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Offset_X_F877293D_8C9D_4648_BA7E_1683E95470D7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Shadow_Offset_X((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Offset_X_BA1947BD_9FA4_41C5_989A_7D6448F72DE4, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Offset_X_F877293D_8C9D_4648_BA7E_1683E95470D7, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Shadow_Offset_Y_D8922636_4EC6_454C_8C39_C4464729C8E7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Offset_Y_80DFEF2E_3805_441D_BFF1_7026DDB08198(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Shadow_Offset_Y((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Offset_Y_D8922636_4EC6_454C_8C39_C4464729C8E7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Offset_Y_80DFEF2E_3805_441D_BFF1_7026DDB08198, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Shadow_Opacity_E5F8340F_B096_4A14_8CCD_764251E2A992(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Opacity_C6BA1214_5527_4F0A_86C7_C14BA559E315(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Shadow_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Opacity_E5F8340F_B096_4A14_8CCD_764251E2A992, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Opacity_C6BA1214_5527_4F0A_86C7_C14BA559E315, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Shadow_Spread_8BCA97B8_074B_4BA9_9128_56093F196639(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Spread_172C10ED_0C00_4CA5_BE8E_49C55E372909(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Shadow_Spread((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Spread_8BCA97B8_074B_4BA9_9128_56093F196639, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Spread_172C10ED_0C00_4CA5_BE8E_49C55E372909, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Shadow_Width_DC2E1EC4_35A1_42AA_81F2_F9197E5AAEA7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Shadow_Width_B07ABE3E_D760_40A8_8701_253F5308A520(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Shadow_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Width_DC2E1EC4_35A1_42AA_81F2_F9197E5AAEA7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Shadow_Width_B07ABE3E_D760_40A8_8701_253F5308A520, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Text_Alignment_CD4DFE25_C3BA_4AD8_81A6_D6BA56CA9768(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Alignment_F9E61B9B_EB40_4A47_8BCA_0BCCBEFDDC01(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Text_Alignment((Text_Alignment_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Alignment_CD4DFE25_C3BA_4AD8_81A6_D6BA56CA9768, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Alignment_F9E61B9B_EB40_4A47_8BCA_0BCCBEFDDC01, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Text_Color_8EB0E5C0_9D77_4E75_81F7_5EE5CFCFE735(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Color_9B0790BE_92AE_4592_96C3_EB5A10B1A559(Xila_Namespace::Graphics_Types::Object_Class* I, Color_Class* A_0, int A_1)
 {
 return I->Set_Style_Text_Color(*A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Color_8EB0E5C0_9D77_4E75_81F7_5EE5CFCFE735, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Color_9B0790BE_92AE_4592_96C3_EB5A10B1A559, "", "..i");
 
-void Berry_Object_Class_Set_Style_Text_Decor_6DB2EC00_B54D_452E_98A0_1AEF1039ADEB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Decor_27331123_1E0B_4837_B651_E8140BDFC4A2(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Text_Decor((Text_Decor_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Decor_6DB2EC00_B54D_452E_98A0_1AEF1039ADEB, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Decor_27331123_1E0B_4837_B651_E8140BDFC4A2, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Text_Font_3571E546_02EA_4476_BBAC_53BCC0F6AA50(Xila_Namespace::Graphics_Types::Object_Class* I, ::_lv_font_t* A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Font_06F0781F_8E28_49FD_92A9_2C65FC128350(Xila_Namespace::Graphics_Types::Object_Class* I, ::_lv_font_t* A_0, int A_1)
 {
 return I->Set_Style_Text_Font(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Font_3571E546_02EA_4476_BBAC_53BCC0F6AA50, "", "..i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Font_06F0781F_8E28_49FD_92A9_2C65FC128350, "", "..i");
 
-void Berry_Object_Class_Set_Style_Text_Letter_Space_4C3A7E79_B65F_47C9_AD1A_484A50010CA7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Letter_Space_A92700D3_030B_4B35_B03F_6D33FB682855(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Text_Letter_Space((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Letter_Space_4C3A7E79_B65F_47C9_AD1A_484A50010CA7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Letter_Space_A92700D3_030B_4B35_B03F_6D33FB682855, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Text_Line_Space_010B9AC8_C405_490C_8F17_8C387C1D9A70(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Line_Space_9451C08C_EA8A_429A_A3EC_25609E3065F3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Text_Line_Space((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Line_Space_010B9AC8_C405_490C_8F17_8C387C1D9A70, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Line_Space_9451C08C_EA8A_429A_A3EC_25609E3065F3, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Text_Opacity_E915A60C_3DCF_4CA5_A2EB_371B02D3A282(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Text_Opacity_545B84E8_4FAE_46E4_8243_6D2B1945B792(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Text_Opacity((Opacity_Type)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Opacity_E915A60C_3DCF_4CA5_A2EB_371B02D3A282, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Text_Opacity_545B84E8_4FAE_46E4_8243_6D2B1945B792, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Transform_Angle_EE7F93DE_3D5D_45E3_8BD5_B6C59CD4405D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Transform_Angle_A49BA27B_F451_44E2_99A9_40AC19208557(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Transform_Angle((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Angle_EE7F93DE_3D5D_45E3_8BD5_B6C59CD4405D, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Angle_A49BA27B_F451_44E2_99A9_40AC19208557, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Transform_Height_AEB0BB65_A7CF_4351_A085_778FD1B6F8C1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Transform_Height_C5F3CAEB_A389_43DE_A851_215B1A44E314(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Transform_Height((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Height_AEB0BB65_A7CF_4351_A085_778FD1B6F8C1, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Height_C5F3CAEB_A389_43DE_A851_215B1A44E314, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Transform_Width_1ED3FA06_2017_4192_8F0D_68DB7F2288CC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Transform_Width_B3E648CA_CD7B_47B5_9318_A94AB975788F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Transform_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Width_1ED3FA06_2017_4192_8F0D_68DB7F2288CC, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Width_B3E648CA_CD7B_47B5_9318_A94AB975788F, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Transform_Zoom_F4840F5B_E830_4B06_AAFD_CE9E0E0E7AB6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Transform_Zoom_EF6C332A_4513_4906_8932_61450E1973FD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Transform_Zoom((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Zoom_F4840F5B_E830_4B06_AAFD_CE9E0E0E7AB6, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Transform_Zoom_EF6C332A_4513_4906_8932_61450E1973FD, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Translate_X_4CF4CD8B_6FAE_408E_A28C_25A3291F8BBD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Translate_X_AC580A54_A470_485E_B8F3_EAB4BD8D3358(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Translate_X((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Translate_X_4CF4CD8B_6FAE_408E_A28C_25A3291F8BBD, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Translate_X_AC580A54_A470_485E_B8F3_EAB4BD8D3358, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Translate_Y_A63DEECE_42E2_42CD_8126_931E4BA9D81F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Translate_Y_35D053E9_CE27_4C03_9692_094A771E22EC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Translate_Y((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Translate_Y_A63DEECE_42E2_42CD_8126_931E4BA9D81F, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Translate_Y_35D053E9_CE27_4C03_9692_094A771E22EC, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Width_CD372386_F4F4_4CAF_BE0D_F130EFA6A36E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Width_A66BBB84_F778_40DC_84C5_D4E705022E3A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Width((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Width_CD372386_F4F4_4CAF_BE0D_F130EFA6A36E, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Width_A66BBB84_F778_40DC_84C5_D4E705022E3A, "", ".ii");
 
-void Berry_Object_Class_Set_Style_X_A2B5EE78_44EC_4A3E_8136_FE7E17D2AE28(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_X_469950E8_1628_4799_B50D_33622A4155C0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_X((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_X_A2B5EE78_44EC_4A3E_8136_FE7E17D2AE28, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_X_469950E8_1628_4799_B50D_33622A4155C0, "", ".ii");
 
-void Berry_Object_Class_Set_Style_Y_6EF246CD_8167_42F7_8DF6_AE7AF2F37835(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
+void Berry_Object_Class_Set_Style_Y_F4D6D99D_9E2C_4D2B_820D_DEDA9CE6E764(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1)
 {
 return I->Set_Style_Y((short int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Y_6EF246CD_8167_42F7_8DF6_AE7AF2F37835, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Style_Y_F4D6D99D_9E2C_4D2B_820D_DEDA9CE6E764, "", ".ii");
 
-void Berry_Object_Class_Set_Layout_6DF429AA_DF98_440C_A71F_E01F70053A63(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void Berry_Object_Class_Set_Layout_BCCA6822_2274_4171_A2D7_5FCFC92C9B9C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Set_Layout((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Layout_6DF429AA_DF98_440C_A71F_E01F70053A63, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Layout_BCCA6822_2274_4171_A2D7_5FCFC92C9B9C, "", ".i");
 
-void Berry_Object_Class_Set_Tile_6E7DF9E4_9129_4896_B0CB_DE6313C36B96(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0, bool A_1)
+void Berry_Object_Class_Set_Tile_F3729023_6286_41E0_8EE0_568E0C841586(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0, bool A_1)
 {
 return I->Set_Tile(*A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Tile_6E7DF9E4_9129_4896_B0CB_DE6313C36B96, "", "..b");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Tile_F3729023_6286_41E0_8EE0_568E0C841586, "", "..b");
 
-void Berry_Object_Class_Set_Tile_Identifier_29A89492_87AC_4E27_8275_A4EB06718A9C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2)
+void Berry_Object_Class_Set_Tile_Identifier_FDE60621_6A0C_4C16_B086_FACCB1F6E264(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0, int A_1, bool A_2)
 {
 return I->Set_Tile_Identifier((short unsigned int)A_0, (short unsigned int)A_1, A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Tile_Identifier_29A89492_87AC_4E27_8275_A4EB06718A9C, "", ".iib");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Set_Tile_Identifier_FDE60621_6A0C_4C16_B086_FACCB1F6E264, "", ".iib");
 
-int Berry_Object_Class_Get_State_8252FC15_8E4A_4A14_8EDD_43CE8C286676(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_State_0E371FBD_8076_4D7B_A10E_025C8318D435(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_State(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_State_8252FC15_8E4A_4A14_8EDD_43CE8C286676, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_State_0E371FBD_8076_4D7B_A10E_025C8318D435, "i", ".");
 
-const void* Berry_Object_Class_Get_Group_8E67E8AE_7A4D_40D7_87C8_8521AFFFCF68(Xila_Namespace::Graphics_Types::Object_Class* I)
+const void* Berry_Object_Class_Get_Group_BB49AC3B_F992_4CF3_8011_BF2DCD9FF8F0(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Get_Group(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Group_8E67E8AE_7A4D_40D7_87C8_8521AFFFCF68, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Group_BB49AC3B_F992_4CF3_8011_BF2DCD9FF8F0, "c", ".");
 
-const void* Berry_Object_Class_Get_User_Data_93056BEC_CB13_475B_B8CB_C52E4E60532B(Xila_Namespace::Graphics_Types::Object_Class* I)
+const void* Berry_Object_Class_Get_User_Data_0C68F9BE_0F50_4434_8B65_9B9C63FAA163(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Get_User_Data(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_User_Data_93056BEC_CB13_475B_B8CB_C52E4E60532B, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_User_Data_0C68F9BE_0F50_4434_8B65_9B9C63FAA163, "c", ".");
 
-bool Berry_Object_Class_Get_Object_Visibility_E6803E24_4AA4_432F_9713_A83838988CE1(Xila_Namespace::Graphics_Types::Object_Class* I)
+bool Berry_Object_Class_Get_Object_Visibility_6FF64B6A_C9E3_4F35_A350_B83B05BCDB86(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Get_Object_Visibility(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Object_Visibility_E6803E24_4AA4_432F_9713_A83838988CE1, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Object_Visibility_6FF64B6A_C9E3_4F35_A350_B83B05BCDB86, "b", ".");
 
-void * Berry_Object_Class_Get_Parent_790264BE_1B04_4387_AB86_F6750AEDD334(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I)
+void * Berry_Object_Class_Get_Parent_3D0CBCCE_EB37_4887_9AAE_A89EEC1C5129(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Get_Parent(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Parent_790264BE_1B04_4387_AB86_F6750AEDD334, "Graphics.Object_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Parent_3D0CBCCE_EB37_4887_9AAE_A89EEC1C5129, "Graphics.Object_Type", "@.");
 
-int Berry_Object_Class_Get_Children_Count_B2CD3B74_E58B_4E59_BEA2_125299B8EEC9(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Children_Count_EBDF508E_22D8_43FC_9E63_79376D424234(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Children_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Children_Count_B2CD3B74_E58B_4E59_BEA2_125299B8EEC9, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Children_Count_EBDF508E_22D8_43FC_9E63_79376D424234, "i", ".");
 
-void * Berry_Object_Class_Get_Child_F387E120_C22F_46D4_A101_ECA0D2EB78BE(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Child_EAFE3379_9666_43AD_B94E_4E0DA934231C(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Get_Child((short unsigned int)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Child_F387E120_C22F_46D4_A101_ECA0D2EB78BE, "Graphics.Object_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Child_EAFE3379_9666_43AD_B94E_4E0DA934231C, "Graphics.Object_Type", "@.i");
 
-int Berry_Object_Class_Get_Child_Index_F4C70398_41B7_4788_A0AF_3073A8BF5AC0(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
+int Berry_Object_Class_Get_Child_Index_522F0972_8CA0_4674_AFDF_560EAD863939(Xila_Namespace::Graphics_Types::Object_Class* I, Object_Class* A_0)
 {
 return (int)I->Get_Child_Index(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Child_Index_F4C70398_41B7_4788_A0AF_3073A8BF5AC0, "i", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Child_Index_522F0972_8CA0_4674_AFDF_560EAD863939, "i", "..");
 
-int Berry_Object_Class_Get_Style_Alignment_7727EAF7_B463_4E4D_AB51_833162D04CD7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Alignment_E978FC3F_FCC3_4C75_B6D9_B1898314A1AB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Alignment_7727EAF7_B463_4E4D_AB51_833162D04CD7, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Alignment_E978FC3F_FCC3_4C75_B6D9_B1898314A1AB, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Animation_Time_4D6FCA64_08B2_466F_BE4E_CCE3B3CC6E09(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Animation_Time_012F9C47_6AE7_42B3_ABF1_DEACFCC749C5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Animation_Time((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Animation_Time_4D6FCA64_08B2_466F_BE4E_CCE3B3CC6E09, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Animation_Time_012F9C47_6AE7_42B3_ABF1_DEACFCC749C5, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Animation_Speed_DFE67A29_4134_40EE_B9AE_7DA4505C357D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Animation_Speed_21342309_89EB_41CB_8778_019458B5EFBE(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Animation_Speed((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Animation_Speed_DFE67A29_4134_40EE_B9AE_7DA4505C357D, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Animation_Speed_21342309_89EB_41CB_8778_019458B5EFBE, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Arc_Color_CCCB3383_A8C8_4B51_A04D_94D2082B5EE4(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Arc_Color_81983024_68E9_4D1D_A1BD_54549994ACE0(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Arc_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Color_CCCB3383_A8C8_4B51_A04D_94D2082B5EE4, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Color_81983024_68E9_4D1D_A1BD_54549994ACE0, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Arc_Color_Filtered_7E33F6E5_9D26_4358_B498_9010F9A820DC(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Arc_Color_Filtered_E5191542_02EE_4BB3_A881_A82B3AA0DD70(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Arc_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Color_Filtered_7E33F6E5_9D26_4358_B498_9010F9A820DC, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Color_Filtered_E5191542_02EE_4BB3_A881_A82B3AA0DD70, "Graphics.Color_Type", "@.i");
 
-const void* Berry_Object_Class_Get_Style_Arc_Image_Source_A5FC757C_F6B9_453F_B51A_CABAAE531A10(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Arc_Image_Source_489F223B_EA3E_42EF_8283_A3111A699E6C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Arc_Image_Source((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Image_Source_A5FC757C_F6B9_453F_B51A_CABAAE531A10, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Image_Source_489F223B_EA3E_42EF_8283_A3111A699E6C, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Arc_Opacity_5126AB00_6651_4A41_AEA2_BE4D73483C20(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Arc_Opacity_A3AF8D4D_E378_416F_99C3_0A9075EE7FF8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Arc_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Opacity_5126AB00_6651_4A41_AEA2_BE4D73483C20, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Opacity_A3AF8D4D_E378_416F_99C3_0A9075EE7FF8, "i", ".i");
 
-bool Berry_Object_Class_Get_Style_Arc_Rounded_B12F9A81_F580_4CC0_B349_AC84B8CF175A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Get_Style_Arc_Rounded_2E7D7796_81D1_4E7F_91F8_1D6696C5230E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Arc_Rounded((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Rounded_B12F9A81_F580_4CC0_B349_AC84B8CF175A, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Rounded_2E7D7796_81D1_4E7F_91F8_1D6696C5230E, "b", ".i");
 
-int Berry_Object_Class_Get_Style_Arc_Width_2EA62285_1744_4755_BC3A_479A70CBF8DF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Arc_Width_A3F44890_D035_4E8F_91C9_469601A17CD8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Arc_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Width_2EA62285_1744_4755_BC3A_479A70CBF8DF, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Arc_Width_A3F44890_D035_4E8F_91C9_469601A17CD8, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Base_Direction_8920274D_C2BF_4747_9A9C_0D0C44D1F258(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Base_Direction_5907C705_BB48_4C22_B0CD_121F0658BA36(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Base_Direction((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Base_Direction_8920274D_C2BF_4747_9A9C_0D0C44D1F258, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Base_Direction_5907C705_BB48_4C22_B0CD_121F0658BA36, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Background_Color_4B7C51D0_A878_4293_8A09_E9D625456440(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Color_5C65A4A6_0D40_4B7E_AF85_7ECD0845C8AB(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Color_4B7C51D0_A878_4293_8A09_E9D625456440, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Color_5C65A4A6_0D40_4B7E_AF85_7ECD0845C8AB, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Background_Color_Filtered_25C6D0B0_D4C7_4EBD_B813_3B647889DD29(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Color_Filtered_21436F17_8123_4298_90D6_CE2564633FE8(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Color_Filtered_25C6D0B0_D4C7_4EBD_B813_3B647889DD29, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Color_Filtered_21436F17_8123_4298_90D6_CE2564633FE8, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Background_Opacity_3883C72B_8DC3_4F31_8A25_C4FE951CAC63(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Opacity_B35F55C2_74E6_4518_B33D_2C61321AA0A3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Opacity_3883C72B_8DC3_4F31_8A25_C4FE951CAC63, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Opacity_B35F55C2_74E6_4518_B33D_2C61321AA0A3, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Background_Gradient_Color_7353A4E8_1A72_4015_92E1_757D2E362892(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Gradient_Color_C276863F_B390_4B24_AC3C_7B6AFB362860(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Gradient_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Color_7353A4E8_1A72_4015_92E1_757D2E362892, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Color_C276863F_B390_4B24_AC3C_7B6AFB362860, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_FEB15B38_3F84_429C_A858_9D13E23398C0(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_81223970_88B3_4EEC_843A_E29D739F6F69(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Gradient_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_FEB15B38_3F84_429C_A858_9D13E23398C0, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_81223970_88B3_4EEC_843A_E29D739F6F69, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Background_Gradient_Direction_57EBF124_B9B8_441F_84A7_D93FBBBF7183(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Gradient_Direction_07F06489_A824_49ED_9482_C41A65C0849D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Gradient_Direction((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Direction_57EBF124_B9B8_441F_84A7_D93FBBBF7183, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Direction_07F06489_A824_49ED_9482_C41A65C0849D, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Background_Main_Stop_8CA0FB40_4C76_42B7_A0B6_B7379C30C188(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Main_Stop_6807AA43_7BD0_408D_8AA7_58E0183EB1D7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Main_Stop((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Main_Stop_8CA0FB40_4C76_42B7_A0B6_B7379C30C188, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Main_Stop_6807AA43_7BD0_408D_8AA7_58E0183EB1D7, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Background_Gradient_Stop_AA15F421_71B2_4F2D_9DD1_9DE8667424EB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Gradient_Stop_3F886362_05CB_4EFF_A716_130A42577AA5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Gradient_Stop((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Stop_AA15F421_71B2_4F2D_9DD1_9DE8667424EB, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_Stop_3F886362_05CB_4EFF_A716_130A42577AA5, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Background_Gradient_19F04419_351D_492B_887F_78EBC174F77C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Background_Gradient_3B43A9C6_A0D9_4B98_B644_671E65B1A072(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Background_Gradient((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_19F04419_351D_492B_887F_78EBC174F77C, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Gradient_3B43A9C6_A0D9_4B98_B644_671E65B1A072, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Background_Dither_Mode_2214B518_EBEF_4696_991B_E9310327967B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Dither_Mode_606BB538_BA9B_4219_B68E_F42F35659336(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Dither_Mode((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Dither_Mode_2214B518_EBEF_4696_991B_E9310327967B, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Dither_Mode_606BB538_BA9B_4219_B68E_F42F35659336, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Background_Image_Source_85F99535_63ED_47CF_8CFC_9939ADCFE70B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Background_Image_Source_6CE40ACB_7D09_47C6_B022_60E02872C650(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Background_Image_Source((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Source_85F99535_63ED_47CF_8CFC_9939ADCFE70B, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Source_6CE40ACB_7D09_47C6_B022_60E02872C650, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Background_Image_Opacity_FB2C7CE7_12B5_4D34_910E_CEE023B0B9A4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Image_Opacity_05269298_655D_4498_8B86_5525527FA304(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Image_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Opacity_FB2C7CE7_12B5_4D34_910E_CEE023B0B9A4, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Opacity_05269298_655D_4498_8B86_5525527FA304, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Background_Image_Recolor_2BAEFA8D_6DEC_4976_8636_AE9A3C9CBD05(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Image_Recolor_ED542120_86D9_4205_B2F0_F11729A431ED(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Image_Recolor((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_2BAEFA8D_6DEC_4976_8636_AE9A3C9CBD05, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_ED542120_86D9_4205_B2F0_F11729A431ED, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_0A2BDBA0_5F68_4392_AE01_CD9ED6A4F82F(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_377219E5_B26B_4D5F_9F11_3B850939417B(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Background_Image_Recolor_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_0A2BDBA0_5F68_4392_AE01_CD9ED6A4F82F, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_377219E5_B26B_4D5F_9F11_3B850939417B, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_C508513D_EE5B_4B9B_A866_02C2340595DB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_3FAC363C_511F_42F6_B504_1407FB803C07(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Background_Image_Recolor_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_C508513D_EE5B_4B9B_A866_02C2340595DB, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_3FAC363C_511F_42F6_B504_1407FB803C07, "i", ".i");
 
-bool Berry_Object_Class_Get_Style_Background_Image_Tiled_9BBA640A_915E_40C0_BF38_310033D69320(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Get_Style_Background_Image_Tiled_FD80FAF2_5EB5_4A1E_8C2F_8AD4A6E338D7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Background_Image_Tiled((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Tiled_9BBA640A_915E_40C0_BF38_310033D69320, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Background_Image_Tiled_FD80FAF2_5EB5_4A1E_8C2F_8AD4A6E338D7, "b", ".i");
 
-int Berry_Object_Class_Get_Style_Blend_Mode_AE962EED_876C_4114_B239_FC410D96B089(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Blend_Mode_C61EA87F_5497_4C4C_B496_35123A3D8A52(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Blend_Mode((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Blend_Mode_AE962EED_876C_4114_B239_FC410D96B089, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Blend_Mode_C61EA87F_5497_4C4C_B496_35123A3D8A52, "i", ".i");
 
-int Berry_Object_Class_Get_Scroll_X_8E5529AB_F6CE_4B9C_919D_DF17DAA5EB63(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_X_0B1C3713_A699_4324_BD59_E3E03FF049BF(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_X(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_X_8E5529AB_F6CE_4B9C_919D_DF17DAA5EB63, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_X_0B1C3713_A699_4324_BD59_E3E03FF049BF, "i", ".");
 
-int Berry_Object_Class_Get_Scroll_Y_A7E0A376_9ACB_4D3C_8459_803B6538A8EC(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_Y_E60FB056_51AD_4594_8B6E_A7F988912923(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_Y(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Y_A7E0A376_9ACB_4D3C_8459_803B6538A8EC, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Y_E60FB056_51AD_4594_8B6E_A7F988912923, "i", ".");
 
-int Berry_Object_Class_Get_Scroll_Top_10E9AA07_49F1_4DFD_AABD_7EFC9D8B45B1(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_Top_37504D11_7211_48D9_92E0_740C9036C3E8(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_Top(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Top_10E9AA07_49F1_4DFD_AABD_7EFC9D8B45B1, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Top_37504D11_7211_48D9_92E0_740C9036C3E8, "i", ".");
 
-int Berry_Object_Class_Get_Scroll_Left_FBE0AC9D_5D01_42B0_BDF4_622FD392A2C6(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_Left_31D3AA42_1A13_4148_A88D_D8774660685B(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_Left(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Left_FBE0AC9D_5D01_42B0_BDF4_622FD392A2C6, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Left_31D3AA42_1A13_4148_A88D_D8774660685B, "i", ".");
 
-int Berry_Object_Class_Get_Scroll_Right_DC8D8882_CACA_4A4D_B38C_12681BDB106B(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_Right_B0538789_85B3_4083_8ED8_D1126F40926B(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_Right(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Right_DC8D8882_CACA_4A4D_B38C_12681BDB106B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Right_B0538789_85B3_4083_8ED8_D1126F40926B, "i", ".");
 
-int Berry_Object_Class_Get_Scroll_Bottom_83EF435D_952A_49A9_8272_1918695B1020(Xila_Namespace::Graphics_Types::Object_Class* I)
+int Berry_Object_Class_Get_Scroll_Bottom_5D45D659_C5D7_45C3_8A0F_04F9BEF54F7F(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return (int)I->Get_Scroll_Bottom(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Bottom_83EF435D_952A_49A9_8272_1918695B1020, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Scroll_Bottom_5D45D659_C5D7_45C3_8A0F_04F9BEF54F7F, "i", ".");
 
-void * Berry_Object_Class_Get_Style_Border_Color_20E48907_0EFC_43E5_BF28_951F4C27F431(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Border_Color_3590D806_8B84_468D_9440_E45A3DC743AC(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Border_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Color_20E48907_0EFC_43E5_BF28_951F4C27F431, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Color_3590D806_8B84_468D_9440_E45A3DC743AC, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Border_Color_Filtered_914CF729_4FE1_417E_80DA_026150DC7A2F(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Border_Color_Filtered_9F69A384_0205_4461_AD79_8A659C382C6F(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Border_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Color_Filtered_914CF729_4FE1_417E_80DA_026150DC7A2F, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Color_Filtered_9F69A384_0205_4461_AD79_8A659C382C6F, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Border_Opacity_14205378_1D28_4638_BF18_EA6E59C1F5B0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Border_Opacity_55820111_193D_47EA_9A8C_613BBC771DEF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Border_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Opacity_14205378_1D28_4638_BF18_EA6E59C1F5B0, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Opacity_55820111_193D_47EA_9A8C_613BBC771DEF, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Border_Width_4BDDF202_E8B1_4F64_BB4A_C8E1486A8294(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Border_Width_8A55EC74_9D72_455B_AAF3_A37106568596(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Border_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Width_4BDDF202_E8B1_4F64_BB4A_C8E1486A8294, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Width_8A55EC74_9D72_455B_AAF3_A37106568596, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Border_Side_BA3E0706_9943_4AE5_83AE_4D828340F55F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Border_Side_EC8F215B_0C6A_4A64_9CDA_59F8D7E1DBE3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Border_Side((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Side_BA3E0706_9943_4AE5_83AE_4D828340F55F, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Side_EC8F215B_0C6A_4A64_9CDA_59F8D7E1DBE3, "i", ".i");
 
-bool Berry_Object_Class_Get_Style_Border_Post_A2D9E850_8EF9_400A_802F_04ED7D3976FD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Get_Style_Border_Post_195BE892_744D_4CAE_8FAB_15398363EEEB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Border_Post((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Post_A2D9E850_8EF9_400A_802F_04ED7D3976FD, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Border_Post_195BE892_744D_4CAE_8FAB_15398363EEEB, "b", ".i");
 
-bool Berry_Object_Class_Get_Style_Clip_Corner_1C27EE5C_97AD_413C_A464_52B2E4315C20(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Get_Style_Clip_Corner_4E471CE7_77A3_45A5_ABB4_5A53C043288A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Clip_Corner((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Clip_Corner_1C27EE5C_97AD_413C_A464_52B2E4315C20, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Clip_Corner_4E471CE7_77A3_45A5_ABB4_5A53C043288A, "b", ".i");
 
-int Berry_Object_Class_Get_Style_Color_Filter_Opacity_9D22C40A_08F5_4713_B15E_A98514C41287(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Color_Filter_Opacity_EC885679_B25D_4E7F_8218_B6EB3EBEC028(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Color_Filter_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Color_Filter_Opacity_9D22C40A_08F5_4713_B15E_A98514C41287, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Color_Filter_Opacity_EC885679_B25D_4E7F_8218_B6EB3EBEC028, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Flex_Flow_F9EFA744_76AE_4E2E_A171_5202A998D033(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Flex_Flow_C764C828_25FD_4AF9_9D38_2E356C7C8422(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Flex_Flow((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Flow_F9EFA744_76AE_4E2E_A171_5202A998D033, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Flow_C764C828_25FD_4AF9_9D38_2E356C7C8422, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Flex_Main_Place_CF3E1F24_835E_4DC5_9D1B_FCA4692EE209(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Flex_Main_Place_723809BC_D73E_4CC4_AB6C_187DC1325247(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Flex_Main_Place((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Main_Place_CF3E1F24_835E_4DC5_9D1B_FCA4692EE209, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Main_Place_723809BC_D73E_4CC4_AB6C_187DC1325247, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Flex_Cross_Place_165322D3_1AA3_4BCA_ACDF_DE0B11838D46(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Flex_Cross_Place_A1CE9496_D6E8_4909_904B_6B08C6E701F0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Flex_Cross_Place((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Cross_Place_165322D3_1AA3_4BCA_ACDF_DE0B11838D46, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Cross_Place_A1CE9496_D6E8_4909_904B_6B08C6E701F0, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Flex_Track_Place_B1EAEDF2_DA46_4570_89D4_70B5DEA7AB10(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Flex_Track_Place_B64AA6FA_02DD_4056_9AE2_C178CBCBB9CA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Flex_Track_Place((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Track_Place_B1EAEDF2_DA46_4570_89D4_70B5DEA7AB10, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Track_Place_B64AA6FA_02DD_4056_9AE2_C178CBCBB9CA, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Flex_Grow_4F255088_8785_4C2B_89C8_B142A5F38A5B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Flex_Grow_02FBD83E_AF1E_463E_B0C5_01819114DA30(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Flex_Grow((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Grow_4F255088_8785_4C2B_89C8_B142A5F38A5B, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Flex_Grow_02FBD83E_AF1E_463E_B0C5_01819114DA30, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_57766280_E198_4969_9F29_905D35D758E0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_D084CD80_0C69_4080_B819_C5EA36E4E5DB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_Column_Position((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_57766280_E198_4969_9F29_905D35D758E0, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_D084CD80_0C69_4080_B819_C5EA36E4E5DB, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_D219F550_8620_462D_9875_E73ABB16B7C4(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_AA3AF4D6_7368_4268_A28D_4FFB03C54C86(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_Column_Span((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_D219F550_8620_462D_9875_E73ABB16B7C4, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_AA3AF4D6_7368_4268_A28D_4FFB03C54C86, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_8B8DD7C8_D13C_4FFD_97B1_07C8B2C1B04F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_EC7AD3D7_DC03_42CF_8D76_8A9A0D870DE3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_Row_Position((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_8B8DD7C8_D13C_4FFD_97B1_07C8B2C1B04F, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_EC7AD3D7_DC03_42CF_8D76_8A9A0D870DE3, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_539C543F_0179_4E47_A998_63657E5B93EA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_6786E237_D93B_43A9_BE43_44FD6B5314B6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_Row_Span((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_539C543F_0179_4E47_A998_63657E5B93EA, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_6786E237_D93B_43A9_BE43_44FD6B5314B6, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_899525B2_5438_40FE_9872_81C94B378B68(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_92B13E34_053C_4DE8_9EC5_B0F49711B19D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_X_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_899525B2_5438_40FE_9872_81C94B378B68, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_92B13E34_053C_4DE8_9EC5_B0F49711B19D, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_1D09E727_F841_490B_8BC8_99ED19F315D8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_A2C57E87_5A2C_40C7_8B9F_99D6DF9AFEEB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Cell_Y_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_1D09E727_F841_490B_8BC8_99ED19F315D8, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_A2C57E87_5A2C_40C7_8B9F_99D6DF9AFEEB, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Column_Alignment_E757C598_64B8_409C_94EB_7FE2540939FA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Column_Alignment_DDCF8919_4E6D_4BB2_BEB2_2B25A933779A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Column_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Column_Alignment_E757C598_64B8_409C_94EB_7FE2540939FA, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Column_Alignment_DDCF8919_4E6D_4BB2_BEB2_2B25A933779A, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_AFF0E6A6_E109_4029_8F84_20896E13F9DD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_94013AAB_E727_4B3A_BFE7_9FAA3B040E9E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Grid_Column_Descriptor_Array((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_AFF0E6A6_E109_4029_8F84_20896E13F9DD, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_94013AAB_E727_4B3A_BFE7_9FAA3B040E9E, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Grid_Row_Alignment_7EB3F763_C473_497F_864A_655976A14C0D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Grid_Row_Alignment_3443B5FC_6495_4344_825A_D4F0B2A888C3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Grid_Row_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Row_Alignment_7EB3F763_C473_497F_864A_655976A14C0D, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Row_Alignment_3443B5FC_6495_4344_825A_D4F0B2A888C3, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_DA99DAA8_50F0_43E1_83F8_ACC5814CEE13(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_744C1DDE_ADFD_4427_886B_20FACA0D0F5C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Grid_Row_Descriptor_Array((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_DA99DAA8_50F0_43E1_83F8_ACC5814CEE13, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_744C1DDE_ADFD_4427_886B_20FACA0D0F5C, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Height_A9B5C460_9B3D_484E_84A9_451FF43A4855(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Height_D6DA0FC9_E4A1_49D0_AD13_A797284C104B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Height((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Height_A9B5C460_9B3D_484E_84A9_451FF43A4855, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Height_D6DA0FC9_E4A1_49D0_AD13_A797284C104B, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Image_Opacity_89298FE2_0FC4_4428_9A39_1B04A74F2F01(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Image_Opacity_A5115FF6_C952_4CDC_82DC_0198C995E3D8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Image_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Opacity_89298FE2_0FC4_4428_9A39_1B04A74F2F01, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Opacity_A5115FF6_C952_4CDC_82DC_0198C995E3D8, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Image_Recolor_665AD309_42DA_4F46_B7AB_D5E08910686A(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Image_Recolor_2E676BBD_FE3B_4F43_B2FD_6BA4B5D4B597(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Image_Recolor((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_665AD309_42DA_4F46_B7AB_D5E08910686A, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_2E676BBD_FE3B_4F43_B2FD_6BA4B5D4B597, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Image_Recolor_Filtered_252ED790_4761_42AD_BA6E_8279DDC64CCA(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Image_Recolor_Filtered_5853C257_BDA4_41AA_9BEB_781285820744(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Image_Recolor_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_Filtered_252ED790_4761_42AD_BA6E_8279DDC64CCA, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_Filtered_5853C257_BDA4_41AA_9BEB_781285820744, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Image_Recolor_Opacity_F418A55C_5D74_4D7B_BC86_27DFAA32A20C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Image_Recolor_Opacity_DC544B19_28A5_437A_8F75_E0538728854E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Image_Recolor_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_Opacity_F418A55C_5D74_4D7B_BC86_27DFAA32A20C, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Image_Recolor_Opacity_DC544B19_28A5_437A_8F75_E0538728854E, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Layout_9D38A4E2_7F45_447C_B196_69071E7E9AA0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Layout_61379A93_C770_463F_AB1D_256DC7817DD5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Layout((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Layout_9D38A4E2_7F45_447C_B196_69071E7E9AA0, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Layout_61379A93_C770_463F_AB1D_256DC7817DD5, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Line_Color_BDA1B6E7_896B_4EC9_9EF8_D207C4DBF6B9(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Line_Color_AAAC7C6A_3957_43DE_8AA3_9FF5BC73C311(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Line_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Color_BDA1B6E7_896B_4EC9_9EF8_D207C4DBF6B9, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Color_AAAC7C6A_3957_43DE_8AA3_9FF5BC73C311, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Line_Color_Filtered_5AF81393_014B_453F_8A2A_8E3E88055BF4(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Line_Color_Filtered_C0B68F07_3590_439C_A746_9B50D9EC5DA3(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Line_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Color_Filtered_5AF81393_014B_453F_8A2A_8E3E88055BF4, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Color_Filtered_C0B68F07_3590_439C_A746_9B50D9EC5DA3, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Line_Dash_Gap_CF3AB78C_F81C_436A_9BD1_C23CD5CC67D0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Line_Dash_Gap_4E3C56AC_7D79_4A94_924B_866520E61D70(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Line_Dash_Gap((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Dash_Gap_CF3AB78C_F81C_436A_9BD1_C23CD5CC67D0, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Dash_Gap_4E3C56AC_7D79_4A94_924B_866520E61D70, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Line_Dash_Width_BB5136D7_0FEF_46E9_8902_C23C262DF828(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Line_Dash_Width_4708343C_BECE_4713_829B_DDF7E55BE67C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Line_Dash_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Dash_Width_BB5136D7_0FEF_46E9_8902_C23C262DF828, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Dash_Width_4708343C_BECE_4713_829B_DDF7E55BE67C, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Line_Opacity_BD9E382F_AD00_4FE6_8FD2_FE9E8406679C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Line_Opacity_57819E72_28A3_4FE0_B459_AA358E1E342E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Line_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Opacity_BD9E382F_AD00_4FE6_8FD2_FE9E8406679C, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Opacity_57819E72_28A3_4FE0_B459_AA358E1E342E, "i", ".i");
 
-bool Berry_Object_Class_Get_Style_Line_Rounded_7F422ED0_BA73_4FA0_A04A_1BCD9FE4CD21(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+bool Berry_Object_Class_Get_Style_Line_Rounded_D55923DE_4094_4DBE_989E_9EC0D81A29B1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Line_Rounded((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Rounded_7F422ED0_BA73_4FA0_A04A_1BCD9FE4CD21, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Rounded_D55923DE_4094_4DBE_989E_9EC0D81A29B1, "b", ".i");
 
-int Berry_Object_Class_Get_Style_Line_Width_B8B35CE0_D5C0_46E9_801F_4568149A6152(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Line_Width_704F8EF5_7E67_400C_990C_C82DB71792AC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Line_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Width_B8B35CE0_D5C0_46E9_801F_4568149A6152, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Line_Width_704F8EF5_7E67_400C_990C_C82DB71792AC, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Maximum_Height_7D0A9658_5E16_45D0_BBD9_AB7E1626F122(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Maximum_Height_64EDBD25_0D0A_4ADB_BC90_ACC9F5FED3C0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Maximum_Height((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Maximum_Height_7D0A9658_5E16_45D0_BBD9_AB7E1626F122, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Maximum_Height_64EDBD25_0D0A_4ADB_BC90_ACC9F5FED3C0, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Maximum_Width_3097B162_6AD9_4E86_833F_84821D4199D8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Maximum_Width_8B0FA3AE_1F1C_4CAF_8E1A_3514D7ECE860(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Maximum_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Maximum_Width_3097B162_6AD9_4E86_833F_84821D4199D8, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Maximum_Width_8B0FA3AE_1F1C_4CAF_8E1A_3514D7ECE860, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Minimum_Height_E9849E5C_D361_4D66_BB67_E5CA46C209A8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Minimum_Height_7BDBFA40_BF88_4D34_B954_8619F7F37F83(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Minimum_Height((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Minimum_Height_E9849E5C_D361_4D66_BB67_E5CA46C209A8, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Minimum_Height_7BDBFA40_BF88_4D34_B954_8619F7F37F83, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Minimum_Width_C32B7906_2B23_4234_A444_147CC20AD3A7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Minimum_Width_74D7DCF2_8596_4286_81C1_489CF352B479(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Minimum_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Minimum_Width_C32B7906_2B23_4234_A444_147CC20AD3A7, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Minimum_Width_74D7DCF2_8596_4286_81C1_489CF352B479, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Opacity_434F9935_F160_4754_8A9D_6A0FDFD5E4A7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Opacity_83103B24_D489_4D74_B9E4_8A487980679F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Opacity_434F9935_F160_4754_8A9D_6A0FDFD5E4A7, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Opacity_83103B24_D489_4D74_B9E4_8A487980679F, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Outline_Color_A9FB6D90_1825_4384_B3D6_6547AC3BF320(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Outline_Color_49A8D073_E2F8_4B46_9298_9D56982806D4(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Outline_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Color_A9FB6D90_1825_4384_B3D6_6547AC3BF320, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Color_49A8D073_E2F8_4B46_9298_9D56982806D4, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Outline_Color_Filtered_EEFD6A70_B354_4DAC_B087_D5E61DF0FFAB(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Outline_Color_Filtered_C595A5A3_E46B_430D_8F84_85A869ABA04A(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Outline_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Color_Filtered_EEFD6A70_B354_4DAC_B087_D5E61DF0FFAB, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Color_Filtered_C595A5A3_E46B_430D_8F84_85A869ABA04A, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Outline_Opacity_152F9226_D5FA_446D_AE1D_3263E6DC4BD0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Outline_Opacity_9C624C4E_B9D1_4D59_AB33_A6A923FEB93E(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Outline_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Opacity_152F9226_D5FA_446D_AE1D_3263E6DC4BD0, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Opacity_9C624C4E_B9D1_4D59_AB33_A6A923FEB93E, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Outline_Pad_6314D931_9A7F_41DF_A32D_072B7FE7410A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Outline_Pad_385B4232_CA76_4AC9_913C_945174A42BD0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Outline_Pad((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Pad_6314D931_9A7F_41DF_A32D_072B7FE7410A, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Pad_385B4232_CA76_4AC9_913C_945174A42BD0, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Outline_Width_F23D78E1_FA30_4B01_9D69_909E064036C2(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Outline_Width_A8657148_0F4B_404E_8882_3EB2AA9D876F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Outline_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Width_F23D78E1_FA30_4B01_9D69_909E064036C2, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Outline_Width_A8657148_0F4B_404E_8882_3EB2AA9D876F, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Bottom_3F24A503_3A0E_43C3_AB09_E7AA32AB4616(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Bottom_3932114C_7C75_427A_B154_DF52FCAD61E5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Bottom((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Bottom_3F24A503_3A0E_43C3_AB09_E7AA32AB4616, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Bottom_3932114C_7C75_427A_B154_DF52FCAD61E5, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Top_77F8DC6B_C041_401E_ACA2_849E3FA7B864(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Top_6AD91633_A102_4D80_B7DE_26F23418C1C0(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Top((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Top_77F8DC6B_C041_401E_ACA2_849E3FA7B864, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Top_6AD91633_A102_4D80_B7DE_26F23418C1C0, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Left_64996F24_E2C0_4AFF_89CA_71B4A8AA01F7(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Left_E0457461_61ED_4465_802A_961E39F2D9BD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Left((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Left_64996F24_E2C0_4AFF_89CA_71B4A8AA01F7, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Left_E0457461_61ED_4465_802A_961E39F2D9BD, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Right_AE194E8E_0C98_400A_9397_193F8EBA1D79(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Right_4A2D1FF6_47D9_47CC_8017_BD299E473058(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Right((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Right_AE194E8E_0C98_400A_9397_193F8EBA1D79, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Right_4A2D1FF6_47D9_47CC_8017_BD299E473058, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Row_D01653EB_44A3_4397_B9B8_6001733BC36C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Row_36640825_3BBC_4151_B7B1_650A469A9791(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Row((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Row_D01653EB_44A3_4397_B9B8_6001733BC36C, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Row_36640825_3BBC_4151_B7B1_650A469A9791, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Pad_Column_EB2588D4_E7D2_43CA_9CF3_FD7290FE1D6F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Pad_Column_D899434F_DA37_49B6_8852_E265F1239041(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Pad_Column((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Column_EB2588D4_E7D2_43CA_9CF3_FD7290FE1D6F, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Pad_Column_D899434F_DA37_49B6_8852_E265F1239041, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Radius_BC899FCD_B622_408D_8549_62EF95148104(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Radius_86AE89CB_D691_4520_95AF_4708C35C3ADC(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Radius((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Radius_BC899FCD_B622_408D_8549_62EF95148104, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Radius_86AE89CB_D691_4520_95AF_4708C35C3ADC, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Shadow_Color_978F6DCA_B0E7_41C7_9CC4_F1055AA002C1(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Shadow_Color_A80AB7AC_B713_42DE_9628_6A05467A6BA7(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Shadow_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Color_978F6DCA_B0E7_41C7_9CC4_F1055AA002C1, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Color_A80AB7AC_B713_42DE_9628_6A05467A6BA7, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Shadow_Color_Filtered_C5F2A053_3758_48C8_A974_945A3A11CD5C(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Shadow_Color_Filtered_E7FA65C4_AC27_4B12_AF2E_2CD919ADBF39(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Shadow_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Color_Filtered_C5F2A053_3758_48C8_A974_945A3A11CD5C, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Color_Filtered_E7FA65C4_AC27_4B12_AF2E_2CD919ADBF39, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Shadow_Offset_X_BC23345D_46E8_4959_822C_73C3837210B8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Shadow_Offset_X_A89B3411_664C_4657_B5D0_E0F8DA50111C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Shadow_Offset_X((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Offset_X_BC23345D_46E8_4959_822C_73C3837210B8, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Offset_X_A89B3411_664C_4657_B5D0_E0F8DA50111C, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Shadow_Offset_Y_D1144DCA_39F2_41C4_832B_0E52AB4F2701(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Shadow_Offset_Y_3A4CE750_77BA_4CC5_BDED_0418C2F332F3(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Shadow_Offset_Y((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Offset_Y_D1144DCA_39F2_41C4_832B_0E52AB4F2701, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Offset_Y_3A4CE750_77BA_4CC5_BDED_0418C2F332F3, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Shadow_Opacity_DADE3EE2_1B4C_423C_9A5D_95097A175758(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Shadow_Opacity_188EAB7F_08A3_4054_86DF_10E5D008A130(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Shadow_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Opacity_DADE3EE2_1B4C_423C_9A5D_95097A175758, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Opacity_188EAB7F_08A3_4054_86DF_10E5D008A130, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Shadow_Spread_CF1B7738_7827_4E11_9692_9E4AE1517787(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Shadow_Spread_7050B82D_E6C4_4054_A688_AF4903D7AD0A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Shadow_Spread((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Spread_CF1B7738_7827_4E11_9692_9E4AE1517787, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Spread_7050B82D_E6C4_4054_A688_AF4903D7AD0A, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Shadow_Width_86022C5E_278B_49F5_AB1E_46B332D10CAA(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Shadow_Width_1128ED52_AD5F_4490_9BB6_0CA855436112(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Shadow_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Width_86022C5E_278B_49F5_AB1E_46B332D10CAA, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Shadow_Width_1128ED52_AD5F_4490_9BB6_0CA855436112, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Text_Alignment_CAFCA943_4187_41ED_9DEF_7B5115F3A64D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Text_Alignment_0E18B0A4_8D22_46E9_9AD6_828D42919572(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Text_Alignment((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Alignment_CAFCA943_4187_41ED_9DEF_7B5115F3A64D, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Alignment_0E18B0A4_8D22_46E9_9AD6_828D42919572, "i", ".i");
 
-void * Berry_Object_Class_Get_Style_Text_Color_BABCE270_2B24_42FD_BEE8_6509163C91A1(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Text_Color_D779F8FD_23DD_4155_862A_8E91379EB568(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Text_Color((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Color_BABCE270_2B24_42FD_BEE8_6509163C91A1, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Color_D779F8FD_23DD_4155_862A_8E91379EB568, "Graphics.Color_Type", "@.i");
 
-void * Berry_Object_Class_Get_Style_Text_Color_Filtered_4D61A92F_2AFF_41C9_B154_C0DCC1FFCF38(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+void * Berry_Object_Class_Get_Style_Text_Color_Filtered_E4677E97_A1F7_4F72_A4C9_137D2498A37F(bvm* V, Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Style_Text_Color_Filtered((Part_Type)A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Color_Filtered_4D61A92F_2AFF_41C9_B154_C0DCC1FFCF38, "Graphics.Color_Type", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Color_Filtered_E4677E97_A1F7_4F72_A4C9_137D2498A37F, "Graphics.Color_Type", "@.i");
 
-int Berry_Object_Class_Get_Style_Text_Decor_9E8AA68D_5AA8_403D_A2F8_C68E0EE6847F(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Text_Decor_7C6FA291_D618_4541_B23F_3CBF7FD16977(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Text_Decor((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Decor_9E8AA68D_5AA8_403D_A2F8_C68E0EE6847F, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Decor_7C6FA291_D618_4541_B23F_3CBF7FD16977, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Text_Font_EBEC489A_FE3B_4DB8_A39E_52C06EA74685(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Text_Font_E8C8F5D5_AC9E_490D_96AF_D42A181CC7E6(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Text_Font((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Font_EBEC489A_FE3B_4DB8_A39E_52C06EA74685, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Font_E8C8F5D5_AC9E_490D_96AF_D42A181CC7E6, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Text_Letter_Space_50D7922D_DC2C_482C_91F0_19CAA8DAE373(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Text_Letter_Space_9463F37B_26A8_48FB_9E22_12EA4C2D7339(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Text_Letter_Space((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Letter_Space_50D7922D_DC2C_482C_91F0_19CAA8DAE373, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Letter_Space_9463F37B_26A8_48FB_9E22_12EA4C2D7339, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Text_Line_Space_29EBF91B_27F2_45F8_BAE6_63544EE5D013(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Text_Line_Space_BA5AF965_7231_4C14_AC97_0C22ABBEBC5D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Text_Line_Space((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Line_Space_29EBF91B_27F2_45F8_BAE6_63544EE5D013, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Line_Space_BA5AF965_7231_4C14_AC97_0C22ABBEBC5D, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Text_Opacity_73F64C0B_363A_4FB3_805D_B41DD72DB74D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Text_Opacity_DA55B668_10B5_40C9_AFE9_0FFF2A6A1C70(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Text_Opacity((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Opacity_73F64C0B_363A_4FB3_805D_B41DD72DB74D, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Text_Opacity_DA55B668_10B5_40C9_AFE9_0FFF2A6A1C70, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Transform_Angle_D2DCD343_2E43_449A_9235_9FED0104F89B(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Transform_Angle_AE7CE797_07F8_41F8_81EB_967F1F166E17(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Transform_Angle((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Angle_D2DCD343_2E43_449A_9235_9FED0104F89B, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Angle_AE7CE797_07F8_41F8_81EB_967F1F166E17, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Transform_Height_F2CBBA7A_131A_4F08_B58B_A65B65E519D8(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Transform_Height_958BA8B1_8F09_4901_A6F1_CF8581CA7452(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Transform_Height((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Height_F2CBBA7A_131A_4F08_B58B_A65B65E519D8, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Height_958BA8B1_8F09_4901_A6F1_CF8581CA7452, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Transform_Width_F9CEC647_88CC_4903_BAE8_4F3477D0D2F1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Transform_Width_98ABACFB_B5C6_492D_9435_16479188FC9D(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Transform_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Width_F9CEC647_88CC_4903_BAE8_4F3477D0D2F1, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Width_98ABACFB_B5C6_492D_9435_16479188FC9D, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Transform_Zoom_D9A3F4E1_44BC_43A1_839C_0967E5750699(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Transform_Zoom_D7A6E179_ED7D_4E7A_87D6_D96642F5E400(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Transform_Zoom((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Zoom_D9A3F4E1_44BC_43A1_839C_0967E5750699, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transform_Zoom_D7A6E179_ED7D_4E7A_87D6_D96642F5E400, "i", ".i");
 
-const void* Berry_Object_Class_Get_Style_Transition_7C46208F_8A14_4DDA_A6F0_0ACCB1E39D38(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+const void* Berry_Object_Class_Get_Style_Transition_5AA5E0DE_D8BF_4DD4_A882_4C2B92B8839C(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return I->Get_Style_Transition((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transition_7C46208F_8A14_4DDA_A6F0_0ACCB1E39D38, "c", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Transition_5AA5E0DE_D8BF_4DD4_A882_4C2B92B8839C, "c", ".i");
 
-int Berry_Object_Class_Get_Style_Translate_X_4F9A0D46_16DC_49BE_8967_B7DBC1B5B742(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Translate_X_557B3F22_7CDD_4739_8D0D_EEA71FEB68F5(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Translate_X((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Translate_X_4F9A0D46_16DC_49BE_8967_B7DBC1B5B742, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Translate_X_557B3F22_7CDD_4739_8D0D_EEA71FEB68F5, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Translate_Y_C1608338_F9C8_4508_A15A_3F3A7BBDF9C1(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Translate_Y_5CFC9AE9_8096_4CA2_9A5C_C4847317A6BF(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Translate_Y((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Translate_Y_C1608338_F9C8_4508_A15A_3F3A7BBDF9C1, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Translate_Y_5CFC9AE9_8096_4CA2_9A5C_C4847317A6BF, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Width_E7E5F089_8E50_469B_9973_445E26A53727(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Width_7C7179AC_D818_46E7_B7E6_7C955268C5DD(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Width((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Width_E7E5F089_8E50_469B_9973_445E26A53727, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Width_7C7179AC_D818_46E7_B7E6_7C955268C5DD, "i", ".i");
 
-int Berry_Object_Class_Get_Style_X_5B4D6ACC_468A_4252_AE78_FD4F40E7AFAB(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_X_B85F346F_9835_4EF9_9C78_7710589B1071(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_X((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_X_5B4D6ACC_468A_4252_AE78_FD4F40E7AFAB, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_X_B85F346F_9835_4EF9_9C78_7710589B1071, "i", ".i");
 
-int Berry_Object_Class_Get_Style_Y_168F3F4E_7B70_4A86_AC03_FC659ABE213A(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
+int Berry_Object_Class_Get_Style_Y_EB8456AF_8899_4521_8059_76F678B8E524(Xila_Namespace::Graphics_Types::Object_Class* I, int A_0)
 {
 return (int)I->Get_Style_Y((Part_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Y_168F3F4E_7B70_4A86_AC03_FC659ABE213A, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Get_Style_Y_EB8456AF_8899_4521_8059_76F678B8E524, "i", ".i");
 
-void Berry_Object_Class_Clear_Pointer_A8BA1C8F_76A3_496D_8545_095B98D67935(Xila_Namespace::Graphics_Types::Object_Class* I)
+void Berry_Object_Class_Clear_Pointer_CA15CBEB_BD5D_46DE_93D6_BAD436367205(Xila_Namespace::Graphics_Types::Object_Class* I)
 {
 return I->Clear_Pointer(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_Pointer_A8BA1C8F_76A3_496D_8545_095B98D67935, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Clear_Pointer_CA15CBEB_BD5D_46DE_93D6_BAD436367205, "", ".");
 
 // - - Operators
-bool Berry_Object_Class_Operator_E0827C3C_B838_432F_9701_13CCC7FE575B(Xila_Namespace::Graphics_Types::Object_Class* I, Xila_Namespace::Graphics_Types::Object_Class* A_0)
+bool Berry_Object_Class_Operator_FBD9F3E6_2142_4840_B5B6_27CA02F646AA(Xila_Namespace::Graphics_Types::Object_Class* I, Xila_Namespace::Graphics_Types::Object_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Operator_E0827C3C_B838_432F_9701_13CCC7FE575B, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Operator_FBD9F3E6_2142_4840_B5B6_27CA02F646AA, "b", "..")
 
-bool Berry_Object_Class_Operator_F4F2B042_944B_4B37_869A_72144488FED9(Xila_Namespace::Graphics_Types::Object_Class* I, Xila_Namespace::Graphics_Types::Object_Class* A_0)
+bool Berry_Object_Class_Operator_642868A9_1874_459D_B244_99D8EAFA5364(Xila_Namespace::Graphics_Types::Object_Class* I, Xila_Namespace::Graphics_Types::Object_Class* A_0)
 {
 return *I != *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Operator_F4F2B042_944B_4B37_869A_72144488FED9, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Operator_642868A9_1874_459D_B244_99D8EAFA5364, "b", "..")
 
 
 // - Berry declaration
@@ -1630,266 +1630,266 @@ BE_FUNC_CTYPE_DECLARE(Berry_Object_Class_Operator_F4F2B042_944B_4B37_869A_721444
 class Berry_Object_Type(scope:global, name:Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Object_Class_Initialize_DE0F4F3C_5FB0_4251_8153_E6647AE04E3E)
-	init, ctype_func(Berry_Object_Class_Initialize_5F6C311F_9647_4259_BD3F_6B53FB5A9359)
-	deinit, ctype_func(Berry_Object_Class_Deinitialize_7CDC47C2_E7AF_4CEE_95E2_F8D492C78CF1)
-	Create, ctype_func(Berry_Object_Class_Create_3B23260B_DFE8_4284_ABA4_A82AEFD549FB)
-	Delete, ctype_func(Berry_Object_Class_Delete_E2E0B7A2_F1A1_4803_B2D0_5E39FAFE2BE4)
-	Clean, ctype_func(Berry_Object_Class_Clean_48175907_13C3_4F75_8C8E_DF750116FAC1)
-	Add_Flag, ctype_func(Berry_Object_Class_Add_Flag_D1968225_021D_43A5_A369_3EDB26B781C9)
-	Clear_Flag, ctype_func(Berry_Object_Class_Clear_Flag_8D4D9A11_2851_47B9_919A_3488DD63F33C)
-	Has_Flag, ctype_func(Berry_Object_Class_Has_Flag_77BF46BC_B4C3_4F24_9D11_20EA33A4819A)
-	Has_Any_Flag, ctype_func(Berry_Object_Class_Has_Any_Flag_AF8F7418_6970_4EE3_A967_B290C3FC9B09)
-	Add_State, ctype_func(Berry_Object_Class_Add_State_3626B6C2_6878_4FF1_9382_A2628D2ED604)
-	Clear_State, ctype_func(Berry_Object_Class_Clear_State_2758AC40_3193_4EA1_A3E2_B709E5C49340)
-	Has_State, ctype_func(Berry_Object_Class_Has_State_06C54F0B_F8C8_451F_9F55_889FB8449C0D)
-	Swap, ctype_func(Berry_Object_Class_Swap_53A8E3FD_FF86_49C5_85B8_BAE854A359D9)
-	Add_Event, ctype_func(Berry_Object_Class_Add_Event_CD37AC5F_3E70_4932_876C_B2514F32022F)
-	Remove_Event, ctype_func(Berry_Object_Class_Remove_Event_397E830C_9FA9_4693_9C6D_F3486AFDF49C)
-	Remove_All_Events, ctype_func(Berry_Object_Class_Remove_All_Events_31CF8C47_BCD7_4B28_84DD_5A0C128A6F3B)
-	Send_Event, ctype_func(Berry_Object_Class_Send_Event_28747F53_54E1_4A73_8A9D_D3BF68E98940)
-	Move_Foreground, ctype_func(Berry_Object_Class_Move_Foreground_758280B7_A67A_45C4_B672_650693B5938F)
-	Move_Background, ctype_func(Berry_Object_Class_Move_Background_2F4FC005_72B4_403D_8B7E_49BA5F88EA57)
-	Scroll_By, ctype_func(Berry_Object_Class_Scroll_By_21C2E09E_27F5_4A7F_8BF0_8987AB6A25A9)
-	Scroll_To, ctype_func(Berry_Object_Class_Scroll_To_5453602B_486B_4FE2_A6D2_850E6B822E29)
-	Scroll_Horizontally, ctype_func(Berry_Object_Class_Scroll_Horizontally_5A15484D_E2EA_4095_8548_94541105931A)
-	Scroll_Vertically, ctype_func(Berry_Object_Class_Scroll_Vertically_65AE4786_E452_4D3E_A97E_A3AFD82E65FD)
-	Allocate_Special_Data, ctype_func(Berry_Object_Class_Allocate_Special_Data_AF188BBF_1DCF_46FC_B5B3_106B68213F1C)
-	Is_Valid, ctype_func(Berry_Object_Class_Is_Valid_A498D8F8_1D21_4ABE_929B_5455F623482F)
-	Add_Style, ctype_func(Berry_Object_Class_Add_Style_CC1F9D5A_3897_4D0C_AF9A_B9BA988A006B)
-	DPX, ctype_func(Berry_Object_Class_DPX_226C1096_C9A5_4640_9667_C8DD38715B23)
-	Set_Index, ctype_func(Berry_Object_Class_Set_Index_FB9D57C3_A49B_4BC3_B727_69125449EFDC)
-	Set_Parent, ctype_func(Berry_Object_Class_Set_Parent_19BD3A5F_F0BF_469B_9660_A150FBED0AED)
-	Set_Position_X, ctype_func(Berry_Object_Class_Set_Position_X_720E926F_592E_46F1_99F1_25596995925A)
-	Set_Position_Y, ctype_func(Berry_Object_Class_Set_Position_Y_61755C98_D5F8_490D_AE27_D36D8FBD4E03)
-	Set_Position, ctype_func(Berry_Object_Class_Set_Position_0CC0694E_AEA1_4F4D_85FE_671CF9F04242)
-	Set_Alignment, ctype_func(Berry_Object_Class_Set_Alignment_EE631285_809C_4A59_8BCE_DE0588DCB34C)
-	Set_Size, ctype_func(Berry_Object_Class_Set_Size_874BF89A_BE54_473A_A23A_39C9D87B2F52)
-	Set_Width, ctype_func(Berry_Object_Class_Set_Width_FAD7F68D_270F_4175_BEE4_FDE0A4BA7851)
-	Set_Height, ctype_func(Berry_Object_Class_Set_Height_70B5A4FF_3CC6_4863_8D7F_99C78C5A6A1C)
-	Set_Content_Height, ctype_func(Berry_Object_Class_Set_Content_Height_A954C4B8_B19B_4FCC_9B45_12F3D3B7A137)
-	Set_Flex_Alignment, ctype_func(Berry_Object_Class_Set_Flex_Alignment_A2CA1EC0_1A40_40D9_993A_14EB1D8300CF)
-	Set_Flex_Flow, ctype_func(Berry_Object_Class_Set_Flex_Flow_952BAF5C_31D4_4F5E_AA1D_ECD7848702D3)
-	Set_Flex_Grow, ctype_func(Berry_Object_Class_Set_Flex_Grow_2C68E53D_9775_41E0_9CF6_050CFA2E7E00)
-	Set_Grid_Alignment, ctype_func(Berry_Object_Class_Set_Grid_Alignment_E9FF9102_7CC9_4404_914C_DE1BFB33B79B)
-	Set_Grid_Cell, ctype_func(Berry_Object_Class_Set_Grid_Cell_F88014AE_3705_4F92_A662_6CC2B247B56B)
-	Set_Grid_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Grid_Descriptor_Array_FD3A6BE8_39C7_4782_B2B1_6C0A68108BE3)
-	Set_Style_Alignment, ctype_func(Berry_Object_Class_Set_Style_Alignment_DBDE7DEC_0E79_4494_B6A5_36DF6960B3CE)
-	Set_Style_Animation_Speed, ctype_func(Berry_Object_Class_Set_Style_Animation_Speed_84FDDBB1_7774_4125_B342_3FA4A11601B7)
-	Set_Style_Animation_Time, ctype_func(Berry_Object_Class_Set_Style_Animation_Time_8D82087E_15EA_4044_90A8_7E30BB6E2491)
-	Set_Style_Arc_Color, ctype_func(Berry_Object_Class_Set_Style_Arc_Color_402D3A44_7FA5_408B_BDC3_ECBA29BB3A60)
-	Set_Style_Arc_Opacity, ctype_func(Berry_Object_Class_Set_Style_Arc_Opacity_29E1E5F8_DB34_4268_ADAB_466A44349BBC)
-	Set_Style_Arc_Rounded, ctype_func(Berry_Object_Class_Set_Style_Arc_Rounded_E6518DA3_DB34_4218_A601_28C917C61355)
-	Set_Style_Arc_Width, ctype_func(Berry_Object_Class_Set_Style_Arc_Width_A56CDE8E_E52D_4F97_9042_3A8CC4505019)
-	Set_Style_Base_Direction, ctype_func(Berry_Object_Class_Set_Style_Base_Direction_5DC2BD06_79CA_4F28_B470_3D9D920892CA)
-	Set_Style_Background_Color, ctype_func(Berry_Object_Class_Set_Style_Background_Color_0BB8A3BF_66DC_49EB_BEE1_A58BA26C8CE4)
-	Set_Style_Background_Dither_Mode, ctype_func(Berry_Object_Class_Set_Style_Background_Dither_Mode_13B5C5A3_33ED_4F13_A242_68BFA6CD56B4)
-	Set_Style_Background_Image_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Opacity_42DA77FE_E296_4D44_987B_CB51033D8671)
-	Set_Style_Background_Image_Recolor, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Recolor_5D953D72_F84C_4B05_8396_0F90D06B2CEE)
-	Set_Style_Background_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_55C8DEAC_40EC_45B9_8F4A_0FEF0A257D83)
-	Set_Style_Background_Image_Tiled, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Tiled_EB2184AF_7E5A_48EE_9CF1_BC87D00BA7DE)
-	Set_Style_Background_Main_Stop, ctype_func(Berry_Object_Class_Set_Style_Background_Main_Stop_361C205B_FC4D_4D81_BBA9_A04F1873EA3B)
-	Set_Style_Background_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Opacity_2D712DFE_BE4E_41BD_87FD_8EBD0FA3E183)
-	Set_Style_Blend_Mode, ctype_func(Berry_Object_Class_Set_Style_Blend_Mode_7BABBE73_D924_4C1D_98A1_A7B7337F3037)
-	Set_Style_Border_Color, ctype_func(Berry_Object_Class_Set_Style_Border_Color_1584F083_E6D1_4FA2_8F08_274F781BA56B)
-	Set_Style_Border_Opacity, ctype_func(Berry_Object_Class_Set_Style_Border_Opacity_DDA87EF2_203D_4783_8473_69C9CE718808)
-	Set_Style_Border_Post, ctype_func(Berry_Object_Class_Set_Style_Border_Post_63EB77E9_A130_4FE9_A6B0_A76F42A832BF)
-	Set_Style_Border_Side, ctype_func(Berry_Object_Class_Set_Style_Border_Side_5DEC014F_FFB3_4FA1_AE7F_8117A9C7F765)
-	Set_Style_Border_Width, ctype_func(Berry_Object_Class_Set_Style_Border_Width_29449731_0C92_4BC5_9191_52E35AA90BC2)
-	Set_Style_Clip_Corner, ctype_func(Berry_Object_Class_Set_Style_Clip_Corner_DA919E0B_11AB_4453_BA48_75648AD8DF46)
-	Set_Style_Color_Filter_Descriptor, ctype_func(Berry_Object_Class_Set_Style_Color_Filter_Descriptor_A459912A_2063_4CA0_B019_9CA00184E997)
-	Set_Style_Color_Filter_Opacity, ctype_func(Berry_Object_Class_Set_Style_Color_Filter_Opacity_C3B04505_8691_4254_A87B_9331F5ECD8C9)
-	Set_Style_Flex_Cross_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Cross_Place_C29AF026_BD1E_4316_8461_EAFC1C89D085)
-	Set_Style_Flex_Flow, ctype_func(Berry_Object_Class_Set_Style_Flex_Flow_41240C82_E824_4464_8EC2_7D12E34C13DF)
-	Set_Style_Flex_Grow, ctype_func(Berry_Object_Class_Set_Style_Flex_Grow_75506B66_8189_4A35_8ED6_839BBEC2488B)
-	Set_Style_Flex_Main_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Main_Place_F0E8FCC2_A9A4_466F_9A7D_44E109112F9A)
-	Set_Style_Flex_Track_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Track_Place_5970C415_EB67_4F1F_9061_384DFEDC1437)
-	Set_Style_Grid_Cell_Column_Position, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_986A8361_353E_452A_9B62_AC93D4579256)
-	Set_Style_Grid_Cell_Column_Span, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_676CB313_54AA_4131_92BD_9D3855550B9B)
-	Set_Style_Grid_Cell_Row_Position, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_10255A05_0E90_4AD8_804B_4E0C21FC470A)
-	Set_Style_Grid_Cell_Row_Span, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_E7B3148A_B20B_4CF7_93CF_E03BBE550A79)
-	Set_Style_Grid_Cell_X_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_56B64888_30CD_40DF_AA7F_93B73FDD0A1B)
-	Set_Style_Grid_Cell_Y_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_FD5DE91A_7A83_4A32_8092_1FAC3B26FAE8)
-	Set_Style_Grid_Column_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Column_Alignment_421ED109_7A0F_48ED_8B80_81BE0709DC22)
-	Set_Style_Grid_Column_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_AA8FDB03_D2CF_4F28_B315_F1309E935636)
-	Set_Style_Grid_Row_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Row_Alignment_4C73674F_806F_4CCC_BACC_CB7C0CE19CB3)
-	Set_Style_Grid_Row_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E9E47065_EFB4_4CFA_9341_38721D380CAF)
-	Set_Style_Height, ctype_func(Berry_Object_Class_Set_Style_Height_92E83E4F_49BC_4059_9BE0_A02C8CD7E4A5)
-	Set_Style_Image_Opacity, ctype_func(Berry_Object_Class_Set_Style_Image_Opacity_BC339C0A_7EE6_472E_A0A7_36A41B7A1DA5)
-	Set_Style_Image_Recolor, ctype_func(Berry_Object_Class_Set_Style_Image_Recolor_0D8D937F_CE7A_406E_B356_6E3D1A216D0D)
-	Set_Style_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Set_Style_Image_Recolor_Opacity_B9A265A1_43A7_4849_ACA1_06B289A6C624)
-	Set_Style_Layout, ctype_func(Berry_Object_Class_Set_Style_Layout_17788D7F_9022_432D_8322_A3775016E131)
-	Set_Style_Line_Color, ctype_func(Berry_Object_Class_Set_Style_Line_Color_A5893D0E_C858_4C39_B6E7_52EF53E0E4A7)
-	Set_Style_Line_Dash_Gap, ctype_func(Berry_Object_Class_Set_Style_Line_Dash_Gap_805B7DF4_2AE3_4611_AB37_847475A0AFDD)
-	Set_Style_Line_Dash_Width, ctype_func(Berry_Object_Class_Set_Style_Line_Dash_Width_6FF77C44_9449_4AED_B987_BE876E571189)
-	Set_Style_Line_Opacity, ctype_func(Berry_Object_Class_Set_Style_Line_Opacity_0BA5B0C5_93C5_402C_BF38_33C72AD2B0BE)
-	Set_Style_Line_Rounded, ctype_func(Berry_Object_Class_Set_Style_Line_Rounded_50124490_69FB_4D05_A605_1A56A65FD186)
-	Set_Style_Line_Width, ctype_func(Berry_Object_Class_Set_Style_Line_Width_066F9926_8F94_4B05_96D0_E912099D135A)
-	Set_Style_Maximum_Height, ctype_func(Berry_Object_Class_Set_Style_Maximum_Height_C3623E91_F3CE_446F_94C4_EC92C854B97C)
-	Set_Style_Maximum_Width, ctype_func(Berry_Object_Class_Set_Style_Maximum_Width_6D1917EE_956B_4E35_BD50_3286B47097D5)
-	Set_Style_Minimum_Height, ctype_func(Berry_Object_Class_Set_Style_Minimum_Height_B4D04748_3541_4D0D_8B05_9DB8E313C116)
-	Set_Style_Minimum_Width, ctype_func(Berry_Object_Class_Set_Style_Minimum_Width_A8A038BD_6B3E_4D36_9B79_9460F4FFCFA0)
-	Set_Style_Opacity, ctype_func(Berry_Object_Class_Set_Style_Opacity_70CB342F_034B_477A_A6E2_E20CE7A74197)
-	Set_Style_Opacity, ctype_func(Berry_Object_Class_Set_Style_Opacity_3EEBF564_F8C6_4D20_A101_FF3586F6F82F)
-	Set_Style_Outline_Color, ctype_func(Berry_Object_Class_Set_Style_Outline_Color_1746545A_83BA_4A65_86BC_5AE882BA7EF1)
-	Set_Style_Outline_Opacity, ctype_func(Berry_Object_Class_Set_Style_Outline_Opacity_B988991C_8C04_475A_9AE6_459F12A8FC69)
-	Set_Style_Outline_Pad, ctype_func(Berry_Object_Class_Set_Style_Outline_Pad_4F0E1CFD_C602_433E_BCF6_0D68274ADD3B)
-	Set_Style_Outline_Width, ctype_func(Berry_Object_Class_Set_Style_Outline_Width_D7ECE7EC_BE34_4909_81D0_DDCD4DE8F661)
-	Set_Style_Pad_Bottom, ctype_func(Berry_Object_Class_Set_Style_Pad_Bottom_59996B0C_FF00_47BB_99C5_63E385B6D166)
-	Set_Style_Pad_Left, ctype_func(Berry_Object_Class_Set_Style_Pad_Left_DF623B90_1B67_4DF8_84E0_DA6A15747366)
-	Set_Style_Pad_Right, ctype_func(Berry_Object_Class_Set_Style_Pad_Right_0D49C910_FF84_4DE8_9B30_4DAA89B86FA1)
-	Set_Style_Pad_Top, ctype_func(Berry_Object_Class_Set_Style_Pad_Top_24684111_F5EF_4383_A878_4B6B52DFA051)
-	Set_Style_Pad_Row, ctype_func(Berry_Object_Class_Set_Style_Pad_Row_422C8040_FC24_462F_8C72_CB414500190D)
-	Set_Style_Pad_Column, ctype_func(Berry_Object_Class_Set_Style_Pad_Column_1DD16A14_474D_411C_82EE_48CB0A64F51C)
-	Set_Style_Pad_All, ctype_func(Berry_Object_Class_Set_Style_Pad_All_F5EB3B8A_0412_45E7_94C5_A25DD1FAF91F)
-	Set_Style_Radius, ctype_func(Berry_Object_Class_Set_Style_Radius_072C7165_AEE2_448C_8613_AFA02FF77F27)
-	Set_Style_Shadow_Color, ctype_func(Berry_Object_Class_Set_Style_Shadow_Color_EF484E32_D5EB_4DF2_89F2_0F4464D28CA0)
-	Set_Style_Shadow_Offset_X, ctype_func(Berry_Object_Class_Set_Style_Shadow_Offset_X_BA1947BD_9FA4_41C5_989A_7D6448F72DE4)
-	Set_Style_Shadow_Offset_Y, ctype_func(Berry_Object_Class_Set_Style_Shadow_Offset_Y_D8922636_4EC6_454C_8C39_C4464729C8E7)
-	Set_Style_Shadow_Opacity, ctype_func(Berry_Object_Class_Set_Style_Shadow_Opacity_E5F8340F_B096_4A14_8CCD_764251E2A992)
-	Set_Style_Shadow_Spread, ctype_func(Berry_Object_Class_Set_Style_Shadow_Spread_8BCA97B8_074B_4BA9_9128_56093F196639)
-	Set_Style_Shadow_Width, ctype_func(Berry_Object_Class_Set_Style_Shadow_Width_DC2E1EC4_35A1_42AA_81F2_F9197E5AAEA7)
-	Set_Style_Text_Alignment, ctype_func(Berry_Object_Class_Set_Style_Text_Alignment_CD4DFE25_C3BA_4AD8_81A6_D6BA56CA9768)
-	Set_Style_Text_Color, ctype_func(Berry_Object_Class_Set_Style_Text_Color_8EB0E5C0_9D77_4E75_81F7_5EE5CFCFE735)
-	Set_Style_Text_Decor, ctype_func(Berry_Object_Class_Set_Style_Text_Decor_6DB2EC00_B54D_452E_98A0_1AEF1039ADEB)
-	Set_Style_Text_Font, ctype_func(Berry_Object_Class_Set_Style_Text_Font_3571E546_02EA_4476_BBAC_53BCC0F6AA50)
-	Set_Style_Text_Letter_Space, ctype_func(Berry_Object_Class_Set_Style_Text_Letter_Space_4C3A7E79_B65F_47C9_AD1A_484A50010CA7)
-	Set_Style_Text_Line_Space, ctype_func(Berry_Object_Class_Set_Style_Text_Line_Space_010B9AC8_C405_490C_8F17_8C387C1D9A70)
-	Set_Style_Text_Opacity, ctype_func(Berry_Object_Class_Set_Style_Text_Opacity_E915A60C_3DCF_4CA5_A2EB_371B02D3A282)
-	Set_Style_Transform_Angle, ctype_func(Berry_Object_Class_Set_Style_Transform_Angle_EE7F93DE_3D5D_45E3_8BD5_B6C59CD4405D)
-	Set_Style_Transform_Height, ctype_func(Berry_Object_Class_Set_Style_Transform_Height_AEB0BB65_A7CF_4351_A085_778FD1B6F8C1)
-	Set_Style_Transform_Width, ctype_func(Berry_Object_Class_Set_Style_Transform_Width_1ED3FA06_2017_4192_8F0D_68DB7F2288CC)
-	Set_Style_Transform_Zoom, ctype_func(Berry_Object_Class_Set_Style_Transform_Zoom_F4840F5B_E830_4B06_AAFD_CE9E0E0E7AB6)
-	Set_Style_Translate_X, ctype_func(Berry_Object_Class_Set_Style_Translate_X_4CF4CD8B_6FAE_408E_A28C_25A3291F8BBD)
-	Set_Style_Translate_Y, ctype_func(Berry_Object_Class_Set_Style_Translate_Y_A63DEECE_42E2_42CD_8126_931E4BA9D81F)
-	Set_Style_Width, ctype_func(Berry_Object_Class_Set_Style_Width_CD372386_F4F4_4CAF_BE0D_F130EFA6A36E)
-	Set_Style_X, ctype_func(Berry_Object_Class_Set_Style_X_A2B5EE78_44EC_4A3E_8136_FE7E17D2AE28)
-	Set_Style_Y, ctype_func(Berry_Object_Class_Set_Style_Y_6EF246CD_8167_42F7_8DF6_AE7AF2F37835)
-	Set_Layout, ctype_func(Berry_Object_Class_Set_Layout_6DF429AA_DF98_440C_A71F_E01F70053A63)
-	Set_Tile, ctype_func(Berry_Object_Class_Set_Tile_6E7DF9E4_9129_4896_B0CB_DE6313C36B96)
-	Set_Tile_Identifier, ctype_func(Berry_Object_Class_Set_Tile_Identifier_29A89492_87AC_4E27_8275_A4EB06718A9C)
-	Get_State, ctype_func(Berry_Object_Class_Get_State_8252FC15_8E4A_4A14_8EDD_43CE8C286676)
-	Get_Group, ctype_func(Berry_Object_Class_Get_Group_8E67E8AE_7A4D_40D7_87C8_8521AFFFCF68)
-	Get_User_Data, ctype_func(Berry_Object_Class_Get_User_Data_93056BEC_CB13_475B_B8CB_C52E4E60532B)
-	Get_Object_Visibility, ctype_func(Berry_Object_Class_Get_Object_Visibility_E6803E24_4AA4_432F_9713_A83838988CE1)
-	Get_Parent, ctype_func(Berry_Object_Class_Get_Parent_790264BE_1B04_4387_AB86_F6750AEDD334)
-	Get_Children_Count, ctype_func(Berry_Object_Class_Get_Children_Count_B2CD3B74_E58B_4E59_BEA2_125299B8EEC9)
-	Get_Child, ctype_func(Berry_Object_Class_Get_Child_F387E120_C22F_46D4_A101_ECA0D2EB78BE)
-	Get_Child_Index, ctype_func(Berry_Object_Class_Get_Child_Index_F4C70398_41B7_4788_A0AF_3073A8BF5AC0)
-	Get_Style_Alignment, ctype_func(Berry_Object_Class_Get_Style_Alignment_7727EAF7_B463_4E4D_AB51_833162D04CD7)
-	Get_Style_Animation_Time, ctype_func(Berry_Object_Class_Get_Style_Animation_Time_4D6FCA64_08B2_466F_BE4E_CCE3B3CC6E09)
-	Get_Style_Animation_Speed, ctype_func(Berry_Object_Class_Get_Style_Animation_Speed_DFE67A29_4134_40EE_B9AE_7DA4505C357D)
-	Get_Style_Arc_Color, ctype_func(Berry_Object_Class_Get_Style_Arc_Color_CCCB3383_A8C8_4B51_A04D_94D2082B5EE4)
-	Get_Style_Arc_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Arc_Color_Filtered_7E33F6E5_9D26_4358_B498_9010F9A820DC)
-	Get_Style_Arc_Image_Source, ctype_func(Berry_Object_Class_Get_Style_Arc_Image_Source_A5FC757C_F6B9_453F_B51A_CABAAE531A10)
-	Get_Style_Arc_Opacity, ctype_func(Berry_Object_Class_Get_Style_Arc_Opacity_5126AB00_6651_4A41_AEA2_BE4D73483C20)
-	Get_Style_Arc_Rounded, ctype_func(Berry_Object_Class_Get_Style_Arc_Rounded_B12F9A81_F580_4CC0_B349_AC84B8CF175A)
-	Get_Style_Arc_Width, ctype_func(Berry_Object_Class_Get_Style_Arc_Width_2EA62285_1744_4755_BC3A_479A70CBF8DF)
-	Get_Style_Base_Direction, ctype_func(Berry_Object_Class_Get_Style_Base_Direction_8920274D_C2BF_4747_9A9C_0D0C44D1F258)
-	Get_Style_Background_Color, ctype_func(Berry_Object_Class_Get_Style_Background_Color_4B7C51D0_A878_4293_8A09_E9D625456440)
-	Get_Style_Background_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Color_Filtered_25C6D0B0_D4C7_4EBD_B813_3B647889DD29)
-	Get_Style_Background_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Opacity_3883C72B_8DC3_4F31_8A25_C4FE951CAC63)
-	Get_Style_Background_Gradient_Color, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Color_7353A4E8_1A72_4015_92E1_757D2E362892)
-	Get_Style_Background_Gradient_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_FEB15B38_3F84_429C_A858_9D13E23398C0)
-	Get_Style_Background_Gradient_Direction, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Direction_57EBF124_B9B8_441F_84A7_D93FBBBF7183)
-	Get_Style_Background_Main_Stop, ctype_func(Berry_Object_Class_Get_Style_Background_Main_Stop_8CA0FB40_4C76_42B7_A0B6_B7379C30C188)
-	Get_Style_Background_Gradient_Stop, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Stop_AA15F421_71B2_4F2D_9DD1_9DE8667424EB)
-	Get_Style_Background_Gradient, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_19F04419_351D_492B_887F_78EBC174F77C)
-	Get_Style_Background_Dither_Mode, ctype_func(Berry_Object_Class_Get_Style_Background_Dither_Mode_2214B518_EBEF_4696_991B_E9310327967B)
-	Get_Style_Background_Image_Source, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Source_85F99535_63ED_47CF_8CFC_9939ADCFE70B)
-	Get_Style_Background_Image_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Opacity_FB2C7CE7_12B5_4D34_910E_CEE023B0B9A4)
-	Get_Style_Background_Image_Recolor, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_2BAEFA8D_6DEC_4976_8636_AE9A3C9CBD05)
-	Get_Style_Background_Image_Recolor_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_0A2BDBA0_5F68_4392_AE01_CD9ED6A4F82F)
-	Get_Style_Background_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_C508513D_EE5B_4B9B_A866_02C2340595DB)
-	Get_Style_Background_Image_Tiled, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Tiled_9BBA640A_915E_40C0_BF38_310033D69320)
-	Get_Style_Blend_Mode, ctype_func(Berry_Object_Class_Get_Style_Blend_Mode_AE962EED_876C_4114_B239_FC410D96B089)
-	Get_Scroll_X, ctype_func(Berry_Object_Class_Get_Scroll_X_8E5529AB_F6CE_4B9C_919D_DF17DAA5EB63)
-	Get_Scroll_Y, ctype_func(Berry_Object_Class_Get_Scroll_Y_A7E0A376_9ACB_4D3C_8459_803B6538A8EC)
-	Get_Scroll_Top, ctype_func(Berry_Object_Class_Get_Scroll_Top_10E9AA07_49F1_4DFD_AABD_7EFC9D8B45B1)
-	Get_Scroll_Left, ctype_func(Berry_Object_Class_Get_Scroll_Left_FBE0AC9D_5D01_42B0_BDF4_622FD392A2C6)
-	Get_Scroll_Right, ctype_func(Berry_Object_Class_Get_Scroll_Right_DC8D8882_CACA_4A4D_B38C_12681BDB106B)
-	Get_Scroll_Bottom, ctype_func(Berry_Object_Class_Get_Scroll_Bottom_83EF435D_952A_49A9_8272_1918695B1020)
-	Get_Style_Border_Color, ctype_func(Berry_Object_Class_Get_Style_Border_Color_20E48907_0EFC_43E5_BF28_951F4C27F431)
-	Get_Style_Border_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Border_Color_Filtered_914CF729_4FE1_417E_80DA_026150DC7A2F)
-	Get_Style_Border_Opacity, ctype_func(Berry_Object_Class_Get_Style_Border_Opacity_14205378_1D28_4638_BF18_EA6E59C1F5B0)
-	Get_Style_Border_Width, ctype_func(Berry_Object_Class_Get_Style_Border_Width_4BDDF202_E8B1_4F64_BB4A_C8E1486A8294)
-	Get_Style_Border_Side, ctype_func(Berry_Object_Class_Get_Style_Border_Side_BA3E0706_9943_4AE5_83AE_4D828340F55F)
-	Get_Style_Border_Post, ctype_func(Berry_Object_Class_Get_Style_Border_Post_A2D9E850_8EF9_400A_802F_04ED7D3976FD)
-	Get_Style_Clip_Corner, ctype_func(Berry_Object_Class_Get_Style_Clip_Corner_1C27EE5C_97AD_413C_A464_52B2E4315C20)
-	Get_Style_Color_Filter_Opacity, ctype_func(Berry_Object_Class_Get_Style_Color_Filter_Opacity_9D22C40A_08F5_4713_B15E_A98514C41287)
-	Get_Style_Flex_Flow, ctype_func(Berry_Object_Class_Get_Style_Flex_Flow_F9EFA744_76AE_4E2E_A171_5202A998D033)
-	Get_Style_Flex_Main_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Main_Place_CF3E1F24_835E_4DC5_9D1B_FCA4692EE209)
-	Get_Style_Flex_Cross_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Cross_Place_165322D3_1AA3_4BCA_ACDF_DE0B11838D46)
-	Get_Style_Flex_Track_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Track_Place_B1EAEDF2_DA46_4570_89D4_70B5DEA7AB10)
-	Get_Style_Flex_Grow, ctype_func(Berry_Object_Class_Get_Style_Flex_Grow_4F255088_8785_4C2B_89C8_B142A5F38A5B)
-	Get_Style_Grid_Cell_Column_Position, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_57766280_E198_4969_9F29_905D35D758E0)
-	Get_Style_Grid_Cell_Column_Span, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_D219F550_8620_462D_9875_E73ABB16B7C4)
-	Get_Style_Grid_Cell_Row_Position, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_8B8DD7C8_D13C_4FFD_97B1_07C8B2C1B04F)
-	Get_Style_Grid_Cell_Row_Span, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_539C543F_0179_4E47_A998_63657E5B93EA)
-	Get_Style_Grid_Cell_X_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_899525B2_5438_40FE_9872_81C94B378B68)
-	Get_Style_Grid_Cell_Y_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_1D09E727_F841_490B_8BC8_99ED19F315D8)
-	Get_Style_Grid_Column_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Column_Alignment_E757C598_64B8_409C_94EB_7FE2540939FA)
-	Get_Style_Grid_Column_Descriptor_Array, ctype_func(Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_AFF0E6A6_E109_4029_8F84_20896E13F9DD)
-	Get_Style_Grid_Row_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Row_Alignment_7EB3F763_C473_497F_864A_655976A14C0D)
-	Get_Style_Grid_Row_Descriptor_Array, ctype_func(Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_DA99DAA8_50F0_43E1_83F8_ACC5814CEE13)
-	Get_Style_Height, ctype_func(Berry_Object_Class_Get_Style_Height_A9B5C460_9B3D_484E_84A9_451FF43A4855)
-	Get_Style_Image_Opacity, ctype_func(Berry_Object_Class_Get_Style_Image_Opacity_89298FE2_0FC4_4428_9A39_1B04A74F2F01)
-	Get_Style_Image_Recolor, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_665AD309_42DA_4F46_B7AB_D5E08910686A)
-	Get_Style_Image_Recolor_Filtered, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_Filtered_252ED790_4761_42AD_BA6E_8279DDC64CCA)
-	Get_Style_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_Opacity_F418A55C_5D74_4D7B_BC86_27DFAA32A20C)
-	Get_Style_Layout, ctype_func(Berry_Object_Class_Get_Style_Layout_9D38A4E2_7F45_447C_B196_69071E7E9AA0)
-	Get_Style_Line_Color, ctype_func(Berry_Object_Class_Get_Style_Line_Color_BDA1B6E7_896B_4EC9_9EF8_D207C4DBF6B9)
-	Get_Style_Line_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Line_Color_Filtered_5AF81393_014B_453F_8A2A_8E3E88055BF4)
-	Get_Style_Line_Dash_Gap, ctype_func(Berry_Object_Class_Get_Style_Line_Dash_Gap_CF3AB78C_F81C_436A_9BD1_C23CD5CC67D0)
-	Get_Style_Line_Dash_Width, ctype_func(Berry_Object_Class_Get_Style_Line_Dash_Width_BB5136D7_0FEF_46E9_8902_C23C262DF828)
-	Get_Style_Line_Opacity, ctype_func(Berry_Object_Class_Get_Style_Line_Opacity_BD9E382F_AD00_4FE6_8FD2_FE9E8406679C)
-	Get_Style_Line_Rounded, ctype_func(Berry_Object_Class_Get_Style_Line_Rounded_7F422ED0_BA73_4FA0_A04A_1BCD9FE4CD21)
-	Get_Style_Line_Width, ctype_func(Berry_Object_Class_Get_Style_Line_Width_B8B35CE0_D5C0_46E9_801F_4568149A6152)
-	Get_Style_Maximum_Height, ctype_func(Berry_Object_Class_Get_Style_Maximum_Height_7D0A9658_5E16_45D0_BBD9_AB7E1626F122)
-	Get_Style_Maximum_Width, ctype_func(Berry_Object_Class_Get_Style_Maximum_Width_3097B162_6AD9_4E86_833F_84821D4199D8)
-	Get_Style_Minimum_Height, ctype_func(Berry_Object_Class_Get_Style_Minimum_Height_E9849E5C_D361_4D66_BB67_E5CA46C209A8)
-	Get_Style_Minimum_Width, ctype_func(Berry_Object_Class_Get_Style_Minimum_Width_C32B7906_2B23_4234_A444_147CC20AD3A7)
-	Get_Style_Opacity, ctype_func(Berry_Object_Class_Get_Style_Opacity_434F9935_F160_4754_8A9D_6A0FDFD5E4A7)
-	Get_Style_Outline_Color, ctype_func(Berry_Object_Class_Get_Style_Outline_Color_A9FB6D90_1825_4384_B3D6_6547AC3BF320)
-	Get_Style_Outline_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Outline_Color_Filtered_EEFD6A70_B354_4DAC_B087_D5E61DF0FFAB)
-	Get_Style_Outline_Opacity, ctype_func(Berry_Object_Class_Get_Style_Outline_Opacity_152F9226_D5FA_446D_AE1D_3263E6DC4BD0)
-	Get_Style_Outline_Pad, ctype_func(Berry_Object_Class_Get_Style_Outline_Pad_6314D931_9A7F_41DF_A32D_072B7FE7410A)
-	Get_Style_Outline_Width, ctype_func(Berry_Object_Class_Get_Style_Outline_Width_F23D78E1_FA30_4B01_9D69_909E064036C2)
-	Get_Style_Pad_Bottom, ctype_func(Berry_Object_Class_Get_Style_Pad_Bottom_3F24A503_3A0E_43C3_AB09_E7AA32AB4616)
-	Get_Style_Pad_Top, ctype_func(Berry_Object_Class_Get_Style_Pad_Top_77F8DC6B_C041_401E_ACA2_849E3FA7B864)
-	Get_Style_Pad_Left, ctype_func(Berry_Object_Class_Get_Style_Pad_Left_64996F24_E2C0_4AFF_89CA_71B4A8AA01F7)
-	Get_Style_Pad_Right, ctype_func(Berry_Object_Class_Get_Style_Pad_Right_AE194E8E_0C98_400A_9397_193F8EBA1D79)
-	Get_Style_Pad_Row, ctype_func(Berry_Object_Class_Get_Style_Pad_Row_D01653EB_44A3_4397_B9B8_6001733BC36C)
-	Get_Style_Pad_Column, ctype_func(Berry_Object_Class_Get_Style_Pad_Column_EB2588D4_E7D2_43CA_9CF3_FD7290FE1D6F)
-	Get_Style_Radius, ctype_func(Berry_Object_Class_Get_Style_Radius_BC899FCD_B622_408D_8549_62EF95148104)
-	Get_Style_Shadow_Color, ctype_func(Berry_Object_Class_Get_Style_Shadow_Color_978F6DCA_B0E7_41C7_9CC4_F1055AA002C1)
-	Get_Style_Shadow_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Shadow_Color_Filtered_C5F2A053_3758_48C8_A974_945A3A11CD5C)
-	Get_Style_Shadow_Offset_X, ctype_func(Berry_Object_Class_Get_Style_Shadow_Offset_X_BC23345D_46E8_4959_822C_73C3837210B8)
-	Get_Style_Shadow_Offset_Y, ctype_func(Berry_Object_Class_Get_Style_Shadow_Offset_Y_D1144DCA_39F2_41C4_832B_0E52AB4F2701)
-	Get_Style_Shadow_Opacity, ctype_func(Berry_Object_Class_Get_Style_Shadow_Opacity_DADE3EE2_1B4C_423C_9A5D_95097A175758)
-	Get_Style_Shadow_Spread, ctype_func(Berry_Object_Class_Get_Style_Shadow_Spread_CF1B7738_7827_4E11_9692_9E4AE1517787)
-	Get_Style_Shadow_Width, ctype_func(Berry_Object_Class_Get_Style_Shadow_Width_86022C5E_278B_49F5_AB1E_46B332D10CAA)
-	Get_Style_Text_Alignment, ctype_func(Berry_Object_Class_Get_Style_Text_Alignment_CAFCA943_4187_41ED_9DEF_7B5115F3A64D)
-	Get_Style_Text_Color, ctype_func(Berry_Object_Class_Get_Style_Text_Color_BABCE270_2B24_42FD_BEE8_6509163C91A1)
-	Get_Style_Text_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Text_Color_Filtered_4D61A92F_2AFF_41C9_B154_C0DCC1FFCF38)
-	Get_Style_Text_Decor, ctype_func(Berry_Object_Class_Get_Style_Text_Decor_9E8AA68D_5AA8_403D_A2F8_C68E0EE6847F)
-	Get_Style_Text_Font, ctype_func(Berry_Object_Class_Get_Style_Text_Font_EBEC489A_FE3B_4DB8_A39E_52C06EA74685)
-	Get_Style_Text_Letter_Space, ctype_func(Berry_Object_Class_Get_Style_Text_Letter_Space_50D7922D_DC2C_482C_91F0_19CAA8DAE373)
-	Get_Style_Text_Line_Space, ctype_func(Berry_Object_Class_Get_Style_Text_Line_Space_29EBF91B_27F2_45F8_BAE6_63544EE5D013)
-	Get_Style_Text_Opacity, ctype_func(Berry_Object_Class_Get_Style_Text_Opacity_73F64C0B_363A_4FB3_805D_B41DD72DB74D)
-	Get_Style_Transform_Angle, ctype_func(Berry_Object_Class_Get_Style_Transform_Angle_D2DCD343_2E43_449A_9235_9FED0104F89B)
-	Get_Style_Transform_Height, ctype_func(Berry_Object_Class_Get_Style_Transform_Height_F2CBBA7A_131A_4F08_B58B_A65B65E519D8)
-	Get_Style_Transform_Width, ctype_func(Berry_Object_Class_Get_Style_Transform_Width_F9CEC647_88CC_4903_BAE8_4F3477D0D2F1)
-	Get_Style_Transform_Zoom, ctype_func(Berry_Object_Class_Get_Style_Transform_Zoom_D9A3F4E1_44BC_43A1_839C_0967E5750699)
-	Get_Style_Transition, ctype_func(Berry_Object_Class_Get_Style_Transition_7C46208F_8A14_4DDA_A6F0_0ACCB1E39D38)
-	Get_Style_Translate_X, ctype_func(Berry_Object_Class_Get_Style_Translate_X_4F9A0D46_16DC_49BE_8967_B7DBC1B5B742)
-	Get_Style_Translate_Y, ctype_func(Berry_Object_Class_Get_Style_Translate_Y_C1608338_F9C8_4508_A15A_3F3A7BBDF9C1)
-	Get_Style_Width, ctype_func(Berry_Object_Class_Get_Style_Width_E7E5F089_8E50_469B_9973_445E26A53727)
-	Get_Style_X, ctype_func(Berry_Object_Class_Get_Style_X_5B4D6ACC_468A_4252_AE78_FD4F40E7AFAB)
-	Get_Style_Y, ctype_func(Berry_Object_Class_Get_Style_Y_168F3F4E_7B70_4A86_AC03_FC659ABE213A)
-	Clear_Pointer, ctype_func(Berry_Object_Class_Clear_Pointer_A8BA1C8F_76A3_496D_8545_095B98D67935)
-	==, ctype_func(Berry_Object_Class_Operator_E0827C3C_B838_432F_9701_13CCC7FE575B)
-	!=, ctype_func(Berry_Object_Class_Operator_F4F2B042_944B_4B37_869A_72144488FED9)
+	init, ctype_func(Berry_Object_Class_Initialize_6CD1672F_AC06_4429_B5A5_5C35C03BC71E)
+	init, ctype_func(Berry_Object_Class_Initialize_D81C479E_8106_4A4E_9341_F25EDA05A813)
+	deinit, ctype_func(Berry_Object_Class_Deinitialize_5A494E1E_2FE5_4229_8219_DC3363F267BF)
+	Create, ctype_func(Berry_Object_Class_Create_73F39BAF_0D29_46EE_B8F4_F737A6B6B25D)
+	Delete, ctype_func(Berry_Object_Class_Delete_3FD81C1D_B619_4356_9B05_3C9049A1DF5A)
+	Clean, ctype_func(Berry_Object_Class_Clean_32CFAD94_B30F_49C7_8DED_DA69879F022F)
+	Add_Flag, ctype_func(Berry_Object_Class_Add_Flag_F74E4EBB_6896_4FFF_B675_B6797CA58707)
+	Clear_Flag, ctype_func(Berry_Object_Class_Clear_Flag_4B051A4B_CA47_47EE_BFBE_86DF8367D68A)
+	Has_Flag, ctype_func(Berry_Object_Class_Has_Flag_0BEE2CF8_A6FA_4F19_A027_2871D94CBC9A)
+	Has_Any_Flag, ctype_func(Berry_Object_Class_Has_Any_Flag_69514DA6_A568_41D5_8A0A_23C5EDD31715)
+	Add_State, ctype_func(Berry_Object_Class_Add_State_318F5FA8_6579_4812_BD81_426AFF78D035)
+	Clear_State, ctype_func(Berry_Object_Class_Clear_State_7AB54956_F112_43DE_802D_FEC009234195)
+	Has_State, ctype_func(Berry_Object_Class_Has_State_717B2D55_3CCD_45E8_8121_396100DB4DB9)
+	Swap, ctype_func(Berry_Object_Class_Swap_6C7E9184_28D1_41E4_B699_37BA2455C9CF)
+	Add_Event, ctype_func(Berry_Object_Class_Add_Event_E0D5F1BB_F21B_4AE2_994E_F5B4D7D12465)
+	Remove_Event, ctype_func(Berry_Object_Class_Remove_Event_5F9F3558_8E59_47E9_8329_D88A9064255B)
+	Remove_All_Events, ctype_func(Berry_Object_Class_Remove_All_Events_F9C87882_1175_4BB3_AE78_0A45A4DAD5CD)
+	Send_Event, ctype_func(Berry_Object_Class_Send_Event_F78D7CFF_B0D3_4637_9137_AB4481FAF424)
+	Move_Foreground, ctype_func(Berry_Object_Class_Move_Foreground_904AB1E8_5E62_45DC_9DAF_9DB418586447)
+	Move_Background, ctype_func(Berry_Object_Class_Move_Background_E6AFB0B0_AEDB_4019_9A9D_647A94950943)
+	Scroll_By, ctype_func(Berry_Object_Class_Scroll_By_EEBDF80C_3DD3_4E49_90EB_ACCEAFA18AF3)
+	Scroll_To, ctype_func(Berry_Object_Class_Scroll_To_463CDE98_69C8_4AA3_9F40_3682BF9EEC1C)
+	Scroll_Horizontally, ctype_func(Berry_Object_Class_Scroll_Horizontally_48C26718_C0D2_4189_9D64_BF856FF20AD1)
+	Scroll_Vertically, ctype_func(Berry_Object_Class_Scroll_Vertically_B37CDC9C_020D_4C14_AC9A_66DF6A680F44)
+	Allocate_Special_Data, ctype_func(Berry_Object_Class_Allocate_Special_Data_F96FA84A_07CE_47B0_AC77_AE3B9E24BBA4)
+	Is_Valid, ctype_func(Berry_Object_Class_Is_Valid_96579F11_7FD8_4AEA_9151_DD69BA1479FF)
+	Add_Style, ctype_func(Berry_Object_Class_Add_Style_F38CB3B9_8A99_4ADC_8C7C_338E28F35285)
+	DPX, ctype_func(Berry_Object_Class_DPX_DA977AC1_74EC_4F26_BDBD_785B2E0F30FC)
+	Set_Index, ctype_func(Berry_Object_Class_Set_Index_EAC52F6C_EF6A_4FAF_9884_09C8A5091842)
+	Set_Parent, ctype_func(Berry_Object_Class_Set_Parent_1D4A44D5_EFFF_4ACF_9127_4DA3DB3ED789)
+	Set_Position_X, ctype_func(Berry_Object_Class_Set_Position_X_0035E7BA_F83F_4C24_A1DE_26D13360C0A3)
+	Set_Position_Y, ctype_func(Berry_Object_Class_Set_Position_Y_4219674A_6C63_492C_A7B8_90A7B3AE825C)
+	Set_Position, ctype_func(Berry_Object_Class_Set_Position_283A60AD_45E8_49DB_8FB2_A1843F45D9F6)
+	Set_Alignment, ctype_func(Berry_Object_Class_Set_Alignment_5B175C3C_BFDE_4042_82D4_D845803B67AB)
+	Set_Size, ctype_func(Berry_Object_Class_Set_Size_C583388D_5EE2_4450_8BA0_700BB7773C5D)
+	Set_Width, ctype_func(Berry_Object_Class_Set_Width_4063495D_E8D1_49A0_813A_855C9272FA83)
+	Set_Height, ctype_func(Berry_Object_Class_Set_Height_9B265256_3D23_4403_9034_3CCB0003C904)
+	Set_Content_Height, ctype_func(Berry_Object_Class_Set_Content_Height_74BFD5EC_1222_467F_B71C_570050F38F2D)
+	Set_Flex_Alignment, ctype_func(Berry_Object_Class_Set_Flex_Alignment_B4A5F3A5_48C6_46C5_ABD4_6C4A05CA1554)
+	Set_Flex_Flow, ctype_func(Berry_Object_Class_Set_Flex_Flow_BE8FB410_162E_4F72_BA98_CF3E56BBE67D)
+	Set_Flex_Grow, ctype_func(Berry_Object_Class_Set_Flex_Grow_DA72FDAB_9741_4EAB_A320_831EBB8E2E8D)
+	Set_Grid_Alignment, ctype_func(Berry_Object_Class_Set_Grid_Alignment_515B02E6_1B02_4F71_BCC6_618CA5FB2CBE)
+	Set_Grid_Cell, ctype_func(Berry_Object_Class_Set_Grid_Cell_2C2238CC_EB59_420D_90FF_C831DA4FA9A4)
+	Set_Grid_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Grid_Descriptor_Array_9FEFF136_4775_4D13_8473_A01F1E10D4D8)
+	Set_Style_Alignment, ctype_func(Berry_Object_Class_Set_Style_Alignment_D0D56394_B409_4DF5_8DAC_95AFE4060CED)
+	Set_Style_Animation_Speed, ctype_func(Berry_Object_Class_Set_Style_Animation_Speed_73FB4811_3278_44C1_873D_DF91C317D7A2)
+	Set_Style_Animation_Time, ctype_func(Berry_Object_Class_Set_Style_Animation_Time_A674BE93_C141_44ED_93DA_662B2882ABD4)
+	Set_Style_Arc_Color, ctype_func(Berry_Object_Class_Set_Style_Arc_Color_2DF40ED4_62DC_4A9D_8782_B332DC9EB302)
+	Set_Style_Arc_Opacity, ctype_func(Berry_Object_Class_Set_Style_Arc_Opacity_E18EE3A0_2049_4ECD_8FAE_B7468A4DB6F4)
+	Set_Style_Arc_Rounded, ctype_func(Berry_Object_Class_Set_Style_Arc_Rounded_820D5F56_7746_4E77_9340_9D25EE1505E5)
+	Set_Style_Arc_Width, ctype_func(Berry_Object_Class_Set_Style_Arc_Width_FBB423D6_A906_4161_99D7_8E781333D668)
+	Set_Style_Base_Direction, ctype_func(Berry_Object_Class_Set_Style_Base_Direction_295B32D2_7F77_431D_8080_0EDE83EAD9FC)
+	Set_Style_Background_Color, ctype_func(Berry_Object_Class_Set_Style_Background_Color_05FED741_7AE5_4D35_81DD_7748621CF0A9)
+	Set_Style_Background_Dither_Mode, ctype_func(Berry_Object_Class_Set_Style_Background_Dither_Mode_9749CF2B_288D_4F49_A9C5_C2F020FCAA8D)
+	Set_Style_Background_Image_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Opacity_E1A1F3C8_9AE9_48D9_86F1_CC74FA195E2B)
+	Set_Style_Background_Image_Recolor, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Recolor_3E0210DA_9E70_463E_B4D3_3A43EA117FC8)
+	Set_Style_Background_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Recolor_Opacity_B86A4592_0EA7_4FBD_AE31_3B3DE7544FFD)
+	Set_Style_Background_Image_Tiled, ctype_func(Berry_Object_Class_Set_Style_Background_Image_Tiled_ED952B08_210F_4603_ABD9_B8EAB833D497)
+	Set_Style_Background_Main_Stop, ctype_func(Berry_Object_Class_Set_Style_Background_Main_Stop_8465EA02_57C8_42AE_92F9_903C78C5C45F)
+	Set_Style_Background_Opacity, ctype_func(Berry_Object_Class_Set_Style_Background_Opacity_AC98DBF8_75E7_4CAB_BB86_8DE69CE0D505)
+	Set_Style_Blend_Mode, ctype_func(Berry_Object_Class_Set_Style_Blend_Mode_94C1F8BF_9068_4FDB_8F6B_1ABFE0E91413)
+	Set_Style_Border_Color, ctype_func(Berry_Object_Class_Set_Style_Border_Color_6C53541B_2879_4B59_850C_84FF7FC55F49)
+	Set_Style_Border_Opacity, ctype_func(Berry_Object_Class_Set_Style_Border_Opacity_25C91C8E_F617_43E7_87A1_C416F14CEF57)
+	Set_Style_Border_Post, ctype_func(Berry_Object_Class_Set_Style_Border_Post_C414251E_CDAB_4346_A306_3455429921BF)
+	Set_Style_Border_Side, ctype_func(Berry_Object_Class_Set_Style_Border_Side_53EBD9C8_B85D_4D06_9FE6_6C927B1FF210)
+	Set_Style_Border_Width, ctype_func(Berry_Object_Class_Set_Style_Border_Width_31F3AA52_E4FD_4CFE_B0DC_17703AFF11A5)
+	Set_Style_Clip_Corner, ctype_func(Berry_Object_Class_Set_Style_Clip_Corner_28585855_498F_4A8A_919B_BBEE24B65237)
+	Set_Style_Color_Filter_Descriptor, ctype_func(Berry_Object_Class_Set_Style_Color_Filter_Descriptor_ADAB1661_7926_40A9_8330_930FD3EC8227)
+	Set_Style_Color_Filter_Opacity, ctype_func(Berry_Object_Class_Set_Style_Color_Filter_Opacity_A60AEFEA_9A6A_4C65_B540_2EF450044EC6)
+	Set_Style_Flex_Cross_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Cross_Place_24E2FD0A_C563_49AF_AA56_7635D173C6AA)
+	Set_Style_Flex_Flow, ctype_func(Berry_Object_Class_Set_Style_Flex_Flow_25AC9DC9_D659_47F7_A0C0_40F034F9C5D5)
+	Set_Style_Flex_Grow, ctype_func(Berry_Object_Class_Set_Style_Flex_Grow_978C9847_5197_4D44_B1CF_2CD6290D7212)
+	Set_Style_Flex_Main_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Main_Place_CFFC986A_7EAC_4017_B289_7AB6DB106A18)
+	Set_Style_Flex_Track_Place, ctype_func(Berry_Object_Class_Set_Style_Flex_Track_Place_B5A2EBBE_C85D_4A19_A745_E664F4D051B7)
+	Set_Style_Grid_Cell_Column_Position, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Column_Position_FD890025_1049_4AF3_BF23_86EC0272BF2E)
+	Set_Style_Grid_Cell_Column_Span, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Column_Span_91910383_2CCA_4B3B_9C37_B61A2A3FFE45)
+	Set_Style_Grid_Cell_Row_Position, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Row_Position_54D49C02_4AA3_4062_81C4_1827BE6E9489)
+	Set_Style_Grid_Cell_Row_Span, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Row_Span_94BD042C_6B07_466B_BCC2_CC249089FFB5)
+	Set_Style_Grid_Cell_X_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_X_Alignment_0220B2E9_4DB9_49F5_AB30_2D22B59D379C)
+	Set_Style_Grid_Cell_Y_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Cell_Y_Alignment_7A88B375_F536_4D83_BAD1_A35E2F5D4954)
+	Set_Style_Grid_Column_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Column_Alignment_60A76006_BBF0_430A_8E8C_432D506EE4B5)
+	Set_Style_Grid_Column_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Style_Grid_Column_Descriptor_Array_9A8AEB5E_72B0_4C67_8E39_CA2FBA5F48C5)
+	Set_Style_Grid_Row_Alignment, ctype_func(Berry_Object_Class_Set_Style_Grid_Row_Alignment_5EB68CA4_832C_4B79_8D51_9E0266635DCB)
+	Set_Style_Grid_Row_Descriptor_Array, ctype_func(Berry_Object_Class_Set_Style_Grid_Row_Descriptor_Array_E87E096A_FBA0_4763_8B93_04E619DBDE5A)
+	Set_Style_Height, ctype_func(Berry_Object_Class_Set_Style_Height_867B847D_E5C1_44CB_861A_D454C590EAF7)
+	Set_Style_Image_Opacity, ctype_func(Berry_Object_Class_Set_Style_Image_Opacity_84C8C556_121B_4C02_A158_7BBC6C29EB13)
+	Set_Style_Image_Recolor, ctype_func(Berry_Object_Class_Set_Style_Image_Recolor_74699A37_6729_4B51_B01C_7834975B47C5)
+	Set_Style_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Set_Style_Image_Recolor_Opacity_E59C9B53_CB5F_45D4_97AC_520DC850B075)
+	Set_Style_Layout, ctype_func(Berry_Object_Class_Set_Style_Layout_DF02EF1B_BCD1_43B7_92EF_F9E295530D18)
+	Set_Style_Line_Color, ctype_func(Berry_Object_Class_Set_Style_Line_Color_87A557C7_B41D_46CD_BB0F_96583DBC4F0F)
+	Set_Style_Line_Dash_Gap, ctype_func(Berry_Object_Class_Set_Style_Line_Dash_Gap_31A6F520_2EFA_436C_B6B7_FEBAABAFD0FD)
+	Set_Style_Line_Dash_Width, ctype_func(Berry_Object_Class_Set_Style_Line_Dash_Width_8EA856F5_3816_4E03_8484_55506456A131)
+	Set_Style_Line_Opacity, ctype_func(Berry_Object_Class_Set_Style_Line_Opacity_E256AAC8_1E36_4090_A8B5_CBE6C38770D1)
+	Set_Style_Line_Rounded, ctype_func(Berry_Object_Class_Set_Style_Line_Rounded_9811798B_1613_479C_B940_B04B6C5EEB96)
+	Set_Style_Line_Width, ctype_func(Berry_Object_Class_Set_Style_Line_Width_A3D6A0B1_EB1A_48F4_BA09_9170502B0DE3)
+	Set_Style_Maximum_Height, ctype_func(Berry_Object_Class_Set_Style_Maximum_Height_12A02A13_82B5_46C7_B98C_E30A999C814B)
+	Set_Style_Maximum_Width, ctype_func(Berry_Object_Class_Set_Style_Maximum_Width_1291E1B9_030A_41C2_8308_A006CB489F11)
+	Set_Style_Minimum_Height, ctype_func(Berry_Object_Class_Set_Style_Minimum_Height_09613FD5_C403_4E72_A9D1_08D648D3D02C)
+	Set_Style_Minimum_Width, ctype_func(Berry_Object_Class_Set_Style_Minimum_Width_7A15CCBE_8E01_4C2F_A937_5B74488F81F3)
+	Set_Style_Opacity, ctype_func(Berry_Object_Class_Set_Style_Opacity_46E0485A_7797_4E97_B117_6B9A329180E7)
+	Set_Style_Opacity, ctype_func(Berry_Object_Class_Set_Style_Opacity_A9DAAA3C_9338_4469_8281_28911DA2FEEE)
+	Set_Style_Outline_Color, ctype_func(Berry_Object_Class_Set_Style_Outline_Color_8C5EA2BF_FB70_41D8_9AB0_1ED70375CB59)
+	Set_Style_Outline_Opacity, ctype_func(Berry_Object_Class_Set_Style_Outline_Opacity_FC76AA2D_F5A4_4946_B36A_7DE931B24884)
+	Set_Style_Outline_Pad, ctype_func(Berry_Object_Class_Set_Style_Outline_Pad_ECCFB84F_E2CA_49A2_9BAD_5FF8D2846F16)
+	Set_Style_Outline_Width, ctype_func(Berry_Object_Class_Set_Style_Outline_Width_86BB2195_6E4A_40E9_81C2_E10EAD0B009B)
+	Set_Style_Pad_Bottom, ctype_func(Berry_Object_Class_Set_Style_Pad_Bottom_119554B2_9B5F_44E3_966E_03D2DB09F963)
+	Set_Style_Pad_Left, ctype_func(Berry_Object_Class_Set_Style_Pad_Left_78D0CA41_9E62_4797_9455_7DE54B4F0738)
+	Set_Style_Pad_Right, ctype_func(Berry_Object_Class_Set_Style_Pad_Right_42AF4E8E_26AE_4548_A4DB_539008A37AF6)
+	Set_Style_Pad_Top, ctype_func(Berry_Object_Class_Set_Style_Pad_Top_FF35BB01_3C65_40FC_B5FE_4EF37CCB40B7)
+	Set_Style_Pad_Row, ctype_func(Berry_Object_Class_Set_Style_Pad_Row_DE2B31D0_5305_46E4_96F3_98C94F0C2D7E)
+	Set_Style_Pad_Column, ctype_func(Berry_Object_Class_Set_Style_Pad_Column_0C14397F_AF42_4944_B3D2_7DE80F2248B2)
+	Set_Style_Pad_All, ctype_func(Berry_Object_Class_Set_Style_Pad_All_5A5461EC_1AC0_4759_B927_3754B1F11F5F)
+	Set_Style_Radius, ctype_func(Berry_Object_Class_Set_Style_Radius_9264D6B3_103E_421D_9A3F_D4F2D1EBB1DF)
+	Set_Style_Shadow_Color, ctype_func(Berry_Object_Class_Set_Style_Shadow_Color_A5841B81_012E_4727_94C5_B335A7FB2E39)
+	Set_Style_Shadow_Offset_X, ctype_func(Berry_Object_Class_Set_Style_Shadow_Offset_X_F877293D_8C9D_4648_BA7E_1683E95470D7)
+	Set_Style_Shadow_Offset_Y, ctype_func(Berry_Object_Class_Set_Style_Shadow_Offset_Y_80DFEF2E_3805_441D_BFF1_7026DDB08198)
+	Set_Style_Shadow_Opacity, ctype_func(Berry_Object_Class_Set_Style_Shadow_Opacity_C6BA1214_5527_4F0A_86C7_C14BA559E315)
+	Set_Style_Shadow_Spread, ctype_func(Berry_Object_Class_Set_Style_Shadow_Spread_172C10ED_0C00_4CA5_BE8E_49C55E372909)
+	Set_Style_Shadow_Width, ctype_func(Berry_Object_Class_Set_Style_Shadow_Width_B07ABE3E_D760_40A8_8701_253F5308A520)
+	Set_Style_Text_Alignment, ctype_func(Berry_Object_Class_Set_Style_Text_Alignment_F9E61B9B_EB40_4A47_8BCA_0BCCBEFDDC01)
+	Set_Style_Text_Color, ctype_func(Berry_Object_Class_Set_Style_Text_Color_9B0790BE_92AE_4592_96C3_EB5A10B1A559)
+	Set_Style_Text_Decor, ctype_func(Berry_Object_Class_Set_Style_Text_Decor_27331123_1E0B_4837_B651_E8140BDFC4A2)
+	Set_Style_Text_Font, ctype_func(Berry_Object_Class_Set_Style_Text_Font_06F0781F_8E28_49FD_92A9_2C65FC128350)
+	Set_Style_Text_Letter_Space, ctype_func(Berry_Object_Class_Set_Style_Text_Letter_Space_A92700D3_030B_4B35_B03F_6D33FB682855)
+	Set_Style_Text_Line_Space, ctype_func(Berry_Object_Class_Set_Style_Text_Line_Space_9451C08C_EA8A_429A_A3EC_25609E3065F3)
+	Set_Style_Text_Opacity, ctype_func(Berry_Object_Class_Set_Style_Text_Opacity_545B84E8_4FAE_46E4_8243_6D2B1945B792)
+	Set_Style_Transform_Angle, ctype_func(Berry_Object_Class_Set_Style_Transform_Angle_A49BA27B_F451_44E2_99A9_40AC19208557)
+	Set_Style_Transform_Height, ctype_func(Berry_Object_Class_Set_Style_Transform_Height_C5F3CAEB_A389_43DE_A851_215B1A44E314)
+	Set_Style_Transform_Width, ctype_func(Berry_Object_Class_Set_Style_Transform_Width_B3E648CA_CD7B_47B5_9318_A94AB975788F)
+	Set_Style_Transform_Zoom, ctype_func(Berry_Object_Class_Set_Style_Transform_Zoom_EF6C332A_4513_4906_8932_61450E1973FD)
+	Set_Style_Translate_X, ctype_func(Berry_Object_Class_Set_Style_Translate_X_AC580A54_A470_485E_B8F3_EAB4BD8D3358)
+	Set_Style_Translate_Y, ctype_func(Berry_Object_Class_Set_Style_Translate_Y_35D053E9_CE27_4C03_9692_094A771E22EC)
+	Set_Style_Width, ctype_func(Berry_Object_Class_Set_Style_Width_A66BBB84_F778_40DC_84C5_D4E705022E3A)
+	Set_Style_X, ctype_func(Berry_Object_Class_Set_Style_X_469950E8_1628_4799_B50D_33622A4155C0)
+	Set_Style_Y, ctype_func(Berry_Object_Class_Set_Style_Y_F4D6D99D_9E2C_4D2B_820D_DEDA9CE6E764)
+	Set_Layout, ctype_func(Berry_Object_Class_Set_Layout_BCCA6822_2274_4171_A2D7_5FCFC92C9B9C)
+	Set_Tile, ctype_func(Berry_Object_Class_Set_Tile_F3729023_6286_41E0_8EE0_568E0C841586)
+	Set_Tile_Identifier, ctype_func(Berry_Object_Class_Set_Tile_Identifier_FDE60621_6A0C_4C16_B086_FACCB1F6E264)
+	Get_State, ctype_func(Berry_Object_Class_Get_State_0E371FBD_8076_4D7B_A10E_025C8318D435)
+	Get_Group, ctype_func(Berry_Object_Class_Get_Group_BB49AC3B_F992_4CF3_8011_BF2DCD9FF8F0)
+	Get_User_Data, ctype_func(Berry_Object_Class_Get_User_Data_0C68F9BE_0F50_4434_8B65_9B9C63FAA163)
+	Get_Object_Visibility, ctype_func(Berry_Object_Class_Get_Object_Visibility_6FF64B6A_C9E3_4F35_A350_B83B05BCDB86)
+	Get_Parent, ctype_func(Berry_Object_Class_Get_Parent_3D0CBCCE_EB37_4887_9AAE_A89EEC1C5129)
+	Get_Children_Count, ctype_func(Berry_Object_Class_Get_Children_Count_EBDF508E_22D8_43FC_9E63_79376D424234)
+	Get_Child, ctype_func(Berry_Object_Class_Get_Child_EAFE3379_9666_43AD_B94E_4E0DA934231C)
+	Get_Child_Index, ctype_func(Berry_Object_Class_Get_Child_Index_522F0972_8CA0_4674_AFDF_560EAD863939)
+	Get_Style_Alignment, ctype_func(Berry_Object_Class_Get_Style_Alignment_E978FC3F_FCC3_4C75_B6D9_B1898314A1AB)
+	Get_Style_Animation_Time, ctype_func(Berry_Object_Class_Get_Style_Animation_Time_012F9C47_6AE7_42B3_ABF1_DEACFCC749C5)
+	Get_Style_Animation_Speed, ctype_func(Berry_Object_Class_Get_Style_Animation_Speed_21342309_89EB_41CB_8778_019458B5EFBE)
+	Get_Style_Arc_Color, ctype_func(Berry_Object_Class_Get_Style_Arc_Color_81983024_68E9_4D1D_A1BD_54549994ACE0)
+	Get_Style_Arc_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Arc_Color_Filtered_E5191542_02EE_4BB3_A881_A82B3AA0DD70)
+	Get_Style_Arc_Image_Source, ctype_func(Berry_Object_Class_Get_Style_Arc_Image_Source_489F223B_EA3E_42EF_8283_A3111A699E6C)
+	Get_Style_Arc_Opacity, ctype_func(Berry_Object_Class_Get_Style_Arc_Opacity_A3AF8D4D_E378_416F_99C3_0A9075EE7FF8)
+	Get_Style_Arc_Rounded, ctype_func(Berry_Object_Class_Get_Style_Arc_Rounded_2E7D7796_81D1_4E7F_91F8_1D6696C5230E)
+	Get_Style_Arc_Width, ctype_func(Berry_Object_Class_Get_Style_Arc_Width_A3F44890_D035_4E8F_91C9_469601A17CD8)
+	Get_Style_Base_Direction, ctype_func(Berry_Object_Class_Get_Style_Base_Direction_5907C705_BB48_4C22_B0CD_121F0658BA36)
+	Get_Style_Background_Color, ctype_func(Berry_Object_Class_Get_Style_Background_Color_5C65A4A6_0D40_4B7E_AF85_7ECD0845C8AB)
+	Get_Style_Background_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Color_Filtered_21436F17_8123_4298_90D6_CE2564633FE8)
+	Get_Style_Background_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Opacity_B35F55C2_74E6_4518_B33D_2C61321AA0A3)
+	Get_Style_Background_Gradient_Color, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Color_C276863F_B390_4B24_AC3C_7B6AFB362860)
+	Get_Style_Background_Gradient_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Color_Filtered_81223970_88B3_4EEC_843A_E29D739F6F69)
+	Get_Style_Background_Gradient_Direction, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Direction_07F06489_A824_49ED_9482_C41A65C0849D)
+	Get_Style_Background_Main_Stop, ctype_func(Berry_Object_Class_Get_Style_Background_Main_Stop_6807AA43_7BD0_408D_8AA7_58E0183EB1D7)
+	Get_Style_Background_Gradient_Stop, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_Stop_3F886362_05CB_4EFF_A716_130A42577AA5)
+	Get_Style_Background_Gradient, ctype_func(Berry_Object_Class_Get_Style_Background_Gradient_3B43A9C6_A0D9_4B98_B644_671E65B1A072)
+	Get_Style_Background_Dither_Mode, ctype_func(Berry_Object_Class_Get_Style_Background_Dither_Mode_606BB538_BA9B_4219_B68E_F42F35659336)
+	Get_Style_Background_Image_Source, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Source_6CE40ACB_7D09_47C6_B022_60E02872C650)
+	Get_Style_Background_Image_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Opacity_05269298_655D_4498_8B86_5525527FA304)
+	Get_Style_Background_Image_Recolor, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_ED542120_86D9_4205_B2F0_F11729A431ED)
+	Get_Style_Background_Image_Recolor_Filtered, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_Filtered_377219E5_B26B_4D5F_9F11_3B850939417B)
+	Get_Style_Background_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Recolor_Opacity_3FAC363C_511F_42F6_B504_1407FB803C07)
+	Get_Style_Background_Image_Tiled, ctype_func(Berry_Object_Class_Get_Style_Background_Image_Tiled_FD80FAF2_5EB5_4A1E_8C2F_8AD4A6E338D7)
+	Get_Style_Blend_Mode, ctype_func(Berry_Object_Class_Get_Style_Blend_Mode_C61EA87F_5497_4C4C_B496_35123A3D8A52)
+	Get_Scroll_X, ctype_func(Berry_Object_Class_Get_Scroll_X_0B1C3713_A699_4324_BD59_E3E03FF049BF)
+	Get_Scroll_Y, ctype_func(Berry_Object_Class_Get_Scroll_Y_E60FB056_51AD_4594_8B6E_A7F988912923)
+	Get_Scroll_Top, ctype_func(Berry_Object_Class_Get_Scroll_Top_37504D11_7211_48D9_92E0_740C9036C3E8)
+	Get_Scroll_Left, ctype_func(Berry_Object_Class_Get_Scroll_Left_31D3AA42_1A13_4148_A88D_D8774660685B)
+	Get_Scroll_Right, ctype_func(Berry_Object_Class_Get_Scroll_Right_B0538789_85B3_4083_8ED8_D1126F40926B)
+	Get_Scroll_Bottom, ctype_func(Berry_Object_Class_Get_Scroll_Bottom_5D45D659_C5D7_45C3_8A0F_04F9BEF54F7F)
+	Get_Style_Border_Color, ctype_func(Berry_Object_Class_Get_Style_Border_Color_3590D806_8B84_468D_9440_E45A3DC743AC)
+	Get_Style_Border_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Border_Color_Filtered_9F69A384_0205_4461_AD79_8A659C382C6F)
+	Get_Style_Border_Opacity, ctype_func(Berry_Object_Class_Get_Style_Border_Opacity_55820111_193D_47EA_9A8C_613BBC771DEF)
+	Get_Style_Border_Width, ctype_func(Berry_Object_Class_Get_Style_Border_Width_8A55EC74_9D72_455B_AAF3_A37106568596)
+	Get_Style_Border_Side, ctype_func(Berry_Object_Class_Get_Style_Border_Side_EC8F215B_0C6A_4A64_9CDA_59F8D7E1DBE3)
+	Get_Style_Border_Post, ctype_func(Berry_Object_Class_Get_Style_Border_Post_195BE892_744D_4CAE_8FAB_15398363EEEB)
+	Get_Style_Clip_Corner, ctype_func(Berry_Object_Class_Get_Style_Clip_Corner_4E471CE7_77A3_45A5_ABB4_5A53C043288A)
+	Get_Style_Color_Filter_Opacity, ctype_func(Berry_Object_Class_Get_Style_Color_Filter_Opacity_EC885679_B25D_4E7F_8218_B6EB3EBEC028)
+	Get_Style_Flex_Flow, ctype_func(Berry_Object_Class_Get_Style_Flex_Flow_C764C828_25FD_4AF9_9D38_2E356C7C8422)
+	Get_Style_Flex_Main_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Main_Place_723809BC_D73E_4CC4_AB6C_187DC1325247)
+	Get_Style_Flex_Cross_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Cross_Place_A1CE9496_D6E8_4909_904B_6B08C6E701F0)
+	Get_Style_Flex_Track_Place, ctype_func(Berry_Object_Class_Get_Style_Flex_Track_Place_B64AA6FA_02DD_4056_9AE2_C178CBCBB9CA)
+	Get_Style_Flex_Grow, ctype_func(Berry_Object_Class_Get_Style_Flex_Grow_02FBD83E_AF1E_463E_B0C5_01819114DA30)
+	Get_Style_Grid_Cell_Column_Position, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Column_Position_D084CD80_0C69_4080_B819_C5EA36E4E5DB)
+	Get_Style_Grid_Cell_Column_Span, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Column_Span_AA3AF4D6_7368_4268_A28D_4FFB03C54C86)
+	Get_Style_Grid_Cell_Row_Position, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Row_Position_EC7AD3D7_DC03_42CF_8D76_8A9A0D870DE3)
+	Get_Style_Grid_Cell_Row_Span, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Row_Span_6786E237_D93B_43A9_BE43_44FD6B5314B6)
+	Get_Style_Grid_Cell_X_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_X_Alignment_92B13E34_053C_4DE8_9EC5_B0F49711B19D)
+	Get_Style_Grid_Cell_Y_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Cell_Y_Alignment_A2C57E87_5A2C_40C7_8B9F_99D6DF9AFEEB)
+	Get_Style_Grid_Column_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Column_Alignment_DDCF8919_4E6D_4BB2_BEB2_2B25A933779A)
+	Get_Style_Grid_Column_Descriptor_Array, ctype_func(Berry_Object_Class_Get_Style_Grid_Column_Descriptor_Array_94013AAB_E727_4B3A_BFE7_9FAA3B040E9E)
+	Get_Style_Grid_Row_Alignment, ctype_func(Berry_Object_Class_Get_Style_Grid_Row_Alignment_3443B5FC_6495_4344_825A_D4F0B2A888C3)
+	Get_Style_Grid_Row_Descriptor_Array, ctype_func(Berry_Object_Class_Get_Style_Grid_Row_Descriptor_Array_744C1DDE_ADFD_4427_886B_20FACA0D0F5C)
+	Get_Style_Height, ctype_func(Berry_Object_Class_Get_Style_Height_D6DA0FC9_E4A1_49D0_AD13_A797284C104B)
+	Get_Style_Image_Opacity, ctype_func(Berry_Object_Class_Get_Style_Image_Opacity_A5115FF6_C952_4CDC_82DC_0198C995E3D8)
+	Get_Style_Image_Recolor, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_2E676BBD_FE3B_4F43_B2FD_6BA4B5D4B597)
+	Get_Style_Image_Recolor_Filtered, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_Filtered_5853C257_BDA4_41AA_9BEB_781285820744)
+	Get_Style_Image_Recolor_Opacity, ctype_func(Berry_Object_Class_Get_Style_Image_Recolor_Opacity_DC544B19_28A5_437A_8F75_E0538728854E)
+	Get_Style_Layout, ctype_func(Berry_Object_Class_Get_Style_Layout_61379A93_C770_463F_AB1D_256DC7817DD5)
+	Get_Style_Line_Color, ctype_func(Berry_Object_Class_Get_Style_Line_Color_AAAC7C6A_3957_43DE_8AA3_9FF5BC73C311)
+	Get_Style_Line_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Line_Color_Filtered_C0B68F07_3590_439C_A746_9B50D9EC5DA3)
+	Get_Style_Line_Dash_Gap, ctype_func(Berry_Object_Class_Get_Style_Line_Dash_Gap_4E3C56AC_7D79_4A94_924B_866520E61D70)
+	Get_Style_Line_Dash_Width, ctype_func(Berry_Object_Class_Get_Style_Line_Dash_Width_4708343C_BECE_4713_829B_DDF7E55BE67C)
+	Get_Style_Line_Opacity, ctype_func(Berry_Object_Class_Get_Style_Line_Opacity_57819E72_28A3_4FE0_B459_AA358E1E342E)
+	Get_Style_Line_Rounded, ctype_func(Berry_Object_Class_Get_Style_Line_Rounded_D55923DE_4094_4DBE_989E_9EC0D81A29B1)
+	Get_Style_Line_Width, ctype_func(Berry_Object_Class_Get_Style_Line_Width_704F8EF5_7E67_400C_990C_C82DB71792AC)
+	Get_Style_Maximum_Height, ctype_func(Berry_Object_Class_Get_Style_Maximum_Height_64EDBD25_0D0A_4ADB_BC90_ACC9F5FED3C0)
+	Get_Style_Maximum_Width, ctype_func(Berry_Object_Class_Get_Style_Maximum_Width_8B0FA3AE_1F1C_4CAF_8E1A_3514D7ECE860)
+	Get_Style_Minimum_Height, ctype_func(Berry_Object_Class_Get_Style_Minimum_Height_7BDBFA40_BF88_4D34_B954_8619F7F37F83)
+	Get_Style_Minimum_Width, ctype_func(Berry_Object_Class_Get_Style_Minimum_Width_74D7DCF2_8596_4286_81C1_489CF352B479)
+	Get_Style_Opacity, ctype_func(Berry_Object_Class_Get_Style_Opacity_83103B24_D489_4D74_B9E4_8A487980679F)
+	Get_Style_Outline_Color, ctype_func(Berry_Object_Class_Get_Style_Outline_Color_49A8D073_E2F8_4B46_9298_9D56982806D4)
+	Get_Style_Outline_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Outline_Color_Filtered_C595A5A3_E46B_430D_8F84_85A869ABA04A)
+	Get_Style_Outline_Opacity, ctype_func(Berry_Object_Class_Get_Style_Outline_Opacity_9C624C4E_B9D1_4D59_AB33_A6A923FEB93E)
+	Get_Style_Outline_Pad, ctype_func(Berry_Object_Class_Get_Style_Outline_Pad_385B4232_CA76_4AC9_913C_945174A42BD0)
+	Get_Style_Outline_Width, ctype_func(Berry_Object_Class_Get_Style_Outline_Width_A8657148_0F4B_404E_8882_3EB2AA9D876F)
+	Get_Style_Pad_Bottom, ctype_func(Berry_Object_Class_Get_Style_Pad_Bottom_3932114C_7C75_427A_B154_DF52FCAD61E5)
+	Get_Style_Pad_Top, ctype_func(Berry_Object_Class_Get_Style_Pad_Top_6AD91633_A102_4D80_B7DE_26F23418C1C0)
+	Get_Style_Pad_Left, ctype_func(Berry_Object_Class_Get_Style_Pad_Left_E0457461_61ED_4465_802A_961E39F2D9BD)
+	Get_Style_Pad_Right, ctype_func(Berry_Object_Class_Get_Style_Pad_Right_4A2D1FF6_47D9_47CC_8017_BD299E473058)
+	Get_Style_Pad_Row, ctype_func(Berry_Object_Class_Get_Style_Pad_Row_36640825_3BBC_4151_B7B1_650A469A9791)
+	Get_Style_Pad_Column, ctype_func(Berry_Object_Class_Get_Style_Pad_Column_D899434F_DA37_49B6_8852_E265F1239041)
+	Get_Style_Radius, ctype_func(Berry_Object_Class_Get_Style_Radius_86AE89CB_D691_4520_95AF_4708C35C3ADC)
+	Get_Style_Shadow_Color, ctype_func(Berry_Object_Class_Get_Style_Shadow_Color_A80AB7AC_B713_42DE_9628_6A05467A6BA7)
+	Get_Style_Shadow_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Shadow_Color_Filtered_E7FA65C4_AC27_4B12_AF2E_2CD919ADBF39)
+	Get_Style_Shadow_Offset_X, ctype_func(Berry_Object_Class_Get_Style_Shadow_Offset_X_A89B3411_664C_4657_B5D0_E0F8DA50111C)
+	Get_Style_Shadow_Offset_Y, ctype_func(Berry_Object_Class_Get_Style_Shadow_Offset_Y_3A4CE750_77BA_4CC5_BDED_0418C2F332F3)
+	Get_Style_Shadow_Opacity, ctype_func(Berry_Object_Class_Get_Style_Shadow_Opacity_188EAB7F_08A3_4054_86DF_10E5D008A130)
+	Get_Style_Shadow_Spread, ctype_func(Berry_Object_Class_Get_Style_Shadow_Spread_7050B82D_E6C4_4054_A688_AF4903D7AD0A)
+	Get_Style_Shadow_Width, ctype_func(Berry_Object_Class_Get_Style_Shadow_Width_1128ED52_AD5F_4490_9BB6_0CA855436112)
+	Get_Style_Text_Alignment, ctype_func(Berry_Object_Class_Get_Style_Text_Alignment_0E18B0A4_8D22_46E9_9AD6_828D42919572)
+	Get_Style_Text_Color, ctype_func(Berry_Object_Class_Get_Style_Text_Color_D779F8FD_23DD_4155_862A_8E91379EB568)
+	Get_Style_Text_Color_Filtered, ctype_func(Berry_Object_Class_Get_Style_Text_Color_Filtered_E4677E97_A1F7_4F72_A4C9_137D2498A37F)
+	Get_Style_Text_Decor, ctype_func(Berry_Object_Class_Get_Style_Text_Decor_7C6FA291_D618_4541_B23F_3CBF7FD16977)
+	Get_Style_Text_Font, ctype_func(Berry_Object_Class_Get_Style_Text_Font_E8C8F5D5_AC9E_490D_96AF_D42A181CC7E6)
+	Get_Style_Text_Letter_Space, ctype_func(Berry_Object_Class_Get_Style_Text_Letter_Space_9463F37B_26A8_48FB_9E22_12EA4C2D7339)
+	Get_Style_Text_Line_Space, ctype_func(Berry_Object_Class_Get_Style_Text_Line_Space_BA5AF965_7231_4C14_AC97_0C22ABBEBC5D)
+	Get_Style_Text_Opacity, ctype_func(Berry_Object_Class_Get_Style_Text_Opacity_DA55B668_10B5_40C9_AFE9_0FFF2A6A1C70)
+	Get_Style_Transform_Angle, ctype_func(Berry_Object_Class_Get_Style_Transform_Angle_AE7CE797_07F8_41F8_81EB_967F1F166E17)
+	Get_Style_Transform_Height, ctype_func(Berry_Object_Class_Get_Style_Transform_Height_958BA8B1_8F09_4901_A6F1_CF8581CA7452)
+	Get_Style_Transform_Width, ctype_func(Berry_Object_Class_Get_Style_Transform_Width_98ABACFB_B5C6_492D_9435_16479188FC9D)
+	Get_Style_Transform_Zoom, ctype_func(Berry_Object_Class_Get_Style_Transform_Zoom_D7A6E179_ED7D_4E7A_87D6_D96642F5E400)
+	Get_Style_Transition, ctype_func(Berry_Object_Class_Get_Style_Transition_5AA5E0DE_D8BF_4DD4_A882_4C2B92B8839C)
+	Get_Style_Translate_X, ctype_func(Berry_Object_Class_Get_Style_Translate_X_557B3F22_7CDD_4739_8D0D_EEA71FEB68F5)
+	Get_Style_Translate_Y, ctype_func(Berry_Object_Class_Get_Style_Translate_Y_5CFC9AE9_8096_4CA2_9A5C_C4847317A6BF)
+	Get_Style_Width, ctype_func(Berry_Object_Class_Get_Style_Width_7C7179AC_D818_46E7_B7E6_7C955268C5DD)
+	Get_Style_X, ctype_func(Berry_Object_Class_Get_Style_X_B85F346F_9835_4EF9_9C78_7710589B1071)
+	Get_Style_Y, ctype_func(Berry_Object_Class_Get_Style_Y_EB8456AF_8899_4521_8059_76F678B8E524)
+	Clear_Pointer, ctype_func(Berry_Object_Class_Clear_Pointer_CA15CBEB_BD5D_46DE_93D6_BAD436367205)
+	==, ctype_func(Berry_Object_Class_Operator_FBD9F3E6_2142_4840_B5B6_27CA02F646AA)
+	!=, ctype_func(Berry_Object_Class_Operator_642868A9_1874_459D_B244_99D8EAFA5364)
 
 }
 @const_object_info_end */
@@ -1902,96 +1902,96 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_File_Explorer_Class_Initialize_5A112D8B_32D8_4A75_B820_B5AAF6AC39EC(bvm* V)
+void * Berry_File_Explorer_Class_Initialize_E7ECACE3_ECA4_4393_9142_5E33EA336DA8(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::File_Explorer_Class));
 return new (Pointer) Graphics_Types::File_Explorer_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Initialize_5A112D8B_32D8_4A75_B820_B5AAF6AC39EC, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Initialize_E7ECACE3_ECA4_4393_9142_5E33EA336DA8, "+_p", "@");
 
 
 // - - Destructors
-void Berry_File_Explorer_Class_Deinitialize_E433D6B8_D141_458D_9ACE_99DF5F2FC12B(bvm* V, Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+void Berry_File_Explorer_Class_Deinitialize_01C97087_5E18_4610_8FA9_DF27BB5BC4FE(bvm* V, Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 if (!I) { return; }
 I->~File_Explorer_Class();
 be_free(V, I, sizeof(Graphics_Types::File_Explorer_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Deinitialize_E433D6B8_D141_458D_9ACE_99DF5F2FC12B, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Deinitialize_01C97087_5E18_4610_8FA9_DF27BB5BC4FE, "", "@.");
 
 
 // - - Functions
-void Berry_File_Explorer_Class_Create_EB1F052A_1FFD_498D_9EC9_43BF88CC3ABE(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, Object_Class* A_0)
+void Berry_File_Explorer_Class_Create_3B1B4FD8_549D_47EF_9004_3D965A0919A7(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Create_EB1F052A_1FFD_498D_9EC9_43BF88CC3ABE, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Create_3B1B4FD8_549D_47EF_9004_3D965A0919A7, "", "..");
 
-void Berry_File_Explorer_Class_Delete_59DAA5D0_9C96_4DBB_B725_2B05D24E72F5(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, bool A_0 = false)
+void Berry_File_Explorer_Class_Delete_B221D9DE_44EE_4757_BA63_083C7A548CAB(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, bool A_0 = false)
 {
 return I->Delete(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Delete_59DAA5D0_9C96_4DBB_B725_2B05D24E72F5, "", ".[b");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Delete_B221D9DE_44EE_4757_BA63_083C7A548CAB, "", ".[b");
 
-void Berry_File_Explorer_Class_Refresh_97B6E26C_BD6B_4F69_87D0_F3B7A690AD99(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+void Berry_File_Explorer_Class_Refresh_91C72C2D_4FAF_47CD_9FC3_7C0DDA89A938(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Refresh(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Refresh_97B6E26C_BD6B_4F69_87D0_F3B7A690AD99, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Refresh_91C72C2D_4FAF_47CD_9FC3_7C0DDA89A938, "", ".");
 
-void Berry_File_Explorer_Class_Go_Parent_Folder_33EEC698_83B2_44DA_8F49_358052D703B2(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+void Berry_File_Explorer_Class_Go_Parent_Folder_E605288B_0222_482F_939B_3DB96D9764A8(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Go_Parent_Folder(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Go_Parent_Folder_33EEC698_83B2_44DA_8F49_358052D703B2, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Go_Parent_Folder_E605288B_0222_482F_939B_3DB96D9764A8, "", ".");
 
-void Berry_File_Explorer_Class_Clear_Selection_F5542D52_04D8_45FC_A6D2_ADC1E4739859(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+void Berry_File_Explorer_Class_Clear_Selection_26FC7B62_C818_4D29_96DD_764DF173E46E(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Clear_Selection(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Clear_Selection_F5542D52_04D8_45FC_A6D2_ADC1E4739859, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Clear_Selection_26FC7B62_C818_4D29_96DD_764DF173E46E, "", ".");
 
-const char* Berry_File_Explorer_Class_Get_Path_06A9D5D9_DC4A_4882_86CE_18E8047084B1(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+const char* Berry_File_Explorer_Class_Get_Path_F7493CAA_B704_4BFC_A713_C4AA88AD4604(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Get_Path(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Path_06A9D5D9_DC4A_4882_86CE_18E8047084B1, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Path_F7493CAA_B704_4BFC_A713_C4AA88AD4604, "s", ".");
 
-const char* Berry_File_Explorer_Class_Get_Selected_Name_3E3EF0CF_457C_403B_9B80_8B114C631EDE(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, int A_0)
+const char* Berry_File_Explorer_Class_Get_Selected_Name_B928EE92_9A94_4965_85DC_6C41693952B0(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, int A_0)
 {
 return I->Get_Selected_Name((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selected_Name_3E3EF0CF_457C_403B_9B80_8B114C631EDE, "s", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selected_Name_B928EE92_9A94_4965_85DC_6C41693952B0, "s", ".i");
 
-int Berry_File_Explorer_Class_Get_Selected_Count_5AAC43DB_D24B_4A84_A4E6_D1FAE6CE1838(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+int Berry_File_Explorer_Class_Get_Selected_Count_D6A197E2_AB6D_42EC_B4F1_2D6B4D7ACB37(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return (int)I->Get_Selected_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selected_Count_5AAC43DB_D24B_4A84_A4E6_D1FAE6CE1838, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selected_Count_D6A197E2_AB6D_42EC_B4F1_2D6B4D7ACB37, "i", ".");
 
-const char* Berry_File_Explorer_Class_Get_Focused_Name_3987FADE_2C62_448F_87B2_18730169D1F7(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+const char* Berry_File_Explorer_Class_Get_Focused_Name_A8C4E10F_F1EB_4863_BE99_DEA58B92DC1D(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Get_Focused_Name(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Focused_Name_3987FADE_2C62_448F_87B2_18730169D1F7, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Focused_Name_A8C4E10F_F1EB_4863_BE99_DEA58B92DC1D, "s", ".");
 
-bool Berry_File_Explorer_Class_Get_Selection_State_2CDA33A8_08DC_493D_8CFA_F706503EC972(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
+bool Berry_File_Explorer_Class_Get_Selection_State_5192CABE_B75C_477B_B8E2_BD3A7E06EE7B(Xila_Namespace::Graphics_Types::File_Explorer_Class* I)
 {
 return I->Get_Selection_State(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selection_State_2CDA33A8_08DC_493D_8CFA_F706503EC972, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Get_Selection_State_5192CABE_B75C_477B_B8E2_BD3A7E06EE7B, "b", ".");
 
-void Berry_File_Explorer_Class_Set_Selection_State_6E21FDA1_477B_4BDB_A27B_4B531DA88839(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, bool A_0)
+void Berry_File_Explorer_Class_Set_Selection_State_1F76FD71_B035_4C12_B3C5_A1C603A8460C(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, bool A_0)
 {
 return I->Set_Selection_State(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Set_Selection_State_6E21FDA1_477B_4BDB_A27B_4B531DA88839, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Set_Selection_State_1F76FD71_B035_4C12_B3C5_A1C603A8460C, "", ".b");
 
-void Berry_File_Explorer_Class_Set_Path_B9AAF209_D12D_46B7_B1ED_CE8779859E8B(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, const char* A_0)
+void Berry_File_Explorer_Class_Set_Path_CD7C42C5_6D82_4CB9_AFFE_31D3ADC4DA58(Xila_Namespace::Graphics_Types::File_Explorer_Class* I, const char* A_0)
 {
 return I->Set_Path(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Set_Path_B9AAF209_D12D_46B7_B1ED_CE8779859E8B, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_File_Explorer_Class_Set_Path_CD7C42C5_6D82_4CB9_AFFE_31D3ADC4DA58, "", ".s");
 
 // - - Operators
 
@@ -2001,20 +2001,20 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_File_Explorer_Type(scope:global, name:File_Explorer_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_File_Explorer_Class_Initialize_5A112D8B_32D8_4A75_B820_B5AAF6AC39EC)
-	deinit, ctype_func(Berry_File_Explorer_Class_Deinitialize_E433D6B8_D141_458D_9ACE_99DF5F2FC12B)
-	Create, ctype_func(Berry_File_Explorer_Class_Create_EB1F052A_1FFD_498D_9EC9_43BF88CC3ABE)
-	Delete, ctype_func(Berry_File_Explorer_Class_Delete_59DAA5D0_9C96_4DBB_B725_2B05D24E72F5)
-	Refresh, ctype_func(Berry_File_Explorer_Class_Refresh_97B6E26C_BD6B_4F69_87D0_F3B7A690AD99)
-	Go_Parent_Folder, ctype_func(Berry_File_Explorer_Class_Go_Parent_Folder_33EEC698_83B2_44DA_8F49_358052D703B2)
-	Clear_Selection, ctype_func(Berry_File_Explorer_Class_Clear_Selection_F5542D52_04D8_45FC_A6D2_ADC1E4739859)
-	Get_Path, ctype_func(Berry_File_Explorer_Class_Get_Path_06A9D5D9_DC4A_4882_86CE_18E8047084B1)
-	Get_Selected_Name, ctype_func(Berry_File_Explorer_Class_Get_Selected_Name_3E3EF0CF_457C_403B_9B80_8B114C631EDE)
-	Get_Selected_Count, ctype_func(Berry_File_Explorer_Class_Get_Selected_Count_5AAC43DB_D24B_4A84_A4E6_D1FAE6CE1838)
-	Get_Focused_Name, ctype_func(Berry_File_Explorer_Class_Get_Focused_Name_3987FADE_2C62_448F_87B2_18730169D1F7)
-	Get_Selection_State, ctype_func(Berry_File_Explorer_Class_Get_Selection_State_2CDA33A8_08DC_493D_8CFA_F706503EC972)
-	Set_Selection_State, ctype_func(Berry_File_Explorer_Class_Set_Selection_State_6E21FDA1_477B_4BDB_A27B_4B531DA88839)
-	Set_Path, ctype_func(Berry_File_Explorer_Class_Set_Path_B9AAF209_D12D_46B7_B1ED_CE8779859E8B)
+	init, ctype_func(Berry_File_Explorer_Class_Initialize_E7ECACE3_ECA4_4393_9142_5E33EA336DA8)
+	deinit, ctype_func(Berry_File_Explorer_Class_Deinitialize_01C97087_5E18_4610_8FA9_DF27BB5BC4FE)
+	Create, ctype_func(Berry_File_Explorer_Class_Create_3B1B4FD8_549D_47EF_9004_3D965A0919A7)
+	Delete, ctype_func(Berry_File_Explorer_Class_Delete_B221D9DE_44EE_4757_BA63_083C7A548CAB)
+	Refresh, ctype_func(Berry_File_Explorer_Class_Refresh_91C72C2D_4FAF_47CD_9FC3_7C0DDA89A938)
+	Go_Parent_Folder, ctype_func(Berry_File_Explorer_Class_Go_Parent_Folder_E605288B_0222_482F_939B_3DB96D9764A8)
+	Clear_Selection, ctype_func(Berry_File_Explorer_Class_Clear_Selection_26FC7B62_C818_4D29_96DD_764DF173E46E)
+	Get_Path, ctype_func(Berry_File_Explorer_Class_Get_Path_F7493CAA_B704_4BFC_A713_C4AA88AD4604)
+	Get_Selected_Name, ctype_func(Berry_File_Explorer_Class_Get_Selected_Name_B928EE92_9A94_4965_85DC_6C41693952B0)
+	Get_Selected_Count, ctype_func(Berry_File_Explorer_Class_Get_Selected_Count_D6A197E2_AB6D_42EC_B4F1_2D6B4D7ACB37)
+	Get_Focused_Name, ctype_func(Berry_File_Explorer_Class_Get_Focused_Name_A8C4E10F_F1EB_4863_BE99_DEA58B92DC1D)
+	Get_Selection_State, ctype_func(Berry_File_Explorer_Class_Get_Selection_State_5192CABE_B75C_477B_B8E2_BD3A7E06EE7B)
+	Set_Selection_State, ctype_func(Berry_File_Explorer_Class_Set_Selection_State_1F76FD71_B035_4C12_B3C5_A1C603A8460C)
+	Set_Path, ctype_func(Berry_File_Explorer_Class_Set_Path_CD7C42C5_6D82_4CB9_AFFE_31D3ADC4DA58)
 
 }
 @const_object_info_end */
@@ -2027,48 +2027,48 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Dialog_Class_Initialize_F2177437_5F90_4D79_BADF_B1A74351F76C(bvm* V)
+void * Berry_Dialog_Class_Initialize_3359DC08_CE64_47AC_B985_EDA0ED7399D7(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Dialog_Class));
 return new (Pointer) Graphics_Types::Dialog_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Initialize_F2177437_5F90_4D79_BADF_B1A74351F76C, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Initialize_3359DC08_CE64_47AC_B985_EDA0ED7399D7, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Dialog_Class_Deinitialize_28C89551_C790_4CC4_BDA3_8DEB5B25035B(bvm* V, Xila_Namespace::Graphics_Types::Dialog_Class* I)
+void Berry_Dialog_Class_Deinitialize_BA84C6D9_F856_4767_99CA_731B03FC97CA(bvm* V, Xila_Namespace::Graphics_Types::Dialog_Class* I)
 {
 if (!I) { return; }
 I->~Dialog_Class();
 be_free(V, I, sizeof(Graphics_Types::Dialog_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Deinitialize_28C89551_C790_4CC4_BDA3_8DEB5B25035B, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Deinitialize_BA84C6D9_F856_4767_99CA_731B03FC97CA, "", "@.");
 
 
 // - - Functions
-void Berry_Dialog_Class_Create_BC5B5236_189E_40B8_BA42_482BF22501BE(Xila_Namespace::Graphics_Types::Dialog_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+void Berry_Dialog_Class_Create_82825F88_39BD_4B9A_A45C_FF4647E7E544(Xila_Namespace::Graphics_Types::Dialog_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 return I->Create(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Create_BC5B5236_189E_40B8_BA42_482BF22501BE, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Create_82825F88_39BD_4B9A_A45C_FF4647E7E544, "", "..");
 
-void Berry_Dialog_Class_Create_265E90E7_E6C5_417D_9256_C32B4AA5090A(Xila_Namespace::Graphics_Types::Dialog_Class* I, Object_Class* A_0)
+void Berry_Dialog_Class_Create_FE6D0AA4_E6CB_46AB_801E_71067B037407(Xila_Namespace::Graphics_Types::Dialog_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Create_265E90E7_E6C5_417D_9256_C32B4AA5090A, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Create_FE6D0AA4_E6CB_46AB_801E_71067B037407, "", "..");
 
-bool Berry_Dialog_Class_Is_Overlay_D426631C_F634_49B5_844E_880CA0A38615(Xila_Namespace::Graphics_Types::Dialog_Class* I)
+bool Berry_Dialog_Class_Is_Overlay_3DBB727A_82D8_43AE_BA88_169B6F046318(Xila_Namespace::Graphics_Types::Dialog_Class* I)
 {
 return I->Is_Overlay(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Is_Overlay_D426631C_F634_49B5_844E_880CA0A38615, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Is_Overlay_3DBB727A_82D8_43AE_BA88_169B6F046318, "b", ".");
 
-void Berry_Dialog_Class_Set_Overlay_47B909E9_FE2B_4C6D_8385_D086ABA74D21(Xila_Namespace::Graphics_Types::Dialog_Class* I, bool A_0)
+void Berry_Dialog_Class_Set_Overlay_D5C738EF_8472_4B92_8E1B_74D8E9140D2F(Xila_Namespace::Graphics_Types::Dialog_Class* I, bool A_0)
 {
 return I->Set_Overlay(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Set_Overlay_47B909E9_FE2B_4C6D_8385_D086ABA74D21, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Dialog_Class_Set_Overlay_D5C738EF_8472_4B92_8E1B_74D8E9140D2F, "", ".b");
 
 // - - Operators
 
@@ -2078,12 +2078,12 @@ BE_EXPORT_VARIABLE const bclass Berry_Window_Type;
 class Berry_Dialog_Type(scope:global, name:Dialog_Type, super: Berry_Window_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Dialog_Class_Initialize_F2177437_5F90_4D79_BADF_B1A74351F76C)
-	deinit, ctype_func(Berry_Dialog_Class_Deinitialize_28C89551_C790_4CC4_BDA3_8DEB5B25035B)
-	Create, ctype_func(Berry_Dialog_Class_Create_BC5B5236_189E_40B8_BA42_482BF22501BE)
-	Create, ctype_func(Berry_Dialog_Class_Create_265E90E7_E6C5_417D_9256_C32B4AA5090A)
-	Is_Overlay, ctype_func(Berry_Dialog_Class_Is_Overlay_D426631C_F634_49B5_844E_880CA0A38615)
-	Set_Overlay, ctype_func(Berry_Dialog_Class_Set_Overlay_47B909E9_FE2B_4C6D_8385_D086ABA74D21)
+	init, ctype_func(Berry_Dialog_Class_Initialize_3359DC08_CE64_47AC_B985_EDA0ED7399D7)
+	deinit, ctype_func(Berry_Dialog_Class_Deinitialize_BA84C6D9_F856_4767_99CA_731B03FC97CA)
+	Create, ctype_func(Berry_Dialog_Class_Create_82825F88_39BD_4B9A_A45C_FF4647E7E544)
+	Create, ctype_func(Berry_Dialog_Class_Create_FE6D0AA4_E6CB_46AB_801E_71067B037407)
+	Is_Overlay, ctype_func(Berry_Dialog_Class_Is_Overlay_3DBB727A_82D8_43AE_BA88_169B6F046318)
+	Set_Overlay, ctype_func(Berry_Dialog_Class_Set_Overlay_D5C738EF_8472_4B92_8E1B_74D8E9140D2F)
 
 }
 @const_object_info_end */
@@ -2098,35 +2098,35 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Color_Dialog_Class_Deinitialize_854C27BB_8FB6_4222_A0E5_0DCB01123FED(bvm* V, Xila_Namespace::Graphics_Types::Color_Dialog_Class* I)
+void Berry_Color_Dialog_Class_Deinitialize_B01E8CE8_5AB3_4B71_86A9_8D17B72C4299(bvm* V, Xila_Namespace::Graphics_Types::Color_Dialog_Class* I)
 {
 if (!I) { return; }
 I->~Color_Dialog_Class();
 be_free(V, I, sizeof(Graphics_Types::Color_Dialog_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Deinitialize_854C27BB_8FB6_4222_A0E5_0DCB01123FED, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Deinitialize_B01E8CE8_5AB3_4B71_86A9_8D17B72C4299, "", "@.");
 
 
 // - - Functions
-void Berry_Color_Dialog_Class_Create_F788FDED_271A_4C14_BB7F_91BED17A7BF3(Xila_Namespace::Graphics_Types::Color_Dialog_Class* I, Object_Class* A_0)
+void Berry_Color_Dialog_Class_Create_81803A82_A696_45D6_AEE4_832D94D014DC(Xila_Namespace::Graphics_Types::Color_Dialog_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Create_F788FDED_271A_4C14_BB7F_91BED17A7BF3, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Create_81803A82_A696_45D6_AEE4_832D94D014DC, "", "..");
 
-void * Berry_Color_Dialog_Class_Get_Color_7C294C4F_5172_44AF_BC2A_24A7DBDFAEDA(bvm* V, Xila_Namespace::Graphics_Types::Color_Dialog_Class* I)
+void * Berry_Color_Dialog_Class_Get_Color_0ADAC97C_42D7_498F_9195_03761291CB8E(bvm* V, Xila_Namespace::Graphics_Types::Color_Dialog_Class* I)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Color(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Get_Color_7C294C4F_5172_44AF_BC2A_24A7DBDFAEDA, "Graphics.Color_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Get_Color_0ADAC97C_42D7_498F_9195_03761291CB8E, "Graphics.Color_Type", "@.");
 
-void Berry_Color_Dialog_Class_Set_Color_E450BFE4_F18F_43BA_89B3_EF14F6F683F0(Xila_Namespace::Graphics_Types::Color_Dialog_Class* I, Color_Class* A_0)
+void Berry_Color_Dialog_Class_Set_Color_7706D13F_943F_43B7_BC73_7AAB03D6C594(Xila_Namespace::Graphics_Types::Color_Dialog_Class* I, Color_Class* A_0)
 {
 return I->Set_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Set_Color_E450BFE4_F18F_43BA_89B3_EF14F6F683F0, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Dialog_Class_Set_Color_7706D13F_943F_43B7_BC73_7AAB03D6C594, "", "..");
 
 // - - Operators
 
@@ -2136,10 +2136,10 @@ BE_EXPORT_VARIABLE const bclass Berry_Dialog_Type;
 class Berry_Color_Dialog_Type(scope:global, name:Color_Dialog_Type, super: Berry_Dialog_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Color_Dialog_Class_Deinitialize_854C27BB_8FB6_4222_A0E5_0DCB01123FED)
-	Create, ctype_func(Berry_Color_Dialog_Class_Create_F788FDED_271A_4C14_BB7F_91BED17A7BF3)
-	Get_Color, ctype_func(Berry_Color_Dialog_Class_Get_Color_7C294C4F_5172_44AF_BC2A_24A7DBDFAEDA)
-	Set_Color, ctype_func(Berry_Color_Dialog_Class_Set_Color_E450BFE4_F18F_43BA_89B3_EF14F6F683F0)
+	deinit, ctype_func(Berry_Color_Dialog_Class_Deinitialize_B01E8CE8_5AB3_4B71_86A9_8D17B72C4299)
+	Create, ctype_func(Berry_Color_Dialog_Class_Create_81803A82_A696_45D6_AEE4_832D94D014DC)
+	Get_Color, ctype_func(Berry_Color_Dialog_Class_Get_Color_0ADAC97C_42D7_498F_9195_03761291CB8E)
+	Set_Color, ctype_func(Berry_Color_Dialog_Class_Set_Color_7706D13F_943F_43B7_BC73_7AAB03D6C594)
 
 }
 @const_object_info_end */
@@ -2154,21 +2154,21 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Progress_Dialog_Class_Deinitialize_D77B97DD_6D04_49B5_8D28_BDBFFE0BCC56(bvm* V, Xila_Namespace::Graphics_Types::Progress_Dialog_Class* I)
+void Berry_Progress_Dialog_Class_Deinitialize_1E523DA9_2ECC_4D88_B37A_159B2A26DF23(bvm* V, Xila_Namespace::Graphics_Types::Progress_Dialog_Class* I)
 {
 if (!I) { return; }
 I->~Progress_Dialog_Class();
 be_free(V, I, sizeof(Graphics_Types::Progress_Dialog_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Progress_Dialog_Class_Deinitialize_D77B97DD_6D04_49B5_8D28_BDBFFE0BCC56, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Progress_Dialog_Class_Deinitialize_1E523DA9_2ECC_4D88_B37A_159B2A26DF23, "", "@.");
 
 
 // - - Functions
-void Berry_Progress_Dialog_Class_Create_BAC5E022_E18C_40FC_96A2_B42109EC0120(Xila_Namespace::Graphics_Types::Progress_Dialog_Class* I, Object_Class* A_0)
+void Berry_Progress_Dialog_Class_Create_96006B26_ECEC_4ADA_AC40_131274413467(Xila_Namespace::Graphics_Types::Progress_Dialog_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Progress_Dialog_Class_Create_BAC5E022_E18C_40FC_96A2_B42109EC0120, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Progress_Dialog_Class_Create_96006B26_ECEC_4ADA_AC40_131274413467, "", "..");
 
 // - - Operators
 
@@ -2178,8 +2178,8 @@ BE_EXPORT_VARIABLE const bclass Berry_Dialog_Type;
 class Berry_Progress_Dialog_Type(scope:global, name:Progress_Dialog_Type, super: Berry_Dialog_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Progress_Dialog_Class_Deinitialize_D77B97DD_6D04_49B5_8D28_BDBFFE0BCC56)
-	Create, ctype_func(Berry_Progress_Dialog_Class_Create_BAC5E022_E18C_40FC_96A2_B42109EC0120)
+	deinit, ctype_func(Berry_Progress_Dialog_Class_Deinitialize_1E523DA9_2ECC_4D88_B37A_159B2A26DF23)
+	Create, ctype_func(Berry_Progress_Dialog_Class_Create_96006B26_ECEC_4ADA_AC40_131274413467)
 
 }
 @const_object_info_end */
@@ -2194,21 +2194,21 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Message_Dialog_Class_Deinitialize_D58D4B9C_5BE8_4827_A5DE_08816994C46A(bvm* V, Xila_Namespace::Graphics_Types::Message_Dialog_Class* I)
+void Berry_Message_Dialog_Class_Deinitialize_261AF54D_E776_4553_A70F_4C35F45037A3(bvm* V, Xila_Namespace::Graphics_Types::Message_Dialog_Class* I)
 {
 if (!I) { return; }
 I->~Message_Dialog_Class();
 be_free(V, I, sizeof(Graphics_Types::Message_Dialog_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Message_Dialog_Class_Deinitialize_D58D4B9C_5BE8_4827_A5DE_08816994C46A, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Message_Dialog_Class_Deinitialize_261AF54D_E776_4553_A70F_4C35F45037A3, "", "@.");
 
 
 // - - Functions
-void Berry_Message_Dialog_Class_Create_8302052D_21B7_4D35_8AA5_4DA375C9764E(Xila_Namespace::Graphics_Types::Message_Dialog_Class* I, Object_Class* A_0)
+void Berry_Message_Dialog_Class_Create_AE2083AC_2A72_476A_8CC9_05710E618419(Xila_Namespace::Graphics_Types::Message_Dialog_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Message_Dialog_Class_Create_8302052D_21B7_4D35_8AA5_4DA375C9764E, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Message_Dialog_Class_Create_AE2083AC_2A72_476A_8CC9_05710E618419, "", "..");
 
 // - - Operators
 
@@ -2218,8 +2218,8 @@ BE_EXPORT_VARIABLE const bclass Berry_Dialog_Type;
 class Berry_Message_Dialog_Type(scope:global, name:Message_Dialog_Type, super: Berry_Dialog_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Message_Dialog_Class_Deinitialize_D58D4B9C_5BE8_4827_A5DE_08816994C46A)
-	Create, ctype_func(Berry_Message_Dialog_Class_Create_8302052D_21B7_4D35_8AA5_4DA375C9764E)
+	deinit, ctype_func(Berry_Message_Dialog_Class_Deinitialize_261AF54D_E776_4553_A70F_4C35F45037A3)
+	Create, ctype_func(Berry_Message_Dialog_Class_Create_AE2083AC_2A72_476A_8CC9_05710E618419)
 
 }
 @const_object_info_end */
@@ -2232,110 +2232,110 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Window_Class_Initialize_BB053CF5_2B65_4EC4_BA73_4A639C526A04(bvm* V)
+void * Berry_Window_Class_Initialize_C22DFC76_0A09_431C_A2BE_4A0D5F56A8EC(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Window_Class));
 return new (Pointer) Graphics_Types::Window_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Initialize_BB053CF5_2B65_4EC4_BA73_4A639C526A04, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Initialize_C22DFC76_0A09_431C_A2BE_4A0D5F56A8EC, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Window_Class_Deinitialize_8D9599E8_AD42_4109_80BE_58D56E206D62(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
+void Berry_Window_Class_Deinitialize_7EEFE4B9_0DCD_4D42_972D_9FEAC29F0A6E(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 if (!I) { return; }
 I->~Window_Class();
 be_free(V, I, sizeof(Graphics_Types::Window_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Deinitialize_8D9599E8_AD42_4109_80BE_58D56E206D62, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Deinitialize_7EEFE4B9_0DCD_4D42_972D_9FEAC29F0A6E, "", "@.");
 
 
 // - - Functions
-void Berry_Window_Class_Create_58CBDF0F_8367_43FF_B7B8_560CDD9FD1C4(Xila_Namespace::Graphics_Types::Window_Class* I, Object_Class* A_0)
+void Berry_Window_Class_Create_009F5B45_74B9_4413_BF9D_A66F938A1E1B(Xila_Namespace::Graphics_Types::Window_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Create_58CBDF0F_8367_43FF_B7B8_560CDD9FD1C4, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Create_009F5B45_74B9_4413_BF9D_A66F938A1E1B, "", "..");
 
-void Berry_Window_Class_Create_6906C568_87A7_4C15_BB3B_DC09832C9AD2(Xila_Namespace::Graphics_Types::Window_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+void Berry_Window_Class_Create_7089D7C9_3639_4221_A4AC_3E3383A4E666(Xila_Namespace::Graphics_Types::Window_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 return I->Create(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Create_6906C568_87A7_4C15_BB3B_DC09832C9AD2, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Create_7089D7C9_3639_4221_A4AC_3E3383A4E666, "", "..");
 
-void Berry_Window_Class_Delete_D9F17AB1_DE7A_428D_BD38_1C3FAFBAAAB1(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0 = false)
+void Berry_Window_Class_Delete_03D417F9_DC04_4A8A_A239_F6EF5DEBE820(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0 = false)
 {
 return I->Delete(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Delete_D9F17AB1_DE7A_428D_BD38_1C3FAFBAAAB1, "", ".[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Delete_03D417F9_DC04_4A8A_A239_F6EF5DEBE820, "", ".[b");
 
-void Berry_Window_Class_Set_Title_4AADC2AD_60DE_4062_ACAC_8D317B3A022F(Xila_Namespace::Graphics_Types::Window_Class* I, const char* A_0)
+void Berry_Window_Class_Set_Title_E2FE9871_1964_40E1_A5B9_55FAA944E16B(Xila_Namespace::Graphics_Types::Window_Class* I, const char* A_0)
 {
 return I->Set_Title(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Title_4AADC2AD_60DE_4062_ACAC_8D317B3A022F, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Title_E2FE9871_1964_40E1_A5B9_55FAA944E16B, "", ".s");
 
-void Berry_Window_Class_Set_State_B8655956_4D65_46CD_A5D9_AE906A248FA0(Xila_Namespace::Graphics_Types::Window_Class* I, int A_0)
+void Berry_Window_Class_Set_State_2BEF5380_E13F_48F7_8F9D_CFF009E826A2(Xila_Namespace::Graphics_Types::Window_Class* I, int A_0)
 {
 return I->Set_State((Window_State_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_State_B8655956_4D65_46CD_A5D9_AE906A248FA0, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_State_2BEF5380_E13F_48F7_8F9D_CFF009E826A2, "", ".i");
 
-void Berry_Window_Class_Set_Minimize_Button_Hidden_6F4DD80B_9B2E_4B5C_9CA8_376ED177D79E(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0)
+void Berry_Window_Class_Set_Minimize_Button_Hidden_4BCDD510_E991_44A9_8AC4_6D3BE14EB244(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0)
 {
 return I->Set_Minimize_Button_Hidden(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Minimize_Button_Hidden_6F4DD80B_9B2E_4B5C_9CA8_376ED177D79E, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Minimize_Button_Hidden_4BCDD510_E991_44A9_8AC4_6D3BE14EB244, "", ".b");
 
-void Berry_Window_Class_Set_Close_Button_Hidden_946EDD92_1566_43F3_A001_14C52C783C38(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0)
+void Berry_Window_Class_Set_Close_Button_Hidden_C0901741_A3D5_4E63_B48C_9967D364D2E0(Xila_Namespace::Graphics_Types::Window_Class* I, bool A_0)
 {
 return I->Set_Close_Button_Hidden(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Close_Button_Hidden_946EDD92_1566_43F3_A001_14C52C783C38, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Set_Close_Button_Hidden_C0901741_A3D5_4E63_B48C_9967D364D2E0, "", ".b");
 
-int Berry_Window_Class_Get_State_FFC452D7_C3CE_4EA0_8E92_50F59F6680D8(Xila_Namespace::Graphics_Types::Window_Class* I)
+int Berry_Window_Class_Get_State_3DC598FE_A4DD_42D1_965C_2FA300197663(Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 return (int)I->Get_State(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_State_FFC452D7_C3CE_4EA0_8E92_50F59F6680D8, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_State_3DC598FE_A4DD_42D1_965C_2FA300197663, "i", ".");
 
-void * Berry_Window_Class_Get_Body_247C5AEB_CB35_4316_B85B_0A45F9F10D0A(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
+void * Berry_Window_Class_Get_Body_5AE9F173_7C27_4B9D_B3E1_6A388F528B42(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Get_Body(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Body_247C5AEB_CB35_4316_B85B_0A45F9F10D0A, "Graphics.Object_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Body_5AE9F173_7C27_4B9D_B3E1_6A388F528B42, "Graphics.Object_Type", "@.");
 
-void * Berry_Window_Class_Get_Header_E564DCB4_08E9_449E_B429_BBB2DAE156F1(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
+void * Berry_Window_Class_Get_Header_35ECB4E7_CD0A_431D_A806_49B50C666AAD(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Get_Header(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Header_E564DCB4_08E9_449E_B429_BBB2DAE156F1, "Graphics.Object_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Header_35ECB4E7_CD0A_431D_A806_49B50C666AAD, "Graphics.Object_Type", "@.");
 
-void * Berry_Window_Class_Get_Close_Button_DE8B3B8F_F65C_4A28_9C12_D1654B97A232(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
+void * Berry_Window_Class_Get_Close_Button_D3F9B6A1_8626_4C02_9B7A_7C6E01B0BE70(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 Xila_Namespace::Graphics_Types::Button_Class* R = (Xila_Namespace::Graphics_Types::Button_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Button_Class));
  *R = I->Get_Close_Button(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Close_Button_DE8B3B8F_F65C_4A28_9C12_D1654B97A232, "Graphics.Button_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Close_Button_D3F9B6A1_8626_4C02_9B7A_7C6E01B0BE70, "Graphics.Button_Type", "@.");
 
-void * Berry_Window_Class_Get_Minimize_Button_71596B5E_FD16_4CC0_8A2F_DE3E02A39131(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
+void * Berry_Window_Class_Get_Minimize_Button_FBE649AF_C9A1_4B06_876D_13A7FBFB2DC3(bvm* V, Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 Xila_Namespace::Graphics_Types::Button_Class* R = (Xila_Namespace::Graphics_Types::Button_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Button_Class));
  *R = I->Get_Minimize_Button(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Minimize_Button_71596B5E_FD16_4CC0_8A2F_DE3E02A39131, "Graphics.Button_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Minimize_Button_FBE649AF_C9A1_4B06_876D_13A7FBFB2DC3, "Graphics.Button_Type", "@.");
 
-const void* Berry_Window_Class_Get_Owner_Software_1E95BEB4_4820_435D_8521_8518F32DB3FD(Xila_Namespace::Graphics_Types::Window_Class* I)
+const void* Berry_Window_Class_Get_Owner_Software_DD06E318_3FD8_4BC7_9D62_DB793E628AF8(Xila_Namespace::Graphics_Types::Window_Class* I)
 {
 return I->Get_Owner_Software(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Owner_Software_1E95BEB4_4820_435D_8521_8518F32DB3FD, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Window_Class_Get_Owner_Software_DD06E318_3FD8_4BC7_9D62_DB793E628AF8, "c", ".");
 
 // - - Operators
 
@@ -2345,21 +2345,21 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Window_Type(scope:global, name:Window_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Window_Class_Initialize_BB053CF5_2B65_4EC4_BA73_4A639C526A04)
-	deinit, ctype_func(Berry_Window_Class_Deinitialize_8D9599E8_AD42_4109_80BE_58D56E206D62)
-	Create, ctype_func(Berry_Window_Class_Create_58CBDF0F_8367_43FF_B7B8_560CDD9FD1C4)
-	Create, ctype_func(Berry_Window_Class_Create_6906C568_87A7_4C15_BB3B_DC09832C9AD2)
-	Delete, ctype_func(Berry_Window_Class_Delete_D9F17AB1_DE7A_428D_BD38_1C3FAFBAAAB1)
-	Set_Title, ctype_func(Berry_Window_Class_Set_Title_4AADC2AD_60DE_4062_ACAC_8D317B3A022F)
-	Set_State, ctype_func(Berry_Window_Class_Set_State_B8655956_4D65_46CD_A5D9_AE906A248FA0)
-	Set_Minimize_Button_Hidden, ctype_func(Berry_Window_Class_Set_Minimize_Button_Hidden_6F4DD80B_9B2E_4B5C_9CA8_376ED177D79E)
-	Set_Close_Button_Hidden, ctype_func(Berry_Window_Class_Set_Close_Button_Hidden_946EDD92_1566_43F3_A001_14C52C783C38)
-	Get_State, ctype_func(Berry_Window_Class_Get_State_FFC452D7_C3CE_4EA0_8E92_50F59F6680D8)
-	Get_Body, ctype_func(Berry_Window_Class_Get_Body_247C5AEB_CB35_4316_B85B_0A45F9F10D0A)
-	Get_Header, ctype_func(Berry_Window_Class_Get_Header_E564DCB4_08E9_449E_B429_BBB2DAE156F1)
-	Get_Close_Button, ctype_func(Berry_Window_Class_Get_Close_Button_DE8B3B8F_F65C_4A28_9C12_D1654B97A232)
-	Get_Minimize_Button, ctype_func(Berry_Window_Class_Get_Minimize_Button_71596B5E_FD16_4CC0_8A2F_DE3E02A39131)
-	Get_Owner_Software, ctype_func(Berry_Window_Class_Get_Owner_Software_1E95BEB4_4820_435D_8521_8518F32DB3FD)
+	init, ctype_func(Berry_Window_Class_Initialize_C22DFC76_0A09_431C_A2BE_4A0D5F56A8EC)
+	deinit, ctype_func(Berry_Window_Class_Deinitialize_7EEFE4B9_0DCD_4D42_972D_9FEAC29F0A6E)
+	Create, ctype_func(Berry_Window_Class_Create_009F5B45_74B9_4413_BF9D_A66F938A1E1B)
+	Create, ctype_func(Berry_Window_Class_Create_7089D7C9_3639_4221_A4AC_3E3383A4E666)
+	Delete, ctype_func(Berry_Window_Class_Delete_03D417F9_DC04_4A8A_A239_F6EF5DEBE820)
+	Set_Title, ctype_func(Berry_Window_Class_Set_Title_E2FE9871_1964_40E1_A5B9_55FAA944E16B)
+	Set_State, ctype_func(Berry_Window_Class_Set_State_2BEF5380_E13F_48F7_8F9D_CFF009E826A2)
+	Set_Minimize_Button_Hidden, ctype_func(Berry_Window_Class_Set_Minimize_Button_Hidden_4BCDD510_E991_44A9_8AC4_6D3BE14EB244)
+	Set_Close_Button_Hidden, ctype_func(Berry_Window_Class_Set_Close_Button_Hidden_C0901741_A3D5_4E63_B48C_9967D364D2E0)
+	Get_State, ctype_func(Berry_Window_Class_Get_State_3DC598FE_A4DD_42D1_965C_2FA300197663)
+	Get_Body, ctype_func(Berry_Window_Class_Get_Body_5AE9F173_7C27_4B9D_B3E1_6A388F528B42)
+	Get_Header, ctype_func(Berry_Window_Class_Get_Header_35ECB4E7_CD0A_431D_A806_49B50C666AAD)
+	Get_Close_Button, ctype_func(Berry_Window_Class_Get_Close_Button_D3F9B6A1_8626_4C02_9B7A_7C6E01B0BE70)
+	Get_Minimize_Button, ctype_func(Berry_Window_Class_Get_Minimize_Button_FBE649AF_C9A1_4B06_876D_13A7FBFB2DC3)
+	Get_Owner_Software, ctype_func(Berry_Window_Class_Get_Owner_Software_DD06E318_3FD8_4BC7_9D62_DB793E628AF8)
 
 }
 @const_object_info_end */
@@ -2372,78 +2372,78 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Tabs_Class_Initialize_2A0A6142_FC8A_4E8E_8F06_6280D5090358(bvm* V)
+void * Berry_Tabs_Class_Initialize_E7ADD7F8_E5DC_4590_A036_FBC22DEBD569(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Tabs_Class));
 return new (Pointer) Graphics_Types::Tabs_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Initialize_2A0A6142_FC8A_4E8E_8F06_6280D5090358, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Initialize_E7ADD7F8_E5DC_4590_A036_FBC22DEBD569, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Tabs_Class_Deinitialize_EBB42F48_DFFB_487F_8162_2A36BD814657(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
+void Berry_Tabs_Class_Deinitialize_9FB67614_19E6_408A_A2C6_B68A3401E192(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
 {
 if (!I) { return; }
 I->~Tabs_Class();
 be_free(V, I, sizeof(Graphics_Types::Tabs_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Deinitialize_EBB42F48_DFFB_487F_8162_2A36BD814657, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Deinitialize_9FB67614_19E6_408A_A2C6_B68A3401E192, "", "@.");
 
 
 // - - Functions
-void Berry_Tabs_Class_Create_F61A1D7B_8533_4517_A485_CBDBBF6F539B(Xila_Namespace::Graphics_Types::Tabs_Class* I, Object_Class* A_0)
+void Berry_Tabs_Class_Create_C3F40BED_F2B0_495C_9707_EF150B99A0B6(Xila_Namespace::Graphics_Types::Tabs_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Create_F61A1D7B_8533_4517_A485_CBDBBF6F539B, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Create_C3F40BED_F2B0_495C_9707_EF150B99A0B6, "", "..");
 
-void Berry_Tabs_Class_Create_DC3476F3_81D4_4E2E_A2C4_C14D64AC2197(Xila_Namespace::Graphics_Types::Tabs_Class* I, Object_Class* A_0, int A_1, int A_2)
+void Berry_Tabs_Class_Create_D609EADB_91E0_4F1E_A744_E9E987C57D87(Xila_Namespace::Graphics_Types::Tabs_Class* I, Object_Class* A_0, int A_1, int A_2)
 {
 return I->Create(*A_0, (Direction_Type)A_1, (short int)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Create_DC3476F3_81D4_4E2E_A2C4_C14D64AC2197, "", "..ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Create_D609EADB_91E0_4F1E_A744_E9E987C57D87, "", "..ii");
 
-void * Berry_Tabs_Class_Add_Tab_ECB8E49A_BD39_4BC3_BD33_4FEFD34D8736(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I, const char* A_0)
+void * Berry_Tabs_Class_Add_Tab_592740E1_18E1_4DE1_A20C_FDF70D8D539B(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I, const char* A_0)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Add_Tab(A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Add_Tab_ECB8E49A_BD39_4BC3_BD33_4FEFD34D8736, "Graphics.Object_Type", "@.s");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Add_Tab_592740E1_18E1_4DE1_A20C_FDF70D8D539B, "Graphics.Object_Type", "@.s");
 
-void Berry_Tabs_Class_Rename_Tab_72D1B1A3_C5FA_40A3_88C6_6C7CEB2D265A(Xila_Namespace::Graphics_Types::Tabs_Class* I, int A_0, const char* A_1)
+void Berry_Tabs_Class_Rename_Tab_E20728BB_072A_4522_BB32_D97AF94A23BF(Xila_Namespace::Graphics_Types::Tabs_Class* I, int A_0, const char* A_1)
 {
 return I->Rename_Tab((unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Rename_Tab_72D1B1A3_C5FA_40A3_88C6_6C7CEB2D265A, "", ".is");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Rename_Tab_E20728BB_072A_4522_BB32_D97AF94A23BF, "", ".is");
 
-void Berry_Tabs_Class_Set_Active_Tab_7298A6C1_9493_46EF_BCF2_CE8B00781FDB(Xila_Namespace::Graphics_Types::Tabs_Class* I, int A_0, bool A_1)
+void Berry_Tabs_Class_Set_Active_Tab_94846ACD_7089_4513_8647_34818E0A5E09(Xila_Namespace::Graphics_Types::Tabs_Class* I, int A_0, bool A_1)
 {
 return I->Set_Active_Tab((unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Set_Active_Tab_7298A6C1_9493_46EF_BCF2_CE8B00781FDB, "", ".ib");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Set_Active_Tab_94846ACD_7089_4513_8647_34818E0A5E09, "", ".ib");
 
-int Berry_Tabs_Class_Get_Tab_Active_424FDCF0_607F_4848_BD46_6DF06E46E0EA(Xila_Namespace::Graphics_Types::Tabs_Class* I)
+int Berry_Tabs_Class_Get_Tab_Active_EE3C864A_5C04_4DDB_BF2D_CD0A942598D6(Xila_Namespace::Graphics_Types::Tabs_Class* I)
 {
 return (int)I->Get_Tab_Active(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Tab_Active_424FDCF0_607F_4848_BD46_6DF06E46E0EA, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Tab_Active_EE3C864A_5C04_4DDB_BF2D_CD0A942598D6, "i", ".");
 
-void * Berry_Tabs_Class_Get_Content_3979F249_39B2_4AE5_AF23_BA72FBDD4167(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
+void * Berry_Tabs_Class_Get_Content_44D44232_0A11_4B21_8781_5BE23D642B53(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Get_Content(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Content_3979F249_39B2_4AE5_AF23_BA72FBDD4167, "Graphics.Object_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Content_44D44232_0A11_4B21_8781_5BE23D642B53, "Graphics.Object_Type", "@.");
 
-void * Berry_Tabs_Class_Get_Tab_Buttons_59C6D5DB_8012_4BFD_B7AE_9F99B205D9B9(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
+void * Berry_Tabs_Class_Get_Tab_Buttons_CB3FBD95_1927_40D3_851C_552CEAC86CDB(bvm* V, Xila_Namespace::Graphics_Types::Tabs_Class* I)
 {
 Xila_Namespace::Graphics_Types::Button_Matrix_Class* R = (Xila_Namespace::Graphics_Types::Button_Matrix_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Button_Matrix_Class));
  *R = I->Get_Tab_Buttons(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Tab_Buttons_59C6D5DB_8012_4BFD_B7AE_9F99B205D9B9, "Graphics.Button_Matrix_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Tabs_Class_Get_Tab_Buttons_CB3FBD95_1927_40D3_851C_552CEAC86CDB, "Graphics.Button_Matrix_Type", "@.");
 
 // - - Operators
 
@@ -2453,16 +2453,16 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Tabs_Type(scope:global, name:Tabs_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Tabs_Class_Initialize_2A0A6142_FC8A_4E8E_8F06_6280D5090358)
-	deinit, ctype_func(Berry_Tabs_Class_Deinitialize_EBB42F48_DFFB_487F_8162_2A36BD814657)
-	Create, ctype_func(Berry_Tabs_Class_Create_F61A1D7B_8533_4517_A485_CBDBBF6F539B)
-	Create, ctype_func(Berry_Tabs_Class_Create_DC3476F3_81D4_4E2E_A2C4_C14D64AC2197)
-	Add_Tab, ctype_func(Berry_Tabs_Class_Add_Tab_ECB8E49A_BD39_4BC3_BD33_4FEFD34D8736)
-	Rename_Tab, ctype_func(Berry_Tabs_Class_Rename_Tab_72D1B1A3_C5FA_40A3_88C6_6C7CEB2D265A)
-	Set_Active_Tab, ctype_func(Berry_Tabs_Class_Set_Active_Tab_7298A6C1_9493_46EF_BCF2_CE8B00781FDB)
-	Get_Tab_Active, ctype_func(Berry_Tabs_Class_Get_Tab_Active_424FDCF0_607F_4848_BD46_6DF06E46E0EA)
-	Get_Content, ctype_func(Berry_Tabs_Class_Get_Content_3979F249_39B2_4AE5_AF23_BA72FBDD4167)
-	Get_Tab_Buttons, ctype_func(Berry_Tabs_Class_Get_Tab_Buttons_59C6D5DB_8012_4BFD_B7AE_9F99B205D9B9)
+	init, ctype_func(Berry_Tabs_Class_Initialize_E7ADD7F8_E5DC_4590_A036_FBC22DEBD569)
+	deinit, ctype_func(Berry_Tabs_Class_Deinitialize_9FB67614_19E6_408A_A2C6_B68A3401E192)
+	Create, ctype_func(Berry_Tabs_Class_Create_C3F40BED_F2B0_495C_9707_EF150B99A0B6)
+	Create, ctype_func(Berry_Tabs_Class_Create_D609EADB_91E0_4F1E_A744_E9E987C57D87)
+	Add_Tab, ctype_func(Berry_Tabs_Class_Add_Tab_592740E1_18E1_4DE1_A20C_FDF70D8D539B)
+	Rename_Tab, ctype_func(Berry_Tabs_Class_Rename_Tab_E20728BB_072A_4522_BB32_D97AF94A23BF)
+	Set_Active_Tab, ctype_func(Berry_Tabs_Class_Set_Active_Tab_94846ACD_7089_4513_8647_34818E0A5E09)
+	Get_Tab_Active, ctype_func(Berry_Tabs_Class_Get_Tab_Active_EE3C864A_5C04_4DDB_BF2D_CD0A942598D6)
+	Get_Content, ctype_func(Berry_Tabs_Class_Get_Content_44D44232_0A11_4B21_8781_5BE23D642B53)
+	Get_Tab_Buttons, ctype_func(Berry_Tabs_Class_Get_Tab_Buttons_CB3FBD95_1927_40D3_851C_552CEAC86CDB)
 
 }
 @const_object_info_end */
@@ -2475,71 +2475,71 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Screen_Class_Initialize_897A4A9B_985F_41F2_9F8C_0F92BA4AF6BB(bvm* V)
+void * Berry_Screen_Class_Initialize_D8C1FC46_8792_4976_9D47_88F7B711CCB8(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Screen_Class));
 return new (Pointer) Graphics_Types::Screen_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Initialize_897A4A9B_985F_41F2_9F8C_0F92BA4AF6BB, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Initialize_D8C1FC46_8792_4976_9D47_88F7B711CCB8, "+_p", "@");
 
-void * Berry_Screen_Class_Initialize_B7B1BD13_5977_407C_ACC7_58A23B0741FA(bvm* V, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+void * Berry_Screen_Class_Initialize_8D433444_D6D8_44F2_B234_EF278D5DD41E(bvm* V, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Screen_Class));
 return new (Pointer) Graphics_Types::Screen_Class(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Initialize_B7B1BD13_5977_407C_ACC7_58A23B0741FA, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Initialize_8D433444_D6D8_44F2_B234_EF278D5DD41E, "+_p", "@.");
 
 
 // - - Destructors
-void Berry_Screen_Class_Deinitialize_F81D3574_615F_4F84_8F4D_C0F0E5D836D2(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I)
+void Berry_Screen_Class_Deinitialize_D5F7B933_03F2_4F72_9CED_147921F307EE(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I)
 {
 if (!I) { return; }
 I->~Screen_Class();
 be_free(V, I, sizeof(Graphics_Types::Screen_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Deinitialize_F81D3574_615F_4F84_8F4D_C0F0E5D836D2, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Deinitialize_D5F7B933_03F2_4F72_9CED_147921F307EE, "", "@.");
 
 
 // - - Functions
-void Berry_Screen_Class_Create_8795DF0A_F761_4A32_88B2_AE5D6CE5159C(Xila_Namespace::Graphics_Types::Screen_Class* I, Object_Class* A_0)
+void Berry_Screen_Class_Create_D469E339_F473_4029_ADBD_F2DFBDA328AE(Xila_Namespace::Graphics_Types::Screen_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Create_8795DF0A_F761_4A32_88B2_AE5D6CE5159C, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Create_D469E339_F473_4029_ADBD_F2DFBDA328AE, "", "..");
 
-void Berry_Screen_Class_Create_5322B090_23D8_4446_A571_CBF0A99E9BAD(Xila_Namespace::Graphics_Types::Screen_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
+void Berry_Screen_Class_Create_97B368F5_6E50_4986_A376_CB3BE775C2B0(Xila_Namespace::Graphics_Types::Screen_Class* I, ::Xila_Namespace::Softwares_Types::Software_Class* A_0)
 {
 return I->Create(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Create_5322B090_23D8_4446_A571_CBF0A99E9BAD, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Create_97B368F5_6E50_4986_A376_CB3BE775C2B0, "", "..");
 
-void Berry_Screen_Class_Delete_C5689A40_F9AA_4049_B92F_5A4C902DD8A4(Xila_Namespace::Graphics_Types::Screen_Class* I, bool A_0 = false)
+void Berry_Screen_Class_Delete_C4CF7C82_532E_49EB_84E0_D8AAA80AC56A(Xila_Namespace::Graphics_Types::Screen_Class* I, bool A_0 = false)
 {
 return I->Delete(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Delete_C5689A40_F9AA_4049_B92F_5A4C902DD8A4, "", ".[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Delete_C4CF7C82_532E_49EB_84E0_D8AAA80AC56A, "", ".[b");
 
-void Berry_Screen_Class_Load_2A7816B4_83F2_4A3C_965C_7CEF14AE61D7(Xila_Namespace::Graphics_Types::Screen_Class* I)
+void Berry_Screen_Class_Load_6F2BD98D_270E_46DC_9670_24B4BEFC278A(Xila_Namespace::Graphics_Types::Screen_Class* I)
 {
 return I->Load(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Load_2A7816B4_83F2_4A3C_965C_7CEF14AE61D7, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Load_6F2BD98D_270E_46DC_9670_24B4BEFC278A, "", ".");
 
-void * Berry_Screen_Class_Get_Active_2F4386DA_E3D0_455E_8E9E_E57AF000736D(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I)
+void * Berry_Screen_Class_Get_Active_5DADA6CD_D4DB_40A9_9ADE_2EFF82EDEF43(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I)
 {
 Xila_Namespace::Graphics_Types::Screen_Class* R = (Xila_Namespace::Graphics_Types::Screen_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Screen_Class));
  *R = I->Get_Active(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Get_Active_2F4386DA_E3D0_455E_8E9E_E57AF000736D, "Graphics.Screen_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Get_Active_5DADA6CD_D4DB_40A9_9ADE_2EFF82EDEF43, "Graphics.Screen_Type", "@.");
 
-void * Berry_Screen_Class_Get_User_Screen_F3B9F9F1_9B8E_4FDD_AD9A_36B1161957A2(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I, ::Xila_Namespace::Accounts_Types::User_Class* A_0)
+void * Berry_Screen_Class_Get_User_Screen_37AE3EC7_D13A_44B5_82B0_AFF5FD6FC603(bvm* V, Xila_Namespace::Graphics_Types::Screen_Class* I, ::Xila_Namespace::Accounts_Types::User_Class* A_0)
 {
 Xila_Namespace::Graphics_Types::Screen_Class* R = (Xila_Namespace::Graphics_Types::Screen_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Screen_Class));
  *R = I->Get_User_Screen(A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Get_User_Screen_F3B9F9F1_9B8E_4FDD_AD9A_36B1161957A2, "Graphics.Screen_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Screen_Class_Get_User_Screen_37AE3EC7_D13A_44B5_82B0_AFF5FD6FC603, "Graphics.Screen_Type", "@..");
 
 // - - Operators
 
@@ -2549,15 +2549,15 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Screen_Type(scope:global, name:Screen_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Screen_Class_Initialize_897A4A9B_985F_41F2_9F8C_0F92BA4AF6BB)
-	init, ctype_func(Berry_Screen_Class_Initialize_B7B1BD13_5977_407C_ACC7_58A23B0741FA)
-	deinit, ctype_func(Berry_Screen_Class_Deinitialize_F81D3574_615F_4F84_8F4D_C0F0E5D836D2)
-	Create, ctype_func(Berry_Screen_Class_Create_8795DF0A_F761_4A32_88B2_AE5D6CE5159C)
-	Create, ctype_func(Berry_Screen_Class_Create_5322B090_23D8_4446_A571_CBF0A99E9BAD)
-	Delete, ctype_func(Berry_Screen_Class_Delete_C5689A40_F9AA_4049_B92F_5A4C902DD8A4)
-	Load, ctype_func(Berry_Screen_Class_Load_2A7816B4_83F2_4A3C_965C_7CEF14AE61D7)
-	Get_Active, ctype_func(Berry_Screen_Class_Get_Active_2F4386DA_E3D0_455E_8E9E_E57AF000736D)
-	Get_User_Screen, ctype_func(Berry_Screen_Class_Get_User_Screen_F3B9F9F1_9B8E_4FDD_AD9A_36B1161957A2)
+	init, ctype_func(Berry_Screen_Class_Initialize_D8C1FC46_8792_4976_9D47_88F7B711CCB8)
+	init, ctype_func(Berry_Screen_Class_Initialize_8D433444_D6D8_44F2_B234_EF278D5DD41E)
+	deinit, ctype_func(Berry_Screen_Class_Deinitialize_D5F7B933_03F2_4F72_9CED_147921F307EE)
+	Create, ctype_func(Berry_Screen_Class_Create_D469E339_F473_4029_ADBD_F2DFBDA328AE)
+	Create, ctype_func(Berry_Screen_Class_Create_97B368F5_6E50_4986_A376_CB3BE775C2B0)
+	Delete, ctype_func(Berry_Screen_Class_Delete_C4CF7C82_532E_49EB_84E0_D8AAA80AC56A)
+	Load, ctype_func(Berry_Screen_Class_Load_6F2BD98D_270E_46DC_9670_24B4BEFC278A)
+	Get_Active, ctype_func(Berry_Screen_Class_Get_Active_5DADA6CD_D4DB_40A9_9ADE_2EFF82EDEF43)
+	Get_User_Screen, ctype_func(Berry_Screen_Class_Get_User_Screen_37AE3EC7_D13A_44B5_82B0_AFF5FD6FC603)
 
 }
 @const_object_info_end */
@@ -2570,80 +2570,80 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Keyboard_Class_Initialize_80CAC7B3_D014_4C27_9BC2_729AC2F7DB6A(bvm* V)
+void * Berry_Keyboard_Class_Initialize_17A89D76_6C3D_4BC5_8D3A_AA5BF4E4D620(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Keyboard_Class));
 return new (Pointer) Graphics_Types::Keyboard_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Initialize_80CAC7B3_D014_4C27_9BC2_729AC2F7DB6A, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Initialize_17A89D76_6C3D_4BC5_8D3A_AA5BF4E4D620, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Keyboard_Class_Deinitialize_016E6F20_772B_4D30_8991_BB04D4C2335F(bvm* V, Xila_Namespace::Graphics_Types::Keyboard_Class* I)
+void Berry_Keyboard_Class_Deinitialize_626641DC_C301_4C4C_8117_81AE5CBB067E(bvm* V, Xila_Namespace::Graphics_Types::Keyboard_Class* I)
 {
 if (!I) { return; }
 I->~Keyboard_Class();
 be_free(V, I, sizeof(Graphics_Types::Keyboard_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Deinitialize_016E6F20_772B_4D30_8991_BB04D4C2335F, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Deinitialize_626641DC_C301_4C4C_8117_81AE5CBB067E, "", "@.");
 
 
 // - - Functions
-void Berry_Keyboard_Class_Create_1A8F35D3_3BEB_40E4_A24B_C86B8E55608E(Xila_Namespace::Graphics_Types::Keyboard_Class* I, Object_Class* A_0)
+void Berry_Keyboard_Class_Create_D6ACC44D_5110_47D4_B2EC_A78712FB209B(Xila_Namespace::Graphics_Types::Keyboard_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Create_1A8F35D3_3BEB_40E4_A24B_C86B8E55608E, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Create_D6ACC44D_5110_47D4_B2EC_A78712FB209B, "", "..");
 
-void Berry_Keyboard_Class_Remove_Text_Area_00635D78_D811_4285_BF61_9F95B4997C9E(Xila_Namespace::Graphics_Types::Keyboard_Class* I, bool A_0 = true)
+void Berry_Keyboard_Class_Remove_Text_Area_E1FB0495_8787_4291_8014_9967A2505B73(Xila_Namespace::Graphics_Types::Keyboard_Class* I, bool A_0 = true)
 {
 return I->Remove_Text_Area(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Remove_Text_Area_00635D78_D811_4285_BF61_9F95B4997C9E, "", ".[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Remove_Text_Area_E1FB0495_8787_4291_8014_9967A2505B73, "", ".[b");
 
-void * Berry_Keyboard_Class_Get_Text_Area_21EF4C9B_E0BC_4943_874B_73C727B6AC8C(bvm* V, Xila_Namespace::Graphics_Types::Keyboard_Class* I)
+void * Berry_Keyboard_Class_Get_Text_Area_C410E2C7_8E36_43FD_91C9_5A4D896313E1(bvm* V, Xila_Namespace::Graphics_Types::Keyboard_Class* I)
 {
 Xila_Namespace::Graphics_Types::Text_Area_Class* R = (Xila_Namespace::Graphics_Types::Text_Area_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Text_Area_Class));
  *R = I->Get_Text_Area(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Text_Area_21EF4C9B_E0BC_4943_874B_73C727B6AC8C, "Graphics.Text_Area_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Text_Area_C410E2C7_8E36_43FD_91C9_5A4D896313E1, "Graphics.Text_Area_Type", "@.");
 
-int Berry_Keyboard_Class_Get_Mode_E380C554_E31C_4932_89FB_60241E4FC663(Xila_Namespace::Graphics_Types::Keyboard_Class* I)
+int Berry_Keyboard_Class_Get_Mode_52439F3C_3D3C_4C49_A51F_0C3441A9373A(Xila_Namespace::Graphics_Types::Keyboard_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Mode_E380C554_E31C_4932_89FB_60241E4FC663, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Mode_52439F3C_3D3C_4C49_A51F_0C3441A9373A, "i", ".");
 
-int Berry_Keyboard_Class_Get_Selected_Button_FB9C338D_3893_419F_8216_7932CC0FDA12(Xila_Namespace::Graphics_Types::Keyboard_Class* I)
+int Berry_Keyboard_Class_Get_Selected_Button_96EC0964_45BC_4D06_882F_B2F726A8D9DA(Xila_Namespace::Graphics_Types::Keyboard_Class* I)
 {
 return (int)I->Get_Selected_Button(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Selected_Button_FB9C338D_3893_419F_8216_7932CC0FDA12, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Selected_Button_96EC0964_45BC_4D06_882F_B2F726A8D9DA, "i", ".");
 
-const char* Berry_Keyboard_Class_Get_Button_Text_D38287B0_038F_468B_A62B_84C95B17241B(Xila_Namespace::Graphics_Types::Keyboard_Class* I, int A_0)
+const char* Berry_Keyboard_Class_Get_Button_Text_8AF608FD_D0EC_4A74_B25E_EB3EE6CEDE6F(Xila_Namespace::Graphics_Types::Keyboard_Class* I, int A_0)
 {
 return I->Get_Button_Text((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Button_Text_D38287B0_038F_468B_A62B_84C95B17241B, "s", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Get_Button_Text_8AF608FD_D0EC_4A74_B25E_EB3EE6CEDE6F, "s", ".i");
 
-void Berry_Keyboard_Class_Set_Text_Area_96AC0C11_EE74_411D_848D_1916E8EED99B(Xila_Namespace::Graphics_Types::Keyboard_Class* I, ::Xila_Namespace::Graphics_Types::Text_Area_Class* A_0, bool A_1 = true)
+void Berry_Keyboard_Class_Set_Text_Area_71A259BD_2F94_4A62_8FA2_469F4003B54D(Xila_Namespace::Graphics_Types::Keyboard_Class* I, ::Xila_Namespace::Graphics_Types::Text_Area_Class* A_0, bool A_1 = true)
 {
 return I->Set_Text_Area(*A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Text_Area_96AC0C11_EE74_411D_848D_1916E8EED99B, "", "..[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Text_Area_71A259BD_2F94_4A62_8FA2_469F4003B54D, "", "..[b");
 
-void Berry_Keyboard_Class_Set_Mode_6023AABF_339B_4FD2_AC44_574B8471A327(Xila_Namespace::Graphics_Types::Keyboard_Class* I, int A_0)
+void Berry_Keyboard_Class_Set_Mode_1D48E840_9011_4114_A9D7_9907EAF4E87C(Xila_Namespace::Graphics_Types::Keyboard_Class* I, int A_0)
 {
 return I->Set_Mode((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Mode_6023AABF_339B_4FD2_AC44_574B8471A327, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Mode_1D48E840_9011_4114_A9D7_9907EAF4E87C, "", ".i");
 
-void Berry_Keyboard_Class_Set_Pop_Overs_E1B7FE0E_E405_4FE9_8DD7_9ABE1013EB65(Xila_Namespace::Graphics_Types::Keyboard_Class* I, bool A_0)
+void Berry_Keyboard_Class_Set_Pop_Overs_E8BF26CF_1817_4F82_AA2E_2B8442558E38(Xila_Namespace::Graphics_Types::Keyboard_Class* I, bool A_0)
 {
 return I->Set_Pop_Overs(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Pop_Overs_E1B7FE0E_E405_4FE9_8DD7_9ABE1013EB65, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Keyboard_Class_Set_Pop_Overs_E8BF26CF_1817_4F82_AA2E_2B8442558E38, "", ".b");
 
 // - - Operators
 
@@ -2653,17 +2653,17 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Keyboard_Type(scope:global, name:Keyboard_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Keyboard_Class_Initialize_80CAC7B3_D014_4C27_9BC2_729AC2F7DB6A)
-	deinit, ctype_func(Berry_Keyboard_Class_Deinitialize_016E6F20_772B_4D30_8991_BB04D4C2335F)
-	Create, ctype_func(Berry_Keyboard_Class_Create_1A8F35D3_3BEB_40E4_A24B_C86B8E55608E)
-	Remove_Text_Area, ctype_func(Berry_Keyboard_Class_Remove_Text_Area_00635D78_D811_4285_BF61_9F95B4997C9E)
-	Get_Text_Area, ctype_func(Berry_Keyboard_Class_Get_Text_Area_21EF4C9B_E0BC_4943_874B_73C727B6AC8C)
-	Get_Mode, ctype_func(Berry_Keyboard_Class_Get_Mode_E380C554_E31C_4932_89FB_60241E4FC663)
-	Get_Selected_Button, ctype_func(Berry_Keyboard_Class_Get_Selected_Button_FB9C338D_3893_419F_8216_7932CC0FDA12)
-	Get_Button_Text, ctype_func(Berry_Keyboard_Class_Get_Button_Text_D38287B0_038F_468B_A62B_84C95B17241B)
-	Set_Text_Area, ctype_func(Berry_Keyboard_Class_Set_Text_Area_96AC0C11_EE74_411D_848D_1916E8EED99B)
-	Set_Mode, ctype_func(Berry_Keyboard_Class_Set_Mode_6023AABF_339B_4FD2_AC44_574B8471A327)
-	Set_Pop_Overs, ctype_func(Berry_Keyboard_Class_Set_Pop_Overs_E1B7FE0E_E405_4FE9_8DD7_9ABE1013EB65)
+	init, ctype_func(Berry_Keyboard_Class_Initialize_17A89D76_6C3D_4BC5_8D3A_AA5BF4E4D620)
+	deinit, ctype_func(Berry_Keyboard_Class_Deinitialize_626641DC_C301_4C4C_8117_81AE5CBB067E)
+	Create, ctype_func(Berry_Keyboard_Class_Create_D6ACC44D_5110_47D4_B2EC_A78712FB209B)
+	Remove_Text_Area, ctype_func(Berry_Keyboard_Class_Remove_Text_Area_E1FB0495_8787_4291_8014_9967A2505B73)
+	Get_Text_Area, ctype_func(Berry_Keyboard_Class_Get_Text_Area_C410E2C7_8E36_43FD_91C9_5A4D896313E1)
+	Get_Mode, ctype_func(Berry_Keyboard_Class_Get_Mode_52439F3C_3D3C_4C49_A51F_0C3441A9373A)
+	Get_Selected_Button, ctype_func(Berry_Keyboard_Class_Get_Selected_Button_96EC0964_45BC_4D06_882F_B2F726A8D9DA)
+	Get_Button_Text, ctype_func(Berry_Keyboard_Class_Get_Button_Text_8AF608FD_D0EC_4A74_B25E_EB3EE6CEDE6F)
+	Set_Text_Area, ctype_func(Berry_Keyboard_Class_Set_Text_Area_71A259BD_2F94_4A62_8FA2_469F4003B54D)
+	Set_Mode, ctype_func(Berry_Keyboard_Class_Set_Mode_1D48E840_9011_4114_A9D7_9907EAF4E87C)
+	Set_Pop_Overs, ctype_func(Berry_Keyboard_Class_Set_Pop_Overs_E8BF26CF_1817_4F82_AA2E_2B8442558E38)
 
 }
 @const_object_info_end */
@@ -2676,74 +2676,74 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Color_Wheel_Class_Initialize_AB8D07F7_66B7_4E52_A20C_F350E59F8168(bvm* V)
+void * Berry_Color_Wheel_Class_Initialize_46ADA395_374C_4639_B6D6_DD3ED5064F46(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Color_Wheel_Class));
 return new (Pointer) Graphics_Types::Color_Wheel_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Initialize_AB8D07F7_66B7_4E52_A20C_F350E59F8168, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Initialize_46ADA395_374C_4639_B6D6_DD3ED5064F46, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Color_Wheel_Class_Deinitialize_EBC3E288_1654_4271_A435_95936FC22549(bvm* V, Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
+void Berry_Color_Wheel_Class_Deinitialize_6009E1CF_926D_4563_AABD_C7EDDFF98C28(bvm* V, Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
 {
 if (!I) { return; }
 I->~Color_Wheel_Class();
 be_free(V, I, sizeof(Graphics_Types::Color_Wheel_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Deinitialize_EBC3E288_1654_4271_A435_95936FC22549, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Deinitialize_6009E1CF_926D_4563_AABD_C7EDDFF98C28, "", "@.");
 
 
 // - - Functions
-void Berry_Color_Wheel_Class_Create_4199AE5D_0832_4661_9F7E_0AD44395BECC(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Object_Class* A_0)
+void Berry_Color_Wheel_Class_Create_A767AA13_D88F_4C6A_BBAF_0A1FF59F38C0(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Create_4199AE5D_0832_4661_9F7E_0AD44395BECC, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Create_A767AA13_D88F_4C6A_BBAF_0A1FF59F38C0, "", "..");
 
-void Berry_Color_Wheel_Class_Create_D4B77EA2_54CB_464C_AD92_D66ACAA265A3(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Object_Class* A_0, bool A_1)
+void Berry_Color_Wheel_Class_Create_E83E5B2B_6A64_4513_BF98_B9C71DBA6D0F(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Object_Class* A_0, bool A_1)
 {
 return I->Create(*A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Create_D4B77EA2_54CB_464C_AD92_D66ACAA265A3, "", "..b");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Create_E83E5B2B_6A64_4513_BF98_B9C71DBA6D0F, "", "..b");
 
-int Berry_Color_Wheel_Class_Get_Mode_7E41E3B2_3C28_4758_BB90_A853BD5F44BE(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
+int Berry_Color_Wheel_Class_Get_Mode_181922DF_B18D_4D5E_BAEE_8999D735B0F0(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Mode_7E41E3B2_3C28_4758_BB90_A853BD5F44BE, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Mode_181922DF_B18D_4D5E_BAEE_8999D735B0F0, "i", ".");
 
-bool Berry_Color_Wheel_Class_Get_Mode_Fixed_C15BE72D_937E_4E0B_9954_E50BF5DA2651(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
+bool Berry_Color_Wheel_Class_Get_Mode_Fixed_0A7DA18C_E909_4830_A592_30195B8EEA7F(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
 {
 return I->Get_Mode_Fixed(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Mode_Fixed_C15BE72D_937E_4E0B_9954_E50BF5DA2651, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Mode_Fixed_0A7DA18C_E909_4830_A592_30195B8EEA7F, "b", ".");
 
-void * Berry_Color_Wheel_Class_Get_Color_DF72FB66_65E4_4289_9302_5CC48C3F8159(bvm* V, Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
+void * Berry_Color_Wheel_Class_Get_Color_5BD9300D_1A5A_4819_B1EB_3D2AD1453E74(bvm* V, Xila_Namespace::Graphics_Types::Color_Wheel_Class* I)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = I->Get_Color(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Color_DF72FB66_65E4_4289_9302_5CC48C3F8159, "Graphics.Color_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Get_Color_5BD9300D_1A5A_4819_B1EB_3D2AD1453E74, "Graphics.Color_Type", "@.");
 
-bool Berry_Color_Wheel_Class_Set_Color_DC6CAF10_53FB_4974_A492_801B89AC4C8B(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Color_Class* A_0)
+bool Berry_Color_Wheel_Class_Set_Color_A3ED7E77_3205_4ACB_BCB7_DF3BCFF0E6FB(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, Color_Class* A_0)
 {
 return I->Set_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Color_DC6CAF10_53FB_4974_A492_801B89AC4C8B, "b", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Color_A3ED7E77_3205_4ACB_BCB7_DF3BCFF0E6FB, "b", "..");
 
-void Berry_Color_Wheel_Class_Set_Mode_27C9F0B0_CDFA_42FB_8BF6_9C2E51BFE769(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, int A_0)
+void Berry_Color_Wheel_Class_Set_Mode_0234F6CA_C029_467D_BF91_41604A764D20(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, int A_0)
 {
 return I->Set_Mode((Color_Wheel_Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Mode_27C9F0B0_CDFA_42FB_8BF6_9C2E51BFE769, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Mode_0234F6CA_C029_467D_BF91_41604A764D20, "", ".i");
 
-void Berry_Color_Wheel_Class_Set_Mode_Fixed_628E2B20_5B5E_426D_A1C0_B7ED484E4B9B(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, bool A_0)
+void Berry_Color_Wheel_Class_Set_Mode_Fixed_FF113907_11B8_4A6B_8540_D3FE45DB862D(Xila_Namespace::Graphics_Types::Color_Wheel_Class* I, bool A_0)
 {
 return I->Set_Mode_Fixed(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Mode_Fixed_628E2B20_5B5E_426D_A1C0_B7ED484E4B9B, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Wheel_Class_Set_Mode_Fixed_FF113907_11B8_4A6B_8540_D3FE45DB862D, "", ".b");
 
 // - - Operators
 
@@ -2753,16 +2753,16 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Color_Wheel_Type(scope:global, name:Color_Wheel_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Color_Wheel_Class_Initialize_AB8D07F7_66B7_4E52_A20C_F350E59F8168)
-	deinit, ctype_func(Berry_Color_Wheel_Class_Deinitialize_EBC3E288_1654_4271_A435_95936FC22549)
-	Create, ctype_func(Berry_Color_Wheel_Class_Create_4199AE5D_0832_4661_9F7E_0AD44395BECC)
-	Create, ctype_func(Berry_Color_Wheel_Class_Create_D4B77EA2_54CB_464C_AD92_D66ACAA265A3)
-	Get_Mode, ctype_func(Berry_Color_Wheel_Class_Get_Mode_7E41E3B2_3C28_4758_BB90_A853BD5F44BE)
-	Get_Mode_Fixed, ctype_func(Berry_Color_Wheel_Class_Get_Mode_Fixed_C15BE72D_937E_4E0B_9954_E50BF5DA2651)
-	Get_Color, ctype_func(Berry_Color_Wheel_Class_Get_Color_DF72FB66_65E4_4289_9302_5CC48C3F8159)
-	Set_Color, ctype_func(Berry_Color_Wheel_Class_Set_Color_DC6CAF10_53FB_4974_A492_801B89AC4C8B)
-	Set_Mode, ctype_func(Berry_Color_Wheel_Class_Set_Mode_27C9F0B0_CDFA_42FB_8BF6_9C2E51BFE769)
-	Set_Mode_Fixed, ctype_func(Berry_Color_Wheel_Class_Set_Mode_Fixed_628E2B20_5B5E_426D_A1C0_B7ED484E4B9B)
+	init, ctype_func(Berry_Color_Wheel_Class_Initialize_46ADA395_374C_4639_B6D6_DD3ED5064F46)
+	deinit, ctype_func(Berry_Color_Wheel_Class_Deinitialize_6009E1CF_926D_4563_AABD_C7EDDFF98C28)
+	Create, ctype_func(Berry_Color_Wheel_Class_Create_A767AA13_D88F_4C6A_BBAF_0A1FF59F38C0)
+	Create, ctype_func(Berry_Color_Wheel_Class_Create_E83E5B2B_6A64_4513_BF98_B9C71DBA6D0F)
+	Get_Mode, ctype_func(Berry_Color_Wheel_Class_Get_Mode_181922DF_B18D_4D5E_BAEE_8999D735B0F0)
+	Get_Mode_Fixed, ctype_func(Berry_Color_Wheel_Class_Get_Mode_Fixed_0A7DA18C_E909_4830_A592_30195B8EEA7F)
+	Get_Color, ctype_func(Berry_Color_Wheel_Class_Get_Color_5BD9300D_1A5A_4819_B1EB_3D2AD1453E74)
+	Set_Color, ctype_func(Berry_Color_Wheel_Class_Set_Color_A3ED7E77_3205_4ACB_BCB7_DF3BCFF0E6FB)
+	Set_Mode, ctype_func(Berry_Color_Wheel_Class_Set_Mode_0234F6CA_C029_467D_BF91_41604A764D20)
+	Set_Mode_Fixed, ctype_func(Berry_Color_Wheel_Class_Set_Mode_Fixed_FF113907_11B8_4A6B_8540_D3FE45DB862D)
 
 }
 @const_object_info_end */
@@ -2775,84 +2775,84 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Calendar_Class_Initialize_750C6795_5F4F_4714_AA72_52B08C80394B(bvm* V)
+void * Berry_Calendar_Class_Initialize_C649403B_FE24_4572_BA67_CB2CAF66200B(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Calendar_Class));
 return new (Pointer) Graphics_Types::Calendar_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Initialize_750C6795_5F4F_4714_AA72_52B08C80394B, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Initialize_C649403B_FE24_4572_BA67_CB2CAF66200B, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Calendar_Class_Deinitialize_E59D3ED5_88C7_472F_A1A3_96CA7F34813D(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
+void Berry_Calendar_Class_Deinitialize_94999F2A_53CF_4F53_B4E1_3C13CB1E8954(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 if (!I) { return; }
 I->~Calendar_Class();
 be_free(V, I, sizeof(Graphics_Types::Calendar_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Deinitialize_E59D3ED5_88C7_472F_A1A3_96CA7F34813D, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Deinitialize_94999F2A_53CF_4F53_B4E1_3C13CB1E8954, "", "@.");
 
 
 // - - Functions
-void Berry_Calendar_Class_Create_CCD9F361_D44B_484F_B582_0F791DCB4C48(Xila_Namespace::Graphics_Types::Calendar_Class* I, Object_Class* A_0)
+void Berry_Calendar_Class_Create_99AA13DE_D503_4F93_834C_7144B1BF33DF(Xila_Namespace::Graphics_Types::Calendar_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Create_CCD9F361_D44B_484F_B582_0F791DCB4C48, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Create_99AA13DE_D503_4F93_834C_7144B1BF33DF, "", "..");
 
-void Berry_Calendar_Class_Set_Today_Date_CD427003_E4BF_4D34_9F1A_5B0A689E814E(Xila_Namespace::Graphics_Types::Calendar_Class* I, Date_Class* A_0)
+void Berry_Calendar_Class_Set_Today_Date_647C9BE9_474B_4D8C_A4C8_05504CE9B942(Xila_Namespace::Graphics_Types::Calendar_Class* I, Date_Class* A_0)
 {
 return I->Set_Today_Date(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Set_Today_Date_CD427003_E4BF_4D34_9F1A_5B0A689E814E, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Set_Today_Date_647C9BE9_474B_4D8C_A4C8_05504CE9B942, "", "..");
 
-void Berry_Calendar_Class_Set_Showed_Date_D57860CB_EF17_4609_AA27_3414C5C7C5FC(Xila_Namespace::Graphics_Types::Calendar_Class* I, int A_0, int A_1)
+void Berry_Calendar_Class_Set_Showed_Date_3032B212_E943_4F99_9D38_0F359CC9BB04(Xila_Namespace::Graphics_Types::Calendar_Class* I, int A_0, int A_1)
 {
 return I->Set_Showed_Date((unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Set_Showed_Date_D57860CB_EF17_4609_AA27_3414C5C7C5FC, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Set_Showed_Date_3032B212_E943_4F99_9D38_0F359CC9BB04, "", ".ii");
 
-void * Berry_Calendar_Class_Get_Button_Matrix_352899F4_E26F_49EE_87D5_DA0B23B89523(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
+void * Berry_Calendar_Class_Get_Button_Matrix_370558A5_5202_4053_9B20_0F898F3DA569(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 Xila_Namespace::Graphics_Types::Button_Matrix_Class* R = (Xila_Namespace::Graphics_Types::Button_Matrix_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Button_Matrix_Class));
  *R = I->Get_Button_Matrix(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Button_Matrix_352899F4_E26F_49EE_87D5_DA0B23B89523, "Graphics.Button_Matrix_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Button_Matrix_370558A5_5202_4053_9B20_0F898F3DA569, "Graphics.Button_Matrix_Type", "@.");
 
-void * Berry_Calendar_Class_Get_Today_Date_0D0F5079_CB7C_467D_B3CA_90EFFF72C719(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
+void * Berry_Calendar_Class_Get_Today_Date_AB60DFC4_E442_40A6_81B3_C9F9566C8BB9(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 Xila_Namespace::Date_Class* R = (Xila_Namespace::Date_Class*) be_malloc(V, sizeof(Xila_Namespace::Date_Class));
  *R = I->Get_Today_Date(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Today_Date_0D0F5079_CB7C_467D_B3CA_90EFFF72C719, "Date_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Today_Date_AB60DFC4_E442_40A6_81B3_C9F9566C8BB9, "Date_Type", "@.");
 
-void * Berry_Calendar_Class_Get_Showed_Date_F11432ED_D251_4D10_95DE_17B2FBC3E5EB(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
+void * Berry_Calendar_Class_Get_Showed_Date_EDAFD715_6052_45C8_8BAB_395B55D0E6B3(bvm* V, Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 Xila_Namespace::Date_Class* R = (Xila_Namespace::Date_Class*) be_malloc(V, sizeof(Xila_Namespace::Date_Class));
  *R = I->Get_Showed_Date(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Showed_Date_F11432ED_D251_4D10_95DE_17B2FBC3E5EB, "Date_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Showed_Date_EDAFD715_6052_45C8_8BAB_395B55D0E6B3, "Date_Type", "@.");
 
-const void* Berry_Calendar_Class_Get_Highlighted_Dates_76C9126B_F060_4D97_A0D5_7750075CCCD5(Xila_Namespace::Graphics_Types::Calendar_Class* I)
+const void* Berry_Calendar_Class_Get_Highlighted_Dates_A2DCCA94_192A_41F7_A3B1_65572D421587(Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 return I->Get_Highlighted_Dates(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Highlighted_Dates_76C9126B_F060_4D97_A0D5_7750075CCCD5, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Highlighted_Dates_A2DCCA94_192A_41F7_A3B1_65572D421587, "c", ".");
 
-int Berry_Calendar_Class_Get_Highlighted_Dates_Number_0FED6AA9_7730_4A4B_836E_E5214D7F61AC(Xila_Namespace::Graphics_Types::Calendar_Class* I)
+int Berry_Calendar_Class_Get_Highlighted_Dates_Number_E7D365D7_DA8E_4232_8718_587CF52DB02C(Xila_Namespace::Graphics_Types::Calendar_Class* I)
 {
 return (int)I->Get_Highlighted_Dates_Number(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Highlighted_Dates_Number_0FED6AA9_7730_4A4B_836E_E5214D7F61AC, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Highlighted_Dates_Number_E7D365D7_DA8E_4232_8718_587CF52DB02C, "i", ".");
 
-bool Berry_Calendar_Class_Get_Pressed_Date_27F9C94C_C566_4F40_8E36_4C812F3EC864(Xila_Namespace::Graphics_Types::Calendar_Class* I, ::Xila_Namespace::Date_Class* A_0)
+bool Berry_Calendar_Class_Get_Pressed_Date_CCC1B937_C6CF_412B_B3A8_31FCFF8865EC(Xila_Namespace::Graphics_Types::Calendar_Class* I, ::Xila_Namespace::Date_Class* A_0)
 {
 return I->Get_Pressed_Date(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Pressed_Date_27F9C94C_C566_4F40_8E36_4C812F3EC864, "b", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Calendar_Class_Get_Pressed_Date_CCC1B937_C6CF_412B_B3A8_31FCFF8865EC, "b", "..");
 
 // - - Operators
 
@@ -2862,17 +2862,17 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Calendar_Type(scope:global, name:Calendar_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Calendar_Class_Initialize_750C6795_5F4F_4714_AA72_52B08C80394B)
-	deinit, ctype_func(Berry_Calendar_Class_Deinitialize_E59D3ED5_88C7_472F_A1A3_96CA7F34813D)
-	Create, ctype_func(Berry_Calendar_Class_Create_CCD9F361_D44B_484F_B582_0F791DCB4C48)
-	Set_Today_Date, ctype_func(Berry_Calendar_Class_Set_Today_Date_CD427003_E4BF_4D34_9F1A_5B0A689E814E)
-	Set_Showed_Date, ctype_func(Berry_Calendar_Class_Set_Showed_Date_D57860CB_EF17_4609_AA27_3414C5C7C5FC)
-	Get_Button_Matrix, ctype_func(Berry_Calendar_Class_Get_Button_Matrix_352899F4_E26F_49EE_87D5_DA0B23B89523)
-	Get_Today_Date, ctype_func(Berry_Calendar_Class_Get_Today_Date_0D0F5079_CB7C_467D_B3CA_90EFFF72C719)
-	Get_Showed_Date, ctype_func(Berry_Calendar_Class_Get_Showed_Date_F11432ED_D251_4D10_95DE_17B2FBC3E5EB)
-	Get_Highlighted_Dates, ctype_func(Berry_Calendar_Class_Get_Highlighted_Dates_76C9126B_F060_4D97_A0D5_7750075CCCD5)
-	Get_Highlighted_Dates_Number, ctype_func(Berry_Calendar_Class_Get_Highlighted_Dates_Number_0FED6AA9_7730_4A4B_836E_E5214D7F61AC)
-	Get_Pressed_Date, ctype_func(Berry_Calendar_Class_Get_Pressed_Date_27F9C94C_C566_4F40_8E36_4C812F3EC864)
+	init, ctype_func(Berry_Calendar_Class_Initialize_C649403B_FE24_4572_BA67_CB2CAF66200B)
+	deinit, ctype_func(Berry_Calendar_Class_Deinitialize_94999F2A_53CF_4F53_B4E1_3C13CB1E8954)
+	Create, ctype_func(Berry_Calendar_Class_Create_99AA13DE_D503_4F93_834C_7144B1BF33DF)
+	Set_Today_Date, ctype_func(Berry_Calendar_Class_Set_Today_Date_647C9BE9_474B_4D8C_A4C8_05504CE9B942)
+	Set_Showed_Date, ctype_func(Berry_Calendar_Class_Set_Showed_Date_3032B212_E943_4F99_9D38_0F359CC9BB04)
+	Get_Button_Matrix, ctype_func(Berry_Calendar_Class_Get_Button_Matrix_370558A5_5202_4053_9B20_0F898F3DA569)
+	Get_Today_Date, ctype_func(Berry_Calendar_Class_Get_Today_Date_AB60DFC4_E442_40A6_81B3_C9F9566C8BB9)
+	Get_Showed_Date, ctype_func(Berry_Calendar_Class_Get_Showed_Date_EDAFD715_6052_45C8_8BAB_395B55D0E6B3)
+	Get_Highlighted_Dates, ctype_func(Berry_Calendar_Class_Get_Highlighted_Dates_A2DCCA94_192A_41F7_A3B1_65572D421587)
+	Get_Highlighted_Dates_Number, ctype_func(Berry_Calendar_Class_Get_Highlighted_Dates_Number_E7D365D7_DA8E_4232_8718_587CF52DB02C)
+	Get_Pressed_Date, ctype_func(Berry_Calendar_Class_Get_Pressed_Date_CCC1B937_C6CF_412B_B3A8_31FCFF8865EC)
 
 }
 @const_object_info_end */
@@ -2885,224 +2885,224 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Text_Area_Class_Initialize_A176CA1A_4B11_4D07_B363_AA63EE6CDB22(bvm* V)
+void * Berry_Text_Area_Class_Initialize_61EDFF3E_F04C_47C7_8A31_6F734787AC20(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Text_Area_Class));
 return new (Pointer) Graphics_Types::Text_Area_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Initialize_A176CA1A_4B11_4D07_B363_AA63EE6CDB22, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Initialize_61EDFF3E_F04C_47C7_8A31_6F734787AC20, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Text_Area_Class_Deinitialize_29839575_65D0_4BAA_8117_90568106442A(bvm* V, Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Deinitialize_94E4600C_0B28_4CD3_B56D_F3B1375A8689(bvm* V, Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 if (!I) { return; }
 I->~Text_Area_Class();
 be_free(V, I, sizeof(Graphics_Types::Text_Area_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Deinitialize_29839575_65D0_4BAA_8117_90568106442A, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Deinitialize_94E4600C_0B28_4CD3_B56D_F3B1375A8689, "", "@.");
 
 
 // - - Functions
-void Berry_Text_Area_Class_Create_5D124BA1_1177_469C_A7E6_7FEF3FF1003B(Xila_Namespace::Graphics_Types::Text_Area_Class* I, Object_Class* A_0)
+void Berry_Text_Area_Class_Create_F0175E18_C8F1_4A0E_8166_8396323639CC(Xila_Namespace::Graphics_Types::Text_Area_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Create_5D124BA1_1177_469C_A7E6_7FEF3FF1003B, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Create_F0175E18_C8F1_4A0E_8166_8396323639CC, "", "..");
 
-void Berry_Text_Area_Class_Add_Char_8362EFB5_7506_4C00_A64A_F4D7B902BD47(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
+void Berry_Text_Area_Class_Add_Char_3934F849_6647_45FB_B12A_F031F1E5D28B(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
 {
 return I->Add_Char((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Add_Char_8362EFB5_7506_4C00_A64A_F4D7B902BD47, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Add_Char_3934F849_6647_45FB_B12A_F031F1E5D28B, "", ".i");
 
-void Berry_Text_Area_Class_Add_Text_A31DC696_62D2_4190_909C_449543A286CB(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
+void Berry_Text_Area_Class_Add_Text_E00648E1_6C13_4761_9B9B_9E6FACE1DAE6(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
 {
 return I->Add_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Add_Text_A31DC696_62D2_4190_909C_449543A286CB, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Add_Text_E00648E1_6C13_4761_9B9B_9E6FACE1DAE6, "", ".s");
 
-void Berry_Text_Area_Class_Delete_Character_297752A8_00C7_4ADA_89EF_ACFF48006216(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Delete_Character_CBAD4682_DB6F_4444_A1ED_A0CD81F9AF76(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Delete_Character(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Delete_Character_297752A8_00C7_4ADA_89EF_ACFF48006216, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Delete_Character_CBAD4682_DB6F_4444_A1ED_A0CD81F9AF76, "", ".");
 
-void Berry_Text_Area_Class_Delete_Character_Forward_14F52ED0_319E_4C9E_B1D3_66BF1C277DB9(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Delete_Character_Forward_D22D940E_1368_4751_9ED8_2FD18CA74822(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Delete_Character_Forward(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Delete_Character_Forward_14F52ED0_319E_4C9E_B1D3_66BF1C277DB9, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Delete_Character_Forward_D22D940E_1368_4751_9ED8_2FD18CA74822, "", ".");
 
-void Berry_Text_Area_Class_Clear_Selection_2AC88A87_9C86_435B_B43B_10958CC369B1(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Clear_Selection_10DC9550_F778_4CA7_81CA_8FB7DB1094E9(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Clear_Selection(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Clear_Selection_2AC88A87_9C86_435B_B43B_10958CC369B1, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Clear_Selection_10DC9550_F778_4CA7_81CA_8FB7DB1094E9, "", ".");
 
-void Berry_Text_Area_Class_Cursor_Right_04F1A6E5_A93F_4A79_844A_1EDE7C2CA0C4(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Cursor_Right_0E0D36D6_E40F_4799_AF40_4F4CE815C109(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Cursor_Right(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Right_04F1A6E5_A93F_4A79_844A_1EDE7C2CA0C4, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Right_0E0D36D6_E40F_4799_AF40_4F4CE815C109, "", ".");
 
-void Berry_Text_Area_Class_Cursor_Left_8601AD11_D2EA_4EA9_8F48_62E6A9210207(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Cursor_Left_1F1A7F70_6521_4055_8C86_4A9DCF21CFA8(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Cursor_Left(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Left_8601AD11_D2EA_4EA9_8F48_62E6A9210207, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Left_1F1A7F70_6521_4055_8C86_4A9DCF21CFA8, "", ".");
 
-void Berry_Text_Area_Class_Cursor_Up_1E1ED76F_D1D0_482A_A182_2AF909729206(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Cursor_Up_2657AE03_49CD_4779_9D80_F8735237F53E(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Cursor_Up(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Up_1E1ED76F_D1D0_482A_A182_2AF909729206, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Up_2657AE03_49CD_4779_9D80_F8735237F53E, "", ".");
 
-void Berry_Text_Area_Class_Cursor_Down_B808D7DB_298F_40FE_8DDB_C0B25EA8036D(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void Berry_Text_Area_Class_Cursor_Down_4EAA281E_3790_485C_AF41_4811A679813F(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Cursor_Down(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Down_B808D7DB_298F_40FE_8DDB_C0B25EA8036D, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Cursor_Down_4EAA281E_3790_485C_AF41_4811A679813F, "", ".");
 
-void Berry_Text_Area_Class_Set_Text_38A01940_C4DE_4C69_B9C2_2B91D2E049C9(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
+void Berry_Text_Area_Class_Set_Text_6772DEEC_AB52_44B6_AE02_B4DE30FFA29F(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
 {
 return I->Set_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_38A01940_C4DE_4C69_B9C2_2B91D2E049C9, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_6772DEEC_AB52_44B6_AE02_B4DE30FFA29F, "", ".s");
 
-void Berry_Text_Area_Class_Set_Placeholder_Text_92EAF2EC_724F_41C5_A515_5306D2A7B643(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
+void Berry_Text_Area_Class_Set_Placeholder_Text_F0D25CE8_88A0_48F7_8A33_11126D62FE66(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
 {
 return I->Set_Placeholder_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Placeholder_Text_92EAF2EC_724F_41C5_A515_5306D2A7B643, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Placeholder_Text_F0D25CE8_88A0_48F7_8A33_11126D62FE66, "", ".s");
 
-void Berry_Text_Area_Class_Set_Cursor_Click_Position_B039FD3D_09CA_4A0D_9B30_4ED252B4137D(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
+void Berry_Text_Area_Class_Set_Cursor_Click_Position_089C9ED6_B962_49B4_9972_0D8DD803B12B(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
 {
 return I->Set_Cursor_Click_Position(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Cursor_Click_Position_B039FD3D_09CA_4A0D_9B30_4ED252B4137D, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Cursor_Click_Position_089C9ED6_B962_49B4_9972_0D8DD803B12B, "", ".b");
 
-void Berry_Text_Area_Class_Set_One_Line_301976AB_6546_4CD0_A135_0D020CB4FD71(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
+void Berry_Text_Area_Class_Set_One_Line_D5624F2B_1BB9_4FC9_A7AE_8875C3858EAA(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
 {
 return I->Set_One_Line(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_One_Line_301976AB_6546_4CD0_A135_0D020CB4FD71, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_One_Line_D5624F2B_1BB9_4FC9_A7AE_8875C3858EAA, "", ".b");
 
-void Berry_Text_Area_Class_Set_Accepted_Characters_0AC0EAC5_1CF1_49BB_8426_6C6DDC4BA829(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
+void Berry_Text_Area_Class_Set_Accepted_Characters_E78A5EA9_F998_43FF_AF6A_E8A787DCEEF1(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
 {
 return I->Set_Accepted_Characters(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Accepted_Characters_0AC0EAC5_1CF1_49BB_8426_6C6DDC4BA829, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Accepted_Characters_E78A5EA9_F998_43FF_AF6A_E8A787DCEEF1, "", ".s");
 
-void Berry_Text_Area_Class_Set_Maximum_Length_3467F7DB_5E44_492B_AEF4_D65AA80224CE(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
+void Berry_Text_Area_Class_Set_Maximum_Length_3C8D1777_EFE6_4A92_ADFC_94B47E1F73A7(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
 {
 return I->Set_Maximum_Length((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Maximum_Length_3467F7DB_5E44_492B_AEF4_D65AA80224CE, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Maximum_Length_3C8D1777_EFE6_4A92_ADFC_94B47E1F73A7, "", ".i");
 
-void Berry_Text_Area_Class_Set_Insert_Replace_9233FBB8_001E_4CC3_A82D_0128F488F94E(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
+void Berry_Text_Area_Class_Set_Insert_Replace_73F9B7FD_13A6_4474_8A4F_B5ADB5F8B083(Xila_Namespace::Graphics_Types::Text_Area_Class* I, const char* A_0)
 {
 return I->Set_Insert_Replace(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Insert_Replace_9233FBB8_001E_4CC3_A82D_0128F488F94E, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Insert_Replace_73F9B7FD_13A6_4474_8A4F_B5ADB5F8B083, "", ".s");
 
-void Berry_Text_Area_Class_Set_Text_Selection_876E2EEC_9418_412C_8397_5A380A32CF03(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
+void Berry_Text_Area_Class_Set_Text_Selection_6A9D8E08_C4DE_4371_A32F_53EB26EBA03C(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
 {
 return I->Set_Text_Selection(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_Selection_876E2EEC_9418_412C_8397_5A380A32CF03, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_Selection_6A9D8E08_C4DE_4371_A32F_53EB26EBA03C, "", ".b");
 
-void Berry_Text_Area_Class_Set_Password_Mode_F72F363D_47FF_47A0_9342_A4B71F36AF5B(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
+void Berry_Text_Area_Class_Set_Password_Mode_EC7EAFA0_AD94_4D88_A83E_F94B231F3932(Xila_Namespace::Graphics_Types::Text_Area_Class* I, bool A_0)
 {
 return I->Set_Password_Mode(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Password_Mode_F72F363D_47FF_47A0_9342_A4B71F36AF5B, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Password_Mode_EC7EAFA0_AD94_4D88_A83E_F94B231F3932, "", ".b");
 
-void Berry_Text_Area_Class_Set_Password_Show_Time_853D5671_F558_4605_B0DC_1E843CD99E26(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
+void Berry_Text_Area_Class_Set_Password_Show_Time_3FB06D4E_F28E_4EFD_A25E_6D0C2E862CC3(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
 {
 return I->Set_Password_Show_Time((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Password_Show_Time_853D5671_F558_4605_B0DC_1E843CD99E26, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Password_Show_Time_3FB06D4E_F28E_4EFD_A25E_6D0C2E862CC3, "", ".i");
 
-void Berry_Text_Area_Class_Set_Text_Alignment_A5820BBD_4FCF_4C21_AA6C_F1CF59EA362C(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
+void Berry_Text_Area_Class_Set_Text_Alignment_ACA2F4D0_8AAA_46B3_B4A0_D2CC015867B2(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
 {
 return I->Set_Text_Alignment((Text_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_Alignment_A5820BBD_4FCF_4C21_AA6C_F1CF59EA362C, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Text_Alignment_ACA2F4D0_8AAA_46B3_B4A0_D2CC015867B2, "", ".i");
 
-void Berry_Text_Area_Class_Set_Cursor_Position_04B25003_6AD3_4B70_9A9E_CA00EC4488FF(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
+void Berry_Text_Area_Class_Set_Cursor_Position_F6299EF2_FF49_44C3_B384_4CFA61177A86(Xila_Namespace::Graphics_Types::Text_Area_Class* I, int A_0)
 {
 return I->Set_Cursor_Position((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Cursor_Position_04B25003_6AD3_4B70_9A9E_CA00EC4488FF, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Set_Cursor_Position_F6299EF2_FF49_44C3_B384_4CFA61177A86, "", ".i");
 
-const char* Berry_Text_Area_Class_Get_Text_98E0AAE6_A111_443A_9164_93C8DD515A96(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+const char* Berry_Text_Area_Class_Get_Text_385649DD_444A_466B_9741_4B674A5AA37B(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Text(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Text_98E0AAE6_A111_443A_9164_93C8DD515A96, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Text_385649DD_444A_466B_9741_4B674A5AA37B, "s", ".");
 
-const char* Berry_Text_Area_Class_Get_Placeholder_Text_BEF0C91B_6D05_4F33_AF78_B987A25B573E(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+const char* Berry_Text_Area_Class_Get_Placeholder_Text_34FB5F9A_51F2_4173_B822_01BCD0236542(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Placeholder_Text(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Placeholder_Text_BEF0C91B_6D05_4F33_AF78_B987A25B573E, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Placeholder_Text_34FB5F9A_51F2_4173_B822_01BCD0236542, "s", ".");
 
-void * Berry_Text_Area_Class_Get_Label_C4447FE7_D1A6_4950_A514_3AEBECF3A73F(bvm* V, Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+void * Berry_Text_Area_Class_Get_Label_51C3448F_031C_4ED0_A5BA_37090A97BE9E(bvm* V, Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 Xila_Namespace::Graphics_Types::Label_Class* R = (Xila_Namespace::Graphics_Types::Label_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Label_Class));
  *R = I->Get_Label(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Label_C4447FE7_D1A6_4950_A514_3AEBECF3A73F, "Graphics.Label_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Label_51C3448F_031C_4ED0_A5BA_37090A97BE9E, "Graphics.Label_Type", "@.");
 
-int Berry_Text_Area_Class_Get_Cursor_Position_235B600F_09D1_45B2_99D0_D3FEB39C5310(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+int Berry_Text_Area_Class_Get_Cursor_Position_8C7C1230_25F4_4193_92E7_8E188D69405E(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return (int)I->Get_Cursor_Position(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Cursor_Position_235B600F_09D1_45B2_99D0_D3FEB39C5310, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Cursor_Position_8C7C1230_25F4_4193_92E7_8E188D69405E, "i", ".");
 
-bool Berry_Text_Area_Class_Get_Cursor_Click_Position_0500BA84_5664_4967_B83D_23D326B33494(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+bool Berry_Text_Area_Class_Get_Cursor_Click_Position_7D82D18A_5B53_4121_B98F_4D35C368B3B3(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Cursor_Click_Position(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Cursor_Click_Position_0500BA84_5664_4967_B83D_23D326B33494, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Cursor_Click_Position_7D82D18A_5B53_4121_B98F_4D35C368B3B3, "b", ".");
 
-bool Berry_Text_Area_Class_Get_Password_Mode_65CA7BCB_2046_49C7_870D_2B3E510D64CE(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+bool Berry_Text_Area_Class_Get_Password_Mode_0FBBA277_808C_469C_8F14_E01E50C1D183(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Password_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Password_Mode_65CA7BCB_2046_49C7_870D_2B3E510D64CE, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Password_Mode_0FBBA277_808C_469C_8F14_E01E50C1D183, "b", ".");
 
-bool Berry_Text_Area_Class_Get_One_Line_DD1B7E25_3C64_437A_8A0E_458579DEF4FD(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+bool Berry_Text_Area_Class_Get_One_Line_69554290_3F93_4A49_8C6C_FD0B484A2B9E(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_One_Line(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_One_Line_DD1B7E25_3C64_437A_8A0E_458579DEF4FD, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_One_Line_69554290_3F93_4A49_8C6C_FD0B484A2B9E, "b", ".");
 
-const char* Berry_Text_Area_Class_Get_Accepted_Characters_C1F18983_186D_4502_BEF4_5695547D171E(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+const char* Berry_Text_Area_Class_Get_Accepted_Characters_8510F5A7_7A23_4F40_8BE5_20049520EE15(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Accepted_Characters(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Accepted_Characters_C1F18983_186D_4502_BEF4_5695547D171E, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Accepted_Characters_8510F5A7_7A23_4F40_8BE5_20049520EE15, "s", ".");
 
-int Berry_Text_Area_Class_Get_Maximum_Length_8A94859E_873A_4179_9F04_1FB85F2B4E62(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+int Berry_Text_Area_Class_Get_Maximum_Length_DEACD001_C998_46F9_873F_0942441E9737(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return (int)I->Get_Maximum_Length(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Maximum_Length_8A94859E_873A_4179_9F04_1FB85F2B4E62, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Maximum_Length_DEACD001_C998_46F9_873F_0942441E9737, "i", ".");
 
-bool Berry_Text_Area_Class_Get_Text_Selection_BE026E60_6381_4EDC_9A53_3721F78912A0(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+bool Berry_Text_Area_Class_Get_Text_Selection_D578871C_39BD_45A8_8BE0_82DCC40E3373(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return I->Get_Text_Selection(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Text_Selection_BE026E60_6381_4EDC_9A53_3721F78912A0, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Text_Selection_D578871C_39BD_45A8_8BE0_82DCC40E3373, "b", ".");
 
-int Berry_Text_Area_Class_Get_Password_Show_Time_CF2B1786_12D1_4F28_9088_96B06ED4C661(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
+int Berry_Text_Area_Class_Get_Password_Show_Time_23964B43_4CDC_488E_AA31_FDEE7057A9DB(Xila_Namespace::Graphics_Types::Text_Area_Class* I)
 {
 return (int)I->Get_Password_Show_Time(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Password_Show_Time_CF2B1786_12D1_4F28_9088_96B06ED4C661, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Text_Area_Class_Get_Password_Show_Time_23964B43_4CDC_488E_AA31_FDEE7057A9DB, "i", ".");
 
 // - - Operators
 
@@ -3112,41 +3112,41 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Text_Area_Type(scope:global, name:Text_Area_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Text_Area_Class_Initialize_A176CA1A_4B11_4D07_B363_AA63EE6CDB22)
-	deinit, ctype_func(Berry_Text_Area_Class_Deinitialize_29839575_65D0_4BAA_8117_90568106442A)
-	Create, ctype_func(Berry_Text_Area_Class_Create_5D124BA1_1177_469C_A7E6_7FEF3FF1003B)
-	Add_Char, ctype_func(Berry_Text_Area_Class_Add_Char_8362EFB5_7506_4C00_A64A_F4D7B902BD47)
-	Add_Text, ctype_func(Berry_Text_Area_Class_Add_Text_A31DC696_62D2_4190_909C_449543A286CB)
-	Delete_Character, ctype_func(Berry_Text_Area_Class_Delete_Character_297752A8_00C7_4ADA_89EF_ACFF48006216)
-	Delete_Character_Forward, ctype_func(Berry_Text_Area_Class_Delete_Character_Forward_14F52ED0_319E_4C9E_B1D3_66BF1C277DB9)
-	Clear_Selection, ctype_func(Berry_Text_Area_Class_Clear_Selection_2AC88A87_9C86_435B_B43B_10958CC369B1)
-	Cursor_Right, ctype_func(Berry_Text_Area_Class_Cursor_Right_04F1A6E5_A93F_4A79_844A_1EDE7C2CA0C4)
-	Cursor_Left, ctype_func(Berry_Text_Area_Class_Cursor_Left_8601AD11_D2EA_4EA9_8F48_62E6A9210207)
-	Cursor_Up, ctype_func(Berry_Text_Area_Class_Cursor_Up_1E1ED76F_D1D0_482A_A182_2AF909729206)
-	Cursor_Down, ctype_func(Berry_Text_Area_Class_Cursor_Down_B808D7DB_298F_40FE_8DDB_C0B25EA8036D)
-	Set_Text, ctype_func(Berry_Text_Area_Class_Set_Text_38A01940_C4DE_4C69_B9C2_2B91D2E049C9)
-	Set_Placeholder_Text, ctype_func(Berry_Text_Area_Class_Set_Placeholder_Text_92EAF2EC_724F_41C5_A515_5306D2A7B643)
-	Set_Cursor_Click_Position, ctype_func(Berry_Text_Area_Class_Set_Cursor_Click_Position_B039FD3D_09CA_4A0D_9B30_4ED252B4137D)
-	Set_One_Line, ctype_func(Berry_Text_Area_Class_Set_One_Line_301976AB_6546_4CD0_A135_0D020CB4FD71)
-	Set_Accepted_Characters, ctype_func(Berry_Text_Area_Class_Set_Accepted_Characters_0AC0EAC5_1CF1_49BB_8426_6C6DDC4BA829)
-	Set_Maximum_Length, ctype_func(Berry_Text_Area_Class_Set_Maximum_Length_3467F7DB_5E44_492B_AEF4_D65AA80224CE)
-	Set_Insert_Replace, ctype_func(Berry_Text_Area_Class_Set_Insert_Replace_9233FBB8_001E_4CC3_A82D_0128F488F94E)
-	Set_Text_Selection, ctype_func(Berry_Text_Area_Class_Set_Text_Selection_876E2EEC_9418_412C_8397_5A380A32CF03)
-	Set_Password_Mode, ctype_func(Berry_Text_Area_Class_Set_Password_Mode_F72F363D_47FF_47A0_9342_A4B71F36AF5B)
-	Set_Password_Show_Time, ctype_func(Berry_Text_Area_Class_Set_Password_Show_Time_853D5671_F558_4605_B0DC_1E843CD99E26)
-	Set_Text_Alignment, ctype_func(Berry_Text_Area_Class_Set_Text_Alignment_A5820BBD_4FCF_4C21_AA6C_F1CF59EA362C)
-	Set_Cursor_Position, ctype_func(Berry_Text_Area_Class_Set_Cursor_Position_04B25003_6AD3_4B70_9A9E_CA00EC4488FF)
-	Get_Text, ctype_func(Berry_Text_Area_Class_Get_Text_98E0AAE6_A111_443A_9164_93C8DD515A96)
-	Get_Placeholder_Text, ctype_func(Berry_Text_Area_Class_Get_Placeholder_Text_BEF0C91B_6D05_4F33_AF78_B987A25B573E)
-	Get_Label, ctype_func(Berry_Text_Area_Class_Get_Label_C4447FE7_D1A6_4950_A514_3AEBECF3A73F)
-	Get_Cursor_Position, ctype_func(Berry_Text_Area_Class_Get_Cursor_Position_235B600F_09D1_45B2_99D0_D3FEB39C5310)
-	Get_Cursor_Click_Position, ctype_func(Berry_Text_Area_Class_Get_Cursor_Click_Position_0500BA84_5664_4967_B83D_23D326B33494)
-	Get_Password_Mode, ctype_func(Berry_Text_Area_Class_Get_Password_Mode_65CA7BCB_2046_49C7_870D_2B3E510D64CE)
-	Get_One_Line, ctype_func(Berry_Text_Area_Class_Get_One_Line_DD1B7E25_3C64_437A_8A0E_458579DEF4FD)
-	Get_Accepted_Characters, ctype_func(Berry_Text_Area_Class_Get_Accepted_Characters_C1F18983_186D_4502_BEF4_5695547D171E)
-	Get_Maximum_Length, ctype_func(Berry_Text_Area_Class_Get_Maximum_Length_8A94859E_873A_4179_9F04_1FB85F2B4E62)
-	Get_Text_Selection, ctype_func(Berry_Text_Area_Class_Get_Text_Selection_BE026E60_6381_4EDC_9A53_3721F78912A0)
-	Get_Password_Show_Time, ctype_func(Berry_Text_Area_Class_Get_Password_Show_Time_CF2B1786_12D1_4F28_9088_96B06ED4C661)
+	init, ctype_func(Berry_Text_Area_Class_Initialize_61EDFF3E_F04C_47C7_8A31_6F734787AC20)
+	deinit, ctype_func(Berry_Text_Area_Class_Deinitialize_94E4600C_0B28_4CD3_B56D_F3B1375A8689)
+	Create, ctype_func(Berry_Text_Area_Class_Create_F0175E18_C8F1_4A0E_8166_8396323639CC)
+	Add_Char, ctype_func(Berry_Text_Area_Class_Add_Char_3934F849_6647_45FB_B12A_F031F1E5D28B)
+	Add_Text, ctype_func(Berry_Text_Area_Class_Add_Text_E00648E1_6C13_4761_9B9B_9E6FACE1DAE6)
+	Delete_Character, ctype_func(Berry_Text_Area_Class_Delete_Character_CBAD4682_DB6F_4444_A1ED_A0CD81F9AF76)
+	Delete_Character_Forward, ctype_func(Berry_Text_Area_Class_Delete_Character_Forward_D22D940E_1368_4751_9ED8_2FD18CA74822)
+	Clear_Selection, ctype_func(Berry_Text_Area_Class_Clear_Selection_10DC9550_F778_4CA7_81CA_8FB7DB1094E9)
+	Cursor_Right, ctype_func(Berry_Text_Area_Class_Cursor_Right_0E0D36D6_E40F_4799_AF40_4F4CE815C109)
+	Cursor_Left, ctype_func(Berry_Text_Area_Class_Cursor_Left_1F1A7F70_6521_4055_8C86_4A9DCF21CFA8)
+	Cursor_Up, ctype_func(Berry_Text_Area_Class_Cursor_Up_2657AE03_49CD_4779_9D80_F8735237F53E)
+	Cursor_Down, ctype_func(Berry_Text_Area_Class_Cursor_Down_4EAA281E_3790_485C_AF41_4811A679813F)
+	Set_Text, ctype_func(Berry_Text_Area_Class_Set_Text_6772DEEC_AB52_44B6_AE02_B4DE30FFA29F)
+	Set_Placeholder_Text, ctype_func(Berry_Text_Area_Class_Set_Placeholder_Text_F0D25CE8_88A0_48F7_8A33_11126D62FE66)
+	Set_Cursor_Click_Position, ctype_func(Berry_Text_Area_Class_Set_Cursor_Click_Position_089C9ED6_B962_49B4_9972_0D8DD803B12B)
+	Set_One_Line, ctype_func(Berry_Text_Area_Class_Set_One_Line_D5624F2B_1BB9_4FC9_A7AE_8875C3858EAA)
+	Set_Accepted_Characters, ctype_func(Berry_Text_Area_Class_Set_Accepted_Characters_E78A5EA9_F998_43FF_AF6A_E8A787DCEEF1)
+	Set_Maximum_Length, ctype_func(Berry_Text_Area_Class_Set_Maximum_Length_3C8D1777_EFE6_4A92_ADFC_94B47E1F73A7)
+	Set_Insert_Replace, ctype_func(Berry_Text_Area_Class_Set_Insert_Replace_73F9B7FD_13A6_4474_8A4F_B5ADB5F8B083)
+	Set_Text_Selection, ctype_func(Berry_Text_Area_Class_Set_Text_Selection_6A9D8E08_C4DE_4371_A32F_53EB26EBA03C)
+	Set_Password_Mode, ctype_func(Berry_Text_Area_Class_Set_Password_Mode_EC7EAFA0_AD94_4D88_A83E_F94B231F3932)
+	Set_Password_Show_Time, ctype_func(Berry_Text_Area_Class_Set_Password_Show_Time_3FB06D4E_F28E_4EFD_A25E_6D0C2E862CC3)
+	Set_Text_Alignment, ctype_func(Berry_Text_Area_Class_Set_Text_Alignment_ACA2F4D0_8AAA_46B3_B4A0_D2CC015867B2)
+	Set_Cursor_Position, ctype_func(Berry_Text_Area_Class_Set_Cursor_Position_F6299EF2_FF49_44C3_B384_4CFA61177A86)
+	Get_Text, ctype_func(Berry_Text_Area_Class_Get_Text_385649DD_444A_466B_9741_4B674A5AA37B)
+	Get_Placeholder_Text, ctype_func(Berry_Text_Area_Class_Get_Placeholder_Text_34FB5F9A_51F2_4173_B822_01BCD0236542)
+	Get_Label, ctype_func(Berry_Text_Area_Class_Get_Label_51C3448F_031C_4ED0_A5BA_37090A97BE9E)
+	Get_Cursor_Position, ctype_func(Berry_Text_Area_Class_Get_Cursor_Position_8C7C1230_25F4_4193_92E7_8E188D69405E)
+	Get_Cursor_Click_Position, ctype_func(Berry_Text_Area_Class_Get_Cursor_Click_Position_7D82D18A_5B53_4121_B98F_4D35C368B3B3)
+	Get_Password_Mode, ctype_func(Berry_Text_Area_Class_Get_Password_Mode_0FBBA277_808C_469C_8F14_E01E50C1D183)
+	Get_One_Line, ctype_func(Berry_Text_Area_Class_Get_One_Line_69554290_3F93_4A49_8C6C_FD0B484A2B9E)
+	Get_Accepted_Characters, ctype_func(Berry_Text_Area_Class_Get_Accepted_Characters_8510F5A7_7A23_4F40_8BE5_20049520EE15)
+	Get_Maximum_Length, ctype_func(Berry_Text_Area_Class_Get_Maximum_Length_DEACD001_C998_46F9_873F_0942441E9737)
+	Get_Text_Selection, ctype_func(Berry_Text_Area_Class_Get_Text_Selection_D578871C_39BD_45A8_8BE0_82DCC40E3373)
+	Get_Password_Show_Time, ctype_func(Berry_Text_Area_Class_Get_Password_Show_Time_23964B43_4CDC_488E_AA31_FDEE7057A9DB)
 
 }
 @const_object_info_end */
@@ -3159,108 +3159,108 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Table_Class_Initialize_563A6CBC_E24E_4DC7_A03E_7F0EC05AA29D(bvm* V)
+void * Berry_Table_Class_Initialize_E19B2EE8_9E2A_4DB3_BD87_5A1645AEF19A(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Table_Class));
 return new (Pointer) Graphics_Types::Table_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Initialize_563A6CBC_E24E_4DC7_A03E_7F0EC05AA29D, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Initialize_E19B2EE8_9E2A_4DB3_BD87_5A1645AEF19A, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Table_Class_Deinitialize_D7FDEE97_8991_43CF_BCEF_E62741BCE048(bvm* V, Xila_Namespace::Graphics_Types::Table_Class* I)
+void Berry_Table_Class_Deinitialize_70FE1923_BA5D_4366_918F_1C8F6D3E582C(bvm* V, Xila_Namespace::Graphics_Types::Table_Class* I)
 {
 if (!I) { return; }
 I->~Table_Class();
 be_free(V, I, sizeof(Graphics_Types::Table_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Deinitialize_D7FDEE97_8991_43CF_BCEF_E62741BCE048, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Deinitialize_70FE1923_BA5D_4366_918F_1C8F6D3E582C, "", "@.");
 
 
 // - - Functions
-void Berry_Table_Class_Create_580B0AB2_A3B6_4557_B520_B995E34F2736(Xila_Namespace::Graphics_Types::Table_Class* I, Object_Class* A_0)
+void Berry_Table_Class_Create_B7B20FA6_C9CA_4165_AAF3_772D401EC0D1(Xila_Namespace::Graphics_Types::Table_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Create_580B0AB2_A3B6_4557_B520_B995E34F2736, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Create_B7B20FA6_C9CA_4165_AAF3_772D401EC0D1, "", "..");
 
-void Berry_Table_Class_Add_Cell_Control_B1B05568_6EC3_44D0_8B2E_ABCCBD3339FC(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
+void Berry_Table_Class_Add_Cell_Control_7752884B_DBB3_40EF_88B4_B70178881734(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Add_Cell_Control((short unsigned int)A_0, (short unsigned int)A_1, (Table_Cell_Control_Type)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Add_Cell_Control_B1B05568_6EC3_44D0_8B2E_ABCCBD3339FC, "", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Add_Cell_Control_7752884B_DBB3_40EF_88B4_B70178881734, "", ".iii");
 
-void Berry_Table_Class_Clear_Cell_Control_62D582EC_78FB_4C3F_A6CE_B23067B8090D(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
+void Berry_Table_Class_Clear_Cell_Control_74A685E7_A1F3_4882_9763_9139D735051C(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Clear_Cell_Control((short unsigned int)A_0, (short unsigned int)A_1, (Table_Cell_Control_Type)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Clear_Cell_Control_62D582EC_78FB_4C3F_A6CE_B23067B8090D, "", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Clear_Cell_Control_74A685E7_A1F3_4882_9763_9139D735051C, "", ".iii");
 
-bool Berry_Table_Class_Has_Cell_Control_AEB5BABF_80EA_466B_A001_8CE941FFB686(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
+bool Berry_Table_Class_Has_Cell_Control_DBB1F72F_80B2_40B2_913C_1D8F641C51D5(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Has_Cell_Control((short unsigned int)A_0, (short unsigned int)A_1, (Table_Cell_Control_Type)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Has_Cell_Control_AEB5BABF_80EA_466B_A001_8CE941FFB686, "b", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Has_Cell_Control_DBB1F72F_80B2_40B2_913C_1D8F641C51D5, "b", ".iii");
 
-const char* Berry_Table_Class_Get_Cell_Value_7F58087F_21B5_4479_87A8_FA34001102C1(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1)
+const char* Berry_Table_Class_Get_Cell_Value_E7606765_2CE8_4A8B_AFD4_893D0DC7DB6C(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1)
 {
 return I->Get_Cell_Value((short unsigned int)A_0, (short unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Cell_Value_7F58087F_21B5_4479_87A8_FA34001102C1, "s", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Cell_Value_E7606765_2CE8_4A8B_AFD4_893D0DC7DB6C, "s", ".ii");
 
-int Berry_Table_Class_Get_Row_Count_361C8740_E5EA_47FF_B874_177A48417DAB(Xila_Namespace::Graphics_Types::Table_Class* I)
+int Berry_Table_Class_Get_Row_Count_AB8530C6_0FBE_4A0F_AC8C_D5FB000D432E(Xila_Namespace::Graphics_Types::Table_Class* I)
 {
 return (int)I->Get_Row_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Row_Count_361C8740_E5EA_47FF_B874_177A48417DAB, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Row_Count_AB8530C6_0FBE_4A0F_AC8C_D5FB000D432E, "i", ".");
 
-int Berry_Table_Class_Get_Column_Count_C03FBD13_729D_4984_952C_1F47EE157A2C(Xila_Namespace::Graphics_Types::Table_Class* I)
+int Berry_Table_Class_Get_Column_Count_8B947731_B04D_4DFC_8C01_ED11C19EFF38(Xila_Namespace::Graphics_Types::Table_Class* I)
 {
 return (int)I->Get_Column_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Column_Count_C03FBD13_729D_4984_952C_1F47EE157A2C, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Column_Count_8B947731_B04D_4DFC_8C01_ED11C19EFF38, "i", ".");
 
-int Berry_Table_Class_Get_Column_Width_203889A4_E042_4BDD_BBA1_212E04D42465(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
+int Berry_Table_Class_Get_Column_Width_7B1D016D_3179_41EA_B702_356E8D33001A(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
 {
 return (int)I->Get_Column_Width((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Column_Width_203889A4_E042_4BDD_BBA1_212E04D42465, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Column_Width_7B1D016D_3179_41EA_B702_356E8D33001A, "i", ".i");
 
-int Berry_Table_Class_Get_Selected_Cell_Row_EB86017D_7833_47E3_9F4E_B0742666BEA5(Xila_Namespace::Graphics_Types::Table_Class* I)
+int Berry_Table_Class_Get_Selected_Cell_Row_0F0BF451_6500_4B50_950E_946136F012DF(Xila_Namespace::Graphics_Types::Table_Class* I)
 {
 return (int)I->Get_Selected_Cell_Row(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Selected_Cell_Row_EB86017D_7833_47E3_9F4E_B0742666BEA5, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Selected_Cell_Row_0F0BF451_6500_4B50_950E_946136F012DF, "i", ".");
 
-int Berry_Table_Class_Get_Selected_Cell_Column_15F959EF_CF34_476B_8074_F10B40FAA1A6(Xila_Namespace::Graphics_Types::Table_Class* I)
+int Berry_Table_Class_Get_Selected_Cell_Column_C37BE4D2_A7D9_49F6_A5EB_F8FB189B6528(Xila_Namespace::Graphics_Types::Table_Class* I)
 {
 return (int)I->Get_Selected_Cell_Column(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Selected_Cell_Column_15F959EF_CF34_476B_8074_F10B40FAA1A6, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Get_Selected_Cell_Column_C37BE4D2_A7D9_49F6_A5EB_F8FB189B6528, "i", ".");
 
-void Berry_Table_Class_Set_Cell_Value_FD623429_DE5B_40ED_8514_8828760F131A(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, const char* A_2)
+void Berry_Table_Class_Set_Cell_Value_19CADAFB_B908_4C42_B6D8_B2E5A4309925(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1, const char* A_2)
 {
 return I->Set_Cell_Value((short unsigned int)A_0, (short unsigned int)A_1, A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Cell_Value_FD623429_DE5B_40ED_8514_8828760F131A, "", ".iis");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Cell_Value_19CADAFB_B908_4C42_B6D8_B2E5A4309925, "", ".iis");
 
-void Berry_Table_Class_Set_Row_Count_6A4D2CD9_FD87_4BDA_8350_FBCA7838D58B(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
+void Berry_Table_Class_Set_Row_Count_4BDFD0E9_40F9_480A_AC26_445E7F8B3938(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
 {
 return I->Set_Row_Count((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Row_Count_6A4D2CD9_FD87_4BDA_8350_FBCA7838D58B, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Row_Count_4BDFD0E9_40F9_480A_AC26_445E7F8B3938, "", ".i");
 
-void Berry_Table_Class_Set_Column_Count_AD8B1A17_770C_47DB_AA9B_12ACB50B44B3(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
+void Berry_Table_Class_Set_Column_Count_05917863_EBE1_4761_AC84_919AE71B1D3D(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0)
 {
 return I->Set_Column_Count((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Column_Count_AD8B1A17_770C_47DB_AA9B_12ACB50B44B3, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Column_Count_05917863_EBE1_4761_AC84_919AE71B1D3D, "", ".i");
 
-void Berry_Table_Class_Set_Column_Width_42FDB2D6_0E6D_4F0F_987C_CBE8350B9EB9(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1)
+void Berry_Table_Class_Set_Column_Width_317A21B4_6E8F_4F04_9E06_5BB86F78A7B1(Xila_Namespace::Graphics_Types::Table_Class* I, int A_0, int A_1)
 {
 return I->Set_Column_Width((short unsigned int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Column_Width_42FDB2D6_0E6D_4F0F_987C_CBE8350B9EB9, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Table_Class_Set_Column_Width_317A21B4_6E8F_4F04_9E06_5BB86F78A7B1, "", ".ii");
 
 // - - Operators
 
@@ -3270,22 +3270,22 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Table_Type(scope:global, name:Table_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Table_Class_Initialize_563A6CBC_E24E_4DC7_A03E_7F0EC05AA29D)
-	deinit, ctype_func(Berry_Table_Class_Deinitialize_D7FDEE97_8991_43CF_BCEF_E62741BCE048)
-	Create, ctype_func(Berry_Table_Class_Create_580B0AB2_A3B6_4557_B520_B995E34F2736)
-	Add_Cell_Control, ctype_func(Berry_Table_Class_Add_Cell_Control_B1B05568_6EC3_44D0_8B2E_ABCCBD3339FC)
-	Clear_Cell_Control, ctype_func(Berry_Table_Class_Clear_Cell_Control_62D582EC_78FB_4C3F_A6CE_B23067B8090D)
-	Has_Cell_Control, ctype_func(Berry_Table_Class_Has_Cell_Control_AEB5BABF_80EA_466B_A001_8CE941FFB686)
-	Get_Cell_Value, ctype_func(Berry_Table_Class_Get_Cell_Value_7F58087F_21B5_4479_87A8_FA34001102C1)
-	Get_Row_Count, ctype_func(Berry_Table_Class_Get_Row_Count_361C8740_E5EA_47FF_B874_177A48417DAB)
-	Get_Column_Count, ctype_func(Berry_Table_Class_Get_Column_Count_C03FBD13_729D_4984_952C_1F47EE157A2C)
-	Get_Column_Width, ctype_func(Berry_Table_Class_Get_Column_Width_203889A4_E042_4BDD_BBA1_212E04D42465)
-	Get_Selected_Cell_Row, ctype_func(Berry_Table_Class_Get_Selected_Cell_Row_EB86017D_7833_47E3_9F4E_B0742666BEA5)
-	Get_Selected_Cell_Column, ctype_func(Berry_Table_Class_Get_Selected_Cell_Column_15F959EF_CF34_476B_8074_F10B40FAA1A6)
-	Set_Cell_Value, ctype_func(Berry_Table_Class_Set_Cell_Value_FD623429_DE5B_40ED_8514_8828760F131A)
-	Set_Row_Count, ctype_func(Berry_Table_Class_Set_Row_Count_6A4D2CD9_FD87_4BDA_8350_FBCA7838D58B)
-	Set_Column_Count, ctype_func(Berry_Table_Class_Set_Column_Count_AD8B1A17_770C_47DB_AA9B_12ACB50B44B3)
-	Set_Column_Width, ctype_func(Berry_Table_Class_Set_Column_Width_42FDB2D6_0E6D_4F0F_987C_CBE8350B9EB9)
+	init, ctype_func(Berry_Table_Class_Initialize_E19B2EE8_9E2A_4DB3_BD87_5A1645AEF19A)
+	deinit, ctype_func(Berry_Table_Class_Deinitialize_70FE1923_BA5D_4366_918F_1C8F6D3E582C)
+	Create, ctype_func(Berry_Table_Class_Create_B7B20FA6_C9CA_4165_AAF3_772D401EC0D1)
+	Add_Cell_Control, ctype_func(Berry_Table_Class_Add_Cell_Control_7752884B_DBB3_40EF_88B4_B70178881734)
+	Clear_Cell_Control, ctype_func(Berry_Table_Class_Clear_Cell_Control_74A685E7_A1F3_4882_9763_9139D735051C)
+	Has_Cell_Control, ctype_func(Berry_Table_Class_Has_Cell_Control_DBB1F72F_80B2_40B2_913C_1D8F641C51D5)
+	Get_Cell_Value, ctype_func(Berry_Table_Class_Get_Cell_Value_E7606765_2CE8_4A8B_AFD4_893D0DC7DB6C)
+	Get_Row_Count, ctype_func(Berry_Table_Class_Get_Row_Count_AB8530C6_0FBE_4A0F_AC8C_D5FB000D432E)
+	Get_Column_Count, ctype_func(Berry_Table_Class_Get_Column_Count_8B947731_B04D_4DFC_8C01_ED11C19EFF38)
+	Get_Column_Width, ctype_func(Berry_Table_Class_Get_Column_Width_7B1D016D_3179_41EA_B702_356E8D33001A)
+	Get_Selected_Cell_Row, ctype_func(Berry_Table_Class_Get_Selected_Cell_Row_0F0BF451_6500_4B50_950E_946136F012DF)
+	Get_Selected_Cell_Column, ctype_func(Berry_Table_Class_Get_Selected_Cell_Column_C37BE4D2_A7D9_49F6_A5EB_F8FB189B6528)
+	Set_Cell_Value, ctype_func(Berry_Table_Class_Set_Cell_Value_19CADAFB_B908_4C42_B6D8_B2E5A4309925)
+	Set_Row_Count, ctype_func(Berry_Table_Class_Set_Row_Count_4BDFD0E9_40F9_480A_AC26_445E7F8B3938)
+	Set_Column_Count, ctype_func(Berry_Table_Class_Set_Column_Count_05917863_EBE1_4761_AC84_919AE71B1D3D)
+	Set_Column_Width, ctype_func(Berry_Table_Class_Set_Column_Width_317A21B4_6E8F_4F04_9E06_5BB86F78A7B1)
 
 }
 @const_object_info_end */
@@ -3298,30 +3298,30 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Switch_Class_Initialize_F70702C1_7C12_4F11_AC09_812A9AC84040(bvm* V)
+void * Berry_Switch_Class_Initialize_EC177DAC_D34E_457C_868D_6933F8E612EF(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Switch_Class));
 return new (Pointer) Graphics_Types::Switch_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Initialize_F70702C1_7C12_4F11_AC09_812A9AC84040, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Initialize_EC177DAC_D34E_457C_868D_6933F8E612EF, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Switch_Class_Deinitialize_AA629169_91D5_4747_A0ED_E7F595CA1096(bvm* V, Xila_Namespace::Graphics_Types::Switch_Class* I)
+void Berry_Switch_Class_Deinitialize_C4B44936_2A78_4B9B_85B7_77E649374903(bvm* V, Xila_Namespace::Graphics_Types::Switch_Class* I)
 {
 if (!I) { return; }
 I->~Switch_Class();
 be_free(V, I, sizeof(Graphics_Types::Switch_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Deinitialize_AA629169_91D5_4747_A0ED_E7F595CA1096, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Deinitialize_C4B44936_2A78_4B9B_85B7_77E649374903, "", "@.");
 
 
 // - - Functions
-void Berry_Switch_Class_Create_9500112B_DB6F_4277_A37F_C0A9D7BCE483(Xila_Namespace::Graphics_Types::Switch_Class* I, Object_Class* A_0)
+void Berry_Switch_Class_Create_F37B01CA_7AD7_4FBB_A2CB_D6D197D71B6A(Xila_Namespace::Graphics_Types::Switch_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Create_9500112B_DB6F_4277_A37F_C0A9D7BCE483, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Switch_Class_Create_F37B01CA_7AD7_4FBB_A2CB_D6D197D71B6A, "", "..");
 
 // - - Operators
 
@@ -3331,9 +3331,9 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Switch_Type(scope:global, name:Switch_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Switch_Class_Initialize_F70702C1_7C12_4F11_AC09_812A9AC84040)
-	deinit, ctype_func(Berry_Switch_Class_Deinitialize_AA629169_91D5_4747_A0ED_E7F595CA1096)
-	Create, ctype_func(Berry_Switch_Class_Create_9500112B_DB6F_4277_A37F_C0A9D7BCE483)
+	init, ctype_func(Berry_Switch_Class_Initialize_EC177DAC_D34E_457C_868D_6933F8E612EF)
+	deinit, ctype_func(Berry_Switch_Class_Deinitialize_C4B44936_2A78_4B9B_85B7_77E649374903)
+	Create, ctype_func(Berry_Switch_Class_Create_F37B01CA_7AD7_4FBB_A2CB_D6D197D71B6A)
 
 }
 @const_object_info_end */
@@ -3346,114 +3346,114 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Spinbox_Class_Initialize_B4FF791F_555E_4579_AEC7_5B26885177FC(bvm* V)
+void * Berry_Spinbox_Class_Initialize_0B0FF77F_9D43_4C15_81EB_1DB4C39786D0(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Spinbox_Class));
 return new (Pointer) Graphics_Types::Spinbox_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Initialize_B4FF791F_555E_4579_AEC7_5B26885177FC, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Initialize_0B0FF77F_9D43_4C15_81EB_1DB4C39786D0, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Spinbox_Class_Deinitialize_683CC965_42B7_4BE3_96D2_72E6C0A059AC(bvm* V, Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+void Berry_Spinbox_Class_Deinitialize_6D6B93CC_9149_4282_A6D4_D4A1A4690C4B(bvm* V, Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 if (!I) { return; }
 I->~Spinbox_Class();
 be_free(V, I, sizeof(Graphics_Types::Spinbox_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Deinitialize_683CC965_42B7_4BE3_96D2_72E6C0A059AC, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Deinitialize_6D6B93CC_9149_4282_A6D4_D4A1A4690C4B, "", "@.");
 
 
 // - - Functions
-void Berry_Spinbox_Class_Create_75B8D8A1_0439_4A7E_813D_6C306D44483F(Xila_Namespace::Graphics_Types::Spinbox_Class* I, Object_Class* A_0)
+void Berry_Spinbox_Class_Create_B3C737E0_5578_40BB_9E12_885498E8253F(Xila_Namespace::Graphics_Types::Spinbox_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Create_75B8D8A1_0439_4A7E_813D_6C306D44483F, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Create_B3C737E0_5578_40BB_9E12_885498E8253F, "", "..");
 
-void Berry_Spinbox_Class_Step_Next_1203F78D_B1F4_4C98_A34D_8DC380C43427(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+void Berry_Spinbox_Class_Step_Next_D7B5D7FC_3B5B_4719_9664_08293A693F85(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return I->Step_Next(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Step_Next_1203F78D_B1F4_4C98_A34D_8DC380C43427, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Step_Next_D7B5D7FC_3B5B_4719_9664_08293A693F85, "", ".");
 
-void Berry_Spinbox_Class_Step_Previous_ABD47936_10CC_4708_8A64_1A7749DA40B1(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+void Berry_Spinbox_Class_Step_Previous_03FC3062_3017_4892_92AE_4252C66BDECF(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return I->Step_Previous(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Step_Previous_ABD47936_10CC_4708_8A64_1A7749DA40B1, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Step_Previous_03FC3062_3017_4892_92AE_4252C66BDECF, "", ".");
 
-void Berry_Spinbox_Class_Increment_40843619_867C_4517_8BF9_1BDAF1AB3E5B(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+void Berry_Spinbox_Class_Increment_FEAFE3D8_964F_44FB_AF62_ECD1F8B08B7F(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return I->Increment(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Increment_40843619_867C_4517_8BF9_1BDAF1AB3E5B, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Increment_FEAFE3D8_964F_44FB_AF62_ECD1F8B08B7F, "", ".");
 
-void Berry_Spinbox_Class_Decrement_333381FE_F4DC_4F48_BC47_79B5DC618C32(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+void Berry_Spinbox_Class_Decrement_8FF69CB6_E67D_45ED_B7B0_4B8D5F26E9EC(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return I->Decrement(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Decrement_333381FE_F4DC_4F48_BC47_79B5DC618C32, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Decrement_8FF69CB6_E67D_45ED_B7B0_4B8D5F26E9EC, "", ".");
 
-bool Berry_Spinbox_Class_Get_Rollover_40B0C1BE_999E_471B_84D0_E5C8DBE119B7(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+bool Berry_Spinbox_Class_Get_Rollover_82B9681D_6209_49A1_8327_356B4F9C9B3C(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return I->Get_Rollover(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Rollover_40B0C1BE_999E_471B_84D0_E5C8DBE119B7, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Rollover_82B9681D_6209_49A1_8327_356B4F9C9B3C, "b", ".");
 
-int Berry_Spinbox_Class_Get_Value_DC770E6F_6C37_40F4_9B03_14C913A6AF65(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+int Berry_Spinbox_Class_Get_Value_98E94C42_BDC1_4F89_8C1C_3CA614DCFD19(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return (int)I->Get_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Value_DC770E6F_6C37_40F4_9B03_14C913A6AF65, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Value_98E94C42_BDC1_4F89_8C1C_3CA614DCFD19, "i", ".");
 
-int Berry_Spinbox_Class_Get_Step_F88A8F0C_0432_4316_BF1D_0F8AFA715AE2(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
+int Berry_Spinbox_Class_Get_Step_AEA651A1_7D06_4B7B_9E55_F39C8F2A04BB(Xila_Namespace::Graphics_Types::Spinbox_Class* I)
 {
 return (int)I->Get_Step(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Step_F88A8F0C_0432_4316_BF1D_0F8AFA715AE2, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Get_Step_AEA651A1_7D06_4B7B_9E55_F39C8F2A04BB, "i", ".");
 
-void Berry_Spinbox_Class_Set_Value_98456757_30E5_46FD_9146_0475BC4EF045(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
+void Berry_Spinbox_Class_Set_Value_1E04F306_52AA_4AAA_9801_7092A291D513(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
 {
 return I->Set_Value((int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Value_98456757_30E5_46FD_9146_0475BC4EF045, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Value_1E04F306_52AA_4AAA_9801_7092A291D513, "", ".i");
 
-void Berry_Spinbox_Class_Set_Rollover_AD929A1C_D079_4FF7_95DB_1788CD6B2962(Xila_Namespace::Graphics_Types::Spinbox_Class* I, bool A_0)
+void Berry_Spinbox_Class_Set_Rollover_EADC02F0_5757_478B_A38A_7105131C549E(Xila_Namespace::Graphics_Types::Spinbox_Class* I, bool A_0)
 {
 return I->Set_Rollover(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Rollover_AD929A1C_D079_4FF7_95DB_1788CD6B2962, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Rollover_EADC02F0_5757_478B_A38A_7105131C549E, "", ".b");
 
-void Berry_Spinbox_Class_Set_Digit_Format_E0C31302_43D9_4933_AB61_DBDD90646B82(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0, int A_1)
+void Berry_Spinbox_Class_Set_Digit_Format_2E293554_B912_4BFE_BBC9_BC9BFFC90FFF(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0, int A_1)
 {
 return I->Set_Digit_Format((unsigned char)A_0, (unsigned char)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Digit_Format_E0C31302_43D9_4933_AB61_DBDD90646B82, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Digit_Format_2E293554_B912_4BFE_BBC9_BC9BFFC90FFF, "", ".ii");
 
-void Berry_Spinbox_Class_Set_Step_44B1E62B_DB9B_4E57_9C55_7E6D35CABA34(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
+void Berry_Spinbox_Class_Set_Step_8BDF4889_5D11_4378_86EE_8FD50CEFD964(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
 {
 return I->Set_Step((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Step_44B1E62B_DB9B_4E57_9C55_7E6D35CABA34, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Step_8BDF4889_5D11_4378_86EE_8FD50CEFD964, "", ".i");
 
-void Berry_Spinbox_Class_Set_Range_97C722C0_E8B4_4C3A_85F7_77CA3A8AD936(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0, int A_1)
+void Berry_Spinbox_Class_Set_Range_17F3024A_789D_40F0_893C_ACFC6B5291A2(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0, int A_1)
 {
 return I->Set_Range((int)A_0, (int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Range_97C722C0_E8B4_4C3A_85F7_77CA3A8AD936, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Range_17F3024A_789D_40F0_893C_ACFC6B5291A2, "", ".ii");
 
-void Berry_Spinbox_Class_Set_Cursor_Position_A523AAF2_2BFD_4DC1_B30D_4455ECFDB7D3(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
+void Berry_Spinbox_Class_Set_Cursor_Position_D9B6EF39_C431_4BD6_B5B7_3E124936A5B0(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
 {
 return I->Set_Cursor_Position((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Cursor_Position_A523AAF2_2BFD_4DC1_B30D_4455ECFDB7D3, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Cursor_Position_D9B6EF39_C431_4BD6_B5B7_3E124936A5B0, "", ".i");
 
-void Berry_Spinbox_Class_Set_Digit_Step_Direction_26523E8E_A891_4A8E_AEE7_BF04F1553A1D(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
+void Berry_Spinbox_Class_Set_Digit_Step_Direction_962ED627_C424_4643_B24E_EDAC9DED4283(Xila_Namespace::Graphics_Types::Spinbox_Class* I, int A_0)
 {
 return I->Set_Digit_Step_Direction((Direction_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Digit_Step_Direction_26523E8E_A891_4A8E_AEE7_BF04F1553A1D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Spinbox_Class_Set_Digit_Step_Direction_962ED627_C424_4643_B24E_EDAC9DED4283, "", ".i");
 
 // - - Operators
 
@@ -3463,23 +3463,23 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Spinbox_Type(scope:global, name:Spinbox_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Spinbox_Class_Initialize_B4FF791F_555E_4579_AEC7_5B26885177FC)
-	deinit, ctype_func(Berry_Spinbox_Class_Deinitialize_683CC965_42B7_4BE3_96D2_72E6C0A059AC)
-	Create, ctype_func(Berry_Spinbox_Class_Create_75B8D8A1_0439_4A7E_813D_6C306D44483F)
-	Step_Next, ctype_func(Berry_Spinbox_Class_Step_Next_1203F78D_B1F4_4C98_A34D_8DC380C43427)
-	Step_Previous, ctype_func(Berry_Spinbox_Class_Step_Previous_ABD47936_10CC_4708_8A64_1A7749DA40B1)
-	Increment, ctype_func(Berry_Spinbox_Class_Increment_40843619_867C_4517_8BF9_1BDAF1AB3E5B)
-	Decrement, ctype_func(Berry_Spinbox_Class_Decrement_333381FE_F4DC_4F48_BC47_79B5DC618C32)
-	Get_Rollover, ctype_func(Berry_Spinbox_Class_Get_Rollover_40B0C1BE_999E_471B_84D0_E5C8DBE119B7)
-	Get_Value, ctype_func(Berry_Spinbox_Class_Get_Value_DC770E6F_6C37_40F4_9B03_14C913A6AF65)
-	Get_Step, ctype_func(Berry_Spinbox_Class_Get_Step_F88A8F0C_0432_4316_BF1D_0F8AFA715AE2)
-	Set_Value, ctype_func(Berry_Spinbox_Class_Set_Value_98456757_30E5_46FD_9146_0475BC4EF045)
-	Set_Rollover, ctype_func(Berry_Spinbox_Class_Set_Rollover_AD929A1C_D079_4FF7_95DB_1788CD6B2962)
-	Set_Digit_Format, ctype_func(Berry_Spinbox_Class_Set_Digit_Format_E0C31302_43D9_4933_AB61_DBDD90646B82)
-	Set_Step, ctype_func(Berry_Spinbox_Class_Set_Step_44B1E62B_DB9B_4E57_9C55_7E6D35CABA34)
-	Set_Range, ctype_func(Berry_Spinbox_Class_Set_Range_97C722C0_E8B4_4C3A_85F7_77CA3A8AD936)
-	Set_Cursor_Position, ctype_func(Berry_Spinbox_Class_Set_Cursor_Position_A523AAF2_2BFD_4DC1_B30D_4455ECFDB7D3)
-	Set_Digit_Step_Direction, ctype_func(Berry_Spinbox_Class_Set_Digit_Step_Direction_26523E8E_A891_4A8E_AEE7_BF04F1553A1D)
+	init, ctype_func(Berry_Spinbox_Class_Initialize_0B0FF77F_9D43_4C15_81EB_1DB4C39786D0)
+	deinit, ctype_func(Berry_Spinbox_Class_Deinitialize_6D6B93CC_9149_4282_A6D4_D4A1A4690C4B)
+	Create, ctype_func(Berry_Spinbox_Class_Create_B3C737E0_5578_40BB_9E12_885498E8253F)
+	Step_Next, ctype_func(Berry_Spinbox_Class_Step_Next_D7B5D7FC_3B5B_4719_9664_08293A693F85)
+	Step_Previous, ctype_func(Berry_Spinbox_Class_Step_Previous_03FC3062_3017_4892_92AE_4252C66BDECF)
+	Increment, ctype_func(Berry_Spinbox_Class_Increment_FEAFE3D8_964F_44FB_AF62_ECD1F8B08B7F)
+	Decrement, ctype_func(Berry_Spinbox_Class_Decrement_8FF69CB6_E67D_45ED_B7B0_4B8D5F26E9EC)
+	Get_Rollover, ctype_func(Berry_Spinbox_Class_Get_Rollover_82B9681D_6209_49A1_8327_356B4F9C9B3C)
+	Get_Value, ctype_func(Berry_Spinbox_Class_Get_Value_98E94C42_BDC1_4F89_8C1C_3CA614DCFD19)
+	Get_Step, ctype_func(Berry_Spinbox_Class_Get_Step_AEA651A1_7D06_4B7B_9E55_F39C8F2A04BB)
+	Set_Value, ctype_func(Berry_Spinbox_Class_Set_Value_1E04F306_52AA_4AAA_9801_7092A291D513)
+	Set_Rollover, ctype_func(Berry_Spinbox_Class_Set_Rollover_EADC02F0_5757_478B_A38A_7105131C549E)
+	Set_Digit_Format, ctype_func(Berry_Spinbox_Class_Set_Digit_Format_2E293554_B912_4BFE_BBC9_BC9BFFC90FFF)
+	Set_Step, ctype_func(Berry_Spinbox_Class_Set_Step_8BDF4889_5D11_4378_86EE_8FD50CEFD964)
+	Set_Range, ctype_func(Berry_Spinbox_Class_Set_Range_17F3024A_789D_40F0_893C_ACFC6B5291A2)
+	Set_Cursor_Position, ctype_func(Berry_Spinbox_Class_Set_Cursor_Position_D9B6EF39_C431_4BD6_B5B7_3E124936A5B0)
+	Set_Digit_Step_Direction, ctype_func(Berry_Spinbox_Class_Set_Digit_Step_Direction_962ED627_C424_4643_B24E_EDAC9DED4283)
 
 }
 @const_object_info_end */
@@ -3492,90 +3492,90 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Slider_Class_Initialize_A3284188_18F4_4A1C_B48A_2AAEA8C36751(bvm* V)
+void * Berry_Slider_Class_Initialize_C0F9E4F6_EF58_4B34_9C28_2557DC2C4571(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Slider_Class));
 return new (Pointer) Graphics_Types::Slider_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Initialize_A3284188_18F4_4A1C_B48A_2AAEA8C36751, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Initialize_C0F9E4F6_EF58_4B34_9C28_2557DC2C4571, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Slider_Class_Deinitialize_3387B965_63AA_459E_9882_DFA5A2483DA9(bvm* V, Xila_Namespace::Graphics_Types::Slider_Class* I)
+void Berry_Slider_Class_Deinitialize_1BD47677_B6DC_4D23_AA58_637D15F533FE(bvm* V, Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 if (!I) { return; }
 I->~Slider_Class();
 be_free(V, I, sizeof(Graphics_Types::Slider_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Deinitialize_3387B965_63AA_459E_9882_DFA5A2483DA9, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Deinitialize_1BD47677_B6DC_4D23_AA58_637D15F533FE, "", "@.");
 
 
 // - - Functions
-void Berry_Slider_Class_Create_4BB764B8_5FAE_4023_9431_D4BC8A125AFC(Xila_Namespace::Graphics_Types::Slider_Class* I, Object_Class* A_0)
+void Berry_Slider_Class_Create_5D8BD9F2_3E83_4521_A6DE_A851116E9067(Xila_Namespace::Graphics_Types::Slider_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Create_4BB764B8_5FAE_4023_9431_D4BC8A125AFC, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Create_5D8BD9F2_3E83_4521_A6DE_A851116E9067, "", "..");
 
-bool Berry_Slider_Class_Is_Dragged_859C5B9C_F4E3_403E_8A01_FC2D759DAC61(Xila_Namespace::Graphics_Types::Slider_Class* I)
+bool Berry_Slider_Class_Is_Dragged_CB08CF64_6E21_4640_A6B9_CDE348D845B6(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return I->Is_Dragged(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Is_Dragged_859C5B9C_F4E3_403E_8A01_FC2D759DAC61, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Is_Dragged_CB08CF64_6E21_4640_A6B9_CDE348D845B6, "b", ".");
 
-void Berry_Slider_Class_Set_Value_EF52C8BB_664B_418D_8C63_FA0C6E432F52(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, bool A_1)
+void Berry_Slider_Class_Set_Value_448864CD_E638_457C_A0E3_8489DBBE1164(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, bool A_1)
 {
 return I->Set_Value((int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Value_EF52C8BB_664B_418D_8C63_FA0C6E432F52, "", ".ib");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Value_448864CD_E638_457C_A0E3_8489DBBE1164, "", ".ib");
 
-void Berry_Slider_Class_Set_Left_Value_8C1A66A5_975A_4214_92BF_12994405DA9D(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, bool A_1)
+void Berry_Slider_Class_Set_Left_Value_04C6080E_C884_4569_85C1_4037585AD4CA(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, bool A_1)
 {
 return I->Set_Left_Value((int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Left_Value_8C1A66A5_975A_4214_92BF_12994405DA9D, "", ".ib");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Left_Value_04C6080E_C884_4569_85C1_4037585AD4CA, "", ".ib");
 
-void Berry_Slider_Class_Set_Range_6644DE13_C618_4968_AD32_103BFB4FE5D7(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, int A_1)
+void Berry_Slider_Class_Set_Range_DE259D71_CD66_413A_BC4E_4CCC26B7C578(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0, int A_1)
 {
 return I->Set_Range((int)A_0, (int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Range_6644DE13_C618_4968_AD32_103BFB4FE5D7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Range_DE259D71_CD66_413A_BC4E_4CCC26B7C578, "", ".ii");
 
-void Berry_Slider_Class_Set_Mode_95699C7B_1F0C_44F5_B668_7B2FAC7B4DCA(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0)
+void Berry_Slider_Class_Set_Mode_AF7D8184_E2E9_4F39_BDA3_21C37237A2DE(Xila_Namespace::Graphics_Types::Slider_Class* I, int A_0)
 {
 return I->Set_Mode((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Mode_95699C7B_1F0C_44F5_B668_7B2FAC7B4DCA, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Set_Mode_AF7D8184_E2E9_4F39_BDA3_21C37237A2DE, "", ".i");
 
-int Berry_Slider_Class_Get_Value_4B8E2813_DB74_4A53_81A1_F0E3C356FD91(Xila_Namespace::Graphics_Types::Slider_Class* I)
+int Berry_Slider_Class_Get_Value_42887936_880A_4196_BC2C_62F3A3DB823D(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return (int)I->Get_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Value_4B8E2813_DB74_4A53_81A1_F0E3C356FD91, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Value_42887936_880A_4196_BC2C_62F3A3DB823D, "i", ".");
 
-int Berry_Slider_Class_Get_Left_Value_D465B784_9D29_4940_A5A7_17DB9A698783(Xila_Namespace::Graphics_Types::Slider_Class* I)
+int Berry_Slider_Class_Get_Left_Value_461387A2_5A84_4366_B7B9_2B296FE67837(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return (int)I->Get_Left_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Left_Value_D465B784_9D29_4940_A5A7_17DB9A698783, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Left_Value_461387A2_5A84_4366_B7B9_2B296FE67837, "i", ".");
 
-int Berry_Slider_Class_Get_Minimum_Value_B7F02723_80F6_4519_BCA5_A416572465C7(Xila_Namespace::Graphics_Types::Slider_Class* I)
+int Berry_Slider_Class_Get_Minimum_Value_026A0017_B755_4D04_9F22_C0CFE56408E2(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return (int)I->Get_Minimum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Minimum_Value_B7F02723_80F6_4519_BCA5_A416572465C7, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Minimum_Value_026A0017_B755_4D04_9F22_C0CFE56408E2, "i", ".");
 
-int Berry_Slider_Class_Get_Maximum_Value_58BC76BD_0A8F_4D9B_A568_6FFB3DA38342(Xila_Namespace::Graphics_Types::Slider_Class* I)
+int Berry_Slider_Class_Get_Maximum_Value_2C5728A5_D5D6_4904_96D0_4AD823E0E55A(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return (int)I->Get_Maximum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Maximum_Value_58BC76BD_0A8F_4D9B_A568_6FFB3DA38342, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Maximum_Value_2C5728A5_D5D6_4904_96D0_4AD823E0E55A, "i", ".");
 
-int Berry_Slider_Class_Get_Mode_F5EF9744_AB87_442F_BFD7_A6CD04DE6FDB(Xila_Namespace::Graphics_Types::Slider_Class* I)
+int Berry_Slider_Class_Get_Mode_80802B3A_483E_4017_9FD4_605EFD0AA578(Xila_Namespace::Graphics_Types::Slider_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Mode_F5EF9744_AB87_442F_BFD7_A6CD04DE6FDB, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Slider_Class_Get_Mode_80802B3A_483E_4017_9FD4_605EFD0AA578, "i", ".");
 
 // - - Operators
 
@@ -3585,19 +3585,19 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Slider_Type(scope:global, name:Slider_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Slider_Class_Initialize_A3284188_18F4_4A1C_B48A_2AAEA8C36751)
-	deinit, ctype_func(Berry_Slider_Class_Deinitialize_3387B965_63AA_459E_9882_DFA5A2483DA9)
-	Create, ctype_func(Berry_Slider_Class_Create_4BB764B8_5FAE_4023_9431_D4BC8A125AFC)
-	Is_Dragged, ctype_func(Berry_Slider_Class_Is_Dragged_859C5B9C_F4E3_403E_8A01_FC2D759DAC61)
-	Set_Value, ctype_func(Berry_Slider_Class_Set_Value_EF52C8BB_664B_418D_8C63_FA0C6E432F52)
-	Set_Left_Value, ctype_func(Berry_Slider_Class_Set_Left_Value_8C1A66A5_975A_4214_92BF_12994405DA9D)
-	Set_Range, ctype_func(Berry_Slider_Class_Set_Range_6644DE13_C618_4968_AD32_103BFB4FE5D7)
-	Set_Mode, ctype_func(Berry_Slider_Class_Set_Mode_95699C7B_1F0C_44F5_B668_7B2FAC7B4DCA)
-	Get_Value, ctype_func(Berry_Slider_Class_Get_Value_4B8E2813_DB74_4A53_81A1_F0E3C356FD91)
-	Get_Left_Value, ctype_func(Berry_Slider_Class_Get_Left_Value_D465B784_9D29_4940_A5A7_17DB9A698783)
-	Get_Minimum_Value, ctype_func(Berry_Slider_Class_Get_Minimum_Value_B7F02723_80F6_4519_BCA5_A416572465C7)
-	Get_Maximum_Value, ctype_func(Berry_Slider_Class_Get_Maximum_Value_58BC76BD_0A8F_4D9B_A568_6FFB3DA38342)
-	Get_Mode, ctype_func(Berry_Slider_Class_Get_Mode_F5EF9744_AB87_442F_BFD7_A6CD04DE6FDB)
+	init, ctype_func(Berry_Slider_Class_Initialize_C0F9E4F6_EF58_4B34_9C28_2557DC2C4571)
+	deinit, ctype_func(Berry_Slider_Class_Deinitialize_1BD47677_B6DC_4D23_AA58_637D15F533FE)
+	Create, ctype_func(Berry_Slider_Class_Create_5D8BD9F2_3E83_4521_A6DE_A851116E9067)
+	Is_Dragged, ctype_func(Berry_Slider_Class_Is_Dragged_CB08CF64_6E21_4640_A6B9_CDE348D845B6)
+	Set_Value, ctype_func(Berry_Slider_Class_Set_Value_448864CD_E638_457C_A0E3_8489DBBE1164)
+	Set_Left_Value, ctype_func(Berry_Slider_Class_Set_Left_Value_04C6080E_C884_4569_85C1_4037585AD4CA)
+	Set_Range, ctype_func(Berry_Slider_Class_Set_Range_DE259D71_CD66_413A_BC4E_4CCC26B7C578)
+	Set_Mode, ctype_func(Berry_Slider_Class_Set_Mode_AF7D8184_E2E9_4F39_BDA3_21C37237A2DE)
+	Get_Value, ctype_func(Berry_Slider_Class_Get_Value_42887936_880A_4196_BC2C_62F3A3DB823D)
+	Get_Left_Value, ctype_func(Berry_Slider_Class_Get_Left_Value_461387A2_5A84_4366_B7B9_2B296FE67837)
+	Get_Minimum_Value, ctype_func(Berry_Slider_Class_Get_Minimum_Value_026A0017_B755_4D04_9F22_C0CFE56408E2)
+	Get_Maximum_Value, ctype_func(Berry_Slider_Class_Get_Maximum_Value_2C5728A5_D5D6_4904_96D0_4AD823E0E55A)
+	Get_Mode, ctype_func(Berry_Slider_Class_Get_Mode_80802B3A_483E_4017_9FD4_605EFD0AA578)
 
 }
 @const_object_info_end */
@@ -3610,75 +3610,75 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Roller_Class_Initialize_94300FC4_3C7D_455B_BDE9_85915F442430(bvm* V)
+void * Berry_Roller_Class_Initialize_D7790506_1844_4D85_A279_414062EEA40D(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Roller_Class));
 return new (Pointer) Graphics_Types::Roller_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Initialize_94300FC4_3C7D_455B_BDE9_85915F442430, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Initialize_D7790506_1844_4D85_A279_414062EEA40D, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Roller_Class_Deinitialize_CF546DDD_86C0_4D67_BEB3_6F0D96A88208(bvm* V, Xila_Namespace::Graphics_Types::Roller_Class* I)
+void Berry_Roller_Class_Deinitialize_AAD62CA8_414E_40AE_968E_DE7FB630590F(bvm* V, Xila_Namespace::Graphics_Types::Roller_Class* I)
 {
 if (!I) { return; }
 I->~Roller_Class();
 be_free(V, I, sizeof(Graphics_Types::Roller_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Deinitialize_CF546DDD_86C0_4D67_BEB3_6F0D96A88208, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Deinitialize_AAD62CA8_414E_40AE_968E_DE7FB630590F, "", "@.");
 
 
 // - - Functions
-void Berry_Roller_Class_Create_63F6F36D_AF72_417E_88E9_6F6BF34D6C6F(Xila_Namespace::Graphics_Types::Roller_Class* I, Object_Class* A_0)
+void Berry_Roller_Class_Create_12001823_3F1B_43EF_A98D_B176850F6076(Xila_Namespace::Graphics_Types::Roller_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Create_63F6F36D_AF72_417E_88E9_6F6BF34D6C6F, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Create_12001823_3F1B_43EF_A98D_B176850F6076, "", "..");
 
-void Berry_Roller_Class_Set_Options_2858BC78_9F27_4812_8396_5729FF8728BD(Xila_Namespace::Graphics_Types::Roller_Class* I, const char* A_0, int A_1)
+void Berry_Roller_Class_Set_Options_FD15AB57_547C_42C3_AF57_DC2A8B3294EF(Xila_Namespace::Graphics_Types::Roller_Class* I, const char* A_0, int A_1)
 {
 return I->Set_Options(A_0, (Roller_Mode_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Options_2858BC78_9F27_4812_8396_5729FF8728BD, "", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Options_FD15AB57_547C_42C3_AF57_DC2A8B3294EF, "", ".si");
 
-void Berry_Roller_Class_Set_Selected_02701C69_9B4A_432D_97F5_22EB53A794A9(Xila_Namespace::Graphics_Types::Roller_Class* I, int A_0, bool A_1)
+void Berry_Roller_Class_Set_Selected_18D19575_DFAF_411A_AF7C_18679E5AC711(Xila_Namespace::Graphics_Types::Roller_Class* I, int A_0, bool A_1)
 {
 return I->Set_Selected((short unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Selected_02701C69_9B4A_432D_97F5_22EB53A794A9, "", ".ib");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Selected_18D19575_DFAF_411A_AF7C_18679E5AC711, "", ".ib");
 
-void Berry_Roller_Class_Set_Visible_Row_Count_7A2C09B0_065B_4138_82A6_6ECF1444479A(Xila_Namespace::Graphics_Types::Roller_Class* I, int A_0)
+void Berry_Roller_Class_Set_Visible_Row_Count_7B0F0A9D_3380_4FA5_8027_99E4882C5792(Xila_Namespace::Graphics_Types::Roller_Class* I, int A_0)
 {
 return I->Set_Visible_Row_Count((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Visible_Row_Count_7A2C09B0_065B_4138_82A6_6ECF1444479A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Set_Visible_Row_Count_7B0F0A9D_3380_4FA5_8027_99E4882C5792, "", ".i");
 
-int Berry_Roller_Class_Get_Selected_19C9EE41_6D06_4E3C_93A3_73087E50EA2D(Xila_Namespace::Graphics_Types::Roller_Class* I)
+int Berry_Roller_Class_Get_Selected_C1CDA972_38EA_4DBE_840A_C5213F2443B3(Xila_Namespace::Graphics_Types::Roller_Class* I)
 {
 return (int)I->Get_Selected(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Selected_19C9EE41_6D06_4E3C_93A3_73087E50EA2D, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Selected_C1CDA972_38EA_4DBE_840A_C5213F2443B3, "i", ".");
 
-const char* Berry_Roller_Class_Get_Selected_String_50E425E5_436E_4A98_950A_8E23128EF2E3(bvm* V, Xila_Namespace::Graphics_Types::Roller_Class* I)
+const char* Berry_Roller_Class_Get_Selected_String_1AA05626_17FA_4537_91BB_712BBA165FAE(bvm* V, Xila_Namespace::Graphics_Types::Roller_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Get_Selected_String(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Selected_String_50E425E5_436E_4A98_950A_8E23128EF2E3, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Selected_String_1AA05626_17FA_4537_91BB_712BBA165FAE, "s", "@.");
 
-const char* Berry_Roller_Class_Get_Options_9C1D1609_7D2B_41C7_9FCB_ED4B8AB16F4E(Xila_Namespace::Graphics_Types::Roller_Class* I)
+const char* Berry_Roller_Class_Get_Options_CC18E6E5_6619_4A54_9966_765987F7E5C3(Xila_Namespace::Graphics_Types::Roller_Class* I)
 {
 return I->Get_Options(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Options_9C1D1609_7D2B_41C7_9FCB_ED4B8AB16F4E, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Options_CC18E6E5_6619_4A54_9966_765987F7E5C3, "s", ".");
 
-int Berry_Roller_Class_Get_Option_Count_8BE9A829_5EF3_4685_BECA_E636033762C2(Xila_Namespace::Graphics_Types::Roller_Class* I)
+int Berry_Roller_Class_Get_Option_Count_6EF541E8_EAD5_41BF_AF9E_FA28ACEA1EBB(Xila_Namespace::Graphics_Types::Roller_Class* I)
 {
 return (int)I->Get_Option_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Option_Count_8BE9A829_5EF3_4685_BECA_E636033762C2, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Roller_Class_Get_Option_Count_6EF541E8_EAD5_41BF_AF9E_FA28ACEA1EBB, "i", ".");
 
 // - - Operators
 
@@ -3688,16 +3688,16 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Roller_Type(scope:global, name:Roller_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Roller_Class_Initialize_94300FC4_3C7D_455B_BDE9_85915F442430)
-	deinit, ctype_func(Berry_Roller_Class_Deinitialize_CF546DDD_86C0_4D67_BEB3_6F0D96A88208)
-	Create, ctype_func(Berry_Roller_Class_Create_63F6F36D_AF72_417E_88E9_6F6BF34D6C6F)
-	Set_Options, ctype_func(Berry_Roller_Class_Set_Options_2858BC78_9F27_4812_8396_5729FF8728BD)
-	Set_Selected, ctype_func(Berry_Roller_Class_Set_Selected_02701C69_9B4A_432D_97F5_22EB53A794A9)
-	Set_Visible_Row_Count, ctype_func(Berry_Roller_Class_Set_Visible_Row_Count_7A2C09B0_065B_4138_82A6_6ECF1444479A)
-	Get_Selected, ctype_func(Berry_Roller_Class_Get_Selected_19C9EE41_6D06_4E3C_93A3_73087E50EA2D)
-	Get_Selected_String, ctype_func(Berry_Roller_Class_Get_Selected_String_50E425E5_436E_4A98_950A_8E23128EF2E3)
-	Get_Options, ctype_func(Berry_Roller_Class_Get_Options_9C1D1609_7D2B_41C7_9FCB_ED4B8AB16F4E)
-	Get_Option_Count, ctype_func(Berry_Roller_Class_Get_Option_Count_8BE9A829_5EF3_4685_BECA_E636033762C2)
+	init, ctype_func(Berry_Roller_Class_Initialize_D7790506_1844_4D85_A279_414062EEA40D)
+	deinit, ctype_func(Berry_Roller_Class_Deinitialize_AAD62CA8_414E_40AE_968E_DE7FB630590F)
+	Create, ctype_func(Berry_Roller_Class_Create_12001823_3F1B_43EF_A98D_B176850F6076)
+	Set_Options, ctype_func(Berry_Roller_Class_Set_Options_FD15AB57_547C_42C3_AF57_DC2A8B3294EF)
+	Set_Selected, ctype_func(Berry_Roller_Class_Set_Selected_18D19575_DFAF_411A_AF7C_18679E5AC711)
+	Set_Visible_Row_Count, ctype_func(Berry_Roller_Class_Set_Visible_Row_Count_7B0F0A9D_3380_4FA5_8027_99E4882C5792)
+	Get_Selected, ctype_func(Berry_Roller_Class_Get_Selected_C1CDA972_38EA_4DBE_840A_C5213F2443B3)
+	Get_Selected_String, ctype_func(Berry_Roller_Class_Get_Selected_String_1AA05626_17FA_4537_91BB_712BBA165FAE)
+	Get_Options, ctype_func(Berry_Roller_Class_Get_Options_CC18E6E5_6619_4A54_9966_765987F7E5C3)
+	Get_Option_Count, ctype_func(Berry_Roller_Class_Get_Option_Count_6EF541E8_EAD5_41BF_AF9E_FA28ACEA1EBB)
 
 }
 @const_object_info_end */
@@ -3710,42 +3710,42 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Line_Class_Initialize_C8DEC2FB_F970_408E_ACAC_64C4A842A6A3(bvm* V)
+void * Berry_Line_Class_Initialize_33DD1961_4B56_405D_AB61_4728274493B4(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Line_Class));
 return new (Pointer) Graphics_Types::Line_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Initialize_C8DEC2FB_F970_408E_ACAC_64C4A842A6A3, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Initialize_33DD1961_4B56_405D_AB61_4728274493B4, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Line_Class_Deinitialize_F2605A4E_FB3A_49D1_987B_B4A4245662B9(bvm* V, Xila_Namespace::Graphics_Types::Line_Class* I)
+void Berry_Line_Class_Deinitialize_B11D196F_B732_4C01_B661_EE56A85CD4C4(bvm* V, Xila_Namespace::Graphics_Types::Line_Class* I)
 {
 if (!I) { return; }
 I->~Line_Class();
 be_free(V, I, sizeof(Graphics_Types::Line_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Deinitialize_F2605A4E_FB3A_49D1_987B_B4A4245662B9, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Deinitialize_B11D196F_B732_4C01_B661_EE56A85CD4C4, "", "@.");
 
 
 // - - Functions
-void Berry_Line_Class_Create_02784EC0_B8C1_4016_8D91_3CD1E46B0F32(Xila_Namespace::Graphics_Types::Line_Class* I, Object_Class* A_0)
+void Berry_Line_Class_Create_FFC0163D_DA36_469F_AEBF_AB67F1D289F7(Xila_Namespace::Graphics_Types::Line_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Create_02784EC0_B8C1_4016_8D91_3CD1E46B0F32, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Create_FFC0163D_DA36_469F_AEBF_AB67F1D289F7, "", "..");
 
-void Berry_Line_Class_Set_Y_Inversion_12DB4610_558D_4D1B_ADF0_A6C941B14AF5(Xila_Namespace::Graphics_Types::Line_Class* I, bool A_0)
+void Berry_Line_Class_Set_Y_Inversion_995727AD_B067_4594_89A4_6EF01E028416(Xila_Namespace::Graphics_Types::Line_Class* I, bool A_0)
 {
 return I->Set_Y_Inversion(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Set_Y_Inversion_12DB4610_558D_4D1B_ADF0_A6C941B14AF5, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Set_Y_Inversion_995727AD_B067_4594_89A4_6EF01E028416, "", ".b");
 
-bool Berry_Line_Class_Get_Y_Inversion_A05816A5_97D0_4F81_AD18_D75265063ECE(Xila_Namespace::Graphics_Types::Line_Class* I)
+bool Berry_Line_Class_Get_Y_Inversion_B0018128_D41A_451C_9B93_99B44EE517B7(Xila_Namespace::Graphics_Types::Line_Class* I)
 {
 return I->Get_Y_Inversion(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Get_Y_Inversion_A05816A5_97D0_4F81_AD18_D75265063ECE, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Line_Class_Get_Y_Inversion_B0018128_D41A_451C_9B93_99B44EE517B7, "b", ".");
 
 // - - Operators
 
@@ -3755,11 +3755,11 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Line_Type(scope:global, name:Line_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Line_Class_Initialize_C8DEC2FB_F970_408E_ACAC_64C4A842A6A3)
-	deinit, ctype_func(Berry_Line_Class_Deinitialize_F2605A4E_FB3A_49D1_987B_B4A4245662B9)
-	Create, ctype_func(Berry_Line_Class_Create_02784EC0_B8C1_4016_8D91_3CD1E46B0F32)
-	Set_Y_Inversion, ctype_func(Berry_Line_Class_Set_Y_Inversion_12DB4610_558D_4D1B_ADF0_A6C941B14AF5)
-	Get_Y_Inversion, ctype_func(Berry_Line_Class_Get_Y_Inversion_A05816A5_97D0_4F81_AD18_D75265063ECE)
+	init, ctype_func(Berry_Line_Class_Initialize_33DD1961_4B56_405D_AB61_4728274493B4)
+	deinit, ctype_func(Berry_Line_Class_Deinitialize_B11D196F_B732_4C01_B661_EE56A85CD4C4)
+	Create, ctype_func(Berry_Line_Class_Create_FFC0163D_DA36_469F_AEBF_AB67F1D289F7)
+	Set_Y_Inversion, ctype_func(Berry_Line_Class_Set_Y_Inversion_995727AD_B067_4594_89A4_6EF01E028416)
+	Get_Y_Inversion, ctype_func(Berry_Line_Class_Get_Y_Inversion_B0018128_D41A_451C_9B93_99B44EE517B7)
 
 }
 @const_object_info_end */
@@ -3772,160 +3772,160 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Drop_Down_List_Class_Initialize_2F0EB9C9_E9A6_4D11_9A14_4AFC8CC1CD1B(bvm* V)
+void * Berry_Drop_Down_List_Class_Initialize_978DD855_C653_47BC_BE38_62A08EFF6887(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Drop_Down_List_Class));
 return new (Pointer) Graphics_Types::Drop_Down_List_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Initialize_2F0EB9C9_E9A6_4D11_9A14_4AFC8CC1CD1B, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Initialize_978DD855_C653_47BC_BE38_62A08EFF6887, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Drop_Down_List_Class_Deinitialize_A2D846C8_E6A9_45B6_82E6_193B2806B023(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+void Berry_Drop_Down_List_Class_Deinitialize_B0545B7C_8012_4953_B326_C06248085BC6(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 if (!I) { return; }
 I->~Drop_Down_List_Class();
 be_free(V, I, sizeof(Graphics_Types::Drop_Down_List_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Deinitialize_A2D846C8_E6A9_45B6_82E6_193B2806B023, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Deinitialize_B0545B7C_8012_4953_B326_C06248085BC6, "", "@.");
 
 
 // - - Functions
-void Berry_Drop_Down_List_Class_Create_03AC7356_012C_4F0A_8FFF_A6BB6B9C533D(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, Object_Class* A_0)
+void Berry_Drop_Down_List_Class_Create_04038030_DDB8_4558_9721_0EAF5AE99684(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Create_03AC7356_012C_4F0A_8FFF_A6BB6B9C533D, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Create_04038030_DDB8_4558_9721_0EAF5AE99684, "", "..");
 
-void Berry_Drop_Down_List_Class_Add_Option_62FE2365_5D16_4635_BB5A_7668C4C6B74F(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0, int A_1)
+void Berry_Drop_Down_List_Class_Add_Option_BE16E400_BD83_450F_BFEA_CB4889FEBAA9(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0, int A_1)
 {
 return I->Add_Option(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Add_Option_62FE2365_5D16_4635_BB5A_7668C4C6B74F, "", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Add_Option_BE16E400_BD83_450F_BFEA_CB4889FEBAA9, "", ".si");
 
-void Berry_Drop_Down_List_Class_Clear_Options_7123F590_FDBD_4481_8907_01139B33F7EA(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+void Berry_Drop_Down_List_Class_Clear_Options_26DFF3B1_2321_406C_A39F_0F35E5F59ADF(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Clear_Options(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Clear_Options_7123F590_FDBD_4481_8907_01139B33F7EA, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Clear_Options_26DFF3B1_2321_406C_A39F_0F35E5F59ADF, "", ".");
 
-void Berry_Drop_Down_List_Class_Open_4D1FE2E4_F49A_4260_A460_0C41BBB0BEA2(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+void Berry_Drop_Down_List_Class_Open_F775FD07_CBF8_46DA_8B8C_0946B107B09D(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Open(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Open_4D1FE2E4_F49A_4260_A460_0C41BBB0BEA2, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Open_F775FD07_CBF8_46DA_8B8C_0946B107B09D, "", ".");
 
-void Berry_Drop_Down_List_Class_Close_8BC9B826_5C08_492E_86CE_8A802C725BEE(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+void Berry_Drop_Down_List_Class_Close_B606D6CF_76F1_489B_B8D1_A8EE054DBD2E(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Close(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Close_8BC9B826_5C08_492E_86CE_8A802C725BEE, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Close_B606D6CF_76F1_489B_B8D1_A8EE054DBD2E, "", ".");
 
-bool Berry_Drop_Down_List_Class_Is_Open_C26B665D_10BB_4CC0_BC3E_9965926E9E95(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+bool Berry_Drop_Down_List_Class_Is_Open_04E3294F_30BC_4E61_B470_52833296D3BA(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Is_Open(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Is_Open_C26B665D_10BB_4CC0_BC3E_9965926E9E95, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Is_Open_04E3294F_30BC_4E61_B470_52833296D3BA, "b", ".");
 
-void Berry_Drop_Down_List_Class_Set_Text_60A29136_C20A_47E5_81CB_11D385544E89(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
+void Berry_Drop_Down_List_Class_Set_Text_24E8BCCC_BEF5_4ACA_92AE_68DE2D0AA1AC(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
 {
 return I->Set_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Text_60A29136_C20A_47E5_81CB_11D385544E89, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Text_24E8BCCC_BEF5_4ACA_92AE_68DE2D0AA1AC, "", ".s");
 
-void Berry_Drop_Down_List_Class_Set_Options_29D2118F_6D51_43A1_8AAD_0C73807DEB16(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
+void Berry_Drop_Down_List_Class_Set_Options_7D58E3F3_F105_4BC8_BEBF_88B2723946CE(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
 {
 return I->Set_Options(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Options_29D2118F_6D51_43A1_8AAD_0C73807DEB16, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Options_7D58E3F3_F105_4BC8_BEBF_88B2723946CE, "", ".s");
 
-void Berry_Drop_Down_List_Class_Set_Options_Static_8A37B6FE_7BFC_4C26_AF66_27DB1C0CF3A3(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
+void Berry_Drop_Down_List_Class_Set_Options_Static_2836089E_FCA5_43ED_8A1A_23FF08F4AF83(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
 {
 return I->Set_Options_Static(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Options_Static_8A37B6FE_7BFC_4C26_AF66_27DB1C0CF3A3, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Options_Static_2836089E_FCA5_43ED_8A1A_23FF08F4AF83, "", ".s");
 
-void Berry_Drop_Down_List_Class_Set_Selected_BB75AD5A_D1F7_4822_987F_09E3AFF0066A(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_0)
+void Berry_Drop_Down_List_Class_Set_Selected_D6589E3A_9C31_4B78_ADC9_776E90A49417(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_0)
 {
 return I->Set_Selected((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Selected_BB75AD5A_D1F7_4822_987F_09E3AFF0066A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Selected_D6589E3A_9C31_4B78_ADC9_776E90A49417, "", ".i");
 
-void Berry_Drop_Down_List_Class_Set_Direction_11700FB8_3B10_4E07_AAC0_D6B0DDD3D9C8(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_0)
+void Berry_Drop_Down_List_Class_Set_Direction_A10E4963_73E6_4557_9012_42A343A065FB(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_0)
 {
 return I->Set_Direction((Direction_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Direction_11700FB8_3B10_4E07_AAC0_D6B0DDD3D9C8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Direction_A10E4963_73E6_4557_9012_42A343A065FB, "", ".i");
 
-void Berry_Drop_Down_List_Class_Set_Symbol_E3017607_09C5_4213_96B8_BA1A7308C650(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
+void Berry_Drop_Down_List_Class_Set_Symbol_5A90F3A2_5C2C_4BED_9705_8C9A167366E2(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, const char* A_0)
 {
 return I->Set_Symbol(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Symbol_E3017607_09C5_4213_96B8_BA1A7308C650, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Symbol_5A90F3A2_5C2C_4BED_9705_8C9A167366E2, "", ".s");
 
-void Berry_Drop_Down_List_Class_Set_Selected_Highlight_1879D5FD_ED86_4B27_8DBD_84A9D6FA69BC(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, bool A_0)
+void Berry_Drop_Down_List_Class_Set_Selected_Highlight_B09A9540_E0D3_48DA_94D2_1CA3148758C9(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, bool A_0)
 {
 return I->Set_Selected_Highlight(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Selected_Highlight_1879D5FD_ED86_4B27_8DBD_84A9D6FA69BC, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Set_Selected_Highlight_B09A9540_E0D3_48DA_94D2_1CA3148758C9, "", ".b");
 
-void * Berry_Drop_Down_List_Class_Get_List_632BCD59_CE0A_4BAE_A4E9_C07E474B9C94(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+void * Berry_Drop_Down_List_Class_Get_List_168AF492_41BE_4FF1_AADF_242AB60BE563(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 Xila_Namespace::Graphics_Types::List_Class* R = (Xila_Namespace::Graphics_Types::List_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::List_Class));
  *R = I->Get_List(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_List_632BCD59_CE0A_4BAE_A4E9_C07E474B9C94, "Graphics.List_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_List_168AF492_41BE_4FF1_AADF_242AB60BE563, "Graphics.List_Type", "@.");
 
-const char* Berry_Drop_Down_List_Class_Get_Text_1A033F8D_B463_4654_8F8C_4A000473615E(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+const char* Berry_Drop_Down_List_Class_Get_Text_010419F2_93FF_4243_842B_57C2748EEAA3(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Get_Text(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Text_1A033F8D_B463_4654_8F8C_4A000473615E, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Text_010419F2_93FF_4243_842B_57C2748EEAA3, "s", ".");
 
-const char* Berry_Drop_Down_List_Class_Get_Options_616EE6BC_B51D_4624_91D7_2DF21E37B5D9(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+const char* Berry_Drop_Down_List_Class_Get_Options_884DA86E_42F5_4404_9682_A4E0898F2D5C(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Get_Options(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Options_616EE6BC_B51D_4624_91D7_2DF21E37B5D9, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Options_884DA86E_42F5_4404_9682_A4E0898F2D5C, "s", ".");
 
-int Berry_Drop_Down_List_Class_Get_Selected_Option_F686CD6D_76B7_402D_BBB4_6ECD47E7C22B(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+int Berry_Drop_Down_List_Class_Get_Selected_Option_16A9AE7B_FEC0_41F7_B8B2_ED981FD77F7A(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return (int)I->Get_Selected_Option(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_Option_F686CD6D_76B7_402D_BBB4_6ECD47E7C22B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_Option_16A9AE7B_FEC0_41F7_B8B2_ED981FD77F7A, "i", ".");
 
-int Berry_Drop_Down_List_Class_Get_Option_Count_DFA6140E_5279_4E83_881D_F056E9308621(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+int Berry_Drop_Down_List_Class_Get_Option_Count_525DDF3B_2541_44B8_A1FE_19BE2273E76C(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return (int)I->Get_Option_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Option_Count_DFA6140E_5279_4E83_881D_F056E9308621, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Option_Count_525DDF3B_2541_44B8_A1FE_19BE2273E76C, "i", ".");
 
-const char* Berry_Drop_Down_List_Class_Get_Selected_String_CB071040_4934_49BC_9C5A_9BFEEF2D310A(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_1)
+const char* Berry_Drop_Down_List_Class_Get_Selected_String_578D0E5B_E2DE_482B_8027_C71761C408E2(bvm* V, Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I, int A_1)
 {
 char* S_0 = (char*)Berry_Class::Get_Instance(V)->Buffer;
 I->Get_Selected_String(S_0, (A_1 > sizeof(Berry_Class::Buffer)) ? sizeof(Berry_Class::Buffer) : A_1); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_String_CB071040_4934_49BC_9C5A_9BFEEF2D310A, "s", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_String_578D0E5B_E2DE_482B_8027_C71761C408E2, "s", "@.i");
 
-const char* Berry_Drop_Down_List_Class_Get_Symbol_5F1C9969_0BD7_480C_8454_4D8C1C05E437(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+const char* Berry_Drop_Down_List_Class_Get_Symbol_648099A8_315F_4752_AB8E_EB40797AAC81(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Get_Symbol(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Symbol_5F1C9969_0BD7_480C_8454_4D8C1C05E437, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Symbol_648099A8_315F_4752_AB8E_EB40797AAC81, "s", ".");
 
-bool Berry_Drop_Down_List_Class_Get_Selected_Highlight_1CBBD5A5_8F0F_40A9_A5E5_3FC8AD4C48FD(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+bool Berry_Drop_Down_List_Class_Get_Selected_Highlight_35463CE5_9449_4B80_AE53_59961E0253BE(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return I->Get_Selected_Highlight(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_Highlight_1CBBD5A5_8F0F_40A9_A5E5_3FC8AD4C48FD, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Selected_Highlight_35463CE5_9449_4B80_AE53_59961E0253BE, "b", ".");
 
-int Berry_Drop_Down_List_Class_Get_Direction_A61F5D6D_A588_4E24_8800_6303384EFF69(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
+int Berry_Drop_Down_List_Class_Get_Direction_B4AA9F7F_44CE_438F_9C5B_F5B42283264C(Xila_Namespace::Graphics_Types::Drop_Down_List_Class* I)
 {
 return (int)I->Get_Direction(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Direction_A61F5D6D_A588_4E24_8800_6303384EFF69, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Drop_Down_List_Class_Get_Direction_B4AA9F7F_44CE_438F_9C5B_F5B42283264C, "i", ".");
 
 // - - Operators
 
@@ -3935,30 +3935,30 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Drop_Down_List_Type(scope:global, name:Drop_Down_List_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Drop_Down_List_Class_Initialize_2F0EB9C9_E9A6_4D11_9A14_4AFC8CC1CD1B)
-	deinit, ctype_func(Berry_Drop_Down_List_Class_Deinitialize_A2D846C8_E6A9_45B6_82E6_193B2806B023)
-	Create, ctype_func(Berry_Drop_Down_List_Class_Create_03AC7356_012C_4F0A_8FFF_A6BB6B9C533D)
-	Add_Option, ctype_func(Berry_Drop_Down_List_Class_Add_Option_62FE2365_5D16_4635_BB5A_7668C4C6B74F)
-	Clear_Options, ctype_func(Berry_Drop_Down_List_Class_Clear_Options_7123F590_FDBD_4481_8907_01139B33F7EA)
-	Open, ctype_func(Berry_Drop_Down_List_Class_Open_4D1FE2E4_F49A_4260_A460_0C41BBB0BEA2)
-	Close, ctype_func(Berry_Drop_Down_List_Class_Close_8BC9B826_5C08_492E_86CE_8A802C725BEE)
-	Is_Open, ctype_func(Berry_Drop_Down_List_Class_Is_Open_C26B665D_10BB_4CC0_BC3E_9965926E9E95)
-	Set_Text, ctype_func(Berry_Drop_Down_List_Class_Set_Text_60A29136_C20A_47E5_81CB_11D385544E89)
-	Set_Options, ctype_func(Berry_Drop_Down_List_Class_Set_Options_29D2118F_6D51_43A1_8AAD_0C73807DEB16)
-	Set_Options_Static, ctype_func(Berry_Drop_Down_List_Class_Set_Options_Static_8A37B6FE_7BFC_4C26_AF66_27DB1C0CF3A3)
-	Set_Selected, ctype_func(Berry_Drop_Down_List_Class_Set_Selected_BB75AD5A_D1F7_4822_987F_09E3AFF0066A)
-	Set_Direction, ctype_func(Berry_Drop_Down_List_Class_Set_Direction_11700FB8_3B10_4E07_AAC0_D6B0DDD3D9C8)
-	Set_Symbol, ctype_func(Berry_Drop_Down_List_Class_Set_Symbol_E3017607_09C5_4213_96B8_BA1A7308C650)
-	Set_Selected_Highlight, ctype_func(Berry_Drop_Down_List_Class_Set_Selected_Highlight_1879D5FD_ED86_4B27_8DBD_84A9D6FA69BC)
-	Get_List, ctype_func(Berry_Drop_Down_List_Class_Get_List_632BCD59_CE0A_4BAE_A4E9_C07E474B9C94)
-	Get_Text, ctype_func(Berry_Drop_Down_List_Class_Get_Text_1A033F8D_B463_4654_8F8C_4A000473615E)
-	Get_Options, ctype_func(Berry_Drop_Down_List_Class_Get_Options_616EE6BC_B51D_4624_91D7_2DF21E37B5D9)
-	Get_Selected_Option, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_Option_F686CD6D_76B7_402D_BBB4_6ECD47E7C22B)
-	Get_Option_Count, ctype_func(Berry_Drop_Down_List_Class_Get_Option_Count_DFA6140E_5279_4E83_881D_F056E9308621)
-	Get_Selected_String, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_String_CB071040_4934_49BC_9C5A_9BFEEF2D310A)
-	Get_Symbol, ctype_func(Berry_Drop_Down_List_Class_Get_Symbol_5F1C9969_0BD7_480C_8454_4D8C1C05E437)
-	Get_Selected_Highlight, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_Highlight_1CBBD5A5_8F0F_40A9_A5E5_3FC8AD4C48FD)
-	Get_Direction, ctype_func(Berry_Drop_Down_List_Class_Get_Direction_A61F5D6D_A588_4E24_8800_6303384EFF69)
+	init, ctype_func(Berry_Drop_Down_List_Class_Initialize_978DD855_C653_47BC_BE38_62A08EFF6887)
+	deinit, ctype_func(Berry_Drop_Down_List_Class_Deinitialize_B0545B7C_8012_4953_B326_C06248085BC6)
+	Create, ctype_func(Berry_Drop_Down_List_Class_Create_04038030_DDB8_4558_9721_0EAF5AE99684)
+	Add_Option, ctype_func(Berry_Drop_Down_List_Class_Add_Option_BE16E400_BD83_450F_BFEA_CB4889FEBAA9)
+	Clear_Options, ctype_func(Berry_Drop_Down_List_Class_Clear_Options_26DFF3B1_2321_406C_A39F_0F35E5F59ADF)
+	Open, ctype_func(Berry_Drop_Down_List_Class_Open_F775FD07_CBF8_46DA_8B8C_0946B107B09D)
+	Close, ctype_func(Berry_Drop_Down_List_Class_Close_B606D6CF_76F1_489B_B8D1_A8EE054DBD2E)
+	Is_Open, ctype_func(Berry_Drop_Down_List_Class_Is_Open_04E3294F_30BC_4E61_B470_52833296D3BA)
+	Set_Text, ctype_func(Berry_Drop_Down_List_Class_Set_Text_24E8BCCC_BEF5_4ACA_92AE_68DE2D0AA1AC)
+	Set_Options, ctype_func(Berry_Drop_Down_List_Class_Set_Options_7D58E3F3_F105_4BC8_BEBF_88B2723946CE)
+	Set_Options_Static, ctype_func(Berry_Drop_Down_List_Class_Set_Options_Static_2836089E_FCA5_43ED_8A1A_23FF08F4AF83)
+	Set_Selected, ctype_func(Berry_Drop_Down_List_Class_Set_Selected_D6589E3A_9C31_4B78_ADC9_776E90A49417)
+	Set_Direction, ctype_func(Berry_Drop_Down_List_Class_Set_Direction_A10E4963_73E6_4557_9012_42A343A065FB)
+	Set_Symbol, ctype_func(Berry_Drop_Down_List_Class_Set_Symbol_5A90F3A2_5C2C_4BED_9705_8C9A167366E2)
+	Set_Selected_Highlight, ctype_func(Berry_Drop_Down_List_Class_Set_Selected_Highlight_B09A9540_E0D3_48DA_94D2_1CA3148758C9)
+	Get_List, ctype_func(Berry_Drop_Down_List_Class_Get_List_168AF492_41BE_4FF1_AADF_242AB60BE563)
+	Get_Text, ctype_func(Berry_Drop_Down_List_Class_Get_Text_010419F2_93FF_4243_842B_57C2748EEAA3)
+	Get_Options, ctype_func(Berry_Drop_Down_List_Class_Get_Options_884DA86E_42F5_4404_9682_A4E0898F2D5C)
+	Get_Selected_Option, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_Option_16A9AE7B_FEC0_41F7_B8B2_ED981FD77F7A)
+	Get_Option_Count, ctype_func(Berry_Drop_Down_List_Class_Get_Option_Count_525DDF3B_2541_44B8_A1FE_19BE2273E76C)
+	Get_Selected_String, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_String_578D0E5B_E2DE_482B_8027_C71761C408E2)
+	Get_Symbol, ctype_func(Berry_Drop_Down_List_Class_Get_Symbol_648099A8_315F_4752_AB8E_EB40797AAC81)
+	Get_Selected_Highlight, ctype_func(Berry_Drop_Down_List_Class_Get_Selected_Highlight_35463CE5_9449_4B80_AE53_59961E0253BE)
+	Get_Direction, ctype_func(Berry_Drop_Down_List_Class_Get_Direction_B4AA9F7F_44CE_438F_9C5B_F5B42283264C)
 
 }
 @const_object_info_end */
@@ -3971,52 +3971,52 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_List_Class_Initialize_AD6B33C6_63A3_4D6E_8F91_815A54C8190C(bvm* V)
+void * Berry_List_Class_Initialize_8B292B07_0113_4836_9052_0601EAF3DF29(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::List_Class));
 return new (Pointer) Graphics_Types::List_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Initialize_AD6B33C6_63A3_4D6E_8F91_815A54C8190C, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Initialize_8B292B07_0113_4836_9052_0601EAF3DF29, "+_p", "@");
 
 
 // - - Destructors
-void Berry_List_Class_Deinitialize_3A9C78B1_4AF6_419C_9A3D_A2AC92D915DE(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I)
+void Berry_List_Class_Deinitialize_71C51BDB_6002_4876_B961_58BE5846A1FA(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I)
 {
 if (!I) { return; }
 I->~List_Class();
 be_free(V, I, sizeof(Graphics_Types::List_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Deinitialize_3A9C78B1_4AF6_419C_9A3D_A2AC92D915DE, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Deinitialize_71C51BDB_6002_4876_B961_58BE5846A1FA, "", "@.");
 
 
 // - - Functions
-void Berry_List_Class_Create_7A8A35AC_1A81_4E0D_BD93_783E7B822AAB(Xila_Namespace::Graphics_Types::List_Class* I, Object_Class* A_0)
+void Berry_List_Class_Create_F00A9CF4_DD10_4BA7_A309_D800DA996201(Xila_Namespace::Graphics_Types::List_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Create_7A8A35AC_1A81_4E0D_BD93_783E7B822AAB, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Create_F00A9CF4_DD10_4BA7_A309_D800DA996201, "", "..");
 
-void * Berry_List_Class_Add_Text_67CA4112_C37C_4943_A2FB_F1BE7F0E5EA7(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I, const char* A_0)
+void * Berry_List_Class_Add_Text_8B8E71A3_6DE6_4FCC_ACC3_8EF7B15ECF06(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I, const char* A_0)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Add_Text(A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Add_Text_67CA4112_C37C_4943_A2FB_F1BE7F0E5EA7, "Graphics.Object_Type", "@.s");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Add_Text_8B8E71A3_6DE6_4FCC_ACC3_8EF7B15ECF06, "Graphics.Object_Type", "@.s");
 
-void * Berry_List_Class_Add_Button_F4F28851_C176_4C5C_AFAD_548B6430A45C(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I, const char* A_0, const char* A_1)
+void * Berry_List_Class_Add_Button_3BA8B1C5_C847_4EC9_91D9_F265DD2C3D27(bvm* V, Xila_Namespace::Graphics_Types::List_Class* I, const char* A_0, const char* A_1)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = I->Add_Button(A_0, A_1); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Add_Button_F4F28851_C176_4C5C_AFAD_548B6430A45C, "Graphics.Object_Type", "@.ss");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Add_Button_3BA8B1C5_C847_4EC9_91D9_F265DD2C3D27, "Graphics.Object_Type", "@.ss");
 
-const char* Berry_List_Class_Get_Button_Text_C2C0D754_395A_4D3E_9FB9_23CF95A446EC(Xila_Namespace::Graphics_Types::List_Class* I, ::Xila_Namespace::Graphics_Types::Button_Class* A_0)
+const char* Berry_List_Class_Get_Button_Text_91282296_7A41_4CE1_8832_F6DBBF617019(Xila_Namespace::Graphics_Types::List_Class* I, ::Xila_Namespace::Graphics_Types::Button_Class* A_0)
 {
 return I->Get_Button_Text(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Get_Button_Text_C2C0D754_395A_4D3E_9FB9_23CF95A446EC, "s", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_List_Class_Get_Button_Text_91282296_7A41_4CE1_8832_F6DBBF617019, "s", "..");
 
 // - - Operators
 
@@ -4026,12 +4026,12 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_List_Type(scope:global, name:List_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_List_Class_Initialize_AD6B33C6_63A3_4D6E_8F91_815A54C8190C)
-	deinit, ctype_func(Berry_List_Class_Deinitialize_3A9C78B1_4AF6_419C_9A3D_A2AC92D915DE)
-	Create, ctype_func(Berry_List_Class_Create_7A8A35AC_1A81_4E0D_BD93_783E7B822AAB)
-	Add_Text, ctype_func(Berry_List_Class_Add_Text_67CA4112_C37C_4943_A2FB_F1BE7F0E5EA7)
-	Add_Button, ctype_func(Berry_List_Class_Add_Button_F4F28851_C176_4C5C_AFAD_548B6430A45C)
-	Get_Button_Text, ctype_func(Berry_List_Class_Get_Button_Text_C2C0D754_395A_4D3E_9FB9_23CF95A446EC)
+	init, ctype_func(Berry_List_Class_Initialize_8B292B07_0113_4836_9052_0601EAF3DF29)
+	deinit, ctype_func(Berry_List_Class_Deinitialize_71C51BDB_6002_4876_B961_58BE5846A1FA)
+	Create, ctype_func(Berry_List_Class_Create_F00A9CF4_DD10_4BA7_A309_D800DA996201)
+	Add_Text, ctype_func(Berry_List_Class_Add_Text_8B8E71A3_6DE6_4FCC_ACC3_8EF7B15ECF06)
+	Add_Button, ctype_func(Berry_List_Class_Add_Button_3BA8B1C5_C847_4EC9_91D9_F265DD2C3D27)
+	Get_Button_Text, ctype_func(Berry_List_Class_Get_Button_Text_91282296_7A41_4CE1_8832_F6DBBF617019)
 
 }
 @const_object_info_end */
@@ -4044,30 +4044,30 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Button_Class_Initialize_3BC1DDDE_AD15_45F7_A339_FEF8FD268C67(bvm* V)
+void * Berry_Button_Class_Initialize_63C9F3CF_778A_4C58_8EC3_2369F534303C(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Button_Class));
 return new (Pointer) Graphics_Types::Button_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Initialize_3BC1DDDE_AD15_45F7_A339_FEF8FD268C67, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Initialize_63C9F3CF_778A_4C58_8EC3_2369F534303C, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Button_Class_Deinitialize_D5C36032_E473_48FE_8BD9_4655AB73F9FC(bvm* V, Xila_Namespace::Graphics_Types::Button_Class* I)
+void Berry_Button_Class_Deinitialize_80E07156_A429_432C_98A2_05853CCEE4D1(bvm* V, Xila_Namespace::Graphics_Types::Button_Class* I)
 {
 if (!I) { return; }
 I->~Button_Class();
 be_free(V, I, sizeof(Graphics_Types::Button_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Deinitialize_D5C36032_E473_48FE_8BD9_4655AB73F9FC, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Deinitialize_80E07156_A429_432C_98A2_05853CCEE4D1, "", "@.");
 
 
 // - - Functions
-void Berry_Button_Class_Create_C3FDBAD0_CEC3_4FA5_AF59_C10918333F93(Xila_Namespace::Graphics_Types::Button_Class* I, Object_Class* A_0)
+void Berry_Button_Class_Create_1DCE0A35_3B9B_437E_9E8E_9E66286F1CE9(Xila_Namespace::Graphics_Types::Button_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Create_C3FDBAD0_CEC3_4FA5_AF59_C10918333F93, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Class_Create_1DCE0A35_3B9B_437E_9E8E_9E66286F1CE9, "", "..");
 
 // - - Operators
 
@@ -4077,9 +4077,9 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Button_Type(scope:global, name:Button_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Button_Class_Initialize_3BC1DDDE_AD15_45F7_A339_FEF8FD268C67)
-	deinit, ctype_func(Berry_Button_Class_Deinitialize_D5C36032_E473_48FE_8BD9_4655AB73F9FC)
-	Create, ctype_func(Berry_Button_Class_Create_C3FDBAD0_CEC3_4FA5_AF59_C10918333F93)
+	init, ctype_func(Berry_Button_Class_Initialize_63C9F3CF_778A_4C58_8EC3_2369F534303C)
+	deinit, ctype_func(Berry_Button_Class_Deinitialize_80E07156_A429_432C_98A2_05853CCEE4D1)
+	Create, ctype_func(Berry_Button_Class_Create_1DCE0A35_3B9B_437E_9E8E_9E66286F1CE9)
 
 }
 @const_object_info_end */
@@ -4092,126 +4092,126 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Label_Class_Initialize_2113FD6F_7D10_4001_853C_73EDD27D28FE(bvm* V)
+void * Berry_Label_Class_Initialize_9FA0BF6C_C0B7_455D_BFB0_590C7324E00A(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Label_Class));
 return new (Pointer) Graphics_Types::Label_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Initialize_2113FD6F_7D10_4001_853C_73EDD27D28FE, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Initialize_9FA0BF6C_C0B7_455D_BFB0_590C7324E00A, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Label_Class_Deinitialize_D596D369_E556_45FE_902E_C9750FE25B13(bvm* V, Xila_Namespace::Graphics_Types::Label_Class* I)
+void Berry_Label_Class_Deinitialize_E4F8D27D_5309_4376_B6B2_007FBCAF9F8E(bvm* V, Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 if (!I) { return; }
 I->~Label_Class();
 be_free(V, I, sizeof(Graphics_Types::Label_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Deinitialize_D596D369_E556_45FE_902E_C9750FE25B13, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Deinitialize_E4F8D27D_5309_4376_B6B2_007FBCAF9F8E, "", "@.");
 
 
 // - - Functions
-void Berry_Label_Class_Create_79391E67_820C_45BE_B052_73E64202192A(Xila_Namespace::Graphics_Types::Label_Class* I, Object_Class* A_0)
+void Berry_Label_Class_Create_88576127_CE88_423A_86F8_8A1A2C31868E(Xila_Namespace::Graphics_Types::Label_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Create_79391E67_820C_45BE_B052_73E64202192A, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Create_88576127_CE88_423A_86F8_8A1A2C31868E, "", "..");
 
-void Berry_Label_Class_Insert_Text_ED27125D_CB5B_4D67_BFBB_59E8CFA9EA5B(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, const char* A_1)
+void Berry_Label_Class_Insert_Text_534B7E2B_03E7_4E26_BED8_B1A78F2F7102(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, const char* A_1)
 {
 return I->Insert_Text((unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Insert_Text_ED27125D_CB5B_4D67_BFBB_59E8CFA9EA5B, "", ".is");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Insert_Text_534B7E2B_03E7_4E26_BED8_B1A78F2F7102, "", ".is");
 
-void Berry_Label_Class_Cut_Text_8B0CAFDB_7805_4A9E_9AE0_C9FE932339A7(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, int A_1)
+void Berry_Label_Class_Cut_Text_8EF894C6_AE69_4C35_9A76_05277F10A3FC(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, int A_1)
 {
 return I->Cut_Text((unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Cut_Text_8B0CAFDB_7805_4A9E_9AE0_C9FE932339A7, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Cut_Text_8EF894C6_AE69_4C35_9A76_05277F10A3FC, "", ".ii");
 
-bool Berry_Label_Class_Is_Char_Under_Position_0351ACB6_4163_4CFC_B13C_3BA31B777BC1(Xila_Namespace::Graphics_Types::Label_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
+bool Berry_Label_Class_Is_Char_Under_Position_1AAD1158_C32E_4A63_BAC3_2F50E499910A(Xila_Namespace::Graphics_Types::Label_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
 {
 return I->Is_Char_Under_Position(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Is_Char_Under_Position_0351ACB6_4163_4CFC_B13C_3BA31B777BC1, "b", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Is_Char_Under_Position_1AAD1158_C32E_4A63_BAC3_2F50E499910A, "b", "..");
 
-void Berry_Label_Class_Set_Text_786DA247_09F2_4D35_977D_130E72C16ECD(Xila_Namespace::Graphics_Types::Label_Class* I, const char* A_0)
+void Berry_Label_Class_Set_Text_94F77607_8FC7_44DA_8324_E07E2648FE50(Xila_Namespace::Graphics_Types::Label_Class* I, const char* A_0)
 {
 return I->Set_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Text_786DA247_09F2_4D35_977D_130E72C16ECD, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Text_94F77607_8FC7_44DA_8324_E07E2648FE50, "", ".s");
 
-void Berry_Label_Class_Set_Text_Static_7D34C7CC_CA2E_4B26_B84A_506379FF3E62(Xila_Namespace::Graphics_Types::Label_Class* I, const char* A_0)
+void Berry_Label_Class_Set_Text_Static_2A669B1D_BFB9_49FE_8EDD_81AADC8CB9CB(Xila_Namespace::Graphics_Types::Label_Class* I, const char* A_0)
 {
 return I->Set_Text_Static(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Text_Static_7D34C7CC_CA2E_4B26_B84A_506379FF3E62, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Text_Static_2A669B1D_BFB9_49FE_8EDD_81AADC8CB9CB, "", ".s");
 
-void Berry_Label_Class_Set_Long_Mode_004CAC62_8011_42CF_8D60_CF944656CAAD(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
+void Berry_Label_Class_Set_Long_Mode_E18FA4AE_A044_47A9_B0CD_9407E5034DF9(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
 {
 return I->Set_Long_Mode((Long_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Long_Mode_004CAC62_8011_42CF_8D60_CF944656CAAD, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Long_Mode_E18FA4AE_A044_47A9_B0CD_9407E5034DF9, "", ".i");
 
-void Berry_Label_Class_Set_Recolor_B4F87F48_BD21_4A83_AA83_F4C94431F3EA(Xila_Namespace::Graphics_Types::Label_Class* I, bool A_0)
+void Berry_Label_Class_Set_Recolor_205C9F35_6735_448D_815A_ADD4F143FBF5(Xila_Namespace::Graphics_Types::Label_Class* I, bool A_0)
 {
 return I->Set_Recolor(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Recolor_B4F87F48_BD21_4A83_AA83_F4C94431F3EA, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Recolor_205C9F35_6735_448D_815A_ADD4F143FBF5, "", ".b");
 
-void Berry_Label_Class_Set_Selection_Start_9FD1A83A_9881_47BE_B8A8_08B5146B0ED9(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
+void Berry_Label_Class_Set_Selection_Start_94E9D264_8C5A_4A6C_8BD9_3AA85931B4D0(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
 {
 return I->Set_Selection_Start((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Selection_Start_9FD1A83A_9881_47BE_B8A8_08B5146B0ED9, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Selection_Start_94E9D264_8C5A_4A6C_8BD9_3AA85931B4D0, "", ".i");
 
-void Berry_Label_Class_Set_Selection_End_52F438FE_DAE4_447C_9D85_AA09190B6599(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
+void Berry_Label_Class_Set_Selection_End_DC436DBB_32C5_4EF3_9F4D_C9F5708E2B0F(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0)
 {
 return I->Set_Selection_End((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Selection_End_52F438FE_DAE4_447C_9D85_AA09190B6599, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Set_Selection_End_DC436DBB_32C5_4EF3_9F4D_C9F5708E2B0F, "", ".i");
 
-const char* Berry_Label_Class_Get_Text_A4F876FB_70A1_4E2C_9247_6007A9577E4A(Xila_Namespace::Graphics_Types::Label_Class* I)
+const char* Berry_Label_Class_Get_Text_BC91D75E_A3FB_461F_8ACE_F3DAB8046EEA(Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 return I->Get_Text(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Text_A4F876FB_70A1_4E2C_9247_6007A9577E4A, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Text_BC91D75E_A3FB_461F_8ACE_F3DAB8046EEA, "s", ".");
 
-int Berry_Label_Class_Get_Long_Mode_B948187D_743A_4C87_B8E8_3D44017F5304(Xila_Namespace::Graphics_Types::Label_Class* I)
+int Berry_Label_Class_Get_Long_Mode_144FA011_F802_4269_B086_DF5E09B96616(Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 return (int)I->Get_Long_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Long_Mode_B948187D_743A_4C87_B8E8_3D44017F5304, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Long_Mode_144FA011_F802_4269_B086_DF5E09B96616, "i", ".");
 
-bool Berry_Label_Class_Get_Recolor_31C94D2B_FAB7_48C8_B821_038EC3A021A8(Xila_Namespace::Graphics_Types::Label_Class* I)
+bool Berry_Label_Class_Get_Recolor_43DA5AFE_29B2_44D8_9E0D_80CB5D826B76(Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 return I->Get_Recolor(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Recolor_31C94D2B_FAB7_48C8_B821_038EC3A021A8, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Recolor_43DA5AFE_29B2_44D8_9E0D_80CB5D826B76, "b", ".");
 
-void Berry_Label_Class_Get_Letter_Position_75757981_339E_4D25_9194_1B61E72C7296(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, ::Xila_Namespace::Graphics_Types::Point_Class* A_1)
+void Berry_Label_Class_Get_Letter_Position_8750E739_A6DB_4E9C_BAC5_C67469B634D1(Xila_Namespace::Graphics_Types::Label_Class* I, int A_0, ::Xila_Namespace::Graphics_Types::Point_Class* A_1)
 {
 return I->Get_Letter_Position((unsigned int)A_0, *A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Letter_Position_75757981_339E_4D25_9194_1B61E72C7296, "", ".i.");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Letter_Position_8750E739_A6DB_4E9C_BAC5_C67469B634D1, "", ".i.");
 
-int Berry_Label_Class_Get_Letter_On_25EF78C4_B3BB_437A_9F0F_659054B8AFA0(Xila_Namespace::Graphics_Types::Label_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
+int Berry_Label_Class_Get_Letter_On_38A849F9_B973_4F32_B691_A0111B117447(Xila_Namespace::Graphics_Types::Label_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
 {
 return (int)I->Get_Letter_On(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Letter_On_25EF78C4_B3BB_437A_9F0F_659054B8AFA0, "i", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Letter_On_38A849F9_B973_4F32_B691_A0111B117447, "i", "..");
 
-int Berry_Label_Class_Get_Selection_Start_E3BA7B39_5814_41FE_A4EC_E2FCCF0B543D(Xila_Namespace::Graphics_Types::Label_Class* I)
+int Berry_Label_Class_Get_Selection_Start_F9B7FC64_E6B9_408D_BE13_584FEFAF57C8(Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 return (int)I->Get_Selection_Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Selection_Start_E3BA7B39_5814_41FE_A4EC_E2FCCF0B543D, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Selection_Start_F9B7FC64_E6B9_408D_BE13_584FEFAF57C8, "i", ".");
 
-int Berry_Label_Class_Get_Selection_End_4D9A1D19_C467_45E4_BC69_FC740B01C91B(Xila_Namespace::Graphics_Types::Label_Class* I)
+int Berry_Label_Class_Get_Selection_End_8DF32E0E_BFE1_49E7_A43F_26A468BBA977(Xila_Namespace::Graphics_Types::Label_Class* I)
 {
 return (int)I->Get_Selection_End(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Selection_End_4D9A1D19_C467_45E4_BC69_FC740B01C91B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Label_Class_Get_Selection_End_8DF32E0E_BFE1_49E7_A43F_26A468BBA977, "i", ".");
 
 // - - Operators
 
@@ -4221,25 +4221,25 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Label_Type(scope:global, name:Label_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Label_Class_Initialize_2113FD6F_7D10_4001_853C_73EDD27D28FE)
-	deinit, ctype_func(Berry_Label_Class_Deinitialize_D596D369_E556_45FE_902E_C9750FE25B13)
-	Create, ctype_func(Berry_Label_Class_Create_79391E67_820C_45BE_B052_73E64202192A)
-	Insert_Text, ctype_func(Berry_Label_Class_Insert_Text_ED27125D_CB5B_4D67_BFBB_59E8CFA9EA5B)
-	Cut_Text, ctype_func(Berry_Label_Class_Cut_Text_8B0CAFDB_7805_4A9E_9AE0_C9FE932339A7)
-	Is_Char_Under_Position, ctype_func(Berry_Label_Class_Is_Char_Under_Position_0351ACB6_4163_4CFC_B13C_3BA31B777BC1)
-	Set_Text, ctype_func(Berry_Label_Class_Set_Text_786DA247_09F2_4D35_977D_130E72C16ECD)
-	Set_Text_Static, ctype_func(Berry_Label_Class_Set_Text_Static_7D34C7CC_CA2E_4B26_B84A_506379FF3E62)
-	Set_Long_Mode, ctype_func(Berry_Label_Class_Set_Long_Mode_004CAC62_8011_42CF_8D60_CF944656CAAD)
-	Set_Recolor, ctype_func(Berry_Label_Class_Set_Recolor_B4F87F48_BD21_4A83_AA83_F4C94431F3EA)
-	Set_Selection_Start, ctype_func(Berry_Label_Class_Set_Selection_Start_9FD1A83A_9881_47BE_B8A8_08B5146B0ED9)
-	Set_Selection_End, ctype_func(Berry_Label_Class_Set_Selection_End_52F438FE_DAE4_447C_9D85_AA09190B6599)
-	Get_Text, ctype_func(Berry_Label_Class_Get_Text_A4F876FB_70A1_4E2C_9247_6007A9577E4A)
-	Get_Long_Mode, ctype_func(Berry_Label_Class_Get_Long_Mode_B948187D_743A_4C87_B8E8_3D44017F5304)
-	Get_Recolor, ctype_func(Berry_Label_Class_Get_Recolor_31C94D2B_FAB7_48C8_B821_038EC3A021A8)
-	Get_Letter_Position, ctype_func(Berry_Label_Class_Get_Letter_Position_75757981_339E_4D25_9194_1B61E72C7296)
-	Get_Letter_On, ctype_func(Berry_Label_Class_Get_Letter_On_25EF78C4_B3BB_437A_9F0F_659054B8AFA0)
-	Get_Selection_Start, ctype_func(Berry_Label_Class_Get_Selection_Start_E3BA7B39_5814_41FE_A4EC_E2FCCF0B543D)
-	Get_Selection_End, ctype_func(Berry_Label_Class_Get_Selection_End_4D9A1D19_C467_45E4_BC69_FC740B01C91B)
+	init, ctype_func(Berry_Label_Class_Initialize_9FA0BF6C_C0B7_455D_BFB0_590C7324E00A)
+	deinit, ctype_func(Berry_Label_Class_Deinitialize_E4F8D27D_5309_4376_B6B2_007FBCAF9F8E)
+	Create, ctype_func(Berry_Label_Class_Create_88576127_CE88_423A_86F8_8A1A2C31868E)
+	Insert_Text, ctype_func(Berry_Label_Class_Insert_Text_534B7E2B_03E7_4E26_BED8_B1A78F2F7102)
+	Cut_Text, ctype_func(Berry_Label_Class_Cut_Text_8EF894C6_AE69_4C35_9A76_05277F10A3FC)
+	Is_Char_Under_Position, ctype_func(Berry_Label_Class_Is_Char_Under_Position_1AAD1158_C32E_4A63_BAC3_2F50E499910A)
+	Set_Text, ctype_func(Berry_Label_Class_Set_Text_94F77607_8FC7_44DA_8324_E07E2648FE50)
+	Set_Text_Static, ctype_func(Berry_Label_Class_Set_Text_Static_2A669B1D_BFB9_49FE_8EDD_81AADC8CB9CB)
+	Set_Long_Mode, ctype_func(Berry_Label_Class_Set_Long_Mode_E18FA4AE_A044_47A9_B0CD_9407E5034DF9)
+	Set_Recolor, ctype_func(Berry_Label_Class_Set_Recolor_205C9F35_6735_448D_815A_ADD4F143FBF5)
+	Set_Selection_Start, ctype_func(Berry_Label_Class_Set_Selection_Start_94E9D264_8C5A_4A6C_8BD9_3AA85931B4D0)
+	Set_Selection_End, ctype_func(Berry_Label_Class_Set_Selection_End_DC436DBB_32C5_4EF3_9F4D_C9F5708E2B0F)
+	Get_Text, ctype_func(Berry_Label_Class_Get_Text_BC91D75E_A3FB_461F_8ACE_F3DAB8046EEA)
+	Get_Long_Mode, ctype_func(Berry_Label_Class_Get_Long_Mode_144FA011_F802_4269_B086_DF5E09B96616)
+	Get_Recolor, ctype_func(Berry_Label_Class_Get_Recolor_43DA5AFE_29B2_44D8_9E0D_80CB5D826B76)
+	Get_Letter_Position, ctype_func(Berry_Label_Class_Get_Letter_Position_8750E739_A6DB_4E9C_BAC5_C67469B634D1)
+	Get_Letter_On, ctype_func(Berry_Label_Class_Get_Letter_On_38A849F9_B973_4F32_B691_A0111B117447)
+	Get_Selection_Start, ctype_func(Berry_Label_Class_Get_Selection_Start_F9B7FC64_E6B9_408D_BE13_584FEFAF57C8)
+	Get_Selection_End, ctype_func(Berry_Label_Class_Get_Selection_End_8DF32E0E_BFE1_49E7_A43F_26A468BBA977)
 
 }
 @const_object_info_end */
@@ -4252,48 +4252,48 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Checkbox_Class_Initialize_1D84624F_03E9_4C68_9D9B_2DDB8D93CC98(bvm* V)
+void * Berry_Checkbox_Class_Initialize_0D3A331F_8CE2_413C_9659_92462A36A33B(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Checkbox_Class));
 return new (Pointer) Graphics_Types::Checkbox_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Initialize_1D84624F_03E9_4C68_9D9B_2DDB8D93CC98, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Initialize_0D3A331F_8CE2_413C_9659_92462A36A33B, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Checkbox_Class_Deinitialize_47054A67_84DD_4605_9295_31BE30C2C42B(bvm* V, Xila_Namespace::Graphics_Types::Checkbox_Class* I)
+void Berry_Checkbox_Class_Deinitialize_46B9F9A4_99E4_437C_B7D8_227CC7C79385(bvm* V, Xila_Namespace::Graphics_Types::Checkbox_Class* I)
 {
 if (!I) { return; }
 I->~Checkbox_Class();
 be_free(V, I, sizeof(Graphics_Types::Checkbox_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Deinitialize_47054A67_84DD_4605_9295_31BE30C2C42B, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Deinitialize_46B9F9A4_99E4_437C_B7D8_227CC7C79385, "", "@.");
 
 
 // - - Functions
-void Berry_Checkbox_Class_Create_A92140A8_81BC_45D0_8484_ABCE6FFEC240(Xila_Namespace::Graphics_Types::Checkbox_Class* I, Object_Class* A_0)
+void Berry_Checkbox_Class_Create_E46C1AD4_4D2F_4449_9DB4_3528635B9F94(Xila_Namespace::Graphics_Types::Checkbox_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Create_A92140A8_81BC_45D0_8484_ABCE6FFEC240, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Create_E46C1AD4_4D2F_4449_9DB4_3528635B9F94, "", "..");
 
-void Berry_Checkbox_Class_Set_Text_4913FEF9_368D_4E46_920B_4233943F96E4(Xila_Namespace::Graphics_Types::Checkbox_Class* I, const char* A_0)
+void Berry_Checkbox_Class_Set_Text_B782B6BD_B322_45A7_A70F_B47EB9D37FD2(Xila_Namespace::Graphics_Types::Checkbox_Class* I, const char* A_0)
 {
 return I->Set_Text(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Set_Text_4913FEF9_368D_4E46_920B_4233943F96E4, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Set_Text_B782B6BD_B322_45A7_A70F_B47EB9D37FD2, "", ".s");
 
-void Berry_Checkbox_Class_Set_Text_Static_6ADC83AD_61AD_42F1_BDF5_3064A42DE0F4(Xila_Namespace::Graphics_Types::Checkbox_Class* I, const char* A_0)
+void Berry_Checkbox_Class_Set_Text_Static_8E66C055_4434_4A28_80D1_DCBA1B75C24B(Xila_Namespace::Graphics_Types::Checkbox_Class* I, const char* A_0)
 {
 return I->Set_Text_Static(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Set_Text_Static_6ADC83AD_61AD_42F1_BDF5_3064A42DE0F4, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Set_Text_Static_8E66C055_4434_4A28_80D1_DCBA1B75C24B, "", ".s");
 
-const char* Berry_Checkbox_Class_Get_Text_4DE01767_BFB3_4660_998D_592B537D0598(Xila_Namespace::Graphics_Types::Checkbox_Class* I)
+const char* Berry_Checkbox_Class_Get_Text_BF382030_3BF1_43E9_BB93_A5C042FED3F7(Xila_Namespace::Graphics_Types::Checkbox_Class* I)
 {
 return I->Get_Text(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Get_Text_4DE01767_BFB3_4660_998D_592B537D0598, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Checkbox_Class_Get_Text_BF382030_3BF1_43E9_BB93_A5C042FED3F7, "s", ".");
 
 // - - Operators
 
@@ -4303,12 +4303,12 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Checkbox_Type(scope:global, name:Checkbox_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Checkbox_Class_Initialize_1D84624F_03E9_4C68_9D9B_2DDB8D93CC98)
-	deinit, ctype_func(Berry_Checkbox_Class_Deinitialize_47054A67_84DD_4605_9295_31BE30C2C42B)
-	Create, ctype_func(Berry_Checkbox_Class_Create_A92140A8_81BC_45D0_8484_ABCE6FFEC240)
-	Set_Text, ctype_func(Berry_Checkbox_Class_Set_Text_4913FEF9_368D_4E46_920B_4233943F96E4)
-	Set_Text_Static, ctype_func(Berry_Checkbox_Class_Set_Text_Static_6ADC83AD_61AD_42F1_BDF5_3064A42DE0F4)
-	Get_Text, ctype_func(Berry_Checkbox_Class_Get_Text_4DE01767_BFB3_4660_998D_592B537D0598)
+	init, ctype_func(Berry_Checkbox_Class_Initialize_0D3A331F_8CE2_413C_9659_92462A36A33B)
+	deinit, ctype_func(Berry_Checkbox_Class_Deinitialize_46B9F9A4_99E4_437C_B7D8_227CC7C79385)
+	Create, ctype_func(Berry_Checkbox_Class_Create_E46C1AD4_4D2F_4449_9DB4_3528635B9F94)
+	Set_Text, ctype_func(Berry_Checkbox_Class_Set_Text_B782B6BD_B322_45A7_A70F_B47EB9D37FD2)
+	Set_Text_Static, ctype_func(Berry_Checkbox_Class_Set_Text_Static_8E66C055_4434_4A28_80D1_DCBA1B75C24B)
+	Get_Text, ctype_func(Berry_Checkbox_Class_Get_Text_BF382030_3BF1_43E9_BB93_A5C042FED3F7)
 
 }
 @const_object_info_end */
@@ -4321,127 +4321,127 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Image_Class_Initialize_F3EE6B75_AC6A_4C9E_85E4_6A0071962451(bvm* V)
+void * Berry_Image_Class_Initialize_10B29F70_5E55_4681_B33E_67AC8B7DCEB5(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Image_Class));
 return new (Pointer) Graphics_Types::Image_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Initialize_F3EE6B75_AC6A_4C9E_85E4_6A0071962451, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Initialize_10B29F70_5E55_4681_B33E_67AC8B7DCEB5, "+_p", "@");
 
-void * Berry_Image_Class_Initialize_B98D2CF3_1999_4A99_A6BB_7AD87C225B7F(bvm* V, ::Xila_Namespace::Graphics_Types::Object_Class* A_0)
+void * Berry_Image_Class_Initialize_3670F67B_7358_4935_9E53_9EB263B29947(bvm* V, ::Xila_Namespace::Graphics_Types::Object_Class* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Image_Class));
 return new (Pointer) Graphics_Types::Image_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Initialize_B98D2CF3_1999_4A99_A6BB_7AD87C225B7F, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Initialize_3670F67B_7358_4935_9E53_9EB263B29947, "+_p", "@.");
 
 
 // - - Destructors
-void Berry_Image_Class_Deinitialize_D40EB4C9_7900_4998_8377_D91A21AAB506(bvm* V, Xila_Namespace::Graphics_Types::Image_Class* I)
+void Berry_Image_Class_Deinitialize_9DCC1A71_6813_4520_85D9_81CE43E61120(bvm* V, Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 if (!I) { return; }
 I->~Image_Class();
 be_free(V, I, sizeof(Graphics_Types::Image_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Deinitialize_D40EB4C9_7900_4998_8377_D91A21AAB506, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Deinitialize_9DCC1A71_6813_4520_85D9_81CE43E61120, "", "@.");
 
 
 // - - Functions
-void Berry_Image_Class_Create_51FA1801_9DA9_455A_B214_663615F62164(Xila_Namespace::Graphics_Types::Image_Class* I, Object_Class* A_0)
+void Berry_Image_Class_Create_9AB15FFE_50D0_4629_BAF2_6FAA20E932B6(Xila_Namespace::Graphics_Types::Image_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Create_51FA1801_9DA9_455A_B214_663615F62164, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Create_9AB15FFE_50D0_4629_BAF2_6FAA20E932B6, "", "..");
 
-void Berry_Image_Class_Set_Offset_X_C166C4B8_C41E_4421_8127_685ACFC9ABD4(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
+void Berry_Image_Class_Set_Offset_X_0FE912EE_B597_415E_82DF_08FD8C076671(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
 {
 return I->Set_Offset_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Offset_X_C166C4B8_C41E_4421_8127_685ACFC9ABD4, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Offset_X_0FE912EE_B597_415E_82DF_08FD8C076671, "", ".i");
 
-void Berry_Image_Class_Set_Offset_Y_E298BEFE_F5BC_4880_8C7D_34F68439A283(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
+void Berry_Image_Class_Set_Offset_Y_C11A19C5_1F4C_44A0_A2B7_ADD25DF41D8E(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
 {
 return I->Set_Offset_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Offset_Y_E298BEFE_F5BC_4880_8C7D_34F68439A283, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Offset_Y_C11A19C5_1F4C_44A0_A2B7_ADD25DF41D8E, "", ".i");
 
-void Berry_Image_Class_Set_Angle_F9761A57_A07B_4F21_BBD4_09D009B34E78(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
+void Berry_Image_Class_Set_Angle_32F6B1EE_5DA3_41E8_B1B1_D6F1CE3ED34A(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
 {
 return I->Set_Angle((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Angle_F9761A57_A07B_4F21_BBD4_09D009B34E78, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Angle_32F6B1EE_5DA3_41E8_B1B1_D6F1CE3ED34A, "", ".i");
 
-void Berry_Image_Class_Set_Pivot_B4548636_A911_4AFF_8190_53165C41A518(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0, int A_1)
+void Berry_Image_Class_Set_Pivot_DC611323_3D6B_4BC6_AAB3_DD5303940D88(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0, int A_1)
 {
 return I->Set_Pivot((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Pivot_B4548636_A911_4AFF_8190_53165C41A518, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Pivot_DC611323_3D6B_4BC6_AAB3_DD5303940D88, "", ".ii");
 
-void Berry_Image_Class_Set_Zoom_E57FBBAE_B8AF_42EE_BFB3_FCD7155DF23B(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
+void Berry_Image_Class_Set_Zoom_AC223681_ADBD_452D_9005_371562A91166(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
 {
 return I->Set_Zoom((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Zoom_E57FBBAE_B8AF_42EE_BFB3_FCD7155DF23B, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Zoom_AC223681_ADBD_452D_9005_371562A91166, "", ".i");
 
-void Berry_Image_Class_Set_Antialias_B348A3E6_3DDC_4952_904C_645E6BEB17C9(Xila_Namespace::Graphics_Types::Image_Class* I, bool A_0)
+void Berry_Image_Class_Set_Antialias_82F3E06E_5E4F_414C_B34E_EAB373D0D83B(Xila_Namespace::Graphics_Types::Image_Class* I, bool A_0)
 {
 return I->Set_Antialias(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Antialias_B348A3E6_3DDC_4952_904C_645E6BEB17C9, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Antialias_82F3E06E_5E4F_414C_B34E_EAB373D0D83B, "", ".b");
 
-void Berry_Image_Class_Set_Size_Mode_7008BB9A_FA3D_4272_BCFB_541E05992EA7(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
+void Berry_Image_Class_Set_Size_Mode_14C17D1F_7A9B_479D_9888_64B63728FB31(Xila_Namespace::Graphics_Types::Image_Class* I, int A_0)
 {
 return I->Set_Size_Mode((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Size_Mode_7008BB9A_FA3D_4272_BCFB_541E05992EA7, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Set_Size_Mode_14C17D1F_7A9B_479D_9888_64B63728FB31, "", ".i");
 
-int Berry_Image_Class_Get_Offset_X_19DA48D6_31A0_44F7_A1AE_AFA43DD85B7D(Xila_Namespace::Graphics_Types::Image_Class* I)
+int Berry_Image_Class_Get_Offset_X_A6F7CCB5_4AFA_449F_87F8_387D1DB40D05(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return (int)I->Get_Offset_X(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Offset_X_19DA48D6_31A0_44F7_A1AE_AFA43DD85B7D, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Offset_X_A6F7CCB5_4AFA_449F_87F8_387D1DB40D05, "i", ".");
 
-int Berry_Image_Class_Get_Offset_Y_7B5063EE_8416_4B29_95A8_DEE9901CE5A7(Xila_Namespace::Graphics_Types::Image_Class* I)
+int Berry_Image_Class_Get_Offset_Y_BD881A68_DA73_4275_9FA4_110400E10A5F(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return (int)I->Get_Offset_Y(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Offset_Y_7B5063EE_8416_4B29_95A8_DEE9901CE5A7, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Offset_Y_BD881A68_DA73_4275_9FA4_110400E10A5F, "i", ".");
 
-int Berry_Image_Class_Get_Angle_9868382E_1302_4B7B_B2CE_D8D37109839A(Xila_Namespace::Graphics_Types::Image_Class* I)
+int Berry_Image_Class_Get_Angle_AA7AE0BD_A37F_4A6A_A6E9_2DA6FC5D38DF(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return (int)I->Get_Angle(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Angle_9868382E_1302_4B7B_B2CE_D8D37109839A, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Angle_AA7AE0BD_A37F_4A6A_A6E9_2DA6FC5D38DF, "i", ".");
 
-void Berry_Image_Class_Get_Pivot_40878AAE_1A5C_4A17_9DE2_DB271A54BBE3(Xila_Namespace::Graphics_Types::Image_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
+void Berry_Image_Class_Get_Pivot_66EF0FDB_8129_4821_B550_2D3CFAD85A29(Xila_Namespace::Graphics_Types::Image_Class* I, ::Xila_Namespace::Graphics_Types::Point_Class* A_0)
 {
 return I->Get_Pivot(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Pivot_40878AAE_1A5C_4A17_9DE2_DB271A54BBE3, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Pivot_66EF0FDB_8129_4821_B550_2D3CFAD85A29, "", "..");
 
-int Berry_Image_Class_Get_Zoom_BE2A8FE6_7337_4A46_B12D_52A5CC192E74(Xila_Namespace::Graphics_Types::Image_Class* I)
+int Berry_Image_Class_Get_Zoom_B6D97F7D_D2EC_48EA_BD1B_63BE7BCAAE82(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return (int)I->Get_Zoom(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Zoom_BE2A8FE6_7337_4A46_B12D_52A5CC192E74, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Zoom_B6D97F7D_D2EC_48EA_BD1B_63BE7BCAAE82, "i", ".");
 
-const void* Berry_Image_Class_Get_Source_9E4AAC0E_63E8_4010_A79A_10C1703E94D2(Xila_Namespace::Graphics_Types::Image_Class* I)
+const void* Berry_Image_Class_Get_Source_B774F953_EB49_4188_B2EB_C4A3980E3251(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return I->Get_Source(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Source_9E4AAC0E_63E8_4010_A79A_10C1703E94D2, "c", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Source_B774F953_EB49_4188_B2EB_C4A3980E3251, "c", ".");
 
-bool Berry_Image_Class_Get_Antialias_55A9A67F_1838_4BB3_A172_63952C6C813B(Xila_Namespace::Graphics_Types::Image_Class* I)
+bool Berry_Image_Class_Get_Antialias_2FC7B3E0_FFB8_42A5_B139_63ABD51B590F(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return I->Get_Antialias(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Antialias_55A9A67F_1838_4BB3_A172_63952C6C813B, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Antialias_2FC7B3E0_FFB8_42A5_B139_63ABD51B590F, "b", ".");
 
-int Berry_Image_Class_Get_Size_Mode_6BBBF583_C280_488E_8A32_86F4B2402E80(Xila_Namespace::Graphics_Types::Image_Class* I)
+int Berry_Image_Class_Get_Size_Mode_DED37026_68F9_43D1_9A4B_D2325FBAE961(Xila_Namespace::Graphics_Types::Image_Class* I)
 {
 return (int)I->Get_Size_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Size_Mode_6BBBF583_C280_488E_8A32_86F4B2402E80, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Image_Class_Get_Size_Mode_DED37026_68F9_43D1_9A4B_D2325FBAE961, "i", ".");
 
 // - - Operators
 
@@ -4451,25 +4451,25 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Image_Type(scope:global, name:Image_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Image_Class_Initialize_F3EE6B75_AC6A_4C9E_85E4_6A0071962451)
-	init, ctype_func(Berry_Image_Class_Initialize_B98D2CF3_1999_4A99_A6BB_7AD87C225B7F)
-	deinit, ctype_func(Berry_Image_Class_Deinitialize_D40EB4C9_7900_4998_8377_D91A21AAB506)
-	Create, ctype_func(Berry_Image_Class_Create_51FA1801_9DA9_455A_B214_663615F62164)
-	Set_Offset_X, ctype_func(Berry_Image_Class_Set_Offset_X_C166C4B8_C41E_4421_8127_685ACFC9ABD4)
-	Set_Offset_Y, ctype_func(Berry_Image_Class_Set_Offset_Y_E298BEFE_F5BC_4880_8C7D_34F68439A283)
-	Set_Angle, ctype_func(Berry_Image_Class_Set_Angle_F9761A57_A07B_4F21_BBD4_09D009B34E78)
-	Set_Pivot, ctype_func(Berry_Image_Class_Set_Pivot_B4548636_A911_4AFF_8190_53165C41A518)
-	Set_Zoom, ctype_func(Berry_Image_Class_Set_Zoom_E57FBBAE_B8AF_42EE_BFB3_FCD7155DF23B)
-	Set_Antialias, ctype_func(Berry_Image_Class_Set_Antialias_B348A3E6_3DDC_4952_904C_645E6BEB17C9)
-	Set_Size_Mode, ctype_func(Berry_Image_Class_Set_Size_Mode_7008BB9A_FA3D_4272_BCFB_541E05992EA7)
-	Get_Offset_X, ctype_func(Berry_Image_Class_Get_Offset_X_19DA48D6_31A0_44F7_A1AE_AFA43DD85B7D)
-	Get_Offset_Y, ctype_func(Berry_Image_Class_Get_Offset_Y_7B5063EE_8416_4B29_95A8_DEE9901CE5A7)
-	Get_Angle, ctype_func(Berry_Image_Class_Get_Angle_9868382E_1302_4B7B_B2CE_D8D37109839A)
-	Get_Pivot, ctype_func(Berry_Image_Class_Get_Pivot_40878AAE_1A5C_4A17_9DE2_DB271A54BBE3)
-	Get_Zoom, ctype_func(Berry_Image_Class_Get_Zoom_BE2A8FE6_7337_4A46_B12D_52A5CC192E74)
-	Get_Source, ctype_func(Berry_Image_Class_Get_Source_9E4AAC0E_63E8_4010_A79A_10C1703E94D2)
-	Get_Antialias, ctype_func(Berry_Image_Class_Get_Antialias_55A9A67F_1838_4BB3_A172_63952C6C813B)
-	Get_Size_Mode, ctype_func(Berry_Image_Class_Get_Size_Mode_6BBBF583_C280_488E_8A32_86F4B2402E80)
+	init, ctype_func(Berry_Image_Class_Initialize_10B29F70_5E55_4681_B33E_67AC8B7DCEB5)
+	init, ctype_func(Berry_Image_Class_Initialize_3670F67B_7358_4935_9E53_9EB263B29947)
+	deinit, ctype_func(Berry_Image_Class_Deinitialize_9DCC1A71_6813_4520_85D9_81CE43E61120)
+	Create, ctype_func(Berry_Image_Class_Create_9AB15FFE_50D0_4629_BAF2_6FAA20E932B6)
+	Set_Offset_X, ctype_func(Berry_Image_Class_Set_Offset_X_0FE912EE_B597_415E_82DF_08FD8C076671)
+	Set_Offset_Y, ctype_func(Berry_Image_Class_Set_Offset_Y_C11A19C5_1F4C_44A0_A2B7_ADD25DF41D8E)
+	Set_Angle, ctype_func(Berry_Image_Class_Set_Angle_32F6B1EE_5DA3_41E8_B1B1_D6F1CE3ED34A)
+	Set_Pivot, ctype_func(Berry_Image_Class_Set_Pivot_DC611323_3D6B_4BC6_AAB3_DD5303940D88)
+	Set_Zoom, ctype_func(Berry_Image_Class_Set_Zoom_AC223681_ADBD_452D_9005_371562A91166)
+	Set_Antialias, ctype_func(Berry_Image_Class_Set_Antialias_82F3E06E_5E4F_414C_B34E_EAB373D0D83B)
+	Set_Size_Mode, ctype_func(Berry_Image_Class_Set_Size_Mode_14C17D1F_7A9B_479D_9888_64B63728FB31)
+	Get_Offset_X, ctype_func(Berry_Image_Class_Get_Offset_X_A6F7CCB5_4AFA_449F_87F8_387D1DB40D05)
+	Get_Offset_Y, ctype_func(Berry_Image_Class_Get_Offset_Y_BD881A68_DA73_4275_9FA4_110400E10A5F)
+	Get_Angle, ctype_func(Berry_Image_Class_Get_Angle_AA7AE0BD_A37F_4A6A_A6E9_2DA6FC5D38DF)
+	Get_Pivot, ctype_func(Berry_Image_Class_Get_Pivot_66EF0FDB_8129_4821_B550_2D3CFAD85A29)
+	Get_Zoom, ctype_func(Berry_Image_Class_Get_Zoom_B6D97F7D_D2EC_48EA_BD1B_63BE7BCAAE82)
+	Get_Source, ctype_func(Berry_Image_Class_Get_Source_B774F953_EB49_4188_B2EB_C4A3980E3251)
+	Get_Antialias, ctype_func(Berry_Image_Class_Get_Antialias_2FC7B3E0_FFB8_42A5_B139_63ABD51B590F)
+	Get_Size_Mode, ctype_func(Berry_Image_Class_Get_Size_Mode_DED37026_68F9_43D1_9A4B_D2325FBAE961)
 
 }
 @const_object_info_end */
@@ -4482,102 +4482,102 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Button_Matrix_Class_Initialize_1F4A6B21_0077_413A_AC20_BAE434D655CD(bvm* V)
+void * Berry_Button_Matrix_Class_Initialize_91894158_4347_4334_901A_6E60D10073DD(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Button_Matrix_Class));
 return new (Pointer) Graphics_Types::Button_Matrix_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Initialize_1F4A6B21_0077_413A_AC20_BAE434D655CD, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Initialize_91894158_4347_4334_901A_6E60D10073DD, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Button_Matrix_Class_Deinitialize_71B4D734_1605_4555_8DE2_E4C3BF7E84F7(bvm* V, Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
+void Berry_Button_Matrix_Class_Deinitialize_2BA04139_B5EE_438C_AC2F_5C4293D61F8E(bvm* V, Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
 {
 if (!I) { return; }
 I->~Button_Matrix_Class();
 be_free(V, I, sizeof(Graphics_Types::Button_Matrix_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Deinitialize_71B4D734_1605_4555_8DE2_E4C3BF7E84F7, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Deinitialize_2BA04139_B5EE_438C_AC2F_5C4293D61F8E, "", "@.");
 
 
 // - - Functions
-void Berry_Button_Matrix_Class_Create_CF4DE760_CCA1_4886_A9B7_CB8F7C8E3038(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, Object_Class* A_0)
+void Berry_Button_Matrix_Class_Create_BFF0F3F1_E97F_4A24_9945_7EDA18154F35(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Create_CF4DE760_CCA1_4886_A9B7_CB8F7C8E3038, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Create_BFF0F3F1_E97F_4A24_9945_7EDA18154F35, "", "..");
 
-void Berry_Button_Matrix_Class_Clear_Button_Control_DA178FC4_7FFF_4D55_8485_45F6DAC2D762(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
+void Berry_Button_Matrix_Class_Clear_Button_Control_692F3C57_1A4A_4D7C_B420_5622137A4709(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
 {
 return I->Clear_Button_Control((short unsigned int)A_0, (Button_Matrix_Control_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Clear_Button_Control_DA178FC4_7FFF_4D55_8485_45F6DAC2D762, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Clear_Button_Control_692F3C57_1A4A_4D7C_B420_5622137A4709, "", ".ii");
 
-void Berry_Button_Matrix_Class_Clear_All_Buttons_Control_C3109EEE_A89F_4B5C_8563_207A404A4A68(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
+void Berry_Button_Matrix_Class_Clear_All_Buttons_Control_045E8B43_6909_4BBD_94B0_A1146916B948(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
 {
 return I->Clear_All_Buttons_Control((Button_Matrix_Control_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Clear_All_Buttons_Control_C3109EEE_A89F_4B5C_8563_207A404A4A68, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Clear_All_Buttons_Control_045E8B43_6909_4BBD_94B0_A1146916B948, "", ".i");
 
-bool Berry_Button_Matrix_Class_Has_Button_Control_27BFCD00_612C_4C6F_84DF_1D4CA7058AA9(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
+bool Berry_Button_Matrix_Class_Has_Button_Control_7554D2AA_D752_49CD_86FD_90A921A80A8B(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
 {
 return I->Has_Button_Control((short unsigned int)A_0, (Button_Matrix_Control_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Has_Button_Control_27BFCD00_612C_4C6F_84DF_1D4CA7058AA9, "b", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Has_Button_Control_7554D2AA_D752_49CD_86FD_90A921A80A8B, "b", ".ii");
 
-void Berry_Button_Matrix_Class_Set_Button_Width_6E6D8A19_BBD4_45C8_8CF0_F815C73F204C(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
+void Berry_Button_Matrix_Class_Set_Button_Width_9C8A1534_3F9E_4470_B98C_26F416DF8F35(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
 {
 return I->Set_Button_Width((short unsigned int)A_0, (unsigned char)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Width_6E6D8A19_BBD4_45C8_8CF0_F815C73F204C, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Width_9C8A1534_3F9E_4470_B98C_26F416DF8F35, "", ".ii");
 
-void Berry_Button_Matrix_Class_Set_Selected_Button_ED34642F_531D_41AF_94F0_CD533124567F(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
+void Berry_Button_Matrix_Class_Set_Selected_Button_769E4720_A37D_492F_B26B_DA8905C5BA58(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
 {
 return I->Set_Selected_Button((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Selected_Button_ED34642F_531D_41AF_94F0_CD533124567F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Selected_Button_769E4720_A37D_492F_B26B_DA8905C5BA58, "", ".i");
 
-void Berry_Button_Matrix_Class_Set_Button_Control_D36EDFD0_F6D4_44DD_AD9A_A283C7E8ABA4(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
+void Berry_Button_Matrix_Class_Set_Button_Control_E2A3202F_2EE8_448C_A5B5_26332CC3A1A0(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0, int A_1)
 {
 return I->Set_Button_Control((short unsigned int)A_0, (Button_Matrix_Control_Type)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Control_D36EDFD0_F6D4_44DD_AD9A_A283C7E8ABA4, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Control_E2A3202F_2EE8_448C_A5B5_26332CC3A1A0, "", ".ii");
 
-void Berry_Button_Matrix_Class_Set_Button_Control_All_01AD454E_9342_47E6_83B5_AB99217D6F47(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
+void Berry_Button_Matrix_Class_Set_Button_Control_All_1DFDD373_748B_4A7D_AC40_41474099A073(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
 {
 return I->Set_Button_Control_All((Button_Matrix_Control_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Control_All_01AD454E_9342_47E6_83B5_AB99217D6F47, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_Button_Control_All_1DFDD373_748B_4A7D_AC40_41474099A073, "", ".i");
 
-void Berry_Button_Matrix_Class_Set_One_Checked_9B56A95A_2A76_45F8_98F2_81CE1D4458E8(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, bool A_0)
+void Berry_Button_Matrix_Class_Set_One_Checked_F593F28D_BCF6_4732_A8C4_40BB6615FA3A(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, bool A_0)
 {
 return I->Set_One_Checked(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_One_Checked_9B56A95A_2A76_45F8_98F2_81CE1D4458E8, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Set_One_Checked_F593F28D_BCF6_4732_A8C4_40BB6615FA3A, "", ".b");
 
-int Berry_Button_Matrix_Class_Get_Selected_Button_7C32FD82_6D80_449C_991D_A36FB9EEA9A8(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
+int Berry_Button_Matrix_Class_Get_Selected_Button_F62DD776_49EE_40BF_819D_806C429927E1(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
 {
 return (int)I->Get_Selected_Button(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Selected_Button_7C32FD82_6D80_449C_991D_A36FB9EEA9A8, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Selected_Button_F62DD776_49EE_40BF_819D_806C429927E1, "i", ".");
 
-const char* Berry_Button_Matrix_Class_Get_Button_Text_B586E469_51BB_46E0_A04D_F6DE76FD54C7(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
+const char* Berry_Button_Matrix_Class_Get_Button_Text_E56A5404_F24C_4C94_A528_4B19BF180F22(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I, int A_0)
 {
 return I->Get_Button_Text((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Button_Text_B586E469_51BB_46E0_A04D_F6DE76FD54C7, "s", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Button_Text_E56A5404_F24C_4C94_A528_4B19BF180F22, "s", ".i");
 
-bool Berry_Button_Matrix_Class_Get_Popovers_55C1D497_9EE5_47FF_A11C_E93C51E23EA3(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
+bool Berry_Button_Matrix_Class_Get_Popovers_28780573_DB31_48BF_B9BA_070F43EEABCD(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
 {
 return I->Get_Popovers(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Popovers_55C1D497_9EE5_47FF_A11C_E93C51E23EA3, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_Popovers_28780573_DB31_48BF_B9BA_070F43EEABCD, "b", ".");
 
-bool Berry_Button_Matrix_Class_Get_One_Checked_F58B698A_6D4A_452D_BA04_CD1609E3FD3F(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
+bool Berry_Button_Matrix_Class_Get_One_Checked_BA43CA82_92D8_48FE_8FF7_E81BB82AEF62(Xila_Namespace::Graphics_Types::Button_Matrix_Class* I)
 {
 return I->Get_One_Checked(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_One_Checked_F58B698A_6D4A_452D_BA04_CD1609E3FD3F, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Button_Matrix_Class_Get_One_Checked_BA43CA82_92D8_48FE_8FF7_E81BB82AEF62, "b", ".");
 
 // - - Operators
 
@@ -4587,21 +4587,21 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Button_Matrix_Type(scope:global, name:Button_Matrix_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Button_Matrix_Class_Initialize_1F4A6B21_0077_413A_AC20_BAE434D655CD)
-	deinit, ctype_func(Berry_Button_Matrix_Class_Deinitialize_71B4D734_1605_4555_8DE2_E4C3BF7E84F7)
-	Create, ctype_func(Berry_Button_Matrix_Class_Create_CF4DE760_CCA1_4886_A9B7_CB8F7C8E3038)
-	Clear_Button_Control, ctype_func(Berry_Button_Matrix_Class_Clear_Button_Control_DA178FC4_7FFF_4D55_8485_45F6DAC2D762)
-	Clear_All_Buttons_Control, ctype_func(Berry_Button_Matrix_Class_Clear_All_Buttons_Control_C3109EEE_A89F_4B5C_8563_207A404A4A68)
-	Has_Button_Control, ctype_func(Berry_Button_Matrix_Class_Has_Button_Control_27BFCD00_612C_4C6F_84DF_1D4CA7058AA9)
-	Set_Button_Width, ctype_func(Berry_Button_Matrix_Class_Set_Button_Width_6E6D8A19_BBD4_45C8_8CF0_F815C73F204C)
-	Set_Selected_Button, ctype_func(Berry_Button_Matrix_Class_Set_Selected_Button_ED34642F_531D_41AF_94F0_CD533124567F)
-	Set_Button_Control, ctype_func(Berry_Button_Matrix_Class_Set_Button_Control_D36EDFD0_F6D4_44DD_AD9A_A283C7E8ABA4)
-	Set_Button_Control_All, ctype_func(Berry_Button_Matrix_Class_Set_Button_Control_All_01AD454E_9342_47E6_83B5_AB99217D6F47)
-	Set_One_Checked, ctype_func(Berry_Button_Matrix_Class_Set_One_Checked_9B56A95A_2A76_45F8_98F2_81CE1D4458E8)
-	Get_Selected_Button, ctype_func(Berry_Button_Matrix_Class_Get_Selected_Button_7C32FD82_6D80_449C_991D_A36FB9EEA9A8)
-	Get_Button_Text, ctype_func(Berry_Button_Matrix_Class_Get_Button_Text_B586E469_51BB_46E0_A04D_F6DE76FD54C7)
-	Get_Popovers, ctype_func(Berry_Button_Matrix_Class_Get_Popovers_55C1D497_9EE5_47FF_A11C_E93C51E23EA3)
-	Get_One_Checked, ctype_func(Berry_Button_Matrix_Class_Get_One_Checked_F58B698A_6D4A_452D_BA04_CD1609E3FD3F)
+	init, ctype_func(Berry_Button_Matrix_Class_Initialize_91894158_4347_4334_901A_6E60D10073DD)
+	deinit, ctype_func(Berry_Button_Matrix_Class_Deinitialize_2BA04139_B5EE_438C_AC2F_5C4293D61F8E)
+	Create, ctype_func(Berry_Button_Matrix_Class_Create_BFF0F3F1_E97F_4A24_9945_7EDA18154F35)
+	Clear_Button_Control, ctype_func(Berry_Button_Matrix_Class_Clear_Button_Control_692F3C57_1A4A_4D7C_B420_5622137A4709)
+	Clear_All_Buttons_Control, ctype_func(Berry_Button_Matrix_Class_Clear_All_Buttons_Control_045E8B43_6909_4BBD_94B0_A1146916B948)
+	Has_Button_Control, ctype_func(Berry_Button_Matrix_Class_Has_Button_Control_7554D2AA_D752_49CD_86FD_90A921A80A8B)
+	Set_Button_Width, ctype_func(Berry_Button_Matrix_Class_Set_Button_Width_9C8A1534_3F9E_4470_B98C_26F416DF8F35)
+	Set_Selected_Button, ctype_func(Berry_Button_Matrix_Class_Set_Selected_Button_769E4720_A37D_492F_B26B_DA8905C5BA58)
+	Set_Button_Control, ctype_func(Berry_Button_Matrix_Class_Set_Button_Control_E2A3202F_2EE8_448C_A5B5_26332CC3A1A0)
+	Set_Button_Control_All, ctype_func(Berry_Button_Matrix_Class_Set_Button_Control_All_1DFDD373_748B_4A7D_AC40_41474099A073)
+	Set_One_Checked, ctype_func(Berry_Button_Matrix_Class_Set_One_Checked_F593F28D_BCF6_4732_A8C4_40BB6615FA3A)
+	Get_Selected_Button, ctype_func(Berry_Button_Matrix_Class_Get_Selected_Button_F62DD776_49EE_40BF_819D_806C429927E1)
+	Get_Button_Text, ctype_func(Berry_Button_Matrix_Class_Get_Button_Text_E56A5404_F24C_4C94_A528_4B19BF180F22)
+	Get_Popovers, ctype_func(Berry_Button_Matrix_Class_Get_Popovers_28780573_DB31_48BF_B9BA_070F43EEABCD)
+	Get_One_Checked, ctype_func(Berry_Button_Matrix_Class_Get_One_Checked_BA43CA82_92D8_48FE_8FF7_E81BB82AEF62)
 
 }
 @const_object_info_end */
@@ -4614,84 +4614,84 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Bar_Class_Initialize_9BF3A679_C4A2_49CF_9F32_2C99B047606E(bvm* V)
+void * Berry_Bar_Class_Initialize_E50FACA5_AA3A_4B8A_A07D_A8040279776E(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Bar_Class));
 return new (Pointer) Graphics_Types::Bar_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Initialize_9BF3A679_C4A2_49CF_9F32_2C99B047606E, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Initialize_E50FACA5_AA3A_4B8A_A07D_A8040279776E, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Bar_Class_Deinitialize_10100DCD_DB9D_4760_BA6F_40349561112D(bvm* V, Xila_Namespace::Graphics_Types::Bar_Class* I)
+void Berry_Bar_Class_Deinitialize_B7CCE1B7_31AC_480D_9924_4128FF62C52C(bvm* V, Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 if (!I) { return; }
 I->~Bar_Class();
 be_free(V, I, sizeof(Graphics_Types::Bar_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Deinitialize_10100DCD_DB9D_4760_BA6F_40349561112D, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Deinitialize_B7CCE1B7_31AC_480D_9924_4128FF62C52C, "", "@.");
 
 
 // - - Functions
-void Berry_Bar_Class_Create_F5F10B48_B343_44A0_82A0_275ECC8F85E6(Xila_Namespace::Graphics_Types::Bar_Class* I, Object_Class* A_0)
+void Berry_Bar_Class_Create_D3CB33E5_2B1E_4AE4_ACDE_12AE26BB7384(Xila_Namespace::Graphics_Types::Bar_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Create_F5F10B48_B343_44A0_82A0_275ECC8F85E6, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Create_D3CB33E5_2B1E_4AE4_ACDE_12AE26BB7384, "", "..");
 
-void Berry_Bar_Class_Set_Value_C2AB00ED_4F8D_44BA_A85A_F31A3437172A(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, bool A_1 = true)
+void Berry_Bar_Class_Set_Value_6B01CB49_F8E7_4B2D_91D1_93721995D663(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, bool A_1 = true)
 {
 return I->Set_Value((int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Value_C2AB00ED_4F8D_44BA_A85A_F31A3437172A, "", ".i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Value_6B01CB49_F8E7_4B2D_91D1_93721995D663, "", ".i[b");
 
-void Berry_Bar_Class_Set_Start_Value_CE198449_A2E8_4DC1_B74C_2D87762B138C(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, bool A_1 = true)
+void Berry_Bar_Class_Set_Start_Value_B15BA767_2D35_405A_9DF8_E4D950377B60(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, bool A_1 = true)
 {
 return I->Set_Start_Value((int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Start_Value_CE198449_A2E8_4DC1_B74C_2D87762B138C, "", ".i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Start_Value_B15BA767_2D35_405A_9DF8_E4D950377B60, "", ".i[b");
 
-void Berry_Bar_Class_Set_Range_F8E54477_153F_4BC8_A2A8_02159FC42FA2(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, int A_1)
+void Berry_Bar_Class_Set_Range_82720663_32BB_4C73_8525_841C0DCF38CF(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0, int A_1)
 {
 return I->Set_Range((int)A_0, (int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Range_F8E54477_153F_4BC8_A2A8_02159FC42FA2, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Range_82720663_32BB_4C73_8525_841C0DCF38CF, "", ".ii");
 
-void Berry_Bar_Class_Set_Mode_42487337_96DF_4DD1_B323_E8CEC63D35E4(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0)
+void Berry_Bar_Class_Set_Mode_333A5B48_A3D7_4D3D_9907_66739E6D327F(Xila_Namespace::Graphics_Types::Bar_Class* I, int A_0)
 {
 return I->Set_Mode((Bar_Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Mode_42487337_96DF_4DD1_B323_E8CEC63D35E4, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Set_Mode_333A5B48_A3D7_4D3D_9907_66739E6D327F, "", ".i");
 
-int Berry_Bar_Class_Get_Value_57D79EAE_6F09_4499_ADA9_4330A27F5F1B(Xila_Namespace::Graphics_Types::Bar_Class* I)
+int Berry_Bar_Class_Get_Value_B3645752_851F_46F9_B4B5_95267737D7CC(Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 return (int)I->Get_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Value_57D79EAE_6F09_4499_ADA9_4330A27F5F1B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Value_B3645752_851F_46F9_B4B5_95267737D7CC, "i", ".");
 
-int Berry_Bar_Class_Get_Start_Value_262A8642_D899_4CDE_B97C_E5604CC55104(Xila_Namespace::Graphics_Types::Bar_Class* I)
+int Berry_Bar_Class_Get_Start_Value_3A229E8A_8FC6_4DC6_90E7_F11790EFEA9F(Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 return (int)I->Get_Start_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Start_Value_262A8642_D899_4CDE_B97C_E5604CC55104, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Start_Value_3A229E8A_8FC6_4DC6_90E7_F11790EFEA9F, "i", ".");
 
-int Berry_Bar_Class_Get_Minimum_Value_E954A043_1B8B_4DB8_B08F_2CFDF3997BDB(Xila_Namespace::Graphics_Types::Bar_Class* I)
+int Berry_Bar_Class_Get_Minimum_Value_2310B8AF_CCB8_4CDF_8D1F_27AEBA9217D0(Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 return (int)I->Get_Minimum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Minimum_Value_E954A043_1B8B_4DB8_B08F_2CFDF3997BDB, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Minimum_Value_2310B8AF_CCB8_4CDF_8D1F_27AEBA9217D0, "i", ".");
 
-int Berry_Bar_Class_Get_Maximum_Value_3834CA7D_92C0_4001_AEC7_3B9A6978D593(Xila_Namespace::Graphics_Types::Bar_Class* I)
+int Berry_Bar_Class_Get_Maximum_Value_5430FF54_5EDA_41CB_A4A0_129DB6C10824(Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 return (int)I->Get_Maximum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Maximum_Value_3834CA7D_92C0_4001_AEC7_3B9A6978D593, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Maximum_Value_5430FF54_5EDA_41CB_A4A0_129DB6C10824, "i", ".");
 
-int Berry_Bar_Class_Get_Mode_7FCACA6D_52AB_4DFE_822A_67FB9641A681(Xila_Namespace::Graphics_Types::Bar_Class* I)
+int Berry_Bar_Class_Get_Mode_5E7CA6E8_DC05_4CF1_BFC1_AAABB327E8AA(Xila_Namespace::Graphics_Types::Bar_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Mode_7FCACA6D_52AB_4DFE_822A_67FB9641A681, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Bar_Class_Get_Mode_5E7CA6E8_DC05_4CF1_BFC1_AAABB327E8AA, "i", ".");
 
 // - - Operators
 
@@ -4701,18 +4701,18 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Bar_Type(scope:global, name:Bar_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Bar_Class_Initialize_9BF3A679_C4A2_49CF_9F32_2C99B047606E)
-	deinit, ctype_func(Berry_Bar_Class_Deinitialize_10100DCD_DB9D_4760_BA6F_40349561112D)
-	Create, ctype_func(Berry_Bar_Class_Create_F5F10B48_B343_44A0_82A0_275ECC8F85E6)
-	Set_Value, ctype_func(Berry_Bar_Class_Set_Value_C2AB00ED_4F8D_44BA_A85A_F31A3437172A)
-	Set_Start_Value, ctype_func(Berry_Bar_Class_Set_Start_Value_CE198449_A2E8_4DC1_B74C_2D87762B138C)
-	Set_Range, ctype_func(Berry_Bar_Class_Set_Range_F8E54477_153F_4BC8_A2A8_02159FC42FA2)
-	Set_Mode, ctype_func(Berry_Bar_Class_Set_Mode_42487337_96DF_4DD1_B323_E8CEC63D35E4)
-	Get_Value, ctype_func(Berry_Bar_Class_Get_Value_57D79EAE_6F09_4499_ADA9_4330A27F5F1B)
-	Get_Start_Value, ctype_func(Berry_Bar_Class_Get_Start_Value_262A8642_D899_4CDE_B97C_E5604CC55104)
-	Get_Minimum_Value, ctype_func(Berry_Bar_Class_Get_Minimum_Value_E954A043_1B8B_4DB8_B08F_2CFDF3997BDB)
-	Get_Maximum_Value, ctype_func(Berry_Bar_Class_Get_Maximum_Value_3834CA7D_92C0_4001_AEC7_3B9A6978D593)
-	Get_Mode, ctype_func(Berry_Bar_Class_Get_Mode_7FCACA6D_52AB_4DFE_822A_67FB9641A681)
+	init, ctype_func(Berry_Bar_Class_Initialize_E50FACA5_AA3A_4B8A_A07D_A8040279776E)
+	deinit, ctype_func(Berry_Bar_Class_Deinitialize_B7CCE1B7_31AC_480D_9924_4128FF62C52C)
+	Create, ctype_func(Berry_Bar_Class_Create_D3CB33E5_2B1E_4AE4_ACDE_12AE26BB7384)
+	Set_Value, ctype_func(Berry_Bar_Class_Set_Value_6B01CB49_F8E7_4B2D_91D1_93721995D663)
+	Set_Start_Value, ctype_func(Berry_Bar_Class_Set_Start_Value_B15BA767_2D35_405A_9DF8_E4D950377B60)
+	Set_Range, ctype_func(Berry_Bar_Class_Set_Range_82720663_32BB_4C73_8525_841C0DCF38CF)
+	Set_Mode, ctype_func(Berry_Bar_Class_Set_Mode_333A5B48_A3D7_4D3D_9907_66739E6D327F)
+	Get_Value, ctype_func(Berry_Bar_Class_Get_Value_B3645752_851F_46F9_B4B5_95267737D7CC)
+	Get_Start_Value, ctype_func(Berry_Bar_Class_Get_Start_Value_3A229E8A_8FC6_4DC6_90E7_F11790EFEA9F)
+	Get_Minimum_Value, ctype_func(Berry_Bar_Class_Get_Minimum_Value_2310B8AF_CCB8_4CDF_8D1F_27AEBA9217D0)
+	Get_Maximum_Value, ctype_func(Berry_Bar_Class_Get_Maximum_Value_5430FF54_5EDA_41CB_A4A0_129DB6C10824)
+	Get_Mode, ctype_func(Berry_Bar_Class_Get_Mode_5E7CA6E8_DC05_4CF1_BFC1_AAABB327E8AA)
 
 }
 @const_object_info_end */
@@ -4725,144 +4725,144 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Arc_Class_Initialize_41B11606_5102_4867_A683_ABE4A8B4EC7B(bvm* V)
+void * Berry_Arc_Class_Initialize_47D26B35_52F2_4340_9A1A_559D072D34AE(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Arc_Class));
 return new (Pointer) Graphics_Types::Arc_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Initialize_41B11606_5102_4867_A683_ABE4A8B4EC7B, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Initialize_47D26B35_52F2_4340_9A1A_559D072D34AE, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Arc_Class_Deinitialize_807FD77C_F902_485F_BD3A_903CDE278B82(bvm* V, Xila_Namespace::Graphics_Types::Arc_Class* I)
+void Berry_Arc_Class_Deinitialize_98471AE1_25E4_4C99_A82B_B90D834CEA01(bvm* V, Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 if (!I) { return; }
 I->~Arc_Class();
 be_free(V, I, sizeof(Graphics_Types::Arc_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Deinitialize_807FD77C_F902_485F_BD3A_903CDE278B82, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Deinitialize_98471AE1_25E4_4C99_A82B_B90D834CEA01, "", "@.");
 
 
 // - - Functions
-void Berry_Arc_Class_Create_8BA0B391_989C_49C5_9948_024AD519851C(Xila_Namespace::Graphics_Types::Arc_Class* I, Object_Class* A_0)
+void Berry_Arc_Class_Create_2527D3BF_40A1_4A4B_B65E_81D485115074(Xila_Namespace::Graphics_Types::Arc_Class* I, Object_Class* A_0)
 {
 return I->Create(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Create_8BA0B391_989C_49C5_9948_024AD519851C, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Create_2527D3BF_40A1_4A4B_B65E_81D485115074, "", "..");
 
-void Berry_Arc_Class_Set_Start_Angle_978192C9_A634_490C_B1D6_DB707042BF16(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Start_Angle_83C4233D_387B_4BE4_9970_93F2DBE55D56(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Start_Angle((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Start_Angle_978192C9_A634_490C_B1D6_DB707042BF16, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Start_Angle_83C4233D_387B_4BE4_9970_93F2DBE55D56, "", ".i");
 
-void Berry_Arc_Class_Set_End_Angle_2CB11613_54BD_4D5D_BEDE_438944CD3D43(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_End_Angle_17AA92EC_D202_4F5A_969E_E5B8CD320BB3(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_End_Angle((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_End_Angle_2CB11613_54BD_4D5D_BEDE_438944CD3D43, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_End_Angle_17AA92EC_D202_4F5A_969E_E5B8CD320BB3, "", ".i");
 
-void Berry_Arc_Class_Set_Angles_EE15EBAF_6A99_4530_AEAE_4C2167FE5EA2(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
+void Berry_Arc_Class_Set_Angles_8E34BA92_FA14_4222_A6F8_490AB6F298DD(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
 {
 return I->Set_Angles((short unsigned int)A_0, (short unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Angles_EE15EBAF_6A99_4530_AEAE_4C2167FE5EA2, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Angles_8E34BA92_FA14_4222_A6F8_490AB6F298DD, "", ".ii");
 
-void Berry_Arc_Class_Set_Background_Start_Angle_F44A0167_91A0_4036_9754_57BB96EE6FF7(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Background_Start_Angle_779F644E_ED7D_4B5B_AC24_371248CACDFA(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Background_Start_Angle((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_Start_Angle_F44A0167_91A0_4036_9754_57BB96EE6FF7, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_Start_Angle_779F644E_ED7D_4B5B_AC24_371248CACDFA, "", ".i");
 
-void Berry_Arc_Class_Set_Background_End_Angle_B49BD4FB_0494_416A_A994_8D5409EB52F6(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Background_End_Angle_BB57297B_DEF4_4B1A_9908_0E6CA4581C4E(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Background_End_Angle((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_End_Angle_B49BD4FB_0494_416A_A994_8D5409EB52F6, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_End_Angle_BB57297B_DEF4_4B1A_9908_0E6CA4581C4E, "", ".i");
 
-void Berry_Arc_Class_Set_Background_Angles_27302A62_73CD_430D_AD47_1D1E239A260F(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
+void Berry_Arc_Class_Set_Background_Angles_58106BE4_0625_461E_9948_76882867B1B4(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
 {
 return I->Set_Background_Angles((short unsigned int)A_0, (short unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_Angles_27302A62_73CD_430D_AD47_1D1E239A260F, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Background_Angles_58106BE4_0625_461E_9948_76882867B1B4, "", ".ii");
 
-void Berry_Arc_Class_Set_Range_5BFE4BEE_4FFE_47A7_AC28_5F653CBC4EFA(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
+void Berry_Arc_Class_Set_Range_80398B89_CF52_4A3F_B57C_E88704A16275(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0, int A_1)
 {
 return I->Set_Range((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Range_5BFE4BEE_4FFE_47A7_AC28_5F653CBC4EFA, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Range_80398B89_CF52_4A3F_B57C_E88704A16275, "", ".ii");
 
-void Berry_Arc_Class_Set_Change_Rate_BD49E80C_BE6B_4245_A646_7E71BBBEA40A(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Change_Rate_61AA8D86_F035_42E9_802E_B25DD96631EA(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Change_Rate((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Change_Rate_BD49E80C_BE6B_4245_A646_7E71BBBEA40A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Change_Rate_61AA8D86_F035_42E9_802E_B25DD96631EA, "", ".i");
 
-void Berry_Arc_Class_Set_Rotation_A60F8D8E_ADD1_4084_80CC_DE9269D35CAF(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Rotation_C3CADBD1_BEA9_46D2_BEDD_83705761D9A8(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Rotation((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Rotation_A60F8D8E_ADD1_4084_80CC_DE9269D35CAF, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Rotation_C3CADBD1_BEA9_46D2_BEDD_83705761D9A8, "", ".i");
 
-void Berry_Arc_Class_Set_Mode_20A4C48E_A815_47D7_B5B8_9027C01A892D(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Mode_537C209F_BA3D_4E80_9A42_2007B1E3894B(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Mode((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Mode_20A4C48E_A815_47D7_B5B8_9027C01A892D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Mode_537C209F_BA3D_4E80_9A42_2007B1E3894B, "", ".i");
 
-void Berry_Arc_Class_Set_Value_93782630_F717_41B9_801C_D0D1A2D09700(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
+void Berry_Arc_Class_Set_Value_88544A2C_1832_4017_98DA_C54A19485DFB(Xila_Namespace::Graphics_Types::Arc_Class* I, int A_0)
 {
 return I->Set_Value((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Value_93782630_F717_41B9_801C_D0D1A2D09700, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Set_Value_88544A2C_1832_4017_98DA_C54A19485DFB, "", ".i");
 
-int Berry_Arc_Class_Get_Angle_Start_95696D41_2A05_4297_9166_BB7F23D5E890(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Angle_Start_77FA1363_2869_40AF_813B_60D4D75B136A(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Angle_Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Angle_Start_95696D41_2A05_4297_9166_BB7F23D5E890, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Angle_Start_77FA1363_2869_40AF_813B_60D4D75B136A, "i", ".");
 
-int Berry_Arc_Class_Get_Angle_End_F367BDF8_F601_4EF2_91B3_0DAFF6CABBAA(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Angle_End_637F3213_A2D7_4B3D_8D42_07A59968DD99(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Angle_End(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Angle_End_F367BDF8_F601_4EF2_91B3_0DAFF6CABBAA, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Angle_End_637F3213_A2D7_4B3D_8D42_07A59968DD99, "i", ".");
 
-int Berry_Arc_Class_Get_Background_Angle_Start_4E31E5EB_E1B1_423C_9CCE_EE1CF4D2BCB1(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Background_Angle_Start_3DE28B02_9E8B_4E89_91DF_9A9AD301ACB7(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Background_Angle_Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Background_Angle_Start_4E31E5EB_E1B1_423C_9CCE_EE1CF4D2BCB1, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Background_Angle_Start_3DE28B02_9E8B_4E89_91DF_9A9AD301ACB7, "i", ".");
 
-int Berry_Arc_Class_Get_Background_Angle_End_C6A54D1B_8D6F_4FDD_A595_262D002F53A3(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Background_Angle_End_2C7A7DDD_7091_45F3_ACA5_68C61E9F99C6(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Background_Angle_End(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Background_Angle_End_C6A54D1B_8D6F_4FDD_A595_262D002F53A3, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Background_Angle_End_2C7A7DDD_7091_45F3_ACA5_68C61E9F99C6, "i", ".");
 
-int Berry_Arc_Class_Get_Value_6521BDF0_6082_4085_BFE1_CBC6610F59BA(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Value_418C7F6D_6500_476E_BD18_964E73259802(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Value_6521BDF0_6082_4085_BFE1_CBC6610F59BA, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Value_418C7F6D_6500_476E_BD18_964E73259802, "i", ".");
 
-int Berry_Arc_Class_Get_Minimum_Value_C01C5578_8F2C_4621_A81C_9CD051A97350(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Minimum_Value_F4EC2BE3_2A35_4171_B0A8_206EA16E95E3(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Minimum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Minimum_Value_C01C5578_8F2C_4621_A81C_9CD051A97350, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Minimum_Value_F4EC2BE3_2A35_4171_B0A8_206EA16E95E3, "i", ".");
 
-int Berry_Arc_Class_Get_Maximum_Value_8DFD8237_0F61_430D_A7DC_5C9FA4D17289(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Maximum_Value_C97B1661_363B_4BA4_A521_255426A55B31(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Maximum_Value(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Maximum_Value_8DFD8237_0F61_430D_A7DC_5C9FA4D17289, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Maximum_Value_C97B1661_363B_4BA4_A521_255426A55B31, "i", ".");
 
-int Berry_Arc_Class_Get_Mode_CB5815D0_8B1F_4444_94DB_3EE8AE4366CC(Xila_Namespace::Graphics_Types::Arc_Class* I)
+int Berry_Arc_Class_Get_Mode_F9D4D351_30B4_422A_86D1_29E8FA2E024D(Xila_Namespace::Graphics_Types::Arc_Class* I)
 {
 return (int)I->Get_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Mode_CB5815D0_8B1F_4444_94DB_3EE8AE4366CC, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Arc_Class_Get_Mode_F9D4D351_30B4_422A_86D1_29E8FA2E024D, "i", ".");
 
 // - - Operators
 
@@ -4872,28 +4872,28 @@ BE_EXPORT_VARIABLE const bclass Berry_Object_Type;
 class Berry_Arc_Type(scope:global, name:Arc_Type, super: Berry_Object_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Arc_Class_Initialize_41B11606_5102_4867_A683_ABE4A8B4EC7B)
-	deinit, ctype_func(Berry_Arc_Class_Deinitialize_807FD77C_F902_485F_BD3A_903CDE278B82)
-	Create, ctype_func(Berry_Arc_Class_Create_8BA0B391_989C_49C5_9948_024AD519851C)
-	Set_Start_Angle, ctype_func(Berry_Arc_Class_Set_Start_Angle_978192C9_A634_490C_B1D6_DB707042BF16)
-	Set_End_Angle, ctype_func(Berry_Arc_Class_Set_End_Angle_2CB11613_54BD_4D5D_BEDE_438944CD3D43)
-	Set_Angles, ctype_func(Berry_Arc_Class_Set_Angles_EE15EBAF_6A99_4530_AEAE_4C2167FE5EA2)
-	Set_Background_Start_Angle, ctype_func(Berry_Arc_Class_Set_Background_Start_Angle_F44A0167_91A0_4036_9754_57BB96EE6FF7)
-	Set_Background_End_Angle, ctype_func(Berry_Arc_Class_Set_Background_End_Angle_B49BD4FB_0494_416A_A994_8D5409EB52F6)
-	Set_Background_Angles, ctype_func(Berry_Arc_Class_Set_Background_Angles_27302A62_73CD_430D_AD47_1D1E239A260F)
-	Set_Range, ctype_func(Berry_Arc_Class_Set_Range_5BFE4BEE_4FFE_47A7_AC28_5F653CBC4EFA)
-	Set_Change_Rate, ctype_func(Berry_Arc_Class_Set_Change_Rate_BD49E80C_BE6B_4245_A646_7E71BBBEA40A)
-	Set_Rotation, ctype_func(Berry_Arc_Class_Set_Rotation_A60F8D8E_ADD1_4084_80CC_DE9269D35CAF)
-	Set_Mode, ctype_func(Berry_Arc_Class_Set_Mode_20A4C48E_A815_47D7_B5B8_9027C01A892D)
-	Set_Value, ctype_func(Berry_Arc_Class_Set_Value_93782630_F717_41B9_801C_D0D1A2D09700)
-	Get_Angle_Start, ctype_func(Berry_Arc_Class_Get_Angle_Start_95696D41_2A05_4297_9166_BB7F23D5E890)
-	Get_Angle_End, ctype_func(Berry_Arc_Class_Get_Angle_End_F367BDF8_F601_4EF2_91B3_0DAFF6CABBAA)
-	Get_Background_Angle_Start, ctype_func(Berry_Arc_Class_Get_Background_Angle_Start_4E31E5EB_E1B1_423C_9CCE_EE1CF4D2BCB1)
-	Get_Background_Angle_End, ctype_func(Berry_Arc_Class_Get_Background_Angle_End_C6A54D1B_8D6F_4FDD_A595_262D002F53A3)
-	Get_Value, ctype_func(Berry_Arc_Class_Get_Value_6521BDF0_6082_4085_BFE1_CBC6610F59BA)
-	Get_Minimum_Value, ctype_func(Berry_Arc_Class_Get_Minimum_Value_C01C5578_8F2C_4621_A81C_9CD051A97350)
-	Get_Maximum_Value, ctype_func(Berry_Arc_Class_Get_Maximum_Value_8DFD8237_0F61_430D_A7DC_5C9FA4D17289)
-	Get_Mode, ctype_func(Berry_Arc_Class_Get_Mode_CB5815D0_8B1F_4444_94DB_3EE8AE4366CC)
+	init, ctype_func(Berry_Arc_Class_Initialize_47D26B35_52F2_4340_9A1A_559D072D34AE)
+	deinit, ctype_func(Berry_Arc_Class_Deinitialize_98471AE1_25E4_4C99_A82B_B90D834CEA01)
+	Create, ctype_func(Berry_Arc_Class_Create_2527D3BF_40A1_4A4B_B65E_81D485115074)
+	Set_Start_Angle, ctype_func(Berry_Arc_Class_Set_Start_Angle_83C4233D_387B_4BE4_9970_93F2DBE55D56)
+	Set_End_Angle, ctype_func(Berry_Arc_Class_Set_End_Angle_17AA92EC_D202_4F5A_969E_E5B8CD320BB3)
+	Set_Angles, ctype_func(Berry_Arc_Class_Set_Angles_8E34BA92_FA14_4222_A6F8_490AB6F298DD)
+	Set_Background_Start_Angle, ctype_func(Berry_Arc_Class_Set_Background_Start_Angle_779F644E_ED7D_4B5B_AC24_371248CACDFA)
+	Set_Background_End_Angle, ctype_func(Berry_Arc_Class_Set_Background_End_Angle_BB57297B_DEF4_4B1A_9908_0E6CA4581C4E)
+	Set_Background_Angles, ctype_func(Berry_Arc_Class_Set_Background_Angles_58106BE4_0625_461E_9948_76882867B1B4)
+	Set_Range, ctype_func(Berry_Arc_Class_Set_Range_80398B89_CF52_4A3F_B57C_E88704A16275)
+	Set_Change_Rate, ctype_func(Berry_Arc_Class_Set_Change_Rate_61AA8D86_F035_42E9_802E_B25DD96631EA)
+	Set_Rotation, ctype_func(Berry_Arc_Class_Set_Rotation_C3CADBD1_BEA9_46D2_BEDD_83705761D9A8)
+	Set_Mode, ctype_func(Berry_Arc_Class_Set_Mode_537C209F_BA3D_4E80_9A42_2007B1E3894B)
+	Set_Value, ctype_func(Berry_Arc_Class_Set_Value_88544A2C_1832_4017_98DA_C54A19485DFB)
+	Get_Angle_Start, ctype_func(Berry_Arc_Class_Get_Angle_Start_77FA1363_2869_40AF_813B_60D4D75B136A)
+	Get_Angle_End, ctype_func(Berry_Arc_Class_Get_Angle_End_637F3213_A2D7_4B3D_8D42_07A59968DD99)
+	Get_Background_Angle_Start, ctype_func(Berry_Arc_Class_Get_Background_Angle_Start_3DE28B02_9E8B_4E89_91DF_9A9AD301ACB7)
+	Get_Background_Angle_End, ctype_func(Berry_Arc_Class_Get_Background_Angle_End_2C7A7DDD_7091_45F3_ACA5_68C61E9F99C6)
+	Get_Value, ctype_func(Berry_Arc_Class_Get_Value_418C7F6D_6500_476E_BD18_964E73259802)
+	Get_Minimum_Value, ctype_func(Berry_Arc_Class_Get_Minimum_Value_F4EC2BE3_2A35_4171_B0A8_206EA16E95E3)
+	Get_Maximum_Value, ctype_func(Berry_Arc_Class_Get_Maximum_Value_C97B1661_363B_4BA4_A521_255426A55B31)
+	Get_Mode, ctype_func(Berry_Arc_Class_Get_Mode_F9D4D351_30B4_422A_86D1_29E8FA2E024D)
 
 }
 @const_object_info_end */
@@ -4906,61 +4906,61 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Point_Class_Initialize_C778D61F_2C70_4EC3_85A7_4CECCBFFC827(bvm* V)
+void * Berry_Point_Class_Initialize_D289E5C9_EAB1_45C2_AE44_A278DB4D83EC(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Point_Class));
 return new (Pointer) Graphics_Types::Point_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Initialize_C778D61F_2C70_4EC3_85A7_4CECCBFFC827, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Initialize_D289E5C9_EAB1_45C2_AE44_A278DB4D83EC, "+_p", "@");
 
-void * Berry_Point_Class_Initialize_5D1D86A6_1C53_4FBC_BAA0_81C95C7A518B(bvm* V, int A_0, int A_1)
+void * Berry_Point_Class_Initialize_83D07506_2FD5_4978_921B_B0FB64436F1D(bvm* V, int A_0, int A_1)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Point_Class));
 return new (Pointer) Graphics_Types::Point_Class((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Initialize_5D1D86A6_1C53_4FBC_BAA0_81C95C7A518B, "+_p", "@ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Initialize_83D07506_2FD5_4978_921B_B0FB64436F1D, "+_p", "@ii");
 
 
 // - - Destructors
-void Berry_Point_Class_Deinitialize_7FBE73EA_180C_4380_878C_76B310DF8387(bvm* V, Xila_Namespace::Graphics_Types::Point_Class* I)
+void Berry_Point_Class_Deinitialize_0092D962_AA26_4935_8645_D9F675226EAE(bvm* V, Xila_Namespace::Graphics_Types::Point_Class* I)
 {
 if (!I) { return; }
 I->~Point_Class();
 be_free(V, I, sizeof(Graphics_Types::Point_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Deinitialize_7FBE73EA_180C_4380_878C_76B310DF8387, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Deinitialize_0092D962_AA26_4935_8645_D9F675226EAE, "", "@.");
 
 
 // - - Functions
-void Berry_Point_Class_Set_035E64BA_91D8_4CF4_9454_6DEDC656DBFB(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0, int A_1)
+void Berry_Point_Class_Set_45CD888C_3349_43BB_975C_8DF8EE5C7764(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0, int A_1)
 {
 return I->Set((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_035E64BA_91D8_4CF4_9454_6DEDC656DBFB, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_45CD888C_3349_43BB_975C_8DF8EE5C7764, "", ".ii");
 
-void Berry_Point_Class_Set_X_07B39C27_A9EE_4209_B5E7_AC10D38C5262(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0)
+void Berry_Point_Class_Set_X_F5C7419A_F312_4EB5_864B_53D4C2A8E998(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0)
 {
 return I->Set_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_X_07B39C27_A9EE_4209_B5E7_AC10D38C5262, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_X_F5C7419A_F312_4EB5_864B_53D4C2A8E998, "", ".i");
 
-void Berry_Point_Class_Set_Y_64CFEF3C_C5DB_420D_BE6A_90ABA780699D(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0)
+void Berry_Point_Class_Set_Y_5A2DB2AB_A536_495B_A98A_A3722FE9E061(Xila_Namespace::Graphics_Types::Point_Class* I, int A_0)
 {
 return I->Set_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_Y_64CFEF3C_C5DB_420D_BE6A_90ABA780699D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Set_Y_5A2DB2AB_A536_495B_A98A_A3722FE9E061, "", ".i");
 
-int Berry_Point_Class_Get_X_B04672EC_7B06_48B7_AC3E_16E7AB49D2FB(Xila_Namespace::Graphics_Types::Point_Class* I)
+int Berry_Point_Class_Get_X_1CE787BD_4E3F_4D1A_8400_09D9A78EB549(Xila_Namespace::Graphics_Types::Point_Class* I)
 {
 return (int)I->Get_X(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Get_X_B04672EC_7B06_48B7_AC3E_16E7AB49D2FB, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Get_X_1CE787BD_4E3F_4D1A_8400_09D9A78EB549, "i", ".");
 
-int Berry_Point_Class_Get_Y_2C66D13D_2BCC_4924_AA20_D407A7F8FEC2(Xila_Namespace::Graphics_Types::Point_Class* I)
+int Berry_Point_Class_Get_Y_249AC658_5E2F_469E_9D91_5016A36F7797(Xila_Namespace::Graphics_Types::Point_Class* I)
 {
 return (int)I->Get_Y(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Get_Y_2C66D13D_2BCC_4924_AA20_D407A7F8FEC2, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Get_Y_249AC658_5E2F_469E_9D91_5016A36F7797, "i", ".");
 
 // - - Operators
 
@@ -4969,14 +4969,14 @@ BE_FUNC_CTYPE_DECLARE(Berry_Point_Class_Get_Y_2C66D13D_2BCC_4924_AA20_D407A7F8FE
 class Berry_Point_Type(scope:global, name:Point_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Point_Class_Initialize_C778D61F_2C70_4EC3_85A7_4CECCBFFC827)
-	init, ctype_func(Berry_Point_Class_Initialize_5D1D86A6_1C53_4FBC_BAA0_81C95C7A518B)
-	deinit, ctype_func(Berry_Point_Class_Deinitialize_7FBE73EA_180C_4380_878C_76B310DF8387)
-	Set, ctype_func(Berry_Point_Class_Set_035E64BA_91D8_4CF4_9454_6DEDC656DBFB)
-	Set_X, ctype_func(Berry_Point_Class_Set_X_07B39C27_A9EE_4209_B5E7_AC10D38C5262)
-	Set_Y, ctype_func(Berry_Point_Class_Set_Y_64CFEF3C_C5DB_420D_BE6A_90ABA780699D)
-	Get_X, ctype_func(Berry_Point_Class_Get_X_B04672EC_7B06_48B7_AC3E_16E7AB49D2FB)
-	Get_Y, ctype_func(Berry_Point_Class_Get_Y_2C66D13D_2BCC_4924_AA20_D407A7F8FEC2)
+	init, ctype_func(Berry_Point_Class_Initialize_D289E5C9_EAB1_45C2_AE44_A278DB4D83EC)
+	init, ctype_func(Berry_Point_Class_Initialize_83D07506_2FD5_4978_921B_B0FB64436F1D)
+	deinit, ctype_func(Berry_Point_Class_Deinitialize_0092D962_AA26_4935_8645_D9F675226EAE)
+	Set, ctype_func(Berry_Point_Class_Set_45CD888C_3349_43BB_975C_8DF8EE5C7764)
+	Set_X, ctype_func(Berry_Point_Class_Set_X_F5C7419A_F312_4EB5_864B_53D4C2A8E998)
+	Set_Y, ctype_func(Berry_Point_Class_Set_Y_5A2DB2AB_A536_495B_A98A_A3722FE9E061)
+	Get_X, ctype_func(Berry_Point_Class_Get_X_1CE787BD_4E3F_4D1A_8400_09D9A78EB549)
+	Get_Y, ctype_func(Berry_Point_Class_Get_Y_249AC658_5E2F_469E_9D91_5016A36F7797)
 
 }
 @const_object_info_end */
@@ -4989,624 +4989,624 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Style_Class_Initialize_2F313AFA_0523_40CE_BFD6_C5852663E762(bvm* V)
+void * Berry_Style_Class_Initialize_285A7F82_6037_4F26_9ED6_B3B965072897(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Style_Class));
 return new (Pointer) Graphics_Types::Style_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Initialize_2F313AFA_0523_40CE_BFD6_C5852663E762, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Initialize_285A7F82_6037_4F26_9ED6_B3B965072897, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Style_Class_Deinitialize_9926DB03_A53B_4546_8AFA_1672DDA4FE8F(bvm* V, Xila_Namespace::Graphics_Types::Style_Class* I)
+void Berry_Style_Class_Deinitialize_09471878_0ECB_4CCC_B372_25A85254A29C(bvm* V, Xila_Namespace::Graphics_Types::Style_Class* I)
 {
 if (!I) { return; }
 I->~Style_Class();
 be_free(V, I, sizeof(Graphics_Types::Style_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Deinitialize_9926DB03_A53B_4546_8AFA_1672DDA4FE8F, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Deinitialize_09471878_0ECB_4CCC_B372_25A85254A29C, "", "@.");
 
 
 // - - Functions
-void Berry_Style_Class_Initialize_5C691F89_817C_43C8_8B02_C174557A9592(Xila_Namespace::Graphics_Types::Style_Class* I)
+void Berry_Style_Class_Initialize_604F7506_C19F_4A85_B9EF_52B933781D94(Xila_Namespace::Graphics_Types::Style_Class* I)
 {
 return I->Initialize(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Initialize_5C691F89_817C_43C8_8B02_C174557A9592, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Initialize_604F7506_C19F_4A85_B9EF_52B933781D94, "", ".");
 
-int Berry_Style_Class_Register_Property_34FB35B8_5244_407A_BD14_F652728D100F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+int Berry_Style_Class_Register_Property_4AF80146_570D_47C7_A981_ED3EAF298714(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return (int)I->Register_Property((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Register_Property_34FB35B8_5244_407A_BD14_F652728D100F, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Register_Property_4AF80146_570D_47C7_A981_ED3EAF298714, "i", ".i");
 
-bool Berry_Style_Class_Remove_Property_B8421BFB_7119_451C_A3BD_35C550412ED1(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+bool Berry_Style_Class_Remove_Property_13383ADE_F5D4_4D12_B4F9_C1056269C4D8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Remove_Property((lv_style_prop_t)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Remove_Property_B8421BFB_7119_451C_A3BD_35C550412ED1, "b", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Remove_Property_13383ADE_F5D4_4D12_B4F9_C1056269C4D8, "b", ".i");
 
-void Berry_Style_Class_Reset_A7671647_61C5_4D42_8F4C_75F033A48EC6(Xila_Namespace::Graphics_Types::Style_Class* I)
+void Berry_Style_Class_Reset_7FD226C8_C146_4C8A_A2C4_B50DDD69F30D(Xila_Namespace::Graphics_Types::Style_Class* I)
 {
 return I->Reset(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Reset_A7671647_61C5_4D42_8F4C_75F033A48EC6, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Reset_7FD226C8_C146_4C8A_A2C4_B50DDD69F30D, "", ".");
 
-void Berry_Style_Class_Set_Alignment_1C5FDCEF_777E_4090_98C2_59A325BA3800(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Alignment_0CC17EF8_6037_4484_B476_2B9D0C2423CE(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Alignment((Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Alignment_1C5FDCEF_777E_4090_98C2_59A325BA3800, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Alignment_0CC17EF8_6037_4484_B476_2B9D0C2423CE, "", ".i");
 
-void Berry_Style_Class_Set_Animation_Time_FF57C25D_BA06_41B3_AD30_AEDAB820F292(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Animation_Time_A35EDF8F_7247_4BB3_A3F0_EA2074D1E0EE(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Animation_Time((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Animation_Time_FF57C25D_BA06_41B3_AD30_AEDAB820F292, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Animation_Time_A35EDF8F_7247_4BB3_A3F0_EA2074D1E0EE, "", ".i");
 
-void Berry_Style_Class_Set_Animation_Speed_B9A60796_1764_4F2A_9A8A_6853AE7DF9E8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Animation_Speed_056EFB5F_0140_484F_8FE5_3678122E7A49(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Animation_Speed((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Animation_Speed_B9A60796_1764_4F2A_9A8A_6853AE7DF9E8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Animation_Speed_056EFB5F_0140_484F_8FE5_3678122E7A49, "", ".i");
 
-void Berry_Style_Class_Set_Arc_Color_4E4B3D4A_17D0_4350_95A9_800D6EA269F8(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Arc_Color_FC6C19AC_3C33_4BC9_9605_C116BF3B00A1(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Arc_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Color_4E4B3D4A_17D0_4350_95A9_800D6EA269F8, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Color_FC6C19AC_3C33_4BC9_9605_C116BF3B00A1, "", "..");
 
-void Berry_Style_Class_Set_Arc_Opacity_4A636957_3FA4_4078_90A0_F38A37FB71CA(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Arc_Opacity_207ABFEE_A39B_4E00_BAEF_AEA8210406A9(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Arc_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Opacity_4A636957_3FA4_4078_90A0_F38A37FB71CA, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Opacity_207ABFEE_A39B_4E00_BAEF_AEA8210406A9, "", ".i");
 
-void Berry_Style_Class_Set_Arc_Rounded_A79F7E5E_84E6_40B9_A6B3_18F1DE058413(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
+void Berry_Style_Class_Set_Arc_Rounded_9D7A7D2F_7391_4D35_A152_A98291D0C434(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
 {
 return I->Set_Arc_Rounded(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Rounded_A79F7E5E_84E6_40B9_A6B3_18F1DE058413, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Rounded_9D7A7D2F_7391_4D35_A152_A98291D0C434, "", ".b");
 
-void Berry_Style_Class_Set_Arc_Width_B94330B3_9B1E_49DB_9602_9BE263D30A3A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Arc_Width_8AFF1291_D7D8_4E4A_B571_5CED9BC2ED80(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Arc_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Width_B94330B3_9B1E_49DB_9602_9BE263D30A3A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Arc_Width_8AFF1291_D7D8_4E4A_B571_5CED9BC2ED80, "", ".i");
 
-void Berry_Style_Class_Set_Base_Direction_672A170D_9836_4A64_92D5_CCE7DF46A335(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Base_Direction_0238D1AC_C17E_4B77_9FB7_83E9229469F8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Base_Direction((Base_Direction_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Base_Direction_672A170D_9836_4A64_92D5_CCE7DF46A335, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Base_Direction_0238D1AC_C17E_4B77_9FB7_83E9229469F8, "", ".i");
 
-void Berry_Style_Class_Set_Background_Color_7C433306_8168_4EE9_BCA6_BACB44936920(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Background_Color_F78690D2_D24E_4EFD_BD76_C611C6ED7F0D(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Background_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Color_7C433306_8168_4EE9_BCA6_BACB44936920, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Color_F78690D2_D24E_4EFD_BD76_C611C6ED7F0D, "", "..");
 
-void Berry_Style_Class_Set_Background_Dither_Mode_0B39DB86_CA7A_4D76_90A3_2745E5A41A04(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Dither_Mode_86E454FF_914C_4449_824C_5A55E5A1D004(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Dither_Mode((Dither_Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Dither_Mode_0B39DB86_CA7A_4D76_90A3_2745E5A41A04, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Dither_Mode_86E454FF_914C_4449_824C_5A55E5A1D004, "", ".i");
 
-void Berry_Style_Class_Set_Background_Gradient_Color_4BF6710B_B7BC_4A76_8BCC_4506AFF0C461(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Background_Gradient_Color_03989192_6A94_43FE_AF1F_966CF860B95D(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Background_Gradient_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Color_4BF6710B_B7BC_4A76_8BCC_4506AFF0C461, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Color_03989192_6A94_43FE_AF1F_966CF860B95D, "", "..");
 
-void Berry_Style_Class_Set_Background_Gradient_Direction_73008CA6_647C_4C3C_B0BC_A89F95FEEE6D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Gradient_Direction_9B8D4C2A_C8DC_4749_9B9A_FA9DAE19C130(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Gradient_Direction((Gradient_Direction_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Direction_73008CA6_647C_4C3C_B0BC_A89F95FEEE6D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Direction_9B8D4C2A_C8DC_4749_9B9A_FA9DAE19C130, "", ".i");
 
-void Berry_Style_Class_Set_Background_Gradient_Stop_D591142F_4234_45D8_8333_31076E61067A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Gradient_Stop_D162BF53_0B44_4C3A_B7CE_310F5675F0C4(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Gradient_Stop((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Stop_D591142F_4234_45D8_8333_31076E61067A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Gradient_Stop_D162BF53_0B44_4C3A_B7CE_310F5675F0C4, "", ".i");
 
-void Berry_Style_Class_Set_Background_Image_Opacity_4220109C_B3C7_45BE_ACE5_BC079E75DF38(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Image_Opacity_E50361C2_90E7_45E0_BCD9_AF8FB5BFE641(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Image_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Opacity_4220109C_B3C7_45BE_ACE5_BC079E75DF38, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Opacity_E50361C2_90E7_45E0_BCD9_AF8FB5BFE641, "", ".i");
 
-void Berry_Style_Class_Set_Background_Image_Recolor_7FE658AF_0922_433B_9141_2B1D4D1F411D(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Background_Image_Recolor_7E996666_0BFD_4BF7_A827_2886CDCACBB7(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Background_Image_Recolor(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Recolor_7FE658AF_0922_433B_9141_2B1D4D1F411D, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Recolor_7E996666_0BFD_4BF7_A827_2886CDCACBB7, "", "..");
 
-void Berry_Style_Class_Set_Background_Image_Recolor_Opacity_08845769_EC86_4BCA_8020_04E6FE7033A7(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Image_Recolor_Opacity_609EFB14_631E_4FDE_82FC_1BBE08D4313F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Image_Recolor_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Recolor_Opacity_08845769_EC86_4BCA_8020_04E6FE7033A7, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Recolor_Opacity_609EFB14_631E_4FDE_82FC_1BBE08D4313F, "", ".i");
 
-void Berry_Style_Class_Set_Background_Image_Tiled_5CDC5020_5BFB_4590_A841_F32CB310A5DF(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
+void Berry_Style_Class_Set_Background_Image_Tiled_320906F4_59B3_4D07_BA73_F8F51698FAD9(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
 {
 return I->Set_Background_Image_Tiled(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Tiled_5CDC5020_5BFB_4590_A841_F32CB310A5DF, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Image_Tiled_320906F4_59B3_4D07_BA73_F8F51698FAD9, "", ".b");
 
-void Berry_Style_Class_Set_Background_Main_Stop_09FF91A3_38F7_4630_A8A5_ABF9337FA1E1(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Main_Stop_9A7DC37B_6071_43E3_AF78_55C545497A31(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Main_Stop((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Main_Stop_09FF91A3_38F7_4630_A8A5_ABF9337FA1E1, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Main_Stop_9A7DC37B_6071_43E3_AF78_55C545497A31, "", ".i");
 
-void Berry_Style_Class_Set_Background_Opacity_A459DF15_DE69_4F99_9700_4F5901694BFC(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Background_Opacity_7BF5CF20_95DA_4862_A38C_B7C26E62701C(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Background_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Opacity_A459DF15_DE69_4F99_9700_4F5901694BFC, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Background_Opacity_7BF5CF20_95DA_4862_A38C_B7C26E62701C, "", ".i");
 
-void Berry_Style_Class_Set_Blend_Mode_29BA2801_677B_44C2_B54F_0DDB40D2DC9A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Blend_Mode_16262485_C90B_478F_9CCB_6F1215439E98(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Blend_Mode((Blend_Mode_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Blend_Mode_29BA2801_677B_44C2_B54F_0DDB40D2DC9A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Blend_Mode_16262485_C90B_478F_9CCB_6F1215439E98, "", ".i");
 
-void Berry_Style_Class_Set_Border_Color_B280A82E_A347_43CD_96E8_8C88AB432F87(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Border_Color_0487B129_B77B_4170_AFEB_7DF1104399E4(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Border_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Color_B280A82E_A347_43CD_96E8_8C88AB432F87, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Color_0487B129_B77B_4170_AFEB_7DF1104399E4, "", "..");
 
-void Berry_Style_Class_Set_Border_Opacity_5946365D_BBB0_40A0_B1DB_DF97138C7604(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Border_Opacity_0BAAB985_1D35_4D24_9343_269C3DC67B18(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Border_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Opacity_5946365D_BBB0_40A0_B1DB_DF97138C7604, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Opacity_0BAAB985_1D35_4D24_9343_269C3DC67B18, "", ".i");
 
-void Berry_Style_Class_Set_Border_Post_29D96141_9A3E_4C4F_ADF8_6E70204B70E1(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
+void Berry_Style_Class_Set_Border_Post_CD34BBFE_95B5_4BA1_8B85_D94344CF0EF0(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
 {
 return I->Set_Border_Post(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Post_29D96141_9A3E_4C4F_ADF8_6E70204B70E1, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Post_CD34BBFE_95B5_4BA1_8B85_D94344CF0EF0, "", ".b");
 
-void Berry_Style_Class_Set_Border_Side_D5B2E95F_6C90_4046_BAAE_45B0801BBC87(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Border_Side_570EA13E_07D4_4166_A8DD_0BAF982EE106(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Border_Side((Border_Side_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Side_D5B2E95F_6C90_4046_BAAE_45B0801BBC87, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Side_570EA13E_07D4_4166_A8DD_0BAF982EE106, "", ".i");
 
-void Berry_Style_Class_Set_Border_Width_82C8FC3A_D0CE_4295_A536_C8549601F1ED(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Border_Width_3399AB81_FF23_48F5_AFF1_7A561E9F3BFD(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Border_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Width_82C8FC3A_D0CE_4295_A536_C8549601F1ED, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Border_Width_3399AB81_FF23_48F5_AFF1_7A561E9F3BFD, "", ".i");
 
-void Berry_Style_Class_Set_Clip_Corner_B046DFEF_D184_4097_8CBE_DDB89FD193E7(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
+void Berry_Style_Class_Set_Clip_Corner_32ADCC4E_A67A_4E93_84F4_43239E7A0BAE(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
 {
 return I->Set_Clip_Corner(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Clip_Corner_B046DFEF_D184_4097_8CBE_DDB89FD193E7, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Clip_Corner_32ADCC4E_A67A_4E93_84F4_43239E7A0BAE, "", ".b");
 
-void Berry_Style_Class_Set_Color_Filter_Descriptor_B93DA37D_D7DC_465F_842C_A63A7352EB77(Xila_Namespace::Graphics_Types::Style_Class* I, ::Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* A_0)
+void Berry_Style_Class_Set_Color_Filter_Descriptor_07357A52_17F5_4794_947F_3FE332FE7630(Xila_Namespace::Graphics_Types::Style_Class* I, ::Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* A_0)
 {
 return I->Set_Color_Filter_Descriptor(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Color_Filter_Descriptor_B93DA37D_D7DC_465F_842C_A63A7352EB77, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Color_Filter_Descriptor_07357A52_17F5_4794_947F_3FE332FE7630, "", "..");
 
-void Berry_Style_Class_Set_Color_Filter_Opacity_C7BE5AAC_1485_4C2A_9F73_7C1EBA6032B3(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Color_Filter_Opacity_A989C586_1C04_43E1_AF8E_BCA8CF4246DF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Color_Filter_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Color_Filter_Opacity_C7BE5AAC_1485_4C2A_9F73_7C1EBA6032B3, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Color_Filter_Opacity_A989C586_1C04_43E1_AF8E_BCA8CF4246DF, "", ".i");
 
-void Berry_Style_Class_Set_Flex_Cross_Place_174DC5E4_F6EF_4C35_9D64_9CEF564044C8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Flex_Cross_Place_CA39A214_714F_42EA_AD98_1D5E2FD889CE(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Flex_Cross_Place((Flex_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Cross_Place_174DC5E4_F6EF_4C35_9D64_9CEF564044C8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Cross_Place_CA39A214_714F_42EA_AD98_1D5E2FD889CE, "", ".i");
 
-void Berry_Style_Class_Set_Flex_Flow_726CBD4C_98F9_4086_9BF6_A3A02C906B1F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Flex_Flow_4C384BC5_9FDA_4759_8CAF_78B48A23D857(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Flex_Flow((Flex_Flow_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Flow_726CBD4C_98F9_4086_9BF6_A3A02C906B1F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Flow_4C384BC5_9FDA_4759_8CAF_78B48A23D857, "", ".i");
 
-void Berry_Style_Class_Set_Flex_Grow_88D68F08_4438_4FA6_88B2_9E7EFADF5383(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Flex_Grow_D27BA67C_6AD8_4016_AC41_AE9FE2061B25(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Flex_Grow((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Grow_88D68F08_4438_4FA6_88B2_9E7EFADF5383, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Grow_D27BA67C_6AD8_4016_AC41_AE9FE2061B25, "", ".i");
 
-void Berry_Style_Class_Set_Flex_Main_Place_1EACB9A4_9C5B_44D5_984A_631553C45CB1(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Flex_Main_Place_1FEF52CB_10C9_4695_9F3E_82DE9DE53E59(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Flex_Main_Place((Flex_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Main_Place_1EACB9A4_9C5B_44D5_984A_631553C45CB1, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Main_Place_1FEF52CB_10C9_4695_9F3E_82DE9DE53E59, "", ".i");
 
-void Berry_Style_Class_Set_Flex_Track_Place_31922E78_A825_4767_BA04_F394D64019E6(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Flex_Track_Place_82E0140C_198E_4D7F_95E7_BD02A3316640(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Flex_Track_Place((Flex_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Track_Place_31922E78_A825_4767_BA04_F394D64019E6, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Flex_Track_Place_82E0140C_198E_4D7F_95E7_BD02A3316640, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_Column_Position_E967D813_97AE_437E_B798_A4D8EF79E20F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_Column_Position_FD4AE0B8_0C2A_4186_9D64_AFFFB2585F10(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_Column_Position((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Column_Position_E967D813_97AE_437E_B798_A4D8EF79E20F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Column_Position_FD4AE0B8_0C2A_4186_9D64_AFFFB2585F10, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_Column_Span_7B5C8A2F_9241_46D5_A58D_2C1C2172A68F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_Column_Span_CC712F98_237F_4993_82F8_B18D7778322E(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_Column_Span((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Column_Span_7B5C8A2F_9241_46D5_A58D_2C1C2172A68F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Column_Span_CC712F98_237F_4993_82F8_B18D7778322E, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_Row_Position_259FEBFC_BDBF_46D4_90E8_6C6BDEA03982(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_Row_Position_1D1009F0_995F_4449_B4E7_D9F083D376CB(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_Row_Position((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Row_Position_259FEBFC_BDBF_46D4_90E8_6C6BDEA03982, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Row_Position_1D1009F0_995F_4449_B4E7_D9F083D376CB, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_Row_Span_5C154396_7291_4AE9_9E61_07DFD87E30AB(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_Row_Span_767F8AE4_41CD_4DC2_8B7D_8B0FBDF8E1BC(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_Row_Span((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Row_Span_5C154396_7291_4AE9_9E61_07DFD87E30AB, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Row_Span_767F8AE4_41CD_4DC2_8B7D_8B0FBDF8E1BC, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_X_Alignment_5CE34834_E0FB_4073_8AFB_B068E9135F8A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_X_Alignment_A1EDB0F0_5AB2_4C54_87BE_8FAB9117F964(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_X_Alignment((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_X_Alignment_5CE34834_E0FB_4073_8AFB_B068E9135F8A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_X_Alignment_A1EDB0F0_5AB2_4C54_87BE_8FAB9117F964, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Cell_Y_Alignment_1C7762AA_4A14_403B_A4F9_8B5669E9B721(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Cell_Y_Alignment_209705A4_1D9F_43A9_A6CC_F3EBFBF295DD(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Cell_Y_Alignment((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Y_Alignment_1C7762AA_4A14_403B_A4F9_8B5669E9B721, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Cell_Y_Alignment_209705A4_1D9F_43A9_A6CC_F3EBFBF295DD, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Column_Alignment_E6C9C320_DFED_49EC_9E45_C64CBDEDDDC8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Column_Alignment_7095FAB7_D869_4731_BA46_97C2A9489A78(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Column_Alignment((Grid_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Column_Alignment_E6C9C320_DFED_49EC_9E45_C64CBDEDDDC8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Column_Alignment_7095FAB7_D869_4731_BA46_97C2A9489A78, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Column_Descriptor_Array_4FB6E133_3327_4CCC_8FE6_CA098B8BDAA4(Xila_Namespace::Graphics_Types::Style_Class* I, const short int* A_0)
+void Berry_Style_Class_Set_Grid_Column_Descriptor_Array_B76A5E33_6894_40D8_9437_D27DCA6C6599(Xila_Namespace::Graphics_Types::Style_Class* I, const short int* A_0)
 {
 return I->Set_Grid_Column_Descriptor_Array(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Column_Descriptor_Array_4FB6E133_3327_4CCC_8FE6_CA098B8BDAA4, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Column_Descriptor_Array_B76A5E33_6894_40D8_9437_D27DCA6C6599, "", ".s");
 
-void Berry_Style_Class_Set_Grid_Row_Alignment_4011FA8C_BE57_4790_96B9_50C6FDFCC0F5(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Grid_Row_Alignment_10E043BA_519B_451A_B333_494E8770D797(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Grid_Row_Alignment((Grid_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Row_Alignment_4011FA8C_BE57_4790_96B9_50C6FDFCC0F5, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Row_Alignment_10E043BA_519B_451A_B333_494E8770D797, "", ".i");
 
-void Berry_Style_Class_Set_Grid_Row_Descriptor_Array_DDE7BDA7_5E56_4DE4_9953_FF00C18BF6D7(Xila_Namespace::Graphics_Types::Style_Class* I, const short int* A_0)
+void Berry_Style_Class_Set_Grid_Row_Descriptor_Array_037E342D_0465_40C1_B628_69C6D0121733(Xila_Namespace::Graphics_Types::Style_Class* I, const short int* A_0)
 {
 return I->Set_Grid_Row_Descriptor_Array(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Row_Descriptor_Array_DDE7BDA7_5E56_4DE4_9953_FF00C18BF6D7, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Grid_Row_Descriptor_Array_037E342D_0465_40C1_B628_69C6D0121733, "", ".s");
 
-void Berry_Style_Class_Set_Height_9006561F_0CCC_481C_A6B7_4FCEC59EC144(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Height_01992120_EF31_49A9_A2F1_8E570776114D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Height_9006561F_0CCC_481C_A6B7_4FCEC59EC144, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Height_01992120_EF31_49A9_A2F1_8E570776114D, "", ".i");
 
-void Berry_Style_Class_Set_Image_Opacity_B6F5F025_7604_4BD2_8457_86F003542379(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Image_Opacity_429ADE00_3F39_4381_AEDC_0BAE4CFE9639(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Image_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Opacity_B6F5F025_7604_4BD2_8457_86F003542379, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Opacity_429ADE00_3F39_4381_AEDC_0BAE4CFE9639, "", ".i");
 
-void Berry_Style_Class_Set_Image_Recolor_22859E20_8187_496A_A736_33085F079049(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Image_Recolor_271204C9_6C1F_45A3_A8A5_0A3A30EC2358(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Image_Recolor(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Recolor_22859E20_8187_496A_A736_33085F079049, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Recolor_271204C9_6C1F_45A3_A8A5_0A3A30EC2358, "", "..");
 
-void Berry_Style_Class_Set_Image_Recolor_Opacity_F8206FAD_986E_470C_9051_6B236736F825(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Image_Recolor_Opacity_7F2F03BE_7979_4C22_8B29_4E41E6306C35(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Image_Recolor_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Recolor_Opacity_F8206FAD_986E_470C_9051_6B236736F825, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Image_Recolor_Opacity_7F2F03BE_7979_4C22_8B29_4E41E6306C35, "", ".i");
 
-void Berry_Style_Class_Set_Layout_4ACEF2D8_985D_4200_AFCF_9F7096036CDF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Layout_36F41736_8491_4512_AE3E_4061E0103E63(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Layout((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Layout_4ACEF2D8_985D_4200_AFCF_9F7096036CDF, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Layout_36F41736_8491_4512_AE3E_4061E0103E63, "", ".i");
 
-void Berry_Style_Class_Set_Line_Color_B01D0513_EC0E_449D_8E69_A5E31FE7E74B(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Line_Color_F65C25B8_E32B_4CD2_B738_8C0F33DC9917(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Line_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Color_B01D0513_EC0E_449D_8E69_A5E31FE7E74B, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Color_F65C25B8_E32B_4CD2_B738_8C0F33DC9917, "", "..");
 
-void Berry_Style_Class_Set_Line_Dash_Gap_9F4A9E2F_8715_47E1_B96B_24013B410657(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Line_Dash_Gap_48D95368_3170_46F7_B4FD_A5872B89EBAA(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Line_Dash_Gap((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Dash_Gap_9F4A9E2F_8715_47E1_B96B_24013B410657, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Dash_Gap_48D95368_3170_46F7_B4FD_A5872B89EBAA, "", ".i");
 
-void Berry_Style_Class_Set_Line_Dash_Width_CE57DFD5_AD5F_4719_A1A6_53DD32B9AE6E(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Line_Dash_Width_2199CFDD_1C70_4179_A503_F2BEEABE0C1F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Line_Dash_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Dash_Width_CE57DFD5_AD5F_4719_A1A6_53DD32B9AE6E, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Dash_Width_2199CFDD_1C70_4179_A503_F2BEEABE0C1F, "", ".i");
 
-void Berry_Style_Class_Set_Line_Opacity_2895FB87_6D8E_4E8D_B467_361D07E08504(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Line_Opacity_51A44C24_279A_445B_A0BB_76A7C58D6752(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Line_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Opacity_2895FB87_6D8E_4E8D_B467_361D07E08504, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Opacity_51A44C24_279A_445B_A0BB_76A7C58D6752, "", ".i");
 
-void Berry_Style_Class_Set_Line_Rounded_905E3585_EB8E_42F1_978A_0CD788EEBB61(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
+void Berry_Style_Class_Set_Line_Rounded_B55F523B_B30A_405C_A347_E6A9B4D601A0(Xila_Namespace::Graphics_Types::Style_Class* I, bool A_0)
 {
 return I->Set_Line_Rounded(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Rounded_905E3585_EB8E_42F1_978A_0CD788EEBB61, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Rounded_B55F523B_B30A_405C_A347_E6A9B4D601A0, "", ".b");
 
-void Berry_Style_Class_Set_Line_Width_E4DD32C9_0163_43C4_A0B9_98405550DBDF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Line_Width_ECD8B4E8_BDA6_405E_9E5B_A9049A6E44AE(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Line_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Width_E4DD32C9_0163_43C4_A0B9_98405550DBDF, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Line_Width_ECD8B4E8_BDA6_405E_9E5B_A9049A6E44AE, "", ".i");
 
-void Berry_Style_Class_Set_Maximum_Height_DA120148_CBB1_4633_8A4E_10789743C100(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Maximum_Height_3A4D36D0_7713_49AD_A539_6E0F58E0250D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Maximum_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Maximum_Height_DA120148_CBB1_4633_8A4E_10789743C100, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Maximum_Height_3A4D36D0_7713_49AD_A539_6E0F58E0250D, "", ".i");
 
-void Berry_Style_Class_Set_Maximum_Width_FC4F2539_70E4_4F53_B475_1316BFD93089(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Maximum_Width_BF7F209C_403F_4ADA_99AA_E42B51519B94(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Maximum_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Maximum_Width_FC4F2539_70E4_4F53_B475_1316BFD93089, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Maximum_Width_BF7F209C_403F_4ADA_99AA_E42B51519B94, "", ".i");
 
-void Berry_Style_Class_Set_Minimum_Height_5F03C7F6_3C3C_4733_BAE5_61BCADF5D14E(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Minimum_Height_540F7B7A_A975_4A71_9E9D_CC283A58EE41(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Minimum_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Minimum_Height_5F03C7F6_3C3C_4733_BAE5_61BCADF5D14E, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Minimum_Height_540F7B7A_A975_4A71_9E9D_CC283A58EE41, "", ".i");
 
-void Berry_Style_Class_Set_Minimum_Width_C53E15BE_69AA_4373_A16B_33365377F092(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Minimum_Width_193F19B9_2C32_47CF_B41E_010261246AD7(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Minimum_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Minimum_Width_C53E15BE_69AA_4373_A16B_33365377F092, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Minimum_Width_193F19B9_2C32_47CF_B41E_010261246AD7, "", ".i");
 
-void Berry_Style_Class_Set_Opacity_6130BE03_B55C_4BA9_9989_9D76F22AC745(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Opacity_44FD6C1E_F32F_475F_B0A4_04DADCF2FA3F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Opacity_6130BE03_B55C_4BA9_9989_9D76F22AC745, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Opacity_44FD6C1E_F32F_475F_B0A4_04DADCF2FA3F, "", ".i");
 
-void Berry_Style_Class_Set_Outline_Color_214AA4D9_21B6_4D99_99B9_D9533DB807A3(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Outline_Color_735C1128_FB3C_4EC0_97C4_D2F56B30DD35(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Outline_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Color_214AA4D9_21B6_4D99_99B9_D9533DB807A3, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Color_735C1128_FB3C_4EC0_97C4_D2F56B30DD35, "", "..");
 
-void Berry_Style_Class_Set_Outline_Opacity_5479DE7E_DE45_4BE8_B2C0_E0F36E7E2D93(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Outline_Opacity_DFC5FEDD_FDD9_4FBF_9D2C_5F6FCEF9C124(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Outline_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Opacity_5479DE7E_DE45_4BE8_B2C0_E0F36E7E2D93, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Opacity_DFC5FEDD_FDD9_4FBF_9D2C_5F6FCEF9C124, "", ".i");
 
-void Berry_Style_Class_Set_Outline_Pad_2F609EAA_A7DC_4AE8_AAF2_F0E6ACF61B91(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Outline_Pad_046ECC42_AAC5_40F6_9D6D_75F63EA715D8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Outline_Pad((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Pad_2F609EAA_A7DC_4AE8_AAF2_F0E6ACF61B91, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Pad_046ECC42_AAC5_40F6_9D6D_75F63EA715D8, "", ".i");
 
-void Berry_Style_Class_Set_Outline_Width_373B74E4_E2F1_4298_BAC7_CF5A75D47DE5(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Outline_Width_15872936_4579_4743_B085_C22865F6D79F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Outline_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Width_373B74E4_E2F1_4298_BAC7_CF5A75D47DE5, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Outline_Width_15872936_4579_4743_B085_C22865F6D79F, "", ".i");
 
-void Berry_Style_Class_Set_Pad_All_247906EC_0550_4B84_A6A9_3D6336CA0A07(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_All_F4186FBF_97DB_4096_B335_D7DE180AA604(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_All((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_All_247906EC_0550_4B84_A6A9_3D6336CA0A07, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_All_F4186FBF_97DB_4096_B335_D7DE180AA604, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Bottom_4649EEAE_583E_4C23_8E40_B71D8111FAAF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Bottom_A401DC62_0F12_48D6_9D21_7C73430AC685(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Bottom((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Bottom_4649EEAE_583E_4C23_8E40_B71D8111FAAF, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Bottom_A401DC62_0F12_48D6_9D21_7C73430AC685, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Left_336C0DCB_07A3_4F63_9DAE_0A9985F70681(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Left_D9E5C414_F6B6_49C2_8FFB_22BD9F1FE9C9(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Left((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Left_336C0DCB_07A3_4F63_9DAE_0A9985F70681, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Left_D9E5C414_F6B6_49C2_8FFB_22BD9F1FE9C9, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Right_5294FD60_CBA7_4A88_A4B2_79F11CF387B0(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Right_DB07DC9D_586E_4418_8F93_EDE4F6783B5C(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Right((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Right_5294FD60_CBA7_4A88_A4B2_79F11CF387B0, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Right_DB07DC9D_586E_4418_8F93_EDE4F6783B5C, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Top_05E4DAD9_9BE8_48A2_B303_BCD9967865D4(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Top_B06D9759_907B_4F8B_B780_CBA14E99385F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Top((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Top_05E4DAD9_9BE8_48A2_B303_BCD9967865D4, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Top_B06D9759_907B_4F8B_B780_CBA14E99385F, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Row_2CB2F912_1CB0_4E06_94E6_FE7552D06998(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Row_2B8C3267_6D3C_4BE0_9738_4138F2B33F5C(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Row((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Row_2CB2F912_1CB0_4E06_94E6_FE7552D06998, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Row_2B8C3267_6D3C_4BE0_9738_4138F2B33F5C, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Column_0EE37778_0B40_4A91_9DA2_C23821E78842(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Column_5B44BE62_B9D9_43B1_A023_EE152088EAD4(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Column((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Column_0EE37778_0B40_4A91_9DA2_C23821E78842, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Column_5B44BE62_B9D9_43B1_A023_EE152088EAD4, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Gap_B12E1878_A87B_4D4E_8EE9_601B373C3881(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Gap_013E6EA8_6264_4FE6_AF99_E1F403F3FCB1(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Gap((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Gap_B12E1878_A87B_4D4E_8EE9_601B373C3881, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Gap_013E6EA8_6264_4FE6_AF99_E1F403F3FCB1, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Horizontal_1AC48361_B2FC_46BC_86AA_FC030B603AF8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Horizontal_1C935B97_ECC1_4B5B_902D_69D22C42761F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Horizontal((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Horizontal_1AC48361_B2FC_46BC_86AA_FC030B603AF8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Horizontal_1C935B97_ECC1_4B5B_902D_69D22C42761F, "", ".i");
 
-void Berry_Style_Class_Set_Pad_Vertical_4DB663A5_FFD1_4440_93C1_592B0D85920A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Pad_Vertical_5E006B1F_F7A0_40A6_8D7D_C26FC1429D31(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Pad_Vertical((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Vertical_4DB663A5_FFD1_4440_93C1_592B0D85920A, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Pad_Vertical_5E006B1F_F7A0_40A6_8D7D_C26FC1429D31, "", ".i");
 
-void Berry_Style_Class_Set_Radius_55323587_FF67_4A45_A301_71A20C01471F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Radius_1B1BEFF1_3C04_4897_A941_5DFE5CF958AF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Radius((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Radius_55323587_FF67_4A45_A301_71A20C01471F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Radius_1B1BEFF1_3C04_4897_A941_5DFE5CF958AF, "", ".i");
 
-void Berry_Style_Class_Set_Shadow_Color_626E85D3_FD0B_4050_A08E_1262A51DDBFE(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Shadow_Color_19A9F49B_814F_42D8_A6F1_D4AED3AEA6E7(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Shadow_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Color_626E85D3_FD0B_4050_A08E_1262A51DDBFE, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Color_19A9F49B_814F_42D8_A6F1_D4AED3AEA6E7, "", "..");
 
-void Berry_Style_Class_Set_Shadow_Offset_X_7C12FFED_D6A4_4B4D_83C6_D1BA1A9A5688(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Shadow_Offset_X_D0F95927_594D_44F9_B043_F5F2CC506F5C(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Shadow_Offset_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Offset_X_7C12FFED_D6A4_4B4D_83C6_D1BA1A9A5688, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Offset_X_D0F95927_594D_44F9_B043_F5F2CC506F5C, "", ".i");
 
-void Berry_Style_Class_Set_Shadow_Offset_Y_151FFD96_6260_4706_8CC6_0E75A5C805A2(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Shadow_Offset_Y_55B5C874_6613_4A68_8A4E_13543B08A318(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Shadow_Offset_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Offset_Y_151FFD96_6260_4706_8CC6_0E75A5C805A2, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Offset_Y_55B5C874_6613_4A68_8A4E_13543B08A318, "", ".i");
 
-void Berry_Style_Class_Set_Shadow_Opacity_7188AF68_CFAE_47EC_95A7_3F858A2AED48(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Shadow_Opacity_2CFB3F23_F293_41F0_BC17_8DFC550E8180(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Shadow_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Opacity_7188AF68_CFAE_47EC_95A7_3F858A2AED48, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Opacity_2CFB3F23_F293_41F0_BC17_8DFC550E8180, "", ".i");
 
-void Berry_Style_Class_Set_Shadow_Spread_4EEAA906_F912_434E_AAB6_3CEAAA267587(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Shadow_Spread_AAAEC716_AA99_45A4_AE13_1C671EB0ABB7(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Shadow_Spread((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Spread_4EEAA906_F912_434E_AAB6_3CEAAA267587, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Spread_AAAEC716_AA99_45A4_AE13_1C671EB0ABB7, "", ".i");
 
-void Berry_Style_Class_Set_Shadow_Width_DE8A9516_7361_4AA1_BF29_3EB835EBB0FC(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Shadow_Width_A2638A0C_86FF_471F_9636_44B7C792989F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Shadow_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Width_DE8A9516_7361_4AA1_BF29_3EB835EBB0FC, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Shadow_Width_A2638A0C_86FF_471F_9636_44B7C792989F, "", ".i");
 
-void Berry_Style_Class_Set_Size_94BE1098_44FE_4941_ABA2_10940AC27EB7(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Size_FBBF457E_92A4_4790_BD28_7AF65CE2FA6D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Size((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Size_94BE1098_44FE_4941_ABA2_10940AC27EB7, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Size_FBBF457E_92A4_4790_BD28_7AF65CE2FA6D, "", ".i");
 
-void Berry_Style_Class_Set_Text_Alignment_094D8EBE_F8D8_4455_AE35_D2A3FAF27E29(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Text_Alignment_078B9DA8_D2D2_423D_994C_8ED7B360237A(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Text_Alignment((Text_Alignment_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Alignment_094D8EBE_F8D8_4455_AE35_D2A3FAF27E29, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Alignment_078B9DA8_D2D2_423D_994C_8ED7B360237A, "", ".i");
 
-void Berry_Style_Class_Set_Text_Color_001A991E_F486_4E0E_A3E3_97C20789B215(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
+void Berry_Style_Class_Set_Text_Color_1C9487F5_6BC0_491A_BC3E_1B3F28B5557D(Xila_Namespace::Graphics_Types::Style_Class* I, Color_Class* A_0)
 {
 return I->Set_Text_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Color_001A991E_F486_4E0E_A3E3_97C20789B215, "", "..");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Color_1C9487F5_6BC0_491A_BC3E_1B3F28B5557D, "", "..");
 
-void Berry_Style_Class_Set_Text_Decor_A816C71C_5114_4FB8_AD6F_220427802B01(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Text_Decor_F02AB501_EC01_420A_B3A3_4C2344872FAC(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Text_Decor((Text_Decor_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Decor_A816C71C_5114_4FB8_AD6F_220427802B01, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Decor_F02AB501_EC01_420A_B3A3_4C2344872FAC, "", ".i");
 
-void Berry_Style_Class_Set_Text_Letter_Space_3DA69020_FDE4_4BAB_9CEA_6D065D1C46E4(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Text_Letter_Space_59964CA5_9E89_4CC5_AF84_9D30F8179F12(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Text_Letter_Space((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Letter_Space_3DA69020_FDE4_4BAB_9CEA_6D065D1C46E4, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Letter_Space_59964CA5_9E89_4CC5_AF84_9D30F8179F12, "", ".i");
 
-void Berry_Style_Class_Set_Text_Line_Space_9F3373FB_0CBB_456D_94C6_AE8B91BF895D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Text_Line_Space_8FE5DBA0_1F68_479E_B9E5_59255BE9239B(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Text_Line_Space((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Line_Space_9F3373FB_0CBB_456D_94C6_AE8B91BF895D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Line_Space_8FE5DBA0_1F68_479E_B9E5_59255BE9239B, "", ".i");
 
-void Berry_Style_Class_Set_Text_Opacity_ED8BCF6E_E548_43A1_8D51_418D6C690244(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Text_Opacity_B3D3904C_6B98_4441_8EC5_45C0352FC9D9(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Text_Opacity((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Opacity_ED8BCF6E_E548_43A1_8D51_418D6C690244, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Text_Opacity_B3D3904C_6B98_4441_8EC5_45C0352FC9D9, "", ".i");
 
-void Berry_Style_Class_Set_Transform_Angle_79878D9D_B54E_491D_866D_E47B70F354AC(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Transform_Angle_26A99E75_5356_4F8A_A720_120111605988(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Transform_Angle((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Angle_79878D9D_B54E_491D_866D_E47B70F354AC, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Angle_26A99E75_5356_4F8A_A720_120111605988, "", ".i");
 
-void Berry_Style_Class_Set_Transform_Height_E9259F50_C596_411D_885A_AB12C973595F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Transform_Height_C41B2258_D89F_4045_B0B4_8DA871BDFD4F(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Transform_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Height_E9259F50_C596_411D_885A_AB12C973595F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Height_C41B2258_D89F_4045_B0B4_8DA871BDFD4F, "", ".i");
 
-void Berry_Style_Class_Set_Transform_Width_B5184123_E10B_47C4_8840_27077D9E1445(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Transform_Width_B2AF00BF_616A_4703_B254_0EA52BCA5414(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Transform_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Width_B5184123_E10B_47C4_8840_27077D9E1445, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Width_B2AF00BF_616A_4703_B254_0EA52BCA5414, "", ".i");
 
-void Berry_Style_Class_Set_Transform_Zoom_C99D750F_3591_49A9_B4A8_4CA94DC833F6(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Transform_Zoom_3A4C8527_4129_467E_AEF2_973499DEE6BF(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Transform_Zoom((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Zoom_C99D750F_3591_49A9_B4A8_4CA94DC833F6, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Transform_Zoom_3A4C8527_4129_467E_AEF2_973499DEE6BF, "", ".i");
 
-void Berry_Style_Class_Set_Translate_X_E1A28928_D2A2_44FF_879C_EC20A03F2CDA(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Translate_X_9971E1E1_161C_4860_B946_B838A682A737(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Translate_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Translate_X_E1A28928_D2A2_44FF_879C_EC20A03F2CDA, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Translate_X_9971E1E1_161C_4860_B946_B838A682A737, "", ".i");
 
-void Berry_Style_Class_Set_Translate_Y_4C766183_C3A9_43B7_96CF_C687CC95255C(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Translate_Y_7168634E_8B40_4416_8D03_C31E55C070C9(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Translate_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Translate_Y_4C766183_C3A9_43B7_96CF_C687CC95255C, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Translate_Y_7168634E_8B40_4416_8D03_C31E55C070C9, "", ".i");
 
-void Berry_Style_Class_Set_Width_B453155F_8184_4CCF_9556_736908F455F8(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Width_00557B03_1C4E_4FD4_90A7_B0C1FAE12CB3(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Width_B453155F_8184_4CCF_9556_736908F455F8, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Width_00557B03_1C4E_4FD4_90A7_B0C1FAE12CB3, "", ".i");
 
-void Berry_Style_Class_Set_X_5B651D4A_3E3F_474D_B77E_D58CE44F23C2(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_X_C60EA009_E309_4218_907E_7F1037776550(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_X((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_X_5B651D4A_3E3F_474D_B77E_D58CE44F23C2, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_X_C60EA009_E309_4218_907E_7F1037776550, "", ".i");
 
-void Berry_Style_Class_Set_Y_A7BB1BA2_2E85_4FB4_84BE_BEED7A50227E(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
+void Berry_Style_Class_Set_Y_B4E599AF_F24E_4275_80C5_F0C63E8FAC0D(Xila_Namespace::Graphics_Types::Style_Class* I, int A_0)
 {
 return I->Set_Y((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Y_A7BB1BA2_2E85_4FB4_84BE_BEED7A50227E, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Y_B4E599AF_F24E_4275_80C5_F0C63E8FAC0D, "", ".i");
 
 // - - Operators
 
@@ -5615,108 +5615,108 @@ BE_FUNC_CTYPE_DECLARE(Berry_Style_Class_Set_Y_A7BB1BA2_2E85_4FB4_84BE_BEED7A5022
 class Berry_Style_Type(scope:global, name:Style_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Style_Class_Initialize_2F313AFA_0523_40CE_BFD6_C5852663E762)
-	deinit, ctype_func(Berry_Style_Class_Deinitialize_9926DB03_A53B_4546_8AFA_1672DDA4FE8F)
-	Initialize, ctype_func(Berry_Style_Class_Initialize_5C691F89_817C_43C8_8B02_C174557A9592)
-	Register_Property, ctype_func(Berry_Style_Class_Register_Property_34FB35B8_5244_407A_BD14_F652728D100F)
-	Remove_Property, ctype_func(Berry_Style_Class_Remove_Property_B8421BFB_7119_451C_A3BD_35C550412ED1)
-	Reset, ctype_func(Berry_Style_Class_Reset_A7671647_61C5_4D42_8F4C_75F033A48EC6)
-	Set_Alignment, ctype_func(Berry_Style_Class_Set_Alignment_1C5FDCEF_777E_4090_98C2_59A325BA3800)
-	Set_Animation_Time, ctype_func(Berry_Style_Class_Set_Animation_Time_FF57C25D_BA06_41B3_AD30_AEDAB820F292)
-	Set_Animation_Speed, ctype_func(Berry_Style_Class_Set_Animation_Speed_B9A60796_1764_4F2A_9A8A_6853AE7DF9E8)
-	Set_Arc_Color, ctype_func(Berry_Style_Class_Set_Arc_Color_4E4B3D4A_17D0_4350_95A9_800D6EA269F8)
-	Set_Arc_Opacity, ctype_func(Berry_Style_Class_Set_Arc_Opacity_4A636957_3FA4_4078_90A0_F38A37FB71CA)
-	Set_Arc_Rounded, ctype_func(Berry_Style_Class_Set_Arc_Rounded_A79F7E5E_84E6_40B9_A6B3_18F1DE058413)
-	Set_Arc_Width, ctype_func(Berry_Style_Class_Set_Arc_Width_B94330B3_9B1E_49DB_9602_9BE263D30A3A)
-	Set_Base_Direction, ctype_func(Berry_Style_Class_Set_Base_Direction_672A170D_9836_4A64_92D5_CCE7DF46A335)
-	Set_Background_Color, ctype_func(Berry_Style_Class_Set_Background_Color_7C433306_8168_4EE9_BCA6_BACB44936920)
-	Set_Background_Dither_Mode, ctype_func(Berry_Style_Class_Set_Background_Dither_Mode_0B39DB86_CA7A_4D76_90A3_2745E5A41A04)
-	Set_Background_Gradient_Color, ctype_func(Berry_Style_Class_Set_Background_Gradient_Color_4BF6710B_B7BC_4A76_8BCC_4506AFF0C461)
-	Set_Background_Gradient_Direction, ctype_func(Berry_Style_Class_Set_Background_Gradient_Direction_73008CA6_647C_4C3C_B0BC_A89F95FEEE6D)
-	Set_Background_Gradient_Stop, ctype_func(Berry_Style_Class_Set_Background_Gradient_Stop_D591142F_4234_45D8_8333_31076E61067A)
-	Set_Background_Image_Opacity, ctype_func(Berry_Style_Class_Set_Background_Image_Opacity_4220109C_B3C7_45BE_ACE5_BC079E75DF38)
-	Set_Background_Image_Recolor, ctype_func(Berry_Style_Class_Set_Background_Image_Recolor_7FE658AF_0922_433B_9141_2B1D4D1F411D)
-	Set_Background_Image_Recolor_Opacity, ctype_func(Berry_Style_Class_Set_Background_Image_Recolor_Opacity_08845769_EC86_4BCA_8020_04E6FE7033A7)
-	Set_Background_Image_Tiled, ctype_func(Berry_Style_Class_Set_Background_Image_Tiled_5CDC5020_5BFB_4590_A841_F32CB310A5DF)
-	Set_Background_Main_Stop, ctype_func(Berry_Style_Class_Set_Background_Main_Stop_09FF91A3_38F7_4630_A8A5_ABF9337FA1E1)
-	Set_Background_Opacity, ctype_func(Berry_Style_Class_Set_Background_Opacity_A459DF15_DE69_4F99_9700_4F5901694BFC)
-	Set_Blend_Mode, ctype_func(Berry_Style_Class_Set_Blend_Mode_29BA2801_677B_44C2_B54F_0DDB40D2DC9A)
-	Set_Border_Color, ctype_func(Berry_Style_Class_Set_Border_Color_B280A82E_A347_43CD_96E8_8C88AB432F87)
-	Set_Border_Opacity, ctype_func(Berry_Style_Class_Set_Border_Opacity_5946365D_BBB0_40A0_B1DB_DF97138C7604)
-	Set_Border_Post, ctype_func(Berry_Style_Class_Set_Border_Post_29D96141_9A3E_4C4F_ADF8_6E70204B70E1)
-	Set_Border_Side, ctype_func(Berry_Style_Class_Set_Border_Side_D5B2E95F_6C90_4046_BAAE_45B0801BBC87)
-	Set_Border_Width, ctype_func(Berry_Style_Class_Set_Border_Width_82C8FC3A_D0CE_4295_A536_C8549601F1ED)
-	Set_Clip_Corner, ctype_func(Berry_Style_Class_Set_Clip_Corner_B046DFEF_D184_4097_8CBE_DDB89FD193E7)
-	Set_Color_Filter_Descriptor, ctype_func(Berry_Style_Class_Set_Color_Filter_Descriptor_B93DA37D_D7DC_465F_842C_A63A7352EB77)
-	Set_Color_Filter_Opacity, ctype_func(Berry_Style_Class_Set_Color_Filter_Opacity_C7BE5AAC_1485_4C2A_9F73_7C1EBA6032B3)
-	Set_Flex_Cross_Place, ctype_func(Berry_Style_Class_Set_Flex_Cross_Place_174DC5E4_F6EF_4C35_9D64_9CEF564044C8)
-	Set_Flex_Flow, ctype_func(Berry_Style_Class_Set_Flex_Flow_726CBD4C_98F9_4086_9BF6_A3A02C906B1F)
-	Set_Flex_Grow, ctype_func(Berry_Style_Class_Set_Flex_Grow_88D68F08_4438_4FA6_88B2_9E7EFADF5383)
-	Set_Flex_Main_Place, ctype_func(Berry_Style_Class_Set_Flex_Main_Place_1EACB9A4_9C5B_44D5_984A_631553C45CB1)
-	Set_Flex_Track_Place, ctype_func(Berry_Style_Class_Set_Flex_Track_Place_31922E78_A825_4767_BA04_F394D64019E6)
-	Set_Grid_Cell_Column_Position, ctype_func(Berry_Style_Class_Set_Grid_Cell_Column_Position_E967D813_97AE_437E_B798_A4D8EF79E20F)
-	Set_Grid_Cell_Column_Span, ctype_func(Berry_Style_Class_Set_Grid_Cell_Column_Span_7B5C8A2F_9241_46D5_A58D_2C1C2172A68F)
-	Set_Grid_Cell_Row_Position, ctype_func(Berry_Style_Class_Set_Grid_Cell_Row_Position_259FEBFC_BDBF_46D4_90E8_6C6BDEA03982)
-	Set_Grid_Cell_Row_Span, ctype_func(Berry_Style_Class_Set_Grid_Cell_Row_Span_5C154396_7291_4AE9_9E61_07DFD87E30AB)
-	Set_Grid_Cell_X_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Cell_X_Alignment_5CE34834_E0FB_4073_8AFB_B068E9135F8A)
-	Set_Grid_Cell_Y_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Cell_Y_Alignment_1C7762AA_4A14_403B_A4F9_8B5669E9B721)
-	Set_Grid_Column_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Column_Alignment_E6C9C320_DFED_49EC_9E45_C64CBDEDDDC8)
-	Set_Grid_Column_Descriptor_Array, ctype_func(Berry_Style_Class_Set_Grid_Column_Descriptor_Array_4FB6E133_3327_4CCC_8FE6_CA098B8BDAA4)
-	Set_Grid_Row_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Row_Alignment_4011FA8C_BE57_4790_96B9_50C6FDFCC0F5)
-	Set_Grid_Row_Descriptor_Array, ctype_func(Berry_Style_Class_Set_Grid_Row_Descriptor_Array_DDE7BDA7_5E56_4DE4_9953_FF00C18BF6D7)
-	Set_Height, ctype_func(Berry_Style_Class_Set_Height_9006561F_0CCC_481C_A6B7_4FCEC59EC144)
-	Set_Image_Opacity, ctype_func(Berry_Style_Class_Set_Image_Opacity_B6F5F025_7604_4BD2_8457_86F003542379)
-	Set_Image_Recolor, ctype_func(Berry_Style_Class_Set_Image_Recolor_22859E20_8187_496A_A736_33085F079049)
-	Set_Image_Recolor_Opacity, ctype_func(Berry_Style_Class_Set_Image_Recolor_Opacity_F8206FAD_986E_470C_9051_6B236736F825)
-	Set_Layout, ctype_func(Berry_Style_Class_Set_Layout_4ACEF2D8_985D_4200_AFCF_9F7096036CDF)
-	Set_Line_Color, ctype_func(Berry_Style_Class_Set_Line_Color_B01D0513_EC0E_449D_8E69_A5E31FE7E74B)
-	Set_Line_Dash_Gap, ctype_func(Berry_Style_Class_Set_Line_Dash_Gap_9F4A9E2F_8715_47E1_B96B_24013B410657)
-	Set_Line_Dash_Width, ctype_func(Berry_Style_Class_Set_Line_Dash_Width_CE57DFD5_AD5F_4719_A1A6_53DD32B9AE6E)
-	Set_Line_Opacity, ctype_func(Berry_Style_Class_Set_Line_Opacity_2895FB87_6D8E_4E8D_B467_361D07E08504)
-	Set_Line_Rounded, ctype_func(Berry_Style_Class_Set_Line_Rounded_905E3585_EB8E_42F1_978A_0CD788EEBB61)
-	Set_Line_Width, ctype_func(Berry_Style_Class_Set_Line_Width_E4DD32C9_0163_43C4_A0B9_98405550DBDF)
-	Set_Maximum_Height, ctype_func(Berry_Style_Class_Set_Maximum_Height_DA120148_CBB1_4633_8A4E_10789743C100)
-	Set_Maximum_Width, ctype_func(Berry_Style_Class_Set_Maximum_Width_FC4F2539_70E4_4F53_B475_1316BFD93089)
-	Set_Minimum_Height, ctype_func(Berry_Style_Class_Set_Minimum_Height_5F03C7F6_3C3C_4733_BAE5_61BCADF5D14E)
-	Set_Minimum_Width, ctype_func(Berry_Style_Class_Set_Minimum_Width_C53E15BE_69AA_4373_A16B_33365377F092)
-	Set_Opacity, ctype_func(Berry_Style_Class_Set_Opacity_6130BE03_B55C_4BA9_9989_9D76F22AC745)
-	Set_Outline_Color, ctype_func(Berry_Style_Class_Set_Outline_Color_214AA4D9_21B6_4D99_99B9_D9533DB807A3)
-	Set_Outline_Opacity, ctype_func(Berry_Style_Class_Set_Outline_Opacity_5479DE7E_DE45_4BE8_B2C0_E0F36E7E2D93)
-	Set_Outline_Pad, ctype_func(Berry_Style_Class_Set_Outline_Pad_2F609EAA_A7DC_4AE8_AAF2_F0E6ACF61B91)
-	Set_Outline_Width, ctype_func(Berry_Style_Class_Set_Outline_Width_373B74E4_E2F1_4298_BAC7_CF5A75D47DE5)
-	Set_Pad_All, ctype_func(Berry_Style_Class_Set_Pad_All_247906EC_0550_4B84_A6A9_3D6336CA0A07)
-	Set_Pad_Bottom, ctype_func(Berry_Style_Class_Set_Pad_Bottom_4649EEAE_583E_4C23_8E40_B71D8111FAAF)
-	Set_Pad_Left, ctype_func(Berry_Style_Class_Set_Pad_Left_336C0DCB_07A3_4F63_9DAE_0A9985F70681)
-	Set_Pad_Right, ctype_func(Berry_Style_Class_Set_Pad_Right_5294FD60_CBA7_4A88_A4B2_79F11CF387B0)
-	Set_Pad_Top, ctype_func(Berry_Style_Class_Set_Pad_Top_05E4DAD9_9BE8_48A2_B303_BCD9967865D4)
-	Set_Pad_Row, ctype_func(Berry_Style_Class_Set_Pad_Row_2CB2F912_1CB0_4E06_94E6_FE7552D06998)
-	Set_Pad_Column, ctype_func(Berry_Style_Class_Set_Pad_Column_0EE37778_0B40_4A91_9DA2_C23821E78842)
-	Set_Pad_Gap, ctype_func(Berry_Style_Class_Set_Pad_Gap_B12E1878_A87B_4D4E_8EE9_601B373C3881)
-	Set_Pad_Horizontal, ctype_func(Berry_Style_Class_Set_Pad_Horizontal_1AC48361_B2FC_46BC_86AA_FC030B603AF8)
-	Set_Pad_Vertical, ctype_func(Berry_Style_Class_Set_Pad_Vertical_4DB663A5_FFD1_4440_93C1_592B0D85920A)
-	Set_Radius, ctype_func(Berry_Style_Class_Set_Radius_55323587_FF67_4A45_A301_71A20C01471F)
-	Set_Shadow_Color, ctype_func(Berry_Style_Class_Set_Shadow_Color_626E85D3_FD0B_4050_A08E_1262A51DDBFE)
-	Set_Shadow_Offset_X, ctype_func(Berry_Style_Class_Set_Shadow_Offset_X_7C12FFED_D6A4_4B4D_83C6_D1BA1A9A5688)
-	Set_Shadow_Offset_Y, ctype_func(Berry_Style_Class_Set_Shadow_Offset_Y_151FFD96_6260_4706_8CC6_0E75A5C805A2)
-	Set_Shadow_Opacity, ctype_func(Berry_Style_Class_Set_Shadow_Opacity_7188AF68_CFAE_47EC_95A7_3F858A2AED48)
-	Set_Shadow_Spread, ctype_func(Berry_Style_Class_Set_Shadow_Spread_4EEAA906_F912_434E_AAB6_3CEAAA267587)
-	Set_Shadow_Width, ctype_func(Berry_Style_Class_Set_Shadow_Width_DE8A9516_7361_4AA1_BF29_3EB835EBB0FC)
-	Set_Size, ctype_func(Berry_Style_Class_Set_Size_94BE1098_44FE_4941_ABA2_10940AC27EB7)
-	Set_Text_Alignment, ctype_func(Berry_Style_Class_Set_Text_Alignment_094D8EBE_F8D8_4455_AE35_D2A3FAF27E29)
-	Set_Text_Color, ctype_func(Berry_Style_Class_Set_Text_Color_001A991E_F486_4E0E_A3E3_97C20789B215)
-	Set_Text_Decor, ctype_func(Berry_Style_Class_Set_Text_Decor_A816C71C_5114_4FB8_AD6F_220427802B01)
-	Set_Text_Letter_Space, ctype_func(Berry_Style_Class_Set_Text_Letter_Space_3DA69020_FDE4_4BAB_9CEA_6D065D1C46E4)
-	Set_Text_Line_Space, ctype_func(Berry_Style_Class_Set_Text_Line_Space_9F3373FB_0CBB_456D_94C6_AE8B91BF895D)
-	Set_Text_Opacity, ctype_func(Berry_Style_Class_Set_Text_Opacity_ED8BCF6E_E548_43A1_8D51_418D6C690244)
-	Set_Transform_Angle, ctype_func(Berry_Style_Class_Set_Transform_Angle_79878D9D_B54E_491D_866D_E47B70F354AC)
-	Set_Transform_Height, ctype_func(Berry_Style_Class_Set_Transform_Height_E9259F50_C596_411D_885A_AB12C973595F)
-	Set_Transform_Width, ctype_func(Berry_Style_Class_Set_Transform_Width_B5184123_E10B_47C4_8840_27077D9E1445)
-	Set_Transform_Zoom, ctype_func(Berry_Style_Class_Set_Transform_Zoom_C99D750F_3591_49A9_B4A8_4CA94DC833F6)
-	Set_Translate_X, ctype_func(Berry_Style_Class_Set_Translate_X_E1A28928_D2A2_44FF_879C_EC20A03F2CDA)
-	Set_Translate_Y, ctype_func(Berry_Style_Class_Set_Translate_Y_4C766183_C3A9_43B7_96CF_C687CC95255C)
-	Set_Width, ctype_func(Berry_Style_Class_Set_Width_B453155F_8184_4CCF_9556_736908F455F8)
-	Set_X, ctype_func(Berry_Style_Class_Set_X_5B651D4A_3E3F_474D_B77E_D58CE44F23C2)
-	Set_Y, ctype_func(Berry_Style_Class_Set_Y_A7BB1BA2_2E85_4FB4_84BE_BEED7A50227E)
+	init, ctype_func(Berry_Style_Class_Initialize_285A7F82_6037_4F26_9ED6_B3B965072897)
+	deinit, ctype_func(Berry_Style_Class_Deinitialize_09471878_0ECB_4CCC_B372_25A85254A29C)
+	Initialize, ctype_func(Berry_Style_Class_Initialize_604F7506_C19F_4A85_B9EF_52B933781D94)
+	Register_Property, ctype_func(Berry_Style_Class_Register_Property_4AF80146_570D_47C7_A981_ED3EAF298714)
+	Remove_Property, ctype_func(Berry_Style_Class_Remove_Property_13383ADE_F5D4_4D12_B4F9_C1056269C4D8)
+	Reset, ctype_func(Berry_Style_Class_Reset_7FD226C8_C146_4C8A_A2C4_B50DDD69F30D)
+	Set_Alignment, ctype_func(Berry_Style_Class_Set_Alignment_0CC17EF8_6037_4484_B476_2B9D0C2423CE)
+	Set_Animation_Time, ctype_func(Berry_Style_Class_Set_Animation_Time_A35EDF8F_7247_4BB3_A3F0_EA2074D1E0EE)
+	Set_Animation_Speed, ctype_func(Berry_Style_Class_Set_Animation_Speed_056EFB5F_0140_484F_8FE5_3678122E7A49)
+	Set_Arc_Color, ctype_func(Berry_Style_Class_Set_Arc_Color_FC6C19AC_3C33_4BC9_9605_C116BF3B00A1)
+	Set_Arc_Opacity, ctype_func(Berry_Style_Class_Set_Arc_Opacity_207ABFEE_A39B_4E00_BAEF_AEA8210406A9)
+	Set_Arc_Rounded, ctype_func(Berry_Style_Class_Set_Arc_Rounded_9D7A7D2F_7391_4D35_A152_A98291D0C434)
+	Set_Arc_Width, ctype_func(Berry_Style_Class_Set_Arc_Width_8AFF1291_D7D8_4E4A_B571_5CED9BC2ED80)
+	Set_Base_Direction, ctype_func(Berry_Style_Class_Set_Base_Direction_0238D1AC_C17E_4B77_9FB7_83E9229469F8)
+	Set_Background_Color, ctype_func(Berry_Style_Class_Set_Background_Color_F78690D2_D24E_4EFD_BD76_C611C6ED7F0D)
+	Set_Background_Dither_Mode, ctype_func(Berry_Style_Class_Set_Background_Dither_Mode_86E454FF_914C_4449_824C_5A55E5A1D004)
+	Set_Background_Gradient_Color, ctype_func(Berry_Style_Class_Set_Background_Gradient_Color_03989192_6A94_43FE_AF1F_966CF860B95D)
+	Set_Background_Gradient_Direction, ctype_func(Berry_Style_Class_Set_Background_Gradient_Direction_9B8D4C2A_C8DC_4749_9B9A_FA9DAE19C130)
+	Set_Background_Gradient_Stop, ctype_func(Berry_Style_Class_Set_Background_Gradient_Stop_D162BF53_0B44_4C3A_B7CE_310F5675F0C4)
+	Set_Background_Image_Opacity, ctype_func(Berry_Style_Class_Set_Background_Image_Opacity_E50361C2_90E7_45E0_BCD9_AF8FB5BFE641)
+	Set_Background_Image_Recolor, ctype_func(Berry_Style_Class_Set_Background_Image_Recolor_7E996666_0BFD_4BF7_A827_2886CDCACBB7)
+	Set_Background_Image_Recolor_Opacity, ctype_func(Berry_Style_Class_Set_Background_Image_Recolor_Opacity_609EFB14_631E_4FDE_82FC_1BBE08D4313F)
+	Set_Background_Image_Tiled, ctype_func(Berry_Style_Class_Set_Background_Image_Tiled_320906F4_59B3_4D07_BA73_F8F51698FAD9)
+	Set_Background_Main_Stop, ctype_func(Berry_Style_Class_Set_Background_Main_Stop_9A7DC37B_6071_43E3_AF78_55C545497A31)
+	Set_Background_Opacity, ctype_func(Berry_Style_Class_Set_Background_Opacity_7BF5CF20_95DA_4862_A38C_B7C26E62701C)
+	Set_Blend_Mode, ctype_func(Berry_Style_Class_Set_Blend_Mode_16262485_C90B_478F_9CCB_6F1215439E98)
+	Set_Border_Color, ctype_func(Berry_Style_Class_Set_Border_Color_0487B129_B77B_4170_AFEB_7DF1104399E4)
+	Set_Border_Opacity, ctype_func(Berry_Style_Class_Set_Border_Opacity_0BAAB985_1D35_4D24_9343_269C3DC67B18)
+	Set_Border_Post, ctype_func(Berry_Style_Class_Set_Border_Post_CD34BBFE_95B5_4BA1_8B85_D94344CF0EF0)
+	Set_Border_Side, ctype_func(Berry_Style_Class_Set_Border_Side_570EA13E_07D4_4166_A8DD_0BAF982EE106)
+	Set_Border_Width, ctype_func(Berry_Style_Class_Set_Border_Width_3399AB81_FF23_48F5_AFF1_7A561E9F3BFD)
+	Set_Clip_Corner, ctype_func(Berry_Style_Class_Set_Clip_Corner_32ADCC4E_A67A_4E93_84F4_43239E7A0BAE)
+	Set_Color_Filter_Descriptor, ctype_func(Berry_Style_Class_Set_Color_Filter_Descriptor_07357A52_17F5_4794_947F_3FE332FE7630)
+	Set_Color_Filter_Opacity, ctype_func(Berry_Style_Class_Set_Color_Filter_Opacity_A989C586_1C04_43E1_AF8E_BCA8CF4246DF)
+	Set_Flex_Cross_Place, ctype_func(Berry_Style_Class_Set_Flex_Cross_Place_CA39A214_714F_42EA_AD98_1D5E2FD889CE)
+	Set_Flex_Flow, ctype_func(Berry_Style_Class_Set_Flex_Flow_4C384BC5_9FDA_4759_8CAF_78B48A23D857)
+	Set_Flex_Grow, ctype_func(Berry_Style_Class_Set_Flex_Grow_D27BA67C_6AD8_4016_AC41_AE9FE2061B25)
+	Set_Flex_Main_Place, ctype_func(Berry_Style_Class_Set_Flex_Main_Place_1FEF52CB_10C9_4695_9F3E_82DE9DE53E59)
+	Set_Flex_Track_Place, ctype_func(Berry_Style_Class_Set_Flex_Track_Place_82E0140C_198E_4D7F_95E7_BD02A3316640)
+	Set_Grid_Cell_Column_Position, ctype_func(Berry_Style_Class_Set_Grid_Cell_Column_Position_FD4AE0B8_0C2A_4186_9D64_AFFFB2585F10)
+	Set_Grid_Cell_Column_Span, ctype_func(Berry_Style_Class_Set_Grid_Cell_Column_Span_CC712F98_237F_4993_82F8_B18D7778322E)
+	Set_Grid_Cell_Row_Position, ctype_func(Berry_Style_Class_Set_Grid_Cell_Row_Position_1D1009F0_995F_4449_B4E7_D9F083D376CB)
+	Set_Grid_Cell_Row_Span, ctype_func(Berry_Style_Class_Set_Grid_Cell_Row_Span_767F8AE4_41CD_4DC2_8B7D_8B0FBDF8E1BC)
+	Set_Grid_Cell_X_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Cell_X_Alignment_A1EDB0F0_5AB2_4C54_87BE_8FAB9117F964)
+	Set_Grid_Cell_Y_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Cell_Y_Alignment_209705A4_1D9F_43A9_A6CC_F3EBFBF295DD)
+	Set_Grid_Column_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Column_Alignment_7095FAB7_D869_4731_BA46_97C2A9489A78)
+	Set_Grid_Column_Descriptor_Array, ctype_func(Berry_Style_Class_Set_Grid_Column_Descriptor_Array_B76A5E33_6894_40D8_9437_D27DCA6C6599)
+	Set_Grid_Row_Alignment, ctype_func(Berry_Style_Class_Set_Grid_Row_Alignment_10E043BA_519B_451A_B333_494E8770D797)
+	Set_Grid_Row_Descriptor_Array, ctype_func(Berry_Style_Class_Set_Grid_Row_Descriptor_Array_037E342D_0465_40C1_B628_69C6D0121733)
+	Set_Height, ctype_func(Berry_Style_Class_Set_Height_01992120_EF31_49A9_A2F1_8E570776114D)
+	Set_Image_Opacity, ctype_func(Berry_Style_Class_Set_Image_Opacity_429ADE00_3F39_4381_AEDC_0BAE4CFE9639)
+	Set_Image_Recolor, ctype_func(Berry_Style_Class_Set_Image_Recolor_271204C9_6C1F_45A3_A8A5_0A3A30EC2358)
+	Set_Image_Recolor_Opacity, ctype_func(Berry_Style_Class_Set_Image_Recolor_Opacity_7F2F03BE_7979_4C22_8B29_4E41E6306C35)
+	Set_Layout, ctype_func(Berry_Style_Class_Set_Layout_36F41736_8491_4512_AE3E_4061E0103E63)
+	Set_Line_Color, ctype_func(Berry_Style_Class_Set_Line_Color_F65C25B8_E32B_4CD2_B738_8C0F33DC9917)
+	Set_Line_Dash_Gap, ctype_func(Berry_Style_Class_Set_Line_Dash_Gap_48D95368_3170_46F7_B4FD_A5872B89EBAA)
+	Set_Line_Dash_Width, ctype_func(Berry_Style_Class_Set_Line_Dash_Width_2199CFDD_1C70_4179_A503_F2BEEABE0C1F)
+	Set_Line_Opacity, ctype_func(Berry_Style_Class_Set_Line_Opacity_51A44C24_279A_445B_A0BB_76A7C58D6752)
+	Set_Line_Rounded, ctype_func(Berry_Style_Class_Set_Line_Rounded_B55F523B_B30A_405C_A347_E6A9B4D601A0)
+	Set_Line_Width, ctype_func(Berry_Style_Class_Set_Line_Width_ECD8B4E8_BDA6_405E_9E5B_A9049A6E44AE)
+	Set_Maximum_Height, ctype_func(Berry_Style_Class_Set_Maximum_Height_3A4D36D0_7713_49AD_A539_6E0F58E0250D)
+	Set_Maximum_Width, ctype_func(Berry_Style_Class_Set_Maximum_Width_BF7F209C_403F_4ADA_99AA_E42B51519B94)
+	Set_Minimum_Height, ctype_func(Berry_Style_Class_Set_Minimum_Height_540F7B7A_A975_4A71_9E9D_CC283A58EE41)
+	Set_Minimum_Width, ctype_func(Berry_Style_Class_Set_Minimum_Width_193F19B9_2C32_47CF_B41E_010261246AD7)
+	Set_Opacity, ctype_func(Berry_Style_Class_Set_Opacity_44FD6C1E_F32F_475F_B0A4_04DADCF2FA3F)
+	Set_Outline_Color, ctype_func(Berry_Style_Class_Set_Outline_Color_735C1128_FB3C_4EC0_97C4_D2F56B30DD35)
+	Set_Outline_Opacity, ctype_func(Berry_Style_Class_Set_Outline_Opacity_DFC5FEDD_FDD9_4FBF_9D2C_5F6FCEF9C124)
+	Set_Outline_Pad, ctype_func(Berry_Style_Class_Set_Outline_Pad_046ECC42_AAC5_40F6_9D6D_75F63EA715D8)
+	Set_Outline_Width, ctype_func(Berry_Style_Class_Set_Outline_Width_15872936_4579_4743_B085_C22865F6D79F)
+	Set_Pad_All, ctype_func(Berry_Style_Class_Set_Pad_All_F4186FBF_97DB_4096_B335_D7DE180AA604)
+	Set_Pad_Bottom, ctype_func(Berry_Style_Class_Set_Pad_Bottom_A401DC62_0F12_48D6_9D21_7C73430AC685)
+	Set_Pad_Left, ctype_func(Berry_Style_Class_Set_Pad_Left_D9E5C414_F6B6_49C2_8FFB_22BD9F1FE9C9)
+	Set_Pad_Right, ctype_func(Berry_Style_Class_Set_Pad_Right_DB07DC9D_586E_4418_8F93_EDE4F6783B5C)
+	Set_Pad_Top, ctype_func(Berry_Style_Class_Set_Pad_Top_B06D9759_907B_4F8B_B780_CBA14E99385F)
+	Set_Pad_Row, ctype_func(Berry_Style_Class_Set_Pad_Row_2B8C3267_6D3C_4BE0_9738_4138F2B33F5C)
+	Set_Pad_Column, ctype_func(Berry_Style_Class_Set_Pad_Column_5B44BE62_B9D9_43B1_A023_EE152088EAD4)
+	Set_Pad_Gap, ctype_func(Berry_Style_Class_Set_Pad_Gap_013E6EA8_6264_4FE6_AF99_E1F403F3FCB1)
+	Set_Pad_Horizontal, ctype_func(Berry_Style_Class_Set_Pad_Horizontal_1C935B97_ECC1_4B5B_902D_69D22C42761F)
+	Set_Pad_Vertical, ctype_func(Berry_Style_Class_Set_Pad_Vertical_5E006B1F_F7A0_40A6_8D7D_C26FC1429D31)
+	Set_Radius, ctype_func(Berry_Style_Class_Set_Radius_1B1BEFF1_3C04_4897_A941_5DFE5CF958AF)
+	Set_Shadow_Color, ctype_func(Berry_Style_Class_Set_Shadow_Color_19A9F49B_814F_42D8_A6F1_D4AED3AEA6E7)
+	Set_Shadow_Offset_X, ctype_func(Berry_Style_Class_Set_Shadow_Offset_X_D0F95927_594D_44F9_B043_F5F2CC506F5C)
+	Set_Shadow_Offset_Y, ctype_func(Berry_Style_Class_Set_Shadow_Offset_Y_55B5C874_6613_4A68_8A4E_13543B08A318)
+	Set_Shadow_Opacity, ctype_func(Berry_Style_Class_Set_Shadow_Opacity_2CFB3F23_F293_41F0_BC17_8DFC550E8180)
+	Set_Shadow_Spread, ctype_func(Berry_Style_Class_Set_Shadow_Spread_AAAEC716_AA99_45A4_AE13_1C671EB0ABB7)
+	Set_Shadow_Width, ctype_func(Berry_Style_Class_Set_Shadow_Width_A2638A0C_86FF_471F_9636_44B7C792989F)
+	Set_Size, ctype_func(Berry_Style_Class_Set_Size_FBBF457E_92A4_4790_BD28_7AF65CE2FA6D)
+	Set_Text_Alignment, ctype_func(Berry_Style_Class_Set_Text_Alignment_078B9DA8_D2D2_423D_994C_8ED7B360237A)
+	Set_Text_Color, ctype_func(Berry_Style_Class_Set_Text_Color_1C9487F5_6BC0_491A_BC3E_1B3F28B5557D)
+	Set_Text_Decor, ctype_func(Berry_Style_Class_Set_Text_Decor_F02AB501_EC01_420A_B3A3_4C2344872FAC)
+	Set_Text_Letter_Space, ctype_func(Berry_Style_Class_Set_Text_Letter_Space_59964CA5_9E89_4CC5_AF84_9D30F8179F12)
+	Set_Text_Line_Space, ctype_func(Berry_Style_Class_Set_Text_Line_Space_8FE5DBA0_1F68_479E_B9E5_59255BE9239B)
+	Set_Text_Opacity, ctype_func(Berry_Style_Class_Set_Text_Opacity_B3D3904C_6B98_4441_8EC5_45C0352FC9D9)
+	Set_Transform_Angle, ctype_func(Berry_Style_Class_Set_Transform_Angle_26A99E75_5356_4F8A_A720_120111605988)
+	Set_Transform_Height, ctype_func(Berry_Style_Class_Set_Transform_Height_C41B2258_D89F_4045_B0B4_8DA871BDFD4F)
+	Set_Transform_Width, ctype_func(Berry_Style_Class_Set_Transform_Width_B2AF00BF_616A_4703_B254_0EA52BCA5414)
+	Set_Transform_Zoom, ctype_func(Berry_Style_Class_Set_Transform_Zoom_3A4C8527_4129_467E_AEF2_973499DEE6BF)
+	Set_Translate_X, ctype_func(Berry_Style_Class_Set_Translate_X_9971E1E1_161C_4860_B946_B838A682A737)
+	Set_Translate_Y, ctype_func(Berry_Style_Class_Set_Translate_Y_7168634E_8B40_4416_8D03_C31E55C070C9)
+	Set_Width, ctype_func(Berry_Style_Class_Set_Width_00557B03_1C4E_4FD4_90A7_B0C1FAE12CB3)
+	Set_X, ctype_func(Berry_Style_Class_Set_X_C60EA009_E309_4218_907E_7F1037776550)
+	Set_Y, ctype_func(Berry_Style_Class_Set_Y_B4E599AF_F24E_4275_80C5_F0C63E8FAC0D)
 
 }
 @const_object_info_end */
@@ -5731,13 +5731,13 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Color_Filter_Descriptor_Class_Deinitialize_3800353A_4F49_4621_9C8D_B701DDF658AD(bvm* V, Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* I)
+void Berry_Color_Filter_Descriptor_Class_Deinitialize_97E834C1_1FF1_4918_AD60_27750759F9B5(bvm* V, Xila_Namespace::Graphics_Types::Color_Filter_Descriptor_Class* I)
 {
 if (!I) { return; }
 I->~Color_Filter_Descriptor_Class();
 be_free(V, I, sizeof(Graphics_Types::Color_Filter_Descriptor_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Filter_Descriptor_Class_Deinitialize_3800353A_4F49_4621_9C8D_B701DDF658AD, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Filter_Descriptor_Class_Deinitialize_97E834C1_1FF1_4918_AD60_27750759F9B5, "", "@.");
 
 
 // - - Functions
@@ -5748,7 +5748,7 @@ BE_FUNC_CTYPE_DECLARE(Berry_Color_Filter_Descriptor_Class_Deinitialize_3800353A_
 class Berry_Color_Filter_Descriptor_Type(scope:global, name:Color_Filter_Descriptor_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Color_Filter_Descriptor_Class_Deinitialize_3800353A_4F49_4621_9C8D_B701DDF658AD)
+	deinit, ctype_func(Berry_Color_Filter_Descriptor_Class_Deinitialize_97E834C1_1FF1_4918_AD60_27750759F9B5)
 
 }
 @const_object_info_end */
@@ -5761,123 +5761,123 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Color_Class_Initialize_A81C53FD_BC7B_4929_ABCC_BA2D09F130FD(bvm* V)
+void * Berry_Color_Class_Initialize_F9D11931_A28D_4980_A3CC_393FC079BA6B(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Color_Class));
 return new (Pointer) Graphics_Types::Color_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_A81C53FD_BC7B_4929_ABCC_BA2D09F130FD, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_F9D11931_A28D_4980_A3CC_393FC079BA6B, "+_p", "@");
 
-void * Berry_Color_Class_Initialize_8EB74E96_C9D1_4C68_ABE0_A172F383BFAE(bvm* V, lv_color16_t* A_0)
+void * Berry_Color_Class_Initialize_2350BC9C_F1F3_418D_B969_D209697EE96D(bvm* V, lv_color16_t* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Color_Class));
 return new (Pointer) Graphics_Types::Color_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_8EB74E96_C9D1_4C68_ABE0_A172F383BFAE, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_2350BC9C_F1F3_418D_B969_D209697EE96D, "+_p", "@.");
 
-void * Berry_Color_Class_Initialize_E70C9942_E42E_4691_995D_8B218582E5F7(bvm* V, int A_0, int A_1, int A_2, bool A_3 = false)
+void * Berry_Color_Class_Initialize_13D0CC1F_6892_47DD_8F63_4868D9BE1CFD(bvm* V, int A_0, int A_1, int A_2, bool A_3 = false)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Color_Class));
 return new (Pointer) Graphics_Types::Color_Class((unsigned char)A_0, (unsigned char)A_1, (unsigned char)A_2, A_3); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_E70C9942_E42E_4691_995D_8B218582E5F7, "+_p", "@iii[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_13D0CC1F_6892_47DD_8F63_4868D9BE1CFD, "+_p", "@iii[b");
 
-void * Berry_Color_Class_Initialize_43291D6D_2E10_4423_9D54_A13F3367DE2C(bvm* V, int A_0, bool A_1 = false)
+void * Berry_Color_Class_Initialize_A9E0BCC1_AD07_40A5_8D9F_57599C5A907D(bvm* V, int A_0, bool A_1 = false)
 {
 void* Pointer = be_malloc(V, sizeof(Graphics_Types::Color_Class));
 return new (Pointer) Graphics_Types::Color_Class((unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_43291D6D_2E10_4423_9D54_A13F3367DE2C, "+_p", "@i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Initialize_A9E0BCC1_AD07_40A5_8D9F_57599C5A907D, "+_p", "@i[b");
 
 
 // - - Destructors
-void Berry_Color_Class_Deinitialize_2CCDD7E6_0A50_403C_B7E4_D9F8A598A2A6(bvm* V, Xila_Namespace::Graphics_Types::Color_Class* I)
+void Berry_Color_Class_Deinitialize_2F9756B6_840D_479B_8A08_9D6EB7B31333(bvm* V, Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 if (!I) { return; }
 I->~Color_Class();
 be_free(V, I, sizeof(Graphics_Types::Color_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Deinitialize_2CCDD7E6_0A50_403C_B7E4_D9F8A598A2A6, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Deinitialize_2F9756B6_840D_479B_8A08_9D6EB7B31333, "", "@.");
 
 
 // - - Functions
-void Berry_Color_Class_Change_Lightness_0E89F40F_BDC7_4A5C_967D_33A3EDB3A635(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
+void Berry_Color_Class_Change_Lightness_06657FFF_1802_4A22_B5AF_425A8CC90F04(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
 {
 return I->Change_Lightness((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Change_Lightness_0E89F40F_BDC7_4A5C_967D_33A3EDB3A635, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Change_Lightness_06657FFF_1802_4A22_B5AF_425A8CC90F04, "", ".i");
 
-void Berry_Color_Class_Set_RGB_587117B0_2470_4FFA_ABAD_DCF824CE29CA(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, int A_1, int A_2)
+void Berry_Color_Class_Set_RGB_6DCBD18A_4FDB_4ACD_96BA_F2F780DE5BAD(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Set_RGB((unsigned char)A_0, (unsigned char)A_1, (unsigned char)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_RGB_587117B0_2470_4FFA_ABAD_DCF824CE29CA, "", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_RGB_6DCBD18A_4FDB_4ACD_96BA_F2F780DE5BAD, "", ".iii");
 
-void Berry_Color_Class_Set_RGB_D645D814_AAA6_4CFF_9A5D_7B0F3525536D(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, bool A_1 = false)
+void Berry_Color_Class_Set_RGB_3655796E_8D51_46EB_B1C4_EA97320B91F6(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, bool A_1 = false)
 {
 return I->Set_RGB((unsigned int)A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_RGB_D645D814_AAA6_4CFF_9A5D_7B0F3525536D, "", ".i[b");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_RGB_3655796E_8D51_46EB_B1C4_EA97320B91F6, "", ".i[b");
 
-void Berry_Color_Class_Set_HSV_D08802D7_A98F_4A3B_A568_97C9DF3CD4D4(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, int A_1, int A_2)
+void Berry_Color_Class_Set_HSV_2AFAF497_FD83_4F63_8ADF_8BC695F0701F(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0, int A_1, int A_2)
 {
 return I->Set_HSV((short unsigned int)A_0, (unsigned char)A_1, (unsigned char)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_HSV_D08802D7_A98F_4A3B_A568_97C9DF3CD4D4, "", ".iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_HSV_2AFAF497_FD83_4F63_8ADF_8BC695F0701F, "", ".iii");
 
-void Berry_Color_Class_Set_To_Black_55D670B5_0BB8_4E3A_9B13_15866438EB10(Xila_Namespace::Graphics_Types::Color_Class* I)
+void Berry_Color_Class_Set_To_Black_CB48329D_2971_4269_A919_4AE41F86667B(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return I->Set_To_Black(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_To_Black_55D670B5_0BB8_4E3A_9B13_15866438EB10, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_To_Black_CB48329D_2971_4269_A919_4AE41F86667B, "", ".");
 
-void Berry_Color_Class_Set_To_White_55307408_1795_40BB_8AE4_FF6340135239(Xila_Namespace::Graphics_Types::Color_Class* I)
+void Berry_Color_Class_Set_To_White_89530B32_8C75_4AA4_A8A3_C52730091D5A(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return I->Set_To_White(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_To_White_55307408_1795_40BB_8AE4_FF6340135239, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_To_White_89530B32_8C75_4AA4_A8A3_C52730091D5A, "", ".");
 
-void Berry_Color_Class_Set_Darker_C7C727BF_9991_406C_9738_9B423BE6D386(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
+void Berry_Color_Class_Set_Darker_446EBCB4_5EE5_45AC_BCB8_25E240F41B2F(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
 {
 return I->Set_Darker((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_Darker_C7C727BF_9991_406C_9738_9B423BE6D386, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_Darker_446EBCB4_5EE5_45AC_BCB8_25E240F41B2F, "", ".i");
 
-void Berry_Color_Class_Set_Lighter_D3A9D15C_DF94_4DAA_9489_C10F1DD8DE8B(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
+void Berry_Color_Class_Set_Lighter_DCC23DE0_7BD6_4C1A_B89C_DD257BC3C3A9(Xila_Namespace::Graphics_Types::Color_Class* I, int A_0)
 {
 return I->Set_Lighter((Opacity_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_Lighter_D3A9D15C_DF94_4DAA_9489_C10F1DD8DE8B, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Set_Lighter_DCC23DE0_7BD6_4C1A_B89C_DD257BC3C3A9, "", ".i");
 
-int Berry_Color_Class_Get_RGB_1_Bit_F8E1F22D_008A_4DCE_AA71_3C07104F7B4B(Xila_Namespace::Graphics_Types::Color_Class* I)
+int Berry_Color_Class_Get_RGB_1_Bit_8EBE126F_D9BE_4774_9E73_CDFFC61A35D9(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return (int)I->Get_RGB_1_Bit(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_1_Bit_F8E1F22D_008A_4DCE_AA71_3C07104F7B4B, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_1_Bit_8EBE126F_D9BE_4774_9E73_CDFFC61A35D9, "i", ".");
 
-int Berry_Color_Class_Get_RGB_8_Bits_C99E5B74_380A_480E_8F1F_00265E57F0BE(Xila_Namespace::Graphics_Types::Color_Class* I)
+int Berry_Color_Class_Get_RGB_8_Bits_0484B2DD_7F28_4D6B_905A_857B3E0523E9(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return (int)I->Get_RGB_8_Bits(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_8_Bits_C99E5B74_380A_480E_8F1F_00265E57F0BE, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_8_Bits_0484B2DD_7F28_4D6B_905A_857B3E0523E9, "i", ".");
 
-int Berry_Color_Class_Get_RGB_16_Bits_177F0078_D3EF_48EC_9B70_BC5E8D35F9BC(Xila_Namespace::Graphics_Types::Color_Class* I)
+int Berry_Color_Class_Get_RGB_16_Bits_E4A87B5D_BA93_41CC_AFB7_81965FCF3CC4(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return (int)I->Get_RGB_16_Bits(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_16_Bits_177F0078_D3EF_48EC_9B70_BC5E8D35F9BC, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_16_Bits_E4A87B5D_BA93_41CC_AFB7_81965FCF3CC4, "i", ".");
 
-int Berry_Color_Class_Get_RGB_32_Bits_047AA031_BAC1_471B_B6A2_BB14F5161128(Xila_Namespace::Graphics_Types::Color_Class* I)
+int Berry_Color_Class_Get_RGB_32_Bits_E1D29845_7354_4552_A867_9D1B608998C0(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return (int)I->Get_RGB_32_Bits(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_32_Bits_047AA031_BAC1_471B_B6A2_BB14F5161128, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_RGB_32_Bits_E1D29845_7354_4552_A867_9D1B608998C0, "i", ".");
 
-int Berry_Color_Class_Get_Brightness_D511BF2C_8E7E_4E48_A466_547135765662(Xila_Namespace::Graphics_Types::Color_Class* I)
+int Berry_Color_Class_Get_Brightness_CD115652_1F0F_4B3A_8019_F51E2E559859(Xila_Namespace::Graphics_Types::Color_Class* I)
 {
 return (int)I->Get_Brightness(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_Brightness_D511BF2C_8E7E_4E48_A466_547135765662, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_Brightness_CD115652_1F0F_4B3A_8019_F51E2E559859, "i", ".");
 
 // - - Operators
 
@@ -5886,24 +5886,24 @@ BE_FUNC_CTYPE_DECLARE(Berry_Color_Class_Get_Brightness_D511BF2C_8E7E_4E48_A466_5
 class Berry_Color_Type(scope:global, name:Color_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Color_Class_Initialize_A81C53FD_BC7B_4929_ABCC_BA2D09F130FD)
-	init, ctype_func(Berry_Color_Class_Initialize_8EB74E96_C9D1_4C68_ABE0_A172F383BFAE)
-	init, ctype_func(Berry_Color_Class_Initialize_E70C9942_E42E_4691_995D_8B218582E5F7)
-	init, ctype_func(Berry_Color_Class_Initialize_43291D6D_2E10_4423_9D54_A13F3367DE2C)
-	deinit, ctype_func(Berry_Color_Class_Deinitialize_2CCDD7E6_0A50_403C_B7E4_D9F8A598A2A6)
-	Change_Lightness, ctype_func(Berry_Color_Class_Change_Lightness_0E89F40F_BDC7_4A5C_967D_33A3EDB3A635)
-	Set_RGB, ctype_func(Berry_Color_Class_Set_RGB_587117B0_2470_4FFA_ABAD_DCF824CE29CA)
-	Set_RGB, ctype_func(Berry_Color_Class_Set_RGB_D645D814_AAA6_4CFF_9A5D_7B0F3525536D)
-	Set_HSV, ctype_func(Berry_Color_Class_Set_HSV_D08802D7_A98F_4A3B_A568_97C9DF3CD4D4)
-	Set_To_Black, ctype_func(Berry_Color_Class_Set_To_Black_55D670B5_0BB8_4E3A_9B13_15866438EB10)
-	Set_To_White, ctype_func(Berry_Color_Class_Set_To_White_55307408_1795_40BB_8AE4_FF6340135239)
-	Set_Darker, ctype_func(Berry_Color_Class_Set_Darker_C7C727BF_9991_406C_9738_9B423BE6D386)
-	Set_Lighter, ctype_func(Berry_Color_Class_Set_Lighter_D3A9D15C_DF94_4DAA_9489_C10F1DD8DE8B)
-	Get_RGB_1_Bit, ctype_func(Berry_Color_Class_Get_RGB_1_Bit_F8E1F22D_008A_4DCE_AA71_3C07104F7B4B)
-	Get_RGB_8_Bits, ctype_func(Berry_Color_Class_Get_RGB_8_Bits_C99E5B74_380A_480E_8F1F_00265E57F0BE)
-	Get_RGB_16_Bits, ctype_func(Berry_Color_Class_Get_RGB_16_Bits_177F0078_D3EF_48EC_9B70_BC5E8D35F9BC)
-	Get_RGB_32_Bits, ctype_func(Berry_Color_Class_Get_RGB_32_Bits_047AA031_BAC1_471B_B6A2_BB14F5161128)
-	Get_Brightness, ctype_func(Berry_Color_Class_Get_Brightness_D511BF2C_8E7E_4E48_A466_547135765662)
+	init, ctype_func(Berry_Color_Class_Initialize_F9D11931_A28D_4980_A3CC_393FC079BA6B)
+	init, ctype_func(Berry_Color_Class_Initialize_2350BC9C_F1F3_418D_B969_D209697EE96D)
+	init, ctype_func(Berry_Color_Class_Initialize_13D0CC1F_6892_47DD_8F63_4868D9BE1CFD)
+	init, ctype_func(Berry_Color_Class_Initialize_A9E0BCC1_AD07_40A5_8D9F_57599C5A907D)
+	deinit, ctype_func(Berry_Color_Class_Deinitialize_2F9756B6_840D_479B_8A08_9D6EB7B31333)
+	Change_Lightness, ctype_func(Berry_Color_Class_Change_Lightness_06657FFF_1802_4A22_B5AF_425A8CC90F04)
+	Set_RGB, ctype_func(Berry_Color_Class_Set_RGB_6DCBD18A_4FDB_4ACD_96BA_F2F780DE5BAD)
+	Set_RGB, ctype_func(Berry_Color_Class_Set_RGB_3655796E_8D51_46EB_B1C4_EA97320B91F6)
+	Set_HSV, ctype_func(Berry_Color_Class_Set_HSV_2AFAF497_FD83_4F63_8ADF_8BC695F0701F)
+	Set_To_Black, ctype_func(Berry_Color_Class_Set_To_Black_CB48329D_2971_4269_A919_4AE41F86667B)
+	Set_To_White, ctype_func(Berry_Color_Class_Set_To_White_89530B32_8C75_4AA4_A8A3_C52730091D5A)
+	Set_Darker, ctype_func(Berry_Color_Class_Set_Darker_446EBCB4_5EE5_45AC_BCB8_25E240F41B2F)
+	Set_Lighter, ctype_func(Berry_Color_Class_Set_Lighter_DCC23DE0_7BD6_4C1A_B89C_DD257BC3C3A9)
+	Get_RGB_1_Bit, ctype_func(Berry_Color_Class_Get_RGB_1_Bit_8EBE126F_D9BE_4774_9E73_CDFFC61A35D9)
+	Get_RGB_8_Bits, ctype_func(Berry_Color_Class_Get_RGB_8_Bits_0484B2DD_7F28_4D6B_905A_857B3E0523E9)
+	Get_RGB_16_Bits, ctype_func(Berry_Color_Class_Get_RGB_16_Bits_E4A87B5D_BA93_41CC_AFB7_81965FCF3CC4)
+	Get_RGB_32_Bits, ctype_func(Berry_Color_Class_Get_RGB_32_Bits_E1D29845_7354_4552_A867_9D1B608998C0)
+	Get_Brightness, ctype_func(Berry_Color_Class_Get_Brightness_CD115652_1F0F_4B3A_8019_F51E2E559859)
 
 }
 @const_object_info_end */
@@ -5918,63 +5918,63 @@ extern "C"
 // - - Constructors
 
 // - - Destructors
-void Berry_Area_Class_Deinitialize_0632F385_4A7E_4E14_B497_0160F4C8CB63(bvm* V, Xila_Namespace::Graphics_Types::Area_Class* I)
+void Berry_Area_Class_Deinitialize_B899350C_02B7_4502_AEA0_EAF008363E06(bvm* V, Xila_Namespace::Graphics_Types::Area_Class* I)
 {
 if (!I) { return; }
 I->~Area_Class();
 be_free(V, I, sizeof(Graphics_Types::Area_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Deinitialize_0632F385_4A7E_4E14_B497_0160F4C8CB63, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Deinitialize_B899350C_02B7_4502_AEA0_EAF008363E06, "", "@.");
 
 
 // - - Functions
-void Berry_Area_Class_Increase_808904E5_A51C_4027_A606_49622D1091F5(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0, int A_1)
+void Berry_Area_Class_Increase_0AB1FC83_6EED_4D67_9555_CCEE4A72D697(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0, int A_1)
 {
 return I->Increase((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Increase_808904E5_A51C_4027_A606_49622D1091F5, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Increase_0AB1FC83_6EED_4D67_9555_CCEE4A72D697, "", ".ii");
 
-void Berry_Area_Class_Move_27FD049F_C247_4531_B85B_A83861A0ED95(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0, int A_1)
+void Berry_Area_Class_Move_A35F7CFA_E720_4F94_9426_D0C40E5EBC75(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0, int A_1)
 {
 return I->Move((short int)A_0, (short int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Move_27FD049F_C247_4531_B85B_A83861A0ED95, "", ".ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Move_A35F7CFA_E720_4F94_9426_D0C40E5EBC75, "", ".ii");
 
-void Berry_Area_Class_Align_8A20D4C7_4E12_4F2B_8D30_F5AF52456E9F(Xila_Namespace::Graphics_Types::Area_Class* I, Area_Class* A_0, int A_1, int A_2, int A_3)
+void Berry_Area_Class_Align_F3B6BDAB_38FF_41E9_AC42_6C2EDEA68B0F(Xila_Namespace::Graphics_Types::Area_Class* I, Area_Class* A_0, int A_1, int A_2, int A_3)
 {
 return I->Align(*A_0, (Alignment_Type)A_1, (short int)A_2, (short int)A_3); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Align_8A20D4C7_4E12_4F2B_8D30_F5AF52456E9F, "", "..iii");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Align_F3B6BDAB_38FF_41E9_AC42_6C2EDEA68B0F, "", "..iii");
 
-void Berry_Area_Class_Set_Width_4FD68DF9_2CD2_4116_AC03_ADA8F45F9AA3(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0)
+void Berry_Area_Class_Set_Width_23CAF80F_117D_4758_96D8_906884CCA3D6(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0)
 {
 return I->Set_Width((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Set_Width_4FD68DF9_2CD2_4116_AC03_ADA8F45F9AA3, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Set_Width_23CAF80F_117D_4758_96D8_906884CCA3D6, "", ".i");
 
-void Berry_Area_Class_Set_Height_8FAEAD93_93BB_4E2C_8707_625FC3C64E4D(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0)
+void Berry_Area_Class_Set_Height_F08AC4E3_5E7B_4F22_B3BE_942145A586BA(Xila_Namespace::Graphics_Types::Area_Class* I, int A_0)
 {
 return I->Set_Height((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Set_Height_8FAEAD93_93BB_4E2C_8707_625FC3C64E4D, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Set_Height_F08AC4E3_5E7B_4F22_B3BE_942145A586BA, "", ".i");
 
-int Berry_Area_Class_Get_Width_C24A92D0_167C_44D8_A283_9A88BADA4EAD(Xila_Namespace::Graphics_Types::Area_Class* I)
+int Berry_Area_Class_Get_Width_9D7597AF_5B2C_4D84_8972_D4D073950917(Xila_Namespace::Graphics_Types::Area_Class* I)
 {
 return (int)I->Get_Width(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Width_C24A92D0_167C_44D8_A283_9A88BADA4EAD, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Width_9D7597AF_5B2C_4D84_8972_D4D073950917, "i", ".");
 
-int Berry_Area_Class_Get_Height_DEF8C4A6_1F8D_42BF_B00F_FF36F89D3EAE(Xila_Namespace::Graphics_Types::Area_Class* I)
+int Berry_Area_Class_Get_Height_E8AE233C_A809_4258_A530_5C299ABAD6FE(Xila_Namespace::Graphics_Types::Area_Class* I)
 {
 return (int)I->Get_Height(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Height_DEF8C4A6_1F8D_42BF_B00F_FF36F89D3EAE, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Height_E8AE233C_A809_4258_A530_5C299ABAD6FE, "i", ".");
 
-int Berry_Area_Class_Get_Size_16B5A963_EE0F_4DA2_A444_CF5A6C7C0115(Xila_Namespace::Graphics_Types::Area_Class* I)
+int Berry_Area_Class_Get_Size_292AFCEB_8F5B_4E22_817A_ABD914D2492A(Xila_Namespace::Graphics_Types::Area_Class* I)
 {
 return (int)I->Get_Size(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Size_16B5A963_EE0F_4DA2_A444_CF5A6C7C0115, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Size_292AFCEB_8F5B_4E22_817A_ABD914D2492A, "i", ".");
 
 // - - Operators
 
@@ -5983,15 +5983,15 @@ BE_FUNC_CTYPE_DECLARE(Berry_Area_Class_Get_Size_16B5A963_EE0F_4DA2_A444_CF5A6C7C
 class Berry_Area_Type(scope:global, name:Area_Type)
 {
 	_p, var
-	deinit, ctype_func(Berry_Area_Class_Deinitialize_0632F385_4A7E_4E14_B497_0160F4C8CB63)
-	Increase, ctype_func(Berry_Area_Class_Increase_808904E5_A51C_4027_A606_49622D1091F5)
-	Move, ctype_func(Berry_Area_Class_Move_27FD049F_C247_4531_B85B_A83861A0ED95)
-	Align, ctype_func(Berry_Area_Class_Align_8A20D4C7_4E12_4F2B_8D30_F5AF52456E9F)
-	Set_Width, ctype_func(Berry_Area_Class_Set_Width_4FD68DF9_2CD2_4116_AC03_ADA8F45F9AA3)
-	Set_Height, ctype_func(Berry_Area_Class_Set_Height_8FAEAD93_93BB_4E2C_8707_625FC3C64E4D)
-	Get_Width, ctype_func(Berry_Area_Class_Get_Width_C24A92D0_167C_44D8_A283_9A88BADA4EAD)
-	Get_Height, ctype_func(Berry_Area_Class_Get_Height_DEF8C4A6_1F8D_42BF_B00F_FF36F89D3EAE)
-	Get_Size, ctype_func(Berry_Area_Class_Get_Size_16B5A963_EE0F_4DA2_A444_CF5A6C7C0115)
+	deinit, ctype_func(Berry_Area_Class_Deinitialize_B899350C_02B7_4502_AEA0_EAF008363E06)
+	Increase, ctype_func(Berry_Area_Class_Increase_0AB1FC83_6EED_4D67_9555_CCEE4A72D697)
+	Move, ctype_func(Berry_Area_Class_Move_A35F7CFA_E720_4F94_9426_D0C40E5EBC75)
+	Align, ctype_func(Berry_Area_Class_Align_F3B6BDAB_38FF_41E9_AC42_6C2EDEA68B0F)
+	Set_Width, ctype_func(Berry_Area_Class_Set_Width_23CAF80F_117D_4758_96D8_906884CCA3D6)
+	Set_Height, ctype_func(Berry_Area_Class_Set_Height_F08AC4E3_5E7B_4F22_B3BE_942145A586BA)
+	Get_Width, ctype_func(Berry_Area_Class_Get_Width_9D7597AF_5B2C_4D84_8972_D4D073950917)
+	Get_Height, ctype_func(Berry_Area_Class_Get_Height_E8AE233C_A809_4258_A530_5C299ABAD6FE)
+	Get_Size, ctype_func(Berry_Area_Class_Get_Size_292AFCEB_8F5B_4E22_817A_ABD914D2492A)
 
 }
 @const_object_info_end */
@@ -6002,118 +6002,118 @@ extern "C"
 	#include "../generate/be_fixed_Berry_Area_Type.h"
 }
 // - Functions
-int Berry_Graphics_Class_Start_147A3022_AD1F_41C3_8361_8CA7A6EC9E9A()
+int Berry_Graphics_Class_Start_39BAA628_A765_487B_9CB0_4CF7AA0123BB()
 {
 return (int)Graphics.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Start_147A3022_AD1F_41C3_8361_8CA7A6EC9E9A, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Start_39BAA628_A765_487B_9CB0_4CF7AA0123BB, "i", "");
 
 
-int Berry_Graphics_Class_Stop_84E1E6C2_F3FF_455C_858F_4300607FB6E7()
+int Berry_Graphics_Class_Stop_31B6213E_BD8B_4503_8EE8_F0CD3291AD71()
 {
 return (int)Graphics.Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Stop_84E1E6C2_F3FF_455C_858F_4300607FB6E7, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Stop_31B6213E_BD8B_4503_8EE8_F0CD3291AD71, "i", "");
 
 
-void * Berry_Graphics_Class_Get_Top_Layer_07C7B7CB_71B2_45DE_B770_B1F5B8D6CCEA(bvm* V)
+void * Berry_Graphics_Class_Get_Top_Layer_17EF530E_906D_4D0F_98E0_812C6844F3B6(bvm* V)
 {
 Xila_Namespace::Graphics_Types::Object_Class* R = (Xila_Namespace::Graphics_Types::Object_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Object_Class));
  *R = Graphics.Get_Top_Layer(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Top_Layer_07C7B7CB_71B2_45DE_B770_B1F5B8D6CCEA, "Graphics.Object_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Top_Layer_17EF530E_906D_4D0F_98E0_812C6844F3B6, "Graphics.Object_Type", "@");
 
 
 
-void Berry_Graphics_Class_Task_Function_3165A1EB_72F5_47B9_BEB9_0EEE8EA006CC()
+void Berry_Graphics_Class_Task_Function_7BE9E43D_6EF7_4320_A55B_EAB2BF998281()
 {
 return Graphics.Task_Function(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Task_Function_3165A1EB_72F5_47B9_BEB9_0EEE8EA006CC, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Task_Function_7BE9E43D_6EF7_4320_A55B_EAB2BF998281, "", "");
 
 
-const char* Berry_Graphics_Class_Get_Symbol_19E1B82C_2BD3_40BA_A144_68729E8D81AF(int A_0)
+const char* Berry_Graphics_Class_Get_Symbol_CD5AC6A6_1080_4E81_895D_961AC92F9FDB(int A_0)
 {
 return Graphics.Get_Symbol((Symbol_Code_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Symbol_19E1B82C_2BD3_40BA_A144_68729E8D81AF, "s", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Symbol_CD5AC6A6_1080_4E81_895D_961AC92F9FDB, "s", "i");
 
 
 
 
-void Berry_Graphics_Class_Take_Semaphore_BAA2AA2F_79A0_4D6E_A58A_C2AE6BF5A8F2()
+void Berry_Graphics_Class_Take_Semaphore_D956C27A_8527_4701_919B_4797D3C510AC()
 {
 return Graphics.Take_Semaphore(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Take_Semaphore_BAA2AA2F_79A0_4D6E_A58A_C2AE6BF5A8F2, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Take_Semaphore_D956C27A_8527_4701_919B_4797D3C510AC, "", "");
 
 
-void Berry_Graphics_Class_Give_Semaphore_A0BAE8DD_090F_41F1_BB6C_F8740D5112CF()
+void Berry_Graphics_Class_Give_Semaphore_3790F036_90B7_4552_8BD7_99796EFE113D()
 {
 return Graphics.Give_Semaphore(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Give_Semaphore_A0BAE8DD_090F_41F1_BB6C_F8740D5112CF, "", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Give_Semaphore_3790F036_90B7_4552_8BD7_99796EFE113D, "", "");
 
 
-const void* Berry_Graphics_Class_Get_Font_EB3261D1_C3E5_4B2B_A308_33BA5162418E(int A_0)
+const void* Berry_Graphics_Class_Get_Font_6E4C006D_B426_4CE1_A38A_B115159BE39F(int A_0)
 {
 return &Graphics.Get_Font((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Font_EB3261D1_C3E5_4B2B_A308_33BA5162418E, "c", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Font_6E4C006D_B426_4CE1_A38A_B115159BE39F, "c", "i");
 
 
-void * Berry_Graphics_Class_Get_Theme_Primary_Color_00389D4B_8800_436A_BF0F_52B0FE996945(bvm* V)
+void * Berry_Graphics_Class_Get_Theme_Primary_Color_1AF57408_7C43_41CB_813F_5244038CC7A7(bvm* V)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = Graphics.Get_Theme_Primary_Color(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Primary_Color_00389D4B_8800_436A_BF0F_52B0FE996945, "Graphics.Color_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Primary_Color_1AF57408_7C43_41CB_813F_5244038CC7A7, "Graphics.Color_Type", "@");
 
 
-void * Berry_Graphics_Class_Get_Theme_Secondary_Color_487FD139_5A3B_4327_B5FA_D50A4A2B05AD(bvm* V)
+void * Berry_Graphics_Class_Get_Theme_Secondary_Color_D1AE82B3_5732_42F6_8941_EBEDB9B606A9(bvm* V)
 {
 Xila_Namespace::Graphics_Types::Color_Class* R = (Xila_Namespace::Graphics_Types::Color_Class*) be_malloc(V, sizeof(Xila_Namespace::Graphics_Types::Color_Class));
  *R = Graphics.Get_Theme_Secondary_Color(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Secondary_Color_487FD139_5A3B_4327_B5FA_D50A4A2B05AD, "Graphics.Color_Type", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Secondary_Color_D1AE82B3_5732_42F6_8941_EBEDB9B606A9, "Graphics.Color_Type", "@");
 
 
-bool Berry_Graphics_Class_Get_Theme_Dark_Mode_A5EB2197_E301_4F3C_A8A1_7B9FE37B073B()
+bool Berry_Graphics_Class_Get_Theme_Dark_Mode_93A660F2_3BBA_48F0_9615_3DD1B809A493()
 {
 return Graphics.Get_Theme_Dark_Mode(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Dark_Mode_A5EB2197_E301_4F3C_A8A1_7B9FE37B073B, "b", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Theme_Dark_Mode_93A660F2_3BBA_48F0_9615_3DD1B809A493, "b", "");
 
 
-int Berry_Graphics_Class_Get_Percentage_A41377CC_AFE3_44DA_B458_7083A42477E6(int A_0)
+int Berry_Graphics_Class_Get_Percentage_E1886770_D8EC_4CB2_8F1A_BDC90B74308A(int A_0)
 {
 return (int)Graphics.Get_Percentage((short int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Percentage_A41377CC_AFE3_44DA_B458_7083A42477E6, "i", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Get_Percentage_E1886770_D8EC_4CB2_8F1A_BDC90B74308A, "i", "i");
 
 
-void Berry_Graphics_Class_Set_Theme_Primary_Color_CC1039E4_9312_446C_9CAE_1559797756B9(Color_Class* A_0)
+void Berry_Graphics_Class_Set_Theme_Primary_Color_6B27938D_D4E8_4EC9_ADEE_CEEDA4892E94(Color_Class* A_0)
 {
 return Graphics.Set_Theme_Primary_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Primary_Color_CC1039E4_9312_446C_9CAE_1559797756B9, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Primary_Color_6B27938D_D4E8_4EC9_ADEE_CEEDA4892E94, "", ".");
 
 
-void Berry_Graphics_Class_Set_Theme_Secondary_Color_47708782_2E87_4312_A466_B8991A20DBF5(Color_Class* A_0)
+void Berry_Graphics_Class_Set_Theme_Secondary_Color_5BF77C1C_4D57_47FC_9225_C95E2617ED23(Color_Class* A_0)
 {
 return Graphics.Set_Theme_Secondary_Color(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Secondary_Color_47708782_2E87_4312_A466_B8991A20DBF5, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Secondary_Color_5BF77C1C_4D57_47FC_9225_C95E2617ED23, "", ".");
 
 
-void Berry_Graphics_Class_Set_Theme_Dark_Mode_5440BBB2_7EEF_4644_A063_FFF4BF4CEE74(bool A_0)
+void Berry_Graphics_Class_Set_Theme_Dark_Mode_1CD881F0_BB7F_4B1D_A15D_B0D91C30AEE1(bool A_0)
 {
 return Graphics.Set_Theme_Dark_Mode(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Dark_Mode_5440BBB2_7EEF_4644_A063_FFF4BF4CEE74, "", "b");
+BE_FUNC_CTYPE_DECLARE(Berry_Graphics_Class_Set_Theme_Dark_Mode_1CD881F0_BB7F_4B1D_A15D_B0D91C30AEE1, "", "b");
 
 
 void* Berry_Graphics_Class_Get_Pointer()
@@ -6127,21 +6127,21 @@ BE_EXPORT_VARIABLE const bclass Berry_Module_Type;
 /* @const_object_info_begin
 module Graphics (scope:global)
 {
-	Start, ctype_func(Berry_Graphics_Class_Start_147A3022_AD1F_41C3_8361_8CA7A6EC9E9A)
-	Stop, ctype_func(Berry_Graphics_Class_Stop_84E1E6C2_F3FF_455C_858F_4300607FB6E7)
-	Get_Top_Layer, ctype_func(Berry_Graphics_Class_Get_Top_Layer_07C7B7CB_71B2_45DE_B770_B1F5B8D6CCEA)
-	Task_Function, ctype_func(Berry_Graphics_Class_Task_Function_3165A1EB_72F5_47B9_BEB9_0EEE8EA006CC)
-	Get_Symbol, ctype_func(Berry_Graphics_Class_Get_Symbol_19E1B82C_2BD3_40BA_A144_68729E8D81AF)
-	Take_Semaphore, ctype_func(Berry_Graphics_Class_Take_Semaphore_BAA2AA2F_79A0_4D6E_A58A_C2AE6BF5A8F2)
-	Give_Semaphore, ctype_func(Berry_Graphics_Class_Give_Semaphore_A0BAE8DD_090F_41F1_BB6C_F8740D5112CF)
-	Get_Font, ctype_func(Berry_Graphics_Class_Get_Font_EB3261D1_C3E5_4B2B_A308_33BA5162418E)
-	Get_Theme_Primary_Color, ctype_func(Berry_Graphics_Class_Get_Theme_Primary_Color_00389D4B_8800_436A_BF0F_52B0FE996945)
-	Get_Theme_Secondary_Color, ctype_func(Berry_Graphics_Class_Get_Theme_Secondary_Color_487FD139_5A3B_4327_B5FA_D50A4A2B05AD)
-	Get_Theme_Dark_Mode, ctype_func(Berry_Graphics_Class_Get_Theme_Dark_Mode_A5EB2197_E301_4F3C_A8A1_7B9FE37B073B)
-	Get_Percentage, ctype_func(Berry_Graphics_Class_Get_Percentage_A41377CC_AFE3_44DA_B458_7083A42477E6)
-	Set_Theme_Primary_Color, ctype_func(Berry_Graphics_Class_Set_Theme_Primary_Color_CC1039E4_9312_446C_9CAE_1559797756B9)
-	Set_Theme_Secondary_Color, ctype_func(Berry_Graphics_Class_Set_Theme_Secondary_Color_47708782_2E87_4312_A466_B8991A20DBF5)
-	Set_Theme_Dark_Mode, ctype_func(Berry_Graphics_Class_Set_Theme_Dark_Mode_5440BBB2_7EEF_4644_A063_FFF4BF4CEE74)
+	Start, ctype_func(Berry_Graphics_Class_Start_39BAA628_A765_487B_9CB0_4CF7AA0123BB)
+	Stop, ctype_func(Berry_Graphics_Class_Stop_31B6213E_BD8B_4503_8EE8_F0CD3291AD71)
+	Get_Top_Layer, ctype_func(Berry_Graphics_Class_Get_Top_Layer_17EF530E_906D_4D0F_98E0_812C6844F3B6)
+	Task_Function, ctype_func(Berry_Graphics_Class_Task_Function_7BE9E43D_6EF7_4320_A55B_EAB2BF998281)
+	Get_Symbol, ctype_func(Berry_Graphics_Class_Get_Symbol_CD5AC6A6_1080_4E81_895D_961AC92F9FDB)
+	Take_Semaphore, ctype_func(Berry_Graphics_Class_Take_Semaphore_D956C27A_8527_4701_919B_4797D3C510AC)
+	Give_Semaphore, ctype_func(Berry_Graphics_Class_Give_Semaphore_3790F036_90B7_4552_8BD7_99796EFE113D)
+	Get_Font, ctype_func(Berry_Graphics_Class_Get_Font_6E4C006D_B426_4CE1_A38A_B115159BE39F)
+	Get_Theme_Primary_Color, ctype_func(Berry_Graphics_Class_Get_Theme_Primary_Color_1AF57408_7C43_41CB_813F_5244038CC7A7)
+	Get_Theme_Secondary_Color, ctype_func(Berry_Graphics_Class_Get_Theme_Secondary_Color_D1AE82B3_5732_42F6_8941_EBEDB9B606A9)
+	Get_Theme_Dark_Mode, ctype_func(Berry_Graphics_Class_Get_Theme_Dark_Mode_93A660F2_3BBA_48F0_9615_3DD1B809A493)
+	Get_Percentage, ctype_func(Berry_Graphics_Class_Get_Percentage_E1886770_D8EC_4CB2_8F1A_BDC90B74308A)
+	Set_Theme_Primary_Color, ctype_func(Berry_Graphics_Class_Set_Theme_Primary_Color_6B27938D_D4E8_4EC9_ADEE_CEEDA4892E94)
+	Set_Theme_Secondary_Color, ctype_func(Berry_Graphics_Class_Set_Theme_Secondary_Color_5BF77C1C_4D57_47FC_9225_C95E2617ED23)
+	Set_Theme_Dark_Mode, ctype_func(Berry_Graphics_Class_Set_Theme_Dark_Mode_1CD881F0_BB7F_4B1D_A15D_B0D91C30AEE1)
 	Get_Pointer, ctype_func(Berry_Graphics_Class_Get_Pointer)
 
 	Object_Type, class(Berry_Object_Type)
