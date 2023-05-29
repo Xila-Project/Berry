@@ -102,16 +102,15 @@ def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
                 S += str(Argument).replace("(*", "(* " + " A_" + str(i))
                 StringD += "^^"
                 Passed_Arguments += "A_" + str(i)
-
-            elif Is_Class(Base_Type.declaration):
-                print("Class : ", type(Base_Type.declaration), " in ", str(Declaration))
-                S += Base_Type.declaration.decl_string + "* A_" + str(i)
+            else:
+                if Is_Declarated_Type(Base_Type):
+                    S += Base_Type.declaration.decl_string + "* A_" + str(i)
+                else:
+                    S += str(Base_Type) + "* A_" + str(i)
                 StringD += "."#"(" + str(Base_Type) + ")"
                 if Is_Reference_Type(Argument):
                     Passed_Arguments += "*"
                 Passed_Arguments += "A_" + str(i)
-            else:
-                print("Unknown pointer type : ", type(Base_Type.declaration), " in ", str(Declaration))
                 
         else:
 
@@ -165,10 +164,16 @@ def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
 
         # - - Default arguments
         if Is_Optional(Raw_Argument) and not(S.endswith(", ")):
-            S += " = " 
-            if (Is_Declarated_Type(Argument) and Is_Enumeration_Type(Argument.declaration)):
-                S += "(int)"    # Add explicit cast for enum (enum class doesn't allow implicit cast)
-            S += str(Raw_Argument.default_value).replace("::Xila_Namespace", "Xila_Namespace")
+            if not(Is_Declarated_Type(Argument) and Is_Class(Argument.declaration)): 
+                S += " = " 
+                if Is_Reference_Type(Argument):
+                    S += "&"
+                elif Is_Declarated_Type(Argument):
+                    if Is_Enumeration_Type(Argument.declaration):
+                        S += "(int)"    # Add explicit cast for enum (enum class doesn't allow implicit cast)
+
+            
+                S += str(Raw_Argument.default_value).replace("::Xila_Namespace", "Xila_Namespace")
 
         # - - Add comma separator to arguments and passed arguments
         if not(S.endswith(", ")):
@@ -246,7 +251,9 @@ def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
                     Return_Type_Declaration = Return_Type.declaration.decl_string.replace("::Xila_Namespace::", "Xila_Namespace::")
                     S = "bvm* V, " + S
                     StringD = "@" + StringD
-                    Pre_Additional_Content += Return_Type_Declaration + "* R = (" + Return_Type_Declaration + "*) be_malloc(V, sizeof(" + Return_Type_Declaration + "));\n *R = "
+                    Pre_Additional_Content += Return_Type_Declaration + "* R = (" + Return_Type_Declaration + "*) be_malloc(V, sizeof(" + Return_Type_Declaration + "));\n"
+                    Pre_Additional_Content += "new (R) " + Return_Type_Declaration + "();\n"
+                    Pre_Additional_Content += "*R = "
                     ReturnD = Return_Type.declaration.decl_string.replace("_Types", "").replace("_Class", "_Type").replace("::Xila_Namespace::", "").replace("::", ".")
                     Post_Additional_Content += "return R;\n"
                     R = "void *"

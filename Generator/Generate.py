@@ -160,7 +160,7 @@ for Flag in D_Flags_Raw:
 
 I_Flags = []
 
-I_Flags_Raw.append(".pio/libdeps/wt32-sc01-plus/Battery Library/src")
+I_Flags_Raw.append(".pio/libdeps/WT32-SC01_Plus/Battery Library/src")
 
 for Flag in I_Flags_Raw:
     if Flag not in I_Flags:

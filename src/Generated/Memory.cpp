@@ -9,60 +9,60 @@ using namespace Xila_Namespace;
 using namespace Memory_Types;
 
 // - Functions
-int Berry_Memory_Class_Get_Heap_Size_76DD5306_B8AE_423C_928E_6562C5EC1F4B()
+int Berry_Memory_Class_Get_Heap_Size_7E9598D7_C4B2_40FC_8730_7F7E02E65DE3()
 {
 return (int)Memory.Get_Heap_Size(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Heap_Size_76DD5306_B8AE_423C_928E_6562C5EC1F4B, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Heap_Size_7E9598D7_C4B2_40FC_8730_7F7E02E65DE3, "i", "");
 
 
-int Berry_Memory_Class_Get_Free_Heap_52666E1B_FC32_4A48_9792_403C1FB18790()
+int Berry_Memory_Class_Get_Free_Heap_33798E50_B521_4A9F_9252_995D243DC0A1()
 {
 return (int)Memory.Get_Free_Heap(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Free_Heap_52666E1B_FC32_4A48_9792_403C1FB18790, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Free_Heap_33798E50_B521_4A9F_9252_995D243DC0A1, "i", "");
 
 
-int Berry_Memory_Class_Get_Minimum_Free_Heap_B76F47B4_B81B_4EDD_BB01_F47D98042966()
+int Berry_Memory_Class_Get_Minimum_Free_Heap_0E05C2DA_BB91_4435_9F18_19E387972A7F()
 {
 return (int)Memory.Get_Minimum_Free_Heap(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Minimum_Free_Heap_B76F47B4_B81B_4EDD_BB01_F47D98042966, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Minimum_Free_Heap_0E05C2DA_BB91_4435_9F18_19E387972A7F, "i", "");
 
 
-int Berry_Memory_Class_Get_Maximum_Allocated_Heap_AFE1638D_A511_45E5_B422_708C6447997F()
+int Berry_Memory_Class_Get_Maximum_Allocated_Heap_AEA6A511_5619_4A63_9F9B_BB598FF8B786()
 {
 return (int)Memory.Get_Maximum_Allocated_Heap(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Maximum_Allocated_Heap_AFE1638D_A511_45E5_B422_708C6447997F, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Maximum_Allocated_Heap_AEA6A511_5619_4A63_9F9B_BB598FF8B786, "i", "");
 
 
-int Berry_Memory_Class_Get_PSRAM_Size_F02A939B_DA51_440C_A337_F66A4DD1D460()
+int Berry_Memory_Class_Get_PSRAM_Size_38E84635_0490_404B_880C_DB64EB03AE5E()
 {
 return (int)Memory.Get_PSRAM_Size(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_PSRAM_Size_F02A939B_DA51_440C_A337_F66A4DD1D460, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_PSRAM_Size_38E84635_0490_404B_880C_DB64EB03AE5E, "i", "");
 
 
-int Berry_Memory_Class_Get_Free_PSRAM_51EDE822_3737_492C_A5D6_FE61D2829FD4()
+int Berry_Memory_Class_Get_Free_PSRAM_807478E4_DEC7_439A_950C_45302696CBEC()
 {
 return (int)Memory.Get_Free_PSRAM(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Free_PSRAM_51EDE822_3737_492C_A5D6_FE61D2829FD4, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Free_PSRAM_807478E4_DEC7_439A_950C_45302696CBEC, "i", "");
 
 
-int Berry_Memory_Class_Get_Minimum_Free_PSRAM_55FFC396_BFDD_4320_A7C1_6C460937080A()
+int Berry_Memory_Class_Get_Minimum_Free_PSRAM_768947DE_4F67_4FCF_8A32_362F55A138C2()
 {
 return (int)Memory.Get_Minimum_Free_PSRAM(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Minimum_Free_PSRAM_55FFC396_BFDD_4320_A7C1_6C460937080A, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Minimum_Free_PSRAM_768947DE_4F67_4FCF_8A32_362F55A138C2, "i", "");
 
 
-int Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_A3CFB950_342C_429E_9B3B_5D014575387A()
+int Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_06F58CB9_B736_4694_BB92_FA4E2684AD82()
 {
 return (int)Memory.Get_Maximum_Allocated_PSRAM(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_A3CFB950_342C_429E_9B3B_5D014575387A, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_06F58CB9_B736_4694_BB92_FA4E2684AD82, "i", "");
 
 
 void* Berry_Memory_Class_Get_Pointer()
@@ -75,14 +75,14 @@ BE_FUNC_CTYPE_DECLARE(Berry_Memory_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Memory (scope:global)
 {
-	Get_Heap_Size, ctype_func(Berry_Memory_Class_Get_Heap_Size_76DD5306_B8AE_423C_928E_6562C5EC1F4B)
-	Get_Free_Heap, ctype_func(Berry_Memory_Class_Get_Free_Heap_52666E1B_FC32_4A48_9792_403C1FB18790)
-	Get_Minimum_Free_Heap, ctype_func(Berry_Memory_Class_Get_Minimum_Free_Heap_B76F47B4_B81B_4EDD_BB01_F47D98042966)
-	Get_Maximum_Allocated_Heap, ctype_func(Berry_Memory_Class_Get_Maximum_Allocated_Heap_AFE1638D_A511_45E5_B422_708C6447997F)
-	Get_PSRAM_Size, ctype_func(Berry_Memory_Class_Get_PSRAM_Size_F02A939B_DA51_440C_A337_F66A4DD1D460)
-	Get_Free_PSRAM, ctype_func(Berry_Memory_Class_Get_Free_PSRAM_51EDE822_3737_492C_A5D6_FE61D2829FD4)
-	Get_Minimum_Free_PSRAM, ctype_func(Berry_Memory_Class_Get_Minimum_Free_PSRAM_55FFC396_BFDD_4320_A7C1_6C460937080A)
-	Get_Maximum_Allocated_PSRAM, ctype_func(Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_A3CFB950_342C_429E_9B3B_5D014575387A)
+	Get_Heap_Size, ctype_func(Berry_Memory_Class_Get_Heap_Size_7E9598D7_C4B2_40FC_8730_7F7E02E65DE3)
+	Get_Free_Heap, ctype_func(Berry_Memory_Class_Get_Free_Heap_33798E50_B521_4A9F_9252_995D243DC0A1)
+	Get_Minimum_Free_Heap, ctype_func(Berry_Memory_Class_Get_Minimum_Free_Heap_0E05C2DA_BB91_4435_9F18_19E387972A7F)
+	Get_Maximum_Allocated_Heap, ctype_func(Berry_Memory_Class_Get_Maximum_Allocated_Heap_AEA6A511_5619_4A63_9F9B_BB598FF8B786)
+	Get_PSRAM_Size, ctype_func(Berry_Memory_Class_Get_PSRAM_Size_38E84635_0490_404B_880C_DB64EB03AE5E)
+	Get_Free_PSRAM, ctype_func(Berry_Memory_Class_Get_Free_PSRAM_807478E4_DEC7_439A_950C_45302696CBEC)
+	Get_Minimum_Free_PSRAM, ctype_func(Berry_Memory_Class_Get_Minimum_Free_PSRAM_768947DE_4F67_4FCF_8A32_362F55A138C2)
+	Get_Maximum_Allocated_PSRAM, ctype_func(Berry_Memory_Class_Get_Maximum_Allocated_PSRAM_06F58CB9_B736_4694_BB92_FA4E2684AD82)
 	Get_Pointer, ctype_func(Berry_Memory_Class_Get_Pointer)
 
 }

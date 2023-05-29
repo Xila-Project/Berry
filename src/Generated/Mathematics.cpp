@@ -11,68 +11,68 @@ using namespace Mathematics_Types;
 // - Functions
 
 // - - Constructors
-void * Berry_Hash_Class_Initialize_6D56DEFB_FB19_424C_8B39_8FE1B736C3CA(bvm* V)
+void * Berry_Hash_Class_Initialize_69E03B26_743B_4D38_8A00_1B9762AAE465(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Mathematics_Types::Hash_Class));
 return new (Pointer) Mathematics_Types::Hash_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Initialize_6D56DEFB_FB19_424C_8B39_8FE1B736C3CA, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Initialize_69E03B26_743B_4D38_8A00_1B9762AAE465, "+_p", "@");
 
 
 // - - Destructors
-void Berry_Hash_Class_Deinitialize_B91B59F8_7839_46AB_8827_1586661E1740(bvm* V, Xila_Namespace::Mathematics_Types::Hash_Class* I)
+void Berry_Hash_Class_Deinitialize_921D91CD_9A0E_49C6_B6CA_576E287D666A(bvm* V, Xila_Namespace::Mathematics_Types::Hash_Class* I)
 {
 if (!I) { return; }
 I->~Hash_Class();
 be_free(V, I, sizeof(Mathematics_Types::Hash_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Deinitialize_B91B59F8_7839_46AB_8827_1586661E1740, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Deinitialize_921D91CD_9A0E_49C6_B6CA_576E287D666A, "", "@.");
 
 
 // - - Functions
-int Berry_Hash_Class_Create_F2758DA7_B504_446C_AFC7_84ECEB52BA28(Xila_Namespace::Mathematics_Types::Hash_Class* I, int A_0)
+int Berry_Hash_Class_Create_B569D486_8E32_4723_908B_067C847EDE52(Xila_Namespace::Mathematics_Types::Hash_Class* I, int A_0)
 {
 return (int)I->Create((Message_Digest_Type)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Create_F2758DA7_B504_446C_AFC7_84ECEB52BA28, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Create_B569D486_8E32_4723_908B_067C847EDE52, "i", ".i");
 
-const unsigned char* Berry_Hash_Class_Delete_5180BD61_3ADE_420B_A78A_D51C713C2592(bvm* V, Xila_Namespace::Mathematics_Types::Hash_Class* I)
+const unsigned char* Berry_Hash_Class_Delete_9ED8FBD2_5EFC_469A_9EEC_96CDE7A7C7E6(bvm* V, Xila_Namespace::Mathematics_Types::Hash_Class* I)
 {
 unsigned char* S_0 = (unsigned char*)Berry_Class::Get_Instance(V)->Buffer;
 I->Delete(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Delete_5180BD61_3ADE_420B_A78A_D51C713C2592, "s", "@.[");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Delete_9ED8FBD2_5EFC_469A_9EEC_96CDE7A7C7E6, "s", "@.[");
 
-bool Berry_Hash_Class_Is_Valid_7CF0F72C_28F2_4BC6_AA17_3F8A37BF241A(Xila_Namespace::Mathematics_Types::Hash_Class* I)
+bool Berry_Hash_Class_Is_Valid_09EB699D_6C54_489D_8609_08F439B4CDC2(Xila_Namespace::Mathematics_Types::Hash_Class* I)
 {
 return I->Is_Valid(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Is_Valid_7CF0F72C_28F2_4BC6_AA17_3F8A37BF241A, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Is_Valid_09EB699D_6C54_489D_8609_08F439B4CDC2, "b", ".");
 
-int Berry_Hash_Class_Get_Type_3D7DD52A_C3F3_4AAD_86A5_90DE13DB87D7(Xila_Namespace::Mathematics_Types::Hash_Class* I)
+int Berry_Hash_Class_Get_Type_DEDDB584_C1D3_43DE_B82A_46FF27521213(Xila_Namespace::Mathematics_Types::Hash_Class* I)
 {
 return (int)I->Get_Type(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Get_Type_3D7DD52A_C3F3_4AAD_86A5_90DE13DB87D7, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Get_Type_DEDDB584_C1D3_43DE_B82A_46FF27521213, "i", ".");
 
-int Berry_Hash_Class_Get_Size_57BCC807_1FB3_45C9_9145_6149740880A4(Xila_Namespace::Mathematics_Types::Hash_Class* I)
+int Berry_Hash_Class_Get_Size_E05F204B_49D9_4EBB_A7EB_0DAA48C837AD(Xila_Namespace::Mathematics_Types::Hash_Class* I)
 {
 return (int)I->Get_Size(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Get_Size_57BCC807_1FB3_45C9_9145_6149740880A4, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Get_Size_E05F204B_49D9_4EBB_A7EB_0DAA48C837AD, "i", ".");
 
-int Berry_Hash_Class_Add_ACA3CD2C_7C30_4529_8528_4454189C2E21(Xila_Namespace::Mathematics_Types::Hash_Class* I, const unsigned char* A_0, int A_1)
+int Berry_Hash_Class_Add_CAEE88D5_139A_44CB_83A3_51FDB212EDFF(Xila_Namespace::Mathematics_Types::Hash_Class* I, const unsigned char* A_0, int A_1)
 {
 return (int)I->Add(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Add_ACA3CD2C_7C30_4529_8528_4454189C2E21, "i", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Add_CAEE88D5_139A_44CB_83A3_51FDB212EDFF, "i", ".si");
 
-int Berry_Hash_Class_Add_4F21E2B9_145E_4803_BD2F_A568AD20C746(Xila_Namespace::Mathematics_Types::Hash_Class* I, const char* A_0)
+int Berry_Hash_Class_Add_042BA89C_7476_48ED_88A3_D7F826B1876A(Xila_Namespace::Mathematics_Types::Hash_Class* I, const char* A_0)
 {
 return (int)I->Add(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Add_4F21E2B9_145E_4803_BD2F_A568AD20C746, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Add_042BA89C_7476_48ED_88A3_D7F826B1876A, "i", ".s");
 
 // - - Operators
 
@@ -81,15 +81,15 @@ BE_FUNC_CTYPE_DECLARE(Berry_Hash_Class_Add_4F21E2B9_145E_4803_BD2F_A568AD20C746,
 class Berry_Hash_Type(scope:global, name:Hash_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Hash_Class_Initialize_6D56DEFB_FB19_424C_8B39_8FE1B736C3CA)
-	deinit, ctype_func(Berry_Hash_Class_Deinitialize_B91B59F8_7839_46AB_8827_1586661E1740)
-	Create, ctype_func(Berry_Hash_Class_Create_F2758DA7_B504_446C_AFC7_84ECEB52BA28)
-	Delete, ctype_func(Berry_Hash_Class_Delete_5180BD61_3ADE_420B_A78A_D51C713C2592)
-	Is_Valid, ctype_func(Berry_Hash_Class_Is_Valid_7CF0F72C_28F2_4BC6_AA17_3F8A37BF241A)
-	Get_Type, ctype_func(Berry_Hash_Class_Get_Type_3D7DD52A_C3F3_4AAD_86A5_90DE13DB87D7)
-	Get_Size, ctype_func(Berry_Hash_Class_Get_Size_57BCC807_1FB3_45C9_9145_6149740880A4)
-	Add, ctype_func(Berry_Hash_Class_Add_ACA3CD2C_7C30_4529_8528_4454189C2E21)
-	Add, ctype_func(Berry_Hash_Class_Add_4F21E2B9_145E_4803_BD2F_A568AD20C746)
+	init, ctype_func(Berry_Hash_Class_Initialize_69E03B26_743B_4D38_8A00_1B9762AAE465)
+	deinit, ctype_func(Berry_Hash_Class_Deinitialize_921D91CD_9A0E_49C6_B6CA_576E287D666A)
+	Create, ctype_func(Berry_Hash_Class_Create_B569D486_8E32_4723_908B_067C847EDE52)
+	Delete, ctype_func(Berry_Hash_Class_Delete_9ED8FBD2_5EFC_469A_9EEC_96CDE7A7C7E6)
+	Is_Valid, ctype_func(Berry_Hash_Class_Is_Valid_09EB699D_6C54_489D_8609_08F439B4CDC2)
+	Get_Type, ctype_func(Berry_Hash_Class_Get_Type_DEDDB584_C1D3_43DE_B82A_46FF27521213)
+	Get_Size, ctype_func(Berry_Hash_Class_Get_Size_E05F204B_49D9_4EBB_A7EB_0DAA48C837AD)
+	Add, ctype_func(Berry_Hash_Class_Add_CAEE88D5_139A_44CB_83A3_51FDB212EDFF)
+	Add, ctype_func(Berry_Hash_Class_Add_042BA89C_7476_48ED_88A3_D7F826B1876A)
 
 }
 @const_object_info_end */
@@ -102,311 +102,338 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_Rational_Class_Initialize_803AEAC7_27E8_4162_94B7_308689D2D7F0(bvm* V, long long int*A_0, long long int*A_1)
+void * Berry_Rational_Class_Initialize_FE4D94F2_335C_4694_B59F_5A7A657E4F53(bvm* V, long long int*A_0, long long int*A_1)
 {
 void* Pointer = be_malloc(V, sizeof(Mathematics_Types::Rational_Class));
 return new (Pointer) Mathematics_Types::Rational_Class(*A_0, *A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_803AEAC7_27E8_4162_94B7_308689D2D7F0, "+_p", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_FE4D94F2_335C_4694_B59F_5A7A657E4F53, "+_p", "@..");
 
-void * Berry_Rational_Class_Initialize_88540879_F798_490F_85BA_E4CB4FB735AA(bvm* V, Rational_Class* A_0, Rational_Class* A_1)
+void * Berry_Rational_Class_Initialize_7F0157FB_9F3D_42F4_943D_6BB8DC9568B9(bvm* V, Rational_Class* A_0, Rational_Class* A_1)
 {
 void* Pointer = be_malloc(V, sizeof(Mathematics_Types::Rational_Class));
 return new (Pointer) Mathematics_Types::Rational_Class(*A_0, *A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_88540879_F798_490F_85BA_E4CB4FB735AA, "+_p", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_7F0157FB_9F3D_42F4_943D_6BB8DC9568B9, "+_p", "@..");
 
-void * Berry_Rational_Class_Initialize_2249C4E2_A8A8_4953_A921_2719149D7C77(bvm* V, double* A_0)
+void * Berry_Rational_Class_Initialize_7FBED581_B17B_46F5_99A9_F16F640EE93A(bvm* V, double* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Mathematics_Types::Rational_Class));
 return new (Pointer) Mathematics_Types::Rational_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_2249C4E2_A8A8_4953_A921_2719149D7C77, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Initialize_7FBED581_B17B_46F5_99A9_F16F640EE93A, "+_p", "@.");
 
 
 // - - Destructors
-void Berry_Rational_Class_Deinitialize_4D5EDE33_ABF9_4A3D_88D7_A20A1DC83615(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void Berry_Rational_Class_Deinitialize_21E427A4_438C_4A27_BBC8_879FA3982EFB(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 if (!I) { return; }
 I->~Rational_Class();
 be_free(V, I, sizeof(Mathematics_Types::Rational_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Deinitialize_4D5EDE33_ABF9_4A3D_88D7_A20A1DC83615, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Deinitialize_21E427A4_438C_4A27_BBC8_879FA3982EFB, "", "@.");
 
 
 // - - Functions
-void * Berry_Rational_Class_Get_Numerator_19A46B21_51B5_4523_AF48_4F22D348D1DE(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Get_Numerator_8860743D_2A55_4CE8_A99A_7C36331096A0(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = I->Get_Numerator(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Get_Numerator_19A46B21_51B5_4523_AF48_4F22D348D1DE, "Long_Integer_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Get_Numerator_8860743D_2A55_4CE8_A99A_7C36331096A0, "Long_Integer_Type", "@.");
 
-void * Berry_Rational_Class_Get_Denominator_AA757BC5_1D8E_427C_9AF4_20C53A857005(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Get_Denominator_DAC35D56_7FBD_4292_B89E_0176B02ED0EF(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = I->Get_Denominator(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Get_Denominator_AA757BC5_1D8E_427C_9AF4_20C53A857005, "Long_Integer_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Get_Denominator_DAC35D56_7FBD_4292_B89E_0176B02ED0EF, "Long_Integer_Type", "@.");
 
-void * Berry_Rational_Class_Absolute_Value_D322360C_883C_4FE2_B4A5_F50473E8E510(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Absolute_Value_0A7D0CF3_F843_44A5_B8B9_92807AC3EDD1(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Absolute_Value(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Absolute_Value(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Absolute_Value_D322360C_883C_4FE2_B4A5_F50473E8E510, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Absolute_Value_0A7D0CF3_F843_44A5_B8B9_92807AC3EDD1, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Simplify_91307311_2B2E_443A_A38D_7834CF8C8C97(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Simplify_36462654_C634_45F9_8CA2_BA5BA3F0A4DC(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Simplify(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Simplify(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Simplify_91307311_2B2E_443A_A38D_7834CF8C8C97, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Simplify_36462654_C634_45F9_8CA2_BA5BA3F0A4DC, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Greatest_Common_Divisor_F563F98E_2A5B_4EAD_9653_612906E4944F(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Greatest_Common_Divisor_AF2DED14_0755_42BF_8997_82D48CC99E6A(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = I->Greatest_Common_Divisor(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Greatest_Common_Divisor_F563F98E_2A5B_4EAD_9653_612906E4944F, "Long_Integer_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Greatest_Common_Divisor_AF2DED14_0755_42BF_8997_82D48CC99E6A, "Long_Integer_Type", "@.");
 
-void * Berry_Rational_Class_Least_Common_Multiple_A01635F4_224A_45C7_A378_A31DD0080DFB(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Least_Common_Multiple_3A2CAECA_FB67_42BA_AEE4_8C376D4951D2(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 int64_t* R = (int64_t*) be_malloc(V, sizeof(int64_t));
  *R = I->Least_Common_Multiple(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Least_Common_Multiple_A01635F4_224A_45C7_A378_A31DD0080DFB, "Long_Integer_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Least_Common_Multiple_3A2CAECA_FB67_42BA_AEE4_8C376D4951D2, "Long_Integer_Type", "@.");
 
-void * Berry_Rational_Class_Factorial_DDE5A06E_DCBF_4778_805F_72E97F6D00F4(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Factorial_B5729741_8576_405A_8E11_0882532478CD(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Factorial(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Factorial(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Factorial_DDE5A06E_DCBF_4778_805F_72E97F6D00F4, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Factorial_B5729741_8576_405A_8E11_0882532478CD, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Inverse_6EF6C8AA_BD33_449F_A74F_B639DC09DB8D(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Inverse_F0701D87_20CE_48D8_A560_A56AC14C14C2(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Inverse(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Inverse(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Inverse_6EF6C8AA_BD33_449F_A74F_B639DC09DB8D, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Inverse_F0701D87_20CE_48D8_A560_A56AC14C14C2, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Power_9E2CDF02_63E5_482D_B0DF_E40D89C7B810(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
+void * Berry_Rational_Class_Power_1106A5D2_9DE7_4167_9713_686AD3F22E55(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Power(*A_0); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Power(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Power_9E2CDF02_63E5_482D_B0DF_E40D89C7B810, "Mathematics.Rational_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Power_1106A5D2_9DE7_4167_9713_686AD3F22E55, "Mathematics.Rational_Type", "@..");
 
-void * Berry_Rational_Class_Square_9A53929D_ED92_448F_85B1_FC9C9C525457(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Square_9C8AC569_26DA_4172_BBDA_2DFFA5D4D4C7(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Square(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Square(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Square_9A53929D_ED92_448F_85B1_FC9C9C525457, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Square_9C8AC569_26DA_4172_BBDA_2DFFA5D4D4C7, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Cube_32D6A7C3_C837_4EC4_B670_5A1D483DB0FF(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Cube_558DEE6A_974F_4E8C_8C89_5C0E8817DFFA(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Cube(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Cube(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cube_32D6A7C3_C837_4EC4_B670_5A1D483DB0FF, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cube_558DEE6A_974F_4E8C_8C89_5C0E8817DFFA, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Root_5B6220C1_EEA3_4AA6_B8BA_A09E1EC8206F(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
+void * Berry_Rational_Class_Root_7A383052_BA64_4606_8EE6_5700E4302CBD(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Root(*A_0); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Root(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Root_5B6220C1_EEA3_4AA6_B8BA_A09E1EC8206F, "Mathematics.Rational_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Root_7A383052_BA64_4606_8EE6_5700E4302CBD, "Mathematics.Rational_Type", "@..");
 
-void * Berry_Rational_Class_Cube_Root_640F780D_2361_4F23_BC4E_068E67B4D160(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Cube_Root_F2B3F629_9BDD_4AD8_B53E_CB96BF558BB4(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Cube_Root(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Cube_Root(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cube_Root_640F780D_2361_4F23_BC4E_068E67B4D160, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cube_Root_F2B3F629_9BDD_4AD8_B53E_CB96BF558BB4, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Square_Root_1B3FC1C7_F363_4095_82B7_DFD4D5C0A31E(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Square_Root_D05684F8_62A3_4D3A_AD10_980968655EBB(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Square_Root(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Square_Root(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Square_Root_1B3FC1C7_F363_4095_82B7_DFD4D5C0A31E, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Square_Root_D05684F8_62A3_4D3A_AD10_980968655EBB, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Logarithm_B2DEEE55_29B5_4436_8E32_05B55CD03F1A(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
+void * Berry_Rational_Class_Logarithm_359ECC1A_43AA_4D4B_BD5B_676CF5A91645(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I, long long int*A_0)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Logarithm(*A_0); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Logarithm(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Logarithm_B2DEEE55_29B5_4436_8E32_05B55CD03F1A, "Mathematics.Rational_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Logarithm_359ECC1A_43AA_4D4B_BD5B_676CF5A91645, "Mathematics.Rational_Type", "@..");
 
-void * Berry_Rational_Class_Decimal_Logarithm_17248361_259C_4F56_B935_9B81CE0D2A12(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Decimal_Logarithm_247D7F12_E344_4FB4_A674_616A197B1881(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Decimal_Logarithm(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Decimal_Logarithm(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Decimal_Logarithm_17248361_259C_4F56_B935_9B81CE0D2A12, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Decimal_Logarithm_247D7F12_E344_4FB4_A674_616A197B1881, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Binary_Logarithm_8940EDDC_6E46_4A56_A39F_21F2A5090492(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Binary_Logarithm_7EA89CE1_24F8_4CCB_B3A8_19FFDC5644AB(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Binary_Logarithm(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Binary_Logarithm(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Binary_Logarithm_8940EDDC_6E46_4A56_A39F_21F2A5090492, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Binary_Logarithm_7EA89CE1_24F8_4CCB_B3A8_19FFDC5644AB, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Natural_Logarithm_17DAAB00_B690_45EF_9E1A_B0E85ED2167C(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Natural_Logarithm_99A0C592_FF67_4B4B_845A_BBE115BD7B2B(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Natural_Logarithm(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Natural_Logarithm(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Natural_Logarithm_17DAAB00_B690_45EF_9E1A_B0E85ED2167C, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Natural_Logarithm_99A0C592_FF67_4B4B_845A_BBE115BD7B2B, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Exponential_3CAB9929_50D9_4AD6_A2A8_32CB0235CEC2(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Exponential_D3AEDD3A_F5A3_415D_841B_F526C2007543(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Exponential(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Exponential(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Exponential_3CAB9929_50D9_4AD6_A2A8_32CB0235CEC2, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Exponential_D3AEDD3A_F5A3_415D_841B_F526C2007543, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Sine_EFFA136D_65EA_4086_8389_389C987F0089(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Sine_70333D2D_A374_42E7_A792_2F9948104EE1(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Sine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Sine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Sine_EFFA136D_65EA_4086_8389_389C987F0089, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Sine_70333D2D_A374_42E7_A792_2F9948104EE1, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Arc_Sine_9F890467_3DF5_4E32_83F8_DA3E8CF56622(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Arc_Sine_B7F4A1FA_493F_47D0_8551_92DDA3C28DC5(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Arc_Sine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Arc_Sine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Sine_9F890467_3DF5_4E32_83F8_DA3E8CF56622, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Sine_B7F4A1FA_493F_47D0_8551_92DDA3C28DC5, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Sine_9B507F98_E584_442B_A147_7BD52A84D431(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Sine_BFD69F46_D159_4176_BE7D_4DB77F3AB9AC(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Sine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Sine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Sine_9B507F98_E584_442B_A147_7BD52A84D431, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Sine_BFD69F46_D159_4176_BE7D_4DB77F3AB9AC, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Arc_Sine_AEF334B2_15D8_404B_859D_A650CC5069DE(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Arc_Sine_D6D2C46D_127D_40DF_92CD_9646C5F189C9(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Arc_Sine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Arc_Sine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Sine_AEF334B2_15D8_404B_859D_A650CC5069DE, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Sine_D6D2C46D_127D_40DF_92CD_9646C5F189C9, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Cosine_3BF30F53_DE21_4EAC_956A_AA5B9D103409(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Cosine_4C32039B_E4F4_4108_98D3_063B3A616E05(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Cosine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Cosine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cosine_3BF30F53_DE21_4EAC_956A_AA5B9D103409, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Cosine_4C32039B_E4F4_4108_98D3_063B3A616E05, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Arc_Cosine_7DFE1DDE_2B42_4FD8_9C6A_CCA71FE0B050(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Arc_Cosine_DA66676A_94DA_465F_81A2_AABB46258C26(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Arc_Cosine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Arc_Cosine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Cosine_7DFE1DDE_2B42_4FD8_9C6A_CCA71FE0B050, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Cosine_DA66676A_94DA_465F_81A2_AABB46258C26, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Cosine_E1CE3ACF_B521_4FE9_8A9C_D3A895C2C49E(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Cosine_8C9213F7_335E_4766_A3CE_278CCFDD0A99(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Cosine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Cosine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Cosine_E1CE3ACF_B521_4FE9_8A9C_D3A895C2C49E, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Cosine_8C9213F7_335E_4766_A3CE_278CCFDD0A99, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Arc_Cosine_383EAC3F_478F_484E_95DD_49D411B67FCD(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Arc_Cosine_60BC99BB_60FE_4C75_928D_CB86FE1FC23E(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Arc_Cosine(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Arc_Cosine(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Cosine_383EAC3F_478F_484E_95DD_49D411B67FCD, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Cosine_60BC99BB_60FE_4C75_928D_CB86FE1FC23E, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Tangent_30B2AAE5_2BBC_4DA4_A446_AC227BE52771(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Tangent_24AE5ED6_4853_4C6E_B1F4_16EBEFD56BAE(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Tangent(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Tangent(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Tangent_30B2AAE5_2BBC_4DA4_A446_AC227BE52771, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Tangent_24AE5ED6_4853_4C6E_B1F4_16EBEFD56BAE, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Arc_Tangent_1B921555_739E_456A_9E39_C6D9FCACDE8A(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Arc_Tangent_CFAEF0B2_7994_4562_B147_D0C6C1AD5A76(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Arc_Tangent(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Arc_Tangent(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Tangent_1B921555_739E_456A_9E39_C6D9FCACDE8A, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Arc_Tangent_CFAEF0B2_7994_4562_B147_D0C6C1AD5A76, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Tangent_FF5FF7A2_576C_4F84_A1B8_5B1F446D45A7(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Tangent_196492F8_F120_4321_AD31_E6B0B392C880(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Tangent(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Tangent(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Tangent_FF5FF7A2_576C_4F84_A1B8_5B1F446D45A7, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Tangent_196492F8_F120_4321_AD31_E6B0B392C880, "Mathematics.Rational_Type", "@.");
 
-void * Berry_Rational_Class_Hyperbolic_Arc_Tangent_84A1ED23_3B0E_47F9_8E7B_FF28CF7D3CF1(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
+void * Berry_Rational_Class_Hyperbolic_Arc_Tangent_8D5A4AEA_8A62_4004_BB2D_13E28B265B39(bvm* V, Xila_Namespace::Mathematics_Types::Rational_Class* I)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = I->Hyperbolic_Arc_Tangent(); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = I->Hyperbolic_Arc_Tangent(); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Tangent_84A1ED23_3B0E_47F9_8E7B_FF28CF7D3CF1, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Hyperbolic_Arc_Tangent_8D5A4AEA_8A62_4004_BB2D_13E28B265B39, "Mathematics.Rational_Type", "@.");
 
 // - - Operators
-bool Berry_Rational_Class_Operator_B4D6B5CD_B1B8_4CF6_8D24_32CB691AF500(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
+bool Berry_Rational_Class_Operator_05F46EAC_2899_409F_AE3E_C26A9847FCFD(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_B4D6B5CD_B1B8_4CF6_8D24_32CB691AF500, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_05F46EAC_2899_409F_AE3E_C26A9847FCFD, "b", "..")
 
-bool Berry_Rational_Class_Operator_7FFE75C6_6EF0_4A0B_B4E3_A075131DB48D(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
+bool Berry_Rational_Class_Operator_4B8A48FA_80F1_4FF2_9062_19459A46375E(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_7FFE75C6_6EF0_4A0B_B4E3_A075131DB48D, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_4B8A48FA_80F1_4FF2_9062_19459A46375E, "b", "..")
 
-bool Berry_Rational_Class_Operator_4D589C3F_C9F4_4E91_A78A_C9A7C1FDC3CC(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
+bool Berry_Rational_Class_Operator_F518FC65_EE74_4DC7_8BE8_BB5BC30A465B(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
 {
 return *I != *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_4D589C3F_C9F4_4E91_A78A_C9A7C1FDC3CC, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_F518FC65_EE74_4DC7_8BE8_BB5BC30A465B, "b", "..")
 
-bool Berry_Rational_Class_Operator_095CB9F0_7C23_4DC6_B173_DCEA6FB16E39(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
+bool Berry_Rational_Class_Operator_6B76DE82_A578_49DD_BB55_8B954C46FF1B(Xila_Namespace::Mathematics_Types::Rational_Class* I, Xila_Namespace::Mathematics_Types::Rational_Class* A_0)
 {
 return *I != *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_095CB9F0_7C23_4DC6_B173_DCEA6FB16E39, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_6B76DE82_A578_49DD_BB55_8B954C46FF1B, "b", "..")
 
 
 // - Berry declaration
@@ -414,45 +441,45 @@ BE_FUNC_CTYPE_DECLARE(Berry_Rational_Class_Operator_095CB9F0_7C23_4DC6_B173_DCEA
 class Berry_Rational_Type(scope:global, name:Rational_Type)
 {
 	_p, var
-	init, ctype_func(Berry_Rational_Class_Initialize_803AEAC7_27E8_4162_94B7_308689D2D7F0)
-	init, ctype_func(Berry_Rational_Class_Initialize_88540879_F798_490F_85BA_E4CB4FB735AA)
-	init, ctype_func(Berry_Rational_Class_Initialize_2249C4E2_A8A8_4953_A921_2719149D7C77)
-	deinit, ctype_func(Berry_Rational_Class_Deinitialize_4D5EDE33_ABF9_4A3D_88D7_A20A1DC83615)
-	Get_Numerator, ctype_func(Berry_Rational_Class_Get_Numerator_19A46B21_51B5_4523_AF48_4F22D348D1DE)
-	Get_Denominator, ctype_func(Berry_Rational_Class_Get_Denominator_AA757BC5_1D8E_427C_9AF4_20C53A857005)
-	Absolute_Value, ctype_func(Berry_Rational_Class_Absolute_Value_D322360C_883C_4FE2_B4A5_F50473E8E510)
-	Simplify, ctype_func(Berry_Rational_Class_Simplify_91307311_2B2E_443A_A38D_7834CF8C8C97)
-	Greatest_Common_Divisor, ctype_func(Berry_Rational_Class_Greatest_Common_Divisor_F563F98E_2A5B_4EAD_9653_612906E4944F)
-	Least_Common_Multiple, ctype_func(Berry_Rational_Class_Least_Common_Multiple_A01635F4_224A_45C7_A378_A31DD0080DFB)
-	Factorial, ctype_func(Berry_Rational_Class_Factorial_DDE5A06E_DCBF_4778_805F_72E97F6D00F4)
-	Inverse, ctype_func(Berry_Rational_Class_Inverse_6EF6C8AA_BD33_449F_A74F_B639DC09DB8D)
-	Power, ctype_func(Berry_Rational_Class_Power_9E2CDF02_63E5_482D_B0DF_E40D89C7B810)
-	Square, ctype_func(Berry_Rational_Class_Square_9A53929D_ED92_448F_85B1_FC9C9C525457)
-	Cube, ctype_func(Berry_Rational_Class_Cube_32D6A7C3_C837_4EC4_B670_5A1D483DB0FF)
-	Root, ctype_func(Berry_Rational_Class_Root_5B6220C1_EEA3_4AA6_B8BA_A09E1EC8206F)
-	Cube_Root, ctype_func(Berry_Rational_Class_Cube_Root_640F780D_2361_4F23_BC4E_068E67B4D160)
-	Square_Root, ctype_func(Berry_Rational_Class_Square_Root_1B3FC1C7_F363_4095_82B7_DFD4D5C0A31E)
-	Logarithm, ctype_func(Berry_Rational_Class_Logarithm_B2DEEE55_29B5_4436_8E32_05B55CD03F1A)
-	Decimal_Logarithm, ctype_func(Berry_Rational_Class_Decimal_Logarithm_17248361_259C_4F56_B935_9B81CE0D2A12)
-	Binary_Logarithm, ctype_func(Berry_Rational_Class_Binary_Logarithm_8940EDDC_6E46_4A56_A39F_21F2A5090492)
-	Natural_Logarithm, ctype_func(Berry_Rational_Class_Natural_Logarithm_17DAAB00_B690_45EF_9E1A_B0E85ED2167C)
-	Exponential, ctype_func(Berry_Rational_Class_Exponential_3CAB9929_50D9_4AD6_A2A8_32CB0235CEC2)
-	Sine, ctype_func(Berry_Rational_Class_Sine_EFFA136D_65EA_4086_8389_389C987F0089)
-	Arc_Sine, ctype_func(Berry_Rational_Class_Arc_Sine_9F890467_3DF5_4E32_83F8_DA3E8CF56622)
-	Hyperbolic_Sine, ctype_func(Berry_Rational_Class_Hyperbolic_Sine_9B507F98_E584_442B_A147_7BD52A84D431)
-	Hyperbolic_Arc_Sine, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Sine_AEF334B2_15D8_404B_859D_A650CC5069DE)
-	Cosine, ctype_func(Berry_Rational_Class_Cosine_3BF30F53_DE21_4EAC_956A_AA5B9D103409)
-	Arc_Cosine, ctype_func(Berry_Rational_Class_Arc_Cosine_7DFE1DDE_2B42_4FD8_9C6A_CCA71FE0B050)
-	Hyperbolic_Cosine, ctype_func(Berry_Rational_Class_Hyperbolic_Cosine_E1CE3ACF_B521_4FE9_8A9C_D3A895C2C49E)
-	Hyperbolic_Arc_Cosine, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Cosine_383EAC3F_478F_484E_95DD_49D411B67FCD)
-	Tangent, ctype_func(Berry_Rational_Class_Tangent_30B2AAE5_2BBC_4DA4_A446_AC227BE52771)
-	Arc_Tangent, ctype_func(Berry_Rational_Class_Arc_Tangent_1B921555_739E_456A_9E39_C6D9FCACDE8A)
-	Hyperbolic_Tangent, ctype_func(Berry_Rational_Class_Hyperbolic_Tangent_FF5FF7A2_576C_4F84_A1B8_5B1F446D45A7)
-	Hyperbolic_Arc_Tangent, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Tangent_84A1ED23_3B0E_47F9_8E7B_FF28CF7D3CF1)
-	==, ctype_func(Berry_Rational_Class_Operator_B4D6B5CD_B1B8_4CF6_8D24_32CB691AF500)
-	==, ctype_func(Berry_Rational_Class_Operator_7FFE75C6_6EF0_4A0B_B4E3_A075131DB48D)
-	!=, ctype_func(Berry_Rational_Class_Operator_4D589C3F_C9F4_4E91_A78A_C9A7C1FDC3CC)
-	!=, ctype_func(Berry_Rational_Class_Operator_095CB9F0_7C23_4DC6_B173_DCEA6FB16E39)
+	init, ctype_func(Berry_Rational_Class_Initialize_FE4D94F2_335C_4694_B59F_5A7A657E4F53)
+	init, ctype_func(Berry_Rational_Class_Initialize_7F0157FB_9F3D_42F4_943D_6BB8DC9568B9)
+	init, ctype_func(Berry_Rational_Class_Initialize_7FBED581_B17B_46F5_99A9_F16F640EE93A)
+	deinit, ctype_func(Berry_Rational_Class_Deinitialize_21E427A4_438C_4A27_BBC8_879FA3982EFB)
+	Get_Numerator, ctype_func(Berry_Rational_Class_Get_Numerator_8860743D_2A55_4CE8_A99A_7C36331096A0)
+	Get_Denominator, ctype_func(Berry_Rational_Class_Get_Denominator_DAC35D56_7FBD_4292_B89E_0176B02ED0EF)
+	Absolute_Value, ctype_func(Berry_Rational_Class_Absolute_Value_0A7D0CF3_F843_44A5_B8B9_92807AC3EDD1)
+	Simplify, ctype_func(Berry_Rational_Class_Simplify_36462654_C634_45F9_8CA2_BA5BA3F0A4DC)
+	Greatest_Common_Divisor, ctype_func(Berry_Rational_Class_Greatest_Common_Divisor_AF2DED14_0755_42BF_8997_82D48CC99E6A)
+	Least_Common_Multiple, ctype_func(Berry_Rational_Class_Least_Common_Multiple_3A2CAECA_FB67_42BA_AEE4_8C376D4951D2)
+	Factorial, ctype_func(Berry_Rational_Class_Factorial_B5729741_8576_405A_8E11_0882532478CD)
+	Inverse, ctype_func(Berry_Rational_Class_Inverse_F0701D87_20CE_48D8_A560_A56AC14C14C2)
+	Power, ctype_func(Berry_Rational_Class_Power_1106A5D2_9DE7_4167_9713_686AD3F22E55)
+	Square, ctype_func(Berry_Rational_Class_Square_9C8AC569_26DA_4172_BBDA_2DFFA5D4D4C7)
+	Cube, ctype_func(Berry_Rational_Class_Cube_558DEE6A_974F_4E8C_8C89_5C0E8817DFFA)
+	Root, ctype_func(Berry_Rational_Class_Root_7A383052_BA64_4606_8EE6_5700E4302CBD)
+	Cube_Root, ctype_func(Berry_Rational_Class_Cube_Root_F2B3F629_9BDD_4AD8_B53E_CB96BF558BB4)
+	Square_Root, ctype_func(Berry_Rational_Class_Square_Root_D05684F8_62A3_4D3A_AD10_980968655EBB)
+	Logarithm, ctype_func(Berry_Rational_Class_Logarithm_359ECC1A_43AA_4D4B_BD5B_676CF5A91645)
+	Decimal_Logarithm, ctype_func(Berry_Rational_Class_Decimal_Logarithm_247D7F12_E344_4FB4_A674_616A197B1881)
+	Binary_Logarithm, ctype_func(Berry_Rational_Class_Binary_Logarithm_7EA89CE1_24F8_4CCB_B3A8_19FFDC5644AB)
+	Natural_Logarithm, ctype_func(Berry_Rational_Class_Natural_Logarithm_99A0C592_FF67_4B4B_845A_BBE115BD7B2B)
+	Exponential, ctype_func(Berry_Rational_Class_Exponential_D3AEDD3A_F5A3_415D_841B_F526C2007543)
+	Sine, ctype_func(Berry_Rational_Class_Sine_70333D2D_A374_42E7_A792_2F9948104EE1)
+	Arc_Sine, ctype_func(Berry_Rational_Class_Arc_Sine_B7F4A1FA_493F_47D0_8551_92DDA3C28DC5)
+	Hyperbolic_Sine, ctype_func(Berry_Rational_Class_Hyperbolic_Sine_BFD69F46_D159_4176_BE7D_4DB77F3AB9AC)
+	Hyperbolic_Arc_Sine, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Sine_D6D2C46D_127D_40DF_92CD_9646C5F189C9)
+	Cosine, ctype_func(Berry_Rational_Class_Cosine_4C32039B_E4F4_4108_98D3_063B3A616E05)
+	Arc_Cosine, ctype_func(Berry_Rational_Class_Arc_Cosine_DA66676A_94DA_465F_81A2_AABB46258C26)
+	Hyperbolic_Cosine, ctype_func(Berry_Rational_Class_Hyperbolic_Cosine_8C9213F7_335E_4766_A3CE_278CCFDD0A99)
+	Hyperbolic_Arc_Cosine, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Cosine_60BC99BB_60FE_4C75_928D_CB86FE1FC23E)
+	Tangent, ctype_func(Berry_Rational_Class_Tangent_24AE5ED6_4853_4C6E_B1F4_16EBEFD56BAE)
+	Arc_Tangent, ctype_func(Berry_Rational_Class_Arc_Tangent_CFAEF0B2_7994_4562_B147_D0C6C1AD5A76)
+	Hyperbolic_Tangent, ctype_func(Berry_Rational_Class_Hyperbolic_Tangent_196492F8_F120_4321_AD31_E6B0B392C880)
+	Hyperbolic_Arc_Tangent, ctype_func(Berry_Rational_Class_Hyperbolic_Arc_Tangent_8D5A4AEA_8A62_4004_BB2D_13E28B265B39)
+	==, ctype_func(Berry_Rational_Class_Operator_05F46EAC_2899_409F_AE3E_C26A9847FCFD)
+	==, ctype_func(Berry_Rational_Class_Operator_4B8A48FA_80F1_4FF2_9062_19459A46375E)
+	!=, ctype_func(Berry_Rational_Class_Operator_F518FC65_EE74_4DC7_8BE8_BB5BC30A465B)
+	!=, ctype_func(Berry_Rational_Class_Operator_6B76DE82_A578_49DD_BB55_8B954C46FF1B)
 
 }
 @const_object_info_end */
@@ -463,336 +490,340 @@ extern "C"
 	#include "../generate/be_fixed_Berry_Rational_Type.h"
 }
 // - Functions
-void * Berry_Mathematics_Class_String_To_Float_4A7F8438_98F8_4FEA_8E6D_A39A9818786B(bvm* V, const char* A_0)
+void * Berry_Mathematics_Class_String_To_Float_1DB4D51A_A783_4A21_9587_659B16D8AECB(bvm* V, const char* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.String_To_Float(A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_String_To_Float_4A7F8438_98F8_4FEA_8E6D_A39A9818786B, "Long_Real_Type", "@s");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_String_To_Float_1DB4D51A_A783_4A21_9587_659B16D8AECB, "Long_Real_Type", "@s");
 
 
-const char* Berry_Mathematics_Class_Real_To_String_2BC42B1F_D480_4F6A_95B3_4E86E28ED585(bvm* V, double* A_0, int A_1, int A_2)
+const char* Berry_Mathematics_Class_Real_To_String_A29F338E_35AF_4E71_9577_88D85255DCD7(bvm* V, double* A_0, int A_1, int A_2)
 {
 char* S_3 = (char*)Berry_Class::Get_Instance(V)->Buffer;
 Mathematics.Real_To_String(*A_0, (signed char)A_1, (unsigned char)A_2, S_3); 
 return S_3;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Real_To_String_2BC42B1F_D480_4F6A_95B3_4E86E28ED585, "s", "@.ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Real_To_String_A29F338E_35AF_4E71_9577_88D85255DCD7, "s", "@.ii");
 
 
-bool Berry_Mathematics_Class_Is_NAN_D29FF7DD_9ACC_4689_8408_61101D4C5A9D(double* A_0)
+bool Berry_Mathematics_Class_Is_NAN_14CCE8B3_2EAA_42B9_BC65_30D3CE879A73(double* A_0)
 {
 return Mathematics.Is_NAN(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Is_NAN_D29FF7DD_9ACC_4689_8408_61101D4C5A9D, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Is_NAN_14CCE8B3_2EAA_42B9_BC65_30D3CE879A73, "b", ".");
 
 
-bool Berry_Mathematics_Class_Is_Infinite_8F63DB5A_05EB_4FCE_BB0D_A665CD8D51B8(double* A_0)
+bool Berry_Mathematics_Class_Is_Infinite_4F226156_119A_479C_AD99_BC46D899F5C9(double* A_0)
 {
 return Mathematics.Is_Infinite(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Is_Infinite_8F63DB5A_05EB_4FCE_BB0D_A665CD8D51B8, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Is_Infinite_4F226156_119A_479C_AD99_BC46D899F5C9, "b", ".");
 
 
-void * Berry_Mathematics_Class_Copy_Sign_FEEA6951_A5BC_4E6A_831D_9B21B8E24156(bvm* V, double* A_0, double* A_1)
+void * Berry_Mathematics_Class_Copy_Sign_39480D56_19DB_4A65_824F_31E3B04E395A(bvm* V, double* A_0, double* A_1)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Copy_Sign(*A_0, *A_1); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Copy_Sign_FEEA6951_A5BC_4E6A_831D_9B21B8E24156, "Long_Real_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Copy_Sign_39480D56_19DB_4A65_824F_31E3B04E395A, "Long_Real_Type", "@..");
 
 
-void * Berry_Mathematics_Class_Floor_03282743_79A8_41AC_9688_E41B7DC53BBE(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Floor_E6DABF81_0E17_4221_8277_616FA9F981AD(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Floor(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Floor_03282743_79A8_41AC_9688_E41B7DC53BBE, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Floor_E6DABF81_0E17_4221_8277_616FA9F981AD, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Modulo_6D588F1C_92F1_45EC_B716_8E2FBFEC6142(bvm* V, double* A_0, double* A_1)
+void * Berry_Mathematics_Class_Modulo_8CB9B621_9A74_4AAB_A841_750B7B17E046(bvm* V, double* A_0, double* A_1)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Modulo(*A_0, *A_1); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Modulo_6D588F1C_92F1_45EC_B716_8E2FBFEC6142, "Long_Real_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Modulo_8CB9B621_9A74_4AAB_A841_750B7B17E046, "Long_Real_Type", "@..");
 
 
-void * Berry_Mathematics_Class_Radians_B5EB61F9_8CE1_44D4_B3A6_BB25CF1AB143(bvm* V, Rational_Class* A_0)
+void * Berry_Mathematics_Class_Radians_5377A3B4_48C1_4D42_B5A3_CC911A84C2E3(bvm* V, Rational_Class* A_0)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = Mathematics.Radians(*A_0); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = Mathematics.Radians(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Radians_B5EB61F9_8CE1_44D4_B3A6_BB25CF1AB143, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Radians_5377A3B4_48C1_4D42_B5A3_CC911A84C2E3, "Mathematics.Rational_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Degrees_38CAB0AC_4FEB_4B56_B2F4_1D3CCDE9E7ED(bvm* V, Rational_Class* A_0)
+void * Berry_Mathematics_Class_Degrees_198939D6_80F7_44D7_9408_5518AABFD445(bvm* V, Rational_Class* A_0)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = Mathematics.Degrees(*A_0); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = Mathematics.Degrees(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Degrees_38CAB0AC_4FEB_4B56_B2F4_1D3CCDE9E7ED, "Mathematics.Rational_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Degrees_198939D6_80F7_44D7_9408_5518AABFD445, "Mathematics.Rational_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Combination_04C23F65_7945_4489_87BF_270C26BE001B(bvm* V, double* A_0, double* A_1)
+void * Berry_Mathematics_Class_Combination_1B76785B_B593_44C4_B368_F021C21171DD(bvm* V, double* A_0, double* A_1)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = Mathematics.Combination(*A_0, *A_1); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = Mathematics.Combination(*A_0, *A_1); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Combination_04C23F65_7945_4489_87BF_270C26BE001B, "Mathematics.Rational_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Combination_1B76785B_B593_44C4_B368_F021C21171DD, "Mathematics.Rational_Type", "@..");
 
 
-void * Berry_Mathematics_Class_Permutation_00F413B4_39B5_4C7A_AFB9_E12B647E1646(bvm* V, double* A_0, double* A_1)
+void * Berry_Mathematics_Class_Permutation_C3C44F5C_545B_43E0_AF29_97EEC753C3CD(bvm* V, double* A_0, double* A_1)
 {
 Xila_Namespace::Mathematics_Types::Rational_Class* R = (Xila_Namespace::Mathematics_Types::Rational_Class*) be_malloc(V, sizeof(Xila_Namespace::Mathematics_Types::Rational_Class));
- *R = Mathematics.Permutation(*A_0, *A_1); 
+new (R) Xila_Namespace::Mathematics_Types::Rational_Class();
+*R = Mathematics.Permutation(*A_0, *A_1); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Permutation_00F413B4_39B5_4C7A_AFB9_E12B647E1646, "Mathematics.Rational_Type", "@..");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Permutation_C3C44F5C_545B_43E0_AF29_97EEC753C3CD, "Mathematics.Rational_Type", "@..");
 
 
-void * Berry_Mathematics_Class_Sine_FE1E7182_01CA_482B_9883_BA8CF3FD3116(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Sine_2BD25383_52B0_4AD3_BC07_4C899C8F5967(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Sine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Sine_FE1E7182_01CA_482B_9883_BA8CF3FD3116, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Sine_2BD25383_52B0_4AD3_BC07_4C899C8F5967, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Cosine_2B0278E9_1C5E_476F_9A89_275AB2A5B2D3(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Cosine_81691251_5BEB_446C_A589_36DB494FB4BE(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Cosine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cosine_2B0278E9_1C5E_476F_9A89_275AB2A5B2D3, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cosine_81691251_5BEB_446C_A589_36DB494FB4BE, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Tangent_09DC7991_4BA1_4A04_A192_ECD834512D70(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Tangent_A936474C_06BF_412B_B254_ACD85F993B7D(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Tangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Tangent_09DC7991_4BA1_4A04_A192_ECD834512D70, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Tangent_A936474C_06BF_412B_B254_ACD85F993B7D, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Secant_798169C5_91B6_425D_AF39_0321D41AB7ED(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Secant_75D4AA2C_6025_4E50_A1EC_53FC8C1702F3(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Secant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Secant_798169C5_91B6_425D_AF39_0321D41AB7ED, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Secant_75D4AA2C_6025_4E50_A1EC_53FC8C1702F3, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Cosecant_12BE6550_98BF_496B_BCC6_C580B9728649(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Cosecant_32D0AE59_0D7B_4F5C_AA80_D632ADC9054E(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Cosecant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cosecant_12BE6550_98BF_496B_BCC6_C580B9728649, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cosecant_32D0AE59_0D7B_4F5C_AA80_D632ADC9054E, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Cotangent_A874B238_0B4B_4C24_9636_ADAA76A1BA49(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Cotangent_4C2F4B50_7046_4116_9F1C_4254C36D5A58(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Cotangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cotangent_A874B238_0B4B_4C24_9636_ADAA76A1BA49, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Cotangent_4C2F4B50_7046_4116_9F1C_4254C36D5A58, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Sine_76931F60_6420_4E2F_8B24_3D6F53A70F88(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Sine_832EA0A2_AD79_4261_B807_DBE99D69AB65(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Sine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Sine_76931F60_6420_4E2F_8B24_3D6F53A70F88, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Sine_832EA0A2_AD79_4261_B807_DBE99D69AB65, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Cosine_982FD45D_925A_445D_BAC7_FB8388A1D489(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Cosine_9B22F0E0_E856_468A_BB55_0F71A9718C34(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Cosine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cosine_982FD45D_925A_445D_BAC7_FB8388A1D489, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cosine_9B22F0E0_E856_468A_BB55_0F71A9718C34, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Tangent_5B133A58_1FAD_4872_9CFF_748E8B54F7F5(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Tangent_7E707E1E_73C0_4B7A_AA19_62D3DF85BE77(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Tangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Tangent_5B133A58_1FAD_4872_9CFF_748E8B54F7F5, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Tangent_7E707E1E_73C0_4B7A_AA19_62D3DF85BE77, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Secant_6FB71E51_929A_4522_B1D3_AC301872DA24(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Secant_5979B4AA_FB3F_4D34_95B1_7B102D320B25(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Secant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Secant_6FB71E51_929A_4522_B1D3_AC301872DA24, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Secant_5979B4AA_FB3F_4D34_95B1_7B102D320B25, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Cosecant_64D354F6_CED8_4ADA_9B7A_EFC8C2747F51(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Cosecant_F680A1C2_7933_4C95_88FD_FB2A29AF96AD(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Cosecant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cosecant_64D354F6_CED8_4ADA_9B7A_EFC8C2747F51, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cosecant_F680A1C2_7933_4C95_88FD_FB2A29AF96AD, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Cotangent_1EBD7FB9_B2E8_4D39_AC89_8250F8FCDA31(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Cotangent_346DB4F2_4FEB_4523_BB35_C9E38BD11940(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Cotangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cotangent_1EBD7FB9_B2E8_4D39_AC89_8250F8FCDA31, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Cotangent_346DB4F2_4FEB_4523_BB35_C9E38BD11940, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Sine_120BC8F4_EB38_4CD4_AA5E_A54C28931A16(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Sine_3A68D13E_121E_4B99_A3BE_B64EE0D34FCD(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Sine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Sine_120BC8F4_EB38_4CD4_AA5E_A54C28931A16, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Sine_3A68D13E_121E_4B99_A3BE_B64EE0D34FCD, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Cosine_70188506_3C2A_47ED_A129_DF55635F5A47(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Cosine_E0B072BE_585F_44BD_80C4_0AE336B6A08E(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Cosine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cosine_70188506_3C2A_47ED_A129_DF55635F5A47, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cosine_E0B072BE_585F_44BD_80C4_0AE336B6A08E, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Tangent_DD743FF3_3760_466B_B1B4_E27188C2E513(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Tangent_98180009_F164_43C2_BC57_E444F680B9EE(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Tangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Tangent_DD743FF3_3760_466B_B1B4_E27188C2E513, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Tangent_98180009_F164_43C2_BC57_E444F680B9EE, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Secant_C10A7290_932D_4849_BC71_22FFF94B1D7F(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Secant_21A3DBB1_555B_4C2B_ADFC_1ADE99E20BF2(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Secant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Secant_C10A7290_932D_4849_BC71_22FFF94B1D7F, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Secant_21A3DBB1_555B_4C2B_ADFC_1ADE99E20BF2, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Cosecant_6BEAF564_31EE_4559_AA20_3A7D5DE5D618(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Cosecant_C8BA6B2B_8B43_414C_9EE4_FFD885954772(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Cosecant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cosecant_6BEAF564_31EE_4559_AA20_3A7D5DE5D618, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cosecant_C8BA6B2B_8B43_414C_9EE4_FFD885954772, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Hyperbolic_Cotangent_A9D66B19_0BBB_4368_AA7B_334EBC9858BF(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Hyperbolic_Cotangent_D30FA0D0_77EF_43D1_A3D3_55E740BBCBBA(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Hyperbolic_Cotangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cotangent_A9D66B19_0BBB_4368_AA7B_334EBC9858BF, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Hyperbolic_Cotangent_D30FA0D0_77EF_43D1_A3D3_55E740BBCBBA, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Sine_FB8FC3AA_3410_4AC7_A00D_348C11F9BFAB(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Sine_2E4A7BEF_068A_416A_8B8B_07BEA3EC8582(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Sine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Sine_FB8FC3AA_3410_4AC7_A00D_348C11F9BFAB, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Sine_2E4A7BEF_068A_416A_8B8B_07BEA3EC8582, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_448A19F7_DDAA_4D99_8798_8B1F34AA61F1(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_3BC95D78_0E83_464D_9E47_791CDEBA2A9C(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Cosine(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_448A19F7_DDAA_4D99_8798_8B1F34AA61F1, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_3BC95D78_0E83_464D_9E47_791CDEBA2A9C, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_ED3D4E39_FD8B_4543_9C42_0B55FCBE79D2(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_C5818AE0_53B1_47FE_AA50_6B7BF7C23876(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Tangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_ED3D4E39_FD8B_4543_9C42_0B55FCBE79D2, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_C5818AE0_53B1_47FE_AA50_6B7BF7C23876, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Secant_51A81D99_5B24_40C5_AFF0_02A644772F18(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Secant_38A5E17B_27ED_4634_A787_7D6622F276F1(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Secant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Secant_51A81D99_5B24_40C5_AFF0_02A644772F18, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Secant_38A5E17B_27ED_4634_A787_7D6622F276F1, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_4050A390_0FC8_4509_9B40_00534869C305(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_BFB3BE03_F746_472E_911D_C9DB30DDAE8A(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Cosecant(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_4050A390_0FC8_4509_9B40_00534869C305, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_BFB3BE03_F746_472E_911D_C9DB30DDAE8A, "Long_Real_Type", "@.");
 
 
-void * Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_50A34DDF_682E_4719_A128_4A5F3F40B504(bvm* V, double* A_0)
+void * Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_62482946_5547_40C8_82E7_4CD6EE2C4EA0(bvm* V, double* A_0)
 {
 double* R = (double*) be_malloc(V, sizeof(double));
  *R = Mathematics.Arc_Hyperbolic_Cotangent(*A_0); 
 return R;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_50A34DDF_682E_4719_A128_4A5F3F40B504, "Long_Real_Type", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_62482946_5547_40C8_82E7_4CD6EE2C4EA0, "Long_Real_Type", "@.");
 
 
-int Berry_Mathematics_Class_Random_6B70B652_F1CD_4B54_8F23_B405719A0BB3()
+int Berry_Mathematics_Class_Random_EBF0DA84_D6EE_493C_9974_7F603F7FEA26()
 {
 return (int)Mathematics.Random(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_6B70B652_F1CD_4B54_8F23_B405719A0BB3, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_EBF0DA84_D6EE_493C_9974_7F603F7FEA26, "i", "");
 
 
-int Berry_Mathematics_Class_Random_8F0EC94B_2586_49A1_8B2E_2B1A7CAD194E(int A_0)
+int Berry_Mathematics_Class_Random_B87382D8_13B0_4CBD_B205_4EB109A038B2(int A_0)
 {
 return (int)Mathematics.Random((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_8F0EC94B_2586_49A1_8B2E_2B1A7CAD194E, "i", "i");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_B87382D8_13B0_4CBD_B205_4EB109A038B2, "i", "i");
 
 
-int Berry_Mathematics_Class_Random_AACD3596_EAD1_46F8_85F9_4273BE971B39(int A_0, int A_1)
+int Berry_Mathematics_Class_Random_8022CCCA_B284_41E1_A495_D0AC9183AF71(int A_0, int A_1)
 {
 return (int)Mathematics.Random((unsigned int)A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_AACD3596_EAD1_46F8_85F9_4273BE971B39, "i", "ii");
+BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Random_8022CCCA_B284_41E1_A495_D0AC9183AF71, "i", "ii");
 
 
 void* Berry_Mathematics_Class_Get_Pointer()
@@ -805,44 +836,44 @@ BE_FUNC_CTYPE_DECLARE(Berry_Mathematics_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Mathematics (scope:global)
 {
-	String_To_Float, ctype_func(Berry_Mathematics_Class_String_To_Float_4A7F8438_98F8_4FEA_8E6D_A39A9818786B)
-	Real_To_String, ctype_func(Berry_Mathematics_Class_Real_To_String_2BC42B1F_D480_4F6A_95B3_4E86E28ED585)
-	Is_NAN, ctype_func(Berry_Mathematics_Class_Is_NAN_D29FF7DD_9ACC_4689_8408_61101D4C5A9D)
-	Is_Infinite, ctype_func(Berry_Mathematics_Class_Is_Infinite_8F63DB5A_05EB_4FCE_BB0D_A665CD8D51B8)
-	Copy_Sign, ctype_func(Berry_Mathematics_Class_Copy_Sign_FEEA6951_A5BC_4E6A_831D_9B21B8E24156)
-	Floor, ctype_func(Berry_Mathematics_Class_Floor_03282743_79A8_41AC_9688_E41B7DC53BBE)
-	Modulo, ctype_func(Berry_Mathematics_Class_Modulo_6D588F1C_92F1_45EC_B716_8E2FBFEC6142)
-	Radians, ctype_func(Berry_Mathematics_Class_Radians_B5EB61F9_8CE1_44D4_B3A6_BB25CF1AB143)
-	Degrees, ctype_func(Berry_Mathematics_Class_Degrees_38CAB0AC_4FEB_4B56_B2F4_1D3CCDE9E7ED)
-	Combination, ctype_func(Berry_Mathematics_Class_Combination_04C23F65_7945_4489_87BF_270C26BE001B)
-	Permutation, ctype_func(Berry_Mathematics_Class_Permutation_00F413B4_39B5_4C7A_AFB9_E12B647E1646)
-	Sine, ctype_func(Berry_Mathematics_Class_Sine_FE1E7182_01CA_482B_9883_BA8CF3FD3116)
-	Cosine, ctype_func(Berry_Mathematics_Class_Cosine_2B0278E9_1C5E_476F_9A89_275AB2A5B2D3)
-	Tangent, ctype_func(Berry_Mathematics_Class_Tangent_09DC7991_4BA1_4A04_A192_ECD834512D70)
-	Secant, ctype_func(Berry_Mathematics_Class_Secant_798169C5_91B6_425D_AF39_0321D41AB7ED)
-	Cosecant, ctype_func(Berry_Mathematics_Class_Cosecant_12BE6550_98BF_496B_BCC6_C580B9728649)
-	Cotangent, ctype_func(Berry_Mathematics_Class_Cotangent_A874B238_0B4B_4C24_9636_ADAA76A1BA49)
-	Arc_Sine, ctype_func(Berry_Mathematics_Class_Arc_Sine_76931F60_6420_4E2F_8B24_3D6F53A70F88)
-	Arc_Cosine, ctype_func(Berry_Mathematics_Class_Arc_Cosine_982FD45D_925A_445D_BAC7_FB8388A1D489)
-	Arc_Tangent, ctype_func(Berry_Mathematics_Class_Arc_Tangent_5B133A58_1FAD_4872_9CFF_748E8B54F7F5)
-	Arc_Secant, ctype_func(Berry_Mathematics_Class_Arc_Secant_6FB71E51_929A_4522_B1D3_AC301872DA24)
-	Arc_Cosecant, ctype_func(Berry_Mathematics_Class_Arc_Cosecant_64D354F6_CED8_4ADA_9B7A_EFC8C2747F51)
-	Arc_Cotangent, ctype_func(Berry_Mathematics_Class_Arc_Cotangent_1EBD7FB9_B2E8_4D39_AC89_8250F8FCDA31)
-	Hyperbolic_Sine, ctype_func(Berry_Mathematics_Class_Hyperbolic_Sine_120BC8F4_EB38_4CD4_AA5E_A54C28931A16)
-	Hyperbolic_Cosine, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cosine_70188506_3C2A_47ED_A129_DF55635F5A47)
-	Hyperbolic_Tangent, ctype_func(Berry_Mathematics_Class_Hyperbolic_Tangent_DD743FF3_3760_466B_B1B4_E27188C2E513)
-	Hyperbolic_Secant, ctype_func(Berry_Mathematics_Class_Hyperbolic_Secant_C10A7290_932D_4849_BC71_22FFF94B1D7F)
-	Hyperbolic_Cosecant, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cosecant_6BEAF564_31EE_4559_AA20_3A7D5DE5D618)
-	Hyperbolic_Cotangent, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cotangent_A9D66B19_0BBB_4368_AA7B_334EBC9858BF)
-	Arc_Hyperbolic_Sine, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Sine_FB8FC3AA_3410_4AC7_A00D_348C11F9BFAB)
-	Arc_Hyperbolic_Cosine, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_448A19F7_DDAA_4D99_8798_8B1F34AA61F1)
-	Arc_Hyperbolic_Tangent, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_ED3D4E39_FD8B_4543_9C42_0B55FCBE79D2)
-	Arc_Hyperbolic_Secant, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Secant_51A81D99_5B24_40C5_AFF0_02A644772F18)
-	Arc_Hyperbolic_Cosecant, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_4050A390_0FC8_4509_9B40_00534869C305)
-	Arc_Hyperbolic_Cotangent, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_50A34DDF_682E_4719_A128_4A5F3F40B504)
-	Random, ctype_func(Berry_Mathematics_Class_Random_6B70B652_F1CD_4B54_8F23_B405719A0BB3)
-	Random, ctype_func(Berry_Mathematics_Class_Random_8F0EC94B_2586_49A1_8B2E_2B1A7CAD194E)
-	Random, ctype_func(Berry_Mathematics_Class_Random_AACD3596_EAD1_46F8_85F9_4273BE971B39)
+	String_To_Float, ctype_func(Berry_Mathematics_Class_String_To_Float_1DB4D51A_A783_4A21_9587_659B16D8AECB)
+	Real_To_String, ctype_func(Berry_Mathematics_Class_Real_To_String_A29F338E_35AF_4E71_9577_88D85255DCD7)
+	Is_NAN, ctype_func(Berry_Mathematics_Class_Is_NAN_14CCE8B3_2EAA_42B9_BC65_30D3CE879A73)
+	Is_Infinite, ctype_func(Berry_Mathematics_Class_Is_Infinite_4F226156_119A_479C_AD99_BC46D899F5C9)
+	Copy_Sign, ctype_func(Berry_Mathematics_Class_Copy_Sign_39480D56_19DB_4A65_824F_31E3B04E395A)
+	Floor, ctype_func(Berry_Mathematics_Class_Floor_E6DABF81_0E17_4221_8277_616FA9F981AD)
+	Modulo, ctype_func(Berry_Mathematics_Class_Modulo_8CB9B621_9A74_4AAB_A841_750B7B17E046)
+	Radians, ctype_func(Berry_Mathematics_Class_Radians_5377A3B4_48C1_4D42_B5A3_CC911A84C2E3)
+	Degrees, ctype_func(Berry_Mathematics_Class_Degrees_198939D6_80F7_44D7_9408_5518AABFD445)
+	Combination, ctype_func(Berry_Mathematics_Class_Combination_1B76785B_B593_44C4_B368_F021C21171DD)
+	Permutation, ctype_func(Berry_Mathematics_Class_Permutation_C3C44F5C_545B_43E0_AF29_97EEC753C3CD)
+	Sine, ctype_func(Berry_Mathematics_Class_Sine_2BD25383_52B0_4AD3_BC07_4C899C8F5967)
+	Cosine, ctype_func(Berry_Mathematics_Class_Cosine_81691251_5BEB_446C_A589_36DB494FB4BE)
+	Tangent, ctype_func(Berry_Mathematics_Class_Tangent_A936474C_06BF_412B_B254_ACD85F993B7D)
+	Secant, ctype_func(Berry_Mathematics_Class_Secant_75D4AA2C_6025_4E50_A1EC_53FC8C1702F3)
+	Cosecant, ctype_func(Berry_Mathematics_Class_Cosecant_32D0AE59_0D7B_4F5C_AA80_D632ADC9054E)
+	Cotangent, ctype_func(Berry_Mathematics_Class_Cotangent_4C2F4B50_7046_4116_9F1C_4254C36D5A58)
+	Arc_Sine, ctype_func(Berry_Mathematics_Class_Arc_Sine_832EA0A2_AD79_4261_B807_DBE99D69AB65)
+	Arc_Cosine, ctype_func(Berry_Mathematics_Class_Arc_Cosine_9B22F0E0_E856_468A_BB55_0F71A9718C34)
+	Arc_Tangent, ctype_func(Berry_Mathematics_Class_Arc_Tangent_7E707E1E_73C0_4B7A_AA19_62D3DF85BE77)
+	Arc_Secant, ctype_func(Berry_Mathematics_Class_Arc_Secant_5979B4AA_FB3F_4D34_95B1_7B102D320B25)
+	Arc_Cosecant, ctype_func(Berry_Mathematics_Class_Arc_Cosecant_F680A1C2_7933_4C95_88FD_FB2A29AF96AD)
+	Arc_Cotangent, ctype_func(Berry_Mathematics_Class_Arc_Cotangent_346DB4F2_4FEB_4523_BB35_C9E38BD11940)
+	Hyperbolic_Sine, ctype_func(Berry_Mathematics_Class_Hyperbolic_Sine_3A68D13E_121E_4B99_A3BE_B64EE0D34FCD)
+	Hyperbolic_Cosine, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cosine_E0B072BE_585F_44BD_80C4_0AE336B6A08E)
+	Hyperbolic_Tangent, ctype_func(Berry_Mathematics_Class_Hyperbolic_Tangent_98180009_F164_43C2_BC57_E444F680B9EE)
+	Hyperbolic_Secant, ctype_func(Berry_Mathematics_Class_Hyperbolic_Secant_21A3DBB1_555B_4C2B_ADFC_1ADE99E20BF2)
+	Hyperbolic_Cosecant, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cosecant_C8BA6B2B_8B43_414C_9EE4_FFD885954772)
+	Hyperbolic_Cotangent, ctype_func(Berry_Mathematics_Class_Hyperbolic_Cotangent_D30FA0D0_77EF_43D1_A3D3_55E740BBCBBA)
+	Arc_Hyperbolic_Sine, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Sine_2E4A7BEF_068A_416A_8B8B_07BEA3EC8582)
+	Arc_Hyperbolic_Cosine, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cosine_3BC95D78_0E83_464D_9E47_791CDEBA2A9C)
+	Arc_Hyperbolic_Tangent, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Tangent_C5818AE0_53B1_47FE_AA50_6B7BF7C23876)
+	Arc_Hyperbolic_Secant, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Secant_38A5E17B_27ED_4634_A787_7D6622F276F1)
+	Arc_Hyperbolic_Cosecant, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cosecant_BFB3BE03_F746_472E_911D_C9DB30DDAE8A)
+	Arc_Hyperbolic_Cotangent, ctype_func(Berry_Mathematics_Class_Arc_Hyperbolic_Cotangent_62482946_5547_40C8_82E7_4CD6EE2C4EA0)
+	Random, ctype_func(Berry_Mathematics_Class_Random_EBF0DA84_D6EE_493C_9974_7F603F7FEA26)
+	Random, ctype_func(Berry_Mathematics_Class_Random_B87382D8_13B0_4CBD_B205_4EB109A038B2)
+	Random, ctype_func(Berry_Mathematics_Class_Random_8022CCCA_B284_41E1_A495_D0AC9183AF71)
 	Get_Pointer, ctype_func(Berry_Mathematics_Class_Get_Pointer)
 
 	Hash_Type, class(Berry_Hash_Type)

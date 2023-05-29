@@ -11,100 +11,100 @@ using namespace Communication_Types;
 // - Functions
 
 // - - Constructors
-void * Berry_IP_Address_Class_Initialize_661EF3F2_756B_4F87_8FA4_C809612BF06D(bvm* V)
+void * Berry_IP_Address_Class_Initialize_C9D14B42_0EFD_47C2_81F6_005B45C17314(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_661EF3F2_756B_4F87_8FA4_C809612BF06D, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_C9D14B42_0EFD_47C2_81F6_005B45C17314, "+_p", "@");
 
-void * Berry_IP_Address_Class_Initialize_828A7307_6897_4050_BA22_10E34E4CE908(bvm* V, bool A_0)
+void * Berry_IP_Address_Class_Initialize_9ABF996D_477E_4F2D_9AC8_A4E583FF3BCF(bvm* V, bool A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_828A7307_6897_4050_BA22_10E34E4CE908, "+_p", "@b");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_9ABF996D_477E_4F2D_9AC8_A4E583FF3BCF, "+_p", "@b");
 
-void * Berry_IP_Address_Class_Initialize_3302E548_6457_470A_BBA4_6DB9C8DB4596(bvm* V, int A_0)
+void * Berry_IP_Address_Class_Initialize_0256E431_F4C8_4916_A1C0_F954970BF1FD(bvm* V, int A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_3302E548_6457_470A_BBA4_6DB9C8DB4596, "+_p", "@i");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_0256E431_F4C8_4916_A1C0_F954970BF1FD, "+_p", "@i");
 
-void * Berry_IP_Address_Class_Initialize_338250EF_1DEB_48F6_90C8_6B0A074DCE2F(bvm* V, const unsigned char* A_0, bool A_1 = true)
+void * Berry_IP_Address_Class_Initialize_89F25F6E_1DF4_45FE_85F6_1AD02374F172(bvm* V, const unsigned char* A_0, bool A_1 = true)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_338250EF_1DEB_48F6_90C8_6B0A074DCE2F, "+_p", "@s[b");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_89F25F6E_1DF4_45FE_85F6_1AD02374F172, "+_p", "@s[b");
 
-void * Berry_IP_Address_Class_Initialize_457B8E18_20DB_4ADC_8DE8_0D9D7BC0FD16(bvm* V, int A_0, int A_1, int A_2, int A_3)
+void * Berry_IP_Address_Class_Initialize_00FA89BC_1A5D_48AF_B704_1D1D4B4BE2B3(bvm* V, int A_0, int A_1, int A_2, int A_3)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class((unsigned char)A_0, (unsigned char)A_1, (unsigned char)A_2, (unsigned char)A_3); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_457B8E18_20DB_4ADC_8DE8_0D9D7BC0FD16, "+_p", "@iiii");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_00FA89BC_1A5D_48AF_B704_1D1D4B4BE2B3, "+_p", "@iiii");
 
-void * Berry_IP_Address_Class_Initialize_469183CF_E926_4A7A_BE59_9AB4A52A3666(bvm* V, ::IPAddress* A_0)
+void * Berry_IP_Address_Class_Initialize_61CCF80D_ACEC_451C_AF09_EAEED3639D5D(bvm* V, ::IPAddress* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_469183CF_E926_4A7A_BE59_9AB4A52A3666, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_61CCF80D_ACEC_451C_AF09_EAEED3639D5D, "+_p", "@.");
 
-void * Berry_IP_Address_Class_Initialize_56337033_C868_4526_888A_783923ADF17E(bvm* V, ::IPv6Address* A_0)
+void * Berry_IP_Address_Class_Initialize_EA495F1B_E003_4913_8391_9DDBD11FEC6A(bvm* V, ::IPv6Address* A_0)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::IP_Address_Class));
 return new (Pointer) Communication_Types::IP_Address_Class(*A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_56337033_C868_4526_888A_783923ADF17E, "+_p", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Initialize_EA495F1B_E003_4913_8391_9DDBD11FEC6A, "+_p", "@.");
 
 
 // - - Destructors
-void Berry_IP_Address_Class_Deinitialize_65E1CAF0_3E9A_4B09_9F74_FB41310B4CEC(bvm* V, Xila_Namespace::Communication_Types::IP_Address_Class* I)
+void Berry_IP_Address_Class_Deinitialize_273B492A_82B9_41A1_9F58_BF5DC0F0765B(bvm* V, Xila_Namespace::Communication_Types::IP_Address_Class* I)
 {
 if (!I) { return; }
 I->~IP_Address_Class();
 be_free(V, I, sizeof(Communication_Types::IP_Address_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Deinitialize_65E1CAF0_3E9A_4B09_9F74_FB41310B4CEC, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Deinitialize_273B492A_82B9_41A1_9F58_BF5DC0F0765B, "", "@.");
 
 
 // - - Functions
-const char* Berry_IP_Address_Class_To_99515416_7617_4900_BC12_42DD70A939DD(bvm* V, Xila_Namespace::Communication_Types::IP_Address_Class* I)
+const char* Berry_IP_Address_Class_To_21485721_A70C_44B3_A330_CB7C543D4DD4(bvm* V, Xila_Namespace::Communication_Types::IP_Address_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->To(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_To_99515416_7617_4900_BC12_42DD70A939DD, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_To_21485721_A70C_44B3_A330_CB7C543D4DD4, "s", "@.");
 
-bool Berry_IP_Address_Class_Is_IP_v4_AF9FE2DF_19DB_42F5_B33A_73C98CF980E0(Xila_Namespace::Communication_Types::IP_Address_Class* I)
+bool Berry_IP_Address_Class_Is_IP_v4_0B94DB72_BE0E_42B5_9CBD_533386CEC2BC(Xila_Namespace::Communication_Types::IP_Address_Class* I)
 {
 return I->Is_IP_v4(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Is_IP_v4_AF9FE2DF_19DB_42F5_B33A_73C98CF980E0, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Is_IP_v4_0B94DB72_BE0E_42B5_9CBD_533386CEC2BC, "b", ".");
 
-void Berry_IP_Address_Class_Set_IP_Version_2CE8B007_7E9A_442C_B54E_9A041328AF51(Xila_Namespace::Communication_Types::IP_Address_Class* I, bool A_0)
+void Berry_IP_Address_Class_Set_IP_Version_CAA36ECA_1513_482B_9A78_4881C02C0BE0(Xila_Namespace::Communication_Types::IP_Address_Class* I, bool A_0)
 {
 return I->Set_IP_Version(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Set_IP_Version_2CE8B007_7E9A_442C_B54E_9A041328AF51, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Set_IP_Version_CAA36ECA_1513_482B_9A78_4881C02C0BE0, "", ".b");
 
 // - - Operators
-bool Berry_IP_Address_Class_Operator_F7A3F957_3682_47EF_8881_0566FFB24608(Xila_Namespace::Communication_Types::IP_Address_Class* I, Xila_Namespace::Communication_Types::IP_Address_Class* A_0)
+bool Berry_IP_Address_Class_Operator_C509EBF3_73CD_4600_A4AD_794AC34CA398(Xila_Namespace::Communication_Types::IP_Address_Class* I, Xila_Namespace::Communication_Types::IP_Address_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Operator_F7A3F957_3682_47EF_8881_0566FFB24608, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Operator_C509EBF3_73CD_4600_A4AD_794AC34CA398, "b", "..")
 
-bool Berry_IP_Address_Class_Operator_82F803FD_F943_4FBF_BA33_A8C1148736D2(Xila_Namespace::Communication_Types::IP_Address_Class* I, Xila_Namespace::Communication_Types::IP_Address_Class* A_0)
+bool Berry_IP_Address_Class_Operator_7E33A206_3A8F_4762_B48C_0310DD88B350(Xila_Namespace::Communication_Types::IP_Address_Class* I, Xila_Namespace::Communication_Types::IP_Address_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Operator_82F803FD_F943_4FBF_BA33_A8C1148736D2, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Operator_7E33A206_3A8F_4762_B48C_0310DD88B350, "b", "..")
 
 
 // - Berry declaration
@@ -112,19 +112,19 @@ BE_FUNC_CTYPE_DECLARE(Berry_IP_Address_Class_Operator_82F803FD_F943_4FBF_BA33_A8
 class Berry_IP_Address_Type(scope:global, name:IP_Address_Type)
 {
 	_p, var
-	init, ctype_func(Berry_IP_Address_Class_Initialize_661EF3F2_756B_4F87_8FA4_C809612BF06D)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_828A7307_6897_4050_BA22_10E34E4CE908)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_3302E548_6457_470A_BBA4_6DB9C8DB4596)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_338250EF_1DEB_48F6_90C8_6B0A074DCE2F)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_457B8E18_20DB_4ADC_8DE8_0D9D7BC0FD16)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_469183CF_E926_4A7A_BE59_9AB4A52A3666)
-	init, ctype_func(Berry_IP_Address_Class_Initialize_56337033_C868_4526_888A_783923ADF17E)
-	deinit, ctype_func(Berry_IP_Address_Class_Deinitialize_65E1CAF0_3E9A_4B09_9F74_FB41310B4CEC)
-	To, ctype_func(Berry_IP_Address_Class_To_99515416_7617_4900_BC12_42DD70A939DD)
-	Is_IP_v4, ctype_func(Berry_IP_Address_Class_Is_IP_v4_AF9FE2DF_19DB_42F5_B33A_73C98CF980E0)
-	Set_IP_Version, ctype_func(Berry_IP_Address_Class_Set_IP_Version_2CE8B007_7E9A_442C_B54E_9A041328AF51)
-	==, ctype_func(Berry_IP_Address_Class_Operator_F7A3F957_3682_47EF_8881_0566FFB24608)
-	==, ctype_func(Berry_IP_Address_Class_Operator_82F803FD_F943_4FBF_BA33_A8C1148736D2)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_C9D14B42_0EFD_47C2_81F6_005B45C17314)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_9ABF996D_477E_4F2D_9AC8_A4E583FF3BCF)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_0256E431_F4C8_4916_A1C0_F954970BF1FD)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_89F25F6E_1DF4_45FE_85F6_1AD02374F172)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_00FA89BC_1A5D_48AF_B704_1D1D4B4BE2B3)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_61CCF80D_ACEC_451C_AF09_EAEED3639D5D)
+	init, ctype_func(Berry_IP_Address_Class_Initialize_EA495F1B_E003_4913_8391_9DDBD11FEC6A)
+	deinit, ctype_func(Berry_IP_Address_Class_Deinitialize_273B492A_82B9_41A1_9F58_BF5DC0F0765B)
+	To, ctype_func(Berry_IP_Address_Class_To_21485721_A70C_44B3_A330_CB7C543D4DD4)
+	Is_IP_v4, ctype_func(Berry_IP_Address_Class_Is_IP_v4_0B94DB72_BE0E_42B5_9CBD_533386CEC2BC)
+	Set_IP_Version, ctype_func(Berry_IP_Address_Class_Set_IP_Version_CAA36ECA_1513_482B_9A78_4881C02C0BE0)
+	==, ctype_func(Berry_IP_Address_Class_Operator_C509EBF3_73CD_4600_A4AD_794AC34CA398)
+	==, ctype_func(Berry_IP_Address_Class_Operator_7E33A206_3A8F_4762_B48C_0310DD88B350)
 
 }
 @const_object_info_end */
@@ -137,201 +137,201 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_HTTPS_Client_Class_Initialize_2A9A79B7_69F3_4ABD_8902_474699190521(bvm* V)
+void * Berry_HTTPS_Client_Class_Initialize_2807E391_786E_4348_820E_305B19910D66(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::HTTPS_Client_Class));
 return new (Pointer) Communication_Types::HTTPS_Client_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Initialize_2A9A79B7_69F3_4ABD_8902_474699190521, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Initialize_2807E391_786E_4348_820E_305B19910D66, "+_p", "@");
 
 
 // - - Destructors
-void Berry_HTTPS_Client_Class_Deinitialize_6E435F30_A552_452D_8E52_CB36CFB76409(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+void Berry_HTTPS_Client_Class_Deinitialize_DCE5106F_0AE8_42B4_9DC4_233882775104(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 if (!I) { return; }
 I->~HTTPS_Client_Class();
 be_free(V, I, sizeof(Communication_Types::HTTPS_Client_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Deinitialize_6E435F30_A552_452D_8E52_CB36CFB76409, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Deinitialize_DCE5106F_0AE8_42B4_9DC4_233882775104, "", "@.");
 
 
 // - - Functions
-int Berry_HTTPS_Client_Class_Begin_CC44BAD5_3471_4264_85AA_8F61BFCE8F7D(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, ::Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0, const char* A_1, int A_2, const char* A_3 = __null, bool A_4 = false)
+int Berry_HTTPS_Client_Class_Begin_C422BA5E_41B0_47AB_8D84_C4F94A64C519(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, ::Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0, const char* A_1, int A_2, const char* A_3 = __null, bool A_4 = false)
 {
 return (int)I->Begin(*A_0, A_1, (short unsigned int)A_2, A_3, A_4); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Begin_CC44BAD5_3471_4264_85AA_8F61BFCE8F7D, "i", "..si[sb");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Begin_C422BA5E_41B0_47AB_8D84_C4F94A64C519, "i", "..si[sb");
 
-void Berry_HTTPS_Client_Class_End_1B4D5967_AD17_4213_B356_67210F2C50DA(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+void Berry_HTTPS_Client_Class_End_CA0E7D9C_54CE_4F11_A54C_0D157FE1C322(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return I->End(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_End_1B4D5967_AD17_4213_B356_67210F2C50DA, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_End_CA0E7D9C_54CE_4F11_A54C_0D157FE1C322, "", ".");
 
-bool Berry_HTTPS_Client_Class_Connected_BA6B173D_87FE_440A_ABA7_85102AC18549(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+bool Berry_HTTPS_Client_Class_Connected_79758474_B527_413D_A8EC_A34E7AC594BA(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return I->Connected(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Connected_BA6B173D_87FE_440A_ABA7_85102AC18549, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Connected_79758474_B527_413D_A8EC_A34E7AC594BA, "b", ".");
 
-int Berry_HTTPS_Client_Class_Get_2362DC71_2E39_4C0A_8FDD_544583F2402F(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+int Berry_HTTPS_Client_Class_Get_BD4B909F_E493_4257_98C8_A26F64BACB3A(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return (int)I->Get(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_2362DC71_2E39_4C0A_8FDD_544583F2402F, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_BD4B909F_E493_4257_98C8_A26F64BACB3A, "i", ".");
 
-int Berry_HTTPS_Client_Class_Patch_DFC1663F_711F_45CA_8323_110CA0C24160(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+int Berry_HTTPS_Client_Class_Patch_FC6F3E12_0DED_4605_8044_169B09314868(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return (int)I->Patch(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Patch_DFC1663F_711F_45CA_8323_110CA0C24160, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Patch_FC6F3E12_0DED_4605_8044_169B09314868, "i", ".s");
 
-int Berry_HTTPS_Client_Class_Post_2AA1684A_D770_4A62_B941_9D2306CFBD1C(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+int Berry_HTTPS_Client_Class_Post_245992EB_6A82_463B_B946_C0125D87454E(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return (int)I->Post(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Post_2AA1684A_D770_4A62_B941_9D2306CFBD1C, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Post_245992EB_6A82_463B_B946_C0125D87454E, "i", ".s");
 
-int Berry_HTTPS_Client_Class_Put_B1619554_F655_44F5_8D60_6A062EB3AD2C(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+int Berry_HTTPS_Client_Class_Put_28418085_22CB_4B21_8617_BE69849C7777(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return (int)I->Put(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Put_B1619554_F655_44F5_8D60_6A062EB3AD2C, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Put_28418085_22CB_4B21_8617_BE69849C7777, "i", ".s");
 
-int Berry_HTTPS_Client_Class_Send_Request_392F3205_CEE4_4EB7_8B83_55B089032560(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1 = __null)
+int Berry_HTTPS_Client_Class_Send_Request_6FFE7B03_942F_4334_924E_1A6C3C7E955F(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1 = __null)
 {
 return (int)I->Send_Request(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Send_Request_392F3205_CEE4_4EB7_8B83_55B089032560, "i", ".s[s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Send_Request_6FFE7B03_942F_4334_924E_1A6C3C7E955F, "i", ".s[s");
 
-void Berry_HTTPS_Client_Class_Add_Header_E112F7D0_6D5C_4497_9FE7_A522E528AA20(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1, bool A_2 = false, bool A_3 = true)
+void Berry_HTTPS_Client_Class_Add_Header_CC1F49C9_9F97_463A_ACE8_B0F7E68410DB(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1, bool A_2 = false, bool A_3 = true)
 {
 return I->Add_Header(A_0, A_1, A_2, A_3); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Add_Header_E112F7D0_6D5C_4497_9FE7_A522E528AA20, "", ".ss[bb");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Add_Header_CC1F49C9_9F97_463A_ACE8_B0F7E68410DB, "", ".ss[bb");
 
-bool Berry_HTTPS_Client_Class_Has_Header_8E975445_6BFB_439F_BDE2_F48C36AE758F(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+bool Berry_HTTPS_Client_Class_Has_Header_0FD1FCD8_D0A0_4F7C_8EE7_B98B0B88CB31(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return I->Has_Header(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Has_Header_8E975445_6BFB_439F_BDE2_F48C36AE758F, "b", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Has_Header_0FD1FCD8_D0A0_4F7C_8EE7_B98B0B88CB31, "b", ".s");
 
-void Berry_HTTPS_Client_Class_Use_HTTP_1_0_7D8079A9_DF95_45A9_9FC2_A48F77BCF94F(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0)
+void Berry_HTTPS_Client_Class_Use_HTTP_1_0_873DEEFA_25B5_4098_AC06_F6512297C0D2(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0)
 {
 return I->Use_HTTP_1_0(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Use_HTTP_1_0_7D8079A9_DF95_45A9_9FC2_A48F77BCF94F, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Use_HTTP_1_0_873DEEFA_25B5_4098_AC06_F6512297C0D2, "", ".b");
 
-void Berry_HTTPS_Client_Class_Reset_Cookie_Jar_C30F294E_BE00_4A52_B9AF_2BB7805EED30(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+void Berry_HTTPS_Client_Class_Reset_Cookie_Jar_77B3963F_9420_48D4_A574_BA787CC8F196(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return I->Reset_Cookie_Jar(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Reset_Cookie_Jar_C30F294E_BE00_4A52_B9AF_2BB7805EED30, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Reset_Cookie_Jar_77B3963F_9420_48D4_A574_BA787CC8F196, "", ".");
 
-void Berry_HTTPS_Client_Class_Clear_All_Cookies_D3D00C27_1C8C_4712_9192_4B5F645BF458(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+void Berry_HTTPS_Client_Class_Clear_All_Cookies_CB9859F0_B98A_48A3_8C03_5B6E175692FD(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return I->Clear_All_Cookies(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Clear_All_Cookies_D3D00C27_1C8C_4712_9192_4B5F645BF458, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Clear_All_Cookies_CB9859F0_B98A_48A3_8C03_5B6E175692FD, "", ".");
 
-void Berry_HTTPS_Client_Class_Set_Reuse_C6756036_D29D_465D_85A8_11AD223B2DB0(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0)
+void Berry_HTTPS_Client_Class_Set_Reuse_3FB02C49_B4FC_475A_9F9A_36A22C47CBB2(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0)
 {
 return I->Set_Reuse(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Reuse_C6756036_D29D_465D_85A8_11AD223B2DB0, "", ".b");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Reuse_3FB02C49_B4FC_475A_9F9A_36A22C47CBB2, "", ".b");
 
-void Berry_HTTPS_Client_Class_Set_User_Agent_764967F5_D9EB_41EF_A7DC_6BC3BCD6CA13(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+void Berry_HTTPS_Client_Class_Set_User_Agent_F4CA001B_03A4_4094_BF30_0A3A3C5EC313(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return I->Set_User_Agent(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_User_Agent_764967F5_D9EB_41EF_A7DC_6BC3BCD6CA13, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_User_Agent_F4CA001B_03A4_4094_BF30_0A3A3C5EC313, "", ".s");
 
-void Berry_HTTPS_Client_Class_Set_Authorization_0795A3D6_9308_47B1_9616_F92DBE798D5E(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1 = __null)
+void Berry_HTTPS_Client_Class_Set_Authorization_64D2C99B_2B1C_4681_B945_90DC3810CC11(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0, const char* A_1 = __null)
 {
 return I->Set_Authorization(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Authorization_0795A3D6_9308_47B1_9616_F92DBE798D5E, "", ".s[s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Authorization_64D2C99B_2B1C_4681_B945_90DC3810CC11, "", ".s[s");
 
-void Berry_HTTPS_Client_Class_Set_Authorization_Type_A2CD3038_16B6_4D66_9676_8CBAEB9A2357(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+void Berry_HTTPS_Client_Class_Set_Authorization_Type_9E63EA17_BA34_4B65_AF8E_70D4A2E0B6B2(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return I->Set_Authorization_Type(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Authorization_Type_A2CD3038_16B6_4D66_9676_8CBAEB9A2357, "", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Authorization_Type_9E63EA17_BA34_4B65_AF8E_70D4A2E0B6B2, "", ".s");
 
-void Berry_HTTPS_Client_Class_Set_Connect_Timeout_7F41AFAF_33C3_43DD_8719_AF04249D5B46(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
+void Berry_HTTPS_Client_Class_Set_Connect_Timeout_D426648B_51BE_4368_B4BE_FE2BBFBF6661(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
 {
 return I->Set_Connect_Timeout((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Connect_Timeout_7F41AFAF_33C3_43DD_8719_AF04249D5B46, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Connect_Timeout_D426648B_51BE_4368_B4BE_FE2BBFBF6661, "", ".i");
 
-void Berry_HTTPS_Client_Class_Set_Timeout_7544CE25_94D9_494E_8C20_19AD879AD6AD(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
+void Berry_HTTPS_Client_Class_Set_Timeout_10596B1C_3FB3_4AB9_AE40_37E4EC6C5856(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
 {
 return I->Set_Timeout((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Timeout_7544CE25_94D9_494E_8C20_19AD879AD6AD, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Timeout_10596B1C_3FB3_4AB9_AE40_37E4EC6C5856, "", ".i");
 
-void Berry_HTTPS_Client_Class_Set_Follow_Redirects_F263BC29_4F43_40B5_B585_937800E76B61(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0, bool A_1 = false)
+void Berry_HTTPS_Client_Class_Set_Follow_Redirects_83E9A196_BCCC_4C44_8E97_7B599E8C6BC5(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, bool A_0, bool A_1 = false)
 {
 return I->Set_Follow_Redirects(A_0, A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Follow_Redirects_F263BC29_4F43_40B5_B585_937800E76B61, "", ".b[b");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Follow_Redirects_83E9A196_BCCC_4C44_8E97_7B599E8C6BC5, "", ".b[b");
 
-void Berry_HTTPS_Client_Class_Set_Redirect_Limit_585DED50_CE8E_4DCD_A67D_8450A8D69CE0(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
+void Berry_HTTPS_Client_Class_Set_Redirect_Limit_F6099C75_6B63_4F24_9E51_0A16A9A2F3A8(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_0)
 {
 return I->Set_Redirect_Limit((short unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Redirect_Limit_585DED50_CE8E_4DCD_A67D_8450A8D69CE0, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_Redirect_Limit_F6099C75_6B63_4F24_9E51_0A16A9A2F3A8, "", ".i");
 
-int Berry_HTTPS_Client_Class_Set_URL_B20E60E2_BB53_45E5_BC70_247DE3835F9E(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
+int Berry_HTTPS_Client_Class_Set_URL_A73E1D55_5A5B_48A7_8FE4_343A52AC73B3(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_0)
 {
 return (int)I->Set_URL(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_URL_B20E60E2_BB53_45E5_BC70_247DE3835F9E, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Set_URL_A73E1D55_5A5B_48A7_8FE4_343A52AC73B3, "i", ".s");
 
-const char* Berry_HTTPS_Client_Class_Get_Header_6C557BE5_3E18_4F9C_9E94_FC745ADB26AD(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_1)
+const char* Berry_HTTPS_Client_Class_Get_Header_BF4DCF49_5053_495C_B5FC_790D83442AF3(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, const char* A_1)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Get_Header(S_0, A_1); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_6C557BE5_3E18_4F9C_9E94_FC745ADB26AD, "s", "@.s");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_BF4DCF49_5053_495C_B5FC_790D83442AF3, "s", "@.s");
 
-const char* Berry_HTTPS_Client_Class_Get_Header_Name_D4C68A63_4C6D_450D_B006_26EDBF6FBF6E(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_1)
+const char* Berry_HTTPS_Client_Class_Get_Header_Name_6780D537_66C3_47AC_8794_2C6227EE2337(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I, int A_1)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Get_Header_Name(S_0, (unsigned int)A_1); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_Name_D4C68A63_4C6D_450D_B006_26EDBF6FBF6E, "s", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_Name_6780D537_66C3_47AC_8794_2C6227EE2337, "s", "@.i");
 
-int Berry_HTTPS_Client_Class_Get_Header_Count_EB3F087D_DEF4_45C4_971C_E22B6E83CD41(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+int Berry_HTTPS_Client_Class_Get_Header_Count_F2B6EAE9_3CD8_4D8D_950F_D23D4A5566D6(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return (int)I->Get_Header_Count(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_Count_EB3F087D_DEF4_45C4_971C_E22B6E83CD41, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Header_Count_F2B6EAE9_3CD8_4D8D_950F_D23D4A5566D6, "i", ".");
 
-int Berry_HTTPS_Client_Class_Get_Size_85982BA2_8A05_4331_8D29_30958D5301EC(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+int Berry_HTTPS_Client_Class_Get_Size_BFED2116_3522_4912_AC93_54FE9FE9516D(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return (int)I->Get_Size(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Size_85982BA2_8A05_4331_8D29_30958D5301EC, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Size_BFED2116_3522_4912_AC93_54FE9FE9516D, "i", ".");
 
-const char* Berry_HTTPS_Client_Class_Get_Location_9D5B5601_1981_4F4B_A8D7_B6E0719B09FE(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+const char* Berry_HTTPS_Client_Class_Get_Location_4DB6D04F_13F7_4356_A556_0C0908A5EA4A(Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 return I->Get_Location(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Location_9D5B5601_1981_4F4B_A8D7_B6E0719B09FE, "s", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_Location_4DB6D04F_13F7_4356_A556_0C0908A5EA4A, "s", ".");
 
-const char* Berry_HTTPS_Client_Class_Get_String_D125BEC0_371F_4AD6_88F0_BE31EA5ABA19(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
+const char* Berry_HTTPS_Client_Class_Get_String_CE04D31B_3026_4CDB_9FD6_A4EB9C078608(bvm* V, Xila_Namespace::Communication_Types::HTTPS_Client_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Get_String(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_String_D125BEC0_371F_4AD6_88F0_BE31EA5ABA19, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_String_CE04D31B_3026_4CDB_9FD6_A4EB9C078608, "s", "@.");
 
 // - - Operators
 
@@ -340,36 +340,36 @@ BE_FUNC_CTYPE_DECLARE(Berry_HTTPS_Client_Class_Get_String_D125BEC0_371F_4AD6_88F
 class Berry_HTTPS_Client_Type(scope:global, name:HTTPS_Client_Type)
 {
 	_p, var
-	init, ctype_func(Berry_HTTPS_Client_Class_Initialize_2A9A79B7_69F3_4ABD_8902_474699190521)
-	deinit, ctype_func(Berry_HTTPS_Client_Class_Deinitialize_6E435F30_A552_452D_8E52_CB36CFB76409)
-	Begin, ctype_func(Berry_HTTPS_Client_Class_Begin_CC44BAD5_3471_4264_85AA_8F61BFCE8F7D)
-	End, ctype_func(Berry_HTTPS_Client_Class_End_1B4D5967_AD17_4213_B356_67210F2C50DA)
-	Connected, ctype_func(Berry_HTTPS_Client_Class_Connected_BA6B173D_87FE_440A_ABA7_85102AC18549)
-	Get, ctype_func(Berry_HTTPS_Client_Class_Get_2362DC71_2E39_4C0A_8FDD_544583F2402F)
-	Patch, ctype_func(Berry_HTTPS_Client_Class_Patch_DFC1663F_711F_45CA_8323_110CA0C24160)
-	Post, ctype_func(Berry_HTTPS_Client_Class_Post_2AA1684A_D770_4A62_B941_9D2306CFBD1C)
-	Put, ctype_func(Berry_HTTPS_Client_Class_Put_B1619554_F655_44F5_8D60_6A062EB3AD2C)
-	Send_Request, ctype_func(Berry_HTTPS_Client_Class_Send_Request_392F3205_CEE4_4EB7_8B83_55B089032560)
-	Add_Header, ctype_func(Berry_HTTPS_Client_Class_Add_Header_E112F7D0_6D5C_4497_9FE7_A522E528AA20)
-	Has_Header, ctype_func(Berry_HTTPS_Client_Class_Has_Header_8E975445_6BFB_439F_BDE2_F48C36AE758F)
-	Use_HTTP_1_0, ctype_func(Berry_HTTPS_Client_Class_Use_HTTP_1_0_7D8079A9_DF95_45A9_9FC2_A48F77BCF94F)
-	Reset_Cookie_Jar, ctype_func(Berry_HTTPS_Client_Class_Reset_Cookie_Jar_C30F294E_BE00_4A52_B9AF_2BB7805EED30)
-	Clear_All_Cookies, ctype_func(Berry_HTTPS_Client_Class_Clear_All_Cookies_D3D00C27_1C8C_4712_9192_4B5F645BF458)
-	Set_Reuse, ctype_func(Berry_HTTPS_Client_Class_Set_Reuse_C6756036_D29D_465D_85A8_11AD223B2DB0)
-	Set_User_Agent, ctype_func(Berry_HTTPS_Client_Class_Set_User_Agent_764967F5_D9EB_41EF_A7DC_6BC3BCD6CA13)
-	Set_Authorization, ctype_func(Berry_HTTPS_Client_Class_Set_Authorization_0795A3D6_9308_47B1_9616_F92DBE798D5E)
-	Set_Authorization_Type, ctype_func(Berry_HTTPS_Client_Class_Set_Authorization_Type_A2CD3038_16B6_4D66_9676_8CBAEB9A2357)
-	Set_Connect_Timeout, ctype_func(Berry_HTTPS_Client_Class_Set_Connect_Timeout_7F41AFAF_33C3_43DD_8719_AF04249D5B46)
-	Set_Timeout, ctype_func(Berry_HTTPS_Client_Class_Set_Timeout_7544CE25_94D9_494E_8C20_19AD879AD6AD)
-	Set_Follow_Redirects, ctype_func(Berry_HTTPS_Client_Class_Set_Follow_Redirects_F263BC29_4F43_40B5_B585_937800E76B61)
-	Set_Redirect_Limit, ctype_func(Berry_HTTPS_Client_Class_Set_Redirect_Limit_585DED50_CE8E_4DCD_A67D_8450A8D69CE0)
-	Set_URL, ctype_func(Berry_HTTPS_Client_Class_Set_URL_B20E60E2_BB53_45E5_BC70_247DE3835F9E)
-	Get_Header, ctype_func(Berry_HTTPS_Client_Class_Get_Header_6C557BE5_3E18_4F9C_9E94_FC745ADB26AD)
-	Get_Header_Name, ctype_func(Berry_HTTPS_Client_Class_Get_Header_Name_D4C68A63_4C6D_450D_B006_26EDBF6FBF6E)
-	Get_Header_Count, ctype_func(Berry_HTTPS_Client_Class_Get_Header_Count_EB3F087D_DEF4_45C4_971C_E22B6E83CD41)
-	Get_Size, ctype_func(Berry_HTTPS_Client_Class_Get_Size_85982BA2_8A05_4331_8D29_30958D5301EC)
-	Get_Location, ctype_func(Berry_HTTPS_Client_Class_Get_Location_9D5B5601_1981_4F4B_A8D7_B6E0719B09FE)
-	Get_String, ctype_func(Berry_HTTPS_Client_Class_Get_String_D125BEC0_371F_4AD6_88F0_BE31EA5ABA19)
+	init, ctype_func(Berry_HTTPS_Client_Class_Initialize_2807E391_786E_4348_820E_305B19910D66)
+	deinit, ctype_func(Berry_HTTPS_Client_Class_Deinitialize_DCE5106F_0AE8_42B4_9DC4_233882775104)
+	Begin, ctype_func(Berry_HTTPS_Client_Class_Begin_C422BA5E_41B0_47AB_8D84_C4F94A64C519)
+	End, ctype_func(Berry_HTTPS_Client_Class_End_CA0E7D9C_54CE_4F11_A54C_0D157FE1C322)
+	Connected, ctype_func(Berry_HTTPS_Client_Class_Connected_79758474_B527_413D_A8EC_A34E7AC594BA)
+	Get, ctype_func(Berry_HTTPS_Client_Class_Get_BD4B909F_E493_4257_98C8_A26F64BACB3A)
+	Patch, ctype_func(Berry_HTTPS_Client_Class_Patch_FC6F3E12_0DED_4605_8044_169B09314868)
+	Post, ctype_func(Berry_HTTPS_Client_Class_Post_245992EB_6A82_463B_B946_C0125D87454E)
+	Put, ctype_func(Berry_HTTPS_Client_Class_Put_28418085_22CB_4B21_8617_BE69849C7777)
+	Send_Request, ctype_func(Berry_HTTPS_Client_Class_Send_Request_6FFE7B03_942F_4334_924E_1A6C3C7E955F)
+	Add_Header, ctype_func(Berry_HTTPS_Client_Class_Add_Header_CC1F49C9_9F97_463A_ACE8_B0F7E68410DB)
+	Has_Header, ctype_func(Berry_HTTPS_Client_Class_Has_Header_0FD1FCD8_D0A0_4F7C_8EE7_B98B0B88CB31)
+	Use_HTTP_1_0, ctype_func(Berry_HTTPS_Client_Class_Use_HTTP_1_0_873DEEFA_25B5_4098_AC06_F6512297C0D2)
+	Reset_Cookie_Jar, ctype_func(Berry_HTTPS_Client_Class_Reset_Cookie_Jar_77B3963F_9420_48D4_A574_BA787CC8F196)
+	Clear_All_Cookies, ctype_func(Berry_HTTPS_Client_Class_Clear_All_Cookies_CB9859F0_B98A_48A3_8C03_5B6E175692FD)
+	Set_Reuse, ctype_func(Berry_HTTPS_Client_Class_Set_Reuse_3FB02C49_B4FC_475A_9F9A_36A22C47CBB2)
+	Set_User_Agent, ctype_func(Berry_HTTPS_Client_Class_Set_User_Agent_F4CA001B_03A4_4094_BF30_0A3A3C5EC313)
+	Set_Authorization, ctype_func(Berry_HTTPS_Client_Class_Set_Authorization_64D2C99B_2B1C_4681_B945_90DC3810CC11)
+	Set_Authorization_Type, ctype_func(Berry_HTTPS_Client_Class_Set_Authorization_Type_9E63EA17_BA34_4B65_AF8E_70D4A2E0B6B2)
+	Set_Connect_Timeout, ctype_func(Berry_HTTPS_Client_Class_Set_Connect_Timeout_D426648B_51BE_4368_B4BE_FE2BBFBF6661)
+	Set_Timeout, ctype_func(Berry_HTTPS_Client_Class_Set_Timeout_10596B1C_3FB3_4AB9_AE40_37E4EC6C5856)
+	Set_Follow_Redirects, ctype_func(Berry_HTTPS_Client_Class_Set_Follow_Redirects_83E9A196_BCCC_4C44_8E97_7B599E8C6BC5)
+	Set_Redirect_Limit, ctype_func(Berry_HTTPS_Client_Class_Set_Redirect_Limit_F6099C75_6B63_4F24_9E51_0A16A9A2F3A8)
+	Set_URL, ctype_func(Berry_HTTPS_Client_Class_Set_URL_A73E1D55_5A5B_48A7_8FE4_343A52AC73B3)
+	Get_Header, ctype_func(Berry_HTTPS_Client_Class_Get_Header_BF4DCF49_5053_495C_B5FC_790D83442AF3)
+	Get_Header_Name, ctype_func(Berry_HTTPS_Client_Class_Get_Header_Name_6780D537_66C3_47AC_8794_2C6227EE2337)
+	Get_Header_Count, ctype_func(Berry_HTTPS_Client_Class_Get_Header_Count_F2B6EAE9_3CD8_4D8D_950F_D23D4A5566D6)
+	Get_Size, ctype_func(Berry_HTTPS_Client_Class_Get_Size_BFED2116_3522_4912_AC93_54FE9FE9516D)
+	Get_Location, ctype_func(Berry_HTTPS_Client_Class_Get_Location_4DB6D04F_13F7_4356_A556_0C0908A5EA4A)
+	Get_String, ctype_func(Berry_HTTPS_Client_Class_Get_String_CE04D31B_3026_4CDB_9FD6_A4EB9C078608)
 
 }
 @const_object_info_end */
@@ -382,141 +382,141 @@ extern "C"
 // - Functions
 
 // - - Constructors
-void * Berry_WiFi_Client_Class_Initialize_E9EAB374_68DB_4015_8672_88F87F277E06(bvm* V)
+void * Berry_WiFi_Client_Class_Initialize_7823862D_C11A_4F4B_A4CF_CA6BAE39104D(bvm* V)
 {
 void* Pointer = be_malloc(V, sizeof(Communication_Types::WiFi_Client_Class));
 return new (Pointer) Communication_Types::WiFi_Client_Class(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Initialize_E9EAB374_68DB_4015_8672_88F87F277E06, "+_p", "@");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Initialize_7823862D_C11A_4F4B_A4CF_CA6BAE39104D, "+_p", "@");
 
 
 // - - Destructors
-void Berry_WiFi_Client_Class_Deinitialize_57666CA0_CD94_4455_BA64_C528B60485EE(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+void Berry_WiFi_Client_Class_Deinitialize_B156FFF2_1A1C_4BB9_8B65_CB219935C787(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 if (!I) { return; }
 I->~WiFi_Client_Class();
 be_free(V, I, sizeof(Communication_Types::WiFi_Client_Class));
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Deinitialize_57666CA0_CD94_4455_BA64_C528B60485EE, "", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Deinitialize_B156FFF2_1A1C_4BB9_8B65_CB219935C787, "", "@.");
 
 
 // - - Functions
-int Berry_WiFi_Client_Class_Connect_3B0BF050_E294_468A_9A60_32A3B292BBF9(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const char* A_0, int A_1, int A_2 = 30000)
+int Berry_WiFi_Client_Class_Connect_89A7E542_BB2F_4D92_A4A3_60FCA8F953D3(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const char* A_0, int A_1, int A_2 = 30000)
 {
 return (int)I->Connect(A_0, (short unsigned int)A_1, (int)A_2); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Connect_3B0BF050_E294_468A_9A60_32A3B292BBF9, "i", ".si[i");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Connect_89A7E542_BB2F_4D92_A4A3_60FCA8F953D3, "i", ".si[i");
 
-void Berry_WiFi_Client_Class_Stop_18788748_63EC_4972_B6C8_D122056AACDF(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+void Berry_WiFi_Client_Class_Stop_CC538CD0_949D_475F_9D03_3FA96EC35051(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return I->Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Stop_18788748_63EC_4972_B6C8_D122056AACDF, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Stop_CC538CD0_949D_475F_9D03_3FA96EC35051, "", ".");
 
-bool Berry_WiFi_Client_Class_Connected_B2B4A9ED_4FEF_4B5B_97D1_5D4B18D3BEE4(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+bool Berry_WiFi_Client_Class_Connected_4D8EDD77_7E0F_488C_9CA1_99CBAF073562(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return I->Connected(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Connected_B2B4A9ED_4FEF_4B5B_97D1_5D4B18D3BEE4, "b", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Connected_4D8EDD77_7E0F_488C_9CA1_99CBAF073562, "b", ".");
 
-const char* Berry_WiFi_Client_Class_Last_Error_9410FB87_A0AA_4FDF_BD99_5CF62D3521BF(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+const char* Berry_WiFi_Client_Class_Last_Error_9BBC372A_5EE2_4BF8_8B7B_11CB61F9C47A(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Last_Error(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Last_Error_9410FB87_A0AA_4FDF_BD99_5CF62D3521BF, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Last_Error_9BBC372A_5EE2_4BF8_8B7B_11CB61F9C47A, "s", "@.");
 
-void Berry_WiFi_Client_Class_Set_Insecure_D3B30E1C_19D8_4E1B_B976_B7004655859A(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+void Berry_WiFi_Client_Class_Set_Insecure_BB363AD4_49C9_457E_BB58_0A87ABB369B8(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return I->Set_Insecure(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Insecure_D3B30E1C_19D8_4E1B_B976_B7004655859A, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Insecure_BB363AD4_49C9_457E_BB58_0A87ABB369B8, "", ".");
 
-void Berry_WiFi_Client_Class_Set_Handshake_Timeout_D19B3061_ED13_4C7D_B3EB_860241D393A7(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
+void Berry_WiFi_Client_Class_Set_Handshake_Timeout_CFE23275_149B_4461_8C3B_AA560C6A38BF(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
 {
 return I->Set_Handshake_Timeout((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Handshake_Timeout_D19B3061_ED13_4C7D_B3EB_860241D393A7, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Handshake_Timeout_CFE23275_149B_4461_8C3B_AA560C6A38BF, "", ".i");
 
-void Berry_WiFi_Client_Class_Set_Timeout_0A4EFCD5_D4F2_45E4_84F5_1EBC030C936F(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
+void Berry_WiFi_Client_Class_Set_Timeout_10E31D47_B762_45B8_8722_0CBA52FE0F37(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
 {
 return I->Set_Timeout((unsigned int)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Timeout_0A4EFCD5_D4F2_45E4_84F5_1EBC030C936F, "", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Set_Timeout_10E31D47_B762_45B8_8722_0CBA52FE0F37, "", ".i");
 
-int Berry_WiFi_Client_Class_Available_352E42A5_2CEA_4A26_A6BD_C84D942179D7(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+int Berry_WiFi_Client_Class_Available_2FDCC8EE_D2D0_4E31_A9B6_F67AD1DA72E5(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return (int)I->Available(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Available_352E42A5_2CEA_4A26_A6BD_C84D942179D7, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Available_2FDCC8EE_D2D0_4E31_A9B6_F67AD1DA72E5, "i", ".");
 
-int Berry_WiFi_Client_Class_Peek_3F66FEF8_A673_471B_B290_63D4D457B581(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+int Berry_WiFi_Client_Class_Peek_E4869DEF_042E_487B_AE0A_5AD148FB10F1(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return (int)I->Peek(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Peek_3F66FEF8_A673_471B_B290_63D4D457B581, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Peek_E4869DEF_042E_487B_AE0A_5AD148FB10F1, "i", ".");
 
-int Berry_WiFi_Client_Class_Read_35B6B2FA_A0F3_4381_9BE7_3586790B2549(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+int Berry_WiFi_Client_Class_Read_688AB8C8_C6B5_4A6E_9C4C_A9461E5CBCF8(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return (int)I->Read(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_35B6B2FA_A0F3_4381_9BE7_3586790B2549, "i", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_688AB8C8_C6B5_4A6E_9C4C_A9461E5CBCF8, "i", ".");
 
-const unsigned char* Berry_WiFi_Client_Class_Read_Bytes_5E0D7D97_D891_4390_9B57_6AE93A3A091F(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_1)
+const unsigned char* Berry_WiFi_Client_Class_Read_Bytes_41396E12_6D2C_4C87_B024_AF5ACA8EBF95(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_1)
 {
 unsigned char* S_0 = (unsigned char*)Berry_Class::Get_Instance(V)->Buffer;
 I->Read_Bytes(S_0, (A_1 > sizeof(Berry_Class::Buffer)) ? sizeof(Berry_Class::Buffer) : A_1); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_Bytes_5E0D7D97_D891_4390_9B57_6AE93A3A091F, "s", "@.i");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_Bytes_41396E12_6D2C_4C87_B024_AF5ACA8EBF95, "s", "@.i");
 
-const char* Berry_WiFi_Client_Class_Read_String_9DF0503B_24ED_408A_B7E5_89633BF38303(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+const char* Berry_WiFi_Client_Class_Read_String_84972749_4DA0_4DD3_9774_6D123FA1EE20(bvm* V, Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 String_Type S_0;
 S_0.Set_Buffer((char*)Berry_Class::Get_Instance(V)->Buffer, sizeof(Berry_Class::Buffer));
 I->Read_String(S_0); 
 return S_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_String_9DF0503B_24ED_408A_B7E5_89633BF38303, "s", "@.");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Read_String_84972749_4DA0_4DD3_9774_6D123FA1EE20, "s", "@.");
 
-void Berry_WiFi_Client_Class_Flush_8349D581_8114_4439_812B_60CF74FBE63B(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
+void Berry_WiFi_Client_Class_Flush_66466CC9_D5BD_4866_B290_0C9D7A35BE90(Xila_Namespace::Communication_Types::WiFi_Client_Class* I)
 {
 return I->Flush(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Flush_8349D581_8114_4439_812B_60CF74FBE63B, "", ".");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Flush_66466CC9_D5BD_4866_B290_0C9D7A35BE90, "", ".");
 
-int Berry_WiFi_Client_Class_Write_786BBEBB_2E06_4FB1_8834_CD2D50A36FE3(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
+int Berry_WiFi_Client_Class_Write_A34806DC_3217_4C97_82C9_58A7687330C0(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, int A_0)
 {
 return (int)I->Write((unsigned char)A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_786BBEBB_2E06_4FB1_8834_CD2D50A36FE3, "i", ".i");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_A34806DC_3217_4C97_82C9_58A7687330C0, "i", ".i");
 
-int Berry_WiFi_Client_Class_Write_Bytes_78CCCE8A_1C98_4AD8_B6BF_EF1D5506F68F(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const unsigned char* A_0, int A_1)
+int Berry_WiFi_Client_Class_Write_Bytes_EE424BE4_BC6B_4ADF_BBDE_761EE21F2EC8(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const unsigned char* A_0, int A_1)
 {
 return (int)I->Write_Bytes(A_0, (unsigned int)A_1); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_Bytes_78CCCE8A_1C98_4AD8_B6BF_EF1D5506F68F, "i", ".si");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_Bytes_EE424BE4_BC6B_4ADF_BBDE_761EE21F2EC8, "i", ".si");
 
-int Berry_WiFi_Client_Class_Write_String_A35B6E48_0B33_4350_9BDC_4B50E1D1DBCE(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const char* A_0)
+int Berry_WiFi_Client_Class_Write_String_A026CDAE_0D3F_4C19_831C_B9D077D57E85(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, const char* A_0)
 {
 return (int)I->Write_String(A_0); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_String_A35B6E48_0B33_4350_9BDC_4B50E1D1DBCE, "i", ".s");
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Write_String_A026CDAE_0D3F_4C19_831C_B9D077D57E85, "i", ".s");
 
 // - - Operators
-bool Berry_WiFi_Client_Class_Operator_F725B515_394F_485F_B9EA_9DBD65269BD9(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0)
+bool Berry_WiFi_Client_Class_Operator_A2ACBD97_FBF6_44B9_9BA0_5677C75D9C34(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0)
 {
 return *I == *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Operator_F725B515_394F_485F_B9EA_9DBD65269BD9, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Operator_A2ACBD97_FBF6_44B9_9BA0_5677C75D9C34, "b", "..")
 
-bool Berry_WiFi_Client_Class_Operator_EB491347_9076_4F0F_9568_AB807D92AD2E(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0)
+bool Berry_WiFi_Client_Class_Operator_2FC3CDE6_6048_4DD8_B133_EA6ECFBD024E(Xila_Namespace::Communication_Types::WiFi_Client_Class* I, Xila_Namespace::Communication_Types::WiFi_Client_Class* A_0)
 {
 return *I != *A_0;
 }
-BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Operator_EB491347_9076_4F0F_9568_AB807D92AD2E, "b", "..")
+BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Operator_2FC3CDE6_6048_4DD8_B133_EA6ECFBD024E, "b", "..")
 
 
 // - Berry declaration
@@ -524,26 +524,26 @@ BE_FUNC_CTYPE_DECLARE(Berry_WiFi_Client_Class_Operator_EB491347_9076_4F0F_9568_A
 class Berry_WiFi_Client_Type(scope:global, name:WiFi_Client_Type)
 {
 	_p, var
-	init, ctype_func(Berry_WiFi_Client_Class_Initialize_E9EAB374_68DB_4015_8672_88F87F277E06)
-	deinit, ctype_func(Berry_WiFi_Client_Class_Deinitialize_57666CA0_CD94_4455_BA64_C528B60485EE)
-	Connect, ctype_func(Berry_WiFi_Client_Class_Connect_3B0BF050_E294_468A_9A60_32A3B292BBF9)
-	Stop, ctype_func(Berry_WiFi_Client_Class_Stop_18788748_63EC_4972_B6C8_D122056AACDF)
-	Connected, ctype_func(Berry_WiFi_Client_Class_Connected_B2B4A9ED_4FEF_4B5B_97D1_5D4B18D3BEE4)
-	Last_Error, ctype_func(Berry_WiFi_Client_Class_Last_Error_9410FB87_A0AA_4FDF_BD99_5CF62D3521BF)
-	Set_Insecure, ctype_func(Berry_WiFi_Client_Class_Set_Insecure_D3B30E1C_19D8_4E1B_B976_B7004655859A)
-	Set_Handshake_Timeout, ctype_func(Berry_WiFi_Client_Class_Set_Handshake_Timeout_D19B3061_ED13_4C7D_B3EB_860241D393A7)
-	Set_Timeout, ctype_func(Berry_WiFi_Client_Class_Set_Timeout_0A4EFCD5_D4F2_45E4_84F5_1EBC030C936F)
-	Available, ctype_func(Berry_WiFi_Client_Class_Available_352E42A5_2CEA_4A26_A6BD_C84D942179D7)
-	Peek, ctype_func(Berry_WiFi_Client_Class_Peek_3F66FEF8_A673_471B_B290_63D4D457B581)
-	Read, ctype_func(Berry_WiFi_Client_Class_Read_35B6B2FA_A0F3_4381_9BE7_3586790B2549)
-	Read_Bytes, ctype_func(Berry_WiFi_Client_Class_Read_Bytes_5E0D7D97_D891_4390_9B57_6AE93A3A091F)
-	Read_String, ctype_func(Berry_WiFi_Client_Class_Read_String_9DF0503B_24ED_408A_B7E5_89633BF38303)
-	Flush, ctype_func(Berry_WiFi_Client_Class_Flush_8349D581_8114_4439_812B_60CF74FBE63B)
-	Write, ctype_func(Berry_WiFi_Client_Class_Write_786BBEBB_2E06_4FB1_8834_CD2D50A36FE3)
-	Write_Bytes, ctype_func(Berry_WiFi_Client_Class_Write_Bytes_78CCCE8A_1C98_4AD8_B6BF_EF1D5506F68F)
-	Write_String, ctype_func(Berry_WiFi_Client_Class_Write_String_A35B6E48_0B33_4350_9BDC_4B50E1D1DBCE)
-	==, ctype_func(Berry_WiFi_Client_Class_Operator_F725B515_394F_485F_B9EA_9DBD65269BD9)
-	!=, ctype_func(Berry_WiFi_Client_Class_Operator_EB491347_9076_4F0F_9568_AB807D92AD2E)
+	init, ctype_func(Berry_WiFi_Client_Class_Initialize_7823862D_C11A_4F4B_A4CF_CA6BAE39104D)
+	deinit, ctype_func(Berry_WiFi_Client_Class_Deinitialize_B156FFF2_1A1C_4BB9_8B65_CB219935C787)
+	Connect, ctype_func(Berry_WiFi_Client_Class_Connect_89A7E542_BB2F_4D92_A4A3_60FCA8F953D3)
+	Stop, ctype_func(Berry_WiFi_Client_Class_Stop_CC538CD0_949D_475F_9D03_3FA96EC35051)
+	Connected, ctype_func(Berry_WiFi_Client_Class_Connected_4D8EDD77_7E0F_488C_9CA1_99CBAF073562)
+	Last_Error, ctype_func(Berry_WiFi_Client_Class_Last_Error_9BBC372A_5EE2_4BF8_8B7B_11CB61F9C47A)
+	Set_Insecure, ctype_func(Berry_WiFi_Client_Class_Set_Insecure_BB363AD4_49C9_457E_BB58_0A87ABB369B8)
+	Set_Handshake_Timeout, ctype_func(Berry_WiFi_Client_Class_Set_Handshake_Timeout_CFE23275_149B_4461_8C3B_AA560C6A38BF)
+	Set_Timeout, ctype_func(Berry_WiFi_Client_Class_Set_Timeout_10E31D47_B762_45B8_8722_0CBA52FE0F37)
+	Available, ctype_func(Berry_WiFi_Client_Class_Available_2FDCC8EE_D2D0_4E31_A9B6_F67AD1DA72E5)
+	Peek, ctype_func(Berry_WiFi_Client_Class_Peek_E4869DEF_042E_487B_AE0A_5AD148FB10F1)
+	Read, ctype_func(Berry_WiFi_Client_Class_Read_688AB8C8_C6B5_4A6E_9C4C_A9461E5CBCF8)
+	Read_Bytes, ctype_func(Berry_WiFi_Client_Class_Read_Bytes_41396E12_6D2C_4C87_B024_AF5ACA8EBF95)
+	Read_String, ctype_func(Berry_WiFi_Client_Class_Read_String_84972749_4DA0_4DD3_9774_6D123FA1EE20)
+	Flush, ctype_func(Berry_WiFi_Client_Class_Flush_66466CC9_D5BD_4866_B290_0C9D7A35BE90)
+	Write, ctype_func(Berry_WiFi_Client_Class_Write_A34806DC_3217_4C97_82C9_58A7687330C0)
+	Write_Bytes, ctype_func(Berry_WiFi_Client_Class_Write_Bytes_EE424BE4_BC6B_4ADF_BBDE_761EE21F2EC8)
+	Write_String, ctype_func(Berry_WiFi_Client_Class_Write_String_A026CDAE_0D3F_4C19_831C_B9D077D57E85)
+	==, ctype_func(Berry_WiFi_Client_Class_Operator_A2ACBD97_FBF6_44B9_9BA0_5677C75D9C34)
+	!=, ctype_func(Berry_WiFi_Client_Class_Operator_2FC3CDE6_6048_4DD8_B133_EA6ECFBD024E)
 
 }
 @const_object_info_end */
@@ -554,18 +554,18 @@ extern "C"
 	#include "../generate/be_fixed_Berry_WiFi_Client_Type.h"
 }
 // - Functions
-int Berry_Communication_Class_Start_4C9437AA_1C34_4EB0_B114_11CBB21CC620()
+int Berry_Communication_Class_Start_D16FEA69_599C_49B8_AB8E_CE0483047020()
 {
 return (int)Communication.Start(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Communication_Class_Start_4C9437AA_1C34_4EB0_B114_11CBB21CC620, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Communication_Class_Start_D16FEA69_599C_49B8_AB8E_CE0483047020, "i", "");
 
 
-int Berry_Communication_Class_Stop_308D0142_E67E_4982_B7A6_02C90F4141A2()
+int Berry_Communication_Class_Stop_BD4C9116_3F8A_4D82_96A8_627531B878CC()
 {
 return (int)Communication.Stop(); 
 }
-BE_FUNC_CTYPE_DECLARE(Berry_Communication_Class_Stop_308D0142_E67E_4982_B7A6_02C90F4141A2, "i", "");
+BE_FUNC_CTYPE_DECLARE(Berry_Communication_Class_Stop_BD4C9116_3F8A_4D82_96A8_627531B878CC, "i", "");
 
 
 void* Berry_Communication_Class_Get_Pointer()
@@ -578,8 +578,8 @@ BE_FUNC_CTYPE_DECLARE(Berry_Communication_Class_Get_Pointer, "c", "")
 /* @const_object_info_begin
 module Communication (scope:global)
 {
-	Start, ctype_func(Berry_Communication_Class_Start_4C9437AA_1C34_4EB0_B114_11CBB21CC620)
-	Stop, ctype_func(Berry_Communication_Class_Stop_308D0142_E67E_4982_B7A6_02C90F4141A2)
+	Start, ctype_func(Berry_Communication_Class_Start_D16FEA69_599C_49B8_AB8E_CE0483047020)
+	Stop, ctype_func(Berry_Communication_Class_Stop_BD4C9116_3F8A_4D82_96A8_627531B878CC)
 	Get_Pointer, ctype_func(Berry_Communication_Class_Get_Pointer)
 
 	IP_Address_Type, class(Berry_IP_Address_Type)
