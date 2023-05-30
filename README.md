@@ -1,2 +1,2 @@
-# Berry
+# 🍓 Berry
 Berry software for Xila.
