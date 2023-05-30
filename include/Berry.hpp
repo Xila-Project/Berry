@@ -30,6 +30,8 @@ typedef int (*bntvfunc)(bvm *);
 class Berry_Class : public Softwares_Types::Software_Type
 {
 public:
+
+    /// @brief Berry handle class.
     class Berry_Handle_Class : public Softwares_Types::Software_Handle_Type
     {
     public:
@@ -41,9 +43,13 @@ public:
         }
     };
 
+
     static Berry_Class *Get_Instance(bvm *);
+
+
     uint8_t Buffer[1024]; // Buffer used to store the input object
 
+    /// @brief Load all Berry softwares handles.
     static void Load_Softwares_Handles();
 
 protected:
