@@ -12,7 +12,6 @@ void *Berry_Module_Type_Initialize(bvm* V)
    Module_Type** Pointer = (Module_Type**)be_malloc(V, sizeof(Module_Type*));
     *Pointer = NULL;
 //    return new (Pointer) Module_Type();
-Log_Verbose("Module", "Initialize module");
     return Pointer;
 }
 BE_FUNC_CTYPE_DECLARE(Berry_Module_Type_Initialize, "+_p", "@");
@@ -21,7 +20,6 @@ void Berry_Module_Type_Deinitialize(bvm* V, Module_Type **Module)
 {
 //    Module->~Module_Type();
     be_free(V, Module, sizeof(Module_Type*));
-Log_Verbose("Module", "Deinitialize module");
 }
 BE_FUNC_CTYPE_DECLARE(Berry_Module_Type_Deinitialize, "", "@.");
 
