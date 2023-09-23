@@ -12,18 +12,10 @@ Binding_Function_Table = []
 
 # Function that convert function arguments to 
 def Generate_Binding_Function(Declaration, Module_Name, Is_Module):
-    # - Remove variadic functions
-    if Declaration.has_ellipsis:    
-        return ""
-
+ 
     # - Remove excluded functions
     if Exclusion.Is_Function_Excluded(Declaration):   
         return ""
-
-    # - Remove copy constructors
-    if Is_Constructor(Declaration):
-        if Declaration.is_artificial:
-            return ""
 
 
 
@@ -355,7 +347,7 @@ def Get_Class_Binding_Declaration(Class, Module, Namespace):
         except:
             pass
 
-    Declaration += "/* @const_object_info_begin\n"
+    
 
     if Module:
         Declaration += "module " + Get_Name(Class).replace("_Class", "") + " (scope:global)"

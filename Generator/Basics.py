@@ -14,21 +14,10 @@ def Is_Namespace(Declaration):
 def Is_Class(Declaration):
     return (type(Declaration) == Declarations.class_declaration.class_t)
 
-def Is_Function(Declaration):
-    return (type(Declaration) == Declarations.calldef_members.member_function_t) and (Declaration.access_type == "public")
-
-def Is_Constructor(Declaration):
-    # Discard default copy constructor
-    #for Argument in Declaration.arguments:
-    #    if (Argument.name == "arg0"):
-    #        return False
-    return type(Declaration) == Declarations.calldef_members.constructor_t and (Declaration.access_type == "public")
 
 def Is_Operator(Declaration):
     return (type(Declaration) == Declarations.calldef_members.operator_t) or (type(Declaration) == Declarations.calldef_members.member_operator_t)
 
-def Is_Copy_Constructor(Declaration):
-    return Type_Traits_Classes.is_copy_constructor(Declaration)
 
 def Is_Enumeration_Type(Declaration):
     return type(Declaration) == Declarations.enumeration.enumeration_t
@@ -74,8 +63,6 @@ def Is_Fundamental_Type(Declaration):
 def Is_Boolean_Type(Declaration):
     return Type_Traits.is_bool(Declaration)
 
-def Is_Optional(Declaration):
-    return Declaration.default_value != None
 
 def Is_Integral_Type(Declaration):
     return Type_Traits.is_integral(Declaration)
@@ -113,22 +100,12 @@ def Get_Code_Path():
 def Get_Size(Declaration):
     return Declaration.byte_size
 
-def Get_Generated_Folder_Path():
-    Path = os.path.join(os.path.dirname(__file__), "..", "src", "Generated")
-    if not os.path.exists(Path):
-        os.mkdir(Path)
-    return Path
 
 def Get_Manual_Folder_Path():
     Path = os.path.join(os.path.dirname(__file__), "..", "src", "Manual")
     if not os.path.exists(Path):
         os.mkdir(Path)
     return Path
-
-def Find_Class(Declarations, Name):
-    for Declaration in Declarations:
-        if Is_Class(Declaration) and (Get_Name(Declaration) == Name):
-            return Declaration
 
 def Find_Namespace(Declarations, Name):
     for Declaration in Declarations:
