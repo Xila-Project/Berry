@@ -64,11 +64,14 @@ class Type_Class:
     def Get_Build_Declaration_String(self):
         return self.Declaration.build_decl_string()
 
+    def Is_Reference(self):
+        return declarations.type_traits.is_reference(self.Declaration)
+
     def Is_Pointer(self):
-        return type(self.Declaration) == declarations.cpptypes.pointer_t
+        return declarations.type_traits.is_pointer(self.Declaration)
 
     def Is_Constant(self):
-        return type(self.Declaration) == declarations.cpptypes.const_t
+        return declarations.type_traits.is_const(self.Declaration)
 
     def Is_Compound(self): 
         return isinstance(self.Declaration, declarations.cpptypes.compound_t)
