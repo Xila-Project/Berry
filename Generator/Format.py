@@ -1,5 +1,11 @@
 import subprocess
 
+
+def Format_Files(Paths):    
+    for Path in Paths:
+        Format_File(Path)
+
+
 def Format_File(Path):
     Result = subprocess.run("clang-format -i " + Path, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 

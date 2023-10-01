@@ -3,13 +3,10 @@ import uuid
 from pygccxml import utils
 from pygccxml import declarations
 
-
 import Paths
 
 import Type
 import Variable
-
-import Class
 
 class Method_Class:
 
@@ -23,13 +20,13 @@ class Method_Class:
         # - Collect method arguments
         self.Arguments = []    
         for Argument in self.Declaration.arguments:
-            Arguments.append(Variable.Argument_Class(Argument))
+            self.Arguments.append(Variable.Argument_Class(Argument))
 
-    def Get_Class(self) -> Class.Class_Class:
+    def Get_Class(self):
         return self.Class
 
     def Get_Berry_Declaration(self):
-        return self.Get_Berry_Name() + ", ctype_func(" + self.Get_Binding_Function_Name() + ")"
+        return  self.Get_Berry_Name() + ", ctype_func(" + self.Get_Binding_Function_Name() + ")"
 
     def Get_Name(self) -> str:
         return self.Declaration.name
@@ -52,11 +49,15 @@ class Method_Class:
     def Is_Static(self) -> bool:
         return self.Declaration.has_static
 
-    def Convert_Type(Type) -> dict:
-        Result = dict(C_Type = "", Berry_Type = "", Casting = None, Need_New_Buffer = False , Override_Return_Type = False)
+    def Convert_Type(self, Type) -> dict:
+        Result = dict(C_Type = "", Berry_Type = "", Casting = "", Override_Return_Type = None, Need_Virtual_Machine = False, Next_May_Be_Buffer_Size = True)
         
+        # - Void
+        if Type.Is_Void():
+            Result["C_Type"] = "void"
+            Result["Berry_Type"] = ""
         # - Fundamental types
-        if Type.Is_Fundamental():
+        elif Type.Is_Fundamental():
             # - Boolean (`bool`)
             if Type.Is_Boolean():
                 # Regular boolean, no conversion needed
@@ -68,97 +69,109 @@ class Method_Class:
                 Result["Berry_Type"] = "i"
             # - Integral (`int` or `unsigned int` and any `long` or `short` variation)
             elif Type.Is_Integral():
-                Result["Casting"] = self.Type.Get_String()
+                Result["Casting"] = Type.Get_String()
                 Result["C_Type"] = "int"
                 Result["Berry_Type"] = "i"
             # - Floating point (`float`, `double` and any `long` variation)
             elif Type.Is_Floating_Point():
-                Result["Casting"] = self.Type.Get_String()
+                Result["Casting"] = Type.Get_String()
                 Result["C_Type"] = "breal"
                 Result["Berry_Type"] = "f"
         # - Declared types
         elif Type.Is_Declarated():
-            Declaration = self.Type.Get_Declaration()
+            Declaration = Type.Get_Declaration()
             # - Class or structure
             if Declaration.Is_Class():
                 # - 
                 if Declaration.Get_Name() == "String_Class":
-                    Result["Casting"] = "*"
+                    Result["Casting"] = "(String_Type)"
                     Result["C_Type"] = "const char*"
                     Result["Berry_Type"] = "s"
-                    # TODO : Add conversion from const char* to String_Class
                 else:
                     Result["Casting"] = "*"
                     Result["C_Type"] = Type.Get_String() + "*"
                     Result["Berry_Type"] = "(" + Type.Get_String() + ")"
             # - Enumeration
-            elif Declaration.Is_Enumeration():
-                Result["Casting"] = "(" + Type.Get_String() + ")"
-                Result["C_Type"] = "int"
-                Result["Berry_Type"] = "i"
+            #elif Declaration.Is_Enumeration():
+            #    Result["Casting"] = "(" + Type.Get_String() + ")"
+            #    Result["C_Type"] = "int"
+            #    Result["Berry_Type"] = "i"
             # - Typedef
             elif Declaration.Is_Typedef():
-                Result = Convert_Type(Declaration.Get_Type())
+                Result = self.Convert_Type(Declaration.Get_Type())
         # - Function
         elif Type.Is_Function():
             Result["C_Type"] = "void (* %s)(void)"
             Result["Berry_Type"] = "^^"
         # - Compound types (pointer, reference, array, const etc.)
         elif Type.Is_Compound():
-            Result = Convert_Type(Type.Get_Base())
+            Result = self.Convert_Type(Type.Get_Base())
             # - Pointer
             if Type.Is_Pointer(): 
                 # - Pointer to a class or structure
                 if Result["Berry_Type"].startswith("("):
                     Result["Casting"] = "" # Remove the casting since berry already use pointer
-                    if Result["C_Type"].startswith("(String_Class"):
-                        Result["Casting"] = "*"
-                        Result["C_Type"] = "const char*"
-                        Result["Berry_Type"] = "s"
-                        Nrr
-                elif Type.Get_Base().Get_Size() == 
-
                 # - Pointer to a function
                 elif Result["Berry_Type"].startswith("^^"):
-                    pass
+                    pass # Already done
                 # - Pointer to a char
                 elif Result["C_Type"] == "char":
-                    Result["C_Type"] = "const char*"
+                    Result["C_Type"] = "char*"
                     Result["Berry_Type"] = "s"
-                    Result["Override_Return_Type"] = True            
-                    Result["Need_New_Buffer"] = True
-                
+                    Result["Override_Return_Type"] = dict(C_Type = "char*", Berry_Type = "s")
+                    Result["Next_May_Be_Buffer_Size"] = True
                 # - Other kind of pointer
                 else:
-                    Result["Berry_Type"] = "."
+                    Result["Casting"] = "*(" + Result["C_Type"] + "*)"
+                    Result["C_Type"] = "void*"
+                    Result["Berry_Type"] = "c"
             # - Reference
             elif Type.Is_Reference():
-                Result["Casting"] = "*" # Need to dereference the pointer for reference
+                # - Reference to a String_Class
+                if Type.Get_Base().Get_String() == "String_Class" or Type.Get_Base().Get_String() == "String_Type":
+                    Result["Casting"] = "#String_Type#"
+                    Result["C_Type"] = "char*"
+                    Result["Berry_Type"] = "s"
+                    Result["Override_Return_Type"] = dict(C_Type = "char*", Berry_Type = "s")
+                # - Reference to a class or structure
+                elif Result["Berry_Type"].startswith("("):
+                    Result["Casting"] = "*" # Dereference the pointer for reference
+                # - Other kind of reference
+                else:
+                    Result["Casting"] = "*(" + Result["C_Type"] + "*)" # Dereference the pointer for reference
+                    Result["C_Type"] = "void*"
+                    Result["Berry_Type"] = "c"
+            # - Array
+            elif Type.Is_Array():
+                Result["Casting"] = "#List#"
+                Result["C_Type"] = "blist*"
+                Result["Berry_Type"] = "(list)"
+                Result["Need_Virtual_Machine"] = True
+                Result["Next_May_Be_Buffer_Size"] = True
+                # No need to override return type since we directly modify the list
             elif self.Type.Is_Constant():
-
-                Result["Override_Return_Type"] = False
-                Result["Need_New_Buffer"] = False
-
+                if Result["Casting"] == "#List#":
+                    Result["C_Type"] = "#const List#"
+                    Result["Override_Return_Type"] = None
+                elif Result["Casting"] == "#String_Type&#":
+                    Result["Casting"] = "(String_Type)"
+                    Result["C_Type"] = "const char*"
+                    Result["Berry_Type"] = "s"
+                    Result["Override_Return_Type"] = None
+                elif Result["C_Type"] == "char*":
+                    Result["C_Type"] = "const char*"
+                    Result["Override_Return_Type"] = None
+                else:
+                    Result["C_Type"] = "const " + Result["C_Type"]
+                
         return Result
-
-
-        def Is_Optional(self) -> bool:
-            return self.Type.Is_Optional()
-
-        def Get_Name(self) -> str:
-            return self.Name
-
-        
-
-    class Berry_Return_Class(Berry_Argument_Class):
-        def __init__(self, Declaration, Berry_Declaration):
-            Berry_Argument_Class.__init__(self, Declaration, Berry_Declaration, None)
     
-    def Get_Binding(self) -> (str, str, str):
-
-
+    def Get_Binding(self, Is_Constructor = False) -> (str, str, str):
         Return = (None, None) 
+
         Function_Arguments = []
+        Definition_Preamble = []
+        Definition_Postamble = []
 
         if not(self.Get_Class().Is_Module_Class()):
             if self.Is_Static():
@@ -169,118 +182,125 @@ class Method_Class:
         Optional_Already_Defined = False
         Virtual_Machine_Already_Defined = False
         Next_May_Be_Buffer_Size = False
-        Override_Return_Type = False
+        Previous_Argument = None
 
         # - Collect and convert arguments to Berry types
-        for i, Argument in enumerate(self.Get_Arguments()):
+        for Argument in self.Get_Arguments():
 
-            Berry_Type = None
-            Casting = ""
-
-            Left = ""
-            Right = ""
-            Middle = ""
-            Default_Value = ""
-
-            if (Argument.Is_Optional()) and not(Optional_Already_Defined):
+            # - Optional arguments
+            if Argument.Is_Optional() and not Optional_Already_Defined:
                 Function_Arguments.append((None, "[", None))
                 Optional_Already_Defined = True
 
-            Type = Argument.Get_Type()
+            # - Convert type to Berry type
+            Converted_Type = self.Convert_Type(Argument.Get_Type())
 
+            # - If the previous argument was an array or a string, the next argument may be the buffer size
+            if Next_May_Be_Buffer_Size:
+                if Converted_Type["Berry_Type"] == "i":
+                    if Function_Arguments[-1][1] == "s":
+                        Function_Arguments.append((None, None, f"strlen({Previous_Argument.Get_Name()}) + 1"))
+                    elif Function_Arguments[-1][1] == "(list)":
+                        Function_Arguments.append((None, None, f"be_list_count({Previous_Argument.Get_Name()})"))
 
-            while Type.Is_Compound():
-                if Type.Is_Constant():
-                    Left += "const " + Left
-                elif Type.Is_Pointer():
-                    Right += "*"
-
-                Type = Type.Get_Base()
-
-            Type_Declarated = Type
-            while Type_Declarated.Is_Declarated():
-                Declaration = Type_Declarated.Get_Declaration()
-                if Declaration.Is_Typedef():
-                    Type_Declarated = Declaration.Get_Type()
-                else:
-                    break
-
-            if not(Type_Declarated.Is_Integral()):
+                Previous_Argument = None
                 Next_May_Be_Buffer_Size = False
-        
-            if Type_Declarated.Is_Fundamental():
-                if Right == "*":
-                    if "const" in Left:
-                        Berry_Type = "s"
-                        Middle = "char"
-                    else:
-                        # - Virtual machine buffer needed
-                        if not Virtual_Machine_Already_Defined:
-                            # - Add virtual machine as first argument
-                            Function_Arguments.insert(0, ("bvm* V", "@", None))
-                            Virtual_Machine_Already_Defined = True  
-                            Next_May_Be_Buffer_Size = True
+            
+            # - If the current argument is an array or a string, the next argument may be the buffer size
+            if Converted_Type["Next_May_Be_Buffer_Size"]:
+                Previous_Argument = Argument
+                Next_May_Be_Buffer_Size = True
 
-                elif Type_Declarated.Is_Boolean():
-                    Berry_Type = "b"
-                    Middle = "bool"
-                elif Type_Declarated.Is_Floating_Point():
-                    Berry_Type = "f"
-                    if Type_Declarated.Get_Size() > 4:  # Cast double and long double to float since Berry only supports float (currently)
-                        Casting = "(" + Type.Get_String() + ")"
-                    Middle = "float"
+            # - Virtual machine
+            if (Converted_Type["Need_Virtual_Machine"] or Is_Constructor) and not Virtual_Machine_Already_Defined:
+                Function_Arguments.append(("bvm* Virtual_Machine", "@", None))
+                Virtual_Machine_Already_Defined = True
+
+            # - Specials castings
+
+            # - - Arrays
+            if Converted_Type["Casting"] == "#List#" or Converted_Type["Casting"] == "#const List#":
+                #Definition_Preamble.append("if (!Berry_List_Is_Homogeneous_Type(List, BE_CLASS)) return Result::Error;")
+                Definition_Preamble.append(f"auto Temporary_Array = Berry_List_To_Type_Array<{Type.Get_Base()}>(Virtual_Machine, {Argument.Get_Name()});")
+                if Converted_Type["Casting"] == "#const List#":
+                    Definition_Postamble.append(f"be_free(Virtual_Machine, Temporary_Array, sizeof({Type.Get_Base()}) * be_list_count({Argument.Get_Name()}));")
                 else:
-                    if Type_Declarated.Is_Integral() and Next_May_Be_Buffer_Size:
-                        Casting = "(" + Argument.Get_Name() + "> sizeof(Berry_Class::Buffer)) ? sizeof(Berry_Class::Buffer) : "
-                        Next_May_Be_Buffer_Size = False                    
-                    else:
-                        Casting = "(" + Type.Get_String() + ")"
+                    Definition_Postamble.append(f"Type_To_Berry_List(Virtual_Machine, Temporary_Array, {Argument.Get_Name()});")
 
-                    Berry_Type += "i"
-                    Middle = "int"
-            elif Type_Declarated.Is_Pointer():
-                if Type_Declarated.Get_Base().Is_Function():
-                    Berry_Type += "^^"
-            elif Type_Declarated.Is_Declarated():    
-                Declaration = Type_Declarated.Get_Declaration()
-                if Declaration.Is_Enumeration():
-                    Middle = "int"
-                    Berry_Type += "i"
-                    Casting = "(" + Type.Get_Name() + ")"
-                elif Declaration.Is_Class() or Declaration.Is_Structure():
-                    Middle = Type.Get_Name()
-                    Right = "*"
-                    Berry_Type += "."
-                    Casting = "*"
-
-            if Argument.Is_Optional():
-                Default_Value = " = "
-                if not(Type_Declarated.Is_Declarated()):
-                    if not(Type_Declarated.Get_Declaration().Is_Class()):
-                        if Type_Declarated.Is_Reference():
-                            Default_Value += "&"
-                else:
-                    if Type_Declarated.Get_Declaration().Is_Enumeration():
-                        Default_Value += "(int)"
-                Default_Value += Argument.Get_Default_Value()
-
-            Passed_Argument = Casting + Argument.Get_Name()
-
-            if Type_Declarated.Is_Pointer() and Type_Declarated.Get_Base().Is_Function():
-                Argument_String = Type.Get_String().replace("(*", "(* " + Argument.Get_Name())
+                Function_Arguments.append(Converted_Type["C_Type"] + Argument.Get_Name(), Converted_Type["Berry_Type"], "Temporary_Array")
+            # - - String references
+            elif Converted_Type["Casting"] == "#String_Type&#":
+                Definition_Preamble.append("String_Type Temporary_String;")
+                Definition_Preamble.append(f"Temporary_String.Set_Buffer({Argument.Get_Name()}, strlen({Argument.Get_Name()}) + 1);")
+           
+                Definition_Preamble.append(f"Temporary_String.Clear_Pointer();")
+           
+                Function_Arguments.append((Converted_Type["C_Type"] + Argument.Get_Name(), Converted_Type["Berry_Type"], "Temporary_String"))
+            # - - Function pointer
+            elif Converted_Type["Berry_Type"] == "^^":
+                Function_Arguments.append((Converted_Type["C_Type"].replace("%s", Argument.Get_Name()), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
+            # - - Usual castings
             else:
-                Argument_String = Left + Middle + Right + " " + Argument + Default_Value
+                Function_Arguments.append((Converted_Type["C_Type"] + " " + Argument.Get_Name(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
 
-            Function_Arguments.append((Argument_String, Berry_Type, Passed_Argument))
+            # - Override return type
+            if Converted_Type["Override_Return_Type"] and Return == (None, None):
+                Return = (Converted_Type["Override_Return_Type"]["C_Type"], Converted_Type["Override_Return_Type"]["Berry_Type"])
 
-        # - Return type
-        if ()
+            Function_Arguments.append((Converted_Type["C_Type"] + Argument.Get_Name(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
 
-        Optional_Already_Defined = False
+        Definition_Middle = []
+
+        Concatenated_Passed_Arguments = ""
+        for i, Argument in enumerate(Function_Arguments):
+            if Argument[2] is not None:
+                if i > 0:
+                    Concatenated_Passed_Arguments += ", "
+                Concatenated_Passed_Arguments += Argument[2]
+
+        if Is_Constructor:
+            Return = ("void*", "+_p") # Override return type
+            Definition_Preamble.append("void* Self = be_malloc(V, sizeof(" + self.Get_Class().Get_String() + "::" + self.Get_Name() + "));")
+            if len(Definition_Postamble) > 0:
+                Definition_Middle.append("new (Self) " + self.Get_Class().Get_String() + "::" + self.Get_Name() + "(" + Concatenated_Passed_Arguments + ");")
+                Definition_Postamble.insert(-1, "return Self;")
+            else:
+                Definition_Middle.append("return new (Self) " + self.Get_Class().Get_String() + "::" + self.Get_Name() + "(" + Concatenated_Passed_Arguments + ");")
+        elif Return == (None, None):
+            Converted_Return_Type = self.Convert_Type(self.Get_Return_Type())
+            Return = (Converted_Return_Type["C_Type"], Converted_Return_Type["Berry_Type"])
+        
+        # - Return nothing
+        elif Return[0] == "void":
+            Definition_Middle.append(f"{self.Get_Name()}({Concatenated_Passed_Arguments});")
+        # - Return needed
+        else:
+            # - If return is the last line of the function, no need to store it in a variable
+            if len(Definition_Postamble) > 0:
+                Definition_Middle.append(f"auto Return_Variable = {self.Get_Name()}({Concatenated_Passed_Arguments});")
+                Definition_Postamble.insert(-1, f"return Return_Variable;")
+            else:
+                Definition_Middle.append(f"return {self.Get_Name()}({Concatenated_Passed_Arguments});")
+
+
+        Prototype = f"{Return[0]} {self.Get_Binding_Function_Name()}({Concatenated_Passed_Arguments})"
+
+        Concatenated_Berry_Arguments = ""
+        for Argument in Function_Arguments:
+            if Argument[1] is not None:
+                Concatenated_Berry_Arguments += Argument[1]
+
+        Berry_Declaration = "BE_FUNC_CTYPE_DECLARE(" + self.Get_Binding_Function_Name() + ", \"" + Return[1] + "\", \"" + Concatenated_Berry_Arguments + "\")"
+
+        Definition = ""
+        for Line in Definition_Preamble + Definition_Middle + Definition_Postamble:
+            Definition += Line + "\n"
+
+        return (Prototype, Definition, Berry_Declaration)
 
 class Constructor_Class(Method_Class):
     def __init__(self, Class, Declaration):
-        Method_Class.__init__(Class, Declaration)
+        super().__init__(Class, Declaration)
 
     def Get_Berry_Name(self) -> str:
         return "init"
@@ -289,26 +309,41 @@ class Constructor_Class(Method_Class):
         return "Berry_" + self.Get_Class().Get_Name() + "_Constructor_" + self.Get_UUID()
 
     def Is_Copy(self) -> bool:
-        return declarations.type_traits.is_copy_constructor(self.Declaration)
+        return declarations.type_traits_classes.is_copy_constructor(self.Declaration)
+
+    def Get_Binding(self) -> (str, str, str):
+        return Method_Class.Get_Binding(self, Is_Constructor=True)
 
 class Destructor_Class(Method_Class):
     def __init__(self, Class, Declaration):
-        Method_Class.__init__(Class, Declaration)
+        super().__init__(Class, Declaration)
 
-    def Get_Berry_Name() -> str:
+    def Get_Berry_Name(self) -> str:
         return "deinit"
 
     def Get_Binding_Function_Name(self) -> str:
         return "Berry_" + self.Get_Class().Get_Name() + "_Destructor_" + self.Get_UUID() 
 
+    def Get_Binding(self) -> (str, str, str):
+        Prototype = "void " + self.Get_Binding_Function_Name() + "(bvm* Virtual_Machine," + self.Get_Class().Get_String() + "* Self)"
+
+        Definition = "if (!Self)\n"
+        Definition += "return;\n"
+        Definition += "Self->~" + self.Get_Name() + "();\n"
+        Definition += "be_free(Virtual_Machine, Self, sizeof(" + self.Get_Class().Get_String() + "));\n"
+
+        Declaration = "BE_FUNC_CTYPE_DECLARE(" + self.Get_Binding_Function_Name() + ", \"\", \"@.\")"
+
+        return (Prototype, Definition, Declaration)
+
 class Operator_Class(Method_Class):
     def __init__(self, Class, Declaration):
-        Method_Class.__init__(Class, Declaration)
+        super().__init__(Class, Declaration)
 
-    def Get_Berry_Name() -> str:
+    def Get_Berry_Name(self) -> str:
         return self.Get_Symbol()
 
-    def Get_Binding() -> (str, str, str):
+    def Get_Binding(self) -> (str, str, str):
         Prototype = ""
         Prototype += "bool " + self.Get_Binding_Function_Name() + "(" + self.Get_Class().Get_String() + "* Self, " + self.Get_Class().Get_String() + "* A_0)"
         
@@ -322,5 +357,5 @@ class Operator_Class(Method_Class):
     def Get_Binding_Function_Name(self) -> str:
         return "Berry_" + self.Get_Class().Get_Name() + "_Operator_" + self.Get_UUID()
 
-    def Get_Symbol() -> str:
+    def Get_Symbol(self) -> str:
         return self.Declaration.symbol

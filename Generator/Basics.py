@@ -88,24 +88,14 @@ def Remove_Alias(Declaration):
 def Remove_Const_Volatile(Declaration):
     return Type_Traits.remove_cv(Declaration)
 
-def Get_Project_Path():
-    Path = os.path.dirname(__file__)
-    Path = Path.split("/Code/")[0]
-    Path = os.path.join(Path, "Code")
-    return Path
 
-def Get_Code_Path():
-    return Get_Project_Path()
+
+
 
 def Get_Size(Declaration):
     return Declaration.byte_size
 
 
-def Get_Manual_Folder_Path():
-    Path = os.path.join(os.path.dirname(__file__), "..", "src", "Manual")
-    if not os.path.exists(Path):
-        os.mkdir(Path)
-    return Path
 
 def Find_Namespace(Declarations, Name):
     for Declaration in Declarations:

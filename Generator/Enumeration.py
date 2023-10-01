@@ -11,7 +11,7 @@ class Enumeration_Class:
         Declarations = []
 
         for Key, Value in self.Declaration.get_name2value_dict().items():
-            Declaration += "\t" + self.Get_Name().replace("_Type", "")
+            Declaration = "\t" + self.Get_Name().replace("_Type", "")
             if self.Get_Name() != "":
                 Declaration += "_"
             Declaration += Key + ", int(" + str(Value) + ")\n"

@@ -64,25 +64,31 @@ class Type_Class:
     def Get_Build_Declaration_String(self):
         return self.Declaration.build_decl_string()
 
-    def Is_Reference(self):
+    def Is_Reference(self) -> bool:
         return declarations.type_traits.is_reference(self.Declaration)
 
-    def Is_Pointer(self):
+    def Is_Pointer(self) -> bool:
         return declarations.type_traits.is_pointer(self.Declaration)
 
-    def Is_Constant(self):
+    def Is_Constant(self) -> bool:
         return declarations.type_traits.is_const(self.Declaration)
 
-    def Is_Compound(self): 
+    def Is_Array(self) -> bool:
+        return declarations.type_traits.is_array(self.Declaration)
+
+    def Is_Compound(self) -> bool:
         return isinstance(self.Declaration, declarations.cpptypes.compound_t)
 
-    def Is_Ellipsis(self):
+    def Is_Ellipsis(self) -> bool:
         return isinstance(self.Declaration, declarations.cpptypes.ellipsis_t)
 
-    def Is_Declarated(self):
+    def Is_Declarated(self) -> bool:
         return isinstance(self.Declaration, declarations.cpptypes.declarated_t)
 
-    def Is_Void(self):
+    def Is_Integral(self) -> bool:
+        return declarations.type_traits.is_integral(self.Declaration)
+
+    def Is_Void(self) -> bool:
         return declarations.type_traits.is_void(self.Declaration)
 
     def Is_Fundamental(self):
@@ -107,6 +113,21 @@ class Type_Class:
         if self.Is_Declarated():
             return Declaration_Class(self.Declaration.declaration)
         return None
+
+    def Remove_Constant(self):
+        return Type_Class(declarations.type_traits.remove_const(self.Declaration))
+
+    def Remove_Reference(self):
+        return Type_Class(declarations.type_traits.remove_reference(self.Declaration))
+
+    def Remove_Pointer(self):
+        return Type_Class(declarations.type_traits.remove_pointer(self.Declaration))
+
+    def Remove_Declarated(self):
+        return Type_Class(declarations.type_traits.remove_declarated(self.Declaration))
+
+    def Remove_Typedef(self):
+        return Type_Class(declarations.type_traits.remove_typedef(self.Declaration))
 
     def Get_Base(self, Recursive = False):
         if self.Is_Compound():

@@ -21,8 +21,9 @@ class Argument_Class(Variable_Class):
         Variable_Class.__init__(self, Declaration)
 
     def Get_Default_Value(self) -> str:
-        if self.Declaration.default_value.startswith("::"):
-            return self.Declaration.default_value[2:]
+        if self.Declaration.default_value:
+            if self.Declaration.default_value.startswith("::"):
+                return self.Declaration.default_value[2:]
         return self.Declaration.default_value
 
     def Is_Optional(self) -> bool:

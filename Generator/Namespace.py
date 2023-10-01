@@ -4,22 +4,21 @@ from pygccxml import declarations
 import Class
 import Enumeration
 
-import Basic
 import Exclusion
 
 class Namespace_Class:
-    def __init__(Declaration):
+    def __init__(self, Declaration):
         self.Declaration = Declaration
 
-    def Get_Name() -> str:
+    def Get_Name(self) -> str:
         return self.Declaration.name
 
-    def Get_Declarations():
+    def Get_Declarations(self):
         return self.Declaration.declarations
 
     def Find_Class(self, Class_Name):
         for Declaration in self.Get_Declarations():
-            if Basic.Is_Class(Declaration) and (Get_Name(Declaration) == Name):
+            if isinstance(Declaration, declarations.class_declaration.class_t) and (Declaration.name == Class_Name):
                 return Class.Class_Class(Declaration)
 
     def Find_Classes(self, Recursive = False):
@@ -38,7 +37,7 @@ class Namespace_Class:
     def Find_Enumerations(self):
         Enumerations = []
         try:
-            PyGCCXML_Enumerations = self.Get_Declarations.enumerations()
+            PyGCCXML_Enumerations = self.Declaration.enumerations()
         except:
             return Enumerations
 
@@ -49,6 +48,6 @@ class Namespace_Class:
 
 
     def Find_Namespace(self, Namespace_Name):
-        self.Declaration.namespace(Module_Name + "_Types")
+        return Namespace_Class(self.Declaration.namespace(Namespace_Name))
 
     
