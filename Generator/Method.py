@@ -149,7 +149,7 @@ class Method_Class:
                 Result["Need_Virtual_Machine"] = True
                 Result["Next_May_Be_Buffer_Size"] = True
                 # No need to override return type since we directly modify the list
-            elif self.Type.Is_Constant():
+            elif Type.Is_Constant():
                 if Result["Casting"] == "#List#":
                     Result["C_Type"] = "#const List#"
                     Result["Override_Return_Type"] = None

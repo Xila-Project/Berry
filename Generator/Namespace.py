@@ -23,11 +23,9 @@ class Namespace_Class:
 
     def Find_Classes(self, Recursive = False):
         Classes = []
-        try:
-            PyGCCXML_Classes = self.Declaration.classes(recursive=Recursive)
-        except: 
-            return Classes
-
+        
+        PyGCCXML_Classes = self.Declaration.classes(recursive=Recursive, allow_empty=True)
+        
         for PyGCCXML_Class in PyGCCXML_Classes:
             if not(Exclusion.Is_Class_Excluded(PyGCCXML_Class)):
                 Classes.append(Class.Class_Class(PyGCCXML_Class))
@@ -36,10 +34,7 @@ class Namespace_Class:
 
     def Find_Enumerations(self):
         Enumerations = []
-        try:
-            PyGCCXML_Enumerations = self.Declaration.enumerations()
-        except:
-            return Enumerations
+        PyGCCXML_Enumerations = self.Declaration.enumerations(allow_empty=True)
 
         for PyGCCXML_Enumeration in PyGCCXML_Enumerations:
             Enumerations.append(Enumeration.Enumeration_Class(PyGCCXML_Enumeration))

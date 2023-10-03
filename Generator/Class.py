@@ -23,7 +23,7 @@ class Class_Class(Type.Type_Class):
 
         # - - Search for constructors
         self.Constructors = []
-        for Constructor in self.Declaration.constructors():
+        for Constructor in self.Declaration.constructors(allow_empty=True):
             if (Constructor.access_type == "public" and not(self.Declaration.is_artificial)):
                 self.Constructors.append(Method.Constructor_Class(self, Constructor))
 
@@ -33,14 +33,14 @@ class Class_Class(Type.Type_Class):
 
         # - - Search for operators
         self.Operators = []
-        for Operator in self.Declaration.operators():
+        for Operator in self.Declaration.operators(allow_empty=True):
             if (Operator.access_type == "public"):
                 self.Operators.append(Method.Operator_Class(self, Operator))
 
         # - - Search for regular methods
         self.Methods = []
 
-        for M in self.Declaration.member_functions():
+        for M in self.Declaration.member_functions(allow_empty=True):
             if (isinstance(M, declarations.calldef_members.member_function_t) and (M.access_type == "public") and not(M.has_ellipsis)):
                 self.Methods.append(Method.Method_Class(self, M))
 
@@ -133,6 +133,8 @@ class Class_Class(Type.Type_Class):
         Binding += "// - - Destructors\n"
 
         if self.Destructor:
+            Prototype, Definition, Declaration = self.Destructor.Get_Binding()
+
             Binding += Prototype + "\n"
             Binding += "{"
             Binding += Definition + "\n"
@@ -144,7 +146,13 @@ class Class_Class(Type.Type_Class):
 
         for Operator in self.Operators:
             if Operator.Get_Symbol() == "==" or Operator.Get_Symbol() == "!=":
-                Binding += Operator.Get_Binding() + "\n"
+                Prototype, Definition, Declaration = Operator.Get_Binding()
+
+                Binding += Prototype + "\n"
+                Binding += "{"
+                Binding += Definition + "\n"
+                Binding += "}" + "\n"
+                Binding += Declaration + "\n\n"
 
         # - - Methods
 

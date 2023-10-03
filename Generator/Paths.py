@@ -45,3 +45,6 @@ def Get_Berry_Generate_Folder_Path() -> str:
 
 def Get_Berry_Callback_Module_Source_File_Path() -> str:
     return os.path.join(Get_Code_Path(), "lib", "berry_mapping", "src", "be_cb_module.c")
+
+def Get_Berry_Generating_Working_Folder_Path() -> str:
+    return os.path.join(Get_Code_Path(), "lib", "berry")

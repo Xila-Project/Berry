@@ -1,5 +1,6 @@
 import shutil
 import os
+import subprocess
 
 import Parser
 import Paths
@@ -26,15 +27,14 @@ def Main():
     Module.Module_Class(Xila_Namespace, "Memory").Generate_Binding()
     Module.Module_Class(Xila_Namespace, "Softwares").Generate_Binding()
 
-
     if os.path.exists(os.path.join(Paths.Get_Code_Path(), "Xila.d")):
         os.remove(os.path.join(Paths.Get_Code_Path(), "Xila.d"))
 
     print("Temp : ", Paths.Get_Temporary_Folder_Path())
 
     # Delete temporary folder
-    shutil.rmtree(Temporary_Folder_Path, ignore_errors=True)
-    os.makedirs(Temporary_Folder_Path)
+    shutil.rmtree(Paths.Get_Temporary_Folder_Path(), ignore_errors=True)
+    os.makedirs(Paths.Get_Temporary_Folder_Path())
 
     # Copy generated files to berry temporary folder
 
@@ -51,7 +51,9 @@ def Main():
     # Copy callback module to berry sources
     shutil.copy(Paths.Get_Berry_Callback_Module_Source_File_Path(), os.path.join(Paths.Get_Temporary_Folder_Path(), "be_cb_module.c"))
 
-    Result = subprocess.run([Paths.Get_COC_Path(), '-o', 'generate', 'default', 'Temporary', '-c', 'src/berry_conf.h'], stdout=subprocess.PIPE)
+    print(Paths.Get_Berry_Generating_Working_Folder_Path())
+
+    Result = subprocess.run(["cd" + Paths.Get_Berry_Generating_Working_Folder_Path() + " | ./tools/coc/coc", '-o', 'generate', 'default', 'Temporary', '-c', 'src/berry_conf.h'], stdout=subprocess.PIPE, shell=True)
 
     if Result.returncode != 0:
         print("Error while generating berry sources : ", Result.stdout.decode("utf-8"))
