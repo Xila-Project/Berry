@@ -21,10 +21,16 @@ class Argument_Class(Variable_Class):
         Variable_Class.__init__(self, Declaration)
 
     def Get_Default_Value(self) -> str:
-        if self.Declaration.default_value:
-            if self.Declaration.default_value.startswith("::"):
-                return self.Declaration.default_value[2:]
-        return self.Declaration.default_value
+        Default_Value = self.Declaration.default_value
+
+        if Default_Value != None:
+            if Default_Value.startswith("::"):
+                Default_Value = Default_Value[2:]
+
+            if Default_Value.startswith("Xila_Namespace::"):
+                Default_Value = Default_Value.replace("Xila_Namespace::", "", 1)
+
+        return Default_Value
 
     def Is_Optional(self) -> bool:
         return self.Get_Default_Value() != None

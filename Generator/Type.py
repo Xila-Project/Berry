@@ -11,6 +11,9 @@ class Declaration_Class:
             return self.Declaration.decl_string.replace("::", "")
         return self.Declaration.decl_string
 
+    def Is_Enumeration(self):
+        return isinstance(self.Declaration, declarations.enumeration.enumeration_t)
+
     def Is_Class(self):
         return isinstance(self.Declaration, declarations.class_declaration.class_t)
 
@@ -42,24 +45,18 @@ class Declaration_Class:
  
 
 class Type_Class:
-
-    Class_Conversion_List = [
-        ["lv_obj_t", "Object_Class"],
-        ["_lv_obj_t", "Object_Class"],
-        ["lv_style_t", "Style_Class&"],
-        ["lv_color_t", "Color_Class"],
-        ["lv_event_", "Event_Class"],
-        ["lv_area_t", "Area_Class"],
-        ["lv_timer_t", "Timer_Class"]
-    ]
-
     def __init__(self, Declaration):
         self.Declaration = Declaration
 
     def Get_String(self):
-        if self.Declaration.decl_string.startswith("::"):
-            return self.Declaration.decl_string.replace("::", "")
-        return self.Declaration.decl_string
+        String = self.Declaration.decl_string
+
+        if String.startswith("::"):
+            String = String.replace("::", "", 1)
+        if String.startswith("Xila_Namespace::"):
+            String = String.replace("Xila_Namespace::", "", 1)
+
+        return String
 
     def Get_Build_Declaration_String(self):
         return self.Declaration.build_decl_string()
@@ -102,9 +99,6 @@ class Type_Class:
 
     def Is_Character(self):
         return isinstance(self.Declaration, declarations.cpptypes.char_t)
-
-    def Is_Enumeration(self):
-        return isinstance(self.Declaration, declarations.cpptypes.fundamental_t)
 
     def Is_Function(self):
         return isinstance(self.Declaration, declarations.cpptypes.free_function_type_t)

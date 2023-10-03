@@ -57,7 +57,7 @@ class Class_Class(Type.Type_Class):
         return self.Declaration.name.replace("_Class", "_Type")
 
     def Is_Module_Class(self) -> bool:
-        return self.Is_Module_Class
+        return self.Module_Class
 
     def Get_Berry_Declaration(self) -> str:
         return self.Get_Type_Name()
@@ -81,13 +81,11 @@ class Class_Class(Type.Type_Class):
 
         # - Attributes
         if not self.Is_Module_Class():
-            Declarations.append("_t, var") # Add an instance pointer for regular class
+            Declarations.append("_p, var") # Add an instance pointer for regular class
 
         Declarations.append("")
 
         # - Methods
-
-
 
         for Constructor in self.Constructors:
             Declarations.append(Constructor.Get_Berry_Declaration())
@@ -142,7 +140,7 @@ class Class_Class(Type.Type_Class):
             Binding += Declaration + "\n\n"
 
         # - - Operators
-        Binding += "// - - Operators"
+        Binding += "// - - Operators\n"
 
         for Operator in self.Operators:
             if Operator.Get_Symbol() == "==" or Operator.Get_Symbol() == "!=":

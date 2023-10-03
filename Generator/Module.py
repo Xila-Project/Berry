@@ -78,7 +78,7 @@ class Module_Class:
             self.Write_Line("{")
 
             for Declaration in Declarations:
-                self.Write_Line(Declaration)
+                self.Write_Line("\t" + Declaration)
 
             self.Write_Line("}")
             self.Write_Line("@const_object_info_end */")

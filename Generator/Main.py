@@ -30,8 +30,6 @@ def Main():
     if os.path.exists(os.path.join(Paths.Get_Code_Path(), "Xila.d")):
         os.remove(os.path.join(Paths.Get_Code_Path(), "Xila.d"))
 
-    print("Temp : ", Paths.Get_Temporary_Folder_Path())
-
     # Delete temporary folder
     shutil.rmtree(Paths.Get_Temporary_Folder_Path(), ignore_errors=True)
     os.makedirs(Paths.Get_Temporary_Folder_Path())
@@ -53,7 +51,7 @@ def Main():
 
     print(Paths.Get_Berry_Generating_Working_Folder_Path())
 
-    Result = subprocess.run(["cd" + Paths.Get_Berry_Generating_Working_Folder_Path() + " | ./tools/coc/coc", '-o', 'generate', 'default', 'Temporary', '-c', 'src/berry_conf.h'], stdout=subprocess.PIPE, shell=True)
+    Result = subprocess.run(["cd", Paths.Get_Berry_Generating_Working_Folder_Path(), "| ./tools/coc/coc", '-o', 'generate', 'default', 'Temporary', '-c', 'src/berry_conf.h'], stdout=subprocess.PIPE, shell=True)
 
     if Result.returncode != 0:
         print("Error while generating berry sources : ", Result.stdout.decode("utf-8"))
@@ -61,6 +59,8 @@ def Main():
         print("Berry sources generated successfully.")
 
     shutil.rmtree(Paths.Get_Temporary_Folder_Path(), ignore_errors=True)
+
+    fuck()
 
 if __name__ == "__main__":
     Main()

@@ -15,7 +15,7 @@ class Method_Class:
         self.Class = Class            
 
         # Add UUID for binding name since there may be collision in binding function names.
-        self.UUID = str(uuid.uuid4()).replace("-", "_").upper()
+        self.UUID = str(uuid.uuid4()).replace("-", "_").upper()[0:8]
 
         # - Collect method arguments
         self.Arguments = []    
@@ -28,8 +28,23 @@ class Method_Class:
     def Get_Berry_Declaration(self):
         return  self.Get_Berry_Name() + ", ctype_func(" + self.Get_Binding_Function_Name() + ")"
 
-    def Get_Name(self) -> str:
+    def Get_Name(self, Full : bool = False) -> str:
+        if Full:
+            return self.Get_Class().Get_String() + "::" + self.Declaration.name
         return self.Declaration.name
+
+    def Get_Calling_String(self) -> str:
+        String = ""
+
+        if self.Is_Static():
+            String += self.Get_Name(True)
+        else:
+            if self.Get_Class().Is_Module_Class():
+                String += self.Get_Class().Get_Name().replace("_Class", "") + "." + self.Get_Name(False)
+            else:
+                String += "Self->" + self.Get_Name(False)
+
+        return String
 
     def Get_Berry_Name(self) -> str:
         return self.Declaration.name
@@ -69,12 +84,12 @@ class Method_Class:
                 Result["Berry_Type"] = "i"
             # - Integral (`int` or `unsigned int` and any `long` or `short` variation)
             elif Type.Is_Integral():
-                Result["Casting"] = Type.Get_String()
+                Result["Casting"] = "(" + Type.Get_String() + ")"
                 Result["C_Type"] = "int"
                 Result["Berry_Type"] = "i"
             # - Floating point (`float`, `double` and any `long` variation)
             elif Type.Is_Floating_Point():
-                Result["Casting"] = Type.Get_String()
+                Result["Casting"] = "(" + Type.Get_String() + ")"
                 Result["C_Type"] = "breal"
                 Result["Berry_Type"] = "f"
         # - Declared types
@@ -91,14 +106,19 @@ class Method_Class:
                     Result["Casting"] = "*"
                     Result["C_Type"] = Type.Get_String() + "*"
                     Result["Berry_Type"] = "(" + Type.Get_String() + ")"
+            elif Declaration.Is_Enumeration():
+                Result["Casting"] = "(" + Type.Get_String() + ")"
+                Result["C_Type"] = "int"
+                Result["Berry_Type"] = "i"
+            elif Declaration.Is_Typedef():
+                Result = self.Convert_Type(Declaration.Get_Type())
+            
             # - Enumeration
             #elif Declaration.Is_Enumeration():
             #    Result["Casting"] = "(" + Type.Get_String() + ")"
             #    Result["C_Type"] = "int"
             #    Result["Berry_Type"] = "i"
             # - Typedef
-            elif Declaration.Is_Typedef():
-                Result = self.Convert_Type(Declaration.Get_Type())
         # - Function
         elif Type.Is_Function():
             Result["C_Type"] = "void (* %s)(void)"
@@ -129,7 +149,7 @@ class Method_Class:
             elif Type.Is_Reference():
                 # - Reference to a String_Class
                 if Type.Get_Base().Get_String() == "String_Class" or Type.Get_Base().Get_String() == "String_Type":
-                    Result["Casting"] = "#String_Type#"
+                    Result["Casting"] = "#String_Type&#"
                     Result["C_Type"] = "char*"
                     Result["Berry_Type"] = "s"
                     Result["Override_Return_Type"] = dict(C_Type = "char*", Berry_Type = "s")
@@ -175,9 +195,9 @@ class Method_Class:
 
         if not(self.Get_Class().Is_Module_Class()):
             if self.Is_Static():
-                Function_Arguments.append(Berry_Argument_Class(None, "-", None))    # Discard self argument for static methods
+                Function_Arguments.insert(0, (None, "-", None))    # Discard self argument for static methods
             else:
-                Function_Arguments.append((self.Get_Class().Get_String() + "* Self", ".", None))
+                Function_Arguments.insert(0, (self.Get_Class().Get_String() + "* Self", ".", None))
 
         Optional_Already_Defined = False
         Virtual_Machine_Already_Defined = False
@@ -213,7 +233,7 @@ class Method_Class:
 
             # - Virtual machine
             if (Converted_Type["Need_Virtual_Machine"] or Is_Constructor) and not Virtual_Machine_Already_Defined:
-                Function_Arguments.append(("bvm* Virtual_Machine", "@", None))
+                Function_Arguments.insert(0, ("bvm* Virtual_Machine", "@", None))
                 Virtual_Machine_Already_Defined = True
 
             # - Specials castings
@@ -241,49 +261,59 @@ class Method_Class:
                 Function_Arguments.append((Converted_Type["C_Type"].replace("%s", Argument.Get_Name()), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
             # - - Usual castings
             else:
-                Function_Arguments.append((Converted_Type["C_Type"] + " " + Argument.Get_Name(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
+                if Argument.Is_Optional():
+                    Function_Arguments.append((Converted_Type["C_Type"] + " " + Argument.Get_Name() + " = " + Argument.Get_Default_Value(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
+                else:
+                    Function_Arguments.append((Converted_Type["C_Type"] + " " + Argument.Get_Name(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
 
             # - Override return type
             if Converted_Type["Override_Return_Type"] and Return == (None, None):
                 Return = (Converted_Type["Override_Return_Type"]["C_Type"], Converted_Type["Override_Return_Type"]["Berry_Type"])
 
-            Function_Arguments.append((Converted_Type["C_Type"] + Argument.Get_Name(), Converted_Type["Berry_Type"], Converted_Type["Casting"] + Argument.Get_Name()))
-
         Definition_Middle = []
-
         Concatenated_Passed_Arguments = ""
         for i, Argument in enumerate(Function_Arguments):
             if Argument[2] is not None:
-                if i > 0:
-                    Concatenated_Passed_Arguments += ", "
-                Concatenated_Passed_Arguments += Argument[2]
+                Concatenated_Passed_Arguments += Argument[2] + ", "
+        if Concatenated_Passed_Arguments.endswith(", "):
+            Concatenated_Passed_Arguments = Concatenated_Passed_Arguments[:-2]
 
+        # - Constructor
         if Is_Constructor:
             Return = ("void*", "+_p") # Override return type
-            Definition_Preamble.append("void* Self = be_malloc(V, sizeof(" + self.Get_Class().Get_String() + "::" + self.Get_Name() + "));")
+            Definition_Preamble.append("void* Self = be_malloc(V, sizeof(" + self.Get_Class().Get_String() + "));")
             if len(Definition_Postamble) > 0:
-                Definition_Middle.append("new (Self) " + self.Get_Class().Get_String() + "::" + self.Get_Name() + "(" + Concatenated_Passed_Arguments + ");")
+                Definition_Middle.append("new (Self) " + self.Get_Calling_String() + "(" + Concatenated_Passed_Arguments + ");")
                 Definition_Postamble.insert(-1, "return Self;")
             else:
-                Definition_Middle.append("return new (Self) " + self.Get_Class().Get_String() + "::" + self.Get_Name() + "(" + Concatenated_Passed_Arguments + ");")
+                Definition_Middle.append("return new (Self) " + self.Get_Name(True) + "(" + Concatenated_Passed_Arguments + ");")
+        # - No return type defined
         elif Return == (None, None):
             Converted_Return_Type = self.Convert_Type(self.Get_Return_Type())
             Return = (Converted_Return_Type["C_Type"], Converted_Return_Type["Berry_Type"])
-        
-        # - Return nothing
-        elif Return[0] == "void":
-            Definition_Middle.append(f"{self.Get_Name()}({Concatenated_Passed_Arguments});")
+       
+        # - No return needed
+        if Return[0] == "void":
+            
+            Definition_Middle.append(self.Get_Calling_String() + ";")
         # - Return needed
         else:
             # - If return is the last line of the function, no need to store it in a variable
             if len(Definition_Postamble) > 0:
-                Definition_Middle.append(f"auto Return_Variable = {self.Get_Name()}({Concatenated_Passed_Arguments});")
+                Definition_Middle.append(f"auto Return_Variable = {self.Get_Calling_String()}({Concatenated_Passed_Arguments});")
                 Definition_Postamble.insert(-1, f"return Return_Variable;")
             else:
-                Definition_Middle.append(f"return {self.Get_Name()}({Concatenated_Passed_Arguments});")
+                Definition_Middle.append(f"return {self.Get_Calling_String()}({Concatenated_Passed_Arguments});")
+         
 
+        Concatenated_Function_Arguments = ""
+        for i, Argument in enumerate(Function_Arguments):
+            if Argument[0] is not None:
+                Concatenated_Function_Arguments += Argument[0] + ", "
+        if Concatenated_Function_Arguments.endswith(", "):
+            Concatenated_Function_Arguments = Concatenated_Function_Arguments[:-2]
 
-        Prototype = f"{Return[0]} {self.Get_Binding_Function_Name()}({Concatenated_Passed_Arguments})"
+        Prototype = f"{Return[0]} {self.Get_Binding_Function_Name()}({Concatenated_Function_Arguments})"
 
         Concatenated_Berry_Arguments = ""
         for Argument in Function_Arguments:
@@ -329,7 +359,7 @@ class Destructor_Class(Method_Class):
 
         Definition = "if (!Self)\n"
         Definition += "return;\n"
-        Definition += "Self->~" + self.Get_Name() + "();\n"
+        Definition += "Self->" + self.Get_Name(True) + "();\n"
         Definition += "be_free(Virtual_Machine, Self, sizeof(" + self.Get_Class().Get_String() + "));\n"
 
         Declaration = "BE_FUNC_CTYPE_DECLARE(" + self.Get_Binding_Function_Name() + ", \"\", \"@.\")"
