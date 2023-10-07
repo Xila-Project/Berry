@@ -48,11 +48,15 @@ class Type_Class:
     def __init__(self, Declaration):
         self.Declaration = Declaration
 
-    def Get_String(self):
+    def Get_String(self, Raw = False):
         String = self.Declaration.decl_string
 
         if String.startswith("::"):
             String = String.replace("::", "", 1)
+     
+        if Raw:
+            return String
+     
         if String.startswith("Xila_Namespace::"):
             String = String.replace("Xila_Namespace::", "", 1)
 

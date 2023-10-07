@@ -65,7 +65,7 @@ class Method_Class:
         return self.Declaration.has_static
 
     def Convert_Type(self, Type) -> dict:
-        Result = dict(C_Type = "", Berry_Type = "", Casting = "", Override_Return_Type = None, Need_Virtual_Machine = False, Next_May_Be_Buffer_Size = True)
+        Result = dict(C_Type = "", Berry_Type = "", Casting = "", Override_Return_Type = None, Need_Virtual_Machine = False, Next_May_Be_Buffer_Size = False)
         
         # - Void
         if Type.Is_Void():
@@ -97,7 +97,7 @@ class Method_Class:
             Declaration = Type.Get_Declaration()
             # - Class or structure
             if Declaration.Is_Class():
-                # - 
+                # - If it's a String_Class, we use the String_Type
                 if Declaration.Get_Name() == "String_Class":
                     Result["Casting"] = "(String_Type)"
                     Result["C_Type"] = "const char*"
@@ -105,20 +105,20 @@ class Method_Class:
                 else:
                     Result["Casting"] = "*"
                     Result["C_Type"] = Type.Get_String() + "*"
-                    Result["Berry_Type"] = "(" + Type.Get_String() + ")"
+                    # If the class is from Xila namespace, it must be already declared in berry
+                    if Type.Get_String(Raw=True).startswith("Xila_Namespace::"):
+                        Result["Berry_Type"] = "(" + Type.Get_String().replace("_Types", "") + ")"
+                    # For other classes, we doesn't specify the type
+                    else:
+                        Result["Berry_Type"] = "."
+            # - Enumeration
             elif Declaration.Is_Enumeration():
                 Result["Casting"] = "(" + Type.Get_String() + ")"
                 Result["C_Type"] = "int"
                 Result["Berry_Type"] = "i"
+            # - Typedef
             elif Declaration.Is_Typedef():
                 Result = self.Convert_Type(Declaration.Get_Type())
-            
-            # - Enumeration
-            #elif Declaration.Is_Enumeration():
-            #    Result["Casting"] = "(" + Type.Get_String() + ")"
-            #    Result["C_Type"] = "int"
-            #    Result["Berry_Type"] = "i"
-            # - Typedef
         # - Function
         elif Type.Is_Function():
             Result["C_Type"] = "void (* %s)(void)"
@@ -134,7 +134,11 @@ class Method_Class:
                 # - Pointer to a function
                 elif Result["Berry_Type"].startswith("^^"):
                     pass # Already done
-                # - Pointer to a char
+                # - Pointer to a `const char*`
+                elif Result["C_Type"] == "const char":
+                    Result["C_Type"] = "const char*"
+                    Result["Override_Return_Type"] = None
+                # - Pointer to a `char*`
                 elif Result["C_Type"] == "char":
                     Result["C_Type"] = "char*"
                     Result["Berry_Type"] = "s"
@@ -170,6 +174,7 @@ class Method_Class:
                 Result["Next_May_Be_Buffer_Size"] = True
                 # No need to override return type since we directly modify the list
             elif Type.Is_Constant():
+                print("Constant !")
                 if Result["Casting"] == "#List#":
                     Result["C_Type"] = "#const List#"
                     Result["Override_Return_Type"] = None
@@ -178,12 +183,10 @@ class Method_Class:
                     Result["C_Type"] = "const char*"
                     Result["Berry_Type"] = "s"
                     Result["Override_Return_Type"] = None
-                elif Result["C_Type"] == "char*":
-                    Result["C_Type"] = "const char*"
-                    Result["Override_Return_Type"] = None
                 else:
                     Result["C_Type"] = "const " + Result["C_Type"]
-                
+            
+        print(f"{Type.Get_String()}: {Result}")
         return Result
     
     def Get_Binding(self, Is_Constructor = False) -> (str, str, str):
@@ -295,7 +298,7 @@ class Method_Class:
         # - No return needed
         if Return[0] == "void":
             
-            Definition_Middle.append(self.Get_Calling_String() + ";")
+            Definition_Middle.append(f"{self.Get_Calling_String()}({Concatenated_Passed_Arguments});")
         # - Return needed
         else:
             # - If return is the last line of the function, no need to store it in a variable
